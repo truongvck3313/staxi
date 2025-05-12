@@ -4,6 +4,8 @@
     "mk_admin": "auto@1234",
     "tk_admin_test": "autoba",
     "mk_admin_test": "autoba@1234",
+    "tk_admin1": "autoba1",
+    "mk_admin1": "autoba@1234",
     "tk_company": "autoba9348",
     "mk_company": "autoba@1234",
     "tk_test": "autoba1996",
@@ -12,15 +14,16 @@
     "g7": "https://app.g7taxi.vn/",
     "company": "https://app.staxi.vn/",
     "taxi123": "https://taxi123bak.staxi.vn/",
+    "envang": "https://envanghpbak.staxi.vn/",
     "spxshe_mk": "12341234"
   },
   "minitor": {
     "vehicle_online_search1": "0945912674",
     "vehicle_online_search2": "0945912674",
     "logout_resson": "Trường test logout",
-    "route_fromday": "06/11/2024 00:30",
-    "route_today": "06/11/2024 17:30",
-    "minitor_search": "107 - 15A31433"
+    "route_fromday": "11/02/2025 01:00",
+    "route_today": "11/02/2025 18:00",
+    "minitor_search": "121 - 15A31499"
   },
   "vehicle": {
     "add_new_color": "Trắng",
@@ -39,6 +42,8 @@
     "email": "truongvck33@gmail.com",
     "account": "truongvck33",
     "password": "atgmj123",
+    "bank": "MB Bank",
+    "bank_note": "Trường test liên kết ngân hàng",
     "bank_name": "TRAN QUANG TRUONG",
     "bank_stk": "0835210360",
     "bank_address": "Số 475 Nguyễn Trãi, Quận thanh Xuân, Thành Phố Hà Nội",
@@ -70,7 +75,7 @@
     "code_promotion": "Auto_Chung",
     "count_sd": "2",
     "count_max": "20",
-    "sl_code": "5",
+    "sl_code": "1",
     "characters_start": "AUTO_",
     "length_code": "10",
     "time_start": "15/10/2025 00:00",

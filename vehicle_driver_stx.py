@@ -10,7 +10,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
-
+import random
 
 
 def check_account(name_check):
@@ -118,7 +118,12 @@ class vehicle:
 
         var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.vehicle).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                  var_stx.title_page, "2.1 Xe", "_XeLaiXe_Xe.png")
@@ -219,13 +224,21 @@ class vehicle:
         vehicle.vehicle_x(self)
         try:
             var_stx.driver.implicitly_wait(1)
-            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_x5).send_keys("a")
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_x3).send_keys("30E680")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(10)
         except:
             pass
 
+
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2)
+        except:
+            vehicle.vehicle_x(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(7)
 
         if type_check == "0":
             data = var_stx.driver.find_element(By.XPATH, path_data).text
@@ -240,8 +253,14 @@ class vehicle:
 
 
         if type_check == "1":
-            get_driver()
-            text = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 19, 2))
+            # get_driver()
+            # text = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 19, 2))
+            vehicle.vehicle_x(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.DriverCodeId).send_keys("a")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(10)
+            text = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_6).text
             data = text.split('-')[0]
             print(data)
             var_stx.driver.find_element(By.XPATH, path_input).clear()
@@ -250,8 +269,34 @@ class vehicle:
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(10)
-            module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
-                                                   path_check, text, path_image)
+            logging.info("-------------------------")
+            logging.info("Xe & Lái xe - 2.1 Xe")
+            logging.info("Mã - " + code)
+            logging.info("Tên sự kiện - " + eventname)
+            logging.info("Kết quả - " + result)
+            try:
+                check_text = var_stx.driver.find_element(By.XPATH, path_check).text
+                check_text = check_text.split('-')[0]
+                logging.info(check_text)
+                logging.info(data)
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
+                if check_text == data:
+                    logging.info("True")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+                else:
+                    logging.info("False")
+                    var_stx.driver.save_screenshot(var_stx.imagepath + code + path_image)
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + path_image)
+            except:
+                logging.info("False")
+                var_stx.driver.save_screenshot(var_stx.imagepath + code + path_image)
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + path_image)
+
+            #
+            # module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
+            #                                        path_check, text, path_image)
 
 
 
@@ -267,12 +312,21 @@ class vehicle:
 
         vehicle.vehicle_x(self)
 
-        if path_image == "_Xe_BienSo.png" or path_image == "_Xe_SoHieu.png" or path_image == "_Xe_DangLai.png" or path_image == "_Xe_TrangThai.png"\
+        if path_image == "_Xe_BienSo.png" or path_image == "_Xe_SoHieu.png" or path_image == "_Xe_DangLai.png"\
                 or path_image == "_Xe_TrangThai_KetNoiTot.png" or path_image == "_Xe_TrangThai_MatKetNoi.png" or path_image == "_Xe_TrangThai_KhongKetNoi.png":
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_x5).send_keys("a")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(2)
+            time.sleep(2.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_x5).clear()
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.listdata1_1)
+            except:
+                var_stx.driver.refresh()
+                time.sleep(7)
+                var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+                time.sleep(2)
+
 
 
         if path_image == "_Xe_Khoa.png" or path_image == "_Xe_Khoa_Khoa.png" or path_image == "_Xe_Khoa_MoKhoa.png" \
@@ -281,6 +335,28 @@ class vehicle:
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(2.5)
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.listdata1_1)
+                var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).clear()
+            except:
+                var_stx.driver.refresh()
+                time.sleep(7)
+                var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+                time.sleep(2)
+
+
+        if path_image == "_Xe_TrangThai.png":
+            try:
+                var_stx.driver.implicitly_wait(1)
+                var_stx.driver.find_element(By.XPATH, var_stx.state_0).click()
+            except:
+                var_stx.driver.find_element(By.XPATH, var_stx.search_advanced).click()
+                time.sleep(1.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.enableCStatus).click()
+                time.sleep(1.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+                time.sleep(2)
+
 
 
 
@@ -336,6 +412,57 @@ class vehicle:
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Không có dữ liệu")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, "")
+
+
+
+
+
+    def search_vehicle_type_vehicle(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver)
+        except:
+            vehicle.vehicle(self, "", "", "")
+
+        vehicle.vehicle_x(self)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("12")
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(2.5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.listdata1_1)
+            var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).clear()
+        except:
+            var_stx.driver.refresh()
+            time.sleep(7)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(2)
+
+        try:
+            var_stx.driver.implicitly_wait(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.FasttaxiVehicleTypeId1).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.search_advanced).click()
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.enableVType).click()
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(2)
+
+        type_vehicle = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_4).text
+
+        var_stx.driver.find_element(By.XPATH, "//*[@id='FasttaxiVehicleTypeId']//*[text()='"+type_vehicle+"']").click()
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(2)
+        module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
+                                                        var_stx.listdata1_4, type_vehicle, "_Xe_Khoa_LoaiXe_Chon1.png")
+
+
+
+
 
 
 
@@ -449,15 +576,23 @@ class vehicle:
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_number1).send_keys(var_stx.data['vehicle']['add_new_number1'])
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_number2).send_keys(var_stx.data['vehicle']['add_new_number2'])
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_company_manager).click()
-        time.sleep(0.5)
+        try:
+            var_stx.driver.implicitly_wait(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_company_manager).click()
+            time.sleep(0.5)
+        except:
+            pass
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_black_box)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_bluetooth).click()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_asign_gsm)
-        time.sleep(0.5)
+        try:
+            var_stx.driver.implicitly_wait(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_asign_gsm)
+            time.sleep(0.5)
+        except:
+            pass
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehilce_add_new).click()
         time.sleep(2.5)
         print("2024AUTO"+number)
@@ -509,12 +644,21 @@ class vehicle:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
         # time.sleep(0.6)
-        element = WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, path_check)))
-
+        try:
+            element = WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, path_check)))
+        except:
+            pass
         #Kết nối hộp đen thành công
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                  path_check, desire, name_image)
         time.sleep(7)
+        try:
+            var_stx.driver.find_element(By.XPATH, path_check)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+
+
 
 
     def vehicle_clock(self, code, eventname, result, path_clock, type_clock, path_check, desire, name_image):
@@ -642,7 +786,8 @@ class vehicle:
             var_stx.driver.find_element(By.XPATH, var_stx.icon_delete).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
-            time.sleep(0.5)
+            wait = WebDriverWait(var_stx.driver, 5)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_vehicle_delete)))
             module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                       var_stx.check_vehicle_delete, "Xóa xe thành công", "_Xe_XoaXe.png")
         time.sleep(5)
@@ -661,16 +806,16 @@ class vehicle:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.hide_column).click()
         time.sleep(2)
-        if var_stx.driver.find_element(By.XPATH, var_stx.hide_column3_input).is_selected() == True:
-            var_stx.driver.find_element(By.XPATH, var_stx.hide_column3_input).click()
+        if var_stx.driver.find_element(By.XPATH, var_stx.hide_column1_input).is_selected() == True:
+            var_stx.driver.find_element(By.XPATH, var_stx.hide_column1_input).click()
             time.sleep(1.5)
         module_other_stx.write_result_not_displayed_try(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                   var_stx.vehicle_hide_column_stt, "_Xe_AnHienCot.png")
 
 
 
-        if var_stx.driver.find_element(By.XPATH, var_stx.hide_column3_input).is_selected() == False:
-            var_stx.driver.find_element(By.XPATH, var_stx.hide_column3_input).click()
+        if var_stx.driver.find_element(By.XPATH, var_stx.hide_column1_input).is_selected() == False:
+            var_stx.driver.find_element(By.XPATH, var_stx.hide_column1_input).click()
             time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.hide_column).click()
         time.sleep(3)
@@ -686,9 +831,17 @@ class driver:
         # login_stx.login.login_stx(self, var_stx.data['login']['tk_admin'], var_stx.data['login']['mk_admin'])
         login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])
 
-        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.driver1).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver1).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.driver1).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
                                                  var_stx.title_page, "2.2 Lái xe", "_XeLaiXe_LaiXe.png")
@@ -816,6 +969,14 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(10)
 
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2)
+        except:
+            driver.driver_x(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(7)
+
         driver.driver_x(self)
         data = var_stx.driver.find_element(By.XPATH, path_data).text
         var_stx.driver.find_element(By.XPATH, path_input).send_keys(data)
@@ -844,14 +1005,32 @@ class driver:
 
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
-        time.sleep(2)
+        time.sleep(5)
+        data0 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_12).text
+        print("data0:" + data0)
+        data0 = data0.split(",")[0]
 
-        data = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_14).text
-        print("data:" + data)
-        data = data.split(",")[0]
+        data1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_13).text
+        print("data1:" + data1)
+        data1 = data1.split(",")[0]
+
+        data2 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_14).text
+        print("data2:" + data2)
+        data2 = data2.split(",")[0]
+
+        data3 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_15).text
+        print("data3:" + data3)
+        data3 = data3.split(",")[0]
+
+        data4b= var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).text
+        print("data4b:" + data4b)
+
+        data4 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_16).text
+        print("data4:" + data4)
+        data4 = data4.split(",")[0]
 
 
-        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_assign).send_keys(data)
+        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_assign).send_keys(data2)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
@@ -861,13 +1040,13 @@ class driver:
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
         try:
-            check_text = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_14).text
+            check_text = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).text
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
 
             check_text = check_text.split(",")[0]
             logging.info(check_text)
-            logging.info(check_text)
-            if check_text == data:
+            logging.info(data2)
+            if check_text == data2:
                 logging.info("True")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
             else:
@@ -885,14 +1064,14 @@ class driver:
         # module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
         #                                        var_stx.listdata1_14, data, "_XeLaiXe_TimKiem_XeDaGan.png")
 
-        data = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_14).text
-        print("data1:" + data)
-        data1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).text
-        print("data2:" + data1)
-        data2 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_8).text
-        print("data3:" + data2)
-        data3 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_9).text
-        print("data4:" + data3)
+        data = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_12).text
+        print("data1b:" + data)
+        data1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_13).text
+        print("data2b:" + data1)
+        data2 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_14).text
+        print("data3b:" + data2)
+        data3 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).text
+        print("data4b:" + data3)
 
 
     def search_driver_combobox(self, code, eventname, result, path_combobox, type_check, path_check, desire, name_image):
@@ -910,6 +1089,33 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
         try:
+            var_stx.driver.find_element(By.XPATH, var_stx.listdata1_1)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(6)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(2.5)
+
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, path_combobox).click()
+        #     time.sleep(1)
+        # except:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.search_advanced).click()
+        #     time.sleep(1.5)
+        #     if var_stx.driver.find_element(By.XPATH, var_stx.enableVType).is_selected() == False:
+        #         var_stx.driver.find_element(By.XPATH, var_stx.enableVType).click()
+        #         time.sleep(0.5)
+        #
+        #     if var_stx.driver.find_element(By.XPATH, var_stx.enableVName).is_selected() == False:
+        #         var_stx.driver.find_element(By.XPATH, var_stx.enableVName).click()
+        #         time.sleep(0.5)
+        #
+        #     if var_stx.driver.find_element(By.XPATH, var_stx.enableCStatus).is_selected() == False:
+        #         var_stx.driver.find_element(By.XPATH, var_stx.enableCStatus).click()
+
+
+
+        try:
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_assign1)
         except:
             scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
@@ -926,6 +1132,17 @@ class driver:
         if type_check == "1":
             module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
                                                       path_check, desire, name_image)
+        data = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_9).text
+        print("data1b:" + data)
+        data1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_10).text
+        print("data2b:" + data1)
+        data2 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_11).text
+        print("data3b:" + data2)
+        data3 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_12).text
+        print("data4b:" + data3)
+
+
+
 
 
     def driver_excel(self, code, eventname, result):
@@ -989,16 +1206,17 @@ class driver:
         subprocess.Popen(var_stx.uploadpath+"template_driver.exe")
         time.sleep(3)
         var_stx.driver.find_element(By.XPATH, var_stx.upload1).click()
-
-        # # var_stx.driver.find_element(By.XPATH, var_stx.import1).click()
-        # time.sleep(0.5)
-        # module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
-        #                                          var_stx.check_message_link, "Tải lên thành công", "_LaiXe_Upload2.png")
-
         time.sleep(5)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
-                                                 var_stx.list_import_1_6, "Số điện thoại đã tồn tại trong hệ thống với tài khoản TRANQUANGTRUONG2",
-                                                  "_LaiXe_Upload1.png")
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.check_list_import_1_6_no)
+            module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
+                                                     var_stx.list_import_1_6, "Số điện thoại đã tồn tại trong hệ thống với tài khoản TRANQUANGTRUONG2",
+                                                      "_LaiXe_Upload1.png")
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.check_list_import_1_6_ys)
+            module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
+                                                     var_stx.list_import_1_6, "Bản ghi hợp lệ",
+                                                      "_LaiXe_Upload1.png")
 
         try:
             var_stx.driver.implicitly_wait(1)
@@ -1016,23 +1234,26 @@ class driver:
         except:
             driver.driver(self, "", "", "")
 
-
+        number_random = random.randint(2000000, 9999999)
+        number_random = str(number_random)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
         time.sleep(4)
         increase()
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
         var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 2, 2, "auto"+number)
 
-
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_name1)))
+        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_name1).send_keys("2024auto"+number)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_name2).send_keys("auto"+number)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_phone).send_keys(var_stx.data['vehicle']['phone'])
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_phone).send_keys("0359667"+number)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_birth_day).send_keys(var_stx.data['vehicle']['birth_day'])
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_cccd).send_keys("020200004"+number)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_cccd).send_keys("0"+number_random+number)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_email).send_keys(var_stx.data['vehicle']['email'])
         time.sleep(0.5)
@@ -1055,38 +1276,71 @@ class driver:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_version).click()   #loại cước phí
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_lot).click()   #sử dụng lốt
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_driver_share).click()   #Driver Share
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_gsm1).click()   #Cho phép nhận cuốc GSM
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_gsm2)   #Đồng bộ GSM
-        time.sleep(0.5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_lot).click()   #sử dụng lốt
+            time.sleep(0.5)
+        except:
+            pass
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_driver_share).click()   #Driver Share
+            time.sleep(0.5)
+        except:
+            pass
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_gsm1).click()   #Cho phép nhận cuốc GSM
+            time.sleep(0.5)
+        except:
+            pass
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_gsm2)   #Đồng bộ GSM
+            time.sleep(0.5)
+        except:
+            pass
 
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon).click()   #file đính kèm
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
         time.sleep(1.5)
         subprocess.Popen(var_stx.uploadpath+"template_driver.exe")
-        time.sleep(2)
+        time.sleep(4)
         button = var_stx.driver.find_element(By.XPATH, var_stx.save)
         var_stx.driver.execute_script("arguments[0].click();", button)
-
         time.sleep(2.5)
         print("auto"+number)
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "auto"+number)
 
-
         wait = WebDriverWait(var_stx.driver, 15)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_succes)))
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_message)))
+        time.sleep(2)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
-                                                 var_stx.add_new_driver_succes, "Thêm mới lái xe thành công", "_LaiXe_ThemMoi.png")
+                                                 var_stx.add_new_driver_message, "Thêm mới thành công", "_LaiXe_ThemMoi.png")
 
+        var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+        time.sleep(4)
+        var_stx.driver.back()
+        time.sleep(4)
         try:
-            var_stx.driver.implicitly_wait(1)
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back).click()
-            time.sleep(4)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
         except:
-            pass
+            var_stx.driver.back()
+            time.sleep(4)
+
+
+        # try:
+        #     var_stx.driver.implicitly_wait(1)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back).click()
+        #     time.sleep(4)
+        # except:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back1).click()
+        #     time.sleep(4)
+
+
+
 
 
     def driver_add_stk(self, code, eventname, result):
@@ -1096,16 +1350,16 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
             # var_stx.driver.find_element(By.XPATH, var_stx.STAXI)
         except:
-            # driver.driver_company_7g_test(self, "", "", "")
+            # driver.driver_add_new(self, "", "", "")
             driver.driver(self, "", "", "")
 
 
         driver1 = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
-
-        var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(driver1)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(driver1)
+        except:
+            driver.driver(self, "", "", "")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
@@ -1113,38 +1367,65 @@ class driver:
         if name_check == driver1:
             var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2a).click()
             time.sleep(5)
-
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.receive_the_activation_code_again)))
             var_stx.driver.find_element(By.XPATH, var_stx.receive_the_activation_code_again).click()
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.receive_the_activation_code_again_cccd).click()
             time.sleep(1)
+
+            var_stx.driver.find_element(By.XPATH, var_stx.info_other_icon).click()
+            time.sleep(2)
             element = var_stx.driver.find_element(By.XPATH, "//*[text()='Liên kết ngân hàng']")
             var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
-
             time.sleep(1)
-            #Liên kết ngân hàng
-            button = var_stx.driver.find_element(By.XPATH, var_stx.bank_Link)
-            var_stx.driver.execute_script("arguments[0].click();", button)
-
-            # var_stx.driver.find_element(By.XPATH, var_stx.bank_Link).click()
+            element.click()
             time.sleep(2)
-            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_name).send_keys(var_stx.data['vehicle']['bank_name'])
-            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_stk).send_keys(var_stx.data['vehicle']['bank_stk'])
-            # var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_address).send_keys(var_stx.data['vehicle']['bank_address'])
+
+            #Liên kết ngân hàng
+            # button = var_stx.driver.find_element(By.XPATH, var_stx.bank_Link)
+            # var_stx.driver.execute_script("arguments[0].click();", button)
+
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link).click()
+            time.sleep(2)
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.payment_channel)))
             time.sleep(1)
-            var_stx.driver.find_element(By.XPATH, var_stx.link).click()
-            time.sleep(2.5)
+            # element.click()
+            # time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.payment_channel_mb).click()
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_bank_mb).click()
+
+
+            # var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_bank).send_keys(var_stx.data['vehicle']['bank'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_stk).send_keys(var_stx.data['vehicle']['bank_stk'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_name).click()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_note).send_keys(var_stx.data['vehicle']['bank_note'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_qypay)
+            var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_auto_get_money)
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.save3).click()
+            time.sleep(1)
 
             wait = WebDriverWait(var_stx.driver, 10)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.toast_message)))
             module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
-                                                      var_stx.toast_message, "Tài khoản bạn nhập không hợp lệ - Không tồn tại trên hệ thống ngân hàng.", "_Xe_CapNhat.png")
+                                                      var_stx.toast_message, "Thêm tài khoản ngân hàng thành công", "_Xe_CapNhat.png")
             try:
                 var_stx.driver.implicitly_wait(1)
-                var_stx.driver.find_element(By.XPATH, var_stx.exit).click()
+                var_stx.driver.find_element(By.XPATH, var_stx.cancel).click()
                 time.sleep(3)
             except:
                 pass
+            var_stx.driver.back()
+            time.sleep(5)
+
+
 
 
     def driver_update(self, code, eventname, result):
@@ -1152,10 +1433,19 @@ class driver:
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_cccd)
         except:
-            driver.driver_add_stk(self, "", "", "")
+            # driver.driver_add_stk(self, "", "", "")
+            driver.driver(self, "", "", "")
 
-        element = var_stx.driver.find_element(By.XPATH, "//*[text()='Mật khẩu']")
-        var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
+        driver1 = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
+        driver.driver_x(self)
+        var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(driver1)
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2a).click()
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Mật khẩu']")))
+        time.sleep(2)
 
         var_stx.driver.find_element(By.XPATH, var_stx.update_driver_makichhoat1).click()    #Nhận lại mã kích hoạt
         time.sleep(1)
@@ -1170,16 +1460,53 @@ class driver:
         var_stx.driver.execute_script("arguments[0].click();", button)
         time.sleep(3)
         wait = WebDriverWait(var_stx.driver, 10)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_driver_update)))
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_message)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
-                                                 var_stx.check_driver_update, "Cập nhật lái xe thành công", "_LaiXe_CapNhat.png")
+                                                 var_stx.add_new_driver_message, "Cập nhật thành công", "_LaiXe_CapNhat.png")
+        var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+        time.sleep(4)
 
-        try:
-            var_stx.driver.implicitly_wait(1)
-            var_stx.driver.find_element(By.XPATH, var_stx.update_back).click()
-            time.sleep(4)
-        except:
-            pass
+        # try:
+        #     var_stx.driver.implicitly_wait(1)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back).click()
+        # except:
+        #     try:
+        #         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back1).click()
+        #     except:
+        #         element = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back)
+        #         var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
+        var_stx.driver.back()
+        time.sleep(4)
+
+    def detail_vehicle(self, name):
+        n = 0
+        while (n < 25):
+            n = n + 1
+            n = str(n)
+            path_name = "//*[@class='ag-header-row ag-header-row-column']/div[" + n + "]"
+            path_detail = "//*[@class='ag-center-cols-container']/div[1]/div[" + n + "]"
+            path_detail_icon = "//*[@class='ag-center-cols-container']/div[1]/div[" + n + "]/span/a/i"
+
+            try:
+                name_column = var_stx.driver.find_element(By.XPATH, path_name).text
+                print(name_column)
+                if name_column == name:
+                    try:
+                        print("n1")
+                        var_stx.driver.find_element(By.XPATH, path_detail).click()
+                        time.sleep(1)
+                        var_stx.driver.find_element(By.XPATH, path_detail_icon).click()
+                        print("n2")
+                    except:
+                        print("n3")
+                        var_stx.driver.find_element(By.XPATH, path_detail_icon).click()
+                        print("n4")
+                    time.sleep(3)
+                    print("n5")
+                    break
+            except:
+                pass
+            n = int(n)
 
 
     def driver_clock(self, code, eventname, result, path_clock, type_clock, path_check, desire, name_image):
@@ -1188,14 +1515,12 @@ class driver:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
         except:
-            driver.driver(self, "", "", "")
+            driver.driver_add_new(self, "", "", "")
 
 
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(5)
 
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
@@ -1204,7 +1529,7 @@ class driver:
 
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
-
+        time.sleep(2.5)
 
         name1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_4).text
         print("name1: "+name1)
@@ -1217,20 +1542,27 @@ class driver:
         name5 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_8).text
         print("name5: "+name5)
 
-        var_stx.driver.find_element(By.XPATH, path_clock).click()
-        time.sleep(5)
+
         if type_clock == "0":
-            var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
+            try:
+                var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-container']/div[1]//*[@class='fa fa-unlock']").click()
+                time.sleep(7)
+                var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
+            except:
+                driver.detail_vehicle(self, path_clock)
+                var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
             var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_reason_input).click()
             var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_reason_input).send_keys(var_stx.data['vehicle']['lock_reason'])
 
         if type_clock == "1":
+            driver.detail_vehicle(self, path_clock)
+            time.sleep(7)
             if var_stx.driver.find_element(By.XPATH, var_stx.reason_clock1).is_selected() == False:
                 var_stx.driver.find_element(By.XPATH, var_stx.reason_clock1).click()
 
         time.sleep(3.5)
         var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
-        time.sleep(5)
+        time.sleep(2)
         wait = WebDriverWait(var_stx.driver, 15)
         element = wait.until(EC.element_to_be_clickable((By.XPATH, path_check)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
@@ -1256,18 +1588,17 @@ class driver:
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
 
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
-        time.sleep(1)
-
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_10).click()
         time.sleep(2)
+        driver.detail_vehicle(self, "Lý do khóa/mở khóa")
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_10).click()
+        time.sleep(1)
         logging.info("-------------------------")
         logging.info("Xe & Lái xe - 2.2 Lái xe")
         logging.info("Mã - " + code)
@@ -1320,8 +1651,6 @@ class driver:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1330,10 +1659,13 @@ class driver:
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_12).click()
-        time.sleep(3)
+        driver.detail_vehicle(self, "Khen thưởng")
+
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_12).click()
+        time.sleep(2)
         try:
-            wait = WebDriverWait(var_stx.driver, 10)
+            wait = WebDriverWait(var_stx.driver, 15)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.chose_reward)))
             time.sleep(2)
         except:
@@ -1341,8 +1673,13 @@ class driver:
 
         var_stx.driver.find_element(By.XPATH, var_stx.chose_reward).click()
         time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.chose_reward_500k).click()
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.chose_reward_500k).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.chose_reward1).click()
         time.sleep(2)
+
         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
         time.sleep(3)
         wait = WebDriverWait(var_stx.driver, 15)
@@ -1373,9 +1710,12 @@ class driver:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(6)
+            var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
@@ -1383,8 +1723,10 @@ class driver:
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_13).click()
-        time.sleep(4)
+        driver.detail_vehicle(self, "Gán xe")
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_13).click()
+        time.sleep(2)
         try:
             var_stx.driver.implicitly_wait(1)
             var_stx.driver.find_element(By.XPATH, var_stx.icon_x3).click()
@@ -1402,17 +1744,35 @@ class driver:
             pass
         var_stx.driver.find_element(By.XPATH, var_stx.chose_vehicle).click()
         time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.chose_vehicle08).click()
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.chose_vehicle08).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.chose_vehicle01).click()
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
-        time.sleep(0.4)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
-                                                 var_stx.toast_message, "Gán xe thành công", "_LaiXe_Gan.png")
+        time.sleep(1)
+
+        try:
+            wait = WebDriverWait(var_stx.driver, 3)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.toast_message)))
+            module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
+                                                     var_stx.toast_message, "Gán xe thành công", "_LaiXe_GanXe.png")
+        except:
+            module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
+                                                     var_stx.assign_vehicle_success, "Gán xe thành công.", "_LaiXe_GanXe.png")
+
 
         time.sleep(4)
         try:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.assign_close1).click()
+            time.sleep(2)
+        except:
+            pass
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.assign_close2).click()
             time.sleep(2)
         except:
             pass
@@ -1432,8 +1792,6 @@ class driver:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1441,9 +1799,10 @@ class driver:
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
+        driver.detail_vehicle(self, "Lấy mã kích hoạt")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).click()
-        time.sleep(3)
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).click()
+        time.sleep(1)
         try:
             wait = WebDriverWait(var_stx.driver, 10)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.get_code_active)))
@@ -1480,8 +1839,6 @@ class driver:
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
 
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1489,8 +1846,10 @@ class driver:
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_16).click()
-        time.sleep(4)
+        driver.detail_vehicle(self, "Đổi mật khẩu")
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_16).click()
+        time.sleep(2)
 
         try:
             wait = WebDriverWait(var_stx.driver, 10)
@@ -1531,8 +1890,6 @@ class driver:
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
 
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1540,9 +1897,10 @@ class driver:
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
+        driver.detail_vehicle(self, "Chi tiết thiết bị")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_18).click()
-        time.sleep(4)
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_18).click()
+        time.sleep(2)
         try:
             wait = WebDriverWait(var_stx.driver, 10)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.update_driver_imei)))
@@ -1608,8 +1966,6 @@ class driver:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1618,8 +1974,10 @@ class driver:
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_21).click()
-        time.sleep(4)
+        driver.detail_vehicle(self, "Cấu hình lái xe")
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_21).click()
+        time.sleep(2)
 
         try:
             wait = WebDriverWait(var_stx.driver, 10)
@@ -1687,8 +2045,6 @@ class driver:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1696,14 +2052,16 @@ class driver:
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
+        driver.detail_vehicle(self, "SyncGSM")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_20).click()
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_20).click()
         time.sleep(2)
         wait = WebDriverWait(var_stx.driver, 15)
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.toast_message)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
                                                  var_stx.toast_message, "Đồng bộ dữ liệu GSM thất bại, vui lòng kiểm tra thông tin thành phố Cấu hình tại đây",
                                                   "_LaiXe_SyncGSM.png")
+
 
 
     def driver_delete(self, code, eventname, result):
@@ -1719,8 +2077,6 @@ class driver:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(10)
         var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1728,20 +2084,35 @@ class driver:
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_17).click()
+        # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_17).click()
+        driver.detail_vehicle(self, "Xóa")
+
         time.sleep(3)
 
         try:
             wait = WebDriverWait(var_stx.driver, 10)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.confirm)))
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.delete_driver_confirm)))
             time.sleep(2)
         except:
             pass
 
+        try:
+            check_name = var_stx.driver.find_element(By.XPATH, var_stx.name_driver_delete).text
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            driver.driver_x(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(3)
+            scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+            driver.detail_vehicle(self, "Xóa")
+            check_name = var_stx.driver.find_element(By.XPATH, var_stx.name_driver_delete).text
 
-        check_name = var_stx.driver.find_element(By.XPATH, var_stx.name_driver_delete).text
         if check_name == data:
-            var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
+            var_stx.driver.find_element(By.XPATH, var_stx.delete_driver_confirm).click()
             element = WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, var_stx.delete_driver_succes)))
             time.sleep(0.2)
             module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",

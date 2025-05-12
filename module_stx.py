@@ -1450,6 +1450,23 @@ def retest_casenone(self):
                     caseid_stx.caseid_wallet37(self)
             except:
                 module_other_stx.swich_tab_0()
+            try:
+                if case == 'Wallet38':
+                    caseid_stx.caseid_wallet38(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Wallet39':
+                    caseid_stx.caseid_wallet39(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Wallet40':
+                    caseid_stx.caseid_wallet40(self)
+            except:
+                module_other_stx.swich_tab_0()
+
+
 
             try:
                 if case == 'Promotion01':
@@ -1919,6 +1936,16 @@ def retest_casenone(self):
             except:
                 module_other_stx.swich_tab_0()
             try:
+                if case == 'Customer26_1':
+                    caseid_stx.caseid_customer26_1(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer26_2':
+                    caseid_stx.caseid_customer26_2(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
                 if case == 'Customer27':
                     caseid_stx.caseid_customer27(self)
             except:
@@ -2201,6 +2228,57 @@ def retest_casenone(self):
             try:
                 if case == 'Customer83':
                     caseid_stx.caseid_customer83(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer84':
+                    caseid_stx.caseid_customer84(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer85':
+                    caseid_stx.caseid_customer85(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer86':
+                    caseid_stx.caseid_customer86(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer87':
+                    caseid_stx.caseid_customer87(self)
+            except:
+                module_other_stx.swich_tab_0()
+
+            try:
+                if case == 'Customer88':
+                    caseid_stx.caseid_customer88(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer89':
+                    caseid_stx.caseid_customer89(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer90':
+                    caseid_stx.caseid_customer90(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer91':
+                    caseid_stx.caseid_customer91(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer92':
+                    caseid_stx.caseid_customer92(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Customer93':
+                    caseid_stx.caseid_customer93(self)
             except:
                 module_other_stx.swich_tab_0()
 
@@ -4171,6 +4249,23 @@ def retest_casefail(self):
                 caseid_stx.caseid_wallet37(self)
         except:
             module_other_stx.swich_tab_0()
+        try:
+            if case == 'Wallet38':
+                caseid_stx.caseid_wallet38(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Wallet39':
+                caseid_stx.caseid_wallet39(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Wallet40':
+                caseid_stx.caseid_wallet40(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+
 
         try:
             if case == 'Promotion01':
@@ -4634,6 +4729,16 @@ def retest_casefail(self):
         except:
             module_other_stx.swich_tab_0()
         try:
+            if case == 'Customer26_1':
+                caseid_stx.caseid_customer26_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer26_2':
+                caseid_stx.caseid_customer26_2(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
             if case == 'Customer27':
                 caseid_stx.caseid_customer27(self)
         except:
@@ -4916,6 +5021,57 @@ def retest_casefail(self):
         try:
             if case == 'Customer83':
                 caseid_stx.caseid_customer83(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer84':
+                caseid_stx.caseid_customer84(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer85':
+                caseid_stx.caseid_customer85(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer86':
+                caseid_stx.caseid_customer86(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer87':
+                caseid_stx.caseid_customer87(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+        try:
+            if case == 'Customer88':
+                caseid_stx.caseid_customer88(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer89':
+                caseid_stx.caseid_customer89(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer90':
+                caseid_stx.caseid_customer90(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer91':
+                caseid_stx.caseid_customer91(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer92':
+                caseid_stx.caseid_customer92(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer93':
+                caseid_stx.caseid_customer93(self)
         except:
             module_other_stx.swich_tab_0()
 
@@ -6891,7 +7047,21 @@ def run_all(self):
                 caseid_stx.caseid_wallet37(self)
         except:
             module_other_stx.swich_tab_0()
-
+        try:
+            if case == 'Wallet38':
+                caseid_stx.caseid_wallet38(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Wallet39':
+                caseid_stx.caseid_wallet39(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Wallet40':
+                caseid_stx.caseid_wallet40(self)
+        except:
+            module_other_stx.swich_tab_0()
 
 
         try:
@@ -7366,6 +7536,16 @@ def run_all(self):
         except:
             module_other_stx.swich_tab_0()
         try:
+            if case == 'Customer26_1':
+                caseid_stx.caseid_customer26_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer26_2':
+                caseid_stx.caseid_customer26_2(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
             if case == 'Customer27':
                 caseid_stx.caseid_customer27(self)
         except:
@@ -7648,6 +7828,57 @@ def run_all(self):
         try:
             if case == 'Customer83':
                 caseid_stx.caseid_customer83(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer84':
+                caseid_stx.caseid_customer84(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer85':
+                caseid_stx.caseid_customer85(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer86':
+                caseid_stx.caseid_customer86(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer87':
+                caseid_stx.caseid_customer87(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+        try:
+            if case == 'Customer88':
+                caseid_stx.caseid_customer88(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer89':
+                caseid_stx.caseid_customer89(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer90':
+                caseid_stx.caseid_customer90(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer91':
+                caseid_stx.caseid_customer91(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer92':
+                caseid_stx.caseid_customer92(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Customer93':
+                caseid_stx.caseid_customer93(self)
         except:
             module_other_stx.swich_tab_0()
 
@@ -8663,7 +8894,7 @@ def login(self):
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
     rownum = 10
-    while (rownum < 26):
+    while (rownum < 30):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -8948,7 +9179,7 @@ def minitor(self):
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
     rownum = 27
-    while (rownum < 124):
+    while (rownum < 130):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -10593,7 +10824,7 @@ def vehicle(self):
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
     rownum = 125
-    while (rownum < 190):
+    while (rownum < 200):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -11838,7 +12069,7 @@ def wallet(self):
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
     rownum = 191
-    while (rownum < 238):
+    while (rownum < 250):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -12048,6 +12279,22 @@ def wallet(self):
                         caseid_stx.caseid_wallet37(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet38':
+                        caseid_stx.caseid_wallet38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet39':
+                        caseid_stx.caseid_wallet39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet40':
+                        caseid_stx.caseid_wallet40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
 
         if i == "2":
             for case in list_mucdo2:
@@ -12236,6 +12483,24 @@ def wallet(self):
                         caseid_stx.caseid_wallet37(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet38':
+                        caseid_stx.caseid_wallet38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet39':
+                        caseid_stx.caseid_wallet39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet40':
+                        caseid_stx.caseid_wallet40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
+
 
         if i == "3":
             for case in list_mucdo3:
@@ -12424,6 +12689,24 @@ def wallet(self):
                         caseid_stx.caseid_wallet37(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet38':
+                        caseid_stx.caseid_wallet38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet39':
+                        caseid_stx.caseid_wallet39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet40':
+                        caseid_stx.caseid_wallet40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
+
 
         if i == "4":
             for case in list_mucdo4:
@@ -12612,6 +12895,23 @@ def wallet(self):
                         caseid_stx.caseid_wallet37(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet38':
+                        caseid_stx.caseid_wallet38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet39':
+                        caseid_stx.caseid_wallet39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Wallet40':
+                        caseid_stx.caseid_wallet40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
 
 
 
@@ -12622,8 +12922,8 @@ def promotion(self):
     list_mucdo4 = []
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
-    rownum = 239
-    while (rownum < 335):
+    rownum = 242
+    while (rownum < 350):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -14008,8 +14308,8 @@ def customer(self):
     list_mucdo4 = []
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
-    rownum = 336
-    while (rownum < 440):
+    rownum = 340
+    while (rownum < 460):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -14165,6 +14465,16 @@ def customer(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Customer26_1':
+                        caseid_stx.caseid_customer26_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer26_2':
+                        caseid_stx.caseid_customer26_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Customer27':
                         caseid_stx.caseid_customer27(self)
                 except:
@@ -14449,6 +14759,58 @@ def customer(self):
                         caseid_stx.caseid_customer83(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer84':
+                        caseid_stx.caseid_customer84(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer85':
+                        caseid_stx.caseid_customer85(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer86':
+                        caseid_stx.caseid_customer86(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer87':
+                        caseid_stx.caseid_customer87(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+                try:
+                    if case == 'Customer88':
+                        caseid_stx.caseid_customer88(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer89':
+                        caseid_stx.caseid_customer89(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer90':
+                        caseid_stx.caseid_customer90(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer91':
+                        caseid_stx.caseid_customer91(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer92':
+                        caseid_stx.caseid_customer92(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer93':
+                        caseid_stx.caseid_customer93(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
 
         if i == "2":
             for case in list_mucdo2:
@@ -14583,6 +14945,16 @@ def customer(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Customer26_1':
+                        caseid_stx.caseid_customer26_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer26_2':
+                        caseid_stx.caseid_customer26_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Customer27':
                         caseid_stx.caseid_customer27(self)
                 except:
@@ -14867,6 +15239,59 @@ def customer(self):
                         caseid_stx.caseid_customer83(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer84':
+                        caseid_stx.caseid_customer84(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer85':
+                        caseid_stx.caseid_customer85(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer86':
+                        caseid_stx.caseid_customer86(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer87':
+                        caseid_stx.caseid_customer87(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+                try:
+                    if case == 'Customer88':
+                        caseid_stx.caseid_customer88(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer89':
+                        caseid_stx.caseid_customer89(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer90':
+                        caseid_stx.caseid_customer90(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer91':
+                        caseid_stx.caseid_customer91(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer92':
+                        caseid_stx.caseid_customer92(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer93':
+                        caseid_stx.caseid_customer93(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
 
         if i == "3":
             for case in list_mucdo3:
@@ -15001,6 +15426,16 @@ def customer(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Customer26_1':
+                        caseid_stx.caseid_customer26_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer26_2':
+                        caseid_stx.caseid_customer26_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Customer27':
                         caseid_stx.caseid_customer27(self)
                 except:
@@ -15285,6 +15720,58 @@ def customer(self):
                         caseid_stx.caseid_customer83(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer84':
+                        caseid_stx.caseid_customer84(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer85':
+                        caseid_stx.caseid_customer85(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer86':
+                        caseid_stx.caseid_customer86(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer87':
+                        caseid_stx.caseid_customer87(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+                try:
+                    if case == 'Customer88':
+                        caseid_stx.caseid_customer88(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer89':
+                        caseid_stx.caseid_customer89(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer90':
+                        caseid_stx.caseid_customer90(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer91':
+                        caseid_stx.caseid_customer91(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer92':
+                        caseid_stx.caseid_customer92(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer93':
+                        caseid_stx.caseid_customer93(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
 
         if i == "4":
             for case in list_mucdo4:
@@ -15419,6 +15906,16 @@ def customer(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Customer26_1':
+                        caseid_stx.caseid_customer26_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer26_2':
+                        caseid_stx.caseid_customer26_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Customer27':
                         caseid_stx.caseid_customer27(self)
                 except:
@@ -15703,7 +16200,57 @@ def customer(self):
                         caseid_stx.caseid_customer83(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer84':
+                        caseid_stx.caseid_customer84(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer85':
+                        caseid_stx.caseid_customer85(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer86':
+                        caseid_stx.caseid_customer86(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer87':
+                        caseid_stx.caseid_customer87(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
+                try:
+                    if case == 'Customer88':
+                        caseid_stx.caseid_customer88(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer89':
+                        caseid_stx.caseid_customer89(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer90':
+                        caseid_stx.caseid_customer90(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer91':
+                        caseid_stx.caseid_customer91(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer92':
+                        caseid_stx.caseid_customer92(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Customer93':
+                        caseid_stx.caseid_customer93(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
 
 def report(self):
@@ -15713,8 +16260,8 @@ def report(self):
     list_mucdo4 = []
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
-    rownum = 441
-    while (rownum < 561):
+    rownum = 445
+    while (rownum < 580):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -17178,8 +17725,8 @@ def admin(self):
     list_mucdo4 = []
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
-    rownum = 562
-    while (rownum < 747):
+    rownum = 576
+    while (rownum < 770):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":

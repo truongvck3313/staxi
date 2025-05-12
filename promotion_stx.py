@@ -73,7 +73,12 @@ class list_promotion:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.list_promotion).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_promotion).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_promotion).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.1 Danh sách khuyến mại",
                                                   var_stx.title_page, "6.1 Danh sách khuyến mại", "_DanhSachKhuyenmai.png")
@@ -139,14 +144,10 @@ class list_promotion:
             list_promotion.list_promotion(self, "", "", "")
 
         list_promotion.list_promotion_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['promotion']['from_day'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(var_stx.data['promotion']['to_day'])
-        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
 
-        name = var_stx.driver.find_element(By.XPATH, var_stx.table_2_2).text
+        name = var_stx.driver.find_element(By.XPATH, var_stx.table_1_2).text
         var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(name)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -249,7 +250,10 @@ class list_promotion:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion_area).click()
         time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_area_mb).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_area_mb).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_area1).click()
         time.sleep(1)
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion_area_mb_dk4).click()
@@ -372,8 +376,8 @@ class list_promotion:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_list_promotion)
         except:
-            list_promotion.list_promotion_add_new(self, "", "", "", "Khuyến mại riêng", "")
-            # list_promotion.list_promotion(self, "", "", "")
+            # list_promotion.list_promotion_add_new(self, "", "", "", "Khuyến mại riêng", "")
+            list_promotion.list_promotion(self, "", "", "")
 
 
         time.sleep(1)
@@ -495,11 +499,12 @@ class list_promotion:
         while (rownum < 1000):
             rownum += 1
             rownum = str(rownum)
-            if sheet["A" + rownum].value == code and sheet["F" + rownum].value != "None":
+            if sheet["A" + rownum].value == code and sheet["F" + rownum].value != None:
                 ma = sheet["A" + rownum].value
                 result1 = sheet["F" + rownum].value
                 print(ma)
                 print(result1)
+                print(sheet["F" + rownum].value)
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
             rownum = int(rownum)
 
@@ -544,7 +549,7 @@ class list_promotion:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_list_promotion)
         except:
-            list_promotion.list_promotion_add_new(self, "", "", "", "Khuyến mại chung", "")
+            list_promotion.list_promotion_add_new(self, "", "", "", "Khuyến mại riêng", "")
 
 
         time.sleep(1)
@@ -574,7 +579,7 @@ class list_promotion:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.update_promotion)
         except:
-            list_promotion.list_promotion(self, "", "", "")
+            list_promotion.list_promotion_update(self, "", "", "")
 
 
         element = var_stx.driver.find_element(By.XPATH, var_stx.save)
@@ -582,7 +587,10 @@ class list_promotion:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.create_list_km).click()
         time.sleep(4.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.fill_code).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.fill_code).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.fill_code1).click()
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.save_list_code).click()
         time.sleep(3)
@@ -645,6 +653,10 @@ class list_promotion:
 
         var_stx.driver.find_element(By.XPATH, path_icon).click()
         time.sleep(4)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, path_check)))
+        time.sleep(1)
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.1 Danh sách khuyến mại",
                                                   path_check, desire, name_image)
 
@@ -704,7 +716,7 @@ class list_promotion:
         name_promotion = var_stx.driver.find_element(By.XPATH, var_stx.table_1_2).text
         if name_promotion == code_promotion:
             var_stx.driver.find_element(By.XPATH, var_stx.list_promotion_delete).click()
-            time.sleep(3)
+            time.sleep(5)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
             except:
@@ -734,8 +746,14 @@ class introduce_list_account:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.introduce_list_account).click()
-        time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.introduce_list_account).click()
+            time.sleep(7)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.introduce_list_account).click()
+            time.sleep(7)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.2 Danh sách tài khoản giới thiệu",
                                                   var_stx.title_page, "6.2 Danh sách tài khoản giới thiệu", "_DanhSachTaiKhoanGioiThieu.png")
 
@@ -822,30 +840,30 @@ class introduce_list_account:
 
     def introduce_list_account_x1(self):
         var_stx.driver.implicitly_wait(0.2)
-        try:
-            tu_ngay = var_stx.driver.find_element(By.XPATH, var_stx.from_day)
-            var_stx.driver.execute_script("arguments[0].value = '';", tu_ngay)
-            time.sleep(0.2)
-        except:
-            pass
-        try:
-            den_ngay = var_stx.driver.find_element(By.XPATH, var_stx.to_day)
-            var_stx.driver.execute_script("arguments[0].value = '';", den_ngay)
-            time.sleep(0.2)
-        except:
-            pass
+        # try:
+        #     tu_ngay = var_stx.driver.find_element(By.XPATH, var_stx.from_day)
+        #     var_stx.driver.execute_script("arguments[0].value = '';", tu_ngay)
+        #     time.sleep(0.2)
+        # except:
+        #     pass
+        # try:
+        #     den_ngay = var_stx.driver.find_element(By.XPATH, var_stx.to_day)
+        #     var_stx.driver.execute_script("arguments[0].value = '';", den_ngay)
+        #     time.sleep(0.2)
+        # except:
+        #     pass
 
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
-            time.sleep(0.3)
-        except:
-            pass
-
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
-            time.sleep(0.3)
-        except:
-            pass
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+        #     time.sleep(0.3)
+        # except:
+        #     pass
+        #
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+        #     time.sleep(0.3)
+        # except:
+        #     pass
 
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.account).clear()
@@ -890,19 +908,27 @@ class introduce_list_account:
 
         introduce_list_account.introduce_list_account_x1(self)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['promotion']['from_day2'])
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(var_stx.data['promotion']['to_day2'])
-        time.sleep(1)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.week_before).click()
+        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.person_code_introduce).click()
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            introduce_list_account.introduce_list_account_x1(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.search)
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.2 Danh sách tài khoản giới thiệu",
                                               var_stx.table_1_2, "", "_DanhSachTaiKhoanGioiThieu_TuNgayDenNgay.png")
 
 
-    def introduce_list_account_search(self, code, eventname, result, path_input, data, path_check, name_image):
+    def introduce_list_account_search(self, code, eventname, result, path_input, path_data, path_check, name_image):
         var_stx.driver.implicitly_wait(5)
         try:
             var_stx.driver.implicitly_wait(2)
@@ -911,12 +937,20 @@ class introduce_list_account:
             introduce_list_account.introduce_list_account(self, "", "", "")
 
         introduce_list_account.introduce_list_account_x1(self)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['promotion']['from_day1'])
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(var_stx.data['promotion']['to_day1'])
-        time.sleep(1)
+        try:
+            data = var_stx.driver.find_element(By.XPATH, path_data).text
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.week_before).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
 
+        data = var_stx.driver.find_element(By.XPATH, path_data).text
         var_stx.driver.find_element(By.XPATH, path_input).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.account).click()
@@ -938,10 +972,10 @@ class introduce_list_account:
         introduce_list_account.introduce_list_account_x1(self)
 
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/11/2024 00:00")
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("25/11/2024 00:00")
-        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.week_before).click()
+        time.sleep(2)
 
         var_stx.driver.find_element(By.XPATH, path_combobox).click()
         time.sleep(1.5)
@@ -968,29 +1002,31 @@ class introduce_list_account:
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
         time.sleep(2.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_account).send_keys("100000"+number)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_account).send_keys("210000"+number)
 
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_my_code_introduce).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_my_code_introduce).send_keys("100000"+number)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_my_code_introduce).send_keys("210000"+number)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_code_persion_introduce).send_keys("KD01")
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_code_persion_introduce)
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_code_persion_introduce).send_keys("KD01")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_code_type_account).click()
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_code_group_account).click()
         time.sleep(0.5)
 
-        if type == "Đã kích hoạt":
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_active_account).click()
-            time.sleep(0.5)
+        # if type == "Đã kích hoạt":
+        #     var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_active_account).click()
+        #     time.sleep(0.5)
 
         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
         time.sleep(3.5)
 
-        module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "100000"+number)
-        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 24, 2, "100000"+number)
+        module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "210000"+number)
+        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 24, 2, "210000"+number)
 
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.2 Danh sách tài khoản giới thiệu",
                                                   var_stx.message, "Lưu tài khoản giới thiệu thành công.", "_DanhSachTaiKhoanGioiThieu_ThemMoi.png")
@@ -1023,10 +1059,19 @@ class introduce_list_account:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_my_code_introduce).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_my_code_introduce).send_keys("100000"+number)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_accoun_my_code_introduce).send_keys("210000"+number)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
         time.sleep(3)
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
+            time.sleep(3)
+            var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
+            time.sleep(3)
+        except:
+            pass
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.2 Danh sách tài khoản giới thiệu",
                                                   var_stx.message, "Lưu tài khoản giới thiệu thành công.", "_DanhSachTaiKhoanGioiThieu_CapNhat.png")
 
@@ -1082,8 +1127,14 @@ class install_new_app:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.config_cckm).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.config_cckm).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.config_cckm).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.install_new_app).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
@@ -1184,7 +1235,11 @@ class install_new_app:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
-        time.sleep(4)
+        time.sleep(2)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.promotion_add_new_name)))
+        time.sleep(2)
+
         var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_name).send_keys("Auto_CaiAppMoi"+number)
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "Auto_CaiAppMoi"+number)
         var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 25, 2, "Auto_CaiAppMoi" + number)
@@ -1275,7 +1330,10 @@ class install_new_app:
         var_stx.driver.find_element(By.XPATH, var_stx.maxium_promotional_amount).send_keys(var_stx.data['promotion']['maxium_promotional_amount'])
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.save).click()
-        time.sleep(10)
+
+        wait = WebDriverWait(var_stx.driver, 15)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_promotion)))
+        time.sleep(1)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
                                                   var_stx.check_promotion, "Khuyến mại đã được tạo thành công", "_CaiAppMoi_ThemMoi.png")
 
@@ -1357,10 +1415,18 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.summary_report_on_promotions_by_company).click()
         time.sleep(3.5)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.1 BC tổng hợp KM theo công ty",
                                                   var_stx.title_page1, "6.4.1 BC tổng hợp KM theo công ty", "_BCTongHopKmTheoCongTy.png")
 
@@ -1381,9 +1447,22 @@ class report:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
         time.sleep(1)
-
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_data2_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/02/2025 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.1 BC tổng hợp KM theo công ty",
                                               var_stx.list_data2_2, "", "_BCTongHopKmTheoCongTy_TimKiem.png")
 
@@ -1428,10 +1507,18 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.detailed_km_reports_by_company).click()
         time.sleep(3.5)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.2 BC chi tiết KM theo công ty",
                                                   var_stx.title_page1, "6.4.2 BC chi tiết KM theo công ty", "_BCChiTietKmTheoCongTy.png")
 
@@ -1455,6 +1542,19 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_data2_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/02/2025 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.2 BC chi tiết KM theo công ty",
                                               var_stx.list_data2_2, "", "_BCChiTietKmTheoCongTy_TimKiem.png")
 
@@ -1499,8 +1599,14 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reports_km_by_day).click()
         time.sleep(3.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.3 BC KM theo ngày",
@@ -1523,9 +1629,22 @@ class report:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
         time.sleep(1)
-
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("08/01/2025 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("15/01/2025 00:00")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.3 BC KM theo ngày",
                                               var_stx.table_1_2, "", "_BCKMTheoNgay_TimKiem.png")
 
@@ -1571,10 +1690,18 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reports_km_by_month).click()
         time.sleep(3.5)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.4 BC KM theo tháng",
                                                   var_stx.title_page1, "6.4.4 BC KM theo tháng", "_BCKMTheoThang.png")
 
@@ -1587,8 +1714,30 @@ class report:
         except:
             report.reports_km_by_month(self, "", "", "")
 
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("12/2024")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("12/2024")
+        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("12/2024")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/2025")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.4 BC KM theo tháng",
                                               var_stx.table_1_2, "", "_BCKMTheoThang_TimKiem.png")
 
@@ -1635,8 +1784,14 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reports_km_by_kh).click()
         time.sleep(3.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.5 BC KM theo KH",
@@ -1659,9 +1814,22 @@ class report:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
         time.sleep(1)
-
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("10/12/2024 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2025 23:59")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.5 BC KM theo KH",
                                               var_stx.table_1_2, "", "_BCKMTheoKH_TimKiem.png")
 
@@ -1708,8 +1876,14 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reports_km_by_lx).click()
         time.sleep(3.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.6 BC KM theo LX",
@@ -1732,9 +1906,22 @@ class report:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
         time.sleep(1)
-
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/12/2024 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.6 BC KM theo LX",
                                               var_stx.table_1_2, "", "_BCKMTheoLX_TimKiem.png")
 
@@ -1781,8 +1968,15 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+
         var_stx.driver.find_element(By.XPATH, var_stx.reports_km_by_customer).click()
         time.sleep(3.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.7 BC KM theo cuốc khách",
@@ -1805,9 +1999,22 @@ class report:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("16/12/2024 13:14")
         time.sleep(1)
-
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_data2_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/12/2024 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/02/2025 13:14")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.7 BC KM theo cuốc khách",
                                               var_stx.list_data2_2, "", "_BCKMTheoCuocKhach_TimKiem.png")
 
@@ -1854,8 +2061,14 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reports_km_not_use).click()
         time.sleep(3.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.8 BC mã KM chưa sử dụng",
@@ -1873,6 +2086,14 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.8 BC mã KM chưa sử dụng",
                                               var_stx.table_1_2, "", "_BCKMChuaSuDung_TimKiem.png")
 
@@ -1917,8 +2138,14 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.report).click()
+            time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.referral_account_summary_report).click()
         time.sleep(3.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.9 BC tổng hợp tài khoản giới thiệu",
@@ -1942,9 +2169,22 @@ class report:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 13:45")
         time.sleep(1)
-
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/11/2024 00:00")
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 13:45")
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.9 BC tổng hợp tài khoản giới thiệu",
                                               var_stx.table_1_2, "", "_BCTongHopTaiKhoanGioithieu_TimKiem.png")
 
@@ -1991,8 +2231,14 @@ class list_account_introduce:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.list_account_introduce).click()
-        time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_account_introduce).click()
+            time.sleep(5)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_account_introduce).click()
+            time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.11 Danh sách loại tài khoản giới thiệu",
                                                   var_stx.title_page, "6.11 Danh sách loại tài khoản giới thiệu", "_DanhSachLoaiTaiKhoanGioithieu.png")
 
@@ -2020,6 +2266,14 @@ class list_account_introduce:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.11 Danh sách loại tài khoản giới thiệu",
                                               var_stx.table_1_2, data, "_DanhSachLoaiTaiKhoanGioithieu_TimKiem.png")
 
@@ -2135,8 +2389,14 @@ class list_group_account_introduce:
 
         var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.list_group_account_introduce).click()
-        time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_group_account_introduce).click()
+            time.sleep(5)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_group_account_introduce).click()
+            time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.12 Danh sách nhóm tài khoản giới thiệu",
                                                   var_stx.title_page, "6.12 Danh sách nhóm tài khoản giới thiệu", "_DanhSachNhomTaiKhoanGioithieu.png")
 
@@ -2163,6 +2423,14 @@ class list_group_account_introduce:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.12 Danh sách nhóm tài khoản giới thiệu",
                                               var_stx.table_1_2, data, "_DanhSachNhomTaiKhoanGioithieu_TimKiem.png")
 

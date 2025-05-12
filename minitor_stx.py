@@ -367,10 +367,10 @@ def check_info_web_excel(code, eventname, result, path_module):
                                'Tổng số khuyến mại', 'Số điện thoại khách hàng', 'Tổng tiền chưa sử dụng khuyến mại', 'Tổng số mã khuyến mại chưa sử dụng', 'Ngày',
                                'Tổng tài khoản', 'KHACH HANG', 'LAI XE', 'NHAN VIEN', 'BAN GIÁM ĐỐC', 'MGT-HDQT-100k', 'MGT-DDPL-50k', 'Mã hợp đồng', 'Số Serial',
                                'Tên công ty', 'Tên khách hàng', 'Số dư', 'Hạn mức', 'Ngày mở', 'Hạn dùng', 'Loại thẻ', 'Mã cuốc khách', 'Mã cuốc', 'Tên đối tác',
-                                'Khuyến mại', 'Chi tiết phụ phí', 'Phương thức', 'Thanh toán', 'Thanh toán thẻ', 'Ngày dùng', 'Điểm đón', 'Điểm trả', 'Loại',
+                                'Chi tiết phụ phí', 'Phương thức', 'Thanh toán', 'Thanh toán thẻ', 'Ngày dùng', 'Điểm đón', 'Điểm trả', 'Loại',
                                'Ngày nạp tiền', 'Người nạp tiền', 'Mã lái xe', 'Số thẻ', 'Thời gian cuốc đặt', 'Ngày đăng ký', 'Số dư tài khoản chính', 'Số dư tài khoản khuyến mại'
                                'Tổng nạp', 'Tổng tiền sử dụng', 'Ngày nạp tiền gần nhất', 'Tổng số cuốc', 'Ngày phát sinh cuốc gần nhất', 'Serial tặng/nhận', 'Lái xe',
-                               'Khách hàng', 'Cước phí', 'Cước xe', 'Tổng cuốc', 'Tổng không đề cử', 'Tổng khách huỷ', 'Tổng lái xe huỷ', 'Tổng thành công', 'Không có lái xe nhận',
+                               'Khách hàng', 'Cước xe', 'Tổng cuốc', 'Tổng không đề cử', 'Tổng khách huỷ', 'Tổng lái xe huỷ', 'Tổng thành công', 'Không có lái xe nhận',
                                'Cấu hình', 'Nguồn mobile', 'Nguồn điều hành', 'Nguồn vãng lai', 'Tổng khách hủy', 'Tổng lái xe hủy', 'Nguồn khách vẫy', 'Nguồn đối tác',
                                'Phương pháp điều', 'Số lần đề cử', 'Số lái xe đề cử', 'Địa chỉ đón khách', 'Hành Khách', 'Bộ cấu hình điều', 'Lần đề cử', 'Thời gian cuốc đến',
                                'Khoảng cách(m)', 'Thời gian xác nhận', 'Thời gian huỷ cuốc', 'Thời gian gặp khách', 'Địa chỉ trả khách', 'Trạng thái cuốc', 'Khoảng\ncách (m)',
@@ -379,12 +379,12 @@ def check_info_web_excel(code, eventname, result, path_module):
                                'Hoàn thành (5)', 'Quá giờ không nhận (6)', 'Từ chối (7)', 'Nhầm khách (8)', 'Khách hàng hủy (9)', 'Lái xe hủy (10)', 'Số Km theo Gps',
                                'Số Km theo tablet', 'Doanh thu qua điều hành', 'Số cuốc qua điều hành', 'Doanh thu qua mobile', 'Số cuốc qua mobile', 'Doanh thu qua vãng lai',
                                'Số cuốc qua vãng lai', 'Doanh thu cuốc taxi3', 'Số cuốc taxi3', 'Tổng doanh thu', 'Số tiền thu của lái xe', 'Số tiền khuyến mại', 'Doanh thu cuốc từ định vị',
-                               'Số cuốc theo định vị', 'Tổng KM', 'Nguồn cuốc', 'Loại cuốc', 'Thời gian kết thúc',
+                               'Số cuốc theo định vị', 'Tổng KM', 'Nguồn cuốc', 'Loại cuốc', 'Thời gian kết thúc', 'Tổng cuốc',
                                'HTTT khi đặt cuốc', 'HTTT cuốc', 'Km có khách (GPS)', 'Biển số xe (GPS)', 'Số hiệu xe (GPS)', 'Loại xe (GPS)', 'Thời gian đón khách (GPS)', 'Thời gian trả khách (GPS)',
                                'Thời gian đón khách (Đồng hồ - GPS)', 'Thời gian trả khách (Đồng hồ - GPS)', 'Địa điểm đón khách (GPS)', 'Địa điểm trả khách (GPS)', 'Km rỗng (GPS)',
-                               'Tiền đồng hồ (GPS)', 'Tiền thực thu (GPS)', 'Thời gian chờ (GPS)', 'Km có khách GPS (GPS)', 'Tài khoản', 'Nhóm khách hàng',
+                               'Tiền đồng hồ (GPS)', 'Tiền thực thu (GPS)', 'Thời gian chờ (GPS)', 'Km có khách GPS (GPS)', 'Tài khoản', 'Nhóm khách hàng', 'S.cuốc app', 'S.cuốc v.lai',
                                'Hình thức thanh toán', 'Tên loại hàng hóa', 'Phụ phí(%)', 'Mô tả', 'Loại hàng hóa', 'Giá tiền nhỏ nhất', 'Giá tiền lớn nhất', 'Loại phụ phí',
-                               'Giá tiền nhỏ nhất(kg)', 'Giá tiền lớn nhất(kg)']:
+                               'Giá tiền nhỏ nhất(kg)', 'Giá tiền lớn nhất(kg)', 'Loại ví', 'Mã thẻ KH', 'T.gian đặt', 'T.gian kết thúc', 'Mã KM', 'Mã GD', 'T.tin t.toán']:
 
 
             print("name vao 1" + name_column_web)
@@ -399,7 +399,8 @@ def check_info_web_excel(code, eventname, result, path_module):
                 logging.error("Dòng: {}".format(location_data_coloumn))
 
 
-        if name_column_web in ['Km GPS', 'NL tiêu thụ', 'Số tiền', 'Tiền nợ', 'Cước phí(cước thật của cuốc)', 'Cước xe (trừ của khách)', 'Số dư còn lại', 'Phụ phí', 'Loại xe']:
+        if name_column_web in ['Km GPS', 'NL tiêu thụ', 'Số tiền', 'Cước phí', 'Tiền nợ', 'Cước phí(cước thật của cuốc)', 'Cước xe (trừ của khách)', 'Số dư còn lại', 'Phụ phí', 'Loại xe',
+                               'D.thu ĐH', 'S.cuốc ĐH', 'D.thu App', 'D.thu v.lai', 'D.thu đ.vị', 'Tổng d.thu', 'S.tiền KM', 'Khoảng cách', 'S.tiền thu LX', 'Khuyến mại', 'Cước xe (trừ của khách)']:
             print("name vao 2" + name_column_web)
             try:
                 data_column_web = ''.join(re.findall(r'\d+', data_column_web))[:3]
@@ -432,6 +433,51 @@ def check_info_web_excel(code, eventname, result, path_module):
             else:
                 logging.error("False")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Dữ liệu web: {}\nDữ liệu excel: {}\n Dòng: {}"
+                                          .format(data_column_web, data_column_excel, location_data_coloumn))
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                logging.error("Dòng: {}".format(location_data_coloumn))
+
+
+
+
+def check_info_web_excel1(code, eventname, result, path_module):
+    row = 119
+    logging.info("-------------------------")
+    logging.info(path_module)
+    logging.info("Mã - " + code)
+    logging.info("Tên sự kiện - " + eventname)
+    logging.info("Kết quả - " + result)
+
+
+    while (row < 150):
+        row += 1
+        name_column_web = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 1))
+        data_column_web = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 2))
+        data_column_excel = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 4))
+        location_data_coloumn = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 6))
+        print(f" row1: {row}")
+
+        if name_column_web == "None":
+            break
+
+        logging.info("-------------------------")
+        logging.info("Dữ liệu web: " + data_column_web)
+        logging.info("Dữ liệu excel: " + data_column_excel)
+        if data_column_web == data_column_excel:
+            logging.info("True")
+            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+        else:
+            print("sửa data web: {}".format(data_column_web[0:2]))
+            print("sửa data excel: {}".format(data_column_excel[0:2]))
+            data_column_web = ''.join(re.findall(r'\d+', data_column_web))
+            data_column_excel = ''.join(re.findall(r'\d+', data_column_excel))
+
+            if data_column_web[0:2] == data_column_excel[0:2]:
+                logging.info("True")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            else:
+                logging.error("False")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Dữ liệu web:: {}\nDữ liệu excel: {} \nDòng: {}"
                                           .format(data_column_web, data_column_excel, location_data_coloumn))
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
                 logging.error("Dòng: {}".format(location_data_coloumn))
@@ -525,7 +571,12 @@ class vehicle_online:
         # login_stx.login.login_stx(self, var_stx.data['login']['tk_admin'], var_stx.data['login']['mk_admin'])
         var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Giám sát - Xe online 1.2",
                                                  var_stx.title_page, "1.2 Xe online", "_GiamSat_XeOnline.png")
@@ -538,7 +589,12 @@ class vehicle_online:
 
         var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
         time.sleep(2.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Giám sát - Xe online 1.2",
                                                  var_stx.title_page, "1.2 Xe online", "_GiamSat_XeOnline.png")
@@ -1254,12 +1310,17 @@ class route:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.StrFromDate).send_keys(from_date)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_account).click()
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.get_data).click()
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.get_data).click()
         time.sleep(10)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_data2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.get_data).click()
+            time.sleep(10)
 
         logging.info("-------------------------")
         logging.info("Giám sát - Lộ trình 1.7")
@@ -1422,9 +1483,19 @@ class minitor_vehicle:
     def minitor_vehicle(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         login_stx.login.login_stx_company(self, var_stx.data['login']['tk_company'], var_stx.data['login']['mk_company'])
-        var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Giám sát - Giám sát xe 1.3",
                                                  var_stx.title_page, "1.3 Giám sát xe", "_GiamSatXe.png")
@@ -1658,7 +1729,12 @@ class minitor_vehicle:
 
         del var_stx.driver.requests
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle_status1).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle_status1).click()
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle_status1).click()
         time.sleep(3)
         get_src_vehicle("1", "/Content/themes/img/RedCar.png", -30)
         path_src = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 6, 2))
@@ -1684,9 +1760,9 @@ class minitor_vehicle:
 
         #Lấy thông tin popup
         var_stx.driver.find_element(By.XPATH, path_src).click()
-        time.sleep(2)
+        time.sleep(7)
         var_stx.driver.find_element(By.XPATH, var_stx.icon_location).click()
-        time.sleep(1)
+        time.sleep(7)
 
         path_code_dam_popup = var_stx.driver.find_element(By.XPATH, var_stx.path_code_dam_popup).text
         len_code_dam = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 9, 2))
@@ -1848,14 +1924,26 @@ class minitor_vehicle:
         time.sleep(10)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Giám sát - 1.9 Giám sát xe (nhóm)",
                                                  var_stx.title_page, "1.9 Giám sát xe (nhóm)", "_GiamSatXeNhom.png")
+
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
+        except:
+            pass
+
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
         except:
             var_stx.driver.refresh()
             time.sleep(15)
+            var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
             var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
+
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
         time.sleep(1)
@@ -2034,25 +2122,41 @@ class minitor_vehicle:
         logging.info("Mã - " + code)
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
-
-        try:
-            info_data = var_stx.driver.find_element(By.XPATH, path_check).text
-            logging.info("Popup Hiện trạng:      - " + info_data)
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Popup Hiện trạng: {}".format(info_data))
-            if info_data != "":
-                logging.info("True")
-                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
-            else:
-                logging.info("False")
-                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+        if name_image == "_GiamSatXeNhom_HienTrang_LoaiXe.png":
+            try:
+                info_data = var_stx.driver.find_element(By.XPATH, path_check).text
+                logging.info("Popup Hiện trạng:      - " + info_data)
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Popup Hiện trạng: {}".format(info_data))
+                if info_data != "":
+                    logging.info("True")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+                else:
+                    var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+            except Exception as e:
                 var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
-        except Exception as e:
-            logging.info("False")
-            var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
-            logging.error("Exception occurred: " + str(e))
+                logging.error("Exception occurred: " + str(e))
+
+        else:
+            try:
+                info_data = var_stx.driver.find_element(By.XPATH, path_check).text
+                logging.info("Popup Hiện trạng:      - " + info_data)
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Popup Hiện trạng: {}".format(info_data))
+                if info_data != "":
+                    logging.info("True")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+                else:
+                    logging.info("False")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                    var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+            except Exception as e:
+                logging.info("False")
+                var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+                logging.error("Exception occurred: " + str(e))
 
 
 

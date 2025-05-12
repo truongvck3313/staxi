@@ -7,7 +7,7 @@ import module_other_stx
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-
+import re
 
 
 
@@ -22,43 +22,10 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 class login:
 
-    # def login_stx(self, user, password):
-    #     var_stx.driver.implicitly_wait(5)
-    #     var_stx.driver.maximize_window()
-    #     var_stx.driver.delete_all_cookies()
-    #     try:
-    #         var_stx.driver.implicitly_wait(1)
-    #         login.logout_stx(self)
-    #         time.sleep(1)
-    #     except:
-    #         pass
-    #     var_stx.driver.set_page_load_timeout(10)
-    #     var_stx.driver.get(var_stx.linktest)
-    #     time.sleep(5)
-    #     try:
-    #         var_stx.driver.implicitly_wait(1)
-    #         login.logout_stx(self)
-    #         time.sleep(1)
-    #     except:
-    #         pass
-    #     var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
-    #     time.sleep(0.5)
-    #     var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-    #     var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
-    #     time.sleep(0.5)
-    #     var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
-    #     var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
-    #     time.sleep(10)
-    #     try:
-    #         wait = WebDriverWait(var_stx.driver, 35)
-    #         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.minitor)))
-    #         time.sleep(2)
-    #     except:
-    #         pass
 
     def login_stx(self, user, password):
+        var_stx.driver.implicitly_wait(0.5)
         try:
-            var_stx.driver.implicitly_wait(5)
             var_stx.driver.maximize_window()
             var_stx.driver.delete_all_cookies()
 
@@ -74,6 +41,7 @@ class login:
                 login.logout_stx(self)
             except NoSuchElementException:
                 pass
+            var_stx.driver.implicitly_wait(5)
 
             WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, var_stx.login_user)))
             time.sleep(2)
@@ -101,6 +69,87 @@ class login:
             print(f"Lỗi không mong đợi: {e}")
 
 
+    def login_select_company(self, user, password, id_company):
+        id_company = str(id_company)
+        var_stx.driver.implicitly_wait(0.5)
+        try:
+            var_stx.driver.maximize_window()
+            var_stx.driver.delete_all_cookies()
+
+            try:
+                login.logout_stx(self)
+            except NoSuchElementException:
+                pass
+
+            var_stx.driver.set_page_load_timeout(10)
+            var_stx.driver.get(var_stx.linktest)
+            time.sleep(5)
+            try:
+                login.logout_stx(self)
+            except NoSuchElementException:
+                pass
+            var_stx.driver.implicitly_wait(5)
+
+            WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, var_stx.login_user)))
+            time.sleep(2)
+
+            username_field = var_stx.driver.find_element(By.XPATH, var_stx.login_user)
+            password_field = var_stx.driver.find_element(By.XPATH, var_stx.login_password)
+
+            username_field.clear()
+            time.sleep(0.5)
+            username_field.send_keys(user)
+            time.sleep(0.5)
+            password_field.clear()
+            time.sleep(0.5)
+            password_field.send_keys(password)
+            time.sleep(0.5)
+
+            login_button = var_stx.driver.find_element(By.XPATH, var_stx.dangnhap)
+            login_button.click()
+
+            WebDriverWait(var_stx.driver, 35).until(EC.element_to_be_clickable((By.XPATH, var_stx.minitor)))
+            time.sleep(2)
+        except TimeoutException as e:
+            print(f"Lỗi: Quá thời gian chờ cho một phần tử - {e}")
+        except Exception as e:
+            print(f"Lỗi không mong đợi: {e}")
+
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.LeftPanelToggle).click()
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, var_stx.LeftPanelToggle).click()
+        time.sleep(1.5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_company).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.LeftPanelToggle).click()
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_company).click()
+        time.sleep(1)
+        print("//*[@onclick='changeCompany("+id_company+");']")
+        var_stx.driver.find_element(By.XPATH, "//*[@onclick='changeCompany("+id_company+");']").click()
+        time.sleep(1)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_company)))
+        time.sleep(1)
+
+        check_company = var_stx.driver.find_element(By.XPATH, var_stx.check_company).text
+        check_company = re.search(r'\[(\d+)\]\s*$', check_company)  # Tìm số trong ngoặc vuông cuối cùng
+        print(check_company)
+        if check_company.group(1) == id_company:
+            print("đã goto tới công ty : {}".format(id_company))
+        else:
+            var_stx.driver.find_element(By.XPATH, var_stx.LeftPanelToggle).click()
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_company).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, "//*[@onclick='changeCompany(" + id_company + ");']").click()
+
+        time.sleep(5)
+        print("đã goto tới công ty : {}".format(id_company))
 
 
     def login_stx2(self, user, password):
@@ -197,6 +246,37 @@ class login:
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.STAXI)))
         time.sleep(2)
 
+
+    @retry(tries=2, delay=2, backoff=1, jitter=5)
+    def login_stx_envang(self, user, password):
+        var_stx.driver.implicitly_wait(5)
+        var_stx.driver.maximize_window()
+        var_stx.driver.delete_all_cookies()
+        try:
+            login.logout_stx(self)
+            time.sleep(1)
+        except:
+            pass
+
+        var_stx.driver.set_page_load_timeout(10)
+        var_stx.driver.get(var_stx.data['login']['envang'])
+        time.sleep(5)
+        try:
+            login.logout_stx(self)
+            time.sleep(1)
+        except:
+            pass
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
+        var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
+        time.sleep(2)
+        wait = WebDriverWait(var_stx.driver, 30)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.STAXI)))
+        time.sleep(2)
 
 
     def login_stx_company(self, user, password):

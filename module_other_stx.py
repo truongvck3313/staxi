@@ -116,8 +116,7 @@ def close_tab():
                 var_stx.driver.close()
     except:
         pass
-
-
+    time.sleep(1)
 
 
 def getRowCount(file, sheetName):
@@ -312,53 +311,72 @@ def swich_tab_0():
     except:
         pass
 
+    # time.sleep(1)
+    # try:
+    #     # Chuyển sang tab hiện tại
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
+    #     time.sleep(0.5)
+    #     # Mở tab mới và chuyển sang tab mới trước khi truy cập URL
+    #     var_stx.driver.execute_script("window.open('');")
+    #     time.sleep(2)
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
+    #     var_stx.driver.get("https://g7test.staxi.vn/")
+    #     time.sleep(3)
+    # except:
+    #     # Trong trường hợp có lỗi, thử lại quy trình
+    #     var_stx.driver.execute_script("window.open('');")
+    #     time.sleep(2)
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
+    #     var_stx.driver.get("https://g7test.staxi.vn/")
+    #     time.sleep(5)
+    #     # Chuyển lại về tab đầu tiên
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
+    #
+    #
+    # time.sleep(1)
+    # try:
+    #     # Chuyển sang tab hiện tại
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
+    #     time.sleep(0.5)
+    #     # Mở tab mới và chuyển sang tab mới trước khi truy cập URL
+    #     var_stx.driver.execute_script("window.open('');")
+    #     time.sleep(2)
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
+    #     var_stx.driver.get("https://g7test.staxi.vn/")
+    #     time.sleep(3)
+    # except:
+    #     # Trong trường hợp có lỗi, thử lại quy trình
+    #     var_stx.driver.execute_script("window.open('');")
+    #     time.sleep(2)
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
+    #     var_stx.driver.get("https://g7test.staxi.vn/")
+    #     time.sleep(5)
+    #     # Chuyển lại về tab đầu tiên
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
+    #
+    #
+    # try:
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[2])
+    #     curr = var_stx.driver.current_window_handle
+    #     for handle in var_stx.driver.window_handles:
+    #         if handle != curr:
+    #             var_stx.driver.switch_to.window(handle)
+    #             var_stx.driver.close()
+    #             time.sleep(1)
+    #     var_stx.driver.switch_to.window(curr)
+    #     time.sleep(0.5)
+    #
+    # except:
+    #     var_stx.driver.execute_script("window.open('');")
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[-1])  # Chuyển đến tab mới nhất
+    #     var_stx.driver.get("https://g7test.staxi.vn/")
+    #     time.sleep(5)
+    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
 
-    time.sleep(1)
     try:
-        # Chuyển sang tab hiện tại
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
         time.sleep(0.5)
-        # Mở tab mới và chuyển sang tab mới trước khi truy cập URL
-        var_stx.driver.execute_script("window.open('');")
-        time.sleep(2)
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-        var_stx.driver.get("https://g7test.staxi.vn/")
-        time.sleep(3)
     except:
-        # Trong trường hợp có lỗi, thử lại quy trình
-        var_stx.driver.execute_script("window.open('');")
-        time.sleep(2)
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-        var_stx.driver.get("https://g7test.staxi.vn/")
-        time.sleep(5)
-        # Chuyển lại về tab đầu tiên
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-
-
-    time.sleep(1)
-    try:
-        # Chuyển sang tab hiện tại
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-        time.sleep(0.5)
-        # Mở tab mới và chuyển sang tab mới trước khi truy cập URL
-        var_stx.driver.execute_script("window.open('');")
-        time.sleep(2)
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-        var_stx.driver.get("https://g7test.staxi.vn/")
-        time.sleep(3)
-    except:
-        # Trong trường hợp có lỗi, thử lại quy trình
-        var_stx.driver.execute_script("window.open('');")
-        time.sleep(2)
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-        var_stx.driver.get("https://g7test.staxi.vn/")
-        time.sleep(5)
-        # Chuyển lại về tab đầu tiên
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-
-
-    try:
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[2])
         curr = var_stx.driver.current_window_handle
         for handle in var_stx.driver.window_handles:
             if handle != curr:
@@ -366,16 +384,13 @@ def swich_tab_0():
                 var_stx.driver.close()
                 time.sleep(1)
         var_stx.driver.switch_to.window(curr)
-        time.sleep(0.5)
-
-    except:
-        var_stx.driver.execute_script("window.open('');")
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[-1])  # Chuyển đến tab mới nhất
-        var_stx.driver.get("https://g7test.staxi.vn/")
-        time.sleep(5)
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
+        time.sleep(1)
 
 
+    # Khởi tạo lại trình duyệt
+    var_stx.restart_driver()
+    var_stx.driver.get(var_stx.linktest)
+    time.sleep(10)
 
 
 

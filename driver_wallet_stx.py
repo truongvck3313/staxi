@@ -5,6 +5,19 @@ from selenium.webdriver.common.by import By
 import module_other_stx
 import login_stx
 import minitor_stx
+import report_stx
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20,7 +33,12 @@ class list_wallet_driver:
 
         var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.1 Danh sách ví lái xe",
                                                   var_stx.title_page, "3.1 Danh sách ví lái xe", "_DanhSachViLaiXe.png")
@@ -93,7 +111,14 @@ class list_wallet_driver:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
-
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_data3_4)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver_search_inpuut).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
 
         data = var_stx.driver.find_element(By.XPATH, path_data).text
         var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver_search_inpuut).clear()
@@ -126,10 +151,30 @@ class list_wallet_driver:
         time.sleep(7)
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(6)
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.not_role)
+            var_stx.driver.back()
+            time.sleep(5)
+        except:
+            print("n0")
+
+
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            var_stx.driver.find_element(By.XPATH, var_stx.not_role)
+            var_stx.driver.back()
+            time.sleep(5)
+        except:
+            print("n0.1")
+
+
+
         minitor_stx.get_info_web()
         try:
             minitor_stx.get_info_excel1(5, "Sheet 1")
         except:
+            print("n1")
             var_stx.driver.refresh()
             time.sleep(7)
             var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver_search_inpuut).clear()
@@ -142,7 +187,7 @@ class list_wallet_driver:
             time.sleep(7)
             minitor_stx.get_info_web()
             minitor_stx.get_info_excel1(5, "Sheet 1")
-
+            print("n2")
         minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.1 Danh sách ví lái xe")
 
 
@@ -332,7 +377,11 @@ class list_wallet_driver:
         time.sleep(4)
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        except:
+            time.sleep(3)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         logging.info("-------------------------")
         logging.info("VÍ LÁI XE - 3.1 Danh sách ví lái xe")
@@ -342,7 +391,7 @@ class list_wallet_driver:
         try:
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(page)
-            name_driver = var_stx.driver.find_element(By.XPATH, var_stx.list_data2_5).text
+            name_driver = var_stx.driver.find_element(By.XPATH, var_stx.ag1_9).text
             print(name_driver)
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}\nTên lái xe: {}"
                                        .format(page, name_driver))
@@ -373,10 +422,15 @@ class recharge:
 
     def pay_money_into_the_driver_wallet(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
-        login_stx.login.login_stx_g7test(self, var_stx.data['login']['tk_admin_test'],  var_stx.data['login']['mk_admin_test'])
+        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])
         var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.pay_money_into_the_driver_wallet).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.pay_money_into_the_driver_wallet).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.pay_money_into_the_driver_wallet).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.2 Đóng tiền vào ví lái xe",
                                                   var_stx.title_page, "3.2 Đóng tiền vào ví lái xe", "_DongTienVaoViXe.png")
@@ -417,10 +471,15 @@ class withdraw:
 
     def withdraw_money_from_driver_wallet(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
-        login_stx.login.login_stx_g7test(self, var_stx.data['login']['tk_admin_test'],  var_stx.data['login']['mk_admin_test'])
+        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])
         var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.Withdraw_money_from_driver_wallet).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.Withdraw_money_from_driver_wallet).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.Withdraw_money_from_driver_wallet).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.3 Rút tiền từ ví lái xe",
                                                   var_stx.title_page, "3.3 Rút tiền từ ví lái xe", "_RutTienTuViXe.png")
@@ -496,10 +555,15 @@ class transaction_confirmation:
 
     def transaction_confirmation(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
-        login_stx.login.login_stx_g7test(self, var_stx.data['login']['tk_admin_test'],  var_stx.data['login']['mk_admin_test'])
+        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])
         var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.transaction_confirmation).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.transaction_confirmation).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.transaction_confirmation).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.4 Xác nhận giao dịch",
                                                   var_stx.title_page, "3.4 Xác nhận giao dịch", "_XacNhanGiaoDich.png")
@@ -670,12 +734,13 @@ class transaction_confirmation:
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
         try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(1)
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(page)
-            code1 = var_stx.driver.find_element(By.XPATH, var_stx.list_data2_5).text
-            print(code1)
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}\nMã giao dịch: {}".format(page, code1))
-            if (page == "3.11 Lịch sử thanh toán") and (code != ""):
+            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}".format(page))
+            if page == "3.11 Lịch sử thanh toán":
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
             else:
                 logging.info("False")
@@ -738,7 +803,12 @@ class wallet_history:
 
         var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.wallet_history).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.wallet_history).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.wallet_history).click()
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
                                                  var_stx.title_page, "3.5 Lịch sử ví tiền", "_LichSuViTien.png")
@@ -793,12 +863,26 @@ class wallet_history:
 
 
         date = var_stx.driver.find_element(By.XPATH, var_stx.from_day1).get_attribute("value")
+        print(date)
         date1 = date.split(" ")[0]
-        # date1 = date[0:10]
+
+        day = date1.split("/")[0]
+        day = int(day)
+        day = str(day)
+        month = date1.split("/")[1]
+        month = int(month)
+        month = str(month)
+        year = date1.split("/")[2]
+
+        date1 = day + "/" + month + "/" + year
+        print(date1)
+
         print(date1)
         date2 = date1 + " 00:00"
         date3 = date1 + " 23 :00"
-        print(date)
+
+
+
         wallet_history.wallet_history_x(self)
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(date2)
@@ -861,7 +945,55 @@ class wallet_history:
                                                   path_check, data, name_image)
 
 
-    def wallet_history_bombobox(self, code, eventname, result, data_from_day, data_to_day, button, path_check, desire, name_image):
+
+
+    def wallet_history_search_scroll(self, code, eventname, result, path_data, path_input, path_check, name_image):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_wallet_history)
+        except:
+            wallet_history.wallet_history(self, "", "", "")
+
+
+        wallet_history.wallet_history_x(self)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(3.5)
+        scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
+        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
+        time.sleep(1.5)
+        data = var_stx.driver.find_element(By.XPATH, path_data).text
+        print(data)
+        var_stx.driver.find_element(By.XPATH, path_input).send_keys(data)
+        time.sleep(1)
+        ag1_2 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_10).text
+        print("ag1_10: {}".format(ag1_2))
+        ag1_3 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_11).text
+        print("ag1_11: {}".format(ag1_3))
+        ag1_4 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_12).text
+        print("ag1_12: {}".format(ag1_4))
+        ag1_5 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_13).text
+        print("ag1_13: {}".format(ag1_5))
+        # ag1_6 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_14).text
+        # print("ag1_10: {}".format(ag1_6))
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(5)
+        module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
+                                                  path_check, data, name_image)
+        ag1_2 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_10).text
+        print("ag1_10: {}".format(ag1_2))
+        ag1_3 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_11).text
+        print("ag1_11: {}".format(ag1_3))
+        ag1_4 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_12).text
+        print("ag1_12: {}".format(ag1_4))
+        ag1_5 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_13).text
+        print("ag1_13: {}".format(ag1_5))
+
+        var_stx.driver.refresh()
+        time.sleep(5)
+
+
+    def wallet_history_bombobox(self, code, eventname, result, button, path_check, desire, name_image):
         var_stx.driver.implicitly_wait(5)
         try:
             var_stx.driver.implicitly_wait(2)
@@ -870,20 +1002,17 @@ class wallet_history:
             wallet_history.wallet_history(self, "", "", "")
 
         wallet_history.wallet_history_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(data_from_day)
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(data_to_day)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, button).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        a = var_stx.driver.find_element(By.XPATH, path_check).text
+        print(a)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
                                                   path_check, desire, name_image)
 
@@ -896,15 +1025,43 @@ class wallet_history:
         except:
             wallet_history.wallet_history(self, "", "", "")
 
+        wallet_history.wallet_history_x(self)
 
-        wallet_history.wallet_history_bombobox(self, "", "", "", "16/12/2024 00:00", "16/12/2024 15:26",
-                                               var_stx.WalletOperationType1, "", "", "")
-
-
-        var_stx.driver.find_element(By.XPATH, var_stx.wallet_history_detail).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+        time.sleep(1)
+        # var_stx.driver.find_element(By.XPATH, var_stx.name_driver_sdt).clear()
+        # time.sleep(0.5)
+        # var_stx.driver.find_element(By.XPATH, var_stx.name_driver_sdt).send_keys("bathao")
+        # time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
-        var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-        time.sleep(3)
+        scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
+        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
+        time.sleep(1)
+
+        n = 0
+        while (n < 25):
+            n = n + 1
+            n = str(n)
+            path_icon = "//*[@class='ag-center-cols-viewport']/div/div[" + n + "]//*[@class='fa fa-angle-double-right']"
+            try:
+                var_stx.driver.find_element(By.XPATH, path_icon).click()
+                time.sleep(5)
+                var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
+                time.sleep(3)
+                wait = WebDriverWait(var_stx.driver, 20)
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_1)))
+                break
+            except:
+                pass
+            n = int(n)
+
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.ag1_button).click()
+        # time.sleep(5)
+
         logging.info("-------------------------")
         logging.info("VÍ LÁI XE - 3.5 Lịch sử ví tiền")
         logging.info("Mã - " + code)
@@ -945,36 +1102,34 @@ class wallet_history:
         except:
             wallet_history.wallet_history(self, "", "", "")
 
-        wallet_history.wallet_history_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(5)
-        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel6).click()
         time.sleep(7)
-        minitor_stx.get_info_web()
+        report_stx.get_info_web4()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel1(5, "Sheet 1")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
-            var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+            var_stx.driver.find_element(By.XPATH, var_stx.export_excel6).click()
             time.sleep(7)
-            minitor_stx.get_info_web()
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            report_stx.get_info_web4()
+            minitor_stx.get_info_excel1(5, "Sheet 1")
 
-        minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.1 Danh sách ví lái xe")
+        minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền")
 
 
     def wallet_history_print(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
-        login_stx.login.login_stx_g7test(self, var_stx.data['login']['tk_admin_test'],  var_stx.data['login']['mk_admin_test'])
-        var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
-        time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.wallet_history).click()
-        time.sleep(2.5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_wallet_history)
+        except:
+            wallet_history.wallet_history(self, "", "", "")
 
-        wallet_history.wallet_history_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(5)
+        # wallet_history.wallet_history_x(self)
+        # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        # time.sleep(5)
         var_stx.driver.find_element(By.XPATH, var_stx.print_data).click()
         time.sleep(3)
         logging.info("False")

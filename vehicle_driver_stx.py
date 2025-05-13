@@ -1350,8 +1350,8 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
             # var_stx.driver.find_element(By.XPATH, var_stx.STAXI)
         except:
-            # driver.driver_add_new(self, "", "", "")
-            driver.driver(self, "", "", "")
+            driver.driver_add_new(self, "", "", "")
+            # driver.driver(self, "", "", "")
 
 
         driver1 = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))

@@ -1,6 +1,3 @@
-2025/04/11-08:23:54.946 3ac8 Reusing MANIFEST C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\file\Profile 30\Default\shared_proto_db/MANIFEST-000001
-2025/04/11-08:23:54.948 3ac8 Recovering log #3
-2025/04/11-08:23:54.969 3ac8 Reusing old log C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\file\Profile 30\Default\shared_proto_db/000003.log 
-2025/04/11-08:24:08.542 4370 Level-0 table #5: started
-2025/04/11-08:24:08.556 4370 Level-0 table #5: 121530 bytes OK
-2025/04/11-08:24:08.565 4370 Delete type=0 #3
+2025/05/13-03:17:16.784 324c Reusing MANIFEST C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\file\Profile 30\Default\shared_proto_db/MANIFEST-000001
+2025/05/13-03:17:16.785 324c Recovering log #4
+2025/05/13-03:17:16.788 324c Reusing old log C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\file\Profile 30\Default\shared_proto_db/000004.log 

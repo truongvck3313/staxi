@@ -2462,12 +2462,24 @@ class admin_10_7:
 
     def admin_10_7_4_x(self):
         var_stx.driver.implicitly_wait(0.2)
-        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-        time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("07/04/2025")
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
-        time.sleep(1.5)
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        #     time.sleep(2)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("07/04/2025")
+        #     time.sleep(0.5)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        #     time.sleep(1.5)
+        # except:
+        #     pass
+        #
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+        #     time.sleep(0.5)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+        #     time.sleep(0.5)
+        # except:
+        #     pass
+
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.title).clear()
             time.sleep(0.2)

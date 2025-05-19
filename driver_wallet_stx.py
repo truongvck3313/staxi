@@ -374,9 +374,15 @@ class list_wallet_driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         var_stx.driver.find_element(By.XPATH, var_stx.icon_history).click()
-        time.sleep(4)
+        time.sleep(10)
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-        time.sleep(2)
+        time.sleep(5)
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.search)))
+        except:
+            pass
+
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         except:

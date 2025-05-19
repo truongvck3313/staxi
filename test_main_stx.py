@@ -21,16 +21,15 @@ class Test(unittest.TestCase):
         module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
         module_other_stx.clear_log()
         module_other_stx.delete_image()
-        # module_stx.ModuleTest()
-        # module_stx.retest_casenone(self)
-        # module_stx.retest_casefail(self)
-        caseid_stx.caseid_minitor01(self)
-        caseid_stx.caseid_minitor02(self)
-
+        module_stx.ModuleTest()
+        module_stx.retest_casenone(self)
+        module_stx.retest_casefail(self)
         try:
             module_other_stx.notification_telegram()
         except:
             pass
+        module_other_stx.call_telegram()
+
 
 
 

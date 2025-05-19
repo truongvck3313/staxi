@@ -971,11 +971,13 @@ class introduce_list_account:
 
         introduce_list_account.introduce_list_account_x1(self)
 
-
-        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-        time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.week_before).click()
-        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.week_before).click()
+            time.sleep(2)
+        except:
+            pass
 
         var_stx.driver.find_element(By.XPATH, path_combobox).click()
         time.sleep(1.5)

@@ -45,6 +45,19 @@ def appendData(file, sheetName, rowum, columnno, data):
     wordbook.save(file)
 
 
+def writeData_append(file, sheetName, rowum, columnno, new_data):
+    workbook = openpyxl.load_workbook(file)
+    sheet = workbook[sheetName]
+    # Lấy nội dung cũ
+    current_value = sheet.cell(row=rowum, column=columnno).value
+    if current_value is None:
+        current_value = ""
+    # Ghi tiếp vào nội dung cũ
+    sheet.cell(row=rowum, column=columnno).value = str(current_value) + str(new_data)
+    workbook.save(file)
+
+
+
 
 #đọc file config
 f = open("file_config.txt", 'r')
@@ -113,6 +126,27 @@ login_password = "//*[@placeholder='Mật khẩu']"
 login_remember = "//*[@id='rememberLogin']"
 dangnhap = "//*[@id='btnSubmit']"
 
+
+
+calling = By.XPATH, "//*[@class='modal-content custom-scroll']/div[4]/span"
+waitting = By.XPATH, "//*[text()='waiting...']"
+tele_search_input = By.XPATH, "//*[@id='telegram-search-input']"
+tele_search_input1 = By.XPATH, "//*[@class='input-search']/input"
+tele_search_name1b = By.XPATH, "//*[@class='search-group search-group-contacts']/ul/a[1]/div[3]/div[1]/span"
+
+tele_search_name1 = By.XPATH, "//*[@class='search-section']/div[1]/div//*[@role='button']"
+tele_profile_name = By.XPATH, "//*[@class='ChatInfo']//*[@role='button']"
+tele_profile_name1 = By.XPATH, "//*[@class='user-title']/span"
+tele_profile_phone = By.XPATH, "//*[@class='ChatExtra']/div[1]//*[@class='title']"
+tele_profile_tag = By.XPATH, "//*[@class='ChatExtra']/div[2]//*[@class='title']"
+tele_profile_call = By.XPATH, "//*[@class='HeaderActions']//*[@class='icon icon-phone']"
+tele_profile_end_call = By.XPATH, "//*[@class='modal-content custom-scroll']//*[@class='icon icon-phone-discard']"
+tele_profile_phone1 = By.XPATH, "//*[@class='profile-content']/div[3]/div/div/div[1]/div[3]"
+tele_profile_tag1 = By.XPATH, "//*[@class='profile-content']/div[3]/div/div/div[2]/div[3]"
+hopthoai_input1 = By.XPATH, "//*[@class='input-message-container']/div[1]"
+tele_profile_call1 = By.XPATH, "//*[@class='chat-utils']/button[3]/span"
+calling1 = By.XPATH, "//*[@class='call-subtitle']/div/span"
+tele_profile_end_call1 = By.XPATH, "//*[@class='call-button rp-overflow rp call-button-red']/span"
 
 
 
@@ -1235,6 +1269,8 @@ new_password = "//*[@placeholder='Mật khẩu mới']"
 fil_again_pass_word = "//*[@placeholder='Nhập lại mật khẩu']"
 LockActiveCodeOld = "//*[@id='LockActiveCodeOld']"
 coppy = "//*[text()='Sao chép']"
+Source = "//*[@id='Source']"
+Source_vanglai = "//*[@id='Source']//*[text()='Nguồn vãng lai']"
 get_code_active_new = "//*[text()='Lấy mã kích hoạt mới']"
 get_code_active_exit = "//*[@id='ActiveCode']//*[text()='Thoát']"
 assign_role_user = "//*[text()='GÁN VAI TRÒ NGƯỜI DÙNG']"

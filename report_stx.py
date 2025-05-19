@@ -496,27 +496,33 @@ class report_8_1:
 
         var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
         time.sleep(1.5)
-
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("18/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("18/12/2024 08:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("19/12/2024 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("18/12/2024 10:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.Source).click()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.Source_vanglai).click()
+        time.sleep(1)
+
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(5)
+        time.sleep(8)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.list_data2_1)
         except:
+            var_stx.driver.refresh()
+            time.sleep(7)
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
             time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/03/2025 16:32")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/03/2025 14:32")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).clear()
             time.sleep(0.5)
@@ -525,7 +531,7 @@ class report_8_1:
             var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
             time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+            time.sleep(8)
 
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng",
                                               var_stx.list_data2_1, "", "_BaoCaoCuocKhachTong_TimKiem.png")
@@ -581,7 +587,7 @@ class report_8_1:
             report_8_1.report_8_1_0_search(self, "", "", "")
 
         var_stx.driver.find_element(By.XPATH, var_stx.search_12_button).click()
-        time.sleep(5)
+        time.sleep(10)
         module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng",
                                                         "_BaoCaoCuocKhachTong_ExcelFull.xlsx", "_BaoCaoCuocKhachTong_XuatExcelDayDuThongTin.png")
 

@@ -4,6 +4,7 @@ import module_other_stx
 import var_stx
 import re
 import caseid_stx
+from collections import defaultdict
 
 
 
@@ -6076,6 +6077,89 @@ def retest_casefail(self):
                 caseid_stx.caseid_admin129(self)
         except:
             module_other_stx.swich_tab_0()
+
+
+
+def retest_serious():
+    var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 290, 2, "")
+    var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 290, 3, "")
+    var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 291, 2, 0)
+    var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 292, 2, "")
+
+    list_casefail = []
+    grouped_by_casefail = defaultdict(list)  # Nhóm theo case_fail
+
+    wordbook = openpyxl.load_workbook(var_stx.checklistpath)
+    sheet = wordbook.get_sheet_by_name("Checklist")
+    rownum = 9
+    while rownum < 1200:
+        rownum += 1
+        row_str = str(rownum)
+
+        if sheet["L" + row_str].value == "x" and sheet["G" + row_str].value == "Fail":
+            case_fail = sheet["A" + row_str].value
+            event_name = sheet["B" + row_str].value
+            account = sheet["C" + row_str].value
+            step = sheet["D" + row_str].value
+            desired_result = sheet["E" + row_str].value
+            actual_result = sheet["F" + row_str].value
+            status = sheet["G" + row_str].value
+
+            grouped_by_casefail[case_fail].append({
+                'event_name': event_name,
+                'account': account,
+                'step': step,
+                'desired_result': desired_result,
+                'actual_result': actual_result,
+                'status': status
+            })
+
+            list_casefail.append(case_fail)
+
+    print(list_casefail)
+    print("Số case fail nghiêm trọng: ", len(list_casefail))
+
+    print("\n====== NHÓM THEO CASE FAIL ======")
+    for case_fail, items in grouped_by_casefail.items():
+        print(f"\nCase Fail: {case_fail} - Số dòng liên quan: {len(items)}")
+
+        # Gom tên case_fail (chỉ 1 vì mỗi nhóm là duy nhất)
+        casefail_str = case_fail
+
+        # Gom tất cả các bước step lại
+        all_steps = "\n".join([item['step'] for item in items if item['step']])
+
+        # Gộp nội dung chi tiết lỗi
+        message_bug = ""
+        for item in items:
+            message_bug += (f" -Mã: {case_fail}\n"
+                            f" -Tên sự kiện: {item['event_name']}\n"
+                            f" -Tài khoản: {item['account']}\n"
+                            f" -Các bước thao tác: {item['step']}\n"
+                            f" -Kết quả mong muốn: {item['desired_result']}\n"
+                            f" -Kết quả thực tế: {item['actual_result']}\n"
+                            f" -Trạng thái: {item['status']}\n"
+                            f"---------------------------------------------------------\n")
+            var_stx.writeData_append(var_stx.path_luutamthoi, "Sheet1", 290, 3, f"{case_fail} {item['event_name']}, \n")
+
+        # Ghi vào Excel
+        var_stx.writeData_append(var_stx.path_luutamthoi, "Sheet1", 290, 2, f"{casefail_str}, ")  # Tên case_fail
+
+        count_casefail = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 290, 2))
+        parts = count_casefail.split(',')
+        cleaned = [p.strip() for p in parts if p.strip()]
+        count = len(cleaned)
+
+        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 291, 2, count)  # Số dòng liên quan
+        var_stx.writeData_append(var_stx.path_luutamthoi, "Sheet1", 292, 2, message_bug)  # Ghi toàn bộ message
+        print(message_bug)
+
+
+
+
+
+
+
 
 
 

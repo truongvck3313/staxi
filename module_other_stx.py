@@ -11,7 +11,8 @@ from retry import retry
 import os
 import shutil
 import module_stx
-
+from playsound import playsound
+from gtts import gTTS
 
 
 
@@ -160,6 +161,167 @@ def writeData(file,sheetName,caseid,columnno,data):
 
 
 
+
+def generate_audio(text, filename):
+    tts = gTTS(text=text, lang='vi')
+    tts.save(filename)
+    print(f"Đã tạo file âm thanh: {filename}")
+
+
+
+def allow_mic(driver2):
+    try:
+        allow_button = driver2.ele('xpath://button[contains(text(), "Allow while visiting the site")]', timeout=5)
+        if allow_button:
+            allow_button.click()
+            print("Đã bấm Cho phép dùng Microphone.")
+    except Exception as e:
+        print(f"Không thấy popup xin quyền micro: {e}")
+
+
+
+def play_mp3_hidden(filepath):
+    playsound(filepath)
+
+
+
+def tele_search(tag, phone, data):
+    global driver2
+    driver2.ele(var_stx.tele_search_input).clear()
+    time.sleep(0.5)
+    driver2.ele(var_stx.tele_search_input).input(tag)
+    time.sleep(1)
+    driver2.ele(var_stx.tele_search_name1, timeout=10).click()
+    time.sleep(2)
+    driver2.ele(var_stx.tele_profile_name).click()
+    time.sleep(2.5)
+    check_phone = driver2.ele(var_stx.tele_profile_phone).text
+    check_tag = driver2.ele(var_stx.tele_profile_tag).text
+    print(check_phone)
+    print(phone)
+    print(check_tag)
+    print(tag)
+    if (check_phone == phone) and (check_tag == tag):
+        driver2.ele(var_stx.hopthoai_input).input(data)
+        driver2.ele(var_stx.hopthoai_input).input(Keys.ENTER)
+        time.sleep(1)
+
+
+
+def tele_call(tag, phone, count, cases):
+    global driver2
+    check_phone = driver2.ele(var_stx.tele_profile_phone).text
+    check_tag = driver2.ele(var_stx.tele_profile_tag).text
+    print(check_phone)
+    print(phone)
+    print(check_tag)
+    print(tag)
+    if (check_phone == phone) and (check_tag == tag):
+        driver2.ele(var_stx.tele_profile_call).click()
+        time.sleep(1)
+        print("n10")
+        allow_mic(driver2)
+        n = 0
+        while n < 15:
+            n += 1
+            time.sleep(1)
+            try:
+                check_call = driver2.ele(var_stx.calling).text
+                print("n11")
+                if check_call not in ["waiting...", "exchanging encryption keys...", "Connected"]:
+                    # if check_call not in ["Ringing...", "Connecting..."]:
+                    generate_audio(f"Bạn đang có {count} lỗi cần xử lý, mã lỗi: {cases}", var_stx.uploadpath + "output.mp3")
+                    print("n12")
+                    play_mp3_hidden(var_stx.uploadpath + "output.mp3")
+                    print("n13")
+                    time.sleep(2)
+                    var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 293, 2, "Đã gọi")
+                    break
+            except Exception as e:
+                print(f"Lỗi kiểm tra cuộc gọi: {e}")
+                pass
+
+    driver2.ele(var_stx.tele_profile_end_call).click()
+    time.sleep(2)
+
+
+
+def open_tele():
+    from DrissionPage import ChromiumPage, ChromiumOptions
+    do1 = ChromiumOptions().set_paths(local_port=9201, user_data_path=r""+var_v3.uploadpath+"Profile 30""")
+    driver2 = ChromiumPage(addr_or_opts=do1)
+    driver2.get("https://web.telegram.org/a/")
+    time.sleep(2)
+    var_stx.driver.close()
+
+
+
+
+
+def call_telegram():
+    from DrissionPage import ChromiumPage, ChromiumOptions
+    do1 = ChromiumOptions().set_paths(local_port=9201, user_data_path=r""+var_stx.uploadpath+"Profile 30""")
+    global driver2
+    driver2 = ChromiumPage(addr_or_opts=do1)
+    clearData_luutamthoi2(var_stx.path_luutamthoi, "Sheet1", "", "", "", "", "")
+    module_stx.retest_serious()
+
+
+
+    driver2.get("https://web.telegram.org/a/")
+    time.sleep(2)
+    try:
+        driver2.ele("//*[text()='OK']").click()
+    except:
+        pass
+
+    var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 293, 2, "Đang check cuộc gọi")
+    count = int(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 291, 2))
+    data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 292, 2))
+    cases = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 290, 3))
+
+
+    wordbook = openpyxl.load_workbook(var_stx.checklistpath)
+    sheet = wordbook.get_sheet_by_name("Checklist")
+    rownum = 3
+    while rownum < 6:
+        rownum += 1
+        row_str = str(rownum)
+        phone_tag = sheet["M" + row_str].value
+        print(f"Dòng {row_str}, Phone_tag: {phone_tag}")
+        phone, tag = phone_tag.split('(')
+        phone = phone.strip()
+        tag = tag.replace(')', '').strip()
+        print(phone)
+        print(tag)
+        try:
+            tele_search(tag, phone, data)
+            tele_call(tag, phone, count, cases)
+            check_call = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 293, 2))
+            if check_call == "Đã gọi":
+                break
+
+        except Exception as e:
+            print(f"Lỗi kiểm tra cuộc gọi: {e}")
+            pass
+
+
+
+
+def check_info_telegram():
+    global driver2
+    driver2.get("https://web.telegram.org/a/")
+
+
+
+
+
+
+
+
+
+
+
 @retry(tries=2, delay=2, backoff=1, jitter=5, )
 def notification_telegram():
     from DrissionPage import ChromiumPage, ChromiumOptions
@@ -249,6 +411,24 @@ def notification_telegram():
         driver2.close()
 
 
+
+
+
+
+def clearData_luutamthoi2(file,sheetName, column1, column2, column3, column4, column5):
+    wordbook = openpyxl.load_workbook(file)
+    sheet = wordbook.get_sheet_by_name(sheetName)
+    i = 89
+    while (i < 100):
+        i += 1
+        i = str(i)
+        sheet["B"+i] = column1
+        sheet["C"+i] = column2
+        sheet["D"+i] = column3
+        sheet["E"+i] = column4
+        sheet["F"+i] = column5
+        i = int(i)
+    wordbook.save(file)
 
 
 

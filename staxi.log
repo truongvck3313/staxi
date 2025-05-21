@@ -1,287 +1,378 @@
-2025-05-13 Tuesday 09:04:05 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/
-2025-05-13 Tuesday 09:04:05 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/ 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/login2019.css?v=20200110
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/bootstrap.min.css
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/login2019.css?v=20200110 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.css
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/bootstrap.min.css 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/jquery.min.js
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.css 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/bootstrap.min.js
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/jquery.min.js 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Plugin/js/qrcode.js
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/bootstrap.min.js 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Plugin/js/qrcode.js 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/staxi_login_photo.png
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_ThongTinGiaiPhap_1.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/staxi_login_photo.png 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_HDSD_1.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_ThongTinGiaiPhap_1.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TinTucNganhGTVT_1.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_HDSD_1.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TinTucNganhGTVT_1.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ios.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ios.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_Alpha.png
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/Artboard_49.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_Alpha.png 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/Artboard_49.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_android.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_key.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_android.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_key.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_user.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ba.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_user.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ba.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TextB_1.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_home.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TextB_1.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_home.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_tel.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_web.svg
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_tel.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_web.svg 200 OK
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAkWYsaiXtfpzRIFDaGVjY8SBQ1lIZnqIUqzTSMs-SsA?alt=proto
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
-2025-05-13 Tuesday 09:04:06 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAkWYsaiXtfpzRIFDaGVjY8SBQ1lIZnqIUqzTSMs-SsA?alt=proto 200 
-2025-05-13 Tuesday 09:04:07 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
-2025-05-13 Tuesday 09:04:07 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/Hi8UmRMnhdOBM3IuViTkapUP/recaptcha__vi.js
-2025-05-13 Tuesday 09:04:08 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/Hi8UmRMnhdOBM3IuViTkapUP/recaptcha__vi.js 200 
-2025-05-13 Tuesday 09:04:08 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/logo.ico
-2025-05-13 Tuesday 09:04:08 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/logo.ico 200 OK
-2025-05-13 Tuesday 09:04:09 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-2025-05-13 Tuesday 09:04:09 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
-2025-05-13 Tuesday 09:04:10 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION
-2025-05-13 Tuesday 09:04:10 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1744643050&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
-2025-05-13 Tuesday 09:04:10 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1744643050&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS 200 
-2025-05-13 Tuesday 09:04:10 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION 200 
-2025-05-13 Tuesday 09:04:10 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY
-2025-05-13 Tuesday 09:04:11 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2
-2025-05-13 Tuesday 09:04:11 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY 200 
-2025-05-13 Tuesday 09:04:11 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745852517&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS
-2025-05-13 Tuesday 09:04:12 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745852517&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS 200 
-2025-05-13 Tuesday 09:04:12 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
-2025-05-13 Tuesday 09:04:15 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2 200 
-2025-05-13 Tuesday 09:04:15 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1744729555&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
-2025-05-13 Tuesday 09:04:15 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/?r=1212953567
-2025-05-13 Tuesday 09:04:15 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
-2025-05-13 Tuesday 09:04:15 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1744729555&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
-2025-05-13 Tuesday 09:04:16 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST 200 
-2025-05-13 Tuesday 09:04:17 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1696267841&target=OPTIMIZATION_TARGET_OMNIBOX_URL_SCORING
-2025-05-13 Tuesday 09:04:17 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1696267841&target=OPTIMIZATION_TARGET_OMNIBOX_URL_SCORING 200 
-2025-05-13 Tuesday 09:04:18 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=240731042075&target=OPTIMIZATION_TARGET_SEGMENTATION_COMPOSE_PROMOTION
-2025-05-13 Tuesday 09:04:18 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=240731042075&target=OPTIMIZATION_TARGET_SEGMENTATION_COMPOSE_PROMOTION 200 
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/?r=1212953567 302 Found
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Home/Welcome?r=3813513
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Home/Welcome?r=3813513 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/modernizr.custom.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/modernizr.custom.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.css
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20250505.12
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/custom.min.css
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.css
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/style.css?v=20250505.12
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.css 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.css 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20250505.12
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/style.css?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/custom.min.css 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-1.7.1.min.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/switchery.css
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/switchery.css 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-1.7.1.min.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/form.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/form.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/locale.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/locale.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20250505.12
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20250505.12
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20250505.12
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/respond.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/respond.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.validate.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.validate.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/hover-dropdown.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/hover-dropdown.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.mask.js
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.mask.js 200 OK
-2025-05-13 Tuesday 09:04:19 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/LanguageManager.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/LanguageManager.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.cookie.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.cookie.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/HashTable.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/HashTable.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/form.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/form.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatable-config.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatable-config.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr-config.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr-config.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/custom.js?v=20250505.12
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/custom.js?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Scripts/tinymce/tinymce.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Scripts/tinymce/tinymce.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://onlineg7test.staxi.vn/Center/hubs
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://onlineg7test.staxi.vn/Center/hubs 503 Service Unavailable
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-ui.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-ui.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/popper.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/popper.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/jquery.metisMenu.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/jquery.metisMenu.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/inspinia.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/inspinia.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/switchery.js
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/switchery.js 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/img/LogoBA_new.png
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/pages/layout.js?v=20250505.12
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/img/LogoBA_new.png 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/pages/layout.js?v=20250505.12 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=271116031
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Home/GetServiceStatus
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=271116031 200 OK
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAmL6HecN2mmgBIFDd7kC6MSBQ2UVPrPIX7cFxy326Cb?alt=proto
-2025-05-13 Tuesday 09:04:20 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAmL6HecN2mmgBIFDd7kC6MSBQ2UVPrPIX7cFxy326Cb?alt=proto 200 
-2025-05-13 Tuesday 09:04:21 seleniumwire.handler:INFO:Capturing request: https://passwordsleakcheck-pa.googleapis.com/v1/leaks:lookupSingle
-2025-05-13 Tuesday 09:04:21 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Home/GetServiceStatus 200 OK
-2025-05-13 Tuesday 09:04:21 seleniumwire.handler:INFO:Capturing response: https://passwordsleakcheck-pa.googleapis.com/v1/leaks:lookupSingle 200 
-2025-05-13 Tuesday 09:04:21 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101860130&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&sid=1747101860&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=5249
-2025-05-13 Tuesday 09:04:21 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101860130&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&sid=1747101860&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=5249 204 
-2025-05-13 Tuesday 09:04:22 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1744729555&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING 200 
-2025-05-13 Tuesday 09:04:22 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1744729555&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING 200 
-2025-05-13 Tuesday 09:04:22 seleniumwire.server:INFO:127.0.0.1:53777: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1747101862.5509377, False')")
-2025-05-13 Tuesday 09:04:22 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST 200 
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/Online?43825617
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/Online?43825617 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101860130&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747101860&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=11&tfd=8948
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101860130&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&sid=1747101860&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=3676&tfd=8949
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101860130&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747101860&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=11&tfd=8948 204 
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://onlineg7test.staxi.vn/Center/hubs
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://onlineg7test.staxi.vn/Center/hubs 503 Service Unavailable
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/MvcPaging.css
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/MvcPaging.css 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/jquery.datetimepicker.css
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/jquery.datetimepicker.css 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.datetimepicker.full.min.js
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.datetimepicker.full.min.js 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101860130&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&sid=1747101860&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=3676&tfd=8949 204 
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101864732&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1747101860&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dt=XE%20ONLINE%20-%20STAXI&en=page_view&_ee=1&tfd=447
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=74182074
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101864732&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1747101860&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dt=XE%20ONLINE%20-%20STAXI&en=page_view&_ee=1&tfd=447 204 
-2025-05-13 Tuesday 09:04:24 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=74182074 200 OK
-2025-05-13 Tuesday 09:04:25 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwn47SfKNET1-BIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4Ih_HRUL-LR9dESGQnDOHzjhQdqShIFDd7kC6MhDdAVrw3X0zY=?alt=proto
-2025-05-13 Tuesday 09:04:25 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwn47SfKNET1-BIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4Ih_HRUL-LR9dESGQnDOHzjhQdqShIFDd7kC6MhDdAVrw3X0zY=?alt=proto 200 
-2025-05-13 Tuesday 09:04:29 root:INFO:-------------------------
-2025-05-13 Tuesday 09:04:29 root:INFO:Giám sát - Xe online 1.2
-2025-05-13 Tuesday 09:04:29 root:INFO:Mã - Minitor01
-2025-05-13 Tuesday 09:04:29 root:INFO:Tên sự kiện - Mở trang "Xe online"
-2025-05-13 Tuesday 09:04:29 root:INFO:Kết quả - Chuyển đến trang: "1.2 Xe online"
-2025-05-13 Tuesday 09:04:29 root:INFO:1.2 Xe online
-2025-05-13 Tuesday 09:04:29 root:INFO:1.2 Xe online
-2025-05-13 Tuesday 09:04:29 root:INFO:True
-2025-05-13 Tuesday 09:04:29 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101864732&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747101860&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dt=XE%20ONLINE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=5450
-2025-05-13 Tuesday 09:04:30 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101864732&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747101860&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dt=XE%20ONLINE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=5450 204 
-2025-05-13 Tuesday 09:04:32 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:04:32 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:04:32 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=32970718
-2025-05-13 Tuesday 09:04:32 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:04:32 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:04:32 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=32970718 200 OK
-2025-05-13 Tuesday 09:04:33 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwn47SfKNET1-BIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4Ih_HRUL-LR9dE=?alt=proto
-2025-05-13 Tuesday 09:04:33 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwn47SfKNET1-BIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4Ih_HRUL-LR9dE=?alt=proto 200 
-2025-05-13 Tuesday 09:04:37 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101864732&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&sid=1747101860&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dt=XE%20ONLINE%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&epn.form_length=11&ep.first_field_id=State&ep.first_field_name=State&ep.first_field_type=&epn.first_field_position=6&_et=7418&tfd=12875
-2025-05-13 Tuesday 09:04:37 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5591v9192958303za200&_p=1747101864732&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509156~103101750~103101752~103116025~103200001~103207801~103233424~103251618~103251620~103263070~103284320~103284322~103301114~103301116&cid=606010911.1747101861&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&sid=1747101860&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D3813513&dt=XE%20ONLINE%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7test.staxi.vn%2FVehicle%2FOnline%3F43825617&epn.form_length=11&ep.first_field_id=State&ep.first_field_name=State&ep.first_field_type=&epn.first_field_position=6&_et=7418&tfd=12875 204 
-2025-05-13 Tuesday 09:04:43 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:04:43 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=BATONNT&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=15367182
-2025-05-13 Tuesday 09:04:43 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:04:43 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:04:43 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:04:43 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=BATONNT&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=15367182 200 OK
-2025-05-13 Tuesday 09:04:53 root:INFO:-------------------------
-2025-05-13 Tuesday 09:04:53 root:INFO:Giám sát - Xe online 1.2
-2025-05-13 Tuesday 09:04:53 root:INFO:Mã - Minitor02
-2025-05-13 Tuesday 09:04:53 root:INFO:Tên sự kiện - Tìm kiếm - Biển số
-2025-05-13 Tuesday 09:04:53 root:INFO:Kết quả - Trường "Biển số" hiển thị dữ liệu hàng đầu tiên: "Biển số vừa nhập"
-2025-05-13 Tuesday 09:04:53 root:INFO:BATONNT
-2025-05-13 Tuesday 09:04:53 root:INFO:BATONNT
-2025-05-13 Tuesday 09:04:53 root:INFO:True
-2025-05-13 Tuesday 09:04:56 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:04:56 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=22703133
-2025-05-13 Tuesday 09:04:56 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:04:56 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:04:56 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:04:56 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=22703133 200 OK
-2025-05-13 Tuesday 09:04:59 seleniumwire.handler:INFO:Capturing request: https://update.googleapis.com/service/update2/json?cup2key=14:c6RGrfCVD0SDS0DCZ8we5vIAyv3veNby8S1bxX2-zU8&cup2hreq=62c46ab62f565befb7fbf13927bc5c60c3917c309acca56034c18c504c0f2f53
-2025-05-13 Tuesday 09:04:59 seleniumwire.handler:INFO:Capturing response: https://update.googleapis.com/service/update2/json?cup2key=14:c6RGrfCVD0SDS0DCZ8we5vIAyv3veNby8S1bxX2-zU8&cup2hreq=62c46ab62f565befb7fbf13927bc5c60c3917c309acca56034c18c504c0f2f53 200 
-2025-05-13 Tuesday 09:05:07 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:05:07 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:05:07 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=batonnt&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=59309270
-2025-05-13 Tuesday 09:05:07 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:05:07 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:05:07 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=batonnt&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=59309270 200 OK
-2025-05-13 Tuesday 09:05:17 root:INFO:-------------------------
-2025-05-13 Tuesday 09:05:17 root:INFO:Giám sát - Xe online 1.2
-2025-05-13 Tuesday 09:05:17 root:INFO:Mã - Minitor04
-2025-05-13 Tuesday 09:05:17 root:INFO:Tên sự kiện - Tìm kiếm - Lái xe
-2025-05-13 Tuesday 09:05:17 root:INFO:Kết quả - Trường "Đang lái" hiển thị dữ liệu hàng đầu tiên: "0945912674"
-2025-05-13 Tuesday 09:05:17 root:INFO:batonnt
-2025-05-13 Tuesday 09:05:17 root:INFO:batonnt
-2025-05-13 Tuesday 09:05:17 root:INFO:True
-2025-05-13 Tuesday 09:05:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
-2025-05-13 Tuesday 09:05:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
-2025-05-13 Tuesday 09:05:20 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=45848012
-2025-05-13 Tuesday 09:05:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
-2025-05-13 Tuesday 09:05:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
-2025-05-13 Tuesday 09:05:20 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/Online?r=1263866039&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=45848012 200 OK
-2025-05-13 Tuesday 09:05:22 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Vehicle/OnlExport?r=772654068
-2025-05-13 Tuesday 09:05:22 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Vehicle/OnlExport?r=772654068 200 OK
-2025-05-13 Tuesday 09:05:37 retry.api:WARNING:('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)), retrying in 2 seconds...
-2025-05-13 Tuesday 09:05:41 urllib3.connectionpool:WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600CC30610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts
-2025-05-13 Tuesday 09:05:43 urllib3.connectionpool:WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600CC30B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts
-2025-05-13 Tuesday 09:05:45 urllib3.connectionpool:WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600C83E1C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts
-2025-05-13 Tuesday 09:05:47 retry.api:WARNING:HTTPConnectionPool(host='127.0.0.1', port=53738): Max retries exceeded with url: /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600D009520>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')), retrying in 7 seconds...
-2025-05-13 Tuesday 09:05:56 urllib3.connectionpool:WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600CC32070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts
-2025-05-13 Tuesday 09:05:58 urllib3.connectionpool:WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600C821BB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts
-2025-05-13 Tuesday 09:06:00 urllib3.connectionpool:WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002600CC3DD60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f64cab515d8231f1f66a89aefc55c6bd/timeouts
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/ 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/bootstrap.min.css
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/login2019.css?v=20200110
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/login2019.css?v=20200110 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/bootstrap.min.css 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.css
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/jquery.min.js
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.css 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/jquery.min.js 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/bootstrap.min.js
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Plugin/js/qrcode.js
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/bootstrap.min.js 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/staxi_login_photo.png
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Plugin/js/qrcode.js 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/staxi_login_photo.png 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_ThongTinGiaiPhap_1.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_HDSD_1.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_ThongTinGiaiPhap_1.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TinTucNganhGTVT_1.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_HDSD_1.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TinTucNganhGTVT_1.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_android.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_android.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_Alpha.png
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/Artboard_49.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_Alpha.png 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/Artboard_49.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ios.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_key.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ios.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_key.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_user.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ba.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_user.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/logo_ba.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TextB_1.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_home.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_TextB_1.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_home.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_tel.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_web.svg
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_tel.svg 200 OK
+2025-05-21 Wednesday 10:07:31 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/img/login/ic_web.svg 200 OK
+2025-05-21 Wednesday 10:07:32 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
+2025-05-21 Wednesday 10:07:32 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAkWYsaiXtfpzRIFDaGVjY8SBQ1lIZnqIUqzTSMs-SsA?alt=proto
+2025-05-21 Wednesday 10:07:32 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
+2025-05-21 Wednesday 10:07:32 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAkWYsaiXtfpzRIFDaGVjY8SBQ1lIZnqIUqzTSMs-SsA?alt=proto 200 
+2025-05-21 Wednesday 10:07:33 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/X-oVtzDcTGjZVms4LEgykmCV/recaptcha__vi.js
+2025-05-21 Wednesday 10:07:33 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-05-21 Wednesday 10:07:33 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-05-21 Wednesday 10:07:33 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/X-oVtzDcTGjZVms4LEgykmCV/recaptcha__vi.js 200 
+2025-05-21 Wednesday 10:07:33 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/logo.ico
+2025-05-21 Wednesday 10:07:33 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/logo.ico 200 OK
+2025-05-21 Wednesday 10:07:34 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION
+2025-05-21 Wednesday 10:07:34 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745852548&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
+2025-05-21 Wednesday 10:07:34 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745852548&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS 200 
+2025-05-21 Wednesday 10:07:34 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION 200 
+2025-05-21 Wednesday 10:07:34 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY
+2025-05-21 Wednesday 10:07:34 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2
+2025-05-21 Wednesday 10:07:38 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY 200 
+2025-05-21 Wednesday 10:07:38 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745852517&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS
+2025-05-21 Wednesday 10:07:38 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745852517&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS 200 
+2025-05-21 Wednesday 10:07:39 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-05-21 Wednesday 10:07:41 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/?r=434770973
+2025-05-21 Wednesday 10:07:41 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2
+2025-05-21 Wednesday 10:07:41 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-05-21 Wednesday 10:07:41 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2 200 
+2025-05-21 Wednesday 10:07:42 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745938983&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/?r=434770973 302 Found
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Home/Welcome?r=62873785
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Home/Welcome?r=62873785 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/modernizr.custom.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/modernizr.custom.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.css
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/custom.min.css
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.css
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/style.css?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.css 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.css 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/style.css?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/custom.min.css 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-1.7.1.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/switchery.css
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/switchery.css 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-1.7.1.min.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/form.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/form.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/locale.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/locale.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/respond.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/respond.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.validate.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.validate.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/hover-dropdown.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/hover-dropdown.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.mask.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.mask.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/LanguageManager.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/LanguageManager.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.cookie.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.cookie.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/HashTable.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/HashTable.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/form.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/form.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatable-config.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatable-config.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr-config.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr-config.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/custom.js?v=20250505.12
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/custom.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js 200 OK
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Scripts/tinymce/tinymce.min.js
+2025-05-21 Wednesday 10:07:45 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Scripts/tinymce/tinymce.min.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://onlineg7test.staxi.vn/Center/hubs
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://onlineg7test.staxi.vn/Center/hubs 503 Service Unavailable
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-ui.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-ui.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/popper.min.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/popper.min.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/jquery.metisMenu.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/jquery.metisMenu.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/inspinia.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/inspinia.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/switchery.js
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/switchery.js 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/img/LogoBA_new.png
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/pages/layout.js?v=20250505.12
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/img/LogoBA_new.png 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/pages/layout.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=2027648829
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Home/GetServiceStatus
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=2027648829 200 OK
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAmL6HecN2mmgBIFDd7kC6MSBQ2UVPrPIX7cFxy326Cb?alt=proto
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSIAmL6HecN2mmgBIFDd7kC6MSBQ2UVPrPIX7cFxy326Cb?alt=proto 200 
+2025-05-21 Wednesday 10:07:46 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
+2025-05-21 Wednesday 10:07:47 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Home/GetServiceStatus 200 OK
+2025-05-21 Wednesday 10:07:48 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
+2025-05-21 Wednesday 10:07:48 seleniumwire.handler:INFO:Capturing request: https://passwordsleakcheck-pa.googleapis.com/v1/leaks:lookupSingle
+2025-05-21 Wednesday 10:07:48 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796865971&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&sid=1747796868&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=7121
+2025-05-21 Wednesday 10:07:48 seleniumwire.handler:INFO:Capturing response: https://passwordsleakcheck-pa.googleapis.com/v1/leaks:lookupSingle 200 
+2025-05-21 Wednesday 10:07:49 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796865971&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&sid=1747796868&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=7121 204 
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/DriverWallet/History?27906295
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745938983&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/DriverWallet/History?27906295 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796865971&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747796868&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=9174
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796865971&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&sid=1747796868&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=2036&tfd=9174
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://onlineg7test.staxi.vn/Center/hubs
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://onlineg7test.staxi.vn/Center/hubs 503 Service Unavailable
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/MvcPaging.css
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796865971&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747796868&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=9174 204 
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/MvcPaging.css 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Plugin/js/DaterangePicker/daterangepicker.css
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Plugin/js/DaterangePicker/daterangepicker.css 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Plugin/js/DaterangePicker/moment.min.js
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Plugin/js/DaterangePicker/moment.min.js 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796870422&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dt=L%E1%BB%8ACH%20S%E1%BB%AC%20V%C3%8D%20L%C3%81I%20XE%20-%20STAXI&en=page_view&_ee=1&tfd=300
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Plugin/js/DaterangePicker/daterangepicker.min.js
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Plugin/js/DaterangePicker/daterangepicker.min.js 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Plugin/js/print.js
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Plugin/js/print.js 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Staxi/core.js?v=20250505.1200
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Staxi/core.js?v=20250505.1200 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=1992698503&v=23
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796870422&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dt=L%E1%BB%8ACH%20S%E1%BB%AC%20V%C3%8D%20L%C3%81I%20XE%20-%20STAXI&en=page_view&_ee=1&tfd=300 204 
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796865971&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&sid=1747796868&sct=1&seg=0&dl=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dr=https%3A%2F%2Fg7test.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=2036&tfd=9174 204 
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=1992698503&v=23 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/DriverWallet/FetchDataHistory
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwkPFT4CTFo_uhIFDZ1FgTcSBQ2Eq8rcEgUN5f0irRIFDRAy4fUSBQ2j8yfsEgUNCeHhiBIFDUmzvX0hpoPbyWUlcN4SGQnDOHzjhQdqShIFDd7kC6MhuQYey6Pyn0I=?alt=proto
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/DriverWallet/FetchDataHistory 200 OK
+2025-05-21 Wednesday 10:07:50 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwkPFT4CTFo_uhIFDZ1FgTcSBQ2Eq8rcEgUN5f0irRIFDRAy4fUSBQ2j8yfsEgUNCeHhiBIFDUmzvX0hpoPbyWUlcN4SGQnDOHzjhQdqShIFDd7kC6MhuQYey6Pyn0I=?alt=proto 200 
+2025-05-21 Wednesday 10:07:51 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwkPFT4CTFo_uhIFDZ1FgTcSBQ2Eq8rcEgUN5f0irRIFDRAy4fUSBQ2j8yfsEgUNCeHhiBIFDUmzvX0hpoPbyWUlcN4=?alt=proto
+2025-05-21 Wednesday 10:07:51 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwkPFT4CTFo_uhIFDZ1FgTcSBQ2Eq8rcEgUN5f0irRIFDRAy4fUSBQ2j8yfsEgUNCeHhiBIFDUmzvX0hpoPbyWUlcN4=?alt=proto 200 
+2025-05-21 Wednesday 10:07:55 root:INFO:-------------------------
+2025-05-21 Wednesday 10:07:55 root:INFO:VÍ LÁI XE - 3.5 Lịch sử ví tiền
+2025-05-21 Wednesday 10:07:55 root:INFO:Mã - 
+2025-05-21 Wednesday 10:07:55 root:INFO:Tên sự kiện - 
+2025-05-21 Wednesday 10:07:55 root:INFO:Kết quả - 
+2025-05-21 Wednesday 10:07:55 root:INFO:3.5 Lịch sử ví tiền
+2025-05-21 Wednesday 10:07:55 root:INFO:3.5 Lịch sử ví tiền
+2025-05-21 Wednesday 10:07:55 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796870422&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dt=L%E1%BB%8ACH%20S%E1%BB%AC%20V%C3%8D%20L%C3%81I%20XE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=11&tfd=5302
+2025-05-21 Wednesday 10:07:55 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796870422&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103130495~103130497~103136993~103136995~103200004~103233427~103252644~103252646~103290358~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dr=https%3A%2F%2Fg7test.staxi.vn%2FHome%2FWelcome%3Fr%3D62873785&dt=L%E1%BB%8ACH%20S%E1%BB%AC%20V%C3%8D%20L%C3%81I%20XE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=11&tfd=5302 204 
+2025-05-21 Wednesday 10:07:55 root:INFO:True
+2025-05-21 Wednesday 10:07:58 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2 200 
+2025-05-21 Wednesday 10:07:58 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSUQl3gGVCdC9ZAxIFDd7kC6MSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-iH50g2GN-UG_g==?alt=proto
+2025-05-21 Wednesday 10:07:58 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSUQl3gGVCdC9ZAxIFDd7kC6MSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-iH50g2GN-UG_g==?alt=proto 200 
+2025-05-21 Wednesday 10:07:58 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST 200 
+2025-05-21 Wednesday 10:07:59 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1696267841&target=OPTIMIZATION_TARGET_OMNIBOX_URL_SCORING
+2025-05-21 Wednesday 10:08:01 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/DriverWallet/FetchDataHistory
+2025-05-21 Wednesday 10:08:01 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
+2025-05-21 Wednesday 10:08:01 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
+2025-05-21 Wednesday 10:08:01 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
+2025-05-21 Wednesday 10:08:01 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
+2025-05-21 Wednesday 10:08:01 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/DriverWallet/FetchDataHistory 200 OK
+2025-05-21 Wednesday 10:08:02 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745938983&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING 200 
+2025-05-21 Wednesday 10:08:03 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1696267841&target=OPTIMIZATION_TARGET_OMNIBOX_URL_SCORING 200 
+2025-05-21 Wednesday 10:08:03 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=240731042075&target=OPTIMIZATION_TARGET_SEGMENTATION_COMPOSE_PROMOTION
+2025-05-21 Wednesday 10:08:03 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST 200 
+2025-05-21 Wednesday 10:08:03 seleniumwire.server:INFO:127.0.0.1:50498: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1747796883.6765254, False')")
+2025-05-21 Wednesday 10:08:04 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=240731042075&target=OPTIMIZATION_TARGET_SEGMENTATION_COMPOSE_PROMOTION 200 
+2025-05-21 Wednesday 10:08:07 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwkPFT4CTFo_uhIFDZ1FgTcSBQ2Eq8rcEgUN5f0irRIFDRAy4fUSBQ2j8yfsEgUNCeHhiBIFDUmzvX0hpoPbyWUlcN4SUQl3gGVCdC9ZAxIFDd7kC6MSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-iH50g2GN-UG_g==?alt=proto
+2025-05-21 Wednesday 10:08:07 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSQwkPFT4CTFo_uhIFDZ1FgTcSBQ2Eq8rcEgUN5f0irRIFDRAy4fUSBQ2j8yfsEgUNCeHhiBIFDUmzvX0hpoPbyWUlcN4SUQl3gGVCdC9ZAxIFDd7kC6MSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-iH50g2GN-UG_g==?alt=proto 200 
+2025-05-21 Wednesday 10:08:07 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745938983&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING 200 
+2025-05-21 Wednesday 10:08:07 seleniumwire.server:INFO:127.0.0.1:50498: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1747796887.631737, False')")
+2025-05-21 Wednesday 10:08:08 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST 200 
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Report/BookingRevenue?40742211&BookId=295e5f4e-538f-49ca-b7d6-1c86ecc9983a
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Report/BookingRevenue?40742211&BookId=295e5f4e-538f-49ca-b7d6-1c86ecc9983a 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/modernizr.custom.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/modernizr.custom.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/bootstrap.min.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/style.css?v=20250505.12
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/custom.min.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/bootstrap.min.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/style.css?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20250505.12
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20250505.12
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/custom.min.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-1.7.1.min.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/switchery.css
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/switchery.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-1.7.1.min.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/form.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/form.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/locale.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/locale.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20250505.12
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20250505.12
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20250505.12
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/bootstrap.min.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/bootstrap.min.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/respond.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/respond.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.validate.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.validate.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/hover-dropdown.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/hover-dropdown.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.mask.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.mask.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/LanguageManager.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/LanguageManager.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.cookie.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.cookie.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/HashTable.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/HashTable.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/form.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/form.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatables.min.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/datatable/datatable-config.js
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/datatable/datatable-config.js 200 OK
+2025-05-21 Wednesday 10:08:09 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/toastr/toastr-config.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/toastr/toastr-config.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/js/custom.js?v=20250505.12
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/js/custom.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Scripts/tinymce/tinymce.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Scripts/tinymce/tinymce.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://onlineg7test.staxi.vn/Center/hubs
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://onlineg7test.staxi.vn/Center/hubs 503 Service Unavailable
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-ui.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/jquery/js/jquery-ui.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/popper.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/popper.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/jquery.metisMenu.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/jquery.metisMenu.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/ExThemes/inspinia.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/ExThemes/inspinia.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/switchery.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/switchery.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/MvcPaging.css
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/MvcPaging.css 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/css/jquery.datetimepicker.css
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/css/jquery.datetimepicker.css 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/jquery.datetimepicker.full.min.js
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/jquery.datetimepicker.full.min.js 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/js/pages/layout.js?v=20250505.12
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/img/icon/gps-route.svg
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/themes/img/icon/gps-trip.svg
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/js/pages/layout.js?v=20250505.12 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/img/icon/gps-route.svg 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/themes/img/icon/gps-trip.svg 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=1328267307
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/loading-text.gif
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://g7test.staxi.vn/Content/Images/Timer.gif
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/loading-text.gif 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Content/Images/Timer.gif 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://g7test.staxi.vn/Configuration/UpdateWarningStatus?r=1328267307 200 OK
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSGQnDOHzjhQdqShIFDd7kC6Mhe6X9SSGmc9A=?alt=proto
+2025-05-21 Wednesday 10:08:10 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTM1LjAuNzA0OS4xMTUSGQnDOHzjhQdqShIFDd7kC6Mhe6X9SSGmc9A=?alt=proto 200 
+2025-05-21 Wednesday 10:08:11 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
+2025-05-21 Wednesday 10:08:11 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/td?id=G-60V4NCQHKN&v=3&t=t&pid=629699186&exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&dl=g7test.staxi.vn%2FReport%2FBookingRevenue&tdp=G-60V4NCQHKN;192958303;0;0;0&frm=0&rtg=192958303&slo=25&hlo=25&lst=3&bt=0&ct=3&z=0
+2025-05-21 Wednesday 10:08:11 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796890067&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FReport%2FBookingRevenue%3F40742211%26BookId%3D295e5f4e-538f-49ca-b7d6-1c86ecc9983a&dr=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dt=CHI%20TI%E1%BA%BET%20DOANH%20THU%20T%E1%BB%AA%20APP%20L%C3%81I%20XE%20%26%20%C4%90%E1%BB%8ANH%20V%E1%BB%8A%20-%20STAXI&en=page_view&_ee=1&tfd=2026
+2025-05-21 Wednesday 10:08:11 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796890067&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FReport%2FBookingRevenue%3F40742211%26BookId%3D295e5f4e-538f-49ca-b7d6-1c86ecc9983a&dr=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dt=CHI%20TI%E1%BA%BET%20DOANH%20THU%20T%E1%BB%AA%20APP%20L%C3%81I%20XE%20%26%20%C4%90%E1%BB%8ANH%20V%E1%BB%8A%20-%20STAXI&en=page_view&_ee=1&tfd=2026 204 
+2025-05-21 Wednesday 10:08:11 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/td?id=G-60V4NCQHKN&v=3&t=t&pid=629699186&exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&dl=g7test.staxi.vn%2FReport%2FBookingRevenue&tdp=G-60V4NCQHKN;192958303;0;0;0&frm=0&rtg=192958303&slo=25&hlo=25&lst=3&bt=0&ct=3&z=0 204 
+2025-05-21 Wednesday 10:08:16 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796890067&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FReport%2FBookingRevenue%3F40742211%26BookId%3D295e5f4e-538f-49ca-b7d6-1c86ecc9983a&dr=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dt=CHI%20TI%E1%BA%BET%20DOANH%20THU%20T%E1%BB%AA%20APP%20L%C3%81I%20XE%20%26%20%C4%90%E1%BB%8ANH%20V%E1%BB%8A%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=3&tfd=7027
+2025-05-21 Wednesday 10:08:16 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796890067&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FReport%2FBookingRevenue%3F40742211%26BookId%3D295e5f4e-538f-49ca-b7d6-1c86ecc9983a&dr=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dt=CHI%20TI%E1%BA%BET%20DOANH%20THU%20T%E1%BB%AA%20APP%20L%C3%81I%20XE%20%26%20%C4%90%E1%BB%8ANH%20V%E1%BB%8A%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=3&tfd=7027 204 
+2025-05-21 Wednesday 10:08:17 root:INFO:-------------------------
+2025-05-21 Wednesday 10:08:17 root:INFO:VÍ LÁI XE - 3.5 Lịch sử ví tiền
+2025-05-21 Wednesday 10:08:17 root:INFO:Mã - Wallet38
+2025-05-21 Wednesday 10:08:17 root:INFO:Tên sự kiện - Chi tiết
+2025-05-21 Wednesday 10:08:17 root:INFO:Kết quả - 1. Mở tab mới và chuyển đến trang: "8.4 Báo cáo doanh thu"
+2. Hiển thị "Mã cuốc khách"
+2025-05-21 Wednesday 10:08:19 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796890067&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FReport%2FBookingRevenue%3F40742211%26BookId%3D295e5f4e-538f-49ca-b7d6-1c86ecc9983a&dr=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dt=CHI%20TI%E1%BA%BET%20DOANH%20THU%20T%E1%BB%AA%20APP%20L%C3%81I%20XE%20%26%20%C4%90%E1%BB%8ANH%20V%E1%BB%8A%20-%20STAXI&en=user_engagement&_et=7076&tfd=10126
+2025-05-21 Wednesday 10:08:19 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je55j1v9192958303za200&_p=1747796890067&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116025~103130498~103130500~103136993~103136995~103200001~103233427~103252644~103252646~103301114~103301116&cid=1326733517.1747796868&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&sid=1747796868&sct=1&seg=1&dl=https%3A%2F%2Fg7test.staxi.vn%2FReport%2FBookingRevenue%3F40742211%26BookId%3D295e5f4e-538f-49ca-b7d6-1c86ecc9983a&dr=https%3A%2F%2Fg7test.staxi.vn%2FDriverWallet%2FHistory%3F27906295&dt=CHI%20TI%E1%BA%BET%20DOANH%20THU%20T%E1%BB%AA%20APP%20L%C3%81I%20XE%20%26%20%C4%90%E1%BB%8ANH%20V%E1%BB%8A%20-%20STAXI&en=user_engagement&_et=7076&tfd=10126 204 

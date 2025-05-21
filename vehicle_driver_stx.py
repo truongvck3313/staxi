@@ -1253,6 +1253,8 @@ class driver:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_birth_day).send_keys(var_stx.data['vehicle']['birth_day'])
         time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_name1).click()
+        time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_cccd).send_keys("0"+number_random+number)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_email).send_keys(var_stx.data['vehicle']['email'])
@@ -1276,6 +1278,7 @@ class driver:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_version).click()   #loại cước phí
         time.sleep(1)
+
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_lot).click()   #sử dụng lốt
             time.sleep(0.5)
@@ -1299,12 +1302,19 @@ class driver:
         except:
             pass
 
+
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon).click()   #file đính kèm
+            button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon)
+            var_stx.driver.execute_script("arguments[0].click();", button)
+
+            # var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon).click()   #file đính kèm
             time.sleep(2)
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
+            # var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
+            button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other)
+            var_stx.driver.execute_script("arguments[0].click();", button)
+
         time.sleep(1.5)
         subprocess.Popen(var_stx.uploadpath+"template_driver.exe")
         time.sleep(4)
@@ -1397,6 +1407,7 @@ class driver:
             time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_bank_mb).click()
 
+            var_stx.driver.execute_script("window.scrollBy(0,700)", "")
 
             # var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_bank).send_keys(var_stx.data['vehicle']['bank'])
             time.sleep(0.5)
@@ -1410,7 +1421,7 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.bank_Link_auto_get_money)
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.save3).click()
-            time.sleep(1)
+            time.sleep(0.5)
 
             wait = WebDriverWait(var_stx.driver, 10)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.toast_message)))
@@ -1455,6 +1466,7 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_Point).clear()
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_Point).send_keys("99")
         time.sleep(1)
+        var_stx.driver.execute_script("window.scrollBy(0,700)", "")
 
         button = var_stx.driver.find_element(By.XPATH, var_stx.save)
         var_stx.driver.execute_script("arguments[0].click();", button)
@@ -1528,7 +1540,11 @@ class driver:
         time.sleep(5)
 
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(2.5)
 
         name1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_4).text
@@ -1593,7 +1609,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(2)
         driver.detail_vehicle(self, "Lý do khóa/mở khóa")
 
@@ -1656,7 +1676,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
 
         driver.detail_vehicle(self, "Khen thưởng")
@@ -1720,7 +1744,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
 
         driver.detail_vehicle(self, "Gán xe")
@@ -1797,7 +1825,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
         driver.detail_vehicle(self, "Lấy mã kích hoạt")
 
@@ -1844,7 +1876,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
         driver.detail_vehicle(self, "Đổi mật khẩu")
 
@@ -1895,7 +1931,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(10)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
         driver.detail_vehicle(self, "Chi tiết thiết bị")
 
@@ -1971,7 +2011,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(10)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
 
         driver.detail_vehicle(self, "Cấu hình lái xe")
@@ -2050,7 +2094,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
         driver.detail_vehicle(self, "SyncGSM")
 
@@ -2082,7 +2130,11 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
         time.sleep(1)
         # var_stx.driver.find_element(By.XPATH, var_stx.listdata1_17).click()
         driver.detail_vehicle(self, "Xóa")
@@ -2107,7 +2159,11 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(3)
             scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+            try:
+                ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+            except:
+                ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+                ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
             driver.detail_vehicle(self, "Xóa")
             check_name = var_stx.driver.find_element(By.XPATH, var_stx.name_driver_delete).text
 

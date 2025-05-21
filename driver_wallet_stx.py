@@ -1044,7 +1044,13 @@ class wallet_history:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
-        ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            time.sleep(1)
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+
         time.sleep(2)
         n = 0
         while (n < 5):

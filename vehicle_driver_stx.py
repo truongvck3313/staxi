@@ -593,6 +593,7 @@ class vehicle:
             time.sleep(0.5)
         except:
             pass
+
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehilce_add_new).click()
         time.sleep(2.5)
         print("2024AUTO"+number)
@@ -1303,21 +1304,63 @@ class driver:
             pass
 
 
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
-        except:
-            button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon)
-            var_stx.driver.execute_script("arguments[0].click();", button)
+        #File đính kèm
+        button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+        time.sleep(2)
 
-            # var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_icon).click()   #file đính kèm
-            time.sleep(2)
-            # var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other).click()   #Driver Share
-            button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other)
-            var_stx.driver.execute_script("arguments[0].click();", button)
-
-        time.sleep(1.5)
+        # button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_file_other)
+        # button = var_stx.driver.find_element(By.XPATH, var_stx.add_new4)
+        # var_stx.driver.execute_script("arguments[0].click();", button)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new4).click()
+        time.sleep(2)
         subprocess.Popen(var_stx.uploadpath+"template_driver.exe")
         time.sleep(4)
+
+
+
+        #Thông tin khác
+        button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_info_icon)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+        time.sleep(2)
+        save_button = var_stx.driver.find_element(By.XPATH, var_stx.save)
+        ActionChains(var_stx.driver).move_to_element(save_button).perform()
+        time.sleep(2)
+        #Liên kết dịch vụ - lái hộ
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_driver)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_driver_radio)
+        time.sleep(1)
+        #Cấu hình khác
+        var_stx.driver.find_element(By.XPATH, var_stx.config_other).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_sd_lot)  # sử dụng lốt
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_debug)  # debug
+            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, "")
+        except:
+            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, "Tài khoản không có nút debug")
+
+
+        #Gán xe
+        var_stx.driver.find_element(By.XPATH, var_stx.assign_car).click()
+        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.assign_car_choose_car).send_keys("30A38866")
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.assign_car_choose_car1).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.assign_car_choose_car).clear()
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.assign_car_choose_car).send_keys("26 - 30E03976")
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.assign_car_choose_car2).click()
+            time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.assign_car1).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.check_assign_car1)
+        time.sleep(1)
+
         button = var_stx.driver.find_element(By.XPATH, var_stx.save)
         var_stx.driver.execute_script("arguments[0].click();", button)
         time.sleep(2.5)
@@ -1341,13 +1384,16 @@ class driver:
             time.sleep(4)
 
 
-        # try:
-        #     var_stx.driver.implicitly_wait(1)
-        #     var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back).click()
-        #     time.sleep(4)
-        # except:
-        #     var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back1).click()
-        #     time.sleep(4)
+        try:
+            var_stx.driver.implicitly_wait(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back).click()
+            time.sleep(4)
+        except:
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
+            except:
+                var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_back1).click()
+                time.sleep(4)
 
 
 

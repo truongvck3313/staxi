@@ -262,7 +262,9 @@ def get_info_excel1(row, sheet):
 
 
     # #Đọc check file excel
-    bangchucai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    bangchucai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+                  'U', 'V', 'W', 'X', 'Y', 'Z', 'AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL',
+                  'AM', 'AN', 'AO']
 
     print("r0")
     try:
@@ -1743,6 +1745,10 @@ class minitor_vehicle:
         path_connect = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 6, 5))
         path_v = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 6, 6))
 
+        var_stx.driver.execute_script("document.body.style.zoom='70%'")
+
+
+
 
         #Lấy thông tin Danh sách giám sát
         code_dam_list = var_stx.driver.find_element(By.XPATH, path_code_dam).text
@@ -1838,7 +1844,7 @@ class minitor_vehicle:
                 data1 = data1.decode("utf8")
                 print(data1)
                 var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 10, 4, data1)
-
+        var_stx.driver.execute_script("document.body.style.zoom='100%'")
         logging.info("-------------------------")
         logging.info("Giám sát xe 1.3")
         logging.info("Mã - " + code)
@@ -1849,6 +1855,7 @@ class minitor_vehicle:
 
 
     def check_info_none(self, code, eventname, result, row):
+        var_stx.driver.execute_script("document.body.style.zoom='100%'")
         info_data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 3))
         logging.info("-------------------------")
         logging.info("Giám sát xe 1.3")

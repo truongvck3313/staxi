@@ -3387,7 +3387,7 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3.5)
         name = var_stx.driver.find_element(By.XPATH, var_stx.table_table1_6).text
-        if name == "7 chỗ" or name == "Ecopark":
+        if name == "G7 Xe Avante" or name == "G7 Ecopark 7 chỗ (Ko dùng)":
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2_a).click()
             time.sleep(2.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).clear()
@@ -3419,7 +3419,8 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3.5)
         name = var_stx.driver.find_element(By.XPATH, var_stx.table_table1_6).text
-        if name == "7 chỗ" or name == "Ecopark":
+        #"G7 Xe Avante" or name == "G7 Ecopark 7 chỗ (Ko dùng)":
+        if name == "G7 Xe Avante" or name == "G7 Ecopark 7 chỗ (Ko dùng)":
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_7_i).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
@@ -3543,7 +3544,7 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2.5)
         name = var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2).text
-        if name == "G7 4 chỗ nhỏ khác":
+        if name == "Eco 4 Chỗ Plus" or name == "G7 Vios":
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2_a).click()
             time.sleep(2.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).clear()
@@ -3568,6 +3569,13 @@ class admin_10_10:
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_10_5)
         except:
             admin_10_10.admin_10_10_5(self, "", "", "")
+
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.weather_close3).click()
+            time.sleep(2)
+        except:
+            pass
+
 
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.CarType1).click()

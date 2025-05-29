@@ -24,11 +24,9 @@ class Test(unittest.TestCase):
         module_stx.ModuleTest()
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
-        try:
-            module_other_stx.notification_telegram()
-        except:
-            pass
-        module_other_stx.call_telegram()
+        module_other_stx.send_viber()
+
+        # module_other_stx.call_telegram()
 
 
 
@@ -105,7 +103,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor50(self)
         # caseid_stx.caseid_minitor51(self)
         # caseid_stx.caseid_minitor52(self)
-
+        #
         # caseid_stx.caseid_minitor53(self)
         # caseid_stx.caseid_minitor54(self)
         # caseid_stx.caseid_minitor55(self)
@@ -484,7 +482,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report20(self)
         # caseid_stx.caseid_report21(self)
         # caseid_stx.caseid_report22(self)
-        #
+        # #
         # caseid_stx.caseid_report23(self)
         # caseid_stx.caseid_report24(self)
         # caseid_stx.caseid_report25(self)
@@ -525,7 +523,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report51(self)
         # caseid_stx.caseid_report52(self)
         # caseid_stx.caseid_report53(self)
-        # #
+        #
         # caseid_stx.caseid_report54(self)
         # caseid_stx.caseid_report55(self)
         # caseid_stx.caseid_report56(self)

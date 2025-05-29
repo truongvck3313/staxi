@@ -13,7 +13,7 @@ import shutil
 import module_stx
 from playsound import playsound
 from gtts import gTTS
-
+import requests
 
 
 
@@ -118,6 +118,7 @@ def close_tab():
     except:
         pass
     time.sleep(1)
+
 
 
 def getRowCount(file, sheetName):
@@ -316,12 +317,6 @@ def check_info_telegram():
 
 
 
-
-
-
-
-
-
 @retry(tries=2, delay=2, backoff=1, jitter=5, )
 def notification_telegram():
     from DrissionPage import ChromiumPage, ChromiumOptions
@@ -409,6 +404,199 @@ def notification_telegram():
 
         time.sleep(30)
         driver2.close()
+
+
+
+
+
+
+
+
+def viber_send_text():
+    wordbook = openpyxl.load_workbook(var_stx.checklistpath)
+    sheet = wordbook.get_sheet_by_name("Checklist")
+    module_stx.check_casenone()
+    module_stx.check_casefail()
+    module_stx.check_casepass()
+
+    mucnghiemtrong = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 65, 2))
+    tong_case_trong = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 66, 2))
+
+    case_fail = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 77, 2))
+    case_pass = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 87, 2))
+
+
+    time_string1 = time.strftime("%d/%m/%Y, ", time.localtime())
+    time_string1 = str(time_string1)
+    time_string2 = time.strftime("%H:%M", time.localtime())
+    time_string2 = str(time_string2)
+    thoigianbatdauchay = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 47, 2))
+
+    print("- DateTest : "+time_string1+""+thoigianbatdauchay+" - "+time_string2 +
+                                              "\n- LinkTest: " + var_stx.linktest +
+                                              "\n- ModeTest: " + var_stx.modetest +
+                                              "\n- Số case Pass: " + case_pass +
+                                              "\n- Số case False: " + case_fail +
+                                              "\n- Số case trống: " + tong_case_trong +
+                                              "\n- Số case False nghiêm trọng: " + mucnghiemtrong)
+
+    AUTH_TOKEN = "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"  # id Cảnh báo Autotest STAXI Customer
+    FROM_USER_ID = "nvt+6nb4cLpsaYhLS0FnbA=="
+
+
+    # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
+    webhook_url = "https://eoj9bp6x8fvrpv8.m.pipedream.net"  # Hoặc URL server thực tế nếu có
+
+    webhook_response = requests.post(
+        "https://chatapi.viber.com/pa/set_webhook",
+        headers={"X-Viber-Auth-Token": AUTH_TOKEN},
+        json={"url": webhook_url})
+
+    print(AUTH_TOKEN)
+    print(FROM_USER_ID)
+
+
+    if webhook_response.json().get("status") != 0:
+        print("⚠️ Không thể thiết lập webhook. Hủy gửi tin nhắn.")
+        return
+
+
+    # 2. Gửi tin nhắn văn bản
+    send_url = "https://chatapi.viber.com/pa/post"
+    payload = {
+        "auth_token": AUTH_TOKEN,
+        "from": FROM_USER_ID,
+        "type": "text",
+        "text": ("- DateTest : "+time_string1+""+thoigianbatdauchay+" - "+time_string2 +
+                                              "\n- LinkTest: " + var_stx.linktest +
+                                              "\n- ModeTest: " + var_stx.modetest +
+                                              "\n- Số case Pass: " + case_pass +
+                                              "\n- Số case False: " + case_fail +
+                                              "\n- Số case trống: " + tong_case_trong +
+                                              "\n- Số case False nghiêm trọng: " + mucnghiemtrong)}
+
+    headers = {
+        "Content-Type": "application/json"}
+
+    response = requests.post(send_url, json=payload, headers=headers)
+
+    print("\n== Send Message Response ==")
+    print("Status Code:", response.status_code)
+    print("Response:", response.json())
+
+
+def check_user_id():
+    res = requests.post(
+        "https://chatapi.viber.com/pa/get_account_info",
+        headers={"X-Viber-Auth-Token": "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"}
+    )
+    print(res.json())
+
+
+def upload_to_catbox(file_path):
+    url = "https://catbox.moe/user/api.php"
+    files = {
+        'fileToUpload': open(file_path, 'rb')
+    }
+    data = {
+        'reqtype': 'fileupload'
+    }
+
+    try:
+        response = requests.post(url, files=files, data=data)
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print("❌ Lỗi upload:", e)
+        return None
+
+    direct_link = response.text.strip()
+    # Catbox trả về URL trực tiếp của file, vd: https://files.catbox.moe/abc123.png
+    print(f"✅ Upload thành công! Link tải trực tiếp:\n{direct_link}")
+    return direct_link
+
+
+
+def send_gofile_link_via_viber(AUTH_TOKEN, FROM_USER_ID, file_path):
+    file_url = upload_to_catbox(file_path)
+    if not file_url:
+        print("⚠️ Không thể upload file. Hủy gửi.")
+        return
+
+    file_name = os.path.basename(file_path)
+    file_size = os.path.getsize(file_path)
+
+
+    # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
+    webhook_url = "https://eoj9bp6x8fvrpv8.m.pipedream.net"  # Hoặc URL server thực tế nếu có
+
+    webhook_response = requests.post(
+        "https://chatapi.viber.com/pa/set_webhook",
+        headers={"X-Viber-Auth-Token": AUTH_TOKEN},
+        json={"url": webhook_url})
+
+    if webhook_response.json().get("status") != 0:
+        print("⚠️ Không thể thiết lập webhook. Hủy gửi tin nhắn.")
+        return
+
+    # 2. Gửi tin nhắn văn bản
+    payload = {
+        "auth_token": AUTH_TOKEN,
+        "from": FROM_USER_ID,           # Viber user ID người nhận
+        "min_api_version": 1,
+        "tracking_data": "",               # Có thể để chuỗi rỗng nếu không dùng tracking
+        "type": "file",
+        "media": file_url,
+        "size": file_size,
+        "file_name": file_name}
+
+    headers = {
+        "X-Viber-Auth-Token": AUTH_TOKEN,
+        "Content-Type": "application/json"}
+
+    response = requests.post("https://chatapi.viber.com/pa/post", json=payload, headers=headers)
+    print("📨 Phản hồi từ Viber:", response.status_code, response.json())
+    print("\n== Send Message Response ==")
+    print("Status Code:", response.status_code)
+    print("Response:", response.json())
+
+
+def viber_send_file():
+    # ==== Ví dụ sử dụng ====
+    AUTH_TOKEN = "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"  # id Cảnh báo Autotest STAXI
+    FROM_USER_ID = "nvt+6nb4cLpsaYhLS0FnbA=="
+
+
+    FILE_PATH_checklisst = var_stx.checklistpath  # Thay bằng đường dẫn file thật
+    FILE_PATH_log = var_stx.logpath  # Thay bằng đường dẫn file thật
+
+    print(var_stx.checklistpath)
+    print(var_stx.logpath)
+
+
+    send_gofile_link_via_viber(AUTH_TOKEN, FROM_USER_ID, FILE_PATH_checklisst)
+    send_gofile_link_via_viber(AUTH_TOKEN, FROM_USER_ID, FILE_PATH_log)
+
+
+def send_viber():
+    viber_send_text()
+    viber_send_file()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

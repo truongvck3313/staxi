@@ -15,6 +15,7 @@ import re
 import openpyxl
 from selenium.webdriver.common.action_chains import ActionChains
 from datetime import datetime
+from selenium.webdriver.common.keys import Keys
 
 
 
@@ -833,14 +834,20 @@ class contract_card:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_tk_company).click()
         time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_get_email)
+        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_auto_export)
+        var_stx.driver.find_element(By.XPATH, var_stx.search_mst)
 
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_mst).send_keys("350080643")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_name_company).send_keys("Công ty test số "+number)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_adress).send_keys("Lô 14 Nguyễn Cảnh Dị, Đại Kim, Hoàng Mai, Hà Nội")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_email).send_keys(f"Auto_{number}@gmail.com")
         time.sleep(1.5)
-
+        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_email).send_keys(Keys.ENTER)
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.save_1).click()
         time.sleep(1.5)
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "Auto" + number)
@@ -2069,11 +2076,11 @@ class contract_card:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("27/5/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("20/12/2024 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("28/05/2025 23:59")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.code_drive).click()
         time.sleep(0.5)
@@ -2086,11 +2093,11 @@ class contract_card:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/03/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("20/05/2025 23:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("28/05/2025 23:59")
             time.sleep(0.5)
             button = var_stx.driver.find_element(By.XPATH, var_stx.search)
             var_stx.driver.execute_script("arguments[0].click();", button)

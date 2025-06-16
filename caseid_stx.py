@@ -10,7 +10,7 @@ import promotion_stx
 import customer_stx
 import report_stx
 import administration
-
+import accounting
 
 
 
@@ -119,7 +119,7 @@ def caseid_login11(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     login_stx.link.affiliate(self, "Login11", event, result, var_stx.app_store, var_stx.check_app_store,
-                             "G7 Taxi 4+", "DangNhap_LienKet_Store.png", "0")
+                             "G7 Taxi 17+", "DangNhap_LienKet_Store.png", "0")
 
 def caseid_login12(self):
     get_datachecklist("Login12")
@@ -766,7 +766,7 @@ def caseid_vehicle06(self):
     get_datachecklist("Vehicle06")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.vehicle.search_vehicle_combobox(self, "Vehicle06", event, result, var_stx.state_1, "2", var_stx.listdata1_5,
+    vehicle_driver_stx.vehicle.search_vehicle_combobox(self, "Vehicle06", event, result, var_stx.state_1, "2", var_stx.listdata1_2,
                                                        "", "_Xe_TrangThai.png")
 
 def caseid_vehicle07(self):
@@ -4012,6 +4012,565 @@ def caseid_admin129(self):
     administration.admin_10_10.admin_10_10_5_delete(self, "Admin129", event, result)
 
 
+
+def caseid_accounting01(self):
+    get_datachecklist("Accounting01")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1(self, "Accounting01", event, result)
+
+
+def caseid_accounting02(self):
+    get_datachecklist("Accounting02")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_fromday_today(self, "Accounting02", event, result)
+
+
+def caseid_accounting03(self):
+    get_datachecklist("Accounting03")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox(self, "Accounting03", event, result, var_stx.accounting_2_Source, var_stx.Source,
+                                                        var_stx.accounting_1_Source, "_QuanLyXuatHoaDon_NguonCuoc.png")
+
+
+def caseid_accounting04(self):
+    get_datachecklist("Accounting04")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_input(self, "Accounting04", event, result, var_stx.accounting_2_DisplayPublicBookId, var_stx.DisplayPublicBookId,
+                                                        var_stx.accounting_1_DisplayPublicBookId, "_QuanLyXuatHoaDon_MaCuocKhach.png")
+
+def caseid_accounting05(self):
+    get_datachecklist("Accounting05")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_other_input(self, "Accounting05", event, result, var_stx.Mobile, var_stx.MobileOrAddress,
+                                                        var_stx.accounting_1_Mobile, "_QuanLyXuatHoaDon_SoDienThoai.png")
+
+def caseid_accounting06(self):
+    get_datachecklist("Accounting06")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_input(self, "Accounting06", event, result, var_stx.accounting_2_FromAddress, var_stx.MobileOrAddress,
+                                                        var_stx.accounting_1_FromAddress, "_QuanLyXuatHoaDon_DiaChiDon.png")
+
+
+def caseid_accounting07(self):
+    get_datachecklist("Accounting07")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_other_input(self, "Accounting07", event, result, var_stx.id_InvoiceNo, var_stx.InvoiceNo,
+                                                        var_stx.accounting_1_InvoiceNo, "_QuanLyXuatHoaDon_SoHoaDon.png")
+
+def caseid_accounting08(self):
+    get_datachecklist("Accounting08")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting08", event, result, "Chưa xử lý", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_ChuaXuLy.png")
+
+def caseid_accounting09(self):
+    get_datachecklist("Accounting09")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting09", event, result, "Chờ NCC xử lý", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_ChoNCCXuLy.png")
+
+def caseid_accounting10(self):
+    get_datachecklist("Accounting10")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting10", event, result, "Đang xử lý", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_DangXuLy.png")
+
+def caseid_accounting11(self):
+    get_datachecklist("Accounting11")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting11", event, result, "Đã xuất", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_DaXuat.png")
+def caseid_accounting12(self):
+    get_datachecklist("Accounting12")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting12", event, result, "Xuất lỗi", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_XuatLoi.png")
+def caseid_accounting13(self):
+    get_datachecklist("Accounting13")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting13", event, result, "Gửi lỗi NCC", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_GuiLoiNCC.png")
+
+def caseid_accounting14(self):
+    get_datachecklist("Accounting14")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting14", event, result, "Không xuất", var_stx.Status,
+                                                        var_stx.accounting_1_Status, "_QuanLyXuatHoaDon_KhongXuat.png")
+
+def caseid_accounting15(self):
+    get_datachecklist("Accounting15")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting15", event, result, "Khách lẻ", var_stx.InvoiceType,
+                                                        var_stx.accounting_1_InvoiceTypeName, "_QuanLyXuatHoaDon_KhackLe.png")
+
+def caseid_accounting16(self):
+    get_datachecklist("Accounting16")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting16", event, result, "Theo yêu cầu", var_stx.InvoiceType,
+                                                        var_stx.accounting_1_InvoiceTypeName, "_QuanLyXuatHoaDon_KhackLe.png")
+
+def caseid_accounting17(self):
+    get_datachecklist("Accounting17")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_combobox_other(self, "Accounting17", event, result, "Cuốc test/lỗi", var_stx.InvoiceType,
+                                                        var_stx.accounting_1_InvoiceTypeName, "_QuanLyXuatHoaDon_KhackLe.png")
+
+
+
+def caseid_accounting18(self):
+    get_datachecklist("Accounting18")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_other_combobox(self, "Accounting18", event, result, "LegalEntityName", var_stx.LegalEntityId,
+                                                        var_stx.accounting_1_LegalEntityName, "_QuanLyXuatHoaDon_DonViQuanLy.png")
+
+def caseid_accounting19(self):
+    get_datachecklist("Accounting19")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_search_advance(self, "Accounting19", event, result)
+
+
+def caseid_accounting20(self):
+    get_datachecklist("Accounting20")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_search_advance_delete(self, "Accounting20", event, result)
+
+def caseid_accounting21(self):
+    get_datachecklist("Accounting21")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_excel(self, "Accounting21", event, result)
+
+
+def caseid_accounting22(self):
+    get_datachecklist("Accounting22")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_button(self, "Accounting22", event, result, "1", var_stx.retail_invoice,
+                                                      var_stx.check_retail_invoice, "Xác nhận xuất hoá đơn khách lẻ",
+                                                      "Cuốc khách không đủ điều kiện xuất hóa đơn", "_QuanLyXuatHoaDon_XuatHoaDonKhachLe.png")
+
+def caseid_accounting23(self):
+    get_datachecklist("Accounting23")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_button(self, "Accounting23", event, result, "2", var_stx.not_export_invoice,
+                                                      var_stx.check_not_export_invoice, "Xác nhận không xuất hóa đơn",
+                                                      "", "_QuanLyXuatHoaDon_KhongXuatHoa.png")
+
+def caseid_accounting24(self):
+    get_datachecklist("Accounting24")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_button(self, "Accounting24", event, result, "1", var_stx.export_invoice,
+                                                      var_stx.check_export_invoice, "Thông tin xuất hóa đơn",
+                                                      "Cuốc khách không đủ điều kiện xuất hóa đơn", "_QuanLyXuatHoaDon_XuatHoaDon.png")
+
+
+def caseid_accounting25(self):
+    get_datachecklist("Accounting25")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_export_invoice_fillinfo(self, "Accounting25", event, result)
+
+
+def caseid_accounting26(self):
+    get_datachecklist("Accounting26")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting26", event, result, "ActualRevenue",
+                                                    var_stx.swal2_title, "", "_QuanLyXuatHoaDon_ThucThu.png")
+
+def caseid_accounting27(self):
+    get_datachecklist("Accounting27")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting27", event, result, "InvoiceFromAddress",
+                                                    var_stx.swal2_title, "", "_QuanLyXuatHoaDon_DiaChiDonXHD.png")
+
+def caseid_accounting28(self):
+    get_datachecklist("Accounting28")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting28", event, result, "InvoiceToAddress",
+                                                    var_stx.swal2_title, "", "_QuanLyXuatHoaDon_DiaChiTraXHD.png")
+
+def caseid_accounting29(self):
+    get_datachecklist("Accounting29")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_electronic_invoice(self, "Accounting29", event, result, "Xem ")
+
+def caseid_accounting30(self):
+    get_datachecklist("Accounting30")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_electronic_invoice(self, "Accounting30", event, result, "Xuất ")
+
+def caseid_accounting31(self):
+    get_datachecklist("Accounting31")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_electronic_invoice(self, "Accounting31", event, result, "Xuất lại ")
+
+def caseid_accounting32(self):
+    get_datachecklist("Accounting32")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_electronic_invoice(self, "Accounting32", event, result, "Xem HĐ ")
+
+
+def caseid_accounting33(self):
+    get_datachecklist("Accounting33")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting33", event, result, var_stx.accounting_1_ReceiptLink,
+                                                         var_stx.check_ReceiptLink, "CẢM ƠN QUÝ KHÁCH ĐÃ SỬ DỤNG DỊCH VỤ!",
+                                                         "_QuanLyXuatHoaDon_BienLai.png")
+
+def caseid_accounting34(self):
+    get_datachecklist("Accounting34")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting34", event, result, var_stx.accounting_1_BookContractLink,
+                                                         var_stx.check_BookContractLink, "HỢP ĐỒNG VẬN CHUYỂN HÀNH KHÁCH",
+                                                         "_QuanLyXuatHoaDon_HopDong.png")
+
+def caseid_accounting35(self):
+    get_datachecklist("Accounting35")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting35", event, result, var_stx.accounting_1_0,
+                                                         var_stx.title_page1, "8.1.0 Báo cáo cuốc khách tổng",
+                                                         "_QuanLyXuatHoaDon_ChiTietCuoc.png")
+
+def caseid_accounting36(self):
+    get_datachecklist("Accounting36")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting36", event, result, var_stx.accounting_1_1,
+                                                         var_stx.check_accounting_1_1, "ĐĂNG NHẬP", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
+
+def caseid_accounting37(self):
+    get_datachecklist("Accounting37")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting37", event, result, var_stx.accounting_1_2,
+                                                         var_stx.check_accounting_1_1, "ĐĂNG NHẬP", "_QuanLyXuatHoaDon_LotrinhGPS.png")
+
+def caseid_accounting38(self):
+    get_datachecklist("Accounting38")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.accounting_14_1_info_order(self, "Accounting38", event, result)
+
+
+def caseid_accounting39(self):
+    get_datachecklist("Accounting39")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting39", event, result, "0", "value", var_stx.info_order_serial_name,
+                                                                var_stx.info_order_serial_data, "Serial:", "_ThongTinCuoc_Serial.png")
+
+def caseid_accounting40(self):
+    get_datachecklist("Accounting40")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting40", event, result, "0", "value", var_stx.info_order_phone_name,
+                                                                var_stx.info_order_phone_data, "Số điện thoại:", "_ThongTinCuoc_SoDienThoai.png")
+
+def caseid_accounting41(self):
+    get_datachecklist("Accounting41")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting41", event, result, "0", "value",var_stx.info_order_namecustomer_name,
+                                                                var_stx.info_order_namecustomer_data, "Tên khách hàng:", "_ThongTinCuoc_TenKhachHang.png")
+
+def caseid_accounting42(self):
+    get_datachecklist("Accounting42")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting42", event, result, "0", "value",var_stx.info_order_typecar_name,
+                                                                var_stx.info_order_typecar_data, "Loại thẻ:", "_ThongTinCuoc_LoaiThe.png")
+
+def caseid_accounting43(self):
+    get_datachecklist("Accounting43")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting43", event, result, "0", "value", var_stx.info_order_namepartner_name,
+                                                                var_stx.info_order_namepartner_data, "Tên đối tác:", "_ThongTinCuoc_TenDoiTac.png")
+
+def caseid_accounting44(self):
+    get_datachecklist("Accounting44")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting44", event, result, "0", "value",var_stx.info_order_codehd_name,
+                                                                var_stx.info_order_codehd_data, "Mã hợp đồng:", "_ThongTinCuoc_MaHopDong.png")
+
+def caseid_accounting45(self):
+    get_datachecklist("Accounting45")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting45", event, result, "0", "value", var_stx.info_order_namecompany_name,
+                                                                var_stx.info_order_namecompany_data, "Tên công ty:", "_ThongTinCuoc_TenCongTy.png")
+
+def caseid_accounting46(self):
+    get_datachecklist("Accounting46")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting46", event, result, "0", "value", var_stx.info_order_rankcar_name,
+                                                                var_stx.info_order_rankcar_data, "Hạng thẻ:", "_ThongTinCuoc_HangThe.png")
+
+def caseid_accounting47(self):
+    get_datachecklist("Accounting47")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting47", event, result, "1", "value", var_stx.info_order_DisplayPublicBookId_name,
+                                                                var_stx.info_order_DisplayPublicBookId_data, "Mã cuốc khách:", "_ThongTinCuoc_MaCuocKhach.png")
+
+def caseid_accounting48(self):
+    get_datachecklist("Accounting48")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting48", event, result, "0", "value", var_stx.info_order_CustName_name,
+                                                                var_stx.info_order_CustName_data, "Khách hàng:", "_ThongTinCuoc_KhachHang.png")
+
+def caseid_accounting49(self):
+    get_datachecklist("Accounting49")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting49", event, result, "0", "value", var_stx.info_order_BookForName_name,
+                                                                var_stx.info_order_BookForName_data, "Đặt hộ:", "_ThongTinCuoc_DatHo.png")
+
+def caseid_accounting50(self):
+    get_datachecklist("Accounting50")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting50", event, result, "1", "value", var_stx.info_order_CarType_name,
+                                                                var_stx.info_order_CarType_data, "Loại xe:", "_ThongTinCuoc_LoaiXe.png")
+
+def caseid_accounting51(self):
+    get_datachecklist("Accounting51")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting51", event, result, "1", "value", var_stx.info_order_SentTime_name,
+                                                                var_stx.info_order_SentTime_data, "Thời điểm cuốc đặt:", "_ThongTinCuoc_ThoiDiemCuocDat.png")
+
+def caseid_accounting52(self):
+    get_datachecklist("Accounting52")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting52", event, result, "0", "text", var_stx.info_order_FromAddress_name,
+                                                                var_stx.info_order_FromAddress_data, "Điểm đón:", "_ThongTinCuoc_DienDon.png")
+
+def caseid_accounting53(self):
+    get_datachecklist("Accounting53")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting53", event, result, "0", "text", var_stx.info_order_ToAddress_name,
+                                                                var_stx.info_order_ToAddress_data, "Điểm trả:", "_ThongTinCuoc_DienTra.png")
+
+def caseid_accounting54(self):
+    get_datachecklist("Accounting54")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting54", event, result, "0", "value", var_stx.info_order_Comment_name,
+                                                                var_stx.info_order_Comment_data, "Ghi chú:", "_ThongTinCuoc_GhiChu.png")
+
+def caseid_accounting55(self):
+    get_datachecklist("Accounting55")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting55", event, result, "1", "value", var_stx.info_order_SourceType_name,
+                                                                var_stx.info_order_SourceType_data, "Nguồn cuốc:", "_ThongTinCuoc_NguocCuoc.png")
+
+def caseid_accounting56(self):
+    get_datachecklist("Accounting56")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting56", event, result, "1", "value", var_stx.info_order_PartnerBookId_name,
+                                                                var_stx.info_order_PartnerBookId_data, "Mã nguồn cuốc:", "_ThongTinCuoc_MaNguocCuoc.png")
+
+def caseid_accounting57(self):
+    get_datachecklist("Accounting57")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting57", event, result, "1", "value", var_stx.info_order_BookTripType_name,
+                                                                var_stx.info_order_BookTripType_data, "Loại cuốc:", "_ThongTinCuoc_LoaiCuoc.png")
+
+def caseid_accounting58(self):
+    get_datachecklist("Accounting58")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting58", event, result, "1", "value", var_stx.info_order_PaymentMethodCust_name,
+                                                                var_stx.info_order_PaymentMethodCust_data, "Phương thức thanh toán:", "_ThongTinCuoc_pttt.png")
+
+
+def caseid_accounting59(self):
+    get_datachecklist("Accounting59")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting59", event, result, "1", "value", var_stx.info_order_CatchedTime_name,
+                                                                var_stx.info_order_CatchedTime_data, "Thời điểm gặp khách:", "_ThongTinCuoc_ThoiDiemGapKhach.png")
+
+def caseid_accounting60(self):
+    get_datachecklist("Accounting60")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting60", event, result, "1", "text", var_stx.info_order_FromAddress_name2,
+                                                                var_stx.info_order_FromAddress_data2, "Địa chỉ đón:", "_ThongTinCuoc_DiaChiDon.png")
+
+def caseid_accounting61(self):
+    get_datachecklist("Accounting61")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting61", event, result, "1", "text", var_stx.info_order_ToAddress_name2,
+                                                                var_stx.info_order_ToAddress_data2, "Địa chỉ trả:", "_ThongTinCuoc_DiaChiTra.png")
+
+def caseid_accounting62(self):
+    get_datachecklist("Accounting62")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting62", event, result, "1", "text", var_stx.info_order_bookState_name,
+                                                                var_stx.info_order_bookState_data, "Trạng thái:", "_ThongTinCuoc_TrangThai.png")
+
+def caseid_accounting63(self):
+    get_datachecklist("Accounting63")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting63", event, result, "1", "value", var_stx.info_order_PrivateCode_name,
+                                                                var_stx.info_order_PrivateCode_data, "Số hiệu:", "_ThongTinCuoc_SoHieu.png")
+
+def caseid_accounting64(self):
+    get_datachecklist("Accounting64")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting64", event, result, "1", "value", var_stx.info_order_VehiclePlate_name,
+                                                                var_stx.info_order_VehiclePlate_data, "Biến số xe:", "_ThongTinCuoc_BienSoXe.png")
+
+def caseid_accounting65(self):
+    get_datachecklist("Accounting65")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting65", event, result, "1", "value", var_stx.info_order_CarTypeName_name,
+                                                                var_stx.info_order_CarTypeName_data, "Loại xe:", "_ThongTinCuoc_LoaiXe.png")
+
+def caseid_accounting66(self):
+    get_datachecklist("Accounting66")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting66", event, result, "1", "value", var_stx.info_order_DriverCode_name,
+                                                                var_stx.info_order_DriverCode_data, "Tài khoản tài xế:", "_ThongTinCuoc_TaiKhoanLaiXe.png")
+
+def caseid_accounting67(self):
+    get_datachecklist("Accounting67")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting67", event, result, "1", "value", var_stx.info_order_DriverName_name,
+                                                                var_stx.info_order_DriverName_data, "Tên tài xế:", "_ThongTinCuoc_TenLaiXe.png")
+
+def caseid_accounting68(self):
+    get_datachecklist("Accounting68")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting68", event, result, "1", "value", var_stx.info_order_DriverPhone_name,
+                                                                var_stx.info_order_DriverPhone_data, "Số điện thoại:", "_ThongTinCuoc_SoDienThoai.png")
+
+def caseid_accounting69(self):
+    get_datachecklist("Accounting69")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting69", event, result, "1", "value", var_stx.info_order_PaymentType_name,
+                                                                var_stx.info_order_PaymentType_data, "Phương thức thanh toán:", "_ThongTinCuoc_pttt.png")
+
+def caseid_accounting70(self):
+    get_datachecklist("Accounting70")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting70", event, result, "1", "value", var_stx.info_order_BuyDate_name,
+                                                                var_stx.info_order_BuyDate_data, "Thời điểm thanh toán:", "_ThongTinCuoc_ThoiDiemThanhToan.png")
+
+def caseid_accounting71(self):
+    get_datachecklist("Accounting71")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting71", event, result, "1", "value", var_stx.info_order_space_name,
+                                                                var_stx.info_order_space_data, "Khoảng cách:", "_ThongTinCuoc_KhoangCach.png")
+
+def caseid_accounting72(self):
+    get_datachecklist("Accounting72")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting72", event, result, "1", "value", var_stx.info_order_TripPrice_name,
+                                                                var_stx.info_order_TripPrice_data, "Cước phí (Cước thật):", "_ThongTinCuoc_CuocPhi.png")
+
+def caseid_accounting73(self):
+    get_datachecklist("Accounting73")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting73", event, result, "1", "value", var_stx.info_order_promotion_name,
+                                                                var_stx.info_order_promotion_data, "Khuyến mại:", "_ThongTinCuoc_KhuyenMai.png")
+
+def caseid_accounting74(self):
+    get_datachecklist("Accounting74")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting74", event, result, "1", "value", var_stx.info_order_MoneyExtendFromDriver_name,
+                                                                var_stx.info_order_MoneyExtendFromDriver_data, "Phụ phí:", "_ThongTinCuoc_PhuPhi.png")
+
+def caseid_accounting75(self):
+    get_datachecklist("Accounting75")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting75", event, result, "2", "value", var_stx.info_order_ChangeMoney_name,
+                                                                var_stx.info_order_ChangeMoney_data, "KH thanh toán:", "_ThongTinCuoc_KhThanhToan.png")
+
+def caseid_accounting76(self):
+    get_datachecklist("Accounting76")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting76", event, result, "0", "value", var_stx.info_order_SaleOffCode_name,
+                                                                var_stx.info_order_SaleOffCode_data, "Mã khuyến mại:", "_ThongTinCuoc_MaKhuyenMai.png")
+
+def caseid_accounting77(self):
+    get_datachecklist("Accounting77")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting77", event, result, "0", "value", var_stx.info_order_PercentMN_name,
+                                                                var_stx.info_order_PercentMN_data, "Tên khuyến mại:", "_ThongTinCuoc_TenKhuyenMai.png")
+
+def caseid_accounting78(self):
+    get_datachecklist("Accounting78")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting78", event, result, "3", "text", var_stx.info_order_DetailFee_name,
+                                                                var_stx.info_order_DetailFee_data, "Chi tiết phụ phí:", "_ThongTinCuoc_ChiTietPhuPhi.png")
+
+
+def caseid_accounting79(self):
+    get_datachecklist("Accounting79")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    accounting.accounting_14_1.check_accounting_14_1_info_order_history(self, "Accounting79", event, result)
 
 
 

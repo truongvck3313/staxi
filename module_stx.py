@@ -40,6 +40,8 @@ def ModuleTest():
                     report(self='')
                 if i == "8":
                     admin(self='')
+                if i == "9":
+                    accounting(self='')
 
 
 
@@ -20430,12 +20432,1628 @@ def admin(self):
 
 
 
+def accounting(self):
+    list_mucdo1 = []
+    list_mucdo2 = []
+    list_mucdo3 = []
+    list_mucdo4 = []
+    wordbook = openpyxl.load_workbook(var_stx.checklistpath)
+    sheet = wordbook.get_sheet_by_name("Checklist")
+    rownum = 750
+    while (rownum < 900):
+        rownum += 1
+        rownum = str(rownum)
+        if sheet["H"+rownum].value == "x":
+            muc1 = sheet["A"+rownum].value
+            list_mucdo1.append(muc1)
+        if sheet["I"+rownum].value == "x":
+            muc2 = sheet["A"+rownum].value
+            list_mucdo2.append(muc2)
+        if sheet["J"+rownum].value == "x":
+            muc3 = sheet["A"+rownum].value
+            list_mucdo3.append(muc3)
+        if sheet["K"+rownum].value == "x":
+            muc4 = sheet["A"+rownum].value
+            list_mucdo4.append(muc4)
+        rownum = int(rownum)
+    print("muc do 1", list_mucdo1)
+    print("muc do 2", list_mucdo2)
+    print("muc do 3", list_mucdo3)
+    print("muc do 4", list_mucdo4)
+    modetest = ''.join(re.findall(r'\d+', var_stx.modetest))
+    for i in modetest:
+        print("i", i)
+        if i == "1":
+            for case in list_mucdo1:
+                try:
+                    if case == 'Accounting01':
+                        caseid_stx.caseid_accounting01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting02':
+                        caseid_stx.caseid_accounting02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting03':
+                        caseid_stx.caseid_accounting03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting04':
+                        caseid_stx.caseid_accounting04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting05':
+                        caseid_stx.caseid_accounting05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting06':
+                        caseid_stx.caseid_accounting06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting07':
+                        caseid_stx.caseid_accounting07(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting08':
+                        caseid_stx.caseid_accounting08(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting09':
+                        caseid_stx.caseid_accounting09(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting10':
+                        caseid_stx.caseid_accounting10(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting11':
+                        caseid_stx.caseid_accounting11(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting12':
+                        caseid_stx.caseid_accounting12(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting13':
+                        caseid_stx.caseid_accounting13(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting14':
+                        caseid_stx.caseid_accounting14(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting15':
+                        caseid_stx.caseid_accounting15(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting16':
+                        caseid_stx.caseid_accounting16(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting17':
+                        caseid_stx.caseid_accounting17(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting18':
+                        caseid_stx.caseid_accounting18(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting19':
+                        caseid_stx.caseid_accounting19(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting20':
+                        caseid_stx.caseid_accounting20(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting21':
+                        caseid_stx.caseid_accounting21(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting22':
+                        caseid_stx.caseid_accounting22(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting23':
+                        caseid_stx.caseid_accounting23(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting24':
+                        caseid_stx.caseid_accounting24(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting25':
+                        caseid_stx.caseid_accounting25(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting26':
+                        caseid_stx.caseid_accounting26(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting27':
+                        caseid_stx.caseid_accounting27(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting28':
+                        caseid_stx.caseid_accounting28(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting29':
+                        caseid_stx.caseid_accounting29(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting30':
+                        caseid_stx.caseid_accounting30(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting31':
+                        caseid_stx.caseid_accounting31(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting32':
+                        caseid_stx.caseid_accounting32(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting33':
+                        caseid_stx.caseid_accounting33(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting34':
+                        caseid_stx.caseid_accounting34(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting35':
+                        caseid_stx.caseid_accounting35(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting36':
+                        caseid_stx.caseid_accounting36(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting37':
+                        caseid_stx.caseid_accounting37(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting38':
+                        caseid_stx.caseid_accounting38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting39':
+                        caseid_stx.caseid_accounting39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting40':
+                        caseid_stx.caseid_accounting40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting41':
+                        caseid_stx.caseid_accounting41(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting42':
+                        caseid_stx.caseid_accounting42(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting43':
+                        caseid_stx.caseid_accounting43(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting44':
+                        caseid_stx.caseid_accounting44(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting45':
+                        caseid_stx.caseid_accounting45(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting46':
+                        caseid_stx.caseid_accounting46(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting47':
+                        caseid_stx.caseid_accounting47(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting48':
+                        caseid_stx.caseid_accounting48(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting49':
+                        caseid_stx.caseid_accounting49(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting50':
+                        caseid_stx.caseid_accounting50(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting51':
+                        caseid_stx.caseid_accounting51(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting52':
+                        caseid_stx.caseid_accounting52(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting53':
+                        caseid_stx.caseid_accounting53(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting54':
+                        caseid_stx.caseid_accounting54(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting55':
+                        caseid_stx.caseid_accounting55(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting56':
+                        caseid_stx.caseid_accounting56(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting57':
+                        caseid_stx.caseid_accounting57(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting58':
+                        caseid_stx.caseid_accounting58(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting59':
+                        caseid_stx.caseid_accounting59(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting60':
+                        caseid_stx.caseid_accounting60(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting61':
+                        caseid_stx.caseid_accounting61(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting62':
+                        caseid_stx.caseid_accounting62(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting63':
+                        caseid_stx.caseid_accounting63(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting64':
+                        caseid_stx.caseid_accounting64(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting65':
+                        caseid_stx.caseid_accounting65(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting66':
+                        caseid_stx.caseid_accounting66(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting67':
+                        caseid_stx.caseid_accounting67(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting68':
+                        caseid_stx.caseid_accounting68(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting69':
+                        caseid_stx.caseid_accounting69(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting70':
+                        caseid_stx.caseid_accounting70(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting71':
+                        caseid_stx.caseid_accounting71(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting72':
+                        caseid_stx.caseid_accounting72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting73':
+                        caseid_stx.caseid_accounting73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting74':
+                        caseid_stx.caseid_accounting74(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting75':
+                        caseid_stx.caseid_accounting75(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting76':
+                        caseid_stx.caseid_accounting76(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting77':
+                        caseid_stx.caseid_accounting77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting78':
+                        caseid_stx.caseid_accounting78(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting79':
+                        caseid_stx.caseid_accounting79(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
+        if i == "2":
+            for case in list_mucdo2:
+                try:
+                    if case == 'Accounting01':
+                        caseid_stx.caseid_accounting01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting02':
+                        caseid_stx.caseid_accounting02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting03':
+                        caseid_stx.caseid_accounting03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting04':
+                        caseid_stx.caseid_accounting04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting05':
+                        caseid_stx.caseid_accounting05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting06':
+                        caseid_stx.caseid_accounting06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting07':
+                        caseid_stx.caseid_accounting07(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting08':
+                        caseid_stx.caseid_accounting08(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting09':
+                        caseid_stx.caseid_accounting09(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting10':
+                        caseid_stx.caseid_accounting10(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting11':
+                        caseid_stx.caseid_accounting11(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting12':
+                        caseid_stx.caseid_accounting12(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting13':
+                        caseid_stx.caseid_accounting13(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting14':
+                        caseid_stx.caseid_accounting14(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting15':
+                        caseid_stx.caseid_accounting15(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting16':
+                        caseid_stx.caseid_accounting16(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting17':
+                        caseid_stx.caseid_accounting17(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting18':
+                        caseid_stx.caseid_accounting18(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting19':
+                        caseid_stx.caseid_accounting19(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting20':
+                        caseid_stx.caseid_accounting20(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting21':
+                        caseid_stx.caseid_accounting21(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting22':
+                        caseid_stx.caseid_accounting22(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting23':
+                        caseid_stx.caseid_accounting23(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting24':
+                        caseid_stx.caseid_accounting24(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting25':
+                        caseid_stx.caseid_accounting25(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting26':
+                        caseid_stx.caseid_accounting26(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting27':
+                        caseid_stx.caseid_accounting27(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting28':
+                        caseid_stx.caseid_accounting28(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting29':
+                        caseid_stx.caseid_accounting29(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting30':
+                        caseid_stx.caseid_accounting30(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting31':
+                        caseid_stx.caseid_accounting31(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting32':
+                        caseid_stx.caseid_accounting32(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting33':
+                        caseid_stx.caseid_accounting33(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting34':
+                        caseid_stx.caseid_accounting34(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting35':
+                        caseid_stx.caseid_accounting35(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting36':
+                        caseid_stx.caseid_accounting36(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting37':
+                        caseid_stx.caseid_accounting37(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting38':
+                        caseid_stx.caseid_accounting38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting39':
+                        caseid_stx.caseid_accounting39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting40':
+                        caseid_stx.caseid_accounting40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting41':
+                        caseid_stx.caseid_accounting41(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting42':
+                        caseid_stx.caseid_accounting42(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting43':
+                        caseid_stx.caseid_accounting43(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting44':
+                        caseid_stx.caseid_accounting44(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting45':
+                        caseid_stx.caseid_accounting45(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting46':
+                        caseid_stx.caseid_accounting46(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting47':
+                        caseid_stx.caseid_accounting47(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting48':
+                        caseid_stx.caseid_accounting48(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting49':
+                        caseid_stx.caseid_accounting49(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting50':
+                        caseid_stx.caseid_accounting50(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting51':
+                        caseid_stx.caseid_accounting51(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting52':
+                        caseid_stx.caseid_accounting52(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting53':
+                        caseid_stx.caseid_accounting53(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting54':
+                        caseid_stx.caseid_accounting54(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting55':
+                        caseid_stx.caseid_accounting55(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting56':
+                        caseid_stx.caseid_accounting56(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting57':
+                        caseid_stx.caseid_accounting57(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting58':
+                        caseid_stx.caseid_accounting58(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting59':
+                        caseid_stx.caseid_accounting59(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting60':
+                        caseid_stx.caseid_accounting60(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting61':
+                        caseid_stx.caseid_accounting61(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting62':
+                        caseid_stx.caseid_accounting62(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting63':
+                        caseid_stx.caseid_accounting63(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting64':
+                        caseid_stx.caseid_accounting64(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting65':
+                        caseid_stx.caseid_accounting65(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting66':
+                        caseid_stx.caseid_accounting66(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting67':
+                        caseid_stx.caseid_accounting67(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting68':
+                        caseid_stx.caseid_accounting68(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting69':
+                        caseid_stx.caseid_accounting69(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting70':
+                        caseid_stx.caseid_accounting70(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting71':
+                        caseid_stx.caseid_accounting71(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting72':
+                        caseid_stx.caseid_accounting72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting73':
+                        caseid_stx.caseid_accounting73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting74':
+                        caseid_stx.caseid_accounting74(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting75':
+                        caseid_stx.caseid_accounting75(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting76':
+                        caseid_stx.caseid_accounting76(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting77':
+                        caseid_stx.caseid_accounting77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting78':
+                        caseid_stx.caseid_accounting78(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting79':
+                        caseid_stx.caseid_accounting79(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
+        if i == "3":
+            for case in list_mucdo3:
+                try:
+                    if case == 'Accounting01':
+                        caseid_stx.caseid_accounting01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting02':
+                        caseid_stx.caseid_accounting02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting03':
+                        caseid_stx.caseid_accounting03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting04':
+                        caseid_stx.caseid_accounting04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting05':
+                        caseid_stx.caseid_accounting05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting06':
+                        caseid_stx.caseid_accounting06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting07':
+                        caseid_stx.caseid_accounting07(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting08':
+                        caseid_stx.caseid_accounting08(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting09':
+                        caseid_stx.caseid_accounting09(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting10':
+                        caseid_stx.caseid_accounting10(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting11':
+                        caseid_stx.caseid_accounting11(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting12':
+                        caseid_stx.caseid_accounting12(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting13':
+                        caseid_stx.caseid_accounting13(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting14':
+                        caseid_stx.caseid_accounting14(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting15':
+                        caseid_stx.caseid_accounting15(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting16':
+                        caseid_stx.caseid_accounting16(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting17':
+                        caseid_stx.caseid_accounting17(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting18':
+                        caseid_stx.caseid_accounting18(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting19':
+                        caseid_stx.caseid_accounting19(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting20':
+                        caseid_stx.caseid_accounting20(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting21':
+                        caseid_stx.caseid_accounting21(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting22':
+                        caseid_stx.caseid_accounting22(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting23':
+                        caseid_stx.caseid_accounting23(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting24':
+                        caseid_stx.caseid_accounting24(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting25':
+                        caseid_stx.caseid_accounting25(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting26':
+                        caseid_stx.caseid_accounting26(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting27':
+                        caseid_stx.caseid_accounting27(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting28':
+                        caseid_stx.caseid_accounting28(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting29':
+                        caseid_stx.caseid_accounting29(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting30':
+                        caseid_stx.caseid_accounting30(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting31':
+                        caseid_stx.caseid_accounting31(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting32':
+                        caseid_stx.caseid_accounting32(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting33':
+                        caseid_stx.caseid_accounting33(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting34':
+                        caseid_stx.caseid_accounting34(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting35':
+                        caseid_stx.caseid_accounting35(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting36':
+                        caseid_stx.caseid_accounting36(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting37':
+                        caseid_stx.caseid_accounting37(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting38':
+                        caseid_stx.caseid_accounting38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting39':
+                        caseid_stx.caseid_accounting39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting40':
+                        caseid_stx.caseid_accounting40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting41':
+                        caseid_stx.caseid_accounting41(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting42':
+                        caseid_stx.caseid_accounting42(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting43':
+                        caseid_stx.caseid_accounting43(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting44':
+                        caseid_stx.caseid_accounting44(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting45':
+                        caseid_stx.caseid_accounting45(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting46':
+                        caseid_stx.caseid_accounting46(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting47':
+                        caseid_stx.caseid_accounting47(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting48':
+                        caseid_stx.caseid_accounting48(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting49':
+                        caseid_stx.caseid_accounting49(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting50':
+                        caseid_stx.caseid_accounting50(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting51':
+                        caseid_stx.caseid_accounting51(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting52':
+                        caseid_stx.caseid_accounting52(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting53':
+                        caseid_stx.caseid_accounting53(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting54':
+                        caseid_stx.caseid_accounting54(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting55':
+                        caseid_stx.caseid_accounting55(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting56':
+                        caseid_stx.caseid_accounting56(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting57':
+                        caseid_stx.caseid_accounting57(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting58':
+                        caseid_stx.caseid_accounting58(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting59':
+                        caseid_stx.caseid_accounting59(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting60':
+                        caseid_stx.caseid_accounting60(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting61':
+                        caseid_stx.caseid_accounting61(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting62':
+                        caseid_stx.caseid_accounting62(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting63':
+                        caseid_stx.caseid_accounting63(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting64':
+                        caseid_stx.caseid_accounting64(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting65':
+                        caseid_stx.caseid_accounting65(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting66':
+                        caseid_stx.caseid_accounting66(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting67':
+                        caseid_stx.caseid_accounting67(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting68':
+                        caseid_stx.caseid_accounting68(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting69':
+                        caseid_stx.caseid_accounting69(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting70':
+                        caseid_stx.caseid_accounting70(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting71':
+                        caseid_stx.caseid_accounting71(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting72':
+                        caseid_stx.caseid_accounting72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting73':
+                        caseid_stx.caseid_accounting73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting74':
+                        caseid_stx.caseid_accounting74(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting75':
+                        caseid_stx.caseid_accounting75(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting76':
+                        caseid_stx.caseid_accounting76(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting77':
+                        caseid_stx.caseid_accounting77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting78':
+                        caseid_stx.caseid_accounting78(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting79':
+                        caseid_stx.caseid_accounting79(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
-
-
-
+        if i == "4":
+            for case in list_mucdo4:
+                try:
+                    if case == 'Accounting01':
+                        caseid_stx.caseid_accounting01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting02':
+                        caseid_stx.caseid_accounting02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting03':
+                        caseid_stx.caseid_accounting03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting04':
+                        caseid_stx.caseid_accounting04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting05':
+                        caseid_stx.caseid_accounting05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting06':
+                        caseid_stx.caseid_accounting06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting07':
+                        caseid_stx.caseid_accounting07(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting08':
+                        caseid_stx.caseid_accounting08(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting09':
+                        caseid_stx.caseid_accounting09(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting10':
+                        caseid_stx.caseid_accounting10(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting11':
+                        caseid_stx.caseid_accounting11(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting12':
+                        caseid_stx.caseid_accounting12(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting13':
+                        caseid_stx.caseid_accounting13(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting14':
+                        caseid_stx.caseid_accounting14(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting15':
+                        caseid_stx.caseid_accounting15(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting16':
+                        caseid_stx.caseid_accounting16(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting17':
+                        caseid_stx.caseid_accounting17(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting18':
+                        caseid_stx.caseid_accounting18(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting19':
+                        caseid_stx.caseid_accounting19(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting20':
+                        caseid_stx.caseid_accounting20(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting21':
+                        caseid_stx.caseid_accounting21(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting22':
+                        caseid_stx.caseid_accounting22(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting23':
+                        caseid_stx.caseid_accounting23(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting24':
+                        caseid_stx.caseid_accounting24(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting25':
+                        caseid_stx.caseid_accounting25(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting26':
+                        caseid_stx.caseid_accounting26(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting27':
+                        caseid_stx.caseid_accounting27(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting28':
+                        caseid_stx.caseid_accounting28(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting29':
+                        caseid_stx.caseid_accounting29(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting30':
+                        caseid_stx.caseid_accounting30(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting31':
+                        caseid_stx.caseid_accounting31(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting32':
+                        caseid_stx.caseid_accounting32(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting33':
+                        caseid_stx.caseid_accounting33(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting34':
+                        caseid_stx.caseid_accounting34(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting35':
+                        caseid_stx.caseid_accounting35(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting36':
+                        caseid_stx.caseid_accounting36(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting37':
+                        caseid_stx.caseid_accounting37(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting38':
+                        caseid_stx.caseid_accounting38(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting39':
+                        caseid_stx.caseid_accounting39(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting40':
+                        caseid_stx.caseid_accounting40(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting41':
+                        caseid_stx.caseid_accounting41(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting42':
+                        caseid_stx.caseid_accounting42(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting43':
+                        caseid_stx.caseid_accounting43(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting44':
+                        caseid_stx.caseid_accounting44(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting45':
+                        caseid_stx.caseid_accounting45(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting46':
+                        caseid_stx.caseid_accounting46(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting47':
+                        caseid_stx.caseid_accounting47(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting48':
+                        caseid_stx.caseid_accounting48(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting49':
+                        caseid_stx.caseid_accounting49(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting50':
+                        caseid_stx.caseid_accounting50(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting51':
+                        caseid_stx.caseid_accounting51(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting52':
+                        caseid_stx.caseid_accounting52(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting53':
+                        caseid_stx.caseid_accounting53(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting54':
+                        caseid_stx.caseid_accounting54(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting55':
+                        caseid_stx.caseid_accounting55(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting56':
+                        caseid_stx.caseid_accounting56(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting57':
+                        caseid_stx.caseid_accounting57(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting58':
+                        caseid_stx.caseid_accounting58(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting59':
+                        caseid_stx.caseid_accounting59(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting60':
+                        caseid_stx.caseid_accounting60(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting61':
+                        caseid_stx.caseid_accounting61(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting62':
+                        caseid_stx.caseid_accounting62(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting63':
+                        caseid_stx.caseid_accounting63(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting64':
+                        caseid_stx.caseid_accounting64(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting65':
+                        caseid_stx.caseid_accounting65(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting66':
+                        caseid_stx.caseid_accounting66(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting67':
+                        caseid_stx.caseid_accounting67(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting68':
+                        caseid_stx.caseid_accounting68(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting69':
+                        caseid_stx.caseid_accounting69(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting70':
+                        caseid_stx.caseid_accounting70(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting71':
+                        caseid_stx.caseid_accounting71(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting72':
+                        caseid_stx.caseid_accounting72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting73':
+                        caseid_stx.caseid_accounting73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting74':
+                        caseid_stx.caseid_accounting74(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting75':
+                        caseid_stx.caseid_accounting75(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting76':
+                        caseid_stx.caseid_accounting76(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting77':
+                        caseid_stx.caseid_accounting77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting78':
+                        caseid_stx.caseid_accounting78(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Accounting79':
+                        caseid_stx.caseid_accounting79(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
 
 

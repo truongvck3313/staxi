@@ -1037,12 +1037,18 @@ class wallet_history:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
         time.sleep(1)
-        # var_stx.driver.find_element(By.XPATH, var_stx.name_driver_sdt).clear()
-        # time.sleep(0.5)
-        # var_stx.driver.find_element(By.XPATH, var_stx.name_driver_sdt).send_keys("bathao")
-        # time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.in_month).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(5)
+
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         try:
             ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()

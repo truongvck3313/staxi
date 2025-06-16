@@ -769,11 +769,11 @@ def swich_tab_0():
 
 def write_caseif():
     n = 0
-    while (n < 129):
+    while (n < 80):
         var_stx.driver.implicitly_wait(1)
         n += 1
         n = str(n)
-        print("try:\n   if case == 'Admin"+n+"':\n       caseid_stx.caseid_admin"+n+"(self)\nexcept:\n    module_other_stx.swich_tab_0()")
+        print("try:\n   if case == 'Accounting"+n+"':\n       caseid_stx.caseid_accounting"+n+"(self)\nexcept:\n    module_other_stx.swich_tab_0()")
         n = int(n)
 
 
@@ -974,6 +974,68 @@ def write_result_text_try_if(code, eventname, result, path_module, path_text, ch
         writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
     # module_other_v3.write_result_text_try_if(code, eventname, result, "Quản trị - Danh sách xe",
     #                                       var_stx.check_open_car_quickly, "Mở xe thành công", "_QuanTri_DsXe_MoXeNhanh.png")
+
+
+
+
+
+
+def write_result_text_try_if_or(code, eventname, result, path_module, path_text, check_result1, check_result2, name_image):
+    var_stx.driver.implicitly_wait(1)
+    logging.info("-------------------------")
+    logging.info(path_module)
+    logging.info("Mã - " + code)
+    logging.info("Tên sự kiện - " + eventname)
+    logging.info("Kết quả - " + result)
+    try:
+        check_text = var_stx.driver.find_element(By.XPATH, path_text).text
+        logging.info(check_text)
+        logging.info(check_result1)
+        logging.info(check_result2)
+        writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
+
+        if (check_text == check_result1) or (check_text == check_result2):
+            logging.info("True")
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+        else:
+            logging.info("False")
+            var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+            writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+    except:
+        logging.info("False")
+        var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+        writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+        writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+
+
+
+def write_result_text_try_if_value(code, eventname, result, path_module, path_text, check_result, name_image):
+    var_stx.driver.implicitly_wait(1)
+    logging.info("-------------------------")
+    logging.info(path_module)
+    logging.info("Mã - " + code)
+    logging.info("Tên sự kiện - " + eventname)
+    logging.info("Kết quả - " + result)
+    try:
+        check_text = var_stx.driver.find_element(By.XPATH, path_text).get_attribute("value")
+        logging.info(check_text)
+        logging.info(check_result)
+        writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
+
+        if check_text == check_result:
+            logging.info("True")
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+        else:
+            logging.info("False")
+            var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+            writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+    except:
+        logging.info("False")
+        var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+        writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+        writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
 
 
 

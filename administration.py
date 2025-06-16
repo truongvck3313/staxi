@@ -1138,6 +1138,9 @@ class admin_10_5:
         if name == data:
             var_stx.driver.find_element(By.XPATH, var_stx.datatable1_11_a).click()
             time.sleep(3.5)
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.list_role_assign)))
+
             module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe",
                                                       var_stx.list_role_assign, "DANH SÁCH QUYỀN ĐƯỢC GÁN", "_DanhSachTaiKhoan_PhanQuyen.png")
 
@@ -1287,12 +1290,11 @@ class admin_10_5:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['admin']['from_day'])
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/06/2025 00:00")
         time.sleep(0.5)
-
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(var_stx.data['admin']['to_day'])
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/06/2025 23:59")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
@@ -1328,11 +1330,11 @@ class admin_10_5:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['admin']['from_day'])
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/06/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(var_stx.data['admin']['to_day'])
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/06/2025 23:59")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
@@ -1341,11 +1343,11 @@ class admin_10_5:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("03/03/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("20/05/2025 00:00")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/06/2025 23:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(3)

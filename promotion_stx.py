@@ -169,7 +169,12 @@ class list_promotion:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
-        time.sleep(5)
+        time.sleep(1)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.PromoteTypeID)))
+        time.sleep(2)
+
+
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.PromoteTypeID).click()
         except:
@@ -471,8 +476,8 @@ class list_promotion:
         list_promotion.check_km(self, code, "Ảnh khuyến mại", var_stx.data['promotion']['image1'], image_promotion)
         list_promotion.check_km(self, code, "Ảnh banner", var_stx.data['promotion']['image2'], banner_promotion)
         list_promotion.check_km(self, code, "Ngày trong tuần", "Thứ 2", day_promotion)
-        list_promotion.check_km(self, code, "Loại xe", "4 CHỖ", type_vehicle_promotion)
-        list_promotion.check_km(self, code, "Vùng Khuyến mại", "G7", area1_promotion)
+        list_promotion.check_km(self, code, "Loại xe", "4 Chỗ", type_vehicle_promotion)
+        list_promotion.check_km(self, code, "Vùng Khuyến mại", "SÂN BAY NỘI BÀI", area1_promotion)
         list_promotion.check_km(self, code, "Công ty khuyến mại", "G7 Taxi Hà Nội", company_promotion1)
         list_promotion.check_km(self, code, "Hạng thẻ áp dụng", "Hạng bạc", rank_promotion)
         list_promotion.check_km(self, code, "Khuyến mãi tri ân", "true", IsGratitudePromotion_promotion)
@@ -716,7 +721,7 @@ class list_promotion:
         name_promotion = var_stx.driver.find_element(By.XPATH, var_stx.table_1_2).text
         if name_promotion == code_promotion:
             var_stx.driver.find_element(By.XPATH, var_stx.list_promotion_delete).click()
-            time.sleep(5)
+            time.sleep(7)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
             except:
@@ -1332,7 +1337,12 @@ class install_new_app:
         var_stx.driver.find_element(By.XPATH, var_stx.maxium_promotional_amount).send_keys(var_stx.data['promotion']['maxium_promotional_amount'])
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.save).click()
-
+        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.save).click()
+            time.sleep(2)
+        except:
+            pass
         wait = WebDriverWait(var_stx.driver, 15)
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_promotion)))
         time.sleep(1)
@@ -1351,6 +1361,7 @@ class install_new_app:
             var_stx.driver.find_element(By.XPATH, var_stx.check_install_new_app)
         except:
             install_new_app.install_new_app_addnew(self, "", "", "")
+            # install_new_app.install_new_app(self, "", "", "")
 
 
         time.sleep(1)
@@ -1535,11 +1546,11 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("20/11/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("28/05/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("25/11/2024 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("30/05/2025 23:59")
         time.sleep(1)
 
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -1549,11 +1560,11 @@ class report:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/02/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("28/04/2025 00:00")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)
@@ -1625,11 +1636,11 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("10/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
@@ -1638,11 +1649,11 @@ class report:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("08/01/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("28/03/2025 00:00")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("15/01/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 00:00")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)
@@ -1735,7 +1746,7 @@ class report:
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("05/2025")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("05/2026")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)
@@ -1810,11 +1821,11 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("10/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
@@ -1823,11 +1834,11 @@ class report:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("10/12/2024 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)
@@ -1902,11 +1913,11 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
@@ -1915,11 +1926,11 @@ class report:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/12/2024 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/03/2025 23:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)
@@ -1995,11 +2006,11 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("16/12/2024 13:14")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
@@ -2008,11 +2019,11 @@ class report:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/12/2024 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/03/2025 23:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/02/2025 13:14")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)
@@ -2165,11 +2176,11 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/11/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("3/5/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("19/12/2024 13:45")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("2/6/2025 8:51")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
@@ -2178,11 +2189,11 @@ class report:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/11/2024 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("2/6=4/2025 8:51")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 13:45")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("2/6/2025 8:51")
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(5)

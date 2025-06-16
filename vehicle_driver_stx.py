@@ -1023,15 +1023,16 @@ class driver:
         print("data3:" + data3)
         data3 = data3.split(",")[0]
 
-        data4b= var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).text
-        print("data4b:" + data4b)
-
-        data4 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_16).text
+        data4= var_stx.driver.find_element(By.XPATH, var_stx.listdata1_15).text
         print("data4:" + data4)
         data4 = data4.split(",")[0]
 
+        data5 = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_16).text
+        print("data5:" + data5)
+        data5 = data5.split(",")[0]
 
-        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_assign).send_keys(data2)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.vehicle_assign).send_keys(data3)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
@@ -1046,8 +1047,8 @@ class driver:
 
             check_text = check_text.split(",")[0]
             logging.info(check_text)
-            logging.info(data2)
-            if check_text == data2:
+            logging.info(data3)
+            if check_text == data3:
                 logging.info("True")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
             else:
@@ -1418,8 +1419,17 @@ class driver:
             driver.driver(self, "", "", "")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
-        name_check = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2).text
+        time.sleep(2.5)
+        try:
+            name_check = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2).text
+        except:
+            var_stx.driver.refresh()
+            time.sleep(7)
+            var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(driver1)
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(2.5)
+            name_check = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2).text
         if name_check == driver1:
             var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2a).click()
             time.sleep(5)
@@ -2056,6 +2066,14 @@ class driver:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(10)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(7)
+            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            time.sleep(10)
+
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         try:
             ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()

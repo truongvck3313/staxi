@@ -186,10 +186,10 @@ class list_customer:
         list_customer.list_customer_x(self)
         var_stx.driver.find_element(By.XPATH, var_stx.custrank).click()
         time.sleep(1.5)
-        name_rank = var_stx.driver.find_element(By.XPATH, var_stx.custrank1).text
+        name_rank = var_stx.driver.find_element(By.XPATH, var_stx.custrank4).text
         print("rank: "+ name_rank)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.custrank1).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.custrank4).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(8)
@@ -294,7 +294,7 @@ class list_customer:
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(15)
         var_stx.driver.find_element(By.XPATH, var_stx.list_data2_10_button).click()
-        time.sleep(5)
+        time.sleep(7)
         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
         time.sleep(2.5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.1 Danh sách khách hàng",
@@ -806,12 +806,20 @@ class contract_card:
 
         contract_card.partner_x(self)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
-        time.sleep(2.5)
+        time.sleep(3)
 
         vehicle_driver_stx.increase()
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
-        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_contract).click()
-        time.sleep(1.5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_contract_icon).click()
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_contract).click()
+            time.sleep(1.5)
+        except:
+            pass
+
+        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_code).click()
+        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_code).clear()
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_code).send_keys("Auto" + number)
@@ -846,7 +854,7 @@ class contract_card:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_email).send_keys(f"Auto_{number}@gmail.com")
         time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_email).send_keys(Keys.ENTER)
+        var_stx.driver.find_element(By.XPATH, var_stx.contract_addnew_email1).click()
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.save_1).click()
         time.sleep(1.5)
@@ -886,6 +894,12 @@ class contract_card:
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.2 Hợp đồng",
                                                   var_stx.contract_update, "Cập nhật hợp đồng thành công", "_HopDong_CapNhat.png")
         time.sleep(1.5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.close_contact).click()
+            time.sleep(3)
+        except:
+            pass
+
 
 
     def contract_see_file(self, code, eventname, result):
@@ -1314,17 +1328,30 @@ class contract_card:
 
         contract_card.partner_x(self)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
+            # var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
+            element = var_stx.driver.find_element(By.XPATH, var_stx.card_add_new)
+            var_stx.driver.execute_script("arguments[0].click();", element)
         except:
             var_stx.driver.refresh()
             time.sleep(7)
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
+            # var_stx.driver.find_element(By.XPATH, var_stx.card_add_new).click()
+            element = var_stx.driver.find_element(By.XPATH, var_stx.card_add_new)
+            var_stx.driver.execute_script("arguments[0].click();", element)
+
         time.sleep(3)
         vehicle_driver_stx.increase()
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
 
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.info_card_serial).click()
+        except:
+            element = var_stx.driver.find_element(By.XPATH, var_stx.card_add_new)
+            var_stx.driver.execute_script("arguments[0].click();", element)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_card_serial).click()
+            # var_stx.driver.find_element(By.XPATH, var_stx.card_add_new).click()
+            time.sleep(3)
+            var_stx.driver.find_element(By.XPATH, var_stx.info_card_serial).click()
+
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_card_name).send_keys("Auto_" + number)
         time.sleep(0.5)
@@ -1470,6 +1497,7 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.check_card_management)
         except:
             contract_card.card_management_addnew(self, "", "", "")
+            # contract_card.card_management(self, "", "", "")
 
         name = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 31, 2))
 
@@ -1479,7 +1507,10 @@ class contract_card:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(4)
         var_stx.driver.find_element(By.XPATH, var_stx.list_data2_16_button).click()
-        time.sleep(2.5)
+        time.sleep(1)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.recharge_card_money)))
+        time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_card_money).send_keys(var_stx.data['customer']['recharge_card_money'])
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_card_note).send_keys(var_stx.data['customer']['recharge_card_note'])
@@ -2258,11 +2289,11 @@ class contract_card:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("20/12/2024 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("28/05/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("20/12/2024 13:42")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 08:54")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sdt).click()
         time.sleep(1)
@@ -2273,11 +2304,11 @@ class contract_card:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("15/02/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("25/05/2025 08:54")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/03/2025 16:09")
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 08:54")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.sdt).click()
             time.sleep(1)

@@ -562,8 +562,15 @@ class vehicle:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
         var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 2, 2, "2024AUTO"+number)
 
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_liscense_plate).send_keys("2024AUTO"+number)
+        except:
+            button = var_stx.driver.find_element(By.XPATH, var_stx.add_new)
+            var_stx.driver.execute_script("arguments[0].click();", button)
+            time.sleep(2.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_liscense_plate).send_keys("2024AUTO" + number)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_liscense_plate).send_keys("2024AUTO"+number)
+
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_code).send_keys("2024"+number)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehicle_type).click()
         time.sleep(0.5)
@@ -631,8 +638,8 @@ class vehicle:
             var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-container']/div[1]//*[text()='"+liscense_plate+"']")
         except:
             vehicle.vehicle_x(self)
-            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(3)
+            # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            # time.sleep(3)
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_input1).send_keys(liscense_plate)
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -676,8 +683,8 @@ class vehicle:
             var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-container']/div[1]//*[text()='"+liscense_plate+"']")
         except:
             vehicle.vehicle_x(self)
-            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(3)
+            # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            # time.sleep(3)
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_input1).send_keys(liscense_plate)
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -732,8 +739,8 @@ class vehicle:
             var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-container']/div[1]//*[text()='"+liscense_plate+"']")
         except:
             vehicle.vehicle_x(self)
-            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(3)
+            # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            # time.sleep(3)
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_input1).send_keys(liscense_plate)
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -776,8 +783,8 @@ class vehicle:
 
         liscense_plate = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         vehicle.vehicle_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(2)
+        # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        # time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.vehicle_input1).send_keys(liscense_plate)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()

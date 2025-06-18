@@ -1086,7 +1086,7 @@ class wallet_history:
                 var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
                 time.sleep(3)
                 wait = WebDriverWait(var_stx.driver, 20)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_1)))
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.ag1_2)))
                 break
             except:
                 pass
@@ -1104,7 +1104,7 @@ class wallet_history:
         try:
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(page)
-            code_customer = var_stx.driver.find_element(By.XPATH, var_stx.table_1_1).text
+            code_customer = var_stx.driver.find_element(By.XPATH, var_stx.ag1_2).text
             print(code_customer)
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}\nMã quốc khách: {}"
                                        .format(page, code_customer))

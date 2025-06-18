@@ -13,8 +13,9 @@ import shutil
 import module_stx
 from playsound import playsound
 from gtts import gTTS
+import json
 import requests
-
+from requests.auth import HTTPBasicAuth
 
 
 
@@ -412,6 +413,16 @@ def notification_telegram():
 
 
 
+def check_user_id():
+    res = requests.post(
+        "https://chatapi.viber.com/pa/get_account_info",
+        headers={"X-Viber-Auth-Token": "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"}
+    )
+
+    print(res.json())
+
+
+
 def viber_send_text():
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
@@ -442,6 +453,10 @@ def viber_send_text():
 
     AUTH_TOKEN = "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"  # id Cảnh báo Autotest STAXI Customer
     FROM_USER_ID = "nvt+6nb4cLpsaYhLS0FnbA=="
+
+
+    # AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
+    # FROM_USER_ID = "s3fnH/NlIBI2DwqBeVlhEQ=="
 
 
     # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
@@ -485,39 +500,54 @@ def viber_send_text():
     print("Response:", response.json())
 
 
-def check_user_id():
-    res = requests.post(
-        "https://chatapi.viber.com/pa/get_account_info",
-        headers={"X-Viber-Auth-Token": "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"}
-    )
-    print(res.json())
+
+# def upload_to_catbox(file_path):
+#     url = "https://catbox.moe/user/api.php"
+#     files = {
+#         'fileToUpload': open(file_path, 'rb')
+#     }
+#     data = {
+#         'reqtype': 'fileupload'
+#     }
+#
+#     try:
+#         response = requests.post(url, files=files, data=data)
+#         response.raise_for_status()
+#     except requests.RequestException as e:
+#         print("❌ Lỗi upload:", e)
+#         return None
+#
+#     direct_link = response.text.strip()
+#     # Catbox trả về URL trực tiếp của file, vd: https://files.catbox.moe/abc123.png
+#     print(f"✅ Upload thành công! Link tải trực tiếp:\n{direct_link}")
+#     return direct_link
 
 
-def upload_to_catbox(file_path):
-    url = "https://catbox.moe/user/api.php"
-    files = {
-        'fileToUpload': open(file_path, 'rb')
-    }
-    data = {
-        'reqtype': 'fileupload'
-    }
 
-    try:
-        response = requests.post(url, files=files, data=data)
-        response.raise_for_status()
-    except requests.RequestException as e:
-        print("❌ Lỗi upload:", e)
-        return None
 
-    direct_link = response.text.strip()
-    # Catbox trả về URL trực tiếp của file, vd: https://files.catbox.moe/abc123.png
-    print(f"✅ Upload thành công! Link tải trực tiếp:\n{direct_link}")
-    return direct_link
+def upload_pixeldrain_auth(filepath):
+    API_KEY = "c567bb13-f4c0-4aac-b9bd-c8add1e467fc"  # Thay bằng key thật
+
+    with open(filepath, "rb") as f:
+        res = requests.post(
+            "https://pixeldrain.com/api/file",
+            files={"file": f},
+            auth=HTTPBasicAuth('', API_KEY)
+        )
+        res_json = json.loads(res.text)
+        file_id = res_json["id"]
+        link_download = (f"https://pixeldrain.com/api/file/{file_id}")
+        print(link_download)
+        return link_download
+
+
 
 
 
 def send_gofile_link_via_viber(AUTH_TOKEN, FROM_USER_ID, file_path):
-    file_url = upload_to_catbox(file_path)
+    file_url = upload_pixeldrain_auth(file_path)
+    # file_url = upload_to_catbox(file_path)
+
     if not file_url:
         print("⚠️ Không thể upload file. Hủy gửi.")
         return
@@ -560,10 +590,17 @@ def send_gofile_link_via_viber(AUTH_TOKEN, FROM_USER_ID, file_path):
     print("Response:", response.json())
 
 
+
 def viber_send_file():
     # ==== Ví dụ sử dụng ====
     AUTH_TOKEN = "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"  # id Cảnh báo Autotest STAXI
     FROM_USER_ID = "nvt+6nb4cLpsaYhLS0FnbA=="
+
+
+    # AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
+    # FROM_USER_ID = "s3fnH/NlIBI2DwqBeVlhEQ=="
+
+
 
 
     FILE_PATH_checklisst = var_stx.checklistpath  # Thay bằng đường dẫn file thật

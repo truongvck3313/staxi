@@ -160,8 +160,8 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle21(self)
         # caseid_stx.caseid_vehicle22(self)
         # caseid_stx.caseid_vehicle23(self)
-        # # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
-        # # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
+        # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
+        # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
         # caseid_stx.caseid_vehicle26(self)
         # caseid_stx.caseid_vehicle27(self)
         # caseid_stx.caseid_vehicle28(self)
@@ -365,7 +365,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_customer23(self)
         # caseid_stx.caseid_customer24(self)
 
-
+        #
         # caseid_stx.caseid_customer25(self)
         # caseid_stx.caseid_customer26(self)
         # caseid_stx.caseid_customer26_1(self)

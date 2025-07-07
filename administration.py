@@ -20,7 +20,7 @@ import subprocess
 import random
 wait = WebDriverWait(var_stx.driver, 10)
 
-#133322222222322323233232322323
+#13232
 def get_info_web():
     var_stx.driver.implicitly_wait(0.05)
     row = 119

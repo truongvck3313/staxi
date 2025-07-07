@@ -21,7 +21,7 @@ import random
 wait = WebDriverWait(var_stx.driver, 10)
 
 #1333
-#1233333
+#1233333323
 #12222222222
 #11222333344
 def get_info_web():

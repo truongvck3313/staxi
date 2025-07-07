@@ -12,7 +12,9 @@ import shutil
 import re
 import openpyxl
 from xls2xlsx import XLS2XLSX
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+wait = WebDriverWait(var_stx.driver, 10)
 
 
 
@@ -343,7 +345,7 @@ def check_info_web_excel(code, eventname, result, path_module):
                                    'Bản đồ trước đề cử', 'Bản đồ sau đề cử', 'Bản đồ xe trước đề cử', 'Bản đồ xe sau đề cử', 'Bản đồ xe\nsau đề cử',
                                    'Bản đồ xe\ntrước đề cử', 'Tổng số cuốc đề cử (1)', 'Tỷ lệ không hoàn thành/ Tổng số cuốc đề cử (2) = (6 + 7 + 8 + 9 + 10)',
                                    'Tổng số cuốc nhận được (3)', 'Tỷ lệ lái xe hủy/ Tổng số cuốc nhận (4)', 'Xem hóa đơn', 'Xuất hóa đơn', 'Lộ trình',
-                                   'Thực thu', 'Vai trò', 'Phân quyền', 'Cấu hình', 'Khóa', 'Xóa', 'Lấy mã kích hoạt', 'GPS', 'APP']:
+                                   'Thực thu', 'Vai trò', 'Phân quyền', 'Cấu hình', 'Khóa', 'Xóa', 'Lấy mã kích hoạt', 'GPS', 'APP', 'Báo cáo']:
                 pass
             else:
                 logging.error("False")
@@ -386,10 +388,13 @@ def check_info_web_excel(code, eventname, result, path_module):
                                'Thời gian đón khách (Đồng hồ - GPS)', 'Thời gian trả khách (Đồng hồ - GPS)', 'Địa điểm đón khách (GPS)', 'Địa điểm trả khách (GPS)', 'Km rỗng (GPS)',
                                'Tiền đồng hồ (GPS)', 'Tiền thực thu (GPS)', 'Thời gian chờ (GPS)', 'Km có khách GPS (GPS)', 'Tài khoản', 'Nhóm khách hàng', 'S.cuốc app', 'S.cuốc v.lai',
                                'Hình thức thanh toán', 'Tên loại hàng hóa', 'Phụ phí(%)', 'Mô tả', 'Loại hàng hóa', 'Giá tiền nhỏ nhất', 'Giá tiền lớn nhất', 'Loại phụ phí',
-                               'Giá tiền nhỏ nhất(kg)', 'Giá tiền lớn nhất(kg)', 'Loại ví', 'Mã thẻ KH', 'T.gian đặt', 'T.gian kết thúc', 'Mã KM', 'Mã GD', 'T.tin t.toán']:
+                               'Giá tiền nhỏ nhất(kg)', 'Giá tiền lớn nhất(kg)', 'Loại ví', 'Mã thẻ KH', 'T.gian đặt', 'T.gian kết thúc', 'Mã KM', 'Mã GD', 'T.tin t.toán', 'KM có khách ',
+                            'Phí phải nộp', 'TG thông báo LX', 'TG lái xe xác nhận', 'Nội dung lỗi']:
 
 
             print("name vao 1" + name_column_web)
+            data_column_excel = data_column_excel.replace("_x000D_", "\n")
+            data_column_excel = data_column_excel.strip()
             if data_column_web == data_column_excel:
                 logging.info("True")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
@@ -402,7 +407,8 @@ def check_info_web_excel(code, eventname, result, path_module):
 
 
         if name_column_web in ['Km GPS', 'NL tiêu thụ', 'Số tiền', 'Cước phí', 'Tiền nợ', 'Cước phí(cước thật của cuốc)', 'Cước xe (trừ của khách)', 'Số dư còn lại', 'Phụ phí', 'Loại xe',
-                               'D.thu ĐH', 'S.cuốc ĐH', 'D.thu App', 'D.thu v.lai', 'D.thu đ.vị', 'Tổng d.thu', 'S.tiền KM', 'Khoảng cách', 'S.tiền thu LX', 'Khuyến mại', 'Cước xe (trừ của khách)']:
+                               'D.thu ĐH', 'S.cuốc ĐH', 'D.thu App', 'D.thu v.lai', 'D.thu đ.vị', 'Tổng d.thu', 'S.tiền KM', 'Khoảng cách', 'S.tiền thu LX', 'Khuyến mại', 'Cước xe (trừ của khách)',
+                               'Doanh thu tính %\n(1) = (2) + (3)', 'Cước xe\n(2)', 'Khuyến mãi\n(3)']:
             print("name vao 2" + name_column_web)
             try:
                 data_column_web = ''.join(re.findall(r'\d+', data_column_web))[:3]
@@ -579,7 +585,12 @@ class vehicle_online:
             var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_online).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "Giám sát - Xe online 1.2",
                                                  var_stx.title_page, "1.2 Xe online", "_GiamSat_XeOnline.png")
 
@@ -1498,7 +1509,12 @@ class minitor_vehicle:
             var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.minitor_vehicle).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "Giám sát - Giám sát xe 1.3",
                                                  var_stx.title_page, "1.3 Giám sát xe", "_GiamSatXe.png")
 

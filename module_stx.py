@@ -2640,6 +2640,21 @@ def retest_casenone(self):
                     caseid_stx.caseid_report71(self)
             except:
                 module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report72':
+                    caseid_stx.caseid_report72(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report73':
+                    caseid_stx.caseid_report73(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report74':
+                    caseid_stx.caseid_report74(self)
+            except:
+                module_other_stx.swich_tab_0()
 
             try:
                 if case == 'Admin01':
@@ -5431,6 +5446,21 @@ def retest_casefail(self):
         try:
             if case == 'Report71':
                 caseid_stx.caseid_report71(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report72':
+                caseid_stx.caseid_report72(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report73':
+                caseid_stx.caseid_report73(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report74':
+                caseid_stx.caseid_report74(self)
         except:
             module_other_stx.swich_tab_0()
 
@@ -8321,6 +8351,21 @@ def run_all(self):
         try:
             if case == 'Report71':
                 caseid_stx.caseid_report71(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report72':
+                caseid_stx.caseid_report72(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report73':
+                caseid_stx.caseid_report73(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report74':
+                caseid_stx.caseid_report74(self)
         except:
             module_other_stx.swich_tab_0()
 
@@ -16727,6 +16772,22 @@ def report(self):
                         caseid_stx.caseid_report71(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report72':
+                        caseid_stx.caseid_report72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report73':
+                        caseid_stx.caseid_report73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report74':
+                        caseid_stx.caseid_report74(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
 
         if i == "2":
             for case in list_mucdo2:
@@ -17083,6 +17144,21 @@ def report(self):
                 try:
                     if case == 'Report71':
                         caseid_stx.caseid_report71(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report72':
+                        caseid_stx.caseid_report72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report73':
+                        caseid_stx.caseid_report73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report74':
+                        caseid_stx.caseid_report74(self)
                 except:
                     module_other_stx.swich_tab_0()
 
@@ -17443,6 +17519,21 @@ def report(self):
                         caseid_stx.caseid_report71(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report72':
+                        caseid_stx.caseid_report72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report73':
+                        caseid_stx.caseid_report73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report74':
+                        caseid_stx.caseid_report74(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
         if i == "4":
             for case in list_mucdo4:
@@ -17801,7 +17892,21 @@ def report(self):
                         caseid_stx.caseid_report71(self)
                 except:
                     module_other_stx.swich_tab_0()
-
+                try:
+                    if case == 'Report72':
+                        caseid_stx.caseid_report72(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report73':
+                        caseid_stx.caseid_report73(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report74':
+                        caseid_stx.caseid_report74(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
 
 def admin(self):

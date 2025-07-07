@@ -26,6 +26,7 @@ class Test(unittest.TestCase):
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
 
+        # module_other_stx.call_viver()
 
         # module_other_stx.call_telegram()
 
@@ -156,7 +157,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle17(self)
         # caseid_stx.caseid_vehicle18(self)
         # caseid_stx.caseid_vehicle19(self)
-        # caseid_stx.caseid_vehicle20(self)
+        # caseid_stx.caseid_vehicle20(self)1HGCM82633A123456
         # caseid_stx.caseid_vehicle21(self)
         # caseid_stx.caseid_vehicle22(self)
         # caseid_stx.caseid_vehicle23(self)
@@ -519,7 +520,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report47(self)
         # caseid_stx.caseid_report48(self)
         # caseid_stx.caseid_report49(self)
-        #
+
         # caseid_stx.caseid_report50(self)
         # caseid_stx.caseid_report51(self)
         # caseid_stx.caseid_report52(self)
@@ -548,6 +549,12 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report69(self)
         # caseid_stx.caseid_report70(self)
         # caseid_stx.caseid_report71(self)
+
+        # caseid_stx.caseid_report72(self)
+        # caseid_stx.caseid_report73(self)
+        # caseid_stx.caseid_report74(self)
+
+
 
 
 

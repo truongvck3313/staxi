@@ -16,7 +16,7 @@ from gtts import gTTS
 import json
 import requests
 from requests.auth import HTTPBasicAuth
-
+from selenium.common.exceptions import WebDriverException
 
 
 
@@ -501,26 +501,6 @@ def viber_send_text():
 
 
 
-# def upload_to_catbox(file_path):
-#     url = "https://catbox.moe/user/api.php"
-#     files = {
-#         'fileToUpload': open(file_path, 'rb')
-#     }
-#     data = {
-#         'reqtype': 'fileupload'
-#     }
-#
-#     try:
-#         response = requests.post(url, files=files, data=data)
-#         response.raise_for_status()
-#     except requests.RequestException as e:
-#         print("❌ Lỗi upload:", e)
-#         return None
-#
-#     direct_link = response.text.strip()
-#     # Catbox trả về URL trực tiếp của file, vd: https://files.catbox.moe/abc123.png
-#     print(f"✅ Upload thành công! Link tải trực tiếp:\n{direct_link}")
-#     return direct_link
 
 
 
@@ -624,13 +604,102 @@ def send_viber():
 
 
 
+def call_viver1():
+    AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
+    # FROM_USER_ID = "s3fnH/NlIBI2DwqBeVlhEQ=="
+
+    # AUTH_TOKEN = "s3fnH/NlIBI2DwqBeVlhEQ=="
+    receiver_id = "NcTubYkRh5GD2fyZFDTOjw=="
+
+    # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
+    webhook_url = "https://eoj9bp6x8fvrpv8.m.pipedream.net"  # Hoặc URL server thực tế nếu có
+
+    webhook_response = requests.post(
+        "https://chatapi.viber.com/pa/set_webhook",
+        headers={"X-Viber-Auth-Token": AUTH_TOKEN},
+        json={"url": webhook_url})
+
+    if webhook_response.json().get("status") != 0:
+        print("⚠️ Không thể thiết lập webhook. Hủy gửi tin nhắn.")
+        return
+
+    # 2. Gửi tin nhắn văn bản
+    payload = {
+   "receiver":receiver_id,
+   "min_api_version":1,
+   "sender":{
+      "name":"Bot auto test",
+      "avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=7nZRXMsHtZr_J8VUjfHf-45KJ0EAONowCQqAKm25lgVGphx7OYNUcJf8RgSfq-V7_wVZ13D9AHn8nOB1_vp8dr5YqEOA5Nw6QjQIAbZW--mf-fRIhWWW7hAs5X--4BhwL3wftA&fltp=jpg&imsz=0000"
+   },
+   "tracking_data":"tracking data",
+   "type":"contact",
+   "contact":{
+      "name":"Trần Quang Trường",
+      "phone_number":"+84359667694"
+   }
+}
+    headers = {
+        "X-Viber-Auth-Token": AUTH_TOKEN,
+        "Content-Type": "application/json"}
+
+    response = requests.post("https://chatapi.viber.com/pa/post", json=payload, headers=headers)
+    print("📨 Phản hồi từ Viber:", response.status_code, response.json())
+    print("\n== Send Message Response ==")
+    print("Status Code:", response.status_code)
+    print("Response:", response.json())
+
+
+
+    #
+    # response = requests.post("https://chatapi.viber.com/pa/send_message", json=payload, headers=headers)
+    # return response.status_code, response.json()
 
 
 
 
+def call_viver():
 
+    # AUTH_TOKEN = "s3fnH/NlIBI2DwqBeVlhEQ=="
+    AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
 
+    receiver_id = "NcTubYkRh5GD2fyZFDTOjw=="
 
+    # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
+    webhook_url = "https://eoj9bp6x8fvrpv8.m.pipedream.net"  # Hoặc URL server thực tế nếu có
+
+    webhook_response = requests.post(
+        "https://chatapi.viber.com/pa/set_webhook",
+        headers={"X-Viber-Auth-Token": AUTH_TOKEN},
+        json={"url": webhook_url})
+
+    if webhook_response.json().get("status") != 0:
+        print("⚠️ Không thể thiết lập webhook. Hủy gửi tin nhắn.")
+        return
+
+    payload = {
+   "receiver":receiver_id,
+   "min_api_version":1,
+   "sender":{
+      "name":"Bot auto test",
+      "avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=7nZRXMsHtZr_J8VUjfHf-45KJ0EAONowCQqAKm25lgVGphx7OYNUcJf8RgSfq-V7_wVZ13D9AHn8nOB1_vp8dr5YqEOA5Nw6QjQIAbZW--mf-fRIhWWW7hAs5X--4BhwL3wftA&fltp=jpg&imsz=0000"
+   },
+   "tracking_data":"tracking data",
+   "type":"contact",
+   "contact":{
+      "name":"Trần Quang Trường",
+      "phone_number":"+84359667694"
+   }
+}
+
+    headers = {
+        "X-Viber-Auth-Token": AUTH_TOKEN,
+        "Content-Type": "application/json"}
+
+    response = requests.post("https://chatapi.viber.com/pa/post", json=payload, headers=headers)
+    print("📨 Phản hồi từ Viber:", response.status_code, response.json())
+    print("\n== Send Message Response ==")
+    print("Status Code:", response.status_code)
+    print("Response:", response.json())
 
 
 
@@ -700,7 +769,20 @@ def get_datachecklist(ma):
 
 @retry(tries=3, delay=2, backoff=1, jitter=5, )
 def swich_tab_0():
-    var_stx.driver.implicitly_wait(15)
+    try:
+        print("[INFO] ⚙️  Switching tab 0...")
+        var_stx.driver.implicitly_wait(15)
+        var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
+    except WebDriverException as e:
+        print(f"[ERROR] ❌ Lỗi khi chuyển tab hoặc khởi động driver: {e}")
+        print("[INFO] 🔁 Restarting driver...")
+        var_stx.restart_driver()
+        time.sleep(3)
+        var_stx.driver.get(var_stx.linktest)
+        time.sleep(10)
+        print("[INFO] ✅ Driver restarted và đã mở lại link test.")
+        # Optional: Retry lại switch sau restart
+        var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
 
     try:
         var_stx.driver.implicitly_wait(1)
@@ -716,67 +798,6 @@ def swich_tab_0():
     except:
         pass
 
-    # time.sleep(1)
-    # try:
-    #     # Chuyển sang tab hiện tại
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-    #     time.sleep(0.5)
-    #     # Mở tab mới và chuyển sang tab mới trước khi truy cập URL
-    #     var_stx.driver.execute_script("window.open('');")
-    #     time.sleep(2)
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-    #     var_stx.driver.get("https://g7test.staxi.vn/")
-    #     time.sleep(3)
-    # except:
-    #     # Trong trường hợp có lỗi, thử lại quy trình
-    #     var_stx.driver.execute_script("window.open('');")
-    #     time.sleep(2)
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-    #     var_stx.driver.get("https://g7test.staxi.vn/")
-    #     time.sleep(5)
-    #     # Chuyển lại về tab đầu tiên
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-    #
-    #
-    # time.sleep(1)
-    # try:
-    #     # Chuyển sang tab hiện tại
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-    #     time.sleep(0.5)
-    #     # Mở tab mới và chuyển sang tab mới trước khi truy cập URL
-    #     var_stx.driver.execute_script("window.open('');")
-    #     time.sleep(2)
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-    #     var_stx.driver.get("https://g7test.staxi.vn/")
-    #     time.sleep(3)
-    # except:
-    #     # Trong trường hợp có lỗi, thử lại quy trình
-    #     var_stx.driver.execute_script("window.open('');")
-    #     time.sleep(2)
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
-    #     var_stx.driver.get("https://g7test.staxi.vn/")
-    #     time.sleep(5)
-    #     # Chuyển lại về tab đầu tiên
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
-    #
-    #
-    # try:
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[2])
-    #     curr = var_stx.driver.current_window_handle
-    #     for handle in var_stx.driver.window_handles:
-    #         if handle != curr:
-    #             var_stx.driver.switch_to.window(handle)
-    #             var_stx.driver.close()
-    #             time.sleep(1)
-    #     var_stx.driver.switch_to.window(curr)
-    #     time.sleep(0.5)
-    #
-    # except:
-    #     var_stx.driver.execute_script("window.open('');")
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[-1])  # Chuyển đến tab mới nhất
-    #     var_stx.driver.get("https://g7test.staxi.vn/")
-    #     time.sleep(5)
-    #     var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
 
     try:
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])

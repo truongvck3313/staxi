@@ -521,6 +521,7 @@ def caseid_minitor51(self):
     minitor_stx.minitor_vehicle.check_info_none(self, "Minitor51", event, result, 21)
 
 
+@retry(tries=3, delay=2, backoff=1, jitter=5, )
 def caseid_minitor52(self):
     get_datachecklist("Minitor52")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
@@ -3120,6 +3121,30 @@ def caseid_report71(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     report_stx.report_8_4.report_8_4_8_excel(self, "Report71", event, result)
+
+
+
+def caseid_report72(self):
+    get_datachecklist("Report72")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_4.report_8_4_17(self, "Report72", event, result)
+
+
+def caseid_report73(self):
+    get_datachecklist("Report73")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_4.report_8_4_17_search(self, "Report73", event, result)
+
+
+def caseid_report74(self):
+    get_datachecklist("Report74")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_4.report_8_4_17_excel(self, "Report74", event, result)
+
+
 
 
 def caseid_admin01(self):

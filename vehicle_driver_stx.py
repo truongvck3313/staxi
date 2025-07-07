@@ -12,6 +12,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import random
 
+wait = WebDriverWait(var_stx.driver, 10)
+
 
 def check_account(name_check):
     var_stx.driver.implicitly_wait(1)
@@ -124,7 +126,14 @@ class vehicle:
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                  var_stx.title_page, "2.1 Xe", "_XeLaiXe_Xe.png")
 
@@ -850,7 +859,13 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.driver1).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
                                                  var_stx.title_page, "2.2 Lái xe", "_XeLaiXe_LaiXe.png")
 

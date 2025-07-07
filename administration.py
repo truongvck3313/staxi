@@ -18,7 +18,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import subprocess
 import random
-
+wait = WebDriverWait(var_stx.driver, 10)
 
 
 def get_info_web():
@@ -102,6 +102,10 @@ class admin_10_1:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_1_1).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.1 Cấu hình điều xe nâng cao - 10.1.1 Danh sách bộ phương pháp điều xe",
                                                   var_stx.title_page1, "10.1.1 Danh sách bộ phương pháp điều xe", "_DanhSachBoPhuongPhapDieuXe.png")
 
@@ -162,6 +166,10 @@ class admin_10_3:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_1).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.1 Thông tin công ty ",
                                                   var_stx.title_page1, "10.3.1 Thông tin công ty", "_ThongTinCongTy.png")
 
@@ -454,6 +462,10 @@ class admin_10_3:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_5).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe",
                                                   var_stx.title_page1, "10.3.5 Quản trị tên xe", "_QuanTriTenXe.png")
 
@@ -590,6 +602,10 @@ class admin_10_3:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_6).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.6 Quản trị loại xe",
                                                   var_stx.title_page1, "10.3.6 Quản trị loại xe", "_QuanTriLaiXe.png")
 
@@ -928,6 +944,10 @@ class admin_10_5:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_5_5).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.5 Quản trị hệ thống - 10.5.5 Danh sách tài khoản",
                                                   var_stx.title_page1, "10.5.5 Danh sách tài khoản", "_DanhSachTaiKhoan.png")
 
@@ -1252,6 +1272,10 @@ class admin_10_5:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_5_7).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.5 Quản trị hệ thống - 10.5.7 Lịch sử tài khoản",
                                                   var_stx.title_page1, "10.5.7 Lịch sử tài khoản", "_LichSuTaiKhoan.png")
 
@@ -1432,6 +1456,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_1).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.1 Cấu hình lái xe",
                                                   var_stx.title_page1, "10.6.1 Cấu hình lái xe", "_CauHinhLaiXe.png")
 
@@ -1488,6 +1516,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_2).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.2 Cấu hình khách hàng",
                                                   var_stx.title_page1, "10.6.2 Cấu hình khách hàng", "_CauHinhKhachHang.png")
 
@@ -1545,6 +1577,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_3).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.3 Cấu hình quản trị",
                                                   var_stx.title_page1, "10.6.3 Cấu hình quản trị", "_CauHinhQuanTri.png")
 
@@ -1600,6 +1636,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_4).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.4 Cấu hình server",
                                                   var_stx.title_page1, "10.6.4 Cấu hình server", "_CauHinhSever.png")
 
@@ -1654,6 +1694,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_5).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.5 Cấu hình tin nhắn",
                                                   var_stx.title_page1, "10.6.5 Cấu hình tin nhắn", "_CauHinhTinNhan.png")
 
@@ -1711,6 +1755,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_6).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.6 Mẫu tin nhắn",
                                                   var_stx.title_page1, "10.6.6 Mẫu tin nhắn", "_MauTinNhan.png")
 
@@ -1767,6 +1815,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_7).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.7 Cấu hình bản đồ",
                                                   var_stx.title_page1, "10.6.7 Cấu hình bản đồ", "_CauHinhBanDo.png")
 
@@ -1823,6 +1875,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_8).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.8 Cấu hình rời lốt",
                                                   var_stx.title_page1, "10.6.8 Cấu hình rời lốt", "_CauHinhRoiLot.png")
 
@@ -1852,6 +1908,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_9).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.9 Kích hoạt dịch vụ",
                                                   var_stx.title_page1, "10.6.9 Kích hoạt dịch vụ", "_KichHoatDichVu.png")
 
@@ -1906,6 +1966,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_10).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.10 Cấu hình hạng thẻ",
                                                   var_stx.title_page1, "10.6.10 Cấu hình hạng thẻ", "_CauHinhHangThe.png")
 
@@ -1961,6 +2025,10 @@ class admin_10_6:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_6_11).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.6 Cấu hình hệ thống - 10.6.11 Kích hoạt dịch vụ",
                                                   var_stx.title_page1, "10.6.11 Kích hoạt dịch vụ", "_KichHoatDichVu.png")
 
@@ -2029,6 +2097,10 @@ class admin_10_7:
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_7_1).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
                                                   var_stx.title_page1, "10.7.1 Quản trị thông báo lái xe", "_QuanTriThongBaoLaiXe.png")
 
@@ -2455,9 +2527,10 @@ class admin_10_7:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_7_4).click()
         time.sleep(2)
-        wait = WebDriverWait(var_stx.driver, 10)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
-        time.sleep(1.5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
                                                   var_stx.title_page1, "10.7.4 Quản trị thông báo lái xe v2", "_QuanTriThongBaoLaiXeV2.png")
 
@@ -2907,6 +2980,10 @@ class admin_10_10:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_10_2).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.2 Phụ phí loại hàng hóa",
                                                   var_stx.title_page1, "10.10.2 Phụ phí loại hàng hóa", "_PhuPhiLoaiHangHoa.png")
 
@@ -3070,6 +3147,10 @@ class admin_10_10:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_10_3).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
                                                   var_stx.title_page1, "10.10.3 Phụ phí theo thời gian", "_PhuPhiTheoThoiGian.png")
 
@@ -3219,6 +3300,10 @@ class admin_10_10:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_10_4).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.4 Phụ phí thu hộ",
                                                   var_stx.title_page1, "10.10.4 Phụ phí thu hộ", "_PhuPhiTheoThuHo.png")
 
@@ -3456,6 +3541,10 @@ class admin_10_10:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.admin_10_10_5).click()
         time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.5 Phụ phí theo thời tiết",
                                                   var_stx.title_page1, "10.10.5 Phụ phí theo thời tiết", "_PhuPhiTheoThoiTiet.png")
 

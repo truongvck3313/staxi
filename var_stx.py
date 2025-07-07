@@ -1131,6 +1131,12 @@ check_report_8_4_7 = "//*[@class='breadcrumb']//*[text()='8.4.7 Chi tiết doa
 report_8_4_8 = "//*[text()='8.4.8 Chi tiết doanh thu từ định vị']"
 check_report_8_4_8 = "//*[@class='breadcrumb']//*[text()='8.4.8 Chi tiết doanh thu từ định vị']"
 check_report_8_1_4_search = "//*[@class='ag-center-cols-viewport']/div[1]/div[1]/div[2]"
+
+FromDate = "//*[@id='FromDate']"
+report_8_4_17 = "//*[text()='8.4.17 Tổng hợp doanh thu lái xe theo ngày']"
+check_report_8_4_17 = "//*[@class='breadcrumb']//*[text()='8.4.17 Tổng hợp doanh thu lái xe theo ngày']"
+check_report_8_1_17_search = "//*[@class='ag-center-cols-viewport']/div[1]/div[1]/div[2]"
+
 admin_10_1 = "//*[text()='10.1 Cấu hình điều xe nâng cao']"
 admin_10_1_1 = "//*[text()='10.1.1 Danh sách bộ phương pháp điều xe']"
 check_admin_10_1_1 = "//*[@class='breadcrumb']//*[text()='10.1.1 Danh sách bộ phương pháp điều xe']"
@@ -1762,7 +1768,7 @@ table_table_2_11 = "//*[@class='table table-hover table-bordered']/tbody/tr[2]/t
 table_table_2_12 = "//*[@class='table table-hover table-bordered']/tbody/tr[2]/td[12]"
 add_new4 = "//*[text()=' Thêm mới']"
 
-
+Status_0 = "//*[@id='Status']//*[text()='Trạng thái hoá đơn']"
 checkbox1_7_7_7 = "//*[@class='ag-body ag-layout-normal']/div[1]/div[1]/div/div[1]//*[@type='checkbox']"
 PaymentType = "//*[@id='PaymentType']"
 Payment_MoneyClose1 = "//*[@id='Payment-MoneyClose1']"
@@ -1990,8 +1996,8 @@ info_order_DetailFee_data = "//*[@class='con-command']//*[@name='SurchargeStr']"
 history = "//*[text()='Lịch sử']"
 Agent = "//*[@data-sortfield='CreatedUser']"
 close3 = "//*[@id='ViewDetailBook']//*[@class='close']"
-
-
+yesterday3 = "//*[text()='Hôm qua']"
+DriverCode = "//*[@id='DriverCode']"
 
 
 

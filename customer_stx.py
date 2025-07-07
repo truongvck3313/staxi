@@ -17,6 +17,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from datetime import datetime
 from selenium.webdriver.common.keys import Keys
 
+wait = WebDriverWait(var_stx.driver, 10)
 
 
 def get_info_web():
@@ -64,7 +65,13 @@ class list_customer:
             var_stx.driver.find_element(By.XPATH, var_stx.customer).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.list_customer).click()
-        time.sleep(10)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.1 Danh sách khách hàng",
                                                   var_stx.title_page, "7.1 Danh sách khách hàng", "_DanhSachKhachHang.png")
 
@@ -508,7 +515,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.partner).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.1 Đối tác",
                                                   var_stx.title_page1, "7.7.1 Đối tác", "_Doitac.png")
 
@@ -714,7 +726,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.contract).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.2 Hợp đồng",
                                                   var_stx.title_page1, "7.7.2 Hợp đồng", "_HopDong.png")
 
@@ -993,6 +1010,8 @@ class contract_card:
         except:
             var_stx.driver.refresh()
             time.sleep(5)
+
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.3 Quản lý thẻ",
                                                   var_stx.title_page1, "7.7.3 Quản lý thẻ", "_QuanLyThe.png")
 
@@ -1620,7 +1639,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.closing_debts).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.4 Chốt công nợ",
                                                   var_stx.title_page1, "7.7.4 Chốt công nợ", "_ChotCongNo.png")
 
@@ -1904,7 +1928,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.report_customer_card_details).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ",
                                                   var_stx.title_page1, "7.7.10 Báo cáo chi tiết cuốc khách thẻ", "_BaoCaoCHiTietCuocKhachNo.png")
 
@@ -1999,7 +2028,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.report_card_top_up_transactions).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.11 Báo cáo giao dịch nạp thẻ",
                                                   var_stx.title_page1, "7.7.11 Báo cáo giao dịch nạp thẻ", "_BaoCaoGiaoDichNapThe.png")
 
@@ -2091,7 +2125,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.report_the_trip_with_the_driver_card).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.12 Báo cáo cuốc đi thẻ theo lái xe",
                                                   var_stx.title_page1, "7.7.12 Báo cáo cuốc đi thẻ theo lái xe", "_BaoCaoCuocDiTheTheoLaiXe.png")
 
@@ -2189,7 +2228,12 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.customer_summary_report).click()
-        time.sleep(5)
+        time.sleep(1)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.13 Báo cáo tổng hợp khách hàng",
                                                   var_stx.title_page1, "7.7.13 Báo cáo tổng hợp khách hàng", "_BaoCaoTongHopKhachHang.png")
 
@@ -2271,10 +2315,13 @@ class contract_card:
             var_stx.driver.find_element(By.XPATH, var_stx.contract_card).click()
             time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.card_transaction_report).click()
-        time.sleep(5)
-        wait = WebDriverWait(var_stx.driver, 10)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
-        time.sleep(1)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            pass
+
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.14 Báo cáo giao dịch thẻ",
                                                   var_stx.title_page1, "7.7.14 Báo cáo giao dịch thẻ", "_BaoCaoGiaoDichThe.png")
 

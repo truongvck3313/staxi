@@ -10,17 +10,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-
-
-
-
-
-
-
-
-
-
+wait = WebDriverWait(var_stx.driver, 10)
 
 
 class list_wallet_driver:
@@ -39,7 +29,12 @@ class list_wallet_driver:
             var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.list_wallet_driver).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.1 Danh sách ví lái xe",
                                                   var_stx.title_page, "3.1 Danh sách ví lái xe", "_DanhSachViLaiXe.png")
 
@@ -437,7 +432,12 @@ class recharge:
             var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.pay_money_into_the_driver_wallet).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.2 Đóng tiền vào ví lái xe",
                                                   var_stx.title_page, "3.2 Đóng tiền vào ví lái xe", "_DongTienVaoViXe.png")
 
@@ -486,7 +486,12 @@ class withdraw:
             var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.Withdraw_money_from_driver_wallet).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.3 Rút tiền từ ví lái xe",
                                                   var_stx.title_page, "3.3 Rút tiền từ ví lái xe", "_RutTienTuViXe.png")
 
@@ -570,7 +575,12 @@ class transaction_confirmation:
             var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.transaction_confirmation).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.4 Xác nhận giao dịch",
                                                   var_stx.title_page, "3.4 Xác nhận giao dịch", "_XacNhanGiaoDich.png")
 
@@ -815,7 +825,12 @@ class wallet_history:
             var_stx.driver.find_element(By.XPATH, var_stx.driver_wallet).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.wallet_history).click()
-        time.sleep(5)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page)))
+            time.sleep(2)
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
                                                  var_stx.title_page, "3.5 Lịch sử ví tiền", "_LichSuViTien.png")
 
@@ -1104,7 +1119,11 @@ class wallet_history:
         try:
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(page)
-            code_customer = var_stx.driver.find_element(By.XPATH, var_stx.ag1_2).text
+            try:
+                code_customer = var_stx.driver.find_element(By.XPATH, var_stx.ag1_2).text
+            except:
+                code_customer = var_stx.driver.find_element(By.XPATH, var_stx.table_1_1).text
+
             print(code_customer)
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}\nMã quốc khách: {}"
                                        .format(page, code_customer))

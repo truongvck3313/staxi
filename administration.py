@@ -22,7 +22,7 @@ wait = WebDriverWait(var_stx.driver, 10)
 
 #1222
 #12
-#111111
+#1222
 #11
 def get_info_web():
     var_stx.driver.implicitly_wait(0.05)

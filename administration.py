@@ -20,7 +20,7 @@ import subprocess
 import random
 wait = WebDriverWait(var_stx.driver, 10)
 
-#1222
+#1333
 #12
 #1222
 #11222

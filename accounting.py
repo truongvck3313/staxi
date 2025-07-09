@@ -685,8 +685,15 @@ class accounting_14_1:
         logging.info("n21")
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_not_export_invoice)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_export_customer)
-        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_send_info).click()
-        time.sleep(2.5)
+        # var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_send_info).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.save4).click()
+        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
+            time.sleep(2)
+        except:
+            pass
+
         logging.info("n22")
         module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                   var_stx.swal2_title, "Thay đổi thông tin xuất hóa đơn", "_QuanLyXuatHoaDon_GuiThongTin.png")

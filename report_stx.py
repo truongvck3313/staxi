@@ -1800,45 +1800,61 @@ class report_8_4:
 
         if var_stx.linktest[0:23] == "https://g7test.staxi.vn":
             try:
-                var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).clear()
-                time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).send_keys("0987")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_7day).click()
                 time.sleep(2)
                 var_stx.driver.find_element(By.XPATH, var_stx.search).click()
                 time.sleep(7)
+                var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2).click()
             except:
-                try:
-                    var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2)
-                except:
-                    var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).clear()
-                    time.sleep(0.5)
-                    var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).send_keys("09")
-                    time.sleep(2)
-                    var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-                    time.sleep(7)
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+                time.sleep(7)
 
-            try:
-                var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2)
-            except:
-                try:
-                    var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-                    time.sleep(2)
-                    var_stx.driver.find_element(By.XPATH, var_stx.yesterday3).click()
-                    time.sleep(2)
-                    var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-                    time.sleep(7)
-                except:
-                    try:
-                        var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2)
-                    except:
-                        var_stx.driver.refresh()
-                        time.sleep(7)
-                        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-                        time.sleep(2)
-                        var_stx.driver.find_element(By.XPATH, var_stx.reportrange_month_before).click()
-                        time.sleep(2)
-                        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-                        time.sleep(7)
+            # try:
+            #     var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).clear()
+            #     time.sleep(0.5)
+            #     var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).send_keys("0987")
+            #     time.sleep(2)
+            #     var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            #     time.sleep(7)
+            # except:
+            #     try:
+            #         var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2)
+            #     except:
+            #         var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).clear()
+            #         time.sleep(0.5)
+            #         var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).send_keys("09")
+            #         time.sleep(2)
+            #         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            #         time.sleep(7)
+            #
+            # try:
+            #     var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2)
+            # except:
+            #     try:
+            #         var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            #         time.sleep(2)
+            #         var_stx.driver.find_element(By.XPATH, var_stx.yesterday3).click()
+            #         time.sleep(2)
+            #         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            #         time.sleep(7)
+            #     except:
+            #         try:
+            #             var_stx.driver.find_element(By.XPATH, var_stx.ag_1_2)
+            #         except:
+            #             var_stx.driver.refresh()
+            #             time.sleep(7)
+            #             var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            #             time.sleep(2)
+            #             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_month_before).click()
+            #             time.sleep(2)
+            #             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+            #             time.sleep(7)
         else:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
             time.sleep(2)

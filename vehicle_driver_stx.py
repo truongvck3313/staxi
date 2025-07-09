@@ -611,9 +611,16 @@ class vehicle:
             pass
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_vehilce_add_new).click()
-        time.sleep(2.5)
+        time.sleep(1)
         print("2024AUTO"+number)
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "2024AUTO"+number)
+
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_succes)))
+            time.sleep(1)
+        except:
+            pass
 
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                  var_stx.add_new_succes, "Thêm mới xe thành công.", "_XeLaiXe_Xe_ThemMoi.png")

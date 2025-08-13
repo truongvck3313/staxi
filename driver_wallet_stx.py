@@ -998,6 +998,9 @@ class wallet_history:
         # ag1_6 = var_stx.driver.find_element(By.XPATH, var_stx.ag1_14).text
         # print("ag1_10: {}".format(ag1_6))
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        print("đã bấm tìm kiếm")
         time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
                                                   path_check, data, name_image)
@@ -1067,6 +1070,8 @@ class wallet_history:
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         try:
             ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
+            time.sleep(1)
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(800, 0).release().perform()
         except:
             ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
             time.sleep(1)
@@ -1074,7 +1079,7 @@ class wallet_history:
 
         time.sleep(2)
         n = 0
-        while (n < 5):
+        while (n < 7):
             n = n + 1
             n = str(n)
             path_icon = "//*[@class='ag-center-cols-viewport']/div/div[" + n + "]//*[@class='fa fa-angle-double-right']"
@@ -1085,6 +1090,8 @@ class wallet_history:
                 try:
                     var_stx.driver.find_element(By.XPATH, "//*[@class='ag-icon ag-icon-next']").click()
                     time.sleep(2)
+                    ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+                    time.sleep(1)
                 except:
                     pass
             n = int(n)
@@ -1096,7 +1103,9 @@ class wallet_history:
             n = str(n)
             path_icon = "//*[@class='ag-center-cols-viewport']/div/div[" + n + "]//*[@class='fa fa-angle-double-right']"
             try:
-                var_stx.driver.find_element(By.XPATH, path_icon).click()
+                button = var_stx.driver.find_element(By.XPATH, path_icon)
+                var_stx.driver.execute_script("arguments[0].click();", button)
+                # var_stx.driver.find_element(By.XPATH, path_icon).click()
                 time.sleep(5)
                 var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
                 time.sleep(3)

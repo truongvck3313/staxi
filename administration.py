@@ -600,7 +600,11 @@ class admin_10_3:
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3).click()
             time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_6).click()
+
+        button = var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_6)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_6).click()
         time.sleep(5)
         try:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
@@ -1354,7 +1358,7 @@ class admin_10_5:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/06/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("03/06/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
         time.sleep(0.5)
@@ -1377,7 +1381,7 @@ class admin_10_5:
             time.sleep(3)
 
         module_other_stx.write_result_text_try_if_cut2(code, eventname, result, "BÁO CÁO - 10.5 Quản trị hệ thống - 10.5.7 Lịch sử tài khoản",
-                                                  var_stx.list_data2_3, "10/12/2024", "_LichSuTaiKhoan_ChiTiet.png", 0, 10)
+                                                  var_stx.list_data2_3, "03/06/2025", "_LichSuTaiKhoan_ChiTiet.png", 0, 10)
 
 
     def admin_10_5_7_search(self, code, eventname, result, path_input, data, path_check, name_image):
@@ -2629,14 +2633,26 @@ class admin_10_7:
         admin_10_7.admin_10_7_4_x(self)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
-        data = var_stx.driver.find_element(By.XPATH, var_stx.ag2_2).text
+
+        wait = WebDriverWait(var_stx.driver, 10)
+        data = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.ag2_2))).text
 
         var_stx.driver.find_element(By.XPATH, var_stx.title).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
+        try:
+            data1 = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.ag1_2))).text
+        except:
+            pass
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
                                                   var_stx.ag1_2, data, "_QuanTriThongBaoLaiXeV2_TieuDe.png")
+
+
+
+
+
+
 
 
     def admin_10_7_4_combobox(self, code, eventname, result, path_combobox, path_check, desire, name_image):

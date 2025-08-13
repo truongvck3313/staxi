@@ -533,21 +533,21 @@ class accounting_14_1:
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("26/05/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("27/07/2025 00:00")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("26/05/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("27/07/2025 00:00")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("27/05/2025 10:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("28/07/2025 23:59")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("27/05/2025 10:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("28/07/2025 23:59")
             time.sleep(0.5)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()
@@ -557,35 +557,35 @@ class accounting_14_1:
 
             var_stx.driver.find_element(By.XPATH, var_stx.Status_notyetprocessed).click()
             time.sleep(1.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).clear()
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).send_keys("00001456")
-            time.sleep(0.5)
+            # var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).clear()
+            # time.sleep(0.5)
+            # var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).send_keys("00001456")
+            # time.sleep(0.5)
 
         else:
             try:
                 logging.info("n0")
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("12/06/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("04/08/2025 00:00")
                 logging.info("n1")
             except:
                 logging.info("n2")
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("12/06/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("04/08/2025 00:00")
                 logging.info("n3")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("13/06/2025 23:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("05/08/2025 23:59")
                 logging.info("n4")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).clear()
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("13/06/2025 23:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("05/08/2025 23:59")
                 logging.info("n5")
             time.sleep(0.5)
             try:
@@ -598,12 +598,12 @@ class accounting_14_1:
             logging.info("n8")
             var_stx.driver.find_element(By.XPATH, var_stx.Status_notyetprocessed).click()
             time.sleep(1.5)
-            logging.info("n9")
-            var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).clear()
-            time.sleep(0.5)
-            logging.info("n10")
-            var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).send_keys("00AEBC22")
-            time.sleep(0.5)
+            # logging.info("n9")
+            # var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).clear()
+            # time.sleep(0.5)
+            # logging.info("n10")
+            # var_stx.driver.find_element(By.XPATH, var_stx.BookCodeSearch).send_keys("00AEBC22")
+            # time.sleep(0.5)
 
 
         var_stx.driver.find_element(By.XPATH, var_stx.search3).click()
@@ -690,19 +690,34 @@ class accounting_14_1:
         time.sleep(2)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
-            time.sleep(2)
+            time.sleep(0.5)
         except:
             pass
+        try:
+            var_stx.driver.implicitly_wait(0.3)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.invoice_save)))
+            module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+                                                      var_stx.invoice_save, "Lưu thông tin thành công!", "_QuanLyXuatHoaDon_Luu.png")
+        except:
 
-        logging.info("n22")
-        module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
-                                                  var_stx.swal2_title, "Thay đổi thông tin xuất hóa đơn", "_QuanLyXuatHoaDon_GuiThongTin.png")
+            module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+                                                      var_stx.toast_message, "Lưu thông tin thành công!", "_QuanLyXuatHoaDon_Luu.png")
 
-        logging.info("n23")
-        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_cancel).click()
+
+
+
+        # module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+        #                                           var_stx.swal2_title, "Thay đổi thông tin xuất hóa đơn", "_QuanLyXuatHoaDon_GuiThongTin.png")
+
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_cancel).click()
+        except:
+            pass
         time.sleep(2)
-        logging.info("n24")
-        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_x).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_x).click()
+        except:
+            pass
         time.sleep(2)
 
 

@@ -1369,8 +1369,8 @@ def caseid_wallet29(self):
     get_datachecklist("Wallet29")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.wallet_history.wallet_history_search_scroll(self, "Wallet29", event, result, var_stx.ag2_11, var_stx.code_gd,
-                                                           var_stx.ag1_11, "_LichSuViTien_MaGiaoDich.png")
+    driver_wallet_stx.wallet_history.wallet_history_search_scroll(self, "Wallet29", event, result, var_stx.ag2_8, var_stx.code_gd,
+                                                           var_stx.ag1_8, "_LichSuViTien_MaGiaoDich.png")
 
 
 def caseid_wallet30(self):
@@ -3575,7 +3575,7 @@ def caseid_admin63(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     administration.admin_10_7.admin_10_7_1_combobox_select(self, "Admin63", event, result, var_stx.choose_driver_icon, var_stx.DriverIdSearch_truongvck33,
-                                                           var_stx.truongvck33_202476, "truongvck33-202476", "_QuanTriThongBaoLaiXe_ChonLaiXeDuocGui.png")
+                                                           var_stx.truongvck33_202476, "202476-truongvck33", "_QuanTriThongBaoLaiXe_ChonLaiXeDuocGui.png")
 
 
 def caseid_admin64(self):
@@ -3657,7 +3657,7 @@ def caseid_admin74(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     administration.admin_10_7.admin_10_7_1_combobox1(self, "Admin74", event, result, var_stx.SendArticleTypeSearch_4,
-                                                           "Tên biển số", "_QuanTriThongBaoLaiXe_TheoBienSo.png")
+                                                           "Theo Biển số", "_QuanTriThongBaoLaiXe_TheoBienSo.png")
 
 
 def caseid_admin75(self):

@@ -119,7 +119,7 @@ class admin_10_1:
             admin_10_1.admin_10_1_1(self, "", "", "")
 
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.3)
         var_stx.driver.find_element(By.XPATH, var_stx.OperatorId).click()
         time.sleep(1)
@@ -186,82 +186,82 @@ class admin_10_3:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
 
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_name).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_name).send_keys("En Vang HP")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_name_app).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_name_app).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_name_app).send_keys("En vang test")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_adress).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_adress).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_adress).send_keys("Hải Phòng")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_phone).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_phone).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_phone).send_keys("02253777999")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_code_hd).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_code_hd).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_code_hd).send_keys("Auto_"+number)
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_stt).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_stt).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_stt).send_keys("2")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_mail).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_mail).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_mail).send_keys("envanghp@gmail.com")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_name2).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_name2).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_name2).send_keys("Én Vàng Taxi")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_path_company).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_path_company).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_path_company).send_keys("http://localhost:18445/Media/Uploads/01-49-01-builink-giai-doan-bitcoin-halving.jpg")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_path_image).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_path_image).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_path_image).send_keys("https://envanghpbak.staxi.vn/Media/Uploads/Background-01.png")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_pin).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_pin).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_pin).send_keys("8634343222")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_web).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_web).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_web).send_keys("https://envanghpbak.staxi.vn/Company/Info?4515111")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_logo).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_logo).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_logo).send_keys("http://localhost:18445/Media/Uploads/01-49-01-builink-giai-doan-bitcoin-halving.jpg")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_tax).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_tax).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_tax).send_keys("3500247383")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_person).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_person).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_person).send_keys("Nguyễn Văn A")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.info_company_describe).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.info_company_describe).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_company_describe).send_keys("Công ty test nhập thông tin công ty")
         time.sleep(0.5)
@@ -269,7 +269,7 @@ class admin_10_3:
         iframe = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten)
         var_stx.driver.switch_to.frame(iframe)
         content_area = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten_body)
-        # content_area.clear()
+        # content_area.send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         # content_area.send_keys("Trường test thông tin công ty")
         content_area.click()
@@ -302,52 +302,52 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.sync_driver).click()
         time.sleep(2)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CommandVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CommandVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_CommandVersion).send_keys("164")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_VehicleTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_VehicleTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_VehicleTypeVersion).send_keys("214")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_FloorVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_FloorVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_FloorVersion).send_keys("151")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_SurchargeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_SurchargeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_SurchargeVersion).send_keys("302")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CompanyVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CompanyVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_CompanyVersion).send_keys("352")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_LandmarkVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_LandmarkVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_LandmarkVersion).send_keys("203")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_ConfigVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_ConfigVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_ConfigVersion).send_keys("612")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_PriceVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_PriceVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_PriceVersion).send_keys("295")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_RegionVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_RegionVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_RegionVersion).send_keys("353")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_AcronymVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_AcronymVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_AcronymVersion).send_keys("381")
         time.sleep(1)
@@ -374,47 +374,47 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer).click()
         time.sleep(2)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_CompanyVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_CompanyVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_CompanyVersion).send_keys("11")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigPriceListVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigPriceListVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigPriceListVersion).send_keys("12")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVersion).send_keys("11")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_AdminFeedbackTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_AdminFeedbackTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_AdminFeedbackTypeVersion).send_keys("11")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_VehicleTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_VehicleTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_VehicleTypeVersion).send_keys("11")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkVersion).send_keys("11")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVehicleTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVehicleTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVehicleTypeVersion).send_keys("11")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigCustVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigCustVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigCustVersion).send_keys("14")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_HighlightAddressVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_HighlightAddressVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_HighlightAddressVersion).send_keys("11")
         time.sleep(1)
@@ -479,13 +479,13 @@ class admin_10_3:
             admin_10_3.admin_10_3_5(self, "", "", "")
 
 
-        data = var_stx.driver.find_element(By.XPATH, var_stx.data_table2_2).text
+        data = var_stx.driver.find_element(By.XPATH, var_stx.datatable2_2).text
         var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(data)
         time.sleep(4)
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe",
-                                                  var_stx.data_table1_2, data, "_QuanTriTenXe_TimKiem.png")
+                                                  var_stx.datatable1_2, data, "_QuanTriTenXe_TimKiem.png")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_driver).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(1)
 
 
@@ -498,13 +498,13 @@ class admin_10_3:
             admin_10_3.admin_10_3_5(self, "", "", "")
 
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.name_driver).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(var_stx.data['admin']['manager_vehicle_addnew'])
             time.sleep(3)
-            name = var_stx.driver.find_element(By.XPATH, var_stx.data_table1_2).text
+            name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
             if name == var_stx.data['admin']['manager_vehicle_addnew']:
-                var_stx.driver.find_element(By.XPATH, var_stx.data_table1_3_button).click()
+                var_stx.driver.find_element(By.XPATH, var_stx.datatable1_3_button).click()
                 time.sleep(2.5)
                 var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
                 time.sleep(1.5)
@@ -538,15 +538,15 @@ class admin_10_3:
             admin_10_3.admin_10_3_5(self, "", "", "")
         var_stx.driver.refresh()
         time.sleep(5)
-        var_stx.driver.find_element(By.XPATH, var_stx.name_driver).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(var_stx.data['admin']['manager_vehicle_addnew'])
         time.sleep(3)
-        name = var_stx.driver.find_element(By.XPATH, var_stx.data_table1_2).text
+        name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
         if name == var_stx.data['admin']['manager_vehicle_addnew']:
-            var_stx.driver.find_element(By.XPATH, var_stx.data_table1_2).click()
+            var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).click()
             time.sleep(2.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.id_name).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.id_name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.id_name).send_keys(var_stx.data['admin']['manager_vehicle_addnew_edit'])
             time.sleep(1.5)
@@ -565,19 +565,19 @@ class admin_10_3:
         except:
             admin_10_3.admin_10_3_5(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_driver).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(var_stx.data['admin']['manager_vehicle_addnew_edit'])
         time.sleep(3)
-        name = var_stx.driver.find_element(By.XPATH, var_stx.data_table1_2).text
+        name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
         if name == var_stx.data['admin']['manager_vehicle_addnew_edit']:
-            var_stx.driver.find_element(By.XPATH, var_stx.data_table1_3_button).click()
+            var_stx.driver.find_element(By.XPATH, var_stx.datatable1_3_button).click()
             time.sleep(2.5)
             var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
             time.sleep(1.5)
             module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe",
                                                       var_stx.toast_message, "Xóa tên xe thành công.", "_QuanTriTenXe_Xoa.png")
-            var_stx.driver.find_element(By.XPATH, var_stx.name_driver).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(2)
 
 
@@ -646,52 +646,52 @@ class admin_10_3:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.icon_sync_driver).click()
         time.sleep(2.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CommandVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CommandVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_CommandVersion).send_keys("573")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_VehicleTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_VehicleTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_VehicleTypeVersion).send_keys("588")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_FloorVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_FloorVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_FloorVersion).send_keys("6954")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_SurchargeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_SurchargeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_SurchargeVersion).send_keys("592")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CompanyVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_CompanyVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_CompanyVersion).send_keys("600")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_LandmarkVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_LandmarkVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_LandmarkVersion).send_keys("601")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_ConfigVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_ConfigVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_ConfigVersion).send_keys("948")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_PriceVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_PriceVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_PriceVersion).send_keys("601")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_RegionVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_RegionVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_RegionVersion).send_keys("601")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.update_version_AcronymVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.update_version_AcronymVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update_version_AcronymVersion).send_keys("586")
         time.sleep(1)
@@ -715,47 +715,47 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.icon_sync_customer).click()
         time.sleep(2.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_CompanyVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_CompanyVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_CompanyVersion).send_keys("614")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigPriceListVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigPriceListVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigPriceListVersion).send_keys("10029")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVersion).send_keys("639")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_AdminFeedbackTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_AdminFeedbackTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_AdminFeedbackTypeVersion).send_keys("612")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_VehicleTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_VehicleTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_VehicleTypeVersion).send_keys("630")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkVersion).send_keys("620")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVehicleTypeVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVehicleTypeVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_LandmarkRouteVehicleTypeVersion).send_keys("6038")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigCustVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigCustVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_ConfigCustVersion).send_keys("838")
         time.sleep(0.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_HighlightAddressVersion).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_HighlightAddressVersion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.sync_customer_HighlightAddressVersion).send_keys("612")
         time.sleep(1)
@@ -791,7 +791,14 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
         time.sleep(2.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_minitor).click()
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.type_vehicle_minitor)))
+            element.click()
+        except:
+            pass
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_minitor).click()
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_level5).click()
         time.sleep(0.5)
@@ -851,7 +858,13 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_tn).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.save3).click()
-        time.sleep(5)
+        time.sleep(1.5)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[text()='"+var_stx.data['admin']['add_new_type_vehicle_name']+"']")))
+
+        except:
+            pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.6 Quản trị loại xe",
                                                   "//*[text()='"+var_stx.data['admin']['add_new_type_vehicle_name']+"']",
                                                   var_stx.data['admin']['add_new_type_vehicle_name'], "_QuanTriLoaiXe_ThemMoi.png")
@@ -869,12 +882,12 @@ class admin_10_3:
         var_stx.driver.execute_script("arguments[0].click();", button)
         time.sleep(2.5)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_name_app).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_name_app).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.type_vehicle_name_app).send_keys(var_stx.data['admin']['add_new_type_vehicle_name_edit'])
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.update).click()
-        time.sleep(3.5)
+        time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.6 Quản trị loại xe",
                                                   "//*[text()='"+var_stx.data['admin']['add_new_type_vehicle_name_edit']+"']",
                                                   var_stx.data['admin']['add_new_type_vehicle_name_edit'], "_QuanTriLoaiXe_CapNhat.png")
@@ -1057,7 +1070,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1065,7 +1078,7 @@ class admin_10_5:
         if name == data:
             var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2_a).click()
             time.sleep(2.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.fil_again_pass_word).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.fil_again_pass_word).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.fil_again_pass_word).send_keys("Aa@123456789")
             time.sleep(1)
@@ -1089,7 +1102,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1120,7 +1133,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1154,7 +1167,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1182,7 +1195,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1194,9 +1207,12 @@ class admin_10_5:
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.RedirectPage).click()
             except:
-                var_stx.driver.find_element(By.XPATH, var_stx.datatable1_12_a).click()
-                time.sleep(2.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.RedirectPage).click()
+                try:
+                    var_stx.driver.find_element(By.XPATH, var_stx.datatable1_12_a).click()
+                    time.sleep(2.5)
+                    var_stx.driver.find_element(By.XPATH, var_stx.RedirectPage).click()
+                except:
+                    var_stx.driver.find_element(By.XPATH, var_stx.RedirectPage2).click()
             time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.page_default_sumarry).click()
             time.sleep(1.5)
@@ -1216,7 +1232,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1241,7 +1257,7 @@ class admin_10_5:
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
-        var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(data)
         time.sleep(4)
@@ -1287,12 +1303,12 @@ class admin_10_5:
     def admin_10_5_7_x(self):
         var_stx.driver.implicitly_wait(0.2)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.name_account).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.name_account).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.3)
         except:
             pass
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.data_change).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.data_change).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.3)
         except:
             pass
@@ -1316,11 +1332,11 @@ class admin_10_5:
         except:
             admin_10_5.admin_10_5_7(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/06/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/06/2025 23:59")
         time.sleep(0.5)
@@ -1329,9 +1345,9 @@ class admin_10_5:
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.table_1_2_a)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(3)
@@ -1356,11 +1372,11 @@ class admin_10_5:
         except:
             admin_10_5.admin_10_5_7_detail(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("03/06/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/06/2025 23:59")
         time.sleep(0.5)
@@ -1369,11 +1385,11 @@ class admin_10_5:
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.list_data2_3)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("20/05/2025 00:00")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("03/06/2025 23:59")
             time.sleep(0.5)
@@ -1721,13 +1737,13 @@ class admin_10_6:
         try:
             flied1 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_1).text
             flied2 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_2).text
-            flied3 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_3).text
+            # flied3 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_3).text
             flied4 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_4).text
             flied5 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_5).text
             flied6 = var_stx.driver.find_element(By.XPATH, var_stx.table_1_6).text
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "STT: {}\nNhóm tuyến: {}\nTên cấu hình: {}\nThời điểm: {}\nTrạng thái: {}\nGhi chú: {}"
-                                       .format(flied1, flied2, flied3, flied4, flied5, flied6))
-            if (flied1 and flied2 and flied3 and flied4 and flied5 and flied6 != None):
+            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "STT: {}\nNhóm tuyến: {}\nThời điểm: {}\nTrạng thái: {}\nGhi chú: {}"
+                                       .format(flied1, flied2, flied4, flied5, flied6))
+            if (flied1 and flied2 and flied4 and flied5 and flied6) != None:
                 logging.info("True")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
             else:
@@ -2112,9 +2128,9 @@ class admin_10_7:
     def admin_10_7_1_x(self):
         var_stx.driver.implicitly_wait(0.2)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.title).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.title).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.2)
-            var_stx.driver.find_element(By.XPATH, var_stx.title).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.title).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.2)
         except:
             pass
@@ -2183,6 +2199,12 @@ class admin_10_7:
             pass
         var_stx.driver.find_element(By.XPATH, path_combobox).click()
         time.sleep(1)
+
+        if name_image == "_QuanTriThongBaoLaiXe_ChonLaiXeDuocGui.png":
+            var_stx.driver.find_element(By.XPATH, var_stx.flow_driver).click()
+            time.sleep(2)
+
+
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(8)
         var_stx.driver.find_element(By.XPATH, var_stx.list_data2_2_a).click()
@@ -2281,6 +2303,11 @@ class admin_10_7:
         var_stx.driver.find_element(By.XPATH, var_stx.import_from_excel).click()
         time.sleep(3)
 
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.dowload_simple_file)))
+        except:
+            pass
         var_stx.driver.find_element(By.XPATH, var_stx.dowload_simple_file).click()
         time.sleep(4)
         module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
@@ -2301,9 +2328,8 @@ class admin_10_7:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.upload1).click()
         time.sleep(2.5)
-        module_other_stx.write_result_text_try_if_other(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
-                                                   var_stx.not_role, "Bạn không thể thực hiện chức năng này. Hãy liên lạc bộ phận CSKH - Hotline(1900 6415) để biết thêm thông tin.",
-                                                        "_QuanTriThongBaoLaiXe_UploadFile.png")
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
+                                                   var_stx.table3_7, "Không tìm thấy lái xe với biển số này","_QuanTriThongBaoLaiXe_UploadFile.png")
 
 
         try:
@@ -2337,12 +2363,16 @@ class admin_10_7:
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver).click()
         time.sleep(1)
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver1).click()
-            time.sleep(1)
-        except:
-            var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver2).click()
-            time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver_input).send_keys("Auto491")
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver_input1).click()
+        time.sleep(2)
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver1).click()
+        #     time.sleep(1)
+        # except:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.create_noti_name_driver2).click()
+        #     time.sleep(1)
 
         # Đường dẫn tệp tuyệt đối
         file_input = var_stx.driver.find_element(By.XPATH, var_stx.chose_file2)
@@ -2406,7 +2436,7 @@ class admin_10_7:
 
             wait = WebDriverWait(var_stx.driver, 10)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.create_noti_phone)))
-            var_stx.driver.find_element(By.XPATH, var_stx.create_noti_phone).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.create_noti_phone).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.create_noti_phone).send_keys(var_stx.data['admin']['create_noti_phone_edit'])
             time.sleep(1)
@@ -2431,7 +2461,11 @@ class admin_10_7:
             admin_10_7.admin_10_7_1(self, "", "", "")
 
         admin_10_7.admin_10_7_1_x(self)
-        data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 33, 2))
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(5)
+
+        data = var_stx.driver.find_element(By.XPATH, var_stx.list_data3_2).text
+        # data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 33, 2))
 
         var_stx.driver.find_element(By.XPATH, var_stx.title).send_keys(data)
         time.sleep(1)
@@ -2443,9 +2477,8 @@ class admin_10_7:
             time.sleep(3)
             var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
             time.sleep(2)
-            module_other_stx.write_result_text_try_if(code, eventname, result,"BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
-                                                      var_stx.check_admin_10_7_1_see, var_stx.data['admin']['create_noti_conten'],
-                                                      "_QuanTriThongBaoLaiXe_Xem.png")
+            module_other_stx.write_result_text_try_if_other(code, eventname, result,"BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
+                                                      var_stx.check_admin_10_7_1_see, "","_QuanTriThongBaoLaiXe_Xem.png")
             module_other_stx.close_tab()
             var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
             time.sleep(1)
@@ -2552,15 +2585,15 @@ class admin_10_7:
         #     pass
         #
         # try:
-        #     var_stx.driver.find_element(By.XPATH, var_stx.from_day).clear()
+        #     var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         #     time.sleep(0.5)
-        #     var_stx.driver.find_element(By.XPATH, var_stx.to_day).clear()
+        #     var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         #     time.sleep(0.5)
         # except:
         #     pass
 
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.title).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.title).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.2)
         except:
             pass
@@ -3012,7 +3045,7 @@ class admin_10_10:
         except:
             admin_10_10.admin_10_10_2(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         data = var_stx.driver.find_element(By.XPATH, var_stx.table_table2_2).text
         var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(data)
         time.sleep(1)
@@ -3022,7 +3055,7 @@ class admin_10_10:
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.2 Phụ phí loại hàng hóa",
                                                   var_stx.table_table1_2, data, "_PhuPhiLoaiHangHoa_TimKiem.png")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
@@ -3090,7 +3123,7 @@ class admin_10_10:
         except:
             admin_10_10.admin_10_10_2(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(var_stx.data['admin']['add_new_goods'])
         time.sleep(1)
@@ -3100,7 +3133,7 @@ class admin_10_10:
         if name == var_stx.data['admin']['add_new_goods']:
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2_a).click()
             time.sleep(2.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_surcharge).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_surcharge).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_surcharge).send_keys("20")
             time.sleep(1)
@@ -3123,7 +3156,7 @@ class admin_10_10:
         except:
             admin_10_10.admin_10_10_2(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         var_stx.driver.find_element(By.XPATH, var_stx.type_of_goods).send_keys(var_stx.data['admin']['add_new_goods'])
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -3179,7 +3212,7 @@ class admin_10_10:
         except:
             admin_10_10.admin_10_10_3(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.time).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         data = var_stx.driver.find_element(By.XPATH, var_stx.table_table2_2).text
         var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(data)
         time.sleep(1)
@@ -3189,7 +3222,7 @@ class admin_10_10:
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
                                                   "//*[text()='  "+data+"']", data, "_PhuPhiTheoThoiGian_TimKiem.png")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.time).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
@@ -3246,7 +3279,7 @@ class admin_10_10:
         except:
             admin_10_10.admin_10_10_3(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.time).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(var_stx.data['admin']['add_new_time_from'])
         time.sleep(1)
@@ -3257,7 +3290,7 @@ class admin_10_10:
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2_a).click()
             time.sleep(2.5)
 
-            var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_describe).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_describe).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_describe).send_keys(var_stx.data['admin']['add_new_time_describe_edit'])
             time.sleep(1)
@@ -3282,7 +3315,7 @@ class admin_10_10:
         except:
             admin_10_10.admin_10_10_3(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.time).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(var_stx.data['admin']['add_new_time_from'])
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
@@ -3327,7 +3360,7 @@ class admin_10_10:
     def admin_10_10_4_x(self):
         var_stx.driver.implicitly_wait(0.2)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.price).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.price).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.3)
         except:
             pass
@@ -3349,7 +3382,7 @@ class admin_10_10:
 
 
         admin_10_10.admin_10_10_4_x(self)
-        data = var_stx.driver.find_element(By.XPATH, var_stx.table_table2_2).text
+        data = var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2).text
         data = ''.join(re.findall(r'\d+', data))
 
 
@@ -3386,7 +3419,7 @@ class admin_10_10:
 
 
 
-        var_stx.driver.find_element(By.XPATH, var_stx.price).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.price).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
@@ -3493,7 +3526,7 @@ class admin_10_10:
         if name == "G7 Xe Avante" or name == "G7 Ecopark 7 chỗ (Ko dùng)":
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2_a).click()
             time.sleep(2.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).send_keys("25")
             time.sleep(1)
@@ -3654,7 +3687,7 @@ class admin_10_10:
         if name == "Eco 4 Chỗ Plus" or name == "G7 Vios":
             var_stx.driver.find_element(By.XPATH, var_stx.table_table1_2_a).click()
             time.sleep(2.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).clear()
+            var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_surcharge_surcharge).send_keys("25")
             time.sleep(1)

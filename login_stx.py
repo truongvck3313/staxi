@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import re
-
+from selenium.webdriver.common.keys import Keys
 
 
 
@@ -37,6 +37,14 @@ class login:
             var_stx.driver.set_page_load_timeout(10)
             var_stx.driver.get(var_stx.linktest)
             time.sleep(5)
+
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.i_seed).click()
+                time.sleep(2)
+            except:
+                pass
+
+
             try:
                 login.logout_stx(self)
             except NoSuchElementException:
@@ -47,13 +55,16 @@ class login:
             time.sleep(2)
 
             username_field = var_stx.driver.find_element(By.XPATH, var_stx.login_user)
+            username_field.send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
             password_field = var_stx.driver.find_element(By.XPATH, var_stx.login_password)
 
-            username_field.clear()
+            username_field.send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            print("đã clear user")
             time.sleep(0.5)
             username_field.send_keys(user)
             time.sleep(0.5)
-            password_field.clear()
+            password_field.send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             password_field.send_keys(password)
             time.sleep(0.5)
@@ -92,6 +103,13 @@ class login:
             var_stx.driver.set_page_load_timeout(10)
             var_stx.driver.get(var_stx.linktest)
             time.sleep(5)
+
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.i_seed).click()
+                time.sleep(2)
+            except:
+                pass
+
             try:
                 login.logout_stx(self)
             except NoSuchElementException:
@@ -104,11 +122,11 @@ class login:
             username_field = var_stx.driver.find_element(By.XPATH, var_stx.login_user)
             password_field = var_stx.driver.find_element(By.XPATH, var_stx.login_password)
 
-            username_field.clear()
+            username_field.send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             username_field.send_keys(user)
             time.sleep(0.5)
-            password_field.clear()
+            password_field.send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
             password_field.send_keys(password)
             time.sleep(0.5)
@@ -182,10 +200,10 @@ class login:
             time.sleep(1)
         except:
             pass
-        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
@@ -219,10 +237,10 @@ class login:
         except:
             pass
 
-        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
@@ -257,10 +275,10 @@ class login:
             time.sleep(1)
         except:
             pass
-        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
@@ -293,10 +311,10 @@ class login:
             time.sleep(1)
         except:
             pass
-        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
@@ -329,10 +347,10 @@ class login:
         except:
             pass
 
-        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
@@ -372,10 +390,10 @@ class login:
         except:
             pass
 
-        var_stx.driver.find_element(By.XPATH, var_stx.login_user).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_user).send_keys(user)
-        var_stx.driver.find_element(By.XPATH, var_stx.login_password).clear()
+        var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
@@ -399,6 +417,13 @@ class link:
         var_stx.driver.implicitly_wait(5)
         var_stx.driver.get(var_stx.linktest)
         time.sleep(3)
+
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.i_seed).click()
+            time.sleep(2)
+        except:
+            pass
+
         # var_v3.driver.find_element(By.XPATH, link).click()
         button = var_stx.driver.find_element(By.XPATH, link)
         var_stx.driver.execute_script("arguments[0].click();", button)

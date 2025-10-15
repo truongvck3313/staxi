@@ -119,7 +119,7 @@ def caseid_login11(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     login_stx.link.affiliate(self, "Login11", event, result, var_stx.app_store, var_stx.check_app_store,
-                             "G7 Taxi 17+", "DangNhap_LienKet_Store.png", "0")
+                             "G7 Taxi 16+", "DangNhap_LienKet_Store.png", "0")
 
 def caseid_login12(self):
     get_datachecklist("Login12")
@@ -260,7 +260,7 @@ def caseid_minitor15(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     minitor_stx.vehicle_online.search_vehicle(self, "Minitor15", event, result, "7", "", var_stx.search_status_blackbox4,
-                                              var_stx.check_list_data2_11, "", "GiamSat_TimKiem_MatKetNoi.png")
+                                              var_stx.check_list_data2_11, "Mất kết nối", "GiamSat_TimKiem_MatKetNoi.png")
 
 
 def caseid_minitor16(self):
@@ -416,6 +416,7 @@ def caseid_minitor36(self):
     minitor_stx.minitor_vehicle.minitor_vehicle_route_search(self, "Minitor36", event, result)
 
 
+@retry(tries=3, delay=2, backoff=1, jitter=5, )
 def caseid_minitor37(self):
     get_datachecklist("Minitor37")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
@@ -455,7 +456,7 @@ def caseid_minitor42(self):
     get_datachecklist("Minitor42")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    minitor_stx.minitor_vehicle.check_info_popup_api(self, "Minitor42", event, result, 10)
+    minitor_stx.minitor_vehicle.check_info_none(self, "Minitor42", event, result, 10)
 
 
 def caseid_minitor43(self):
@@ -476,7 +477,7 @@ def caseid_minitor45(self):
     get_datachecklist("Minitor45")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    minitor_stx.minitor_vehicle.check_info_popup_api(self, "Minitor45", event, result, 15)
+    minitor_stx.minitor_vehicle.check_info_none(self, "Minitor45", event, result, 15)
 
 
 def caseid_minitor46(self):
@@ -504,14 +505,14 @@ def caseid_minitor49(self):
     get_datachecklist("Minitor49")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    minitor_stx.minitor_vehicle.check_info_popup_api(self, "Minitor49", event, result, 19)
+    minitor_stx.minitor_vehicle.check_info_none(self, "Minitor49", event, result, 19)
 
 
 def caseid_minitor50(self):
     get_datachecklist("Minitor50")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    minitor_stx.minitor_vehicle.check_info_popup_api(self, "Minitor50", event, result, 20)
+    minitor_stx.minitor_vehicle.check_info_none(self, "Minitor50", event, result, 20)
 
 
 def caseid_minitor51(self):
@@ -521,12 +522,11 @@ def caseid_minitor51(self):
     minitor_stx.minitor_vehicle.check_info_none(self, "Minitor51", event, result, 21)
 
 
-@retry(tries=3, delay=2, backoff=1, jitter=5, )
 def caseid_minitor52(self):
     get_datachecklist("Minitor52")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    minitor_stx.minitor_vehicle.check_info_popup_api(self, "Minitor52", event, result, 22)
+    minitor_stx.minitor_vehicle.check_info_none(self, "Minitor52", event, result, 22)
 
 
 
@@ -1185,22 +1185,22 @@ def caseid_wallet03(self):
     get_datachecklist("Wallet03")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.list_wallet_driver.list_wallet_driver_search(self, "Wallet03", event, result, var_stx.list_data4_4,
-                                                                   var_stx.list_data2_4, "_DanhSachViLaiXe_Ten.png")
+    driver_wallet_stx.list_wallet_driver.list_wallet_driver_search(self, "Wallet03", event, result, var_stx.name_drive, var_stx.col_id_FullName1,
+                                                                   var_stx.col_id_FullName0, "_DanhSachViLaiXe_TenLaiXe.png")
 
 def caseid_wallet04(self):
     get_datachecklist("Wallet04")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.list_wallet_driver.list_wallet_driver_search(self, "Wallet04", event, result, var_stx.list_data4_3,
-                                                                   var_stx.list_data2_3, "_DanhSachViLaiXe_SDT.png")
+    driver_wallet_stx.list_wallet_driver.list_wallet_driver_search(self, "Wallet04", event, result, var_stx.account, var_stx.col_id_DriverCode1,
+                                                                   var_stx.col_id_DriverCode0, "_DanhSachViLaiXe_TaiKhoan.png")
 
 def caseid_wallet05(self):
     get_datachecklist("Wallet05")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.list_wallet_driver.list_wallet_driver_search(self, "Wallet05", event, result, var_stx.list_data4_2,
-                                                                   var_stx.list_data2_2, "_DanhSachViLaiXe_MaDam.png")
+    driver_wallet_stx.list_wallet_driver.list_wallet_driver_search(self, "Wallet05", event, result, var_stx.number, var_stx.col_id_PrivateCode1,
+                                                                   var_stx.col_id_PrivateCode0, "_DanhSachViLaiXe_SoHieu.png")
 
 def caseid_wallet06(self):
     get_datachecklist("Wallet06")
@@ -2201,29 +2201,29 @@ def caseid_customer33(self):
     get_datachecklist("Customer33")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_search(self, "Customer33", event, result, var_stx.number_serial, var_stx.list_data3_2,
-                                                      var_stx.list_data2_2, "_QuanLyThe_SoSerial.png")
+    customer_stx.contract_card.card_management_search(self, "Customer33", event, result, var_stx.number_serial, var_stx.col_id_serial3,
+                                                      var_stx.col_id_serial2, "_QuanLyThe_SoSerial.png")
 
 def caseid_customer34(self):
     get_datachecklist("Customer34")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_search(self, "Customer34", event, result, var_stx.sdt, var_stx.list_data3_5,
-                                                      var_stx.list_data2_5, "_QuanLyThe_SoDienThoai.png")
+    customer_stx.contract_card.card_management_search(self, "Customer34", event, result, var_stx.sdt, var_stx.col_id_mobile3,
+                                                      var_stx.col_id_mobile2, "_QuanLyThe_SoDienThoai.png")
 
 def caseid_customer35(self):
     get_datachecklist("Customer35")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_search(self, "Customer35", event, result, var_stx.code_hd, var_stx.list_data3_3,
-                                                      var_stx.list_data2_3, "_QuanLyThe_MaHopDong.png")
+    customer_stx.contract_card.card_management_search(self, "Customer35", event, result, var_stx.code_hd, var_stx.col_id_hd3,
+                                                      var_stx.col_id_hd2, "_QuanLyThe_MaHopDong.png")
 
 def caseid_customer36(self):
     get_datachecklist("Customer36")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_search(self, "Customer36", event, result, var_stx.name_customer, var_stx.list_data3_6,
-                                                      var_stx.list_data2_6, "_QuanLyThe_TenKhachHang.png")
+    customer_stx.contract_card.card_management_search(self, "Customer36", event, result, var_stx.name_customer, var_stx.col_id_namecustomer3,
+                                                      var_stx.col_id_namecustomer2, "_QuanLyThe_TenKhachHang.png")
 
 def caseid_customer37(self):
     get_datachecklist("Customer37")
@@ -2244,29 +2244,29 @@ def caseid_customer40(self):
     get_datachecklist("Customer40")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_status(self, "Customer40", event, result, var_stx.StatusSearch2,
-                                                      var_stx.list_data2_22_a, "Kích hoạt", "_QuanLyThe_KhongKichHoat.png")
+    customer_stx.contract_card.card_management_status(self, "Customer40", event, result, var_stx.Status_not_active,
+                                                      var_stx.col_id_status2, "Kích hoạt", "_QuanLyThe_KhongKichHoat.png")
 
 def caseid_customer41(self):
     get_datachecklist("Customer41")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_status(self, "Customer41", event, result, var_stx.StatusSearch3,
-                                                      var_stx.list_data2_22_a, "Thẻ đã kích hoạt", "_QuanLyThe_KichHoat.png")
+    customer_stx.contract_card.card_management_status(self, "Customer41", event, result, var_stx.Status_active,
+                                                      var_stx.col_id_status2, "Thẻ đã kích hoạt", "_QuanLyThe_KichHoat.png")
 
 def caseid_customer42(self):
     get_datachecklist("Customer42")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     customer_stx.contract_card.card_management_card(self, "Customer42", event, result, var_stx.PaidMethod_before,
-                                                      var_stx.list_data2_13, "Trả trước", "_QuanLyThe_TraTruoc.png")
+                                                      var_stx.col_id_type2, "Trả trước", "_QuanLyThe_TraTruoc.png")
 
 def caseid_customer43(self):
     get_datachecklist("Customer43")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     customer_stx.contract_card.card_management_card(self, "Customer43", event, result, var_stx.PaidMethod_after,
-                                                      var_stx.list_data2_13, "Trả sau", "_QuanLyThe_TraSau.png")
+                                                      var_stx.col_id_type2, "Trả sau", "_QuanLyThe_TraSau.png")
 
 
 def caseid_customer44(self):
@@ -2274,14 +2274,14 @@ def caseid_customer44(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     customer_stx.contract_card.card_management_status(self, "Customer44", event, result, var_stx.StatusBFA2,
-                                                      var_stx.list_data2_23i,  "Đã kích hoạt", "_QuanLyThe_TrangThaiDatHo_KichHoat.png")
+                                                      var_stx.col_id_BookForAnother2,  "Đã kích hoạt", "_QuanLyThe_TrangThaiDatHo_KichHoat.png")
 
 def caseid_customer45(self):
     get_datachecklist("Customer45")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     customer_stx.contract_card.card_management_status(self, "Customer45", event, result, var_stx.StatusBFA3,
-                                                      var_stx.list_data2_23_i,  "Chưa kích hoạt", "_QuanLyThe_TrangThaiDatHo_ChuaKichHoat.png")
+                                                      var_stx.col_id_BookForAnother2,  "Chưa kích hoạt", "_QuanLyThe_TrangThaiDatHo_ChuaKichHoat.png")
 
 
 def caseid_customer46(self):
@@ -2330,15 +2330,15 @@ def caseid_customer52(self):
     get_datachecklist("Customer52")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_clock(self, "Customer52", event, result, var_stx.card_management_clock1,
-                                                     "Khóa thẻ thành công!", "_QuanLyThe_KhoaThe.png")
+    customer_stx.contract_card.card_management_clock(self, "Customer52", event, result, var_stx.toast_message,
+                                                     "Khóa thẻ thành công!", "Khóa thẻ thành công!", "_QuanLyThe_KhoaThe.png")
 
 def caseid_customer53(self):
     get_datachecklist("Customer53")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.card_management_clock(self, "Customer53", event, result, var_stx.card_management_clock2,
-                                                     "Mở thẻ thành công!", "_QuanLyThe_MoThe.png")
+    customer_stx.contract_card.card_management_clock(self, "Customer53", event, result, var_stx.toast_message,
+                                                     "Mở khóa thẻ thành công!", "Mở thẻ thành công!", "_QuanLyThe_MoThe.png")
 
 def caseid_customer54(self):
     get_datachecklist("Customer54")
@@ -2368,6 +2368,40 @@ def caseid_customer57(self):
     customer_stx.contract_card.card_management_cancel(self, "Customer57", event, result)
 
 
+def caseid_customer57_1(self):
+    get_datachecklist("Customer57_1")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    customer_stx.contract_card.issue_white_cards(self, "Customer57_1", event, result)
+
+def caseid_customer57_2(self):
+    get_datachecklist("Customer57_2")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    customer_stx.contract_card.one_time_card(self, "Customer57_2", event, result)
+
+
+def caseid_customer57_3(self):
+    get_datachecklist("Customer57_3")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    customer_stx.contract_card.one_time_card_coppy(self, "Customer57_3", event, result)
+
+def caseid_customer57_4(self):
+    get_datachecklist("Customer57_4")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    customer_stx.contract_card.one_time_card_print(self, "Customer57_4", event, result)
+
+
+def caseid_customer57_5(self):
+    get_datachecklist("Customer57_5")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    customer_stx.contract_card.one_time_card_save(self, "Customer57_5", event, result)
+
+
+
 def caseid_customer58(self):
     get_datachecklist("Customer58")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
@@ -2387,8 +2421,8 @@ def caseid_customer60(self):
     get_datachecklist("Customer60")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    customer_stx.contract_card.closing_debts_search(self, "Customer60", event, result, "0", var_stx.ag2_7,
-                                                    var_stx.ag1_7, "_ChotCongNo_SoDienThoai.png")
+    customer_stx.contract_card.closing_debts_search(self, "Customer60", event, result, "0", var_stx.col_id_mobile3,
+                                                    var_stx.col_id_mobile2, "_ChotCongNo_SoDienThoai.png")
 
 def caseid_customer61(self):
     get_datachecklist("Customer61")
@@ -2508,6 +2542,13 @@ def caseid_customer77(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     customer_stx.contract_card.report_the_trip_with_the_driver_card_excel(self, "Customer77", event, result)
+
+
+def caseid_customer77_1(self):
+    get_datachecklist("Customer77_1")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    customer_stx.contract_card.report_the_trip_with_the_driver_card_payment(self, "Customer77_1", event, result)
 
 
 def caseid_customer78(self):
@@ -2761,6 +2802,8 @@ def caseid_report19(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     report_stx.report_8_1.report_8_1_7_excel(self, "Report19", event, result)
+
+
 
 
 def caseid_report20(self):
@@ -3145,6 +3188,50 @@ def caseid_report74(self):
     report_stx.report_8_4.report_8_4_17_excel(self, "Report74", event, result)
 
 
+def caseid_report75(self):
+    get_datachecklist("Report75")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.report_8_8_2(self, "Report75", event, result)
+
+
+def caseid_report76(self):
+    get_datachecklist("Report76")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.report_8_8_2_search(self, "Report76", event, result)
+
+
+def caseid_report77(self):
+    get_datachecklist("Report77")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.report_8_8_2_excel(self, "Report77", event, result)
+
+
+
+def caseid_report78(self):
+    get_datachecklist("Report78")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.report_8_8_3(self, "Report78", event, result)
+
+
+def caseid_report79(self):
+    get_datachecklist("Report79")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.report_8_8_3_search(self, "Report79", event, result)
+
+
+def caseid_report80(self):
+    get_datachecklist("Report80")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.report_8_8_3_excel(self, "Report80", event, result)
+
+
+
 
 
 def caseid_admin01(self):
@@ -3398,7 +3485,7 @@ def caseid_admin37(self):
     get_datachecklist("Admin37")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    administration.admin_10_5.admin_10_5_7_search(self, "Admin37", event, result, var_stx.data_change, "002096930",
+    administration.admin_10_5.admin_10_5_7_search(self, "Admin37", event, result, var_stx.data_change, "0835210360",
                                                   var_stx.check_data_new, "_LichSuTaiKhoan_DuLieuThayDoi.png")
 
 
@@ -3575,7 +3662,8 @@ def caseid_admin63(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     administration.admin_10_7.admin_10_7_1_combobox_select(self, "Admin63", event, result, var_stx.choose_driver_icon, var_stx.DriverIdSearch_truongvck33,
-                                                           var_stx.truongvck33_202476, "202476-truongvck33", "_QuanTriThongBaoLaiXe_ChonLaiXeDuocGui.png")
+                                                           var_stx.auto383_dinhmanhcuong92, "auto383-Đinh Mạnh Cường 92", "_QuanTriThongBaoLaiXe_ChonLaiXeDuocGui.png")
+
 
 
 def caseid_admin64(self):
@@ -4223,21 +4311,21 @@ def caseid_accounting26(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting26", event, result, "ActualRevenue",
-                                                    var_stx.swal2_title, "", "_QuanLyXuatHoaDon_ThucThu.png")
+                                                    var_stx.toast_message, "Thay đổi thực thu thành công", "_QuanLyXuatHoaDon_ThucThu.png")
 
 def caseid_accounting27(self):
     get_datachecklist("Accounting27")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting27", event, result, "InvoiceFromAddress",
-                                                    var_stx.swal2_title, "", "_QuanLyXuatHoaDon_DiaChiDonXHD.png")
+                                                    var_stx.toast_message, "Thay đổi địa chỉ đón thành công", "_QuanLyXuatHoaDon_DiaChiDonXHD.png")
 
 def caseid_accounting28(self):
     get_datachecklist("Accounting28")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting28", event, result, "InvoiceToAddress",
-                                                    var_stx.swal2_title, "", "_QuanLyXuatHoaDon_DiaChiTraXHD.png")
+                                                    var_stx.toast_message, "Thay đổi địa chỉ trả thành công", "_QuanLyXuatHoaDon_DiaChiTraXHD.png")
 
 def caseid_accounting29(self):
     get_datachecklist("Accounting29")
@@ -4268,7 +4356,7 @@ def caseid_accounting33(self):
     get_datachecklist("Accounting33")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting33", event, result, var_stx.accounting_1_ReceiptLink,
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting33", event, result, var_stx.icon_bienlai,
                                                          var_stx.check_ReceiptLink, "CẢM ƠN QUÝ KHÁCH ĐÃ SỬ DỤNG DỊCH VỤ!",
                                                          "_QuanLyXuatHoaDon_BienLai.png")
 
@@ -4276,15 +4364,15 @@ def caseid_accounting34(self):
     get_datachecklist("Accounting34")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting34", event, result, var_stx.accounting_1_BookContractLink,
-                                                         var_stx.check_BookContractLink, "HỢP ĐỒNG VẬN CHUYỂN HÀNH KHÁCH",
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting34", event, result, var_stx.icon_hopdong,
+                                                         var_stx.check_BookContractLink, "Hợp đồng chuyến đi",
                                                          "_QuanLyXuatHoaDon_HopDong.png")
 
 def caseid_accounting35(self):
     get_datachecklist("Accounting35")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting35", event, result, var_stx.accounting_1_0,
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting35", event, result, var_stx.icon_chitietcuoc,
                                                          var_stx.title_page1, "8.1.0 Báo cáo cuốc khách tổng",
                                                          "_QuanLyXuatHoaDon_ChiTietCuoc.png")
 
@@ -4292,15 +4380,15 @@ def caseid_accounting36(self):
     get_datachecklist("Accounting36")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting36", event, result, var_stx.accounting_1_1,
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting36", event, result, var_stx.icon_cuockhachgps,
                                                          var_stx.check_accounting_1_1, "ĐĂNG NHẬP", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
 
 def caseid_accounting37(self):
     get_datachecklist("Accounting37")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting37", event, result, var_stx.accounting_1_2,
-                                                         var_stx.check_accounting_1_1, "ĐĂNG NHẬP", "_QuanLyXuatHoaDon_LotrinhGPS.png")
+    accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting37", event, result, var_stx.icon_lotrinhgps,
+                                                         var_stx.icon_lotrinhgps, "", "_QuanLyXuatHoaDon_LotrinhGPS.png")
 
 def caseid_accounting38(self):
     get_datachecklist("Accounting38")

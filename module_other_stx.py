@@ -189,7 +189,7 @@ def play_mp3_hidden(filepath):
 
 def tele_search(tag, phone, data):
     global driver2
-    driver2.ele(var_stx.tele_search_input).clear()
+    driver2.ele(var_stx.tele_search_input).send_keys(Keys.CONTROL, "a", Keys.DELETE)
     time.sleep(0.5)
     driver2.ele(var_stx.tele_search_input).input(tag)
     time.sleep(1)
@@ -771,7 +771,11 @@ def get_datachecklist(ma):
 def swich_tab_0():
     try:
         print("[INFO] ⚙️  Switching tab 0...")
-        var_stx.driver.implicitly_wait(15)
+        try:
+            var_stx.driver.implicitly_wait(15)
+        except:
+            var_stx.restart_driver()
+
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
     except WebDriverException as e:
         print(f"[ERROR] ❌ Lỗi khi chuyển tab hoặc khởi động driver: {e}")
@@ -1033,6 +1037,38 @@ def write_result_text_try_if(code, eventname, result, path_module, path_text, ch
     # module_other_v3.write_result_text_try_if(code, eventname, result, "Quản trị - Danh sách xe",
     #                                       var_stx.check_open_car_quickly, "Mở xe thành công", "_QuanTri_DsXe_MoXeNhanh.png")
 
+
+
+
+def write_result_text_try_if_in(code, eventname, result, path_module, path_text, check_result, name_image):
+    var_stx.driver.implicitly_wait(1)
+    logging.info("-------------------------")
+    logging.info(path_module)
+    logging.info("Mã - " + code)
+    logging.info("Tên sự kiện - " + eventname)
+    logging.info("Kết quả - " + result)
+    try:
+        check_text = var_stx.driver.find_element(By.XPATH, path_text).text
+        logging.info(check_text)
+        logging.info(check_result)
+        writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
+
+        # if check_result in check_text:
+        if check_result.lower() in check_text.lower():
+            logging.info("True")
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+        else:
+            logging.info("False")
+            var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+            writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+    except:
+        logging.info("False")
+        var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+        writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+        writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+    # module_other_v3.write_result_text_try_if(code, eventname, result, "Quản trị - Danh sách xe",
+    #                                       var_stx.check_open_car_quickly, "Mở xe thành công", "_QuanTri_DsXe_MoXeNhanh.png")
 
 
 

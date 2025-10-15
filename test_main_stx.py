@@ -1,5 +1,6 @@
 import time
 
+import driver_wallet_stx
 import module_other_stx
 import login_stx
 import var_stx
@@ -18,19 +19,14 @@ import customer_stx
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        pass
+        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
         # module_other_stx.clear_log()
         # module_other_stx.delete_image()
         # module_stx.ModuleTest()
         # module_stx.retest_casenone(self)
         # module_stx.retest_casefail(self)
         # module_other_stx.send_viber()
-
-        # module_other_stx.call_viver()
-
-        # module_other_stx.call_telegram()
-
-
 
 
 
@@ -49,7 +45,7 @@ class Test(unittest.TestCase):
 
 
 
-
+        #
         # caseid_stx.caseid_minitor01(self)
         # caseid_stx.caseid_minitor02(self)
         # caseid_stx.caseid_minitor03(self)
@@ -136,7 +132,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor78(self)
         # caseid_stx.caseid_minitor79(self)
         # caseid_stx.caseid_minitor80(self)
-
+        #
         # caseid_stx.caseid_vehicle01(self)
         # caseid_stx.caseid_vehicle02(self)
         # caseid_stx.caseid_vehicle03(self)
@@ -157,12 +153,12 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle17(self)
         # caseid_stx.caseid_vehicle18(self)
         # caseid_stx.caseid_vehicle19(self)
-        # caseid_stx.caseid_vehicle20(self)1HGCM82633A123456
+        # caseid_stx.caseid_vehicle20(self)
         # caseid_stx.caseid_vehicle21(self)
         # caseid_stx.caseid_vehicle22(self)
         # caseid_stx.caseid_vehicle23(self)
-        # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
-        # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
+        # # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
+        # # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
         # caseid_stx.caseid_vehicle26(self)
         # caseid_stx.caseid_vehicle27(self)
         # caseid_stx.caseid_vehicle28(self)
@@ -193,7 +189,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle52(self)
         # caseid_stx.caseid_vehicle53(self)
         # caseid_stx.caseid_vehicle54(self)
-        # # caseid_stx.caseid_vehicle55(self)
+        # caseid_stx.caseid_vehicle55(self)
         # caseid_stx.caseid_vehicle56(self)
         # caseid_stx.caseid_vehicle57(self)
         # caseid_stx.caseid_vehicle58(self)
@@ -317,7 +313,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_promotion50(self)
         # caseid_stx.caseid_promotion51(self)
         # caseid_stx.caseid_promotion52(self)
-        # #
+        #
         # caseid_stx.caseid_promotion53(self)
         # caseid_stx.caseid_promotion54(self)
         # caseid_stx.caseid_promotion55(self)
@@ -349,7 +345,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_customer09(self)
         # caseid_stx.caseid_customer10(self)
-        # # caseid_stx.caseid_customer11(self)
+        # caseid_stx.caseid_customer11(self)
         # caseid_stx.caseid_customer12(self)
         # caseid_stx.caseid_customer13(self)
         # caseid_stx.caseid_customer14(self)
@@ -400,10 +396,15 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_customer51(self)
         # caseid_stx.caseid_customer52(self)
         # caseid_stx.caseid_customer53(self)
-        # caseid_stx.caseid_customer54(self)
-        # caseid_stx.caseid_customer55(self)
+        # # caseid_stx.caseid_customer54(self)
+        # # caseid_stx.caseid_customer55(self)
         # caseid_stx.caseid_customer56(self)
         # caseid_stx.caseid_customer57(self)
+        # caseid_stx.caseid_customer57_1(self)
+        # caseid_stx.caseid_customer57_2(self)
+        # caseid_stx.caseid_customer57_3(self)
+        # caseid_stx.caseid_customer57_4(self)
+        # caseid_stx.caseid_customer57_5(self)
 
 
         # caseid_stx.caseid_customer58(self)
@@ -429,6 +430,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_customer75(self)
         # caseid_stx.caseid_customer76(self)
         # caseid_stx.caseid_customer77(self)
+        # caseid_stx.caseid_customer77_1(self)
         #
         # caseid_stx.caseid_customer78(self)
         # caseid_stx.caseid_customer79(self)
@@ -537,7 +539,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report60(self)
         # caseid_stx.caseid_report61(self)
         # caseid_stx.caseid_report62(self)
-        #
+
         # caseid_stx.caseid_report63(self)
         # caseid_stx.caseid_report64(self)
         # caseid_stx.caseid_report65(self)
@@ -545,7 +547,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report66(self)
         # caseid_stx.caseid_report67(self)
         # caseid_stx.caseid_report68(self)
-
+        #
         # caseid_stx.caseid_report69(self)
         # caseid_stx.caseid_report70(self)
         # caseid_stx.caseid_report71(self)
@@ -553,6 +555,14 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report72(self)
         # caseid_stx.caseid_report73(self)
         # caseid_stx.caseid_report74(self)
+
+        # caseid_stx.caseid_report75(self)
+        # caseid_stx.caseid_report76(self)
+        # caseid_stx.caseid_report77(self)
+
+        # caseid_stx.caseid_report78(self)
+        # caseid_stx.caseid_report79(self)
+        # caseid_stx.caseid_report80(self)
 
 
 
@@ -645,7 +655,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin64(self)
         # caseid_stx.caseid_admin65(self)
         # caseid_stx.caseid_admin66(self)
-        # caseid_stx.caseid_admin67(self)
+        # # caseid_stx.caseid_admin67(self)
         # caseid_stx.caseid_admin68(self)
         # caseid_stx.caseid_admin69(self)
         # caseid_stx.caseid_admin70(self)
@@ -663,7 +673,7 @@ class Test(unittest.TestCase):
 
 
         # caseid_stx.caseid_admin82(self)
-        # caseid_stx.caseid_admin83(self)
+        # # caseid_stx.caseid_admin83(self)
         # caseid_stx.caseid_admin84(self)
         # caseid_stx.caseid_admin85(self)
         # caseid_stx.caseid_admin86(self)
@@ -757,7 +767,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_accounting16(self)
         # caseid_stx.caseid_accounting17(self)
         # caseid_stx.caseid_accounting18(self)
-
+        #
         # caseid_stx.caseid_accounting19(self)
         # caseid_stx.caseid_accounting20(self)
         # caseid_stx.caseid_accounting21(self)
@@ -769,7 +779,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_accounting26(self)
         # caseid_stx.caseid_accounting27(self)
         # caseid_stx.caseid_accounting28(self)
-
+        #
         # caseid_stx.caseid_accounting29(self)
         # caseid_stx.caseid_accounting30(self)
         # caseid_stx.caseid_accounting31(self)
@@ -780,7 +790,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_accounting35(self)
         # caseid_stx.caseid_accounting36(self)
         # caseid_stx.caseid_accounting37(self)
-
+        #
         # caseid_stx.caseid_accounting38(self)
         # caseid_stx.caseid_accounting39(self)
         # caseid_stx.caseid_accounting40(self)
@@ -827,7 +837,7 @@ class Test(unittest.TestCase):
 
         # module_other_stx.write_caseif()
 
-
+        # driver_wallet_stx.withdraw_money.run_tc(self)#tool rút tiền
 
 
 

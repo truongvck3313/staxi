@@ -20,6 +20,7 @@ import customer_stx
 class Test(unittest.TestCase):
     def test_run1(self):
         pass
+        #1
         # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
         # module_other_stx.clear_log()
         # module_other_stx.delete_image()
@@ -248,7 +249,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_promotion01(self)
         # caseid_stx.caseid_promotion02(self)
         # caseid_stx.caseid_promotion03(self)
-        #
+
         # caseid_stx.caseid_promotion04(self)
         # caseid_stx.caseid_promotion05(self)
         # caseid_stx.caseid_promotion05_1(self)

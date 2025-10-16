@@ -19,7 +19,7 @@ import customer_stx
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        print("n6")
+        print("n7")
         # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
         # module_other_stx.clear_log()
         # module_other_stx.delete_image()

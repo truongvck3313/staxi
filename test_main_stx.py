@@ -19,7 +19,7 @@ import customer_stx
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        print("10")
+        print("n0")
         # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
         # module_other_stx.clear_log()
         # module_other_stx.delete_image()
@@ -132,9 +132,9 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor78(self)
         # caseid_stx.caseid_minitor79(self)
         # caseid_stx.caseid_minitor80(self)
-        #
+        # #
         # caseid_stx.caseid_vehicle01(self)
-        # caseid_stx.caseid_vehicle02(self)
+        # # caseid_stx.caseid_vehicle02(self)
         # caseid_stx.caseid_vehicle03(self)
         # caseid_stx.caseid_vehicle04(self)
         # caseid_stx.caseid_vehicle05(self)
@@ -204,7 +204,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_wallet04(self)
         # caseid_stx.caseid_wallet05(self)
         # caseid_stx.caseid_wallet06(self)
-
+        #
         # caseid_stx.caseid_wallet07(self)
         # caseid_stx.caseid_wallet08(self)
         # caseid_stx.caseid_wallet09(self)
@@ -228,21 +228,21 @@ class Test(unittest.TestCase):
 
 
         # caseid_stx.caseid_wallet24(self)
-        # caseid_stx.caseid_wallet25(self)
+        # # caseid_stx.caseid_wallet25(self)
         # caseid_stx.caseid_wallet26(self)
-        # caseid_stx.caseid_wallet27(self)
+        # # caseid_stx.caseid_wallet27(self)
         # caseid_stx.caseid_wallet28(self)
         # caseid_stx.caseid_wallet29(self)
         # caseid_stx.caseid_wallet30(self)
         # caseid_stx.caseid_wallet31(self)
         # caseid_stx.caseid_wallet32(self)
         # caseid_stx.caseid_wallet33(self)
-        # caseid_stx.caseid_wallet34(self)
+        # # caseid_stx.caseid_wallet34(self)
         # caseid_stx.caseid_wallet35(self)
         # caseid_stx.caseid_wallet36(self)
         # caseid_stx.caseid_wallet37(self)
         # caseid_stx.caseid_wallet38(self)
-        # caseid_stx.caseid_wallet39(self)
+        # # caseid_stx.caseid_wallet39(self)
         # caseid_stx.caseid_wallet40(self)
 
         # caseid_stx.caseid_promotion01(self)
@@ -655,7 +655,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin64(self)
         # caseid_stx.caseid_admin65(self)
         # caseid_stx.caseid_admin66(self)
-        # # caseid_stx.caseid_admin67(self)
+        # caseid_stx.caseid_admin67(self)
         # caseid_stx.caseid_admin68(self)
         # caseid_stx.caseid_admin69(self)
         # caseid_stx.caseid_admin70(self)

@@ -16,7 +16,7 @@ import customer_stx
 
 
 #pip install selenium==3.141.0
-
+#git checkout -b feature-update-03122
 
 class Test(unittest.TestCase):
     def test_run1(self):
@@ -28,7 +28,7 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #ab
+        #abccca
 
 
 

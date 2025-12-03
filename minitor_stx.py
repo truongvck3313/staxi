@@ -156,6 +156,18 @@ def clearData_luutamthoi_checkexcel(file, sheetName, column1, column2, column3, 
     wordbook.save(file)
 
 
+def clearData_luutamthoi_checkexcel1(file, sheetName, row_to, row_end, column1, column2):
+    wordbook = openpyxl.load_workbook(file)
+    sheet = wordbook.get_sheet_by_name(sheetName)
+    i = row_to
+    while (i < row_end):
+        i += 1
+        i = str(i)
+        sheet["B"+i] = column1
+        sheet["C"+i] = column2
+        i = int(i)
+    wordbook.save(file)
+
 
 def get_info_web():
     var_stx.driver.implicitly_wait(0.05)
@@ -181,7 +193,28 @@ def get_info_web():
 
 
 
+def get_info_web_new():
+    var_stx.driver.implicitly_wait(0.05)
+    row = 119
+    n = 1
+    while (n < 50):
+        n += 1
+        n = str(n)
+        row += 1
 
+        path_column = f"(//div[@aria-colindex='{n}'])[1]"
+        path_data = f"(//div[@aria-colindex='{n}'])[2]"
+        print(n)
+        try:
+            name_colum = var_stx.driver.find_element(By.XPATH, path_column).text
+            name_data = var_stx.driver.find_element(By.XPATH, path_data).text
+            print("ten cot web:" .format(name_colum))
+            print("data cot web:" .format(name_data))
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 1, name_colum)
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 2, name_data)
+        except:
+            pass
+        n = int(n)
 
 
 
@@ -308,6 +341,63 @@ def get_info_excel1(row, sheet):
 
 
 
+def get_info_excel_skip(row, sheet, row_skip, row_end):
+    row2 = row + row_skip
+
+    try:
+        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
+
+    except:
+        # var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
+        time.sleep(15)
+        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
+
+
+    # #Đọc check file excel
+    bangchucai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+                  'U', 'V', 'W', 'X', 'Y', 'Z', 'AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL',
+                  'AM', 'AN', 'AO']
+
+    print("r0")
+    try:
+        wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
+        sheet = wordbook.get_sheet_by_name(sheet)
+    except:
+        # var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
+        time.sleep(15)
+        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
+        wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
+        sheet = wordbook.get_sheet_by_name(sheet)
+
+    print("r1")
+    row_tamthoi = 119
+    for i in bangchucai:
+        row_tamthoi += 1
+        # if str(sheet[str(i + str(row))].value) == "None":
+        if row_tamthoi == row_end:
+            break
+
+        cloumn = str(i + str(row))
+        print("vị trí tên cột excel: ".format(cloumn))
+
+        cloumn2 = str(i + str(row2))
+        print("vị trí data cột excel: ".format(cloumn2))
+
+        name_column = str(sheet[cloumn].value)
+        print("Tên cột excel: ".format(name_column))
+
+        data_column = str(sheet[cloumn2].value)
+        print(data_column)
+        print("Data cột excel: ".format(data_column))
+
+        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row_tamthoi, 3, name_column)
+        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row_tamthoi, 4, data_column)
+        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row_tamthoi, 5, cloumn)
+        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row_tamthoi, 6, cloumn2)
+
 
 
 def check_info_web_excel(code, eventname, result, path_module):
@@ -391,7 +481,7 @@ def check_info_web_excel(code, eventname, result, path_module):
                                'Hình thức thanh toán', 'Tên loại hàng hóa', 'Phụ phí(%)', 'Mô tả', 'Loại hàng hóa', 'Giá tiền nhỏ nhất', 'Giá tiền lớn nhất', 'Loại phụ phí',
                                'Giá tiền nhỏ nhất(kg)', 'Giá tiền lớn nhất(kg)', 'Loại ví', 'Mã thẻ KH', 'T.gian đặt', 'T.gian kết thúc', 'Mã KM', 'Mã GD', 'T.tin t.toán', 'KM có khách ',
                             'Phí phải nộp', 'TG thông báo LX', 'TG lái xe xác nhận', 'Nội dung lỗi', 'Tổng số tin nhắn', 'Tin đăng ký', 'Tin giới thiệu', 'Tin đường dài', 'Tin sân bay',
-                               'Tin khác', 'Tin OTP mã pin']:
+                               'Tin khác', 'Tin OTP mã pin', 'BookID', 'Mã cuốc đối tác', 'HTTT', 'Khách hủy', 'Số hiệu', 'Km thực hiện', 'SĐT khách hàng', 'Khuyến mãi']:
 
             print("name vao 1" + name_column_web)
             data_column_excel = data_column_excel.replace("_x000D_", "\n")
@@ -438,7 +528,7 @@ def check_info_web_excel(code, eventname, result, path_module):
 
         if name_column_web in ['Km GPS', 'NL tiêu thụ', 'Số tiền', 'Cước phí', 'Tiền nợ', 'Cước phí(cước thật của cuốc)', 'Cước xe (trừ của khách)', 'Số dư còn lại', 'Phụ phí', 'Loại xe',
                                'D.thu ĐH', 'S.cuốc ĐH', 'D.thu App', 'D.thu v.lai', 'D.thu đ.vị', 'Tổng d.thu', 'S.tiền KM', 'Khoảng cách', 'S.tiền thu LX', 'Khuyến mại', 'Cước xe (trừ của khách)',
-                               'Doanh thu tính %\n(1) = (2) + (3)', 'Cước xe\n(2)', 'Khuyến mãi\n(3)', 'Số km']:
+                               'Doanh thu tính %\n(1) = (2) + (3)', 'Cước xe\n(2)', 'Khuyến mãi\n(3)', 'Số km', 'Cước phí (cước thật của cuốc)']:
             print("name vao 2" + name_column_web)
             try:
                 data_column_web = ''.join(re.findall(r'\d+', data_column_web))[:3]
@@ -1373,13 +1463,11 @@ class route:
         var_stx.driver.find_element(By.XPATH, var_stx.icon_account).click()
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.get_data).click()
-        time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.get_data).click()
         time.sleep(10)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.list_data2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.get_data).click()
+            var_stx.driver.find_element(By.XPATH, var_stx.get_data_icon).click()
             time.sleep(10)
 
         logging.info("-------------------------")
@@ -1787,12 +1875,12 @@ class minitor_vehicle:
     def info_vehicle(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         wait = WebDriverWait(var_stx.driver, 10)
-
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.check_minitor_vehicle)
-        except:
-            minitor_vehicle.minitor_vehicle(self, "", "", "")
-            time.sleep(5)
+        #
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.check_minitor_vehicle)
+        # except:
+        minitor_vehicle.minitor_vehicle(self, "", "", "")
+        time.sleep(5)
 
         del var_stx.driver.requests
         time.sleep(1)
@@ -2022,7 +2110,10 @@ class minitor_vehicle:
         print("n0")
         try:
             var_stx.driver.implicitly_wait(0.3)
-            var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
+            element = var_stx.driver.find_element(By.XPATH, var_stx.icon_more)
+            var_stx.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+            var_stx.driver.execute_script("arguments[0].click();", element)
+            # var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
             print("n1")
         except:
             print("n2")
@@ -2035,7 +2126,10 @@ class minitor_vehicle:
             print("n4")
             var_stx.driver.refresh()
             time.sleep(15)
-            var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
+            element = var_stx.driver.find_element(By.XPATH, var_stx.icon_more)
+            var_stx.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+            var_stx.driver.execute_script("arguments[0].click();", element)
+            # var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
             print("n5")
             var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
             print("n6")
@@ -2044,8 +2138,11 @@ class minitor_vehicle:
             var_stx.driver.find_element(By.XPATH, var_stx.zomm_out).click()
             print("n7")
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
-            print("n8")
+            element = var_stx.driver.find_element(By.XPATH, var_stx.icon_more)
+            var_stx.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+            var_stx.driver.execute_script("arguments[0].click();", element)
+            # var_stx.driver.find_element(By.XPATH, var_stx.icon_more).click()
+            # print("n8")
 
         time.sleep(1)
         print("n9")

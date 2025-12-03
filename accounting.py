@@ -651,24 +651,23 @@ class accounting_14_1:
         accounting_14_1.accounting_14_1_button(self, "", "", "", "3", var_stx.export_invoice,
                                                "", "",  "", "")
 
-        logging.info("n16")
+        #khách hàng doanh nghiệp
+        var_stx.driver.find_element(By.XPATH, var_stx.individual_kh_company_checkbox).click()
+        time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_email).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_email).send_keys("truongvck22@gmail.com")
         time.sleep(0.5)
-        logging.info("n17")
-        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_VAT)
+        # var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_VAT)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_tax_code).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_tax_code).send_keys("8338123381")
         time.sleep(0.5)
-        logging.info("n18")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_name_business).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_name_business).send_keys("Công ty TNHH Kinh Tập")
         time.sleep(0.5)
-        logging.info("n19")
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_address).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_address).send_keys("910 Đ. Kim Giang, Thanh Liệt, Thanh Trì, Hà Nội, Việt Nam")
@@ -691,8 +690,6 @@ class accounting_14_1:
         # var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_pay_sec).click()
         time.sleep(1.5)
 
-
-        logging.info("n20")
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_hd).click()
         time.sleep(1.5)
         # var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_hd1).click()
@@ -701,10 +698,41 @@ class accounting_14_1:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_serial_sec).send_keys("020200004314")
         time.sleep(0.5)
-        logging.info("n21")
         var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_not_export_invoice)
-        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_export_customer)
-        # var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_send_info).click()
+        # var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_export_customer) 0ECDC593-A101-4396-9763-3D2EFEC305B7      21/10
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_send_info)
+
+
+
+
+        #KH cá nhân (không có MST)
+        var_stx.driver.find_element(By.XPATH, var_stx.individual_customers_checkbox).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_email).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_email).send_keys("truongvck111@gmail.com")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_fullname).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_fullname).send_keys("Lã Thanh")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_cccd).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_cccd).send_keys("020200009822")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_address).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_address).send_keys("980 Đ. Kim Giang, Thanh Liệt, Thanh Trì, Hà Nội, Việt Nam")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_phone).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_phone).send_keys("0826473155")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_serial).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_serial).send_keys("9999920987715202")
+        time.sleep(0.5)
+
         var_stx.driver.find_element(By.XPATH, var_stx.save4).click()
         time.sleep(2)
         try:
@@ -712,33 +740,25 @@ class accounting_14_1:
         except:
             pass
         try:
-            logging.info("n0")
             var_stx.driver.implicitly_wait(0.3)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.invoice_save)))
             logging.info(element)
-            logging.info("n1")
             module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                       var_stx.invoice_save, "Lưu thông tin thành công!", "_QuanLyXuatHoaDon_Luu.png")
         except:
-            logging.info("n2")
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.toast_message)))
-            logging.info("n3")
             logging.info(element)
             module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                       var_stx.toast_message, "Lưu thông tin thành công!", "_QuanLyXuatHoaDon_Luu.png")
 
 
         try:
-            logging.info("n4")
             var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_cancel).click()
-            logging.info("n5")
         except:
             pass
         time.sleep(2)
         try:
-            logging.info("n6")
             var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_x).click()
-            logging.info("n7")
         except:
             pass
         time.sleep(2)
@@ -940,6 +960,7 @@ class accounting_14_1:
         var_stx.driver.find_element(By.XPATH, path_icon).click()
         time.sleep(2)
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
+        time.sleep(2)
         try:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, path_check)))
             time.sleep(1.5)
@@ -951,7 +972,7 @@ class accounting_14_1:
                                                       path_check, name_image)
 
         else:
-            module_other_stx.write_result_text_try_if(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+            module_other_stx.write_result_text_try_if_in(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                             path_check, desire, name_image)
 
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
@@ -986,21 +1007,21 @@ class accounting_14_1:
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a",Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("08/10/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("05/10/2025 00:00")
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a",Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("08/10/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("05/10/2025 00:00")
         time.sleep(0.5)
 
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("09/10/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("06/10/2025 23:59")
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("09/10/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("06/10/2025 23:59")
         time.sleep(0.5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()
@@ -1008,7 +1029,7 @@ class accounting_14_1:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply1).click()
         time.sleep(2)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.Source_dieuhanh).click()
+        # var_stx.driver.find_element(By.XPATH, var_stx.Source_dieuhanh).click()
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search3).click()
         time.sleep(7)

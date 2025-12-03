@@ -363,6 +363,13 @@ class vehicle:
                 time.sleep(1.5)
                 var_stx.driver.find_element(By.XPATH, var_stx.enableCStatus).click()
                 time.sleep(1.5)
+                try:
+                    var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).click()
+                except:
+                    try:
+                        var_stx.driver.find_element(By.XPATH, var_stx.drivering).click()
+                    except:
+                        pass
                 var_stx.driver.find_element(By.XPATH, var_stx.search).click()
                 time.sleep(2)
 
@@ -378,8 +385,27 @@ class vehicle:
                 time.sleep(1.5)
                 var_stx.driver.find_element(By.XPATH, var_stx.enableVType).click()
                 time.sleep(1.5)
+                try:
+                    var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).click()
+                except:
+                    try:
+                        var_stx.driver.find_element(By.XPATH, var_stx.drivering).click()
+                    except:
+                        pass
                 var_stx.driver.find_element(By.XPATH, var_stx.search).click()
                 time.sleep(2)
+
+
+        if path_image == "_Xe_TrangThai_KetNoiTot.png" or path_image == "_Xe_TrangThai_MatKetNoi.png" or path_image == "_Xe_TrangThai_KhongKetNoi.png":
+            try:
+                var_stx.driver.implicitly_wait(1)
+                var_stx.driver.find_element(By.XPATH, var_stx.state_2).click()
+                time.sleep(1)
+            except:
+                var_stx.driver.find_element(By.XPATH, var_stx.search_advanced).click()
+                time.sleep(1.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.enableCStatus).click()
+                time.sleep(1.5)
 
 
 
@@ -462,7 +488,11 @@ class vehicle:
 
         type_vehicle = var_stx.driver.find_element(By.XPATH, var_stx.listdata2_4).text
 
-        var_stx.driver.find_element(By.XPATH, "//*[@id='FasttaxiVehicleTypeId']//*[text()='"+type_vehicle+"']").click()
+        try:
+            var_stx.driver.find_element(By.XPATH, "//*[@id='FasttaxiVehicleTypeId']//*[text()='"+type_vehicle+"']").click()
+        except:
+            var_stx.driver.find_element(By.XPATH, "//*[@id='FasttaxiVehicleTypeId']//*[text()='"+type_vehicle+" ']").click()
+
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
@@ -622,7 +652,7 @@ class vehicle:
         except:
             pass
 
-        module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                  var_stx.add_new_succes, "Thêm mới xe thành công.", "_XeLaiXe_Xe_ThemMoi.png")
 
         try:
@@ -781,7 +811,7 @@ class vehicle:
         var_stx.driver.find_element(By.XPATH, var_stx.update).click()
         element = WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, var_stx.check_vehicle_update)))
         time.sleep(1)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "Xe & Lái xe - 2.1 Xe",
                                                   var_stx.check_vehicle_update, "Cập nhật xe thành công.", "_Xe_CapNhat.png")
         try:
             var_stx.driver.implicitly_wait(1)
@@ -1297,7 +1327,7 @@ class driver:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_birth_day).send_keys(var_stx.data['vehicle']['birth_day'])
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_name1).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_phone).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_cccd).send_keys("0"+number_random+number)
         time.sleep(0.5)
@@ -1374,7 +1404,12 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_driver_radio)
         time.sleep(1)
         #Cấu hình khác
-        var_stx.driver.find_element(By.XPATH, var_stx.config_other).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.config_other).click()
+        except:
+            button = var_stx.driver.find_element(By.XPATH, var_stx.config_other)
+            var_stx.driver.execute_script("arguments[0].click();", button)
+
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_sd_lot)  # sử dụng lốt
         try:
@@ -1543,7 +1578,8 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_cccd)
         except:
             # driver.driver_add_stk(self, "", "", "")
-            driver.driver(self, "", "", "")
+            # driver.driver(self, "", "", "")
+            driver.driver_add_new(self, "", "", "")
 
         driver1 = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
         driver.driver_x(self)
@@ -1763,8 +1799,8 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
             # var_stx.driver.find_element(By.XPATH, var_stx.STAXI)
         except:
-            # driver.driver_company_7g_test(self, "", "", "")
-            driver.driver(self, "", "", "")
+            # driver.driver(self, "", "", "")
+            driver.driver_add_new(self, "", "", "")
 
 
 

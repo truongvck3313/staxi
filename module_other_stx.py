@@ -163,6 +163,35 @@ def writeData(file,sheetName,caseid,columnno,data):
 
 
 
+def appendData(file, sheetName, caseid, columnno, data):
+    workbook = openpyxl.load_workbook(file)
+    sheet = workbook[sheetName]
+
+    found = False
+
+    # Duyệt từng dòng, tìm caseid trong cột A
+    for row in range(1, sheet.max_row + 1):
+        cell_value = sheet.cell(row=row, column=1).value
+        if str(cell_value).strip() == str(caseid).strip():
+            # Nếu đã có dữ liệu ở cột cần ghi -> nối thêm
+            old_val = sheet.cell(row=row, column=columnno).value
+            if old_val is None or str(old_val).strip() == '':
+                new_val = data
+            else:
+                new_val = f"{old_val}, {data}"   # Nối thêm
+            sheet.cell(row=row, column=columnno).value = new_val
+            found = True
+            break
+
+    # Nếu chưa có caseid thì thêm dòng mới
+    if not found:
+        next_row = sheet.max_row + 1
+        sheet.cell(row=next_row, column=1).value = caseid
+        sheet.cell(row=next_row, column=columnno).value = data
+
+    workbook.save(file)
+
+
 
 def generate_audio(text, filename):
     tts = gTTS(text=text, lang='vi')
@@ -416,7 +445,7 @@ def notification_telegram():
 def check_user_id():
     res = requests.post(
         "https://chatapi.viber.com/pa/get_account_info",
-        headers={"X-Viber-Auth-Token": "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"}
+        headers={"X-Viber-Auth-Token": "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"}
     )
 
     print(res.json())
@@ -452,11 +481,11 @@ def viber_send_text():
                                               "\n- Số case False nghiêm trọng: " + mucnghiemtrong)
 
     AUTH_TOKEN = "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"  # id Cảnh báo Autotest STAXI Customer
-    FROM_USER_ID = "nvt+6nb4cLpsaYhLS0FnbA=="
+    FROM_USER_ID = "DCfDJTWxQ+Wa/imEkkOn6Q=="
 
 
     # AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
-    # FROM_USER_ID = "s3fnH/NlIBI2DwqBeVlhEQ=="
+    # FROM_USER_ID = "DCfDJTWxQ+Wa/imEkkOn6Q=="
 
 
     # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
@@ -574,11 +603,9 @@ def send_gofile_link_via_viber(AUTH_TOKEN, FROM_USER_ID, file_path):
 def viber_send_file():
     # ==== Ví dụ sử dụng ====
     AUTH_TOKEN = "54c42460ff31117d-cfaa6f5220cbd0b1-baced03cce3b6c9f"  # id Cảnh báo Autotest STAXI
-    FROM_USER_ID = "nvt+6nb4cLpsaYhLS0FnbA=="
+    FROM_USER_ID = "DCfDJTWxQ+Wa/imEkkOn6Q=="
 
 
-    # AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
-    # FROM_USER_ID = "s3fnH/NlIBI2DwqBeVlhEQ=="
 
 
 
@@ -606,9 +633,9 @@ def send_viber():
 
 def call_viver1():
     AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
-    # FROM_USER_ID = "s3fnH/NlIBI2DwqBeVlhEQ=="
+    # FROM_USER_ID = "DCfDJTWxQ+Wa/imEkkOn6Q=="
 
-    # AUTH_TOKEN = "s3fnH/NlIBI2DwqBeVlhEQ=="
+    # AUTH_TOKEN = "DCfDJTWxQ+Wa/imEkkOn6Q=="
     receiver_id = "NcTubYkRh5GD2fyZFDTOjw=="
 
     # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
@@ -662,7 +689,7 @@ def call_viver():
     # AUTH_TOKEN = "s3fnH/NlIBI2DwqBeVlhEQ=="
     AUTH_TOKEN = "54c527ff9ab507cb-2bba287f248eba8d-520d20523e7d2980"   #id nhóm test
 
-    receiver_id = "NcTubYkRh5GD2fyZFDTOjw=="
+    receiver_id = "DCfDJTWxQ+Wa/imEkkOn6Q=="
 
     # 1. Thiết lập webhook (tạm thời, có thể dùng URL giả nếu không cần nhận sự kiện)
     webhook_url = "https://eoj9bp6x8fvrpv8.m.pipedream.net"  # Hoặc URL server thực tế nếu có

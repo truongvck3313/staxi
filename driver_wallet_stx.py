@@ -211,6 +211,8 @@ class list_wallet_driver:
         time.sleep(7)
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(6)
+        var_stx.driver.find_element(By.XPATH, var_stx.number).clear()
+        time.sleep(0.5)
         try:
             var_stx.driver.implicitly_wait(0.3)
             var_stx.driver.find_element(By.XPATH, var_stx.not_role)
@@ -502,13 +504,17 @@ class recharge:
 
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_type_fee).click()
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_account).send_keys(var_stx.data['wallet']['search'])
+        var_stx.driver.find_element(By.XPATH, var_stx.recharge_account).click()
+        time.sleep(3)
+
+
+        var_stx.driver.find_element(By.XPATH, var_stx.recharge_account_input).send_keys(var_stx.data['wallet']['search'])
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_account1).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_money1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_money1).send_keys(var_stx.data['wallet']['recharge_monney1'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.recharge_money1_input).send_keys(var_stx.data['wallet']['recharge_monney1'])
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_note).send_keys(var_stx.data['wallet']['note1'])
         time.sleep(1)
@@ -556,15 +562,18 @@ class withdraw:
 
         var_stx.driver.find_element(By.XPATH, var_stx.recharge_type_fee).click()
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_account).send_keys(var_stx.data['wallet']['search'])
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.DriverCode).send_keys(var_stx.data['wallet']['search'])
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.DriverCodeList).send_keys(var_stx.data['wallet']['search'])
         time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_account1).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.recharge_batont1).click()
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_money1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.Amount).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_money1).send_keys(var_stx.data['wallet']['withdraw_monney2'])
+        var_stx.driver.find_element(By.XPATH, var_stx.Amount).send_keys(var_stx.data['wallet']['withdraw_monney2'])
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.recharge_note).send_keys(var_stx.data['wallet']['note2'])
+        var_stx.driver.find_element(By.XPATH, var_stx.Comment).send_keys(var_stx.data['wallet']['note2'])
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.save).click()
         time.sleep(2.5)
@@ -1178,7 +1187,7 @@ class wallet_history:
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(page)
             try:
-                code_customer = var_stx.driver.find_element(By.XPATH, var_stx.ag1_2).text
+                code_customer = var_stx.driver.find_element(By.XPATH, var_stx.col_id_2_a).text
             except:
                 code_customer = var_stx.driver.find_element(By.XPATH, var_stx.table_1_1).text
 
@@ -1214,18 +1223,29 @@ class wallet_history:
             wallet_history.wallet_history(self, "", "", "")
 
 
-        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(7)
+        wallet_history.wallet_history_x(self)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.WalletOperationType_naptien).click()
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(5)
+
+
         report_stx.get_info_web4()
+
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+        time.sleep(1)
         try:
-            minitor_stx.get_info_excel1(5, "Sheet 1")
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+
+            report_stx.dowload_excel(self, "3.5 Lịch sử ví tiền")
+            minitor_stx.get_info_excel1(3, "Data")
         except:
-            var_stx.driver.refresh()
-            time.sleep(7)
-            var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-            time.sleep(7)
             report_stx.get_info_web4()
             minitor_stx.get_info_excel1(5, "Sheet 1")
+
+
 
         minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền")
 

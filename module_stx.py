@@ -450,6 +450,35 @@ def retest_casenone(self):
     modetest = ''.join(re.findall(r'\d+', var_stx.modetest))
     for i in modetest:
         print("i", i)
+
+        if i == "0":
+            while (rownum < 1000):
+                rownum += 1
+                rownum = str(rownum)
+                print(sheet["G"+rownum].value)
+                print(sheet["H"+rownum].value)
+                if sheet["H"+rownum].value == "x" and sheet["G"+rownum].value == None:
+                    print(sheet["A"+rownum].value)
+                    case_fail = sheet["A"+rownum].value
+                    list_casefail.append(case_fail)
+                if sheet["I"+rownum].value == "x" and sheet["G"+rownum].value == None:
+                    print(sheet["A"+rownum].value)
+                    case_fail = sheet["A"+rownum].value
+                    list_casefail.append(case_fail)
+                if sheet["J"+rownum].value == "x" and sheet["G"+rownum].value == None:
+                    print(sheet["A"+rownum].value)
+                    case_fail = sheet["A"+rownum].value
+                    list_casefail.append(case_fail)
+                if sheet["K"+rownum].value == "x" and sheet["G"+rownum].value == None:
+                    print(sheet["A"+rownum].value)
+                    case_fail = sheet["A"+rownum].value
+                    list_casefail.append(case_fail)
+
+                rownum = int(rownum)
+            print(list_casefail)
+            count = len(list_casefail)
+            print("Số case trống mức0: ", count)
+
         if i == "1":
             while (rownum < 1000):
                 rownum += 1
@@ -2353,6 +2382,17 @@ def retest_casenone(self):
             except:
                 module_other_stx.swich_tab_0()
             try:
+                if case == 'Report07_1':
+                    caseid_stx.caseid_report07_1(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report07_2':
+                    caseid_stx.caseid_report07_2(self)
+            except:
+                module_other_stx.swich_tab_0()
+
+            try:
                 if case == 'Report08':
                     caseid_stx.caseid_report08(self)
             except:
@@ -2700,6 +2740,16 @@ def retest_casenone(self):
             try:
                 if case == 'Report77':
                     caseid_stx.caseid_report77(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report77_1':
+                    caseid_stx.caseid_report77_1(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report77_2':
+                    caseid_stx.caseid_report77_2(self)
             except:
                 module_other_stx.swich_tab_0()
             try:
@@ -3363,6 +3413,40 @@ def retest_casenone(self):
                     caseid_stx.caseid_admin129(self)
             except:
                 module_other_stx.swich_tab_0()
+
+            try:
+                if case == 'PartnerTrip01':
+                    caseid_stx.caseid_PartnerTrip01(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'PartnerTrip02':
+                    caseid_stx.caseid_PartnerTrip02(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'PartnerTrip03':
+                    caseid_stx.caseid_PartnerTrip03(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'PartnerTrip04':
+                    caseid_stx.caseid_PartnerTrip04(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'PartnerTrip05':
+                    caseid_stx.caseid_PartnerTrip05(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'PartnerTrip06':
+                    caseid_stx.caseid_PartnerTrip06(self)
+            except:
+                module_other_stx.swich_tab_0()
+
+
+
             try:
                 if case == 'Accounting01':
                     caseid_stx.caseid_accounting01(self)
@@ -3758,6 +3842,7 @@ def retest_casenone(self):
                     caseid_stx.caseid_accounting79(self)
             except:
                 module_other_stx.swich_tab_0()
+
 
 
 def retest_casefail(self):
@@ -5617,6 +5702,18 @@ def retest_casefail(self):
         except:
             module_other_stx.swich_tab_0()
         try:
+            if case == 'Report07_1':
+                caseid_stx.caseid_report07_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report07_2':
+                caseid_stx.caseid_report07_2(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+
+        try:
             if case == 'Report08':
                 caseid_stx.caseid_report08(self)
         except:
@@ -5964,6 +6061,16 @@ def retest_casefail(self):
         try:
             if case == 'Report77':
                 caseid_stx.caseid_report77(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report77_1':
+                caseid_stx.caseid_report77_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report77_2':
+                caseid_stx.caseid_report77_2(self)
         except:
             module_other_stx.swich_tab_0()
         try:
@@ -6627,6 +6734,39 @@ def retest_casefail(self):
                 caseid_stx.caseid_admin129(self)
         except:
             module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip01':
+                caseid_stx.caseid_PartnerTrip01(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip02':
+                caseid_stx.caseid_PartnerTrip02(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip03':
+                caseid_stx.caseid_PartnerTrip03(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip04':
+                caseid_stx.caseid_PartnerTrip04(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip05':
+                caseid_stx.caseid_PartnerTrip05(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip06':
+                caseid_stx.caseid_PartnerTrip06(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+
+
         try:
             if case == 'Accounting01':
                 caseid_stx.caseid_accounting01(self)
@@ -8983,6 +9123,18 @@ def run_all(self):
         except:
             module_other_stx.swich_tab_0()
         try:
+            if case == 'Report07_1':
+                caseid_stx.caseid_report07_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report07_2':
+                caseid_stx.caseid_report07_2(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+
+        try:
             if case == 'Report08':
                 caseid_stx.caseid_report08(self)
         except:
@@ -9330,6 +9482,16 @@ def run_all(self):
         try:
             if case == 'Report77':
                 caseid_stx.caseid_report77(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report77_1':
+                caseid_stx.caseid_report77_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report77_2':
+                caseid_stx.caseid_report77_2(self)
         except:
             module_other_stx.swich_tab_0()
         try:
@@ -9993,6 +10155,41 @@ def run_all(self):
                 caseid_stx.caseid_admin129(self)
         except:
             module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip01':
+                caseid_stx.caseid_PartnerTrip01(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip02':
+                caseid_stx.caseid_PartnerTrip02(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip03':
+                caseid_stx.caseid_PartnerTrip03(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip04':
+                caseid_stx.caseid_PartnerTrip04(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip05':
+                caseid_stx.caseid_PartnerTrip05(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'PartnerTrip06':
+                caseid_stx.caseid_PartnerTrip06(self)
+        except:
+            module_other_stx.swich_tab_0()
+
+
+
+
+
         try:
             if case == 'Accounting01':
                 caseid_stx.caseid_accounting01(self)
@@ -17958,6 +18155,18 @@ def report(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Report07_1':
+                        caseid_stx.caseid_report07_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report07_2':
+                        caseid_stx.caseid_report07_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
+                try:
                     if case == 'Report08':
                         caseid_stx.caseid_report08(self)
                 except:
@@ -18305,6 +18514,16 @@ def report(self):
                 try:
                     if case == 'Report77':
                         caseid_stx.caseid_report77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_1':
+                        caseid_stx.caseid_report77_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_2':
+                        caseid_stx.caseid_report77_2(self)
                 except:
                     module_other_stx.swich_tab_0()
                 try:
@@ -18361,6 +18580,18 @@ def report(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Report07_1':
+                        caseid_stx.caseid_report07_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report07_2':
+                        caseid_stx.caseid_report07_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
+                try:
                     if case == 'Report08':
                         caseid_stx.caseid_report08(self)
                 except:
@@ -18708,6 +18939,16 @@ def report(self):
                 try:
                     if case == 'Report77':
                         caseid_stx.caseid_report77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_1':
+                        caseid_stx.caseid_report77_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_2':
+                        caseid_stx.caseid_report77_2(self)
                 except:
                     module_other_stx.swich_tab_0()
                 try:
@@ -18765,6 +19006,18 @@ def report(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Report07_1':
+                        caseid_stx.caseid_report07_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report07_2':
+                        caseid_stx.caseid_report07_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
+                try:
                     if case == 'Report08':
                         caseid_stx.caseid_report08(self)
                 except:
@@ -19112,6 +19365,16 @@ def report(self):
                 try:
                     if case == 'Report77':
                         caseid_stx.caseid_report77(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_1':
+                        caseid_stx.caseid_report77_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_2':
+                        caseid_stx.caseid_report77_2(self)
                 except:
                     module_other_stx.swich_tab_0()
                 try:
@@ -19169,6 +19432,19 @@ def report(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Report07_1':
+                        caseid_stx.caseid_report07_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report07_2':
+                        caseid_stx.caseid_report07_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
+
+                try:
                     if case == 'Report08':
                         caseid_stx.caseid_report08(self)
                 except:
@@ -19519,6 +19795,16 @@ def report(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Report77_1':
+                        caseid_stx.caseid_report77_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report77_2':
+                        caseid_stx.caseid_report77_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Report78':
                         caseid_stx.caseid_report78(self)
                 except:
@@ -19542,8 +19828,8 @@ def admin(self):
     list_mucdo4 = []
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
-    rownum = 576
-    while (rownum < 800):
+    rownum = 586
+    while (rownum < 830):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":
@@ -20213,6 +20499,38 @@ def admin(self):
                         caseid_stx.caseid_admin129(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip01':
+                        caseid_stx.caseid_PartnerTrip01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip02':
+                        caseid_stx.caseid_PartnerTrip02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip03':
+                        caseid_stx.caseid_PartnerTrip03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip04':
+                        caseid_stx.caseid_PartnerTrip04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip05':
+                        caseid_stx.caseid_PartnerTrip05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip06':
+                        caseid_stx.caseid_PartnerTrip06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
 
         if i == "2":
             for case in list_mucdo2:
@@ -20861,6 +21179,38 @@ def admin(self):
                         caseid_stx.caseid_admin129(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip01':
+                        caseid_stx.caseid_PartnerTrip01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip02':
+                        caseid_stx.caseid_PartnerTrip02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip03':
+                        caseid_stx.caseid_PartnerTrip03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip04':
+                        caseid_stx.caseid_PartnerTrip04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip05':
+                        caseid_stx.caseid_PartnerTrip05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip06':
+                        caseid_stx.caseid_PartnerTrip06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
 
         if i == "3":
             for case in list_mucdo3:
@@ -21509,6 +21859,38 @@ def admin(self):
                         caseid_stx.caseid_admin129(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip01':
+                        caseid_stx.caseid_PartnerTrip01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip02':
+                        caseid_stx.caseid_PartnerTrip02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip03':
+                        caseid_stx.caseid_PartnerTrip03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip04':
+                        caseid_stx.caseid_PartnerTrip04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip05':
+                        caseid_stx.caseid_PartnerTrip05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip06':
+                        caseid_stx.caseid_PartnerTrip06(self)
+                except:
+                    module_other_stx.swich_tab_0()
+
+
 
         if i == "4":
             for case in list_mucdo4:
@@ -22157,8 +22539,36 @@ def admin(self):
                         caseid_stx.caseid_admin129(self)
                 except:
                     module_other_stx.swich_tab_0()
-
-
+                try:
+                    if case == 'PartnerTrip01':
+                        caseid_stx.caseid_PartnerTrip01(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip02':
+                        caseid_stx.caseid_PartnerTrip02(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip03':
+                        caseid_stx.caseid_PartnerTrip03(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip04':
+                        caseid_stx.caseid_PartnerTrip04(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip05':
+                        caseid_stx.caseid_PartnerTrip05(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'PartnerTrip06':
+                        caseid_stx.caseid_PartnerTrip06(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
 
 
@@ -22170,8 +22580,8 @@ def accounting(self):
     list_mucdo4 = []
     wordbook = openpyxl.load_workbook(var_stx.checklistpath)
     sheet = wordbook.get_sheet_by_name("Checklist")
-    rownum = 750
-    while (rownum < 900):
+    rownum = 780
+    while (rownum < 920):
         rownum += 1
         rownum = str(rownum)
         if sheet["H"+rownum].value == "x":

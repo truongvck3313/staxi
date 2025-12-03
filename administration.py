@@ -2327,7 +2327,7 @@ class admin_10_7:
         subprocess.Popen(var_stx.uploadpath+"template_vehicle_article.exe")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.upload1).click()
-        time.sleep(2.5)
+        time.sleep(5)
         module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe",
                                                    var_stx.table3_7, "Không tìm thấy lái xe với biển số này","_QuanTriThongBaoLaiXe_UploadFile.png")
 
@@ -2354,6 +2354,12 @@ class admin_10_7:
         time.sleep(3)
         vehicle_driver_stx.increase()
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var.title)))
+        except:
+            pass
+
 
         var_stx.driver.find_element(By.XPATH, var_stx.title).send_keys("Auto_ThongBao_"+number)
         time.sleep(0.5)
@@ -2635,9 +2641,13 @@ class admin_10_7:
 
         var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
         time.sleep(2.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a")
+        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(from_day)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(to_day)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a")
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(from_day)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(1.5)
@@ -2646,8 +2656,8 @@ class admin_10_7:
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
                                                   var_stx.ag1_9, from_day, "_QuanTriThongBaoLaiXeV2_TuNgay.png")
 
-        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
-                                                  var_stx.ag1_10, to_day, "_QuanTriThongBaoLaiXeV2_DenNgay.png")
+        # module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
+        #                                           var_stx.ag1_10, to_day, "_QuanTriThongBaoLaiXeV2_DenNgay.png")
         var_stx.driver.refresh()
         time.sleep(5)
         wait = WebDriverWait(var_stx.driver, 10)
@@ -2828,7 +2838,9 @@ class admin_10_7:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_7_4)
         except:
-            admin_10_7.admin_10_7_4(self, "", "", "")
+            # admin_10_7.admin_10_7_4(self, "", "", "")
+            admin_10_7.admin_10_7_4_add_new(self, "", "", "")
+
 
         admin_10_7.admin_10_7_4_x(self)
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 34, 2))
@@ -2851,7 +2863,13 @@ class admin_10_7:
         name = var_stx.driver.find_element(By.XPATH, var_stx.ag1_2).text
         if name == data:
             var_stx.driver.find_element(By.XPATH, var_stx.ag1_2_a).click()
-            time.sleep(3.5)
+            time.sleep(2)
+            try:
+                wait = WebDriverWait(var_stx.driver, 10)
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.detail_notification)))
+            except:
+                pass
+
             module_other_stx.write_result_text_try_if(code, eventname, result,"BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
                                                       var_stx.detail_notification, "Chi tiết thông báo", "_QuanTriThongBaoLaiXe_XemChiTiet.png")
             try:
@@ -2867,7 +2885,8 @@ class admin_10_7:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_7_4)
         except:
-            admin_10_7.admin_10_7_4(self, "", "", "")
+            # admin_10_7.admin_10_7_4(self, "", "", "")
+            admin_10_7.admin_10_7_4_add_new(self, "", "", "")
 
         admin_10_7.admin_10_7_4_x(self)
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 34, 2))
@@ -2880,7 +2899,13 @@ class admin_10_7:
         name = var_stx.driver.find_element(By.XPATH, var_stx.ag1_2).text
         if name == data:
             var_stx.driver.find_element(By.XPATH, var_stx.icon_detail1).click()
-            time.sleep(3.5)
+            time.sleep(2)
+            try:
+                wait = WebDriverWait(var_stx.driver, 10)
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.detail_notification_title)))
+            except:
+                pass
+
             module_other_stx.write_result_text_try_if(code, eventname, result,"BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2",
                                                       var_stx.detail_notification_title, data, "_QuanTriThongBaoLaiXe_XemChiTiet.png")
 
@@ -2993,7 +3018,8 @@ class admin_10_7:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_7_4)
         except:
-            admin_10_7.admin_10_7_4(self, "", "", "")
+            # admin_10_7.admin_10_7_4(self, "", "", "")
+            admin_10_7.admin_10_7_4_add_new(self, "", "", "")
 
         admin_10_7.admin_10_7_4_x(self)
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 34, 2))
@@ -3277,7 +3303,9 @@ class admin_10_10:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_10_3)
         except:
-            admin_10_10.admin_10_10_3(self, "", "", "")
+            # admin_10_10.admin_10_10_3(self, "", "", "")
+            admin_10_10.admin_10_10_3_add_new(self, "", "", "")
+
 
         var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
@@ -3612,7 +3640,10 @@ class admin_10_10:
         time.sleep(5)
         data = var_stx.driver.find_element(By.XPATH, var_stx.table_table2_2).text
 
-        var_stx.driver.find_element(By.XPATH, "//*[@id='CarType']//*[text()='"+data+"']").click()
+        try:
+            var_stx.driver.find_element(By.XPATH, "//*[@id='CarType']//*[text()='"+data+"']").click()
+        except:
+            var_stx.driver.find_element(By.XPATH, "//*[@id='CarType']//*[text()='"+data+" ']").click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)

@@ -1,128 +1,207 @@
-2025-10-14 Tuesday 15:04:58 root:INFO:-------------------------
-2025-10-14 Tuesday 15:04:58 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 15:04:58 root:INFO:Mã - Report78
-2025-10-14 Tuesday 15:04:58 root:INFO:Tên sự kiện - Mở trang "Chi tiết tin nhắn theo ngày"
-2025-10-14 Tuesday 15:04:58 root:INFO:Kết quả - Chuyển đến trang: "8.8.3 Báo cáo tin nhắn theo ngày"
-2025-10-14 Tuesday 15:04:58 root:INFO:8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 15:04:58 root:INFO:8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 15:04:59 root:INFO:True
-2025-10-14 Tuesday 15:05:09 root:INFO:-------------------------
-2025-10-14 Tuesday 15:05:09 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 15:05:09 root:INFO:Mã - Report79
-2025-10-14 Tuesday 15:05:09 root:INFO:Tên sự kiện - Tìm kiếm
-2025-10-14 Tuesday 15:05:09 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
-(Hiển thị )
-2025-10-14 Tuesday 15:05:09 root:INFO:21
-2025-10-14 Tuesday 15:05:10 root:INFO:True
-2025-10-14 Tuesday 15:05:21 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 15:05:21 root:INFO:Mã - Report80
-2025-10-14 Tuesday 15:05:21 root:INFO:Tên sự kiện - Xuất excel
-2025-10-14 Tuesday 15:05:21 root:INFO:Kết quả - 1. Tải file Excel về máy
+2025-12-03 Wednesday 10:27:22 root:INFO:-------------------------
+2025-12-03 Wednesday 10:27:22 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:27:22 root:INFO:Mã - 
+2025-12-03 Wednesday 10:27:22 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:27:22 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:27:22 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:27:22 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:27:22 root:INFO:True
+2025-12-03 Wednesday 10:28:00 root:INFO:-------------------------
+2025-12-03 Wednesday 10:28:00 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:28:00 root:INFO:Mã - 
+2025-12-03 Wednesday 10:28:00 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:28:00 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:28:00 root:INFO:00117C3A
+2025-12-03 Wednesday 10:28:01 root:INFO:True
+2025-12-03 Wednesday 10:34:22 seleniumwire.storage:INFO:Using default request storage
+2025-12-03 Wednesday 10:34:22 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:53076
+2025-12-03 Wednesday 10:34:56 seleniumwire.storage:INFO:Using default request storage
+2025-12-03 Wednesday 10:34:56 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:65152
+2025-12-03 Wednesday 10:35:36 root:INFO:-------------------------
+2025-12-03 Wednesday 10:35:36 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:35:36 root:INFO:Mã - 
+2025-12-03 Wednesday 10:35:36 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:35:36 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:35:36 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:35:36 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:35:36 root:INFO:True
+2025-12-03 Wednesday 10:36:14 root:INFO:-------------------------
+2025-12-03 Wednesday 10:36:14 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:36:14 root:INFO:Mã - 
+2025-12-03 Wednesday 10:36:14 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:36:14 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:36:14 root:INFO:00117C3A
+2025-12-03 Wednesday 10:36:15 root:INFO:True
+2025-12-03 Wednesday 10:38:39 seleniumwire.storage:INFO:Using default request storage
+2025-12-03 Wednesday 10:38:39 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:59163
+2025-12-03 Wednesday 10:39:19 root:INFO:-------------------------
+2025-12-03 Wednesday 10:39:19 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:39:19 root:INFO:Mã - 
+2025-12-03 Wednesday 10:39:19 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:39:19 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:39:19 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:39:19 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:39:19 root:INFO:True
+2025-12-03 Wednesday 10:39:57 root:INFO:-------------------------
+2025-12-03 Wednesday 10:39:57 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:39:57 root:INFO:Mã - 
+2025-12-03 Wednesday 10:39:57 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:39:57 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:39:57 root:INFO:00117C3A
+2025-12-03 Wednesday 10:39:58 root:INFO:True
+2025-12-03 Wednesday 10:40:30 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:30 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:40:30 root:INFO:Mã - Report03
+2025-12-03 Wednesday 10:40:30 root:INFO:Tên sự kiện - Xuất excel
+2025-12-03 Wednesday 10:40:30 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-03 Wednesday 10:40:30 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:30 root:INFO:Tên cột web:   Mã cuốc khách
+2025-12-03 Wednesday 10:40:30 root:INFO:Tên cột excel: Mã cuốc khách
+2025-12-03 Wednesday 10:40:30 root:INFO:True
+2025-12-03 Wednesday 10:40:31 root:INFO:Dữ liệu web:   00117C3B
+2025-12-03 Wednesday 10:40:31 root:INFO:Dữ liệu excel: 00117C3B
+2025-12-03 Wednesday 10:40:31 root:INFO:True
+2025-12-03 Wednesday 10:40:31 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:31 root:INFO:Tên cột web:   Nguồn
+2025-12-03 Wednesday 10:40:31 root:INFO:Tên cột excel: Nguồn
+2025-12-03 Wednesday 10:40:31 root:INFO:True
+2025-12-03 Wednesday 10:40:32 root:INFO:Dữ liệu web:   Nguồn vãng lai
+2025-12-03 Wednesday 10:40:32 root:INFO:Dữ liệu excel: Nguồn vãng lai
+2025-12-03 Wednesday 10:40:32 root:INFO:True
+2025-12-03 Wednesday 10:40:33 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:33 root:INFO:Tên cột web:   Loại cuốc
+2025-12-03 Wednesday 10:40:33 root:INFO:Tên cột excel: Loại cuốc
+2025-12-03 Wednesday 10:40:33 root:INFO:True
+2025-12-03 Wednesday 10:40:33 root:INFO:Dữ liệu web:   Taxi thông thường
+2025-12-03 Wednesday 10:40:33 root:INFO:Dữ liệu excel: Taxi thông thường
+2025-12-03 Wednesday 10:40:33 root:INFO:True
+2025-12-03 Wednesday 10:40:34 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:34 root:INFO:Tên cột web:   Thời gian đặt cuốc
+2025-12-03 Wednesday 10:40:34 root:INFO:Tên cột excel: Thời gian đặt cuốc
+2025-12-03 Wednesday 10:40:34 root:INFO:True
+2025-12-03 Wednesday 10:40:35 root:INFO:Dữ liệu web:   05/11/2025 11:53:21
+2025-12-03 Wednesday 10:40:35 root:INFO:Dữ liệu excel: 05/11/2025 11:53:21
+2025-12-03 Wednesday 10:40:35 root:INFO:True
+2025-12-03 Wednesday 10:40:35 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:35 root:INFO:Tên cột web:   Trạng thái
+2025-12-03 Wednesday 10:40:35 root:INFO:Tên cột excel: Trạng thái
+2025-12-03 Wednesday 10:40:35 root:INFO:True
+2025-12-03 Wednesday 10:40:36 root:INFO:Dữ liệu web:   Thành công
+2025-12-03 Wednesday 10:40:36 root:INFO:Dữ liệu excel: Thành công
+2025-12-03 Wednesday 10:40:36 root:INFO:True
+2025-12-03 Wednesday 10:40:36 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:36 root:INFO:Tên cột web:   Lái xe
+2025-12-03 Wednesday 10:40:36 root:INFO:Tên cột excel: Lái xe
+2025-12-03 Wednesday 10:40:36 root:INFO:True
+2025-12-03 Wednesday 10:40:37 root:INFO:Dữ liệu web:   batrinh209a
+2025-12-03 Wednesday 10:40:37 root:INFO:Dữ liệu excel: batrinh209a
+2025-12-03 Wednesday 10:40:37 root:INFO:True
+2025-12-03 Wednesday 10:40:38 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:38 root:INFO:Tên cột web:   Số hiệu
+2025-12-03 Wednesday 10:40:38 root:INFO:Tên cột excel: Số hiệu
+2025-12-03 Wednesday 10:40:38 root:INFO:True
+2025-12-03 Wednesday 10:40:38 root:INFO:Dữ liệu web:   batrinh
+2025-12-03 Wednesday 10:40:38 root:INFO:Dữ liệu excel: batrinh
+2025-12-03 Wednesday 10:40:38 root:INFO:True
+2025-12-03 Wednesday 10:40:39 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:39 root:INFO:Tên cột web:   Biển số xe
+2025-12-03 Wednesday 10:40:39 root:INFO:Tên cột excel: Biển số xe
+2025-12-03 Wednesday 10:40:39 root:INFO:True
+2025-12-03 Wednesday 10:40:40 root:INFO:Dữ liệu web:   BATRINH
+2025-12-03 Wednesday 10:40:40 root:INFO:Dữ liệu excel: BATRINH
+2025-12-03 Wednesday 10:40:40 root:INFO:True
+2025-12-03 Wednesday 10:40:40 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:40 root:INFO:Tên cột web:   Khách hàng
+2025-12-03 Wednesday 10:40:40 root:INFO:Tên cột excel: Khách hàng
+2025-12-03 Wednesday 10:40:40 root:INFO:True
+2025-12-03 Wednesday 10:40:41 root:INFO:Dữ liệu web:   None
+2025-12-03 Wednesday 10:40:41 root:INFO:Dữ liệu excel: None
+2025-12-03 Wednesday 10:40:41 root:INFO:True
+2025-12-03 Wednesday 10:40:42 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:42 root:INFO:Tên cột web:   Số điện thoại khách hàng
+2025-12-03 Wednesday 10:40:42 root:INFO:Tên cột excel: Số điện thoại khách hàng
+2025-12-03 Wednesday 10:40:42 root:INFO:True
+2025-12-03 Wednesday 10:40:42 root:INFO:Dữ liệu web:   None
+2025-12-03 Wednesday 10:40:42 root:INFO:Dữ liệu excel: None
+2025-12-03 Wednesday 10:40:42 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:42 root:INFO:Tên cột web:   Cước phí (cước thật của cuốc)
+2025-12-03 Wednesday 10:40:42 root:INFO:Tên cột excel: Cước phí
+(cước thật của cuốc)
+2025-12-03 Wednesday 10:40:42 root:INFO:True
+2025-12-03 Wednesday 10:40:43 root:INFO:Dữ liệu web:   100.000 ₫
+2025-12-03 Wednesday 10:40:43 root:INFO:Dữ liệu excel: 100000
+2025-12-03 Wednesday 10:40:43 root:INFO:True
+2025-12-03 Wednesday 10:40:44 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:44 root:INFO:Tên cột web:   Khuyến mại
+2025-12-03 Wednesday 10:40:44 root:INFO:Tên cột excel: Khuyến mại
+2025-12-03 Wednesday 10:40:44 root:INFO:True
+2025-12-03 Wednesday 10:40:44 root:INFO:Dữ liệu web:   0 ₫
+2025-12-03 Wednesday 10:40:44 root:INFO:Dữ liệu excel: 0
+2025-12-03 Wednesday 10:40:44 root:INFO:True
+2025-12-03 Wednesday 10:40:45 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:45 root:INFO:Tên cột web:   Cước xe (trừ của khách)
+2025-12-03 Wednesday 10:40:45 root:INFO:Tên cột excel: Cước xe
+(trừ của khách)
+2025-12-03 Wednesday 10:40:45 root:INFO:True
+2025-12-03 Wednesday 10:40:45 root:INFO:Dữ liệu web:   100.000 ₫
+2025-12-03 Wednesday 10:40:45 root:INFO:Dữ liệu excel: 100000
+2025-12-03 Wednesday 10:40:45 root:INFO:True
+2025-12-03 Wednesday 10:40:46 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:46 root:INFO:Tên cột web:   Địa chỉ đón
+2025-12-03 Wednesday 10:40:46 root:INFO:Tên cột excel: Địa chỉ đón
+2025-12-03 Wednesday 10:40:46 root:INFO:True
+2025-12-03 Wednesday 10:40:47 root:INFO:Dữ liệu web:   Số 879, Trường Chinh, P. Kiến An, TP. Hải Phòng
+2025-12-03 Wednesday 10:40:47 root:INFO:Dữ liệu excel: Số 879, Trường Chinh, P. Kiến An, TP. Hải Phòng
+2025-12-03 Wednesday 10:40:47 root:INFO:True
+2025-12-03 Wednesday 10:40:47 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:47 root:INFO:Tên cột web:   Địa chỉ trả
+2025-12-03 Wednesday 10:40:47 root:INFO:Tên cột excel: Địa chỉ trả
+2025-12-03 Wednesday 10:40:47 root:INFO:True
+2025-12-03 Wednesday 10:40:48 root:INFO:Dữ liệu web:   0, Đang Thi Công, Khu Đô Thị Đại Kim, P. Định Công, , TP. Hà Nội
+2025-12-03 Wednesday 10:40:48 root:INFO:Dữ liệu excel: 0, Đang Thi Công, Khu Đô Thị Đại Kim, P. Định Công, , TP. Hà Nội
+2025-12-03 Wednesday 10:40:48 root:INFO:True
+2025-12-03 Wednesday 10:40:49 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột web:   Chi tiết đề cử
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu web:   None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột web:   Bản đồ trước đề cử
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu web:   None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột web:   Bản đồ sau đề cử
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu web:   None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:-------------------------
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột web:   Lộ trình GPS
+2025-12-03 Wednesday 10:40:49 root:INFO:Tên cột excel: None
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu web:   Xem 
+2025-12-03 Wednesday 10:40:49 root:INFO:Dữ liệu excel: None
+2025-12-03 Wednesday 10:42:51 seleniumwire.storage:INFO:Using default request storage
+2025-12-03 Wednesday 10:42:51 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:57163
+2025-12-03 Wednesday 10:43:27 root:INFO:-------------------------
+2025-12-03 Wednesday 10:43:27 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:43:27 root:INFO:Mã - 
+2025-12-03 Wednesday 10:43:27 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:43:27 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:43:27 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:43:27 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:43:28 root:INFO:True
+2025-12-03 Wednesday 10:44:06 root:INFO:-------------------------
+2025-12-03 Wednesday 10:44:06 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:44:06 root:INFO:Mã - 
+2025-12-03 Wednesday 10:44:06 root:INFO:Tên sự kiện - 
+2025-12-03 Wednesday 10:44:06 root:INFO:Kết quả - 
+2025-12-03 Wednesday 10:44:06 root:INFO:00117C3A
+2025-12-03 Wednesday 10:44:06 root:INFO:True
+2025-12-03 Wednesday 10:44:31 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-03 Wednesday 10:44:31 root:INFO:Mã - Report04
+2025-12-03 Wednesday 10:44:31 root:INFO:Tên sự kiện - Xuất Excel đầy đủ thông tin
+2025-12-03 Wednesday 10:44:31 root:INFO:Kết quả - Tải file Excel về máy
 (Chỉ check tải, không check dữ liệu)
-2025-10-14 Tuesday 15:05:21 root:INFO:True
-2025-10-14 Tuesday 16:29:22 seleniumwire.storage:INFO:Using default request storage
-2025-10-14 Tuesday 16:29:22 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:56540
-2025-10-14 Tuesday 16:30:04 root:INFO:-------------------------
-2025-10-14 Tuesday 16:30:04 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:30:04 root:INFO:Mã - Report78
-2025-10-14 Tuesday 16:30:04 root:INFO:Tên sự kiện - Mở trang "Chi tiết tin nhắn theo ngày"
-2025-10-14 Tuesday 16:30:04 root:INFO:Kết quả - Chuyển đến trang: "8.8.3 Báo cáo tin nhắn theo ngày"
-2025-10-14 Tuesday 16:30:04 root:INFO:8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:30:04 root:INFO:8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:30:04 root:INFO:True
-2025-10-14 Tuesday 16:30:14 root:INFO:-------------------------
-2025-10-14 Tuesday 16:30:14 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:30:14 root:INFO:Mã - Report79
-2025-10-14 Tuesday 16:30:14 root:INFO:Tên sự kiện - Tìm kiếm
-2025-10-14 Tuesday 16:30:14 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
-(Hiển thị )
-2025-10-14 Tuesday 16:30:14 root:INFO:21
-2025-10-14 Tuesday 16:30:15 root:INFO:True
-2025-10-14 Tuesday 16:31:19 seleniumwire.storage:INFO:Using default request storage
-2025-10-14 Tuesday 16:31:19 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:56629
-2025-10-14 Tuesday 16:31:57 root:INFO:-------------------------
-2025-10-14 Tuesday 16:31:57 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:31:57 root:INFO:Mã - Report78
-2025-10-14 Tuesday 16:31:57 root:INFO:Tên sự kiện - Mở trang "Chi tiết tin nhắn theo ngày"
-2025-10-14 Tuesday 16:31:57 root:INFO:Kết quả - Chuyển đến trang: "8.8.3 Báo cáo tin nhắn theo ngày"
-2025-10-14 Tuesday 16:31:57 root:INFO:8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:31:57 root:INFO:8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:31:58 root:INFO:True
-2025-10-14 Tuesday 16:32:08 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:08 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:32:08 root:INFO:Mã - Report79
-2025-10-14 Tuesday 16:32:08 root:INFO:Tên sự kiện - Tìm kiếm
-2025-10-14 Tuesday 16:32:08 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
-(Hiển thị )
-2025-10-14 Tuesday 16:32:08 root:INFO:21
-2025-10-14 Tuesday 16:32:09 root:INFO:True
-2025-10-14 Tuesday 16:32:29 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:29 root:INFO:BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày
-2025-10-14 Tuesday 16:32:29 root:INFO:Mã - Report80
-2025-10-14 Tuesday 16:32:29 root:INFO:Tên sự kiện - Xuất excel
-2025-10-14 Tuesday 16:32:29 root:INFO:Kết quả - 1. Tải file Excel về máy
-(Chỉ check tải, không check dữ liệu)
-2025-10-14 Tuesday 16:32:29 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:29 root:INFO:Tên cột web:   STT
-2025-10-14 Tuesday 16:32:29 root:INFO:Tên cột excel: STT
-2025-10-14 Tuesday 16:32:29 root:INFO:True
-2025-10-14 Tuesday 16:32:30 root:INFO:Dữ liệu web:   1
-2025-10-14 Tuesday 16:32:30 root:INFO:Dữ liệu excel: 1
-2025-10-14 Tuesday 16:32:30 root:INFO:True
-2025-10-14 Tuesday 16:32:31 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:31 root:INFO:Tên cột web:   Công ty
-2025-10-14 Tuesday 16:32:31 root:INFO:Tên cột excel: Công ty
-2025-10-14 Tuesday 16:32:31 root:INFO:True
-2025-10-14 Tuesday 16:32:31 root:INFO:Dữ liệu web:   G7 Taxi Hà Nội
-2025-10-14 Tuesday 16:32:31 root:INFO:Dữ liệu excel: G7 Taxi Hà Nội
-2025-10-14 Tuesday 16:32:31 root:INFO:True
-2025-10-14 Tuesday 16:32:32 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:32 root:INFO:Tên cột web:   Tổng số tin nhắn
-2025-10-14 Tuesday 16:32:32 root:INFO:Tên cột excel: Tổng số tin nhắn
-2025-10-14 Tuesday 16:32:32 root:INFO:True
-2025-10-14 Tuesday 16:32:33 root:INFO:Dữ liệu web:   21
-2025-10-14 Tuesday 16:32:33 root:INFO:Dữ liệu excel: 21
-2025-10-14 Tuesday 16:32:33 root:INFO:True
-2025-10-14 Tuesday 16:32:33 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:33 root:INFO:Tên cột web:   Tin đăng ký
-2025-10-14 Tuesday 16:32:33 root:INFO:Tên cột excel: Tin đăng ký
-2025-10-14 Tuesday 16:32:33 root:INFO:True
-2025-10-14 Tuesday 16:32:34 root:INFO:Dữ liệu web:   16
-2025-10-14 Tuesday 16:32:34 root:INFO:Dữ liệu excel: 16
-2025-10-14 Tuesday 16:32:34 root:INFO:True
-2025-10-14 Tuesday 16:32:34 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:34 root:INFO:Tên cột web:   Tin giới thiệu
-2025-10-14 Tuesday 16:32:34 root:INFO:Tên cột excel: Tin đi ngay
-2025-10-14 Tuesday 16:32:34 root:ERROR:False
-2025-10-14 Tuesday 16:32:36 root:ERROR:Dòng: E5
-2025-10-14 Tuesday 16:32:36 root:INFO:Dữ liệu web:   0
-2025-10-14 Tuesday 16:32:36 root:INFO:Dữ liệu excel: 0
-2025-10-14 Tuesday 16:32:36 root:INFO:True
-2025-10-14 Tuesday 16:32:36 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:36 root:INFO:Tên cột web:   Tin đường dài
-2025-10-14 Tuesday 16:32:36 root:INFO:Tên cột excel: Tin đường dài
-2025-10-14 Tuesday 16:32:36 root:INFO:True
-2025-10-14 Tuesday 16:32:37 root:INFO:Dữ liệu web:   0
-2025-10-14 Tuesday 16:32:37 root:INFO:Dữ liệu excel: 0
-2025-10-14 Tuesday 16:32:37 root:INFO:True
-2025-10-14 Tuesday 16:32:39 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:39 root:INFO:Tên cột web:   Tin sân bay
-2025-10-14 Tuesday 16:32:39 root:INFO:Tên cột excel: Tin sân bay
-2025-10-14 Tuesday 16:32:39 root:INFO:True
-2025-10-14 Tuesday 16:32:39 root:INFO:Dữ liệu web:   0
-2025-10-14 Tuesday 16:32:39 root:INFO:Dữ liệu excel: 0
-2025-10-14 Tuesday 16:32:39 root:INFO:True
-2025-10-14 Tuesday 16:32:40 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:40 root:INFO:Tên cột web:   Tin khác
-2025-10-14 Tuesday 16:32:40 root:INFO:Tên cột excel: Tin khác
-2025-10-14 Tuesday 16:32:40 root:INFO:True
-2025-10-14 Tuesday 16:32:41 root:INFO:Dữ liệu web:   0
-2025-10-14 Tuesday 16:32:41 root:INFO:Dữ liệu excel: 0
-2025-10-14 Tuesday 16:32:41 root:INFO:True
-2025-10-14 Tuesday 16:32:41 root:INFO:-------------------------
-2025-10-14 Tuesday 16:32:41 root:INFO:Tên cột web:   Tin OTP mã pin
-2025-10-14 Tuesday 16:32:41 root:INFO:Tên cột excel: Tin OTP mã pin
-2025-10-14 Tuesday 16:32:41 root:INFO:True
-2025-10-14 Tuesday 16:32:42 root:INFO:Dữ liệu web:   5
-2025-10-14 Tuesday 16:32:42 root:INFO:Dữ liệu excel: 5
-2025-10-14 Tuesday 16:32:42 root:INFO:True
+2025-12-03 Wednesday 10:44:31 root:INFO:True

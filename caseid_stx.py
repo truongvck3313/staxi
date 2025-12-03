@@ -119,7 +119,7 @@ def caseid_login11(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     login_stx.link.affiliate(self, "Login11", event, result, var_stx.app_store, var_stx.check_app_store,
-                             "G7 Taxi 16+", "DangNhap_LienKet_Store.png", "0")
+                             "G7 Taxi", "DangNhap_LienKet_Store.png", "0")
 
 def caseid_login12(self):
     get_datachecklist("Login12")
@@ -1537,7 +1537,7 @@ def caseid_promotion10(self):
     get_datachecklist("Promotion10")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    promotion_stx.list_promotion.list_promotion_icon(self, "Promotion10", event, result, var_stx.icon_see, var_stx.check_list_promotion1,
+    promotion_stx.list_promotion.list_promotion_icon(self, "Promotion10", event, result, var_stx.row_index0_icon_see, var_stx.check_list_promotion1,
                                                      "DANH SÁCH MÃ KHUYẾN MẠI", "_DanhSachKhuyenmai_XemMa.png")
 
 
@@ -1552,7 +1552,7 @@ def caseid_promotion12(self):
     get_datachecklist("Promotion12")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    promotion_stx.list_promotion.list_promotion_icon(self, "Promotion12", event, result, var_stx.icon_report, var_stx.check_icon_report,
+    promotion_stx.list_promotion.list_promotion_icon(self, "Promotion12", event, result, var_stx.row_index0_icon_report, var_stx.check_icon_report,
                                                      "6.4.7 BC KM theo cuốc khách", "_DanhSachKhuyenmai_BaoCao.png")
 
 
@@ -1560,7 +1560,7 @@ def caseid_promotion13(self):
     get_datachecklist("Promotion13")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    promotion_stx.list_promotion.list_promotion_icon(self, "Promotion13", event, result, var_stx.icon_coppy, var_stx.check_icon_coppy,
+    promotion_stx.list_promotion.list_promotion_icon(self, "Promotion13", event, result, var_stx.row_index0_icon_coppy, var_stx.check_icon_coppy,
                                                      "THÊM MỚI KHUYẾN MẠI", "_DanhSachKhuyenmai_SaoChep.png")
 
 
@@ -2721,6 +2721,22 @@ def caseid_report07(self):
     report_stx.report_8_1.report_8_1_1_excel(self, "Report07", event, result)
 
 
+def caseid_report07_1(self):
+    get_datachecklist("Report07_1")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_1.check_origin_1(self, "Report07_1", event, result)
+
+
+def caseid_report07_2(self):
+    get_datachecklist("Report07_2")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_1.check_origin_2(self, "Report07_2", event, result)
+
+
+
+
 def caseid_report08(self):
     get_datachecklist("Report08")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
@@ -3209,6 +3225,19 @@ def caseid_report77(self):
     report_stx.report_8_8.report_8_8_2_excel(self, "Report77", event, result)
 
 
+def caseid_report77_1(self):
+    get_datachecklist("Report77_1")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.check_origin8_8_2_1day(self, "Report77_1", event, result)
+
+
+def caseid_report77_2(self):
+    get_datachecklist("Report77_2")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.report_8_8.check_origin8_8_2_2day(self, "Report77_2", event, result)
+
 
 def caseid_report78(self):
     get_datachecklist("Report78")
@@ -3229,7 +3258,6 @@ def caseid_report80(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     report_stx.report_8_8.report_8_8_3_excel(self, "Report80", event, result)
-
 
 
 
@@ -4126,6 +4154,52 @@ def caseid_admin129(self):
 
 
 
+def caseid_PartnerTrip01(self):
+    get_datachecklist("PartnerTrip01")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.PartnerTrip_12_1.PartnerTrip_12_1_1(self, "PartnerTrip01", event, result)
+
+
+def caseid_PartnerTrip02(self):
+    get_datachecklist("PartnerTrip02")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.PartnerTrip_12_1.PartnerTrip_12_1_1_search(self, "PartnerTrip02", event, result)
+
+
+def caseid_PartnerTrip03(self):
+    get_datachecklist("PartnerTrip03")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.PartnerTrip_12_1.PartnerTrip_12_1_1_excel(self, "PartnerTrip03", event, result)
+
+
+
+def caseid_PartnerTrip04(self):
+    get_datachecklist("PartnerTrip04")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.PartnerTrip_12_1.PartnerTrip_12_1_2(self, "PartnerTrip04", event, result)
+
+
+def caseid_PartnerTrip05(self):
+    get_datachecklist("PartnerTrip05")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.PartnerTrip_12_1.PartnerTrip_12_1_2_search(self, "PartnerTrip05", event, result)
+
+
+def caseid_PartnerTrip06(self):
+    get_datachecklist("PartnerTrip06")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    report_stx.PartnerTrip_12_1.PartnerTrip_12_1_2_excel(self, "PartnerTrip06", event, result)
+
+
+
+
+
 def caseid_accounting01(self):
     get_datachecklist("Accounting01")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
@@ -4365,7 +4439,7 @@ def caseid_accounting34(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting34", event, result, var_stx.icon_hopdong,
-                                                         var_stx.check_BookContractLink, "Hợp đồng chuyến đi",
+                                                         var_stx.check_BookContractLink, "HỢP ĐỒNG VẬN CHUYỂN HÀNH KHÁCH",
                                                          "_QuanLyXuatHoaDon_HopDong.png")
 
 def caseid_accounting35(self):
@@ -4381,7 +4455,7 @@ def caseid_accounting36(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting36", event, result, var_stx.icon_cuockhachgps,
-                                                         var_stx.check_accounting_1_1, "ĐĂNG NHẬP", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
+                                                         var_stx.check_accounting_1_1, "HOTLINE MUA HÀNG", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
 
 def caseid_accounting37(self):
     get_datachecklist("Accounting37")

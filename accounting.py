@@ -967,9 +967,11 @@ class accounting_14_1:
         except:
             pass
 
-        if name_image == "_QuanLyXuatHoaDon_LotrinhGPS.png":
+
+        if (name_image == "_QuanLyXuatHoaDon_LotrinhGPS.png") or (name_image == "_QuanLyXuatHoaDon_HopDong.png"):
             module_other_stx.write_result_not_displayed_try(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                       path_check, name_image)
+
 
         else:
             module_other_stx.write_result_text_try_if_in(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",

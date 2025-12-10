@@ -1,0 +1,29 @@
+[17972:23488:0828/134838.277:INFO:components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[17972:23488:0828/134853.986:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/ (0)
+[17972:23488:0828/134854.348:INFO:CONSOLE:190] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", source: https://g7test.staxi.vn/ (190)
+[17972:23488:0828/134904.646:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/Home/Welcome?r=36253548 (0)
+[17972:13044:0828/134908.308:INFO:chrome\browser\extensions\extension_garbage_collector.cc:184] Garbage collection for extensions on file thread is complete.
+[17972:23488:0828/134918.758:INFO:CONSOLE:0] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", source: https://g7test.staxi.vn/Home/Welcome?r=36253548 (0)
+[17972:23488:0828/134920.230:INFO:CONSOLE:2379] "[object Object],[object Object],[object Object],[object Object]", source: https://g7test.staxi.vn/Home/Welcome?r=36253548 (2379)
+[17972:19052:0828/134923.261:ERROR:google_apis\gcm\engine\connection_handler_impl.cc:408] Received message of invalid type 84
+[17972:19052:0828/134923.261:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -4
+[17972:19052:0828/134923.385:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[17972:23488:0828/134929.577:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/Vehicle/Online?1462304 (0)
+[17972:23488:0828/134939.116:INFO:CONSOLE:0] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://g7test.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", source: https://g7test.staxi.vn/Vehicle/Online?1462304 (0)
+[17972:19052:0828/134945.495:ERROR:google_apis\gcm\engine\connection_handler_impl.cc:408] Received message of invalid type 84
+[17972:19052:0828/134945.495:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -4
+[17972:19052:0828/134946.686:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[17972:23488:0828/134949.227:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/ (0)
+[17972:23488:0828/134959.715:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/Home/Welcome?r=41126618 (0)
+[17972:23488:0828/135010.805:INFO:CONSOLE:2379] "[object Object],[object Object],[object Object],[object Object]", source: https://g7test.staxi.vn/Home/Welcome?r=41126618 (2379)
+[17972:23488:0828/135019.686:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/Vehicle/Index?25623709 (0)
+[17972:23488:0828/135032.816:INFO:CONSOLE:0] "Unrecognized Content-Security-Policy directive 'Secure'.", source: https://g7test.staxi.vn/Vehicle/Index?25623709 (0)
+[17972:19052:0828/135032.859:ERROR:google_apis\gcm\engine\connection_handler_impl.cc:408] Received message of invalid type 84
+[17972:19052:0828/135032.859:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -4
+[17972:19052:0828/135034.439:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[17972:23488:0828/135117.001:INFO:CONSOLE:2373] "Uncaught ReferenceError: VehicleIndex is not defined", source: https://g7test.staxi.vn/Vehicle/Index?25623709 (2373)
+[17972:23488:0828/135117.250:INFO:CONSOLE:1456] "Uncaught ReferenceError: toastr is not defined", source: https://g7test.staxi.vn/Vehicle/Index?25623709 (1456)
+[17972:23488:0828/135119.050:INFO:CONSOLE:2067] "Uncaught (in promise) TypeError: Failed to fetch", source: https://g7test.staxi.vn/Vehicle/Index?25623709 (2067)
+[17972:19052:0828/135215.483:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:434] Failed to connect to MCS endpoint with error -130
+[17972:19052:0828/135224.920:ERROR:google_apis\gcm\engine\registration_request.cc:274] Registration URL fetching failed.
+[21488:18536:0828/135520.414:WARNING:net\extras\sqlite\sqlite_persistent_store_backend_base.cc:176] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:226 to client_task_runner_.

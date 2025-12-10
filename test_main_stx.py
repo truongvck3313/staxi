@@ -17,7 +17,7 @@ import customer_stx
 
 #pip install selenium==3.141.0
 #git checkout -b feature-update-03122
-# cmt 123
+# cmt 12345
 class Test(unittest.TestCase):
     def test_run1(self):
         # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")

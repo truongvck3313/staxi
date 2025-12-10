@@ -28,7 +28,8 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #staxi_truong test pull request1333
+        #staxi_truong test pull request13332
+        #đã kết nối git thành công
 
 
 

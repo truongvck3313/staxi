@@ -980,8 +980,8 @@ def caseid_vehicle34(self):
     get_datachecklist("Vehicle34")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle34", event, result, var_stx.listdata2_3, var_stx.liscense_plate,
-                                            var_stx.listdata1_3, "_XeLaiXe_TimKiem_BienSo.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle34", event, result, var_stx.LatestVehiclePlate2, var_stx.liscense_plate,
+                                            var_stx.LatestVehiclePlate1, "_XeLaiXe_TimKiem_BienSo.png")
 
 def caseid_vehicle35(self):
     get_datachecklist("Vehicle35")
@@ -1001,8 +1001,8 @@ def caseid_vehicle37(self):
     get_datachecklist("Vehicle37")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle37", event, result, var_stx.listdata2_7, var_stx.sdt_account,
-                                            var_stx.listdata1_7, "_XeLaiXe_TimKiem_SoDienThoai.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle37", event, result, var_stx.PhoneNumber2, var_stx.sdt_account,
+                                            var_stx.PhoneNumber1, "_XeLaiXe_TimKiem_SoDienThoai.png")
 
 def caseid_vehicle38(self):
     get_datachecklist("Vehicle38")

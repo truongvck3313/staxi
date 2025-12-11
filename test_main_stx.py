@@ -28,11 +28,8 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #staxi_truong test pull requesta
 
 
-
-#
         # caseid_stx.caseid_login01(self)
         # caseid_stx.caseid_login02(self)
         # caseid_stx.caseid_login03(self)

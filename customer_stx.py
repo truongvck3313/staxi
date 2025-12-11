@@ -1849,19 +1849,17 @@ class contract_card:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
 
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.QuantityCardOne).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.IncreaseValue).click()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.QuantityCardOne).send_keys('2')
         except:
             element = var_stx.driver.find_element(By.XPATH, var_stx.issue_white_cards)
             var_stx.driver.execute_script("arguments[0].click();", element)
             time.sleep(3)
-            var_stx.driver.find_element(By.XPATH, var_stx.QuantityCardOne).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.IncreaseValue).click()
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.QuantityCardOne).send_keys("2")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.serial_before)
-        var_stx.driver.find_element(By.XPATH, var_stx.serial_after)
+        # var_stx.driver.find_element(By.XPATH, var_stx.serial_before)
+        # var_stx.driver.find_element(By.XPATH, var_stx.serial_after)
 
         var_stx.driver.find_element(By.XPATH, var_stx.white_cards_hd).click()
         time.sleep(1.5)

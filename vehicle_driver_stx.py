@@ -1506,9 +1506,9 @@ class driver:
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             time.sleep(2.5)
-            name_check = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2).text
+            name_check = var_stx.driver.find_element(By.XPATH, var_stx.DisplayName1).text
         if name_check == driver1:
-            var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2a).click()
+            var_stx.driver.find_element(By.XPATH, var_stx.DisplayName1_a).click()
             time.sleep(5)
             wait = WebDriverWait(var_stx.driver, 10)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.receive_the_activation_code_again)))

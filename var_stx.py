@@ -79,7 +79,7 @@ def writeData_append(file, sheetName, rowum, columnno, new_data):
 
 
 #đọc file config
-f = open("file_config.txt", 'r')
+f = open("./file/file_config.txt", 'r')
 for x in f:
      if x[0:11] == "- ModeTest:":   #1,2,3,4
          modetest = x[13:-2]
@@ -122,7 +122,9 @@ for x in f:
             "safebrowsing.enabled": True  # Tránh bị block file .exe/.zip
         }
         options.add_experimental_option("prefs", prefs)
-        driver = webdriver.Chrome(options=options, desired_capabilities=caps)
+        driver = webdriver.Chrome(options=options,
+                                  desired_capabilities=caps,
+                                  executable_path="./file/chromedriver.exe")
         time.sleep(3)
         try:
             got_it_button = driver.find_element(By.XPATH, "//div[@role='dialog']//button[contains(text(),'Got it')]")
@@ -140,7 +142,9 @@ def restart_driver():
         driver.quit()
     except:
         pass
-    driver = webdriver.Chrome(options=options, desired_capabilities=capa)
+    driver = webdriver.Chrome(options=options,
+                              desired_capabilities=capa,
+                              executable_path="./file/chromedriver.exe")
     logging.info("Đã mở lại chrome")
 
 

@@ -1,5 +1,4 @@
 import time
-
 import driver_wallet_stx
 import module_other_stx
 import login_stx
@@ -7,29 +6,39 @@ import report_stx
 import var_stx
 import unittest
 import caseid_stx
-
 import module_stx
 import minitor_stx
 import vehicle_driver_stx
 import customer_stx
 
-
-
 #pip install selenium==3.141.0
-#git checkout -b feature-update-03122
+
+
+#----------------------------
+# lấy code mới từ nhánh master:
+#
+# git checkout master → chuyển về nhánh chuẩn
+# git pull origin master → cập nhật code mới nhất
+#
+# ----------------------------
+# chuyển về nhánh huong-feature-1:
+# git checkout huong-feature-1
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        module_other_stx.clear_log()
-        module_other_stx.delete_image()
-        module_other_stx.timerun()
-        module_stx.ModuleTest()
-        module_stx.retest_casenone(self)
-        module_stx.retest_casefail(self)
-        module_other_stx.send_viber()
+        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        # module_other_stx.clear_log()
+        # module_other_stx.delete_image()
+        # module_other_stx.timerun()
+        # module_stx.ModuleTest()
+        # module_stx.retest_casenone(self)
+        # module_stx.retest_casefail(self)
+        # module_other_stx.send_viber()
+        #đã sửa lại lỗi chết luồng do khai báo driver
 
 
+
+#
         # caseid_stx.caseid_login01(self)
         # caseid_stx.caseid_login02(self)
         # caseid_stx.caseid_login03(self)
@@ -586,7 +595,13 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin06(self)
         # caseid_stx.caseid_admin07(self)
         # caseid_stx.caseid_admin08(self)
-
+        # caseid_stx.caseid_admin08_1(self)
+        # caseid_stx.caseid_admin08_2(self)
+        # caseid_stx.caseid_admin08_3(self)
+        caseid_stx.caseid_admin08_4(self)
+        caseid_stx.caseid_admin08_5(self)
+        caseid_stx.caseid_admin08_6(self)
+        # caseid_stx.caseid_admin08_4(self)
         # caseid_stx.caseid_admin09(self)
         # caseid_stx.caseid_admin10(self)
         # caseid_stx.caseid_admin11(self)
@@ -868,8 +883,6 @@ if __name__ == "__main__":
     unittest.main()
 
 
-# pyinstaller.exe --icon=C:\Users\truongtq.BA\PycharmProjects\pythonProject\ba_v2\icon_ba.ico .\test_main.py
-# pyinstaller.exe --icon=C:\Users\truongtq.BA\PycharmProjects\pythonProject\ba_v2\tele.ico .\test_main.py
 
 
 

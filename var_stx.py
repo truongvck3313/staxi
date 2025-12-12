@@ -8,6 +8,12 @@ capa["pageLoadStrategy"] = "none"
 from seleniumwire import webdriver
 from selenium.webdriver.common.keys import Keys
 
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+import time
+
+
 #
 # chrome_options = webdriver.ChromeOptions()
 # # chrome_options.add_argument('--headless')
@@ -122,7 +128,8 @@ for x in f:
             "safebrowsing.enabled": True  # Tránh bị block file .exe/.zip
         }
         options.add_experimental_option("prefs", prefs)
-        driver = webdriver.Chrome(options=options, desired_capabilities=caps)
+        driver = webdriver.Chrome(options=options,
+                                  desired_capabilities=caps)
         time.sleep(3)
         try:
             got_it_button = driver.find_element(By.XPATH, "//div[@role='dialog']//button[contains(text(),'Got it')]")
@@ -140,7 +147,9 @@ def restart_driver():
         driver.quit()
     except:
         pass
-    driver = webdriver.Chrome(options=options, desired_capabilities=capa)
+    driver = webdriver.Chrome(options=options,
+                              desired_capabilities=capa,
+                              executable_path="./file/chromedriver.exe")
     logging.info("Đã mở lại chrome")
 
 
@@ -387,7 +396,10 @@ listdata1_21 = "//*[@class='ag-center-cols-container']/div[1]/div[21]"
 listdata1_22 = "//*[@class='ag-center-cols-container']/div[1]/div[22]"
 listdata1_23 = "//*[@class='ag-center-cols-container']/div[1]/div[23]"
 vehicle_input1 = "//*[@placeholder='Biển số']"
-
+LatestVehiclePlate1 = "(//div[@col-id='LatestVehiclePlate'])[2]"
+LatestVehiclePlate2 = "(//div[@col-id='LatestVehiclePlate'])[3]"
+PhoneNumber1="(//div[@col-id='PhoneNumber'])[2]"
+PhoneNumber2="(//div[@col-id='PhoneNumber'])[3]"
 listdata2_2 = "//*[@class='ag-center-cols-container']/div[2]/div[2]"
 listdata2_3 = "//*[@class='ag-center-cols-container']/div[2]/div[3]"
 listdata2_4 = "//*[@class='ag-center-cols-container']/div[2]/div[4]"
@@ -1190,6 +1202,11 @@ admin = "//*[@class='nav side-menu']//*[text()='QUẢN TRỊ']"
 admin_10_3 = "//*[text()='10.3 Quản trị công ty']"
 admin_10_3_1 = "//*[text()='10.3.1 Thông tin công ty ']"
 check_admin_10_3_1 = "//*[@class='breadcrumb']//*[text()='10.3.1 Thông tin công ty ']"
+admin_10_3_4 = "//*[text()='10.3.4 Quản trị nhóm đội']"
+check_admin_10_3_4 = "//*[@class='breadcrumb']//*[text()='10.3.4 Quản trị nhóm đội']"
+group_name = "//*[@placeholder='Tên nhóm, Tên hiển thị']"
+group_name_input = "//*[@name='GroupName']"
+display_group_name_input = "//*[@name='DisplayName']"
 info_company_name = "//*[@id='CompanyName']"
 info_company_name_app = "//*[@id='DisplayName']"
 info_company_adress = "//*[@id='Address']"
@@ -1294,6 +1311,7 @@ datatable1_2 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]"
 datatable1_2_a = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a"
 datatable1_3 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[3]"
 datatable1_3_button = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[3]/a/i"
+datatable1_7_button = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[7]/a/i"
 datatable1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
 datatable1_5 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[5]"
 datatable1_6 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[6]"
@@ -1308,6 +1326,7 @@ datatable1_12_a = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[12]/a"
 datatable1_13_i = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[13]/a/i"
 datatable1_14_i = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[14]/a/i"
 datatable2_2 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[2]"
+datatable2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
 name_account = "//*[@placeholder='Tên tài khoản']"
 create_user_full_name = "//*[@name='Fullname']"
 create_user_account = "//*[@id='adminUserEdit']//*[@placeholder='Tên tài khoản']"
@@ -2087,24 +2106,25 @@ LimitMoneyTrans = "//*[@id='LimitMoneyTrans']"
 create_noti_name_driver_input = "//*[@id='SendListDriver_chosen']/ul/li/input"
 create_noti_name_driver_input1 = "//*[@id='SendListDriver_chosen']/div/ul/li[1]"
 issue_white_cards = "//*[text()='Phát hành thẻ trắng']"
+QuantityCard1="//*[@aria-labelledby='TotalCard_label']"
 QuantityCardOne = "//*[@id='QuantityCardOne']"
 serial_before = "//*[text()='Số Serial thẻ đầu']"
 serial_after = "//*[text()='Số Serial thẻ cuối']"
-white_cards_hd = "//*[@title='Mã hợp đồng']"
-white_cards_hd1 = "//*[@name='ContractId']/option[2]"
+white_cards_hd = "(//button[@aria-label='select'])[1]"
+white_cards_hd1 = "//*[@id='ContractId_listbox']/li[3]"
 white_cards_name_customer = "//*[@name='CustomerName']"
-white_cards_start_date = "//*[@id='formCreateCardOne']//*[text()='Ngày mở']"
-white_cards_start_end = "//*[@id='formCreateCardOne']//*[text()='Hạn dùng']"
-white_cards_pay = "//*[@id='PaidMethod_form']//*[text()='Trả trước']"
-white_cards_authentic = "//*[@name='AuthenType']//*[text()='Không xác thực']"
-white_cards_note = "//*[@id='Note_one']"
-white_cards_confirm = "//*[@id='formCreateCardOne']//*[text()='Xác nhận']"
-white_cards_confirm1 = "//*[@class='cfCardOne']//*[text()='Xác nhận']"
-list_card_while = "//*[text()=' Tải dữ liệu']"
+white_cards_start_date = "//*[@id='whiteCardEdit']//*[text()='Ngày mở']"
+white_cards_start_end = "//*[@id='whiteCardEdit']//*[text()='Hạn dùng']"
+white_cards_pay = "//*[@id='whiteCardForm']//*[@id='PaidMethod']//*[text()='Trả trước']"
+white_cards_authentic = "//*[@id='whiteCardForm']//*[@id='AuthenType']//*[text()='Xác thực OTP']"
+white_cards_note = "//*[@id='Note']"
+white_cards_confirm = "//*[@id='whiteCardForm']//*[text()='Xác nhận']"
+white_cards_confirm1 = "//*[@aria-labelledby='swal2-title']//*[text()='Xác nhận']"
+list_card_while = "//*[text()='Tải danh sách']"
 list_card_while_close = "/html/body/div[1]/div/div[4]/div[11]/div/div/div/div[2]/div/div/button[2]"
 card_management_addnew1 = "//*[text()='Thêm mới thẻ thành công']"
-list_card_while_cancel = "//*[@class='cfCardOne']//*[text()='Hủy']"
-list_card_while_cancel1 = "//*[@id='formCreateCardOne']//*[text()='Hủy']"
+list_card_while_cancel = "//*[@id='whiteCardForm']//*[text()='Hủy']"
+list_card_while_cancel1 = "//*[@aria-labelledby='swal2-title']//*[text()='Hủy']"
 one_time_card = "//*[@onclick='ShowCardModalForm(3)']|//*[@onclick='cardIndex.createCardOneTimeModal()']"
 check_one_time_card = "//*[text()='Cấp thẻ dùng 1 lần']"
 one_time_card_coppy = "//*[@src='/Content/Images/cpic.svg']"
@@ -2166,7 +2186,7 @@ col_id_DriverCode0 = "//div[@role='row' and @row-index='0']//div[@col-id='Driver
 col_id_PrivateCode1 = "//div[@role='row' and @row-index='1']//div[@col-id='PrivateCode']"
 col_id_PrivateCode0 = "//div[@role='row' and @row-index='0']//div[@col-id='PrivateCode']"
 confirm2 = "//*[@class='swal2-actions']//*[text()='Xác nhận']"
-HideDataTableCardWhite = "//*[@class='HideDataTableCardWhite']"
+HideDataTableCardWhite = "//*[@id='issuedCardView']//*[@class='close']"
 
 col_VehiclePlateAssign2 = "(//div[@col-id='VehiclePlateAssign'])[2]"
 col_VehiclePlateAssign3 = "(//div[@col-id='VehiclePlateAssign'])[3]"
@@ -2234,12 +2254,16 @@ row_index0_icon_see = "(//div[@row-index='0'])//*[@class='fa fa-eye']"
 row_index0_icon_report = "(//div[@row-index='0'])//*[@class='fa fa-file-o']"
 row_index0_icon_coppy = "(//div[@row-index='0'])//*[@class='fa fa-clone']"
 row_index0_icon_dele = "(//div[@row-index='0'])//*[@class='fa fa-times']"
-
-
-
-
-
-
+DisplayName1 = "(//div[@col-id='DisplayName'])[2]"
+DisplayName1_a = "(//div[@col-id='DisplayName'])[2]/span/a"
+totalcard = "//*[@id='TotalCard']"
+IncreaseValue = "(//button[@aria-label='Increase value'])[1]"
+DataTables_Table_2_2 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[2]"
+DataTables_Table_1_2 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]"
+DataTables_Table_2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
+DataTables_Table_1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
+Save = "//*[@class='btn btn-primary']"
+hrefDataTables_Table_1_2="//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a[1]"
 
 
 

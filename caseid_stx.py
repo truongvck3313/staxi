@@ -980,8 +980,8 @@ def caseid_vehicle34(self):
     get_datachecklist("Vehicle34")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle34", event, result, var_stx.listdata2_3, var_stx.liscense_plate,
-                                            var_stx.listdata1_3, "_XeLaiXe_TimKiem_BienSo.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle34", event, result, var_stx.LatestVehiclePlate2, var_stx.liscense_plate,
+                                            var_stx.LatestVehiclePlate1, "_XeLaiXe_TimKiem_BienSo.png")
 
 def caseid_vehicle35(self):
     get_datachecklist("Vehicle35")
@@ -1001,8 +1001,8 @@ def caseid_vehicle37(self):
     get_datachecklist("Vehicle37")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle37", event, result, var_stx.listdata2_7, var_stx.sdt_account,
-                                            var_stx.listdata1_7, "_XeLaiXe_TimKiem_SoDienThoai.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle37", event, result, var_stx.PhoneNumber2, var_stx.sdt_account,
+                                            var_stx.PhoneNumber1, "_XeLaiXe_TimKiem_SoDienThoai.png")
 
 def caseid_vehicle38(self):
     get_datachecklist("Vehicle38")
@@ -3317,6 +3317,45 @@ def caseid_admin08(self):
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     administration.admin_10_3.admin_10_3_1_back(self, "Admin08", event, result)
 
+def caseid_admin08_1(self):
+    get_datachecklist("Admin08_1")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4(self, "Admin08_1", event, result)
+
+def caseid_admin08_2(self):
+    get_datachecklist("Admin08_2")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_search(self, "Admin08_2", event, result,
+                                                  var_stx.DataTables_Table_2_2, var_stx.group_name,
+                                                  var_stx.DataTables_Table_1_2, "_QuanTriNhomDoi_TenNhomTimKiem.png")
+
+def caseid_admin08_3(self):
+    get_datachecklist("Admin08_3")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_search(self, "Admin08_3", event, result,
+                                                  var_stx.DataTables_Table_2_4, var_stx.group_name,
+                                                  var_stx.DataTables_Table_1_4, "_QuanTriNhomDoi_TenHienThiTimKiem.png")
+
+def caseid_admin08_4(self):
+    get_datachecklist("Admin08_4")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_add_new(self, "Admin08_4", event, result)
+
+def caseid_admin08_5(self):
+    get_datachecklist("Admin08_5")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_update(self, "Admin08_5", event, result)
+
+def caseid_admin08_6(self):
+    get_datachecklist("Admin08_6")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_delete(self, "Admin08_6", event, result)
 
 def caseid_admin09(self):
     get_datachecklist("Admin09")

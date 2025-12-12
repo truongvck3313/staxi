@@ -1,5 +1,4 @@
 import time
-
 import driver_wallet_stx
 import module_other_stx
 import login_stx
@@ -7,16 +6,23 @@ import report_stx
 import var_stx
 import unittest
 import caseid_stx
-
 import module_stx
 import minitor_stx
 import vehicle_driver_stx
 import customer_stx
 
-
-
 #pip install selenium==3.141.0
-#git checkout -b feature-update-03122
+
+
+#----------------------------
+# lấy code mới từ nhánh master:
+#
+# git checkout master → chuyển về nhánh chuẩn
+# git pull origin master → cập nhật code mới nhất
+#
+# ----------------------------
+# chuyển về nhánh huong-feature-1:
+# git checkout huong-feature-1
 
 class Test(unittest.TestCase):
     def test_run1(self):
@@ -28,7 +34,7 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #test giitgnore
+        #đã sửa lại lỗi chết luồng do khai báo driver
 
 
 
@@ -871,8 +877,6 @@ if __name__ == "__main__":
     unittest.main()
 
 
-# pyinstaller.exe --icon=C:\Users\truongtq.BA\PycharmProjects\pythonProject\ba_v2\icon_ba.ico .\test_main.py
-# pyinstaller.exe --icon=C:\Users\truongtq.BA\PycharmProjects\pythonProject\ba_v2\tele.ico .\test_main.py
 
 
 

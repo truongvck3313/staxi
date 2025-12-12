@@ -69,8 +69,15 @@ class login:
             password_field.send_keys(password)
             time.sleep(0.5)
 
-            login_button = var_stx.driver.find_element(By.XPATH, var_stx.dangnhap)
-            login_button.click()
+            try:
+                var_stx.driver.implicitly_wait(2)
+                login_button = var_stx.driver.find_element(By.XPATH, var_stx.dangnhap)
+                login_button.click()
+            except:
+                var_stx.driver.find_element(By.XPATH, var_stx.i_seed).click()
+                time.sleep(2)
+                login_button = var_stx.driver.find_element(By.XPATH, var_stx.dangnhap)
+                login_button.click()
 
             WebDriverWait(var_stx.driver, 35).until(EC.element_to_be_clickable((By.XPATH, var_stx.minitor)))
             time.sleep(2)

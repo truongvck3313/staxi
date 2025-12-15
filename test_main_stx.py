@@ -15,14 +15,12 @@ import customer_stx
 
 
 #----------------------------
-# lấy code mới từ nhánh master:
-#
 # git checkout master → chuyển về nhánh chuẩn
 # git pull origin master → cập nhật code mới nhất
 #
 # ----------------------------
-# chuyển về nhánh huong-feature-1:
-# git checkout huong-feature-1
+# chuyển về nhánh staxi_update:
+# git checkout staxi_update
 
 class Test(unittest.TestCase):
     def test_run1(self):
@@ -34,9 +32,7 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #test đẩy
-        #test đẩy lần 2
-        #test đẩy => ok đa nhận
+
 
 
         # caseid_stx.caseid_login01(self)
@@ -598,9 +594,9 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin08_1(self)
         # caseid_stx.caseid_admin08_2(self)
         # caseid_stx.caseid_admin08_3(self)
-        caseid_stx.caseid_admin08_4(self)
-        caseid_stx.caseid_admin08_5(self)
-        caseid_stx.caseid_admin08_6(self)
+        # caseid_stx.caseid_admin08_4(self)
+        # caseid_stx.caseid_admin08_5(self)
+        # caseid_stx.caseid_admin08_6(self)
         # caseid_stx.caseid_admin08_4(self)
         # caseid_stx.caseid_admin09(self)
         # caseid_stx.caseid_admin10(self)

@@ -615,3 +615,259 @@ khách hàng
 2025-12-12 Friday 08:27:23 root:INFO:1.2 Xe online
 2025-12-12 Friday 08:27:23 root:INFO:1.2 Xe online
 2025-12-12 Friday 08:27:24 root:INFO:True
+2025-12-12 Friday 09:58:18 root:INFO:-------------------------
+2025-12-12 Friday 09:58:18 root:INFO:Giám sát - Xe online 1.2
+2025-12-12 Friday 09:58:18 root:INFO:Mã - Minitor01
+2025-12-12 Friday 09:58:18 root:INFO:Tên sự kiện - Mở trang "Xe online"
+2025-12-12 Friday 09:58:18 root:INFO:Kết quả - Chuyển đến trang: "1.2 Xe online"
+2025-12-12 Friday 09:58:18 root:INFO:1.2 Xe online
+2025-12-12 Friday 09:58:18 root:INFO:1.2 Xe online
+2025-12-12 Friday 09:58:19 root:INFO:True
+2025-12-12 Friday 14:32:44 root:INFO:-------------------------
+2025-12-12 Friday 14:32:44 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:32:44 root:INFO:Mã - Admin08_1
+2025-12-12 Friday 14:32:44 root:INFO:Tên sự kiện - Mở trang "Quản trị nhóm đội"
+2025-12-12 Friday 14:32:44 root:INFO:Kết quả - Chuyển đến trang: "10.3.4 Quản trị nhóm đội"
+2025-12-12 Friday 14:32:44 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:32:44 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:32:45 root:INFO:True
+2025-12-12 Friday 14:40:34 root:INFO:-------------------------
+2025-12-12 Friday 14:40:34 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:40:34 root:INFO:Mã - Admin08_1
+2025-12-12 Friday 14:40:34 root:INFO:Tên sự kiện - Mở trang "Quản trị nhóm đội"
+2025-12-12 Friday 14:40:34 root:INFO:Kết quả - Chuyển đến trang: "10.3.4 Quản trị nhóm đội"
+2025-12-12 Friday 14:40:34 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:40:34 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:40:35 root:INFO:True
+2025-12-12 Friday 14:40:40 root:INFO:-------------------------
+2025-12-12 Friday 14:40:40 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:40:40 root:INFO:Mã - Admin08_2
+2025-12-12 Friday 14:40:40 root:INFO:Tên sự kiện - Tìm kiếm tên nhóm 
+2025-12-12 Friday 14:40:40 root:INFO:Kết quả - Trường "Tên nhóm" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 14:40:40 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 14:40:40 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 14:40:40 root:INFO:True
+2025-12-12 Friday 14:43:31 root:INFO:-------------------------
+2025-12-12 Friday 14:43:31 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:43:31 root:INFO:Mã - Admin08_1
+2025-12-12 Friday 14:43:31 root:INFO:Tên sự kiện - Mở trang "Quản trị nhóm đội"
+2025-12-12 Friday 14:43:31 root:INFO:Kết quả - Chuyển đến trang: "10.3.4 Quản trị nhóm đội"
+2025-12-12 Friday 14:43:31 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:43:31 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:43:31 root:INFO:True
+2025-12-12 Friday 14:43:37 root:INFO:-------------------------
+2025-12-12 Friday 14:43:37 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:43:37 root:INFO:Mã - Admin08_2
+2025-12-12 Friday 14:43:37 root:INFO:Tên sự kiện - Tìm kiếm tên nhóm 
+2025-12-12 Friday 14:43:37 root:INFO:Kết quả - Trường "Tên nhóm" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 14:43:37 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 14:43:37 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 14:43:37 root:INFO:True
+2025-12-12 Friday 14:43:43 root:INFO:-------------------------
+2025-12-12 Friday 14:43:43 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 14:43:43 root:INFO:Mã - Admin08_3
+2025-12-12 Friday 14:43:43 root:INFO:Tên sự kiện - Tìm kiếm tên hiển thị  
+2025-12-12 Friday 14:43:43 root:INFO:Kết quả - Trường "Tên hiển thị" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 14:43:43 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 14:43:43 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 14:43:44 root:INFO:True
+2025-12-12 Friday 15:26:17 root:INFO:-------------------------
+2025-12-12 Friday 15:26:17 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:26:17 root:INFO:Mã - 
+2025-12-12 Friday 15:26:17 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 15:26:17 root:INFO:Kết quả - 
+2025-12-12 Friday 15:26:17 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:26:17 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:26:18 root:INFO:True
+2025-12-12 Friday 15:26:48 root:INFO:-------------------------
+2025-12-12 Friday 15:26:48 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe
+2025-12-12 Friday 15:26:48 root:INFO:Mã - 
+2025-12-12 Friday 15:26:48 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 15:26:48 root:INFO:Kết quả - 
+2025-12-12 Friday 15:26:48 root:INFO:10.3.5 Quản trị tên xe
+2025-12-12 Friday 15:26:48 root:INFO:10.3.5 Quản trị tên xe
+2025-12-12 Friday 15:26:49 root:INFO:True
+2025-12-12 Friday 15:27:07 root:INFO:-------------------------
+2025-12-12 Friday 15:27:07 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:27:07 root:INFO:Mã - Admin08_4
+2025-12-12 Friday 15:27:07 root:INFO:Tên sự kiện - Thêm mới
+2025-12-12 Friday 15:27:07 root:INFO:Kết quả - Hiển thị message: "Lưu thông tin thành công."
+2025-12-12 Friday 15:27:07 root:INFO:Lưu tên xe thành công.
+2025-12-12 Friday 15:27:07 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 15:27:08 root:INFO:False
+2025-12-12 Friday 15:56:31 root:INFO:-------------------------
+2025-12-12 Friday 15:56:31 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:56:31 root:INFO:Mã - 
+2025-12-12 Friday 15:56:31 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 15:56:31 root:INFO:Kết quả - 
+2025-12-12 Friday 15:56:31 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:56:31 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:56:31 root:INFO:True
+2025-12-12 Friday 15:56:35 root:INFO:-------------------------
+2025-12-12 Friday 15:56:35 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:56:35 root:INFO:Mã - Admin08_2
+2025-12-12 Friday 15:56:35 root:INFO:Tên sự kiện - Tìm kiếm tên nhóm 
+2025-12-12 Friday 15:56:35 root:INFO:Kết quả - Trường "Tên nhóm" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 15:56:35 root:INFO:IT-G7-Gán Lái
+2025-12-12 Friday 15:56:35 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 15:56:35 root:INFO:False
+2025-12-12 Friday 15:56:41 root:INFO:-------------------------
+2025-12-12 Friday 15:56:41 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:56:41 root:INFO:Mã - Admin08_3
+2025-12-12 Friday 15:56:41 root:INFO:Tên sự kiện - Tìm kiếm tên hiển thị  
+2025-12-12 Friday 15:56:41 root:INFO:Kết quả - Trường "Tên hiển thị" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 15:56:41 root:INFO:IT-G7-Gán Lái
+2025-12-12 Friday 15:56:41 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 15:56:41 root:INFO:False
+2025-12-12 Friday 15:58:17 root:INFO:-------------------------
+2025-12-12 Friday 15:58:17 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:58:17 root:INFO:Mã - 
+2025-12-12 Friday 15:58:17 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 15:58:17 root:INFO:Kết quả - 
+2025-12-12 Friday 15:58:17 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:58:17 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:58:18 root:INFO:True
+2025-12-12 Friday 15:58:21 root:INFO:-------------------------
+2025-12-12 Friday 15:58:21 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:58:21 root:INFO:Mã - Admin08_2
+2025-12-12 Friday 15:58:21 root:INFO:Tên sự kiện - Tìm kiếm tên nhóm 
+2025-12-12 Friday 15:58:21 root:INFO:Kết quả - Trường "Tên nhóm" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 15:58:21 root:INFO:IT-G7-Gán Lái
+2025-12-12 Friday 15:58:21 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 15:58:22 root:INFO:False
+2025-12-12 Friday 15:58:27 root:INFO:-------------------------
+2025-12-12 Friday 15:58:27 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 15:58:27 root:INFO:Mã - Admin08_3
+2025-12-12 Friday 15:58:27 root:INFO:Tên sự kiện - Tìm kiếm tên hiển thị  
+2025-12-12 Friday 15:58:27 root:INFO:Kết quả - Trường "Tên hiển thị" hiển thị dữ liệu đã nhập
+2025-12-12 Friday 15:58:27 root:INFO:IT-G7-Gán Lái
+2025-12-12 Friday 15:58:27 root:INFO:IT-G7-Gán xe
+2025-12-12 Friday 15:58:28 root:INFO:False
+2025-12-12 Friday 16:07:31 root:INFO:-------------------------
+2025-12-12 Friday 16:07:31 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:07:31 root:INFO:Mã - 
+2025-12-12 Friday 16:07:31 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:07:31 root:INFO:Kết quả - 
+2025-12-12 Friday 16:07:31 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:07:31 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:07:31 root:INFO:True
+2025-12-12 Friday 16:11:14 root:INFO:-------------------------
+2025-12-12 Friday 16:11:14 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:11:14 root:INFO:Mã - 
+2025-12-12 Friday 16:11:14 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:11:14 root:INFO:Kết quả - 
+2025-12-12 Friday 16:11:14 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:11:14 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:11:14 root:INFO:True
+2025-12-12 Friday 16:15:14 root:INFO:-------------------------
+2025-12-12 Friday 16:15:14 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:15:14 root:INFO:Mã - 
+2025-12-12 Friday 16:15:14 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:15:14 root:INFO:Kết quả - 
+2025-12-12 Friday 16:15:14 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:15:14 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:15:15 root:INFO:True
+2025-12-12 Friday 16:15:33 root:INFO:-------------------------
+2025-12-12 Friday 16:15:33 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:15:33 root:INFO:Mã - Admin08_4
+2025-12-12 Friday 16:15:33 root:INFO:Tên sự kiện - Thêm mới
+2025-12-12 Friday 16:15:33 root:INFO:Kết quả - Hiển thị message: "Lưu thông tin thành công."
+2025-12-12 Friday 16:15:33 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 16:15:33 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 16:15:33 root:INFO:True
+2025-12-12 Friday 16:27:03 root:INFO:-------------------------
+2025-12-12 Friday 16:27:03 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:27:03 root:INFO:Mã - 
+2025-12-12 Friday 16:27:03 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:27:03 root:INFO:Kết quả - 
+2025-12-12 Friday 16:27:03 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:27:03 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:27:04 root:INFO:True
+2025-12-12 Friday 16:32:48 root:INFO:-------------------------
+2025-12-12 Friday 16:32:48 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:32:48 root:INFO:Mã - 
+2025-12-12 Friday 16:32:48 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:32:48 root:INFO:Kết quả - 
+2025-12-12 Friday 16:32:48 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:32:48 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:32:48 root:INFO:True
+2025-12-12 Friday 16:33:04 root:INFO:-------------------------
+2025-12-12 Friday 16:33:04 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe
+2025-12-12 Friday 16:33:04 root:INFO:Mã - Admin08_5
+2025-12-12 Friday 16:33:04 root:INFO:Tên sự kiện - Cập nhật
+2025-12-12 Friday 16:33:04 root:INFO:Kết quả - Hiển thị message: "Lưu thông tin thành công."
+2025-12-12 Friday 16:33:04 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 16:33:04 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 16:33:04 root:INFO:True
+2025-12-12 Friday 16:35:48 root:INFO:-------------------------
+2025-12-12 Friday 16:35:48 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:35:48 root:INFO:Mã - 
+2025-12-12 Friday 16:35:48 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:35:48 root:INFO:Kết quả - 
+2025-12-12 Friday 16:35:48 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:35:48 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:35:49 root:INFO:True
+2025-12-12 Friday 16:39:14 root:INFO:-------------------------
+2025-12-12 Friday 16:39:14 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:39:14 root:INFO:Mã - 
+2025-12-12 Friday 16:39:14 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:39:14 root:INFO:Kết quả - 
+2025-12-12 Friday 16:39:14 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:39:14 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:39:15 root:INFO:True
+2025-12-12 Friday 16:40:46 root:INFO:-------------------------
+2025-12-12 Friday 16:40:46 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:40:46 root:INFO:Mã - 
+2025-12-12 Friday 16:40:46 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:40:46 root:INFO:Kết quả - 
+2025-12-12 Friday 16:40:46 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:40:46 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:40:47 root:INFO:True
+2025-12-12 Friday 16:40:56 root:INFO:-------------------------
+2025-12-12 Friday 16:40:56 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:40:56 root:INFO:Mã - Admin08_6
+2025-12-12 Friday 16:40:56 root:INFO:Tên sự kiện - Xóa
+2025-12-12 Friday 16:40:56 root:INFO:Kết quả - Hiển thị message: "Xóa thông tin thành công"
+2025-12-12 Friday 16:40:56 root:INFO:Xóa nhóm thành công.
+2025-12-12 Friday 16:40:56 root:INFO:Xóa nhóm thành công.
+2025-12-12 Friday 16:40:56 root:INFO:True
+2025-12-12 Friday 16:42:25 root:INFO:-------------------------
+2025-12-12 Friday 16:42:25 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:42:25 root:INFO:Mã - 
+2025-12-12 Friday 16:42:25 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 16:42:25 root:INFO:Kết quả - 
+2025-12-12 Friday 16:42:25 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:42:25 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 16:42:25 root:INFO:True
+2025-12-12 Friday 17:12:36 root:INFO:-------------------------
+2025-12-12 Friday 17:12:36 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 17:12:36 root:INFO:Mã - 
+2025-12-12 Friday 17:12:36 root:INFO:Tên sự kiện - 
+2025-12-12 Friday 17:12:36 root:INFO:Kết quả - 
+2025-12-12 Friday 17:12:36 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 17:12:36 root:INFO:10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 17:12:37 root:INFO:True
+2025-12-12 Friday 17:12:58 root:INFO:-------------------------
+2025-12-12 Friday 17:12:58 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 17:12:58 root:INFO:Mã - Admin08_4
+2025-12-12 Friday 17:12:58 root:INFO:Tên sự kiện - Thêm mới
+2025-12-12 Friday 17:12:58 root:INFO:Kết quả - Hiển thị message: "Lưu thông tin thành công."
+2025-12-12 Friday 17:12:58 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 17:12:58 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 17:12:59 root:INFO:True
+2025-12-12 Friday 17:13:17 root:INFO:-------------------------
+2025-12-12 Friday 17:13:17 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe
+2025-12-12 Friday 17:13:17 root:INFO:Mã - Admin08_5
+2025-12-12 Friday 17:13:17 root:INFO:Tên sự kiện - Cập nhật
+2025-12-12 Friday 17:13:17 root:INFO:Kết quả - Hiển thị message: "Lưu thông tin thành công."
+2025-12-12 Friday 17:13:17 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 17:13:17 root:INFO:Lưu thông tin thành công.
+2025-12-12 Friday 17:13:18 root:INFO:True
+2025-12-12 Friday 17:13:28 root:INFO:-------------------------
+2025-12-12 Friday 17:13:28 root:INFO:BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội
+2025-12-12 Friday 17:13:28 root:INFO:Mã - Admin08_6
+2025-12-12 Friday 17:13:28 root:INFO:Tên sự kiện - Xóa
+2025-12-12 Friday 17:13:28 root:INFO:Kết quả - Hiển thị message: "Xóa thông tin thành công"
+2025-12-12 Friday 17:13:28 root:INFO:Xóa nhóm thành công.
+2025-12-12 Friday 17:13:28 root:INFO:Xóa nhóm thành công.
+2025-12-12 Friday 17:13:29 root:INFO:True

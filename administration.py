@@ -20,7 +20,7 @@ import subprocess
 import random
 wait = WebDriverWait(var_stx.driver, 10)
 
-#1322232332323
+#1
 def get_info_web():
     var_stx.driver.implicitly_wait(0.05)
     row = 119
@@ -446,7 +446,154 @@ class admin_10_3:
 
 
 
+    def admin_10_3_4(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'],
+                                  var_stx.data['login']['mk_admin_test'])
+        var_stx.driver.find_element(By.XPATH, var_stx.admin).click()
+        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.admin).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3).click()
+            time.sleep(2)
 
+        button = var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_4)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_6).click()
+        time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
+        module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                  "BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội",
+                                                  var_stx.title_page1, "10.3.4 Quản trị nhóm đội",
+                                                  "_QuanTriNhomDoi.png")
+
+    def admin_10_3_4_search(self, code, eventname, result, pathdata, pathinput, pathcheck, nameimage):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_4)
+        except:
+            admin_10_3.admin_10_3_4(self, "", "", "")
+
+        data = var_stx.driver.find_element(By.XPATH, pathdata).text
+        var_stx.driver.find_element(By.XPATH, pathinput).send_keys(data)
+        time.sleep(2.5)
+        module_other_stx.write_result_text_try_if_in(code, eventname, result,
+                                                     "BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội",
+                                                     pathcheck, data, nameimage)
+
+        var_stx.driver.find_element(By.XPATH, pathinput).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(1)
+
+
+    def admin_10_3_4_add_new(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_4)
+        except:
+            admin_10_3.admin_10_3_4(self, "", "", "")
+
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.name_driver).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.group_name).send_keys(
+                var_stx.data['admin']['group_name_add_new'])
+            time.sleep(3)
+
+            name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
+            if name == var_stx.data['admin']['group_name_add_new']:
+                var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button).click()
+                time.sleep(2.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
+                time.sleep(1.5)
+        except:
+            pass
+
+        try:
+            admin_10_3.admin_10_3_4_delete(self, "", "", "")
+        except:
+            pass
+        var_stx.driver.refresh()
+        time.sleep(7)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
+        time.sleep(2.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.group_name_input).send_keys(
+            var_stx.data['admin']['group_name_add_new'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.display_group_name_input).send_keys(
+            var_stx.data['admin']['display_group_name_add_new'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.Save).click()
+        time.sleep(1.5)
+        module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                  "BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội",
+                                                  var_stx.toast_message, "Lưu thông tin thành công.",
+                                                  "_QuanTriNhomDoi_ThemMoi.png")
+        time.sleep(2)
+    def admin_10_3_4_update(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_4)
+        except:
+            admin_10_3.admin_10_3_4(self, "", "", "")
+        var_stx.driver.refresh()
+        time.sleep(5)
+        var_stx.driver.find_element(By.XPATH, var_stx.group_name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.group_name).send_keys(
+            var_stx.data['admin']['group_name_add_new'])
+        time.sleep(3)
+        name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
+        if name == var_stx.data['admin']['group_name_add_new']:
+            var_stx.driver.find_element(By.XPATH, var_stx.hrefDataTables_Table_1_2).click()
+            time.sleep(2.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.group_name_input).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.group_name_input).send_keys(var_stx.data['admin']['group_name_add_new_edit'])
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.Save).click()
+            time.sleep(1.5)
+            module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.5 Quản trị tên xe",
+                                                      var_stx.toast_message, "Lưu thông tin thành công.", "_QuanTriNhomDoi_CapNhat.png")
+            time.sleep(2)
+
+
+    def admin_10_3_4_delete(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_4)
+        except:
+            admin_10_3.admin_10_3_4(self, "", "", "")
+
+        var_stx.driver.find_element(By.XPATH, var_stx.group_name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.group_name).send_keys(
+            var_stx.data['admin']['group_name_add_new_edit'])
+        time.sleep(3)
+        name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
+        if name == var_stx.data['admin']['group_name_add_new_edit']:
+            var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button).click()
+            time.sleep(2.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
+            time.sleep(1.5)
+            module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                      "BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị nhóm đội",
+                                                      var_stx.toast_message, "Xóa nhóm thành công.",
+                                                      "_QuanTriNhomDoi_Xoa.png")
+            var_stx.driver.find_element(By.XPATH, var_stx.group_name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(2)
     def admin_10_3_5(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])

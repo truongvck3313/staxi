@@ -12,7 +12,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
-
+#1
 
 #
 # chrome_options = webdriver.ChromeOptions()
@@ -1202,6 +1202,11 @@ admin = "//*[@class='nav side-menu']//*[text()='QUẢN TRỊ']"
 admin_10_3 = "//*[text()='10.3 Quản trị công ty']"
 admin_10_3_1 = "//*[text()='10.3.1 Thông tin công ty ']"
 check_admin_10_3_1 = "//*[@class='breadcrumb']//*[text()='10.3.1 Thông tin công ty ']"
+admin_10_3_4 = "//*[text()='10.3.4 Quản trị nhóm đội']"
+check_admin_10_3_4 = "//*[@class='breadcrumb']//*[text()='10.3.4 Quản trị nhóm đội']"
+group_name = "//*[@placeholder='Tên nhóm, Tên hiển thị']"
+group_name_input = "//*[@name='GroupName']"
+display_group_name_input = "//*[@name='DisplayName']"
 info_company_name = "//*[@id='CompanyName']"
 info_company_name_app = "//*[@id='DisplayName']"
 info_company_adress = "//*[@id='Address']"
@@ -1306,6 +1311,7 @@ datatable1_2 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]"
 datatable1_2_a = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a"
 datatable1_3 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[3]"
 datatable1_3_button = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[3]/a/i"
+datatable1_7_button = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[7]/a/i"
 datatable1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
 datatable1_5 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[5]"
 datatable1_6 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[6]"
@@ -1320,6 +1326,7 @@ datatable1_12_a = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[12]/a"
 datatable1_13_i = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[13]/a/i"
 datatable1_14_i = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[14]/a/i"
 datatable2_2 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[2]"
+datatable2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
 name_account = "//*[@placeholder='Tên tài khoản']"
 create_user_full_name = "//*[@name='Fullname']"
 create_user_account = "//*[@id='adminUserEdit']//*[@placeholder='Tên tài khoản']"
@@ -2251,10 +2258,12 @@ DisplayName1 = "(//div[@col-id='DisplayName'])[2]"
 DisplayName1_a = "(//div[@col-id='DisplayName'])[2]/span/a"
 totalcard = "//*[@id='TotalCard']"
 IncreaseValue = "(//button[@aria-label='Increase value'])[1]"
-
-
-
-
+DataTables_Table_2_2 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[2]"
+DataTables_Table_1_2 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]"
+DataTables_Table_2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
+DataTables_Table_1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
+Save = "//*[@class='btn btn-primary']"
+hrefDataTables_Table_1_2="//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a[1]"
 
 
 

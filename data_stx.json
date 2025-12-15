@@ -15,7 +15,8 @@
     "company": "https://app.staxi.vn/",
     "taxi123": "https://taxi123bak.staxi.vn/",
     "envang": "https://envanghpbak.staxi.vn/",
-    "spxshe_mk": "12341234"
+    "spxshe_mk": "12341234",
+    "spxshe_mk1": "12341234"
   },
   "minitor": {
     "vehicle_online_search1": "0945912674",
@@ -145,7 +146,10 @@
     "add_surcharge_from": "30.000",
     "add_surcharge_to": "70.000",
     "add_surcharge_surcharge": "20",
-    "add_wearther_surcharge": "30"
+    "add_wearther_surcharge": "30",
+	"group_name_add_new": "Tên nhóm testauto",
+	"display_group_name_add_new": "Tên nhóm đội hiển thị Auto test",
+	"group_name_add_new_edit": "Tên nhóm testauto 123"
   }
 }
 

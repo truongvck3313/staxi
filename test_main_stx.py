@@ -34,13 +34,11 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        # đã sửa lại lỗi chết luồng do khai báo driver
         #test đẩy
         #test đẩy lần 2
+        #test đẩy => ok đa nhận
 
 
-
-#
         # caseid_stx.caseid_login01(self)
         # caseid_stx.caseid_login02(self)
         # caseid_stx.caseid_login03(self)

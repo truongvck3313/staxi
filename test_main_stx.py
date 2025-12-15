@@ -26,15 +26,15 @@ import customer_stx
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        # module_other_stx.clear_log()
-        # module_other_stx.delete_image()
-        # module_other_stx.timerun()
-        # module_stx.ModuleTest()
-        # module_stx.retest_casenone(self)
-        # module_stx.retest_casefail(self)
-        # module_other_stx.send_viber()
-        #đã sửa lại lỗi chết luồng do khai báo driver
+        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        module_other_stx.clear_log()
+        module_other_stx.delete_image()
+        module_other_stx.timerun()
+        module_stx.ModuleTest()
+        module_stx.retest_casenone(self)
+        module_stx.retest_casefail(self)
+        module_other_stx.send_viber()
+
 
 
 
@@ -598,9 +598,9 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin08_1(self)
         # caseid_stx.caseid_admin08_2(self)
         # caseid_stx.caseid_admin08_3(self)
-        caseid_stx.caseid_admin08_4(self)
-        caseid_stx.caseid_admin08_5(self)
-        caseid_stx.caseid_admin08_6(self)
+        # caseid_stx.caseid_admin08_4(self)
+        # caseid_stx.caseid_admin08_5(self)
+        # caseid_stx.caseid_admin08_6(self)
         # caseid_stx.caseid_admin08_4(self)
         # caseid_stx.caseid_admin09(self)
         # caseid_stx.caseid_admin10(self)

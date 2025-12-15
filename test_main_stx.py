@@ -36,6 +36,7 @@ class Test(unittest.TestCase):
         module_other_stx.send_viber()
         # đã sửa lại lỗi chết luồng do khai báo driver
         #test đẩy
+        #test đẩy lần 2
 
 
 

@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 wait = WebDriverWait(var_stx.driver, 10)
 from selenium.webdriver.common.action_chains import ActionChains
 from seleniumwire import webdriver
-
+#1
 
 
 

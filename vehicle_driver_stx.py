@@ -13,7 +13,7 @@ import os
 import random
 from selenium.webdriver.common.keys import Keys
 wait = WebDriverWait(var_stx.driver, 10)
-
+#1
 
 def check_account(name_check):
     var_stx.driver.implicitly_wait(1)

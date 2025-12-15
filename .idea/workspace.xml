@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11efc031-d22c-4de4-89e8-08690443e18f" name="Changes" comment="đã sửa lại lỗi chết luồng do khai báo driver">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="11efc031-d22c-4de4-89e8-08690443e18f" name="Changes" comment="đã sửa lại lỗi chết luồng do khai báo driver" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -469,7 +467,7 @@
       <workItem from="1765415252542" duration="1998000" />
       <workItem from="1765446259958" duration="6969000" />
       <workItem from="1765538874052" duration="380000" />
-      <workItem from="1765760836458" duration="650000" />
+      <workItem from="1765760836458" duration="971000" />
     </task>
     <task id="LOCAL-00086" summary="[BAEX[BAEX-17199] - [BAEX-18437]:truong testing">
       <created>1760523302531</created>

@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e87255-f38b-4cd7-a679-64d93fc53325" name="Changes" comment="a">
-      <change beforePath="$PROJECT_DIR$/accounting.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administration.py" beforeDir="false" afterPath="$PROJECT_DIR$/administration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseid_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/caseid_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_stx.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_stx.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver_wallet_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/driver_wallet_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minitor_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/minitor_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_other_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_other_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotion_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/promotion_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/report_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/var_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle_driver_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_driver_stx.py" afterDir="false" />
+    <list default="true" id="d35f6faf-3686-419e-9cb6-b84c2fd41434" name="Changes" comment="test đẩy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staxi.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_tra_sau.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_tra_truoc.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +18,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="36rTpRg5VsIAXvCmrou5MjEArJ2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="a">
       <created>1765762879430</created>
@@ -43,8 +44,34 @@
       <option name="project" value="LOCAL" />
       <updated>1765762879430</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d35f6faf-3686-419e-9cb6-b84c2fd41434" name="Changes" comment="1" />
+      <created>1765764584723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765764584723</updated>
+      <workItem from="1765764586867" duration="113000" />
+      <workItem from="1765764712359" duration="1176000" />
+    </task>
+    <task id="LOCAL-00002" summary="test đẩy">
+      <created>1765764862136</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765764862136</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test đẩy">
+      <created>1765766499843</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765766499843</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -59,6 +86,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="1" />
+    <MESSAGE value="test đẩy" />
+    <option name="LAST_COMMIT_MESSAGE" value="test đẩy" />
   </component>
 </project>

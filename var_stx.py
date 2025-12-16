@@ -148,8 +148,7 @@ def restart_driver():
     except:
         pass
     driver = webdriver.Chrome(options=options,
-                              desired_capabilities=capa,
-                              executable_path="./file/chromedriver.exe")
+                              desired_capabilities=caps)
     logging.info("Đã mở lại chrome")
 
 

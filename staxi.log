@@ -329,3 +329,556 @@ mất kết nối
 2025-12-15 Monday 11:41:58 urllib3.connectionpool:WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B0B5EC0280>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/09f6a0466cd741278b39e5b1a2f7dae5
 2025-12-15 Monday 11:42:00 urllib3.connectionpool:WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B0B5EC04C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/09f6a0466cd741278b39e5b1a2f7dae5
 2025-12-15 Monday 11:42:02 urllib3.connectionpool:WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B0B5EC0640>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/09f6a0466cd741278b39e5b1a2f7dae5
+2025-12-16 Tuesday 09:39:50 WDM:INFO:====== WebDriver manager ======
+2025-12-16 Tuesday 09:39:51 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 09:39:52 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 09:39:52 WDM:INFO:There is no [win64] chromedriver "143.0.7499.42" for browser google-chrome "143.0.7499" in cache
+2025-12-16 Tuesday 09:39:52 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 09:39:52 WDM:INFO:WebDriver version 143.0.7499.42 selected
+2025-12-16 Tuesday 09:39:52 WDM:INFO:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.42/win32/chromedriver-win32.zip
+2025-12-16 Tuesday 09:39:52 WDM:INFO:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.42/win32/chromedriver-win32.zip
+2025-12-16 Tuesday 09:39:54 WDM:INFO:Driver downloading response is 200
+2025-12-16 Tuesday 09:39:56 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 09:39:57 WDM:INFO:Driver has been saved in cache [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.42]
+2025-12-16 Tuesday 09:39:57 seleniumwire.storage:INFO:Using default request storage
+2025-12-16 Tuesday 09:39:57 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:57539
+2025-12-16 Tuesday 09:40:07 seleniumwire.handler:INFO:Capturing request: http://clients2.google.com/time/1/current?cup2key=9:x9q5o-IIrgFexFARrccW_LMZzH_97F_JzXDgMUXvLnk&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2025-12-16 Tuesday 09:40:07 seleniumwire.handler:INFO:Capturing response: http://clients2.google.com/time/1/current?cup2key=9:x9q5o-IIrgFexFARrccW_LMZzH_97F_JzXDgMUXvLnk&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 200 OK
+2025-12-16 Tuesday 09:40:08 seleniumwire.handler:INFO:Capturing request: https://update.googleapis.com/service/update2/json
+2025-12-16 Tuesday 09:40:09 seleniumwire.handler:INFO:Capturing request: https://update.googleapis.com/service/update2/json
+2025-12-16 Tuesday 09:40:09 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_promos
+2025-12-16 Tuesday 09:40:09 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_promos 200 
+2025-12-16 Tuesday 09:40:09 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0
+2025-12-16 Tuesday 09:40:09 seleniumwire.handler:INFO:Capturing request: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing response: https://update.googleapis.com/service/update2/json 200 
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing response: https://update.googleapis.com/service/update2/json 200 
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing response: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0 200 
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing request: https://www.googleapis.com/chromewebstore/v1.1/items/verify
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing response: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin 200 
+2025-12-16 Tuesday 09:40:10 seleniumwire.handler:INFO:Capturing response: https://www.googleapis.com/chromewebstore/v1.1/items/verify 200 
+2025-12-16 Tuesday 09:40:11 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/folae?async=_fmt:pb
+2025-12-16 Tuesday 09:40:11 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/folae?async=_fmt:pb 200 
+2025-12-16 Tuesday 09:40:13 seleniumwire.handler:INFO:Capturing request: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+2025-12-16 Tuesday 09:40:13 seleniumwire.handler:INFO:Capturing response: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData 200 
+2025-12-16 Tuesday 09:40:13 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-16 Tuesday 09:40:14 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-16 Tuesday 09:40:15 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-16 Tuesday 09:40:15 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-16 Tuesday 09:40:17 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 09:40:17 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 09:40:20 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/
+2025-12-16 Tuesday 09:40:20 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/ 200 
+2025-12-16 Tuesday 09:40:20 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 09:40:20 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto 200 
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 429 
+2025-12-16 Tuesday 09:40:21 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js
+2025-12-16 Tuesday 09:40:22 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js 200 
+2025-12-16 Tuesday 09:40:28 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 09:40:31 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 09:40:31 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/?r=997959100
+2025-12-16 Tuesday 09:40:32 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 09:40:32 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/?r=997959100 302 
+2025-12-16 Tuesday 09:40:32 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 09:40:32 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 09:40:33 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/Welcome?r=30644822
+2025-12-16 Tuesday 09:40:33 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 09:40:34 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/Welcome?r=30644822 200 
+2025-12-16 Tuesday 09:40:36 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 09:40:36 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 09:40:36 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 09:40:36 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 09:40:37 seleniumwire.handler:INFO:Capturing request: https://www.googleapis.com/affiliation/v1/affiliation:lookupByHashPrefix?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 09:40:37 seleniumwire.handler:INFO:Capturing response: https://www.googleapis.com/affiliation/v1/affiliation:lookupByHashPrefix?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 09:40:39 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231
+2025-12-16 Tuesday 09:40:39 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231 304 
+2025-12-16 Tuesday 09:40:47 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231
+2025-12-16 Tuesday 09:40:47 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231 304 
+2025-12-16 Tuesday 09:40:47 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231
+2025-12-16 Tuesday 09:40:47 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231 304 
+2025-12-16 Tuesday 09:40:49 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js 304 
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=714252817
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetServiceStatus
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=714252817 200 
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto 200 
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetServiceStatus 200 
+2025-12-16 Tuesday 09:40:50 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
+2025-12-16 Tuesday 09:40:51 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 09:40:51 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 09:40:51 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852850020&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ss=1&_ee=1&tfd=19327
+2025-12-16 Tuesday 09:40:51 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852850020&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ss=1&_ee=1&tfd=19327 204 
+2025-12-16 Tuesday 09:40:56 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852850020&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=24348
+2025-12-16 Tuesday 09:40:56 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852850020&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=24348 204 
+2025-12-16 Tuesday 09:40:58 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 09:40:58 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/GeneralReport?41353866
+2025-12-16 Tuesday 09:40:58 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 09:40:58 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/GeneralReport?41353866 200 
+2025-12-16 Tuesday 09:40:59 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852850020&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=5292&tfd=27951
+2025-12-16 Tuesday 09:41:00 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231
+2025-12-16 Tuesday 09:41:00 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852850020&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=5292&tfd=27951 204 
+2025-12-16 Tuesday 09:41:00 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231 200 
+2025-12-16 Tuesday 09:41:00 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231
+2025-12-16 Tuesday 09:41:01 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231 200 
+2025-12-16 Tuesday 09:41:01 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231
+2025-12-16 Tuesday 09:41:06 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231 200 
+2025-12-16 Tuesday 09:41:06 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js
+2025-12-16 Tuesday 09:41:06 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js 200 
+2025-12-16 Tuesday 09:41:07 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 09:41:07 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=8527
+2025-12-16 Tuesday 09:41:07 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 09:41:07 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 09:41:08 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=8527 204 
+2025-12-16 Tuesday 09:41:08 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 09:41:08 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 09:41:08 seleniumwire.handler:INFO:Capturing request: https://update.googleapis.com/service/update2/json?cup2key=15:PlGuT6ekJT7UqIBY4k7At1MS0PuayzFTOKDfImtDtEA&cup2hreq=52cb51dbb5adf9c9bf8bffd010d6003aeb967b96602def8f42a11232cee7af8f
+2025-12-16 Tuesday 09:41:08 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://update.googleapis.com/service/update2/json?cup2key=15:PlGuT6ekJT7UqIBY4k7At1MS0PuayzFTOKDfImtDtEA&cup2hreq=52cb51dbb5adf9c9bf8bffd010d6003aeb967b96602def8f42a11232cee7af8f 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=118644632&v=35
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASggEJdurGSVxs4mwSBQ2rJJ0NEgUNdPAwYhIFDZtsgqoSBQ0Z-M4WEgUNXAjMaRIFDYzp09oSBQ3AtwjGEgUN09d0_hIFDdswGeUSBQ0J4eGIEgUNRTApJxIFDdknTKESBQ3Yra54EgUN6Ud5qBIFDaT0A0sSBQ2CEUjwITgE3-47ELtHEmYJZesFov1-lnQSBQ3e5AujEgUNWfpaGRIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNXfkt5BIFDUdZ0KIh6OdYEC1GImMYt6nKAQ==?alt=proto
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=118644632&v=35 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASggEJdurGSVxs4mwSBQ2rJJ0NEgUNdPAwYhIFDZtsgqoSBQ0Z-M4WEgUNXAjMaRIFDYzp09oSBQ3AtwjGEgUN09d0_hIFDdswGeUSBQ0J4eGIEgUNRTApJxIFDdknTKESBQ3Yra54EgUN6Ud5qBIFDaT0A0sSBQ2CEUjwITgE3-47ELtHEmYJZesFov1-lnQSBQ3e5AujEgUNWfpaGRIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNXfkt5BIFDUdZ0KIh6OdYEC1GImMYt6nKAQ==?alt=proto 200 
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASZgll6wWi_X6WdBIFDd7kC6MSBQ1Z-loZEgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ1d-S3kEgUNR1nQoiHo51gQLUYiYxi3qcoB?alt=proto
+2025-12-16 Tuesday 09:41:09 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASZgll6wWi_X6WdBIFDd7kC6MSBQ1Z-loZEgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ1d-S3kEgUNR1nQoiHo51gQLUYiYxi3qcoB?alt=proto 200 
+2025-12-16 Tuesday 09:41:11 root:INFO:-------------------------
+2025-12-16 Tuesday 09:41:11 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 09:41:11 root:INFO:Mã - 
+2025-12-16 Tuesday 09:41:11 root:INFO:Tên sự kiện - 
+2025-12-16 Tuesday 09:41:11 root:INFO:Kết quả - 
+2025-12-16 Tuesday 09:41:11 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 09:41:11 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 09:41:11 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 09:41:11 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 09:41:12 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=13531
+2025-12-16 Tuesday 09:41:12 root:INFO:True
+2025-12-16 Tuesday 09:41:12 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=13531 204 
+2025-12-16 Tuesday 09:41:14 seleniumwire.handler:INFO:Capturing request: https://beacons.gcp.gvt2.com/domainreliability/upload
+2025-12-16 Tuesday 09:41:14 seleniumwire.handler:INFO:Capturing response: https://beacons.gcp.gvt2.com/domainreliability/upload 200 
+2025-12-16 Tuesday 09:41:15 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 09:41:15 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 09:41:18 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 09:41:18 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 09:41:20 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 09:41:20 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 09:41:24 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&epn.form_length=24&ep.first_field_id=Source&ep.first_field_name=Source&ep.first_field_type=&epn.first_field_position=7&_et=6333&tfd=25969
+2025-12-16 Tuesday 09:41:24 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&epn.form_length=24&ep.first_field_id=Source&ep.first_field_name=Source&ep.first_field_type=&epn.first_field_position=7&_et=6333&tfd=25969 204 
+2025-12-16 Tuesday 09:41:29 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/GeneralReport?41353866
+2025-12-16 Tuesday 09:41:29 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/GeneralReport?41353866 200 
+2025-12-16 Tuesday 09:41:29 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=4&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=10519&tfd=31477
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852866866&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=4&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=10519&tfd=31477 204 
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852890023&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=614
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852890023&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=614 204 
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231 200 
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231 200 
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231
+2025-12-16 Tuesday 09:41:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231 200 
+2025-12-16 Tuesday 09:41:31 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 09:41:31 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1450246407&v=59
+2025-12-16 Tuesday 09:41:31 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 09:41:31 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 09:41:31 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 09:41:31 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1450246407&v=59 200 
+2025-12-16 Tuesday 09:41:35 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852890023&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=11&tfd=5618
+2025-12-16 Tuesday 09:41:35 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852890023&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=11&tfd=5618 204 
+2025-12-16 Tuesday 09:41:42 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 09:41:42 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 09:41:50 root:INFO:-------------------------
+2025-12-16 Tuesday 09:41:50 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 09:41:50 root:INFO:Mã - 
+2025-12-16 Tuesday 09:41:50 root:INFO:Tên sự kiện - 
+2025-12-16 Tuesday 09:41:50 root:INFO:Kết quả - 
+2025-12-16 Tuesday 09:41:51 root:INFO:False
+2025-12-16 Tuesday 09:42:01 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 09:42:01 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 09:42:11 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/GeneralReport?41353866
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/GeneralReport?41353866 200 
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852890023&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=41972&tfd=42591
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852890023&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=41972&tfd=42591 204 
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852932198&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116251938~116251940~116682875&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=1117
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852932198&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116251938~116251940~116682875&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=1117 204 
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231
+2025-12-16 Tuesday 09:42:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231 200 
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231 200 
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231 200 
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=359984229&v=0
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=359984229&v=0 200 
+2025-12-16 Tuesday 09:42:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 09:42:17 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852932198&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116251938~116251940~116682875&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=6142
+2025-12-16 Tuesday 09:42:17 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765852932198&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116251938~116251940~116682875&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F41353866&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D30644822&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=6142 204 
+2025-12-16 Tuesday 09:42:17 seleniumwire.handler:INFO:Capturing request: https://beacons.gcp.gvt2.com/domainreliability/upload
+2025-12-16 Tuesday 09:42:18 seleniumwire.handler:INFO:Capturing response: https://beacons.gcp.gvt2.com/domainreliability/upload 200 
+2025-12-16 Tuesday 09:42:23 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 09:42:24 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 09:42:31 root:INFO:-------------------------
+2025-12-16 Tuesday 09:42:31 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 09:42:31 root:INFO:Mã - 
+2025-12-16 Tuesday 09:42:31 root:INFO:Tên sự kiện - 
+2025-12-16 Tuesday 09:42:31 root:INFO:Kết quả - 
+2025-12-16 Tuesday 09:42:33 root:INFO:False
+2025-12-16 Tuesday 09:42:35 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/ExportGeneralReport?r=0.2054380206347345&onlyGrid=true
+2025-12-16 Tuesday 09:42:35 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/ExportGeneralReport?r=0.2054380206347345&onlyGrid=true 200 
+2025-12-16 Tuesday 09:42:36 seleniumwire.handler:INFO:Capturing request: https://sb-ssl.google.com/safebrowsing/clientreport/download?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 09:42:36 seleniumwire.handler:INFO:Capturing response: https://sb-ssl.google.com/safebrowsing/clientreport/download?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 09:43:03 root:INFO:-------------------------
+2025-12-16 Tuesday 09:43:03 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 09:43:03 root:INFO:Mã - Report03
+2025-12-16 Tuesday 09:43:03 root:INFO:Tên sự kiện - Xuất excel
+2025-12-16 Tuesday 09:43:03 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-16 Tuesday 10:09:27 WDM:INFO:====== WebDriver manager ======
+2025-12-16 Tuesday 10:09:28 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 10:09:28 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 10:09:28 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.42\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-16 Tuesday 10:09:28 seleniumwire.storage:INFO:Using default request storage
+2025-12-16 Tuesday 10:09:28 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:62394
+2025-12-16 Tuesday 10:10:27 WDM:INFO:====== WebDriver manager ======
+2025-12-16 Tuesday 10:10:27 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 10:10:28 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-16 Tuesday 10:10:28 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.42\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-16 Tuesday 10:10:28 seleniumwire.storage:INFO:Using default request storage
+2025-12-16 Tuesday 10:10:28 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:62941
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/folae?async=_fmt:pb
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/ddljson?async=ntp:2
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing request: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing response: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/folae?async=_fmt:pb 200 
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing response: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin 200 
+2025-12-16 Tuesday 10:10:29 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_promos
+2025-12-16 Tuesday 10:10:30 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_promos 200 
+2025-12-16 Tuesday 10:10:30 seleniumwire.server:INFO:127.0.0.1:53166: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1765854629.9682226, False')")
+2025-12-16 Tuesday 10:10:30 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0 200 
+2025-12-16 Tuesday 10:10:31 seleniumwire.handler:INFO:Capturing request: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+2025-12-16 Tuesday 10:10:31 seleniumwire.handler:INFO:Capturing response: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData 503 
+2025-12-16 Tuesday 10:10:31 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-16 Tuesday 10:10:31 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-16 Tuesday 10:10:31 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 429 
+2025-12-16 Tuesday 10:10:31 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-16 Tuesday 10:10:38 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/
+2025-12-16 Tuesday 10:10:38 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 10:10:38 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/ 200 
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto 200 
+2025-12-16 Tuesday 10:10:39 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
+2025-12-16 Tuesday 10:10:40 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js
+2025-12-16 Tuesday 10:10:41 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js 200 
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/?r=66267010
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/?r=66267010 302 
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/Welcome?r=37577954
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/Welcome?r=37577954 200 
+2025-12-16 Tuesday 10:10:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231
+2025-12-16 Tuesday 10:10:51 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231 200 
+2025-12-16 Tuesday 10:10:51 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231
+2025-12-16 Tuesday 10:10:51 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 10:10:51 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 10:10:51 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 10:10:51 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 10:10:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231 200 
+2025-12-16 Tuesday 10:10:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231
+2025-12-16 Tuesday 10:10:57 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231 200 
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js 200 
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1841155542
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetServiceStatus
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto 200 
+2025-12-16 Tuesday 10:10:58 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1841155542 200 
+2025-12-16 Tuesday 10:10:59 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
+2025-12-16 Tuesday 10:10:59 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetServiceStatus 200 
+2025-12-16 Tuesday 10:10:59 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
+2025-12-16 Tuesday 10:10:59 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 10:10:59 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 10:11:00 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854658541&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ee=1&tfd=9740
+2025-12-16 Tuesday 10:11:00 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854658541&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ee=1&tfd=9740 204 
+2025-12-16 Tuesday 10:11:04 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854658541&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=14755
+2025-12-16 Tuesday 10:11:04 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854658541&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=14755 204 
+2025-12-16 Tuesday 10:11:06 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/GeneralReport?48966819
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/GeneralReport?48966819 200 
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854658541&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=4510&tfd=17317
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854658541&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877~116744867&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=4510&tfd=17317 204 
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=668
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=668 204 
+2025-12-16 Tuesday 10:11:07 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231 200 
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231 200 
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231 200 
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=149726651&v=14
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASggEJdurGSVxs4mwSBQ2rJJ0NEgUNdPAwYhIFDZtsgqoSBQ0Z-M4WEgUNXAjMaRIFDYzp09oSBQ3AtwjGEgUN09d0_hIFDdswGeUSBQ0J4eGIEgUNRTApJxIFDdknTKESBQ3Yra54EgUN6Ud5qBIFDaT0A0sSBQ2CEUjwITgE3-47ELtHEmYJZesFov1-lnQSBQ3e5AujEgUNWfpaGRIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNXfkt5BIFDUdZ0KIh6OdYEC1GImMYt6nKAQ==?alt=proto
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=149726651&v=14 200 
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASggEJdurGSVxs4mwSBQ2rJJ0NEgUNdPAwYhIFDZtsgqoSBQ0Z-M4WEgUNXAjMaRIFDYzp09oSBQ3AtwjGEgUN09d0_hIFDdswGeUSBQ0J4eGIEgUNRTApJxIFDdknTKESBQ3Yra54EgUN6Ud5qBIFDaT0A0sSBQ2CEUjwITgE3-47ELtHEmYJZesFov1-lnQSBQ3e5AujEgUNWfpaGRIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNXfkt5BIFDUdZ0KIh6OdYEC1GImMYt6nKAQ==?alt=proto 200 
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 10:11:08 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 10:11:09 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASZgll6wWi_X6WdBIFDd7kC6MSBQ1Z-loZEgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ1d-S3kEgUNR1nQoiHo51gQLUYiYxi3qcoB?alt=proto
+2025-12-16 Tuesday 10:11:09 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASZgll6wWi_X6WdBIFDd7kC6MSBQ1Z-loZEgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ2UkJL6EgUNlJCS-hIFDZSQkvoSBQ1d-S3kEgUNR1nQoiHo51gQLUYiYxi3qcoB?alt=proto 200 
+2025-12-16 Tuesday 10:11:10 root:INFO:-------------------------
+2025-12-16 Tuesday 10:11:10 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 10:11:10 root:INFO:Mã - 
+2025-12-16 Tuesday 10:11:10 root:INFO:Tên sự kiện - 
+2025-12-16 Tuesday 10:11:10 root:INFO:Kết quả - 
+2025-12-16 Tuesday 10:11:10 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 10:11:10 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 10:11:11 root:INFO:True
+2025-12-16 Tuesday 10:11:12 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=5673
+2025-12-16 Tuesday 10:11:12 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=5673 204 
+2025-12-16 Tuesday 10:11:19 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 10:11:19 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 10:11:23 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&epn.form_length=24&ep.first_field_id=Source&ep.first_field_name=Source&ep.first_field_type=&epn.first_field_position=7&_et=6423&tfd=16855
+2025-12-16 Tuesday 10:11:24 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&epn.form_length=24&ep.first_field_id=Source&ep.first_field_name=Source&ep.first_field_type=&epn.first_field_position=7&_et=6423&tfd=16855 204 
+2025-12-16 Tuesday 10:11:28 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/GeneralReport?48966819
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/GeneralReport?48966819 200 
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=4&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=9129&tfd=22419
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://update.googleapis.com/service/update2/json?cup2key=15:cqI_vu4NA4I-lnLFqNJrvqIzxLkLbvuZzkxJs4vulik&cup2hreq=7e1a83448619f7e6b89f1b64eb58e8e5ac81e988ac686fff8519588835a8d70e
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854667493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=4&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=9129&tfd=22419 204 
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854689460&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=681
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854689460&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=681 204 
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing response: https://update.googleapis.com/service/update2/json?cup2key=15:cqI_vu4NA4I-lnLFqNJrvqIzxLkLbvuZzkxJs4vulik&cup2hreq=7e1a83448619f7e6b89f1b64eb58e8e5ac81e988ac686fff8519588835a8d70e 200 
+2025-12-16 Tuesday 10:11:29 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://beacons.gcp.gvt2.com/domainreliability/upload
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1762631552&v=28
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://beacons.gcp.gvt2.com/domainreliability/upload 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 10:11:30 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1762631552&v=28 200 
+2025-12-16 Tuesday 10:11:32 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 10:11:33 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 10:11:34 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854689460&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=8&tfd=5696
+2025-12-16 Tuesday 10:11:34 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854689460&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=8&tfd=5696 204 
+2025-12-16 Tuesday 10:11:35 seleniumwire.handler:INFO:Capturing request: https://beacons.gcp.gvt2.com/domainreliability/upload
+2025-12-16 Tuesday 10:11:35 seleniumwire.handler:INFO:Capturing response: https://beacons.gcp.gvt2.com/domainreliability/upload 200 
+2025-12-16 Tuesday 10:11:36 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 10:11:36 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 10:11:39 seleniumwire.handler:INFO:Capturing request: https://clientservices.googleapis.com/uma/v2
+2025-12-16 Tuesday 10:11:39 seleniumwire.handler:INFO:Capturing response: https://clientservices.googleapis.com/uma/v2 200 
+2025-12-16 Tuesday 10:11:41 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 10:11:41 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 10:11:49 root:INFO:-------------------------
+2025-12-16 Tuesday 10:11:49 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 10:11:49 root:INFO:Mã - 
+2025-12-16 Tuesday 10:11:49 root:INFO:Tên sự kiện - 
+2025-12-16 Tuesday 10:11:49 root:INFO:Kết quả - 
+2025-12-16 Tuesday 10:11:50 root:INFO:False
+2025-12-16 Tuesday 10:12:00 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 10:12:00 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 10:12:10 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/GeneralReport?48966819
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/GeneralReport?48966819 200 
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854689460&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=41654&tfd=42340
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854689460&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=user_engagement&_et=41654&tfd=42340 204 
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854731315&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=645
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854731315&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=page_view&_ee=1&tfd=645 204 
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-16 Tuesday 10:12:11 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.css?v=20251231 200 
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/core.js?v=20251231 200 
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/Report/GeneralReport/index.js?v=20251231 200 
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1936928418&v=85
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1936928418&v=85 200 
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-16 Tuesday 10:12:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-16 Tuesday 10:12:16 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854731315&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=5661
+2025-12-16 Tuesday 10:12:16 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765854731315&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116744866&sid=1765852850&sct=2&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FReport%2FGeneralReport%3F48966819&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D37577954&dt=B%C3%A1o%20c%C3%A1o%20cu%E1%BB%91c%20kh%C3%A1ch%20t%E1%BB%95ng%20-%20STAXI&en=scroll&epn.percent_scrolled=90&_et=7&tfd=5661 204 
+2025-12-16 Tuesday 10:12:23 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/FetchDataGeneralReport
+2025-12-16 Tuesday 10:12:23 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/FetchDataGeneralReport 200 
+2025-12-16 Tuesday 10:12:31 root:INFO:-------------------------
+2025-12-16 Tuesday 10:12:31 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 10:12:31 root:INFO:Mã - 
+2025-12-16 Tuesday 10:12:31 root:INFO:Tên sự kiện - 
+2025-12-16 Tuesday 10:12:31 root:INFO:Kết quả - 
+2025-12-16 Tuesday 10:12:33 root:INFO:False
+2025-12-16 Tuesday 10:12:35 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Report/ExportGeneralReport?r=0.29473442673169004&onlyGrid=true
+2025-12-16 Tuesday 10:12:35 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Report/ExportGeneralReport?r=0.29473442673169004&onlyGrid=true 200 
+2025-12-16 Tuesday 10:12:35 seleniumwire.handler:INFO:Capturing request: https://beacons.gcp.gvt2.com/domainreliability/upload
+2025-12-16 Tuesday 10:12:35 seleniumwire.handler:INFO:Capturing response: https://beacons.gcp.gvt2.com/domainreliability/upload 200 
+2025-12-16 Tuesday 10:12:35 seleniumwire.handler:INFO:Capturing request: https://sb-ssl.google.com/safebrowsing/clientreport/download?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-16 Tuesday 10:12:36 seleniumwire.handler:INFO:Capturing response: https://sb-ssl.google.com/safebrowsing/clientreport/download?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-16 Tuesday 10:13:04 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:04 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-16 Tuesday 10:13:04 root:INFO:Mã - Report03
+2025-12-16 Tuesday 10:13:04 root:INFO:Tên sự kiện - Xuất excel
+2025-12-16 Tuesday 10:13:04 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-16 Tuesday 10:13:04 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:04 root:INFO:Tên cột web:   Mã cuốc khách
+2025-12-16 Tuesday 10:13:04 root:INFO:Tên cột excel: Mã cuốc khách
+2025-12-16 Tuesday 10:13:04 root:INFO:True
+2025-12-16 Tuesday 10:13:05 root:INFO:Dữ liệu web:   00AEC0BC
+2025-12-16 Tuesday 10:13:05 root:INFO:Dữ liệu excel: 00AEC0BC
+2025-12-16 Tuesday 10:13:05 root:INFO:True
+2025-12-16 Tuesday 10:13:05 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:05 root:INFO:Tên cột web:   Nguồn
+2025-12-16 Tuesday 10:13:05 root:INFO:Tên cột excel: Nguồn
+2025-12-16 Tuesday 10:13:05 root:INFO:True
+2025-12-16 Tuesday 10:13:06 root:INFO:Dữ liệu web:   Nguồn mobile
+2025-12-16 Tuesday 10:13:06 root:INFO:Dữ liệu excel: Nguồn mobile
+2025-12-16 Tuesday 10:13:06 root:INFO:True
+2025-12-16 Tuesday 10:13:07 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:07 root:INFO:Tên cột web:   Loại cuốc
+2025-12-16 Tuesday 10:13:07 root:INFO:Tên cột excel: Loại cuốc
+2025-12-16 Tuesday 10:13:07 root:INFO:True
+2025-12-16 Tuesday 10:13:07 root:INFO:Dữ liệu web:   Taxi thông thường
+2025-12-16 Tuesday 10:13:07 root:INFO:Dữ liệu excel: Taxi thông thường
+2025-12-16 Tuesday 10:13:07 root:INFO:True
+2025-12-16 Tuesday 10:13:08 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:08 root:INFO:Tên cột web:   Thời gian đặt cuốc
+2025-12-16 Tuesday 10:13:08 root:INFO:Tên cột excel: Thời gian đặt cuốc
+2025-12-16 Tuesday 10:13:08 root:INFO:True
+2025-12-16 Tuesday 10:13:09 root:INFO:Dữ liệu web:   05/11/2025 11:03:40
+2025-12-16 Tuesday 10:13:09 root:INFO:Dữ liệu excel: 05/11/2025 11:03:40
+2025-12-16 Tuesday 10:13:09 root:INFO:True
+2025-12-16 Tuesday 10:13:10 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:10 root:INFO:Tên cột web:   Trạng thái
+2025-12-16 Tuesday 10:13:10 root:INFO:Tên cột excel: Trạng thái
+2025-12-16 Tuesday 10:13:10 root:INFO:True
+2025-12-16 Tuesday 10:13:11 root:INFO:Dữ liệu web:   Khách hủy
+2025-12-16 Tuesday 10:13:11 root:INFO:Dữ liệu excel: Khách hủy
+2025-12-16 Tuesday 10:13:11 root:INFO:True
+2025-12-16 Tuesday 10:13:11 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:11 root:INFO:Tên cột web:   Lái xe
+2025-12-16 Tuesday 10:13:11 root:INFO:Tên cột excel: Lái xe
+2025-12-16 Tuesday 10:13:11 root:INFO:True
+2025-12-16 Tuesday 10:13:12 root:INFO:Dữ liệu web:   Đinh Mạnh Cường 92
+2025-12-16 Tuesday 10:13:12 root:INFO:Dữ liệu excel: Đinh Mạnh Cường 92
+2025-12-16 Tuesday 10:13:12 root:INFO:True
+2025-12-16 Tuesday 10:13:13 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:13 root:INFO:Tên cột web:   Số hiệu
+2025-12-16 Tuesday 10:13:13 root:INFO:Tên cột excel: Số hiệu
+2025-12-16 Tuesday 10:13:13 root:INFO:True
+2025-12-16 Tuesday 10:13:13 root:INFO:Dữ liệu web:   09
+2025-12-16 Tuesday 10:13:13 root:INFO:Dữ liệu excel: 09
+2025-12-16 Tuesday 10:13:13 root:INFO:True
+2025-12-16 Tuesday 10:13:14 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:14 root:INFO:Tên cột web:   Biển số
+2025-12-16 Tuesday 10:13:14 root:INFO:Tên cột excel: Biển số xe
+2025-12-16 Tuesday 10:13:14 root:ERROR:False
+2025-12-16 Tuesday 10:13:15 root:ERROR:Dòng: H5
+2025-12-16 Tuesday 10:13:15 root:INFO:Dữ liệu web:   30A38981
+2025-12-16 Tuesday 10:13:15 root:INFO:Dữ liệu excel: 30A38981
+2025-12-16 Tuesday 10:13:15 root:INFO:True
+2025-12-16 Tuesday 10:13:16 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:16 root:INFO:Tên cột web:   Khách hàng
+2025-12-16 Tuesday 10:13:16 root:INFO:Tên cột excel: Khách hàng
+2025-12-16 Tuesday 10:13:16 root:INFO:True
+2025-12-16 Tuesday 10:13:16 root:INFO:Dữ liệu web:   Trần Quang Truờng
+2025-12-16 Tuesday 10:13:16 root:INFO:Dữ liệu excel: Trần Quang Truờng
+2025-12-16 Tuesday 10:13:16 root:INFO:True
+2025-12-16 Tuesday 10:13:17 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:17 root:INFO:Tên cột web:   Số điện thoại khách hàng
+2025-12-16 Tuesday 10:13:17 root:INFO:Tên cột excel: Số điện thoại khách hàng
+2025-12-16 Tuesday 10:13:17 root:INFO:True
+2025-12-16 Tuesday 10:13:18 root:INFO:Dữ liệu web:   0359667694
+2025-12-16 Tuesday 10:13:18 root:INFO:Dữ liệu excel: 0359667694
+2025-12-16 Tuesday 10:13:18 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:18 root:INFO:Tên cột web:   Cước phí (cước thật của cuốc)
+2025-12-16 Tuesday 10:13:18 root:INFO:Tên cột excel: Cước phí_x000D_
+(cước thật của cuốc)
+2025-12-16 Tuesday 10:13:18 root:ERROR:False
+2025-12-16 Tuesday 10:13:21 root:ERROR:Dòng: K5
+2025-12-16 Tuesday 10:13:21 root:INFO:Dữ liệu web:   None
+2025-12-16 Tuesday 10:13:21 root:INFO:Dữ liệu excel: None
+2025-12-16 Tuesday 10:13:21 root:INFO:True
+2025-12-16 Tuesday 10:13:22 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:22 root:INFO:Tên cột web:   Khuyến mại
+2025-12-16 Tuesday 10:13:22 root:INFO:Tên cột excel: Khuyến mại
+2025-12-16 Tuesday 10:13:22 root:INFO:True
+2025-12-16 Tuesday 10:13:23 root:INFO:Dữ liệu web:   0 ₫
+2025-12-16 Tuesday 10:13:23 root:INFO:Dữ liệu excel: 0
+2025-12-16 Tuesday 10:13:23 root:INFO:True
+2025-12-16 Tuesday 10:13:25 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:25 root:INFO:Tên cột web:   Cước xe (trừ của khách)
+2025-12-16 Tuesday 10:13:25 root:INFO:Tên cột excel: Cước xe_x000D_
+(trừ của khách)
+2025-12-16 Tuesday 10:13:25 root:ERROR:False
+2025-12-16 Tuesday 10:13:27 root:ERROR:Dòng: M5
+2025-12-16 Tuesday 10:13:27 root:INFO:Dữ liệu web:   0 ₫
+2025-12-16 Tuesday 10:13:27 root:INFO:Dữ liệu excel: 0
+2025-12-16 Tuesday 10:13:27 root:INFO:True
+2025-12-16 Tuesday 10:13:27 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:27 root:INFO:Tên cột web:   Thực thu GPS
+2025-12-16 Tuesday 10:13:27 root:INFO:Tên cột excel: Thực thu GPS
+2025-12-16 Tuesday 10:13:27 root:INFO:True
+2025-12-16 Tuesday 10:13:28 root:INFO:Dữ liệu web:   None
+2025-12-16 Tuesday 10:13:28 root:INFO:Dữ liệu excel: None
+2025-12-16 Tuesday 10:13:28 root:INFO:-------------------------
+2025-12-16 Tuesday 10:13:28 root:INFO:Tên cột web:   Địa chỉ đón
+2025-12-16 Tuesday 10:13:28 root:INFO:Tên cột excel: Địa chỉ đón
+2025-12-16 Tuesday 10:13:28 root:INFO:True
+2025-12-16 Tuesday 10:13:29 root:INFO:Dữ liệu web:   Bưu Điện Đại Kim P. Định Công, TP. Hà Nội
+2025-12-16 Tuesday 10:13:29 root:INFO:Dữ liệu excel: Bưu Điện Đại Kim P. Định Công, TP. Hà Nội
+2025-12-16 Tuesday 10:13:29 root:INFO:True

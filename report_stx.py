@@ -429,6 +429,30 @@ def get_info_web12():
         n = int(n)
 
 
+def get_info_web13():
+    var_stx.driver.implicitly_wait(0.05)
+    row = 119
+    n = 0
+    while (n < 50):
+        n += 1
+        n = str(n)
+        row += 1
+        path_column = f"(//span[contains(@class,'ag-header-cell-text')])[{n}]"
+        path_data = f"//div[@role='row' and @aria-rowindex='2']//div[@role='gridcell' and @aria-colindex='{n}']"
+        print(n)
+        try:
+            name_colum = var_stx.driver.find_element(By.XPATH, path_column).text
+            name_data = var_stx.driver.find_element(By.XPATH, path_data).text
+            print("ten cot web: " .format(name_colum))
+            print("data cot web:" .format(name_data))
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 1, name_colum)
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 2, name_data)
+        except:
+            pass
+        n = int(n)
+
+
+
 
 def get_info_web_percent(path_column, path_data, row, column):
     var_stx.driver.implicitly_wait(0.05)
@@ -765,11 +789,11 @@ class report_8_1:
             wait = WebDriverWait(var_stx.driver, 20)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
 
-            get_info_web7()
+            get_info_web13()
             dowload_excel(self, "8.1.0 Báo cáo cuốc khách tổng")
             minitor_stx.get_info_excel1(3, "Data")
         except:
-            get_info_web7()
+            get_info_web13()
             minitor_stx.get_info_excel1(5, "Sheet 1")
 
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng")

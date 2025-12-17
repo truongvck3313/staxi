@@ -882,3 +882,1686 @@ mất kết nối
 2025-12-16 Tuesday 10:13:29 root:INFO:Dữ liệu web:   Bưu Điện Đại Kim P. Định Công, TP. Hà Nội
 2025-12-16 Tuesday 10:13:29 root:INFO:Dữ liệu excel: Bưu Điện Đại Kim P. Định Công, TP. Hà Nội
 2025-12-16 Tuesday 10:13:29 root:INFO:True
+2025-12-17 Wednesday 08:31:59 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:32:00 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:32:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:32:42 WDM:INFO:There is no [win64] chromedriver "143.0.7499.146" for browser google-chrome "143.0.7499" in cache
+2025-12-17 Wednesday 08:32:42 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:33:24 WDM:INFO:WebDriver version 143.0.7499.146 selected
+2025-12-17 Wednesday 08:33:24 WDM:INFO:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.146/win32/chromedriver-win32.zip
+2025-12-17 Wednesday 08:33:24 WDM:INFO:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.146/win32/chromedriver-win32.zip
+2025-12-17 Wednesday 08:33:25 WDM:INFO:Driver downloading response is 200
+2025-12-17 Wednesday 08:33:25 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:33:48 WDM:INFO:Driver has been saved in cache [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146]
+2025-12-17 Wednesday 08:33:48 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 08:33:54 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:58690
+2025-12-17 Wednesday 08:33:58 seleniumwire.handler:INFO:Capturing request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin
+2025-12-17 Wednesday 08:33:58 seleniumwire.handler:INFO:Capturing response: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin 200 
+2025-12-17 Wednesday 08:33:58 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_promos
+2025-12-17 Wednesday 08:33:58 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/folae?async=_fmt:pb
+2025-12-17 Wednesday 08:33:58 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0
+2025-12-17 Wednesday 08:33:58 seleniumwire.handler:INFO:Capturing request: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:33:59 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/folae?async=_fmt:pb 200 
+2025-12-17 Wednesday 08:33:59 seleniumwire.handler:INFO:Capturing response: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:33:59 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_promos 200 
+2025-12-17 Wednesday 08:33:59 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0 200 
+2025-12-17 Wednesday 08:34:00 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA
+2025-12-17 Wednesday 08:34:00 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA 200 
+2025-12-17 Wednesday 08:34:00 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:34:00 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 301 
+2025-12-17 Wednesday 08:34:01 seleniumwire.handler:INFO:Capturing request: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.FZb77tO2YW4.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo8lqavmo6ayfVxZovyDiP6g3TOVSQ/cb=gapi.loaded_0
+2025-12-17 Wednesday 08:34:01 seleniumwire.handler:INFO:Capturing response: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.FZb77tO2YW4.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo8lqavmo6ayfVxZovyDiP6g3TOVSQ/cb=gapi.loaded_0 200 
+2025-12-17 Wednesday 08:34:02 seleniumwire.handler:INFO:Capturing request: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+2025-12-17 Wednesday 08:34:02 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:34:02 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:34:02 seleniumwire.handler:INFO:Capturing response: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData 200 
+2025-12-17 Wednesday 08:34:03 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:34:03 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:34:06 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:34:07 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:34:07 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/
+2025-12-17 Wednesday 08:34:07 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:34:08 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:34:08 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/ 200 
+2025-12-17 Wednesday 08:34:09 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
+2025-12-17 Wednesday 08:34:09 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto
+2025-12-17 Wednesday 08:34:09 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto 200 
+2025-12-17 Wednesday 08:34:09 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
+2025-12-17 Wednesday 08:34:09 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js
+2025-12-17 Wednesday 08:34:11 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js 200 
+2025-12-17 Wednesday 08:34:18 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:34:18 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/?r=122786318
+2025-12-17 Wednesday 08:34:19 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:34:19 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/?r=122786318 302 
+2025-12-17 Wednesday 08:34:19 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:34:19 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/Welcome?r=11228842
+2025-12-17 Wednesday 08:34:19 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:34:19 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/Welcome?r=11228842 200 
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231 200 
+2025-12-17 Wednesday 08:34:20 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231
+2025-12-17 Wednesday 08:34:21 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231 200 
+2025-12-17 Wednesday 08:34:21 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231
+2025-12-17 Wednesday 08:34:22 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:34:23 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 301 
+2025-12-17 Wednesday 08:34:26 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231 200 
+2025-12-17 Wednesday 08:34:26 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231
+2025-12-17 Wednesday 08:34:26 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231 304 
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://www.googleapis.com/affiliation/v1/affiliation:lookupByHashPrefix?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/select2.default.config.js
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/select2.default.config.js 200 
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js 200 
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=588503277
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetServiceStatus
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-17 Wednesday 08:34:27 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto 200 
+2025-12-17 Wednesday 08:34:28 seleniumwire.handler:INFO:Capturing response: https://www.googleapis.com/affiliation/v1/affiliation:lookupByHashPrefix?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:34:28 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
+2025-12-17 Wednesday 08:34:28 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-17 Wednesday 08:34:29 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935267429&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ss=1&_ee=1&tfd=9787
+2025-12-17 Wednesday 08:34:29 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935267429&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ss=1&_ee=1&tfd=9787 204 
+2025-12-17 Wednesday 08:34:33 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:34:33 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Vehicle/Online?58306112
+2025-12-17 Wednesday 08:34:33 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935267429&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=14800
+2025-12-17 Wednesday 08:34:33 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935267429&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=14800 204 
+2025-12-17 Wednesday 08:34:33 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:34:36 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetServiceStatus 200 
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Vehicle/Online?58306112 200 
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935267429&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=8110&tfd=20838
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935267429&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=0&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=8110&tfd=20838 204 
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=588503277 200 
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231 200 
+2025-12-17 Wednesday 08:34:39 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935280044&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682876&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dt=XE%20ONLINE%20-%20STAXI&en=page_view&_ee=1&tfd=6397
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935280044&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682876&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dt=XE%20ONLINE%20-%20STAXI&en=page_view&_ee=1&tfd=6397 204 
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=990619527
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMSGQnF5Sd9k6sqFhIFDd7kC6MhK3RPH60tQmYYt6nKAQ==?alt=proto
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMSGQnF5Sd9k6sqFhIFDd7kC6MhK3RPH60tQmYYt6nKAQ==?alt=proto 200 
+2025-12-17 Wednesday 08:34:40 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-17 Wednesday 08:34:41 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=990619527 200 
+2025-12-17 Wednesday 08:34:42 root:INFO:-------------------------
+2025-12-17 Wednesday 08:34:42 root:INFO:Giám sát - Xe online 1.2
+2025-12-17 Wednesday 08:34:42 root:INFO:Mã - 
+2025-12-17 Wednesday 08:34:42 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 08:34:42 root:INFO:Kết quả - 
+2025-12-17 Wednesday 08:34:42 root:INFO:1.2 Xe online
+2025-12-17 Wednesday 08:34:42 root:INFO:1.2 Xe online
+2025-12-17 Wednesday 08:34:43 root:INFO:True
+2025-12-17 Wednesday 08:34:45 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935280044&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682876&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dt=XE%20ONLINE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=11409
+2025-12-17 Wednesday 08:34:45 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935280044&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682876&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dt=XE%20ONLINE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=11409 204 
+2025-12-17 Wednesday 08:34:46 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Vehicle/Online?r=803347773&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=63759251
+2025-12-17 Wednesday 08:34:46 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Vehicle/Online?r=803347773&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=63759251 200 
+2025-12-17 Wednesday 08:34:46 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMYt6nKAQ==?alt=proto
+2025-12-17 Wednesday 08:34:46 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMYt6nKAQ==?alt=proto 200 
+2025-12-17 Wednesday 08:34:50 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935280044&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682876&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dt=XE%20ONLINE%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&epn.form_length=11&ep.first_field_id=State&ep.first_field_name=State&ep.first_field_type=&epn.first_field_position=6&_et=1222&tfd=16757
+2025-12-17 Wednesday 08:34:50 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765935280044&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682876&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D11228842&dt=XE%20ONLINE%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F58306112&epn.form_length=11&ep.first_field_id=State&ep.first_field_name=State&ep.first_field_type=&epn.first_field_position=6&_et=1222&tfd=16757 204 
+2025-12-17 Wednesday 08:37:40 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:37:41 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:38:02 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:38:23 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 08:38:23 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 08:38:23 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:65483
+2025-12-17 Wednesday 08:40:53 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:40:54 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:41:15 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:41:36 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 08:41:36 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 08:41:36 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:59416
+2025-12-17 Wednesday 08:42:09 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:42:09 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:42:30 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:42:52 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 08:42:52 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 08:42:52 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:64475
+2025-12-17 Wednesday 08:44:23 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:44:24 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:44:45 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:45:29 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:45:30 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:45:51 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:46:12 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 08:46:12 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 08:46:12 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:58924
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing response: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin 200 
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing request: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/folae?async=_fmt:pb
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/folae?async=_fmt:pb 200 
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing response: https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext-ansg&xssi=t&q=&oit=0&oft=1&pgcl=20&gs_rn=42&sugkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:46:14 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_promos
+2025-12-17 Wednesday 08:46:15 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_promos 200 
+2025-12-17 Wednesday 08:46:15 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0 200 
+2025-12-17 Wednesday 08:46:16 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA
+2025-12-17 Wednesday 08:46:16 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA 200 
+2025-12-17 Wednesday 08:46:17 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:46:17 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 429 
+2025-12-17 Wednesday 08:46:17 seleniumwire.handler:INFO:Capturing request: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.FZb77tO2YW4.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo8lqavmo6ayfVxZovyDiP6g3TOVSQ/cb=gapi.loaded_0
+2025-12-17 Wednesday 08:46:17 seleniumwire.handler:INFO:Capturing response: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.FZb77tO2YW4.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo8lqavmo6ayfVxZovyDiP6g3TOVSQ/cb=gapi.loaded_0 200 
+2025-12-17 Wednesday 08:46:18 seleniumwire.handler:INFO:Capturing request: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+2025-12-17 Wednesday 08:46:18 seleniumwire.handler:INFO:Capturing response: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData 200 
+2025-12-17 Wednesday 08:46:18 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:46:18 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:46:19 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:46:19 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:46:23 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:46:23 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:46:24 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/
+2025-12-17 Wednesday 08:46:24 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/ 200 
+2025-12-17 Wednesday 08:46:25 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto
+2025-12-17 Wednesday 08:46:25 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto 200 
+2025-12-17 Wednesday 08:46:25 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
+2025-12-17 Wednesday 08:46:25 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
+2025-12-17 Wednesday 08:46:26 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js
+2025-12-17 Wednesday 08:46:26 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:46:28 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js 200 
+2025-12-17 Wednesday 08:46:35 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:46:35 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/?r=1971291417
+2025-12-17 Wednesday 08:46:35 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/?r=1971291417 302 
+2025-12-17 Wednesday 08:46:35 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:46:35 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:46:35 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/Welcome?r=52695233
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/Welcome?r=52695233 200 
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231 200 
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-17 Wednesday 08:46:36 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231
+2025-12-17 Wednesday 08:46:37 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231 200 
+2025-12-17 Wednesday 08:46:37 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231
+2025-12-17 Wednesday 08:46:42 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231 200 
+2025-12-17 Wednesday 08:46:42 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231
+2025-12-17 Wednesday 08:46:42 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231 200 
+2025-12-17 Wednesday 08:46:42 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/select2.default.config.js
+2025-12-17 Wednesday 08:46:42 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/select2.default.config.js 200 
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Staxi/daterange.common.js 200 
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing request: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetServiceStatus
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1247324411
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAkuHGv_bqcvlxIFDd7kC6MSBQ2UVPrPIf6X6YX75ua5GLepygE=?alt=proto 200 
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetServiceStatus 200 
+2025-12-17 Wednesday 08:46:43 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1247324411 200 
+2025-12-17 Wednesday 08:46:44 seleniumwire.handler:INFO:Capturing response: https://www.googletagmanager.com/gtag/js?id=G-60V4NCQHKN 200 
+2025-12-17 Wednesday 08:46:44 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-17 Wednesday 08:46:44 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-17 Wednesday 08:46:49 seleniumwire.handler:INFO:Capturing request: https://google-ohttp-relay-safebrowsing.fastly-edge.com/
+2025-12-17 Wednesday 08:46:49 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Vehicle/Online?55755495
+2025-12-17 Wednesday 08:46:49 seleniumwire.handler:INFO:Capturing response: https://google-ohttp-relay-safebrowsing.fastly-edge.com/ 200 
+2025-12-17 Wednesday 08:46:49 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Vehicle/Online?55755495 200 
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/GetDaterange
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1996292889
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMSGQnF5Sd9k6sqFhIFDd7kC6MhK3RPH60tQmYYt6nKAQ==?alt=proto
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMSGQnF5Sd9k6sqFhIFDd7kC6MhK3RPH60tQmYYt6nKAQ==?alt=proto 200 
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/GetDaterange 200 
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Configuration/UpdateWarningStatus?r=1996292889 200 
+2025-12-17 Wednesday 08:46:50 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/GetFavouritePage?UserName=autoba 200 
+2025-12-17 Wednesday 08:46:53 root:INFO:-------------------------
+2025-12-17 Wednesday 08:46:53 root:INFO:Giám sát - Xe online 1.2
+2025-12-17 Wednesday 08:46:53 root:INFO:Mã - 
+2025-12-17 Wednesday 08:46:53 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 08:46:53 root:INFO:Kết quả - 
+2025-12-17 Wednesday 08:46:53 root:INFO:1.2 Xe online
+2025-12-17 Wednesday 08:46:53 root:INFO:1.2 Xe online
+2025-12-17 Wednesday 08:46:54 root:INFO:True
+2025-12-17 Wednesday 08:46:56 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Vehicle/Online?r=1038493207&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=51816802
+2025-12-17 Wednesday 08:46:56 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Vehicle/Online?r=1038493207&VehiclePlate=&PrivateCodeSearch=&DriverCode=&StrTimeLogin=&StrTimeLost=&State=&OnlineState=&SortColumn=PrivateCodeInt&SortDirection=Asc&r=51816802 200 
+2025-12-17 Wednesday 08:46:57 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMYt6nKAQ==?alt=proto
+2025-12-17 Wednesday 08:46:57 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASQwnaOqNjgRTmeBIFDa38rfwSBQ108DBiEgUNfUOmSBIFDe-ElbUSBQ1u2_oWEgUNsaIYjBIFDd3Jj4IhW34CIqoNfGMYt6nKAQ==?alt=proto 200 
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936003073&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=13741
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936003073&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ee=1&tfd=8724
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936010116&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dt=XE%20ONLINE%20-%20STAXI&en=page_view&_ee=1&tfd=853
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936003073&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=2707&tfd=14519
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936010116&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dt=XE%20ONLINE%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&epn.form_length=11&ep.first_field_id=State&ep.first_field_name=State&ep.first_field_type=&epn.first_field_position=6&_et=1162&tfd=11771
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing request: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936010116&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dt=XE%20ONLINE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=5856
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936003073&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=13741 204 
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936003073&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=user_engagement&_et=2707&tfd=14519 204 
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936010116&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEEAAAQ&_s=3&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dt=XE%20ONLINE%20-%20STAXI&en=form_start&ep.form_id=formMain&ep.form_name=&ep.form_destination=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&epn.form_length=11&ep.first_field_id=State&ep.first_field_name=State&ep.first_field_type=&epn.first_field_position=6&_et=1162&tfd=11771 204 
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936003073&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dr=https%3A%2F%2Fg7staging.staxi.vn%2F&dt=GI%E1%BB%9AI%20THI%E1%BB%86U%20-%20STAXI&en=page_view&_ee=1&tfd=8724 204 
+2025-12-17 Wednesday 08:47:05 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936010116&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dt=XE%20ONLINE%20-%20STAXI&en=page_view&_ee=1&tfd=853 204 
+2025-12-17 Wednesday 08:47:06 seleniumwire.handler:INFO:Capturing response: https://www.google-analytics.com/g/collect?v=2&tid=G-60V4NCQHKN&gtm=45je5ca1v9192958303za200zd9192958303&_p=1765936010116&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1262144456.1765773658&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B143.0.7499.110%7CChromium%3B143.0.7499.110%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&sid=1765935268&sct=3&seg=1&dl=https%3A%2F%2Fg7staging.staxi.vn%2FVehicle%2FOnline%3F55755495&dr=https%3A%2F%2Fg7staging.staxi.vn%2FHome%2FWelcome%3Fr%3D52695233&dt=XE%20ONLINE%20-%20STAXI&en=scroll&epn.percent_scrolled=90&tfd=5856 204 
+2025-12-17 Wednesday 08:55:57 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 08:55:58 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:56:19 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 08:56:40 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 08:56:40 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 08:56:40 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:52696
+2025-12-17 Wednesday 08:56:41 seleniumwire.handler:INFO:Capturing request: http://clients2.google.com/time/1/current?cup2key=9:aFbuc20qRnfZa1D70JI5xwbhlJwTGBr-AdgCh1jLpmE&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2025-12-17 Wednesday 08:56:41 seleniumwire.handler:INFO:Capturing response: http://clients2.google.com/time/1/current?cup2key=9:aFbuc20qRnfZa1D70JI5xwbhlJwTGBr-AdgCh1jLpmE&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 200 OK
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing request: https://safebrowsingohttpgateway.googleapis.com/v1/ohttp/hpkekeyconfig?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_promos
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/ddljson?async=ntp:2
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/folae?async=_fmt:pb
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing response: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard&laf=b64bin 200 
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing response: https://safebrowsingohttpgateway.googleapis.com/v1/ohttp/hpkekeyconfig?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:56:42 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_promos 200 
+2025-12-17 Wednesday 08:56:43 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/folae?async=_fmt:pb 200 
+2025-12-17 Wednesday 08:56:43 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0 200 
+2025-12-17 Wednesday 08:56:43 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/og/_/ss/k=og.qtm.5FRATi95ryM.L.W.O/m=qmd,qcwid/excm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/ct=zgms/rs=AA2YrTua5H2y_CiqILFqrP-1NxZIbU6S_g
+2025-12-17 Wednesday 08:56:43 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA
+2025-12-17 Wednesday 08:56:43 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg
+2025-12-17 Wednesday 08:56:44 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/og/_/ss/k=og.qtm.5FRATi95ryM.L.W.O/m=qmd,qcwid/excm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/ct=zgms/rs=AA2YrTua5H2y_CiqILFqrP-1NxZIbU6S_g 200 
+2025-12-17 Wednesday 08:56:44 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg 200 
+2025-12-17 Wednesday 08:56:44 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA 200 
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.xIIXllDMgoQ.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_cueiiNxpxjZ_7F-kc6luptDmX0A/cb=gapi.loaded_0
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing response: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.xIIXllDMgoQ.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_cueiiNxpxjZ_7F-kc6luptDmX0A/cb=gapi.loaded_0 200 
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/checkin
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/checkin 200 
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+2025-12-17 Wednesday 08:56:45 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:56:46 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 301 
+2025-12-17 Wednesday 08:56:46 seleniumwire.handler:INFO:Capturing response: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData 200 
+2025-12-17 Wednesday 08:56:46 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:56:47 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:56:47 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:56:48 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 200 
+2025-12-17 Wednesday 08:56:48 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 200 
+2025-12-17 Wednesday 08:56:51 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/ 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.css
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/bootstrap.min.js
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/login2019.css?v=20200110
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/bootstrap.min.css
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/notify.css
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/js/jquery.min.js
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/qrcode.js
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/bootstrap.min.js 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/notify.css 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.css 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/login2019.css?v=20200110 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/bootstrap.min.css 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/js/jquery.min.js 200 
+2025-12-17 Wednesday 08:56:52 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/qrcode.js 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/staxi_login_photo.png
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_ThongTinGiaiPhap_1.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_ThongTinGiaiPhap_1.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_HDSD_1.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_TinTucNganhGTVT_1.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_home.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_tel.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_TextB_1.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_Alpha.png
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/Artboard_49.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_ba.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_ios.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_web.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_android.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_user.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_key.svg
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_HDSD_1.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_TinTucNganhGTVT_1.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_home.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/staxi_login_photo.png 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_user.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_ba.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_Alpha.png 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_tel.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/Artboard_49.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_android.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_TextB_1.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_key.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/logo_ios.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/img/login/ic_web.svg 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://www.google.com/recaptcha/api.js?hl=vi
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing request: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://www.google.com/recaptcha/api.js?hl=vi 200 
+2025-12-17 Wednesday 08:56:53 seleniumwire.handler:INFO:Capturing response: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQzLjAuNzQ5OS4xMTASIAnIfgNtK2AYfRIFDaGVjY8SBQ1lIZnqIf6MfvY39KmCGLepygE=?alt=proto 200 
+2025-12-17 Wednesday 08:56:54 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION
+2025-12-17 Wednesday 08:56:54 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745312779&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
+2025-12-17 Wednesday 08:56:54 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js
+2025-12-17 Wednesday 08:56:54 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745312779&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS 200 
+2025-12-17 Wednesday 08:56:54 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY
+2025-12-17 Wednesday 08:56:54 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION 200 
+2025-12-17 Wednesday 08:56:55 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2
+2025-12-17 Wednesday 08:56:55 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__vi.js 200 
+2025-12-17 Wednesday 08:56:56 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/logo.ico
+2025-12-17 Wednesday 08:56:56 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/logo.ico 200 
+2025-12-17 Wednesday 08:56:57 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY 200 
+2025-12-17 Wednesday 08:56:57 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1745311339&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS
+2025-12-17 Wednesday 08:56:57 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1745311339&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS 200 
+2025-12-17 Wednesday 08:56:57 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-12-17 Wednesday 08:57:01 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=5&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2 200 
+2025-12-17 Wednesday 08:57:02 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1761663972&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
+2025-12-17 Wednesday 08:57:03 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/?r=1343162081
+2025-12-17 Wednesday 08:57:03 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-12-17 Wednesday 08:57:03 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1761663972&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
+2025-12-17 Wednesday 08:57:03 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/?r=1343162081 302 
+2025-12-17 Wednesday 08:57:03 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Home/Welcome?r=13958985
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Home/Welcome?r=13958985 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/bundles/modernizr?v=FxQF5Sw1zhmzVaExSr7GRgj0hihN4Ib_9KNzTwWOX-Q1
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/ExThemes/inspinia.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/ExThemes/popper.min.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery-ui.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/ExThemes/jquery.metisMenu.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/img/LogoBA_new.png
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/pages/layout.js?v=20251231
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/switchery.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/ExThemes/popper.min.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/bundles/modernizr?v=FxQF5Sw1zhmzVaExSr7GRgj0hihN4Ib_9KNzTwWOX-Q1 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Scripts/jquery.signalR-2.2.0.min.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/ExThemes/inspinia.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/common.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bootstrap4.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bootstrap.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bootstrap5.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.material.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.jqueryui.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.foundation.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.semanticui.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bulma.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.uikit.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/jquery.dataTables_themeroller.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/toastr/toastr.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20251231
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/css/custom.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20251231
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/jquery.dataTables.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/jquery/jquery-ui.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/css/switchery.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/css/MvcPaging.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/css/jquery.datetimepicker.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery-3.7.1.min.js
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/css/select2.min.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/assets/kendo/default-ocean-blue.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/css/daterangepicker-bs3.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://onlineg7.staxi.vn/Center/hubs
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://onlineg7.staxi.vn/Center/hubs 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery-ui.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/img/LogoBA_new.png 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip/microtip.css
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/pages/layout.js?v=20251231 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bootstrap.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bootstrap5.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.material.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip/microtip.css 302 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.semanticui.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bulma.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/ExThemes/jquery.slimscroll.min.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/ExThemes/jquery.metisMenu.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/jquery.dataTables_themeroller.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/common.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/switchery.js 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/style.css?v=20251231 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/font-awesome/css/font-awesome.min.css 200 
+2025-12-17 Wednesday 08:57:04 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.bootstrap4.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.jqueryui.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.foundation.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing request: https://unpkg.com/microtip@0.2.2/microtip.css
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/dataTables.uikit.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://unpkg.com/microtip@0.2.2/microtip.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-theme-quartz.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/toastr/toastr.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/css/Temple/ex_animate.css?v=20251231 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/css/custom.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/css/Temple/ex_style.css?v=20251231 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/jquery/jquery-ui.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/css/switchery.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/DataTables/jquery.dataTables.min.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/css/MvcPaging.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/css/jquery.datetimepicker.css 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery-3.7.1.min.js 200 
+2025-12-17 Wednesday 08:57:05 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/css/select2.min.css 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1761663972&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/assets/kendo/default-ocean-blue.css 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/css/daterangepicker-bs3.css 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/ddljson?async=ntp:2
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1761663972&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://www.google.com/async/newtab_promos
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery.validate.min.js 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_promos 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/jquery/js/jquery.validate.unobtrusive.min.js 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/newtab_ogb?hl=en-US&async=fixed:0 200 
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/og/_/ss/k=og.qtm.5FRATi95ryM.L.W.O/m=qmd,qcwid/excm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/ct=zgms/rs=AA2YrTua5H2y_CiqILFqrP-1NxZIbU6S_g
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA
+2025-12-17 Wednesday 08:57:06 seleniumwire.handler:INFO:Capturing request: https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/og/_/ss/k=og.qtm.5FRATi95ryM.L.W.O/m=qmd,qcwid/excm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/ct=zgms/rs=AA2YrTua5H2y_CiqILFqrP-1NxZIbU6S_g 200 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg 200 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/locale.js?v=20251231 200 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://www.google.com/async/ddljson?async=ntp:2 200 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.24K9blLR6Fc.2019.O/rt=j/m=q_dnp,qmd,qcwid,qapid,qald,qads,q_dg/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTuH1gsWpNYrZNoVfHgbKLfZrAwkHA 200 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing request: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing request: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.xIIXllDMgoQ.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_cueiiNxpxjZ_7F-kc6luptDmX0A/cb=gapi.loaded_0
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing request: https://android.clients.google.com/c2dm/register3
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://ogads-pa.clients6.google.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData 200 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://android.clients.google.com/c2dm/register3 301 
+2025-12-17 Wednesday 08:57:07 seleniumwire.handler:INFO:Capturing response: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.xIIXllDMgoQ.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_cueiiNxpxjZ_7F-kc6luptDmX0A/cb=gapi.loaded_0 200 
+2025-12-17 Wednesday 08:57:09 seleniumwire.handler:INFO:Capturing request: https://play.google.com/log?format=json&hasfast=true
+2025-12-17 Wednesday 08:57:09 seleniumwire.handler:INFO:Capturing response: https://play.google.com/log?format=json&hasfast=true 200 
+2025-12-17 Wednesday 08:57:11 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/ag-grid-enterprise.js?v=20251231 200 
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridSvSide.js?v=20251231 200 
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20251231
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/ag-grid/AgGridCommon.js?v=20251231 200 
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/jquery.js
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/jquery.js 200 
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/respond.js
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/respond.js 200 
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/jquery.validate.js
+2025-12-17 Wednesday 08:57:12 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/jquery.validate.js 200 
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/hover-dropdown.js
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/hover-dropdown.js 200 
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/jquery.mask.js
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/jquery.mask.js 200 
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/LanguageManager.js
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/LanguageManager.js 200 
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/jquery.cookie.js
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/jquery.cookie.js 200 
+2025-12-17 Wednesday 08:57:13 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/HashTable.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/HashTable.js 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/form.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/form.js 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/jquery.dataTables.min.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/jquery.dataTables.min.js 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.dataTables.min.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.dataTables.min.js 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.bootstrap4.min.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.bootstrap4.min.js 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1728324084&target=OPTIMIZATION_TARGET_OMNIBOX_ON_DEVICE_TAIL_SUGGEST 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.bootstrap5.min.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.bootstrap5.min.js 200 
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.bulma.min.js
+2025-12-17 Wednesday 08:57:14 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.bulma.min.js 200 
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=1696268326&target=OPTIMIZATION_TARGET_OMNIBOX_URL_SCORING
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.foundation.min.js
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.foundation.min.js 200 
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.jqueryui.min.js
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.jqueryui.min.js 200 
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.material.min.js
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.material.min.js 200 
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.semanticui.min.js
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.semanticui.min.js 200 
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.uikit.min.js
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DataTables/dataTables.uikit.min.js 200 
+2025-12-17 Wednesday 08:57:15 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/datatable/datatable-config.js
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/datatable/datatable-config.js 200 
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=1696268326&target=OPTIMIZATION_TARGET_OMNIBOX_URL_SCORING 200 
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/toastr/toastr.min.js
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing request: https://optimizationguide-pa.googleapis.com/downloads?name=240731042075&target=OPTIMIZATION_TARGET_SEGMENTATION_COMPOSE_PROMOTION
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/toastr/toastr.min.js 200 
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/toastr/toastr-config.js
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/toastr/toastr-config.js 200 
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/2019/js/custom.js?v=20251231
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/2019/js/custom.js?v=20251231 200 
+2025-12-17 Wednesday 08:57:16 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js
+2025-12-17 Wednesday 08:57:17 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/sweetalert2/sweetalert2.all.min.js 200 
+2025-12-17 Wednesday 08:57:17 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/js/jquery.datetimepicker.full.min.js
+2025-12-17 Wednesday 08:57:17 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/themes/js/jquery.datetimepicker.full.min.js 200 
+2025-12-17 Wednesday 08:57:17 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/DaterangePicker/moment.min.js
+2025-12-17 Wednesday 08:57:17 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/DaterangePicker/moment.min.js 200 
+2025-12-17 Wednesday 08:57:17 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/Plugin/js/daterangepicker.js
+2025-12-17 Wednesday 08:57:18 seleniumwire.handler:INFO:Capturing response: https://g7staging.staxi.vn/Content/Plugin/js/daterangepicker.js 200 
+2025-12-17 Wednesday 08:57:18 seleniumwire.handler:INFO:Capturing request: https://g7staging.staxi.vn/Content/themes/assets/kendo/kendo.all.js
+2025-12-17 Wednesday 08:57:18 seleniumwire.handler:INFO:Capturing response: https://optimizationguide-pa.googleapis.com/downloads?name=240731042075&target=OPTIMIZATION_TARGET_SEGMENTATION_COMPOSE_PROMOTION 200 
+2025-12-17 Wednesday 08:57:20 seleniumwire.server:INFO:127.0.0.1:57310: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1765936640.7138891, False')")
+2025-12-17 Wednesday 08:57:20 seleniumwire.server:INFO:127.0.0.1:60396: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1765936640.6557076, False')")
+2025-12-17 Wednesday 08:57:20 seleniumwire.server:INFO:127.0.0.1:57310: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1765936640.745782, False')")
+2025-12-17 Wednesday 08:57:20 seleniumwire.server:INFO:127.0.0.1:57310: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1765936640.710891, False')")
+2025-12-17 Wednesday 08:57:20 seleniumwire.server:INFO:127.0.0.1:57310: ProtocolException("Error in HTTP connection: Http2ZombieException('Connection or stream already dead: 1765936640.7382135, False')")
+2025-12-17 Wednesday 09:02:42 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:02:42 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:03:04 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:03:25 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:03:25 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:03:25 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:50474
+2025-12-17 Wednesday 09:03:59 root:INFO:-------------------------
+2025-12-17 Wednesday 09:03:59 root:INFO:Giám sát - Xe online 1.2
+2025-12-17 Wednesday 09:03:59 root:INFO:Mã - 
+2025-12-17 Wednesday 09:03:59 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:03:59 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:03:59 root:INFO:1.2 Xe online
+2025-12-17 Wednesday 09:03:59 root:INFO:1.2 Xe online
+2025-12-17 Wednesday 09:03:59 root:INFO:True
+2025-12-17 Wednesday 09:05:06 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:05:07 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:05:28 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:05:50 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:05:50 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:05:50 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:53123
+2025-12-17 Wednesday 09:06:19 root:INFO:-------------------------
+2025-12-17 Wednesday 09:06:19 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:06:19 root:INFO:Mã - Minitor22
+2025-12-17 Wednesday 09:06:19 root:INFO:Tên sự kiện - Mở trang "Giám sát xe"
+2025-12-17 Wednesday 09:06:19 root:INFO:Kết quả - Chuyển đến trang: "1.3 Giám sát xe"
+2025-12-17 Wednesday 09:06:19 root:INFO:1.3 Giám sát xe
+2025-12-17 Wednesday 09:06:19 root:INFO:1.3 Giám sát xe
+2025-12-17 Wednesday 09:06:20 root:INFO:True
+2025-12-17 Wednesday 09:06:26 root:INFO:-------------------------
+2025-12-17 Wednesday 09:06:26 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:06:26 root:INFO:Mã - Minitor23
+2025-12-17 Wednesday 09:06:26 root:INFO:Tên sự kiện - Tìm kiếm xe
+2025-12-17 Wednesday 09:06:26 root:INFO:Kết quả - Hiển thị xe có mã đàm đã nhập ở map
+2025-12-17 Wednesday 09:06:26 root:INFO:205
+2025-12-17 Wednesday 09:06:26 root:INFO:205
+2025-12-17 Wednesday 09:06:27 root:INFO:True
+2025-12-17 Wednesday 09:06:30 root:INFO:-------------------------
+2025-12-17 Wednesday 09:06:30 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:06:30 root:INFO:Mã - Minitor24
+2025-12-17 Wednesday 09:06:30 root:INFO:Tên sự kiện - Icon "Cấu hình icon loại xe"
+2025-12-17 Wednesday 09:06:30 root:INFO:Kết quả - Hiển thị message: "Lưu thành công!"
+2025-12-17 Wednesday 09:06:30 root:INFO:Lưu thành công!
+2025-12-17 Wednesday 09:06:30 root:INFO:Lưu thành công!
+2025-12-17 Wednesday 09:06:31 root:INFO:True
+2025-12-17 Wednesday 09:06:37 root:INFO:-------------------------
+2025-12-17 Wednesday 09:06:37 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:06:37 root:INFO:Mã - Minitor25
+2025-12-17 Wednesday 09:06:37 root:INFO:Tên sự kiện - Icon "Cấu hình"
+2025-12-17 Wednesday 09:06:37 root:INFO:Kết quả - 1.Mở popup "Cập nhật cấu hình khởi động
+2."Hiển thị message: "Lưu thông tin thành công." và load lại trang
+2025-12-17 Wednesday 09:06:37 root:INFO:Cập nhật cấu hình khởi động
+2025-12-17 Wednesday 09:06:37 root:INFO:Cập nhật cấu hình khởi động
+2025-12-17 Wednesday 09:06:38 root:INFO:True
+2025-12-17 Wednesday 09:06:45 root:INFO:-------------------------
+2025-12-17 Wednesday 09:06:45 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:06:45 root:INFO:Mã - Minitor26
+2025-12-17 Wednesday 09:06:45 root:INFO:Tên sự kiện - Icon "Trợ giúp"
+2025-12-17 Wednesday 09:06:45 root:INFO:Kết quả -  Mở popup "Trợ giúp"
+2025-12-17 Wednesday 09:06:45 root:INFO:Trợ Giúp
+2025-12-17 Wednesday 09:06:45 root:INFO:Trợ Giúp
+2025-12-17 Wednesday 09:06:45 root:INFO:True
+2025-12-17 Wednesday 09:06:52 root:INFO:-------------------------
+2025-12-17 Wednesday 09:06:52 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:06:52 root:INFO:Mã - Minitor27
+2025-12-17 Wednesday 09:06:52 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Sẵn sàng
+2025-12-17 Wednesday 09:06:52 root:INFO:Kết quả - Ảnh xe tìm kiếm: "/Content/themes/img/RedCar.png"
+2025-12-17 Wednesday 09:06:52 root:INFO:https://app.staxi.vn/Content/themes/img/RedCar.png
+2025-12-17 Wednesday 09:06:52 root:INFO:/Content/themes/img/RedCar.png
+2025-12-17 Wednesday 09:06:53 root:INFO:True
+2025-12-17 Wednesday 09:07:01 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:01 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:01 root:INFO:Mã - Minitor28
+2025-12-17 Wednesday 09:07:01 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Có khách
+2025-12-17 Wednesday 09:07:01 root:INFO:Kết quả - Ảnh xe tìm kiếm: "/Content/themes/img/BlueCar.png"
+2025-12-17 Wednesday 09:07:01 root:INFO:https://app.staxi.vn/Content/themes/img/BlueCar.png
+2025-12-17 Wednesday 09:07:01 root:INFO:/Content/themes/img/BlueCar.png
+2025-12-17 Wednesday 09:07:01 root:INFO:True
+2025-12-17 Wednesday 09:07:20 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:20 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:20 root:INFO:Mã - Minitor29
+2025-12-17 Wednesday 09:07:20 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Nghỉ KD
+2025-12-17 Wednesday 09:07:20 root:INFO:Kết quả - Ảnh xe tìm kiếm: "/Content/themes/img/GreenCar.png"
+2025-12-17 Wednesday 09:07:20 root:INFO:https://app.staxi.vn/Content/themes/img/GreenCar.png
+2025-12-17 Wednesday 09:07:20 root:INFO:/Content/themes/img/GreenCar.png
+2025-12-17 Wednesday 09:07:20 root:INFO:True
+2025-12-17 Wednesday 09:07:26 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:26 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:26 root:INFO:Mã - Minitor30
+2025-12-17 Wednesday 09:07:26 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Đang KD
+2025-12-17 Wednesday 09:07:26 root:INFO:Kết quả - Ảnh xe tìm kiếm: 
+"/Content/themes/img/RedCar.png"
+hoặc: 
+"/Content/themes/img/BlueCar.png" 
+2025-12-17 Wednesday 09:07:26 root:INFO:https://app.staxi.vn/Content/themes/img/RedCar.png
+2025-12-17 Wednesday 09:07:26 root:INFO:/Content/themes/img/RedCar.png
+2025-12-17 Wednesday 09:07:27 root:INFO:True
+2025-12-17 Wednesday 09:07:32 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:32 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:32 root:INFO:Mã - Minitor31
+2025-12-17 Wednesday 09:07:32 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Rời ca
+2025-12-17 Wednesday 09:07:32 root:INFO:Kết quả - Trống xe
+2025-12-17 Wednesday 09:07:32 root:INFO:0
+2025-12-17 Wednesday 09:07:32 root:INFO:True
+2025-12-17 Wednesday 09:07:38 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:38 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:38 root:INFO:Mã - Minitor32
+2025-12-17 Wednesday 09:07:38 root:INFO:Tên sự kiện - Giám sát - Trạng thái - MTH
+2025-12-17 Wednesday 09:07:38 root:INFO:Kết quả - Ảnh xe tìm kiếm: "/Content/themes/img/WarGreenCar.png"
+2025-12-17 Wednesday 09:07:38 root:INFO:https://app.staxi.vn/Content/themes/img/WarGreenCar.png
+2025-12-17 Wednesday 09:07:38 root:INFO:/Content/themes/img/WarGreenCar.png
+2025-12-17 Wednesday 09:07:39 root:INFO:True
+2025-12-17 Wednesday 09:07:45 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:45 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:45 root:INFO:Mã - Minitor33
+2025-12-17 Wednesday 09:07:45 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Kết nối mở
+2025-12-17 Wednesday 09:07:45 root:INFO:Kết quả - Tất cả xe kết nối
+2025-12-17 Wednesday 09:07:45 root:INFO:https://app.staxi.vn/Content/themes/img/RedCar.png
+2025-12-17 Wednesday 09:07:45 root:INFO:/Content/themes/img/RedCar.png
+2025-12-17 Wednesday 09:07:46 root:INFO:True
+2025-12-17 Wednesday 09:07:51 root:INFO:-------------------------
+2025-12-17 Wednesday 09:07:51 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:07:51 root:INFO:Mã - Minitor34
+2025-12-17 Wednesday 09:07:51 root:INFO:Tên sự kiện - Giám sát - Trạng thái - Tất cả
+2025-12-17 Wednesday 09:07:51 root:INFO:Kết quả - Tất cả xe
+2025-12-17 Wednesday 09:07:51 root:INFO:7
+2025-12-17 Wednesday 09:07:52 root:INFO:True
+2025-12-17 Wednesday 09:08:00 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:08:00 root:INFO:Mã - Minitor35
+2025-12-17 Wednesday 09:08:00 root:INFO:Tên sự kiện - Giám sát - Tìm xe
+2025-12-17 Wednesday 09:08:00 root:INFO:Kết quả - Hiển thị thông tin xe: "205 - 15A26857"
+2025-12-17 Wednesday 09:08:00 root:INFO:205-15A26857
+2025-12-17 Wednesday 09:08:00 root:INFO:205 - 15A26857
+2025-12-17 Wednesday 09:08:01 root:INFO:True
+2025-12-17 Wednesday 09:08:15 root:INFO:-------------------------
+2025-12-17 Wednesday 09:08:15 root:INFO:Giám sát - Giám sát xe 1.3
+2025-12-17 Wednesday 09:08:15 root:INFO:Mã - Minitor36
+2025-12-17 Wednesday 09:08:15 root:INFO:Tên sự kiện - Lộ trình - Tìm kiếm
+2025-12-17 Wednesday 09:08:15 root:INFO:Kết quả - Mở tab mới với lộ trình xe vừa tìm kiếm, chuyển tới trang: "THEO DÕI LỘ TRÌNH - STAXI"
+2025-12-17 Wednesday 09:08:15 root:INFO:THEO DÕI LỘ TRÌNH - STAXI
+2025-12-17 Wednesday 09:08:15 root:INFO:THEO DÕI LỘ TRÌNH - STAXI
+2025-12-17 Wednesday 09:08:16 root:INFO:True
+2025-12-17 Wednesday 09:10:42 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:10:44 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:11:05 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:11:26 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:11:26 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:11:26 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:64879
+2025-12-17 Wednesday 09:11:58 root:INFO:-------------------------
+2025-12-17 Wednesday 09:11:58 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:11:58 root:INFO:Mã - 
+2025-12-17 Wednesday 09:11:58 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:11:58 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:11:58 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:11:58 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:11:59 root:INFO:True
+2025-12-17 Wednesday 09:12:51 root:INFO:-------------------------
+2025-12-17 Wednesday 09:12:51 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:12:51 root:INFO:Mã - 
+2025-12-17 Wednesday 09:12:51 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:12:51 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:12:51 root:INFO:Thêm mới thành công
+2025-12-17 Wednesday 09:12:51 root:INFO:Thêm mới thành công
+2025-12-17 Wednesday 09:12:51 root:INFO:True
+2025-12-17 Wednesday 09:14:12 root:INFO:-------------------------
+2025-12-17 Wednesday 09:14:12 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:14:12 root:INFO:Mã - 
+2025-12-17 Wednesday 09:14:12 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:14:12 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:14:12 root:INFO:Thêm mới thành công
+2025-12-17 Wednesday 09:14:12 root:INFO:Thêm mới thành công
+2025-12-17 Wednesday 09:14:13 root:INFO:True
+2025-12-17 Wednesday 09:17:51 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:17:52 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:18:13 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:18:35 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:18:35 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:18:37 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:60950
+2025-12-17 Wednesday 09:19:09 root:INFO:-------------------------
+2025-12-17 Wednesday 09:19:09 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:19:09 root:INFO:Mã - 
+2025-12-17 Wednesday 09:19:09 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:19:09 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:19:09 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:19:09 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:19:10 root:INFO:True
+2025-12-17 Wednesday 09:20:37 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:20:38 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:21:00 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:21:21 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:21:21 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:21:23 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:60287
+2025-12-17 Wednesday 09:21:53 root:INFO:-------------------------
+2025-12-17 Wednesday 09:21:53 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:21:53 root:INFO:Mã - 
+2025-12-17 Wednesday 09:21:53 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:21:53 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:21:53 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:21:53 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:21:53 root:INFO:True
+2025-12-17 Wednesday 09:22:44 root:INFO:-------------------------
+2025-12-17 Wednesday 09:22:44 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:22:44 root:INFO:Mã - 
+2025-12-17 Wednesday 09:22:44 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:22:44 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:22:44 root:INFO:Thêm mới thành công
+2025-12-17 Wednesday 09:22:44 root:INFO:Thêm mới thành công
+2025-12-17 Wednesday 09:22:45 root:INFO:True
+2025-12-17 Wednesday 09:23:29 root:INFO:-------------------------
+2025-12-17 Wednesday 09:23:29 root:INFO:Xe & Lái xe - 2.1 Xe
+2025-12-17 Wednesday 09:23:29 root:INFO:Mã - Vehicle46
+2025-12-17 Wednesday 09:23:29 root:INFO:Tên sự kiện - Liên kết ngân hàng
+2025-12-17 Wednesday 09:23:29 root:INFO:Kết quả - Hiển thị message: "Thêm tài khoản ngân hàng thành công"
+2025-12-17 Wednesday 09:23:29 root:INFO:Thêm tài khoản ngân hàng thành công
+2025-12-17 Wednesday 09:23:29 root:INFO:Thêm tài khoản ngân hàng thành công
+2025-12-17 Wednesday 09:23:30 root:INFO:True
+2025-12-17 Wednesday 09:24:08 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:24:09 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:24:09 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:24:09 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:24:09 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:24:09 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:55481
+2025-12-17 Wednesday 09:24:40 root:INFO:-------------------------
+2025-12-17 Wednesday 09:24:40 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:24:40 root:INFO:Mã - 
+2025-12-17 Wednesday 09:24:40 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:24:40 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:24:40 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:24:40 root:INFO:2.2 Lái xe
+2025-12-17 Wednesday 09:24:41 root:INFO:True
+2025-12-17 Wednesday 09:24:57 root:INFO:-------------------------
+2025-12-17 Wednesday 09:24:57 root:INFO:Xe & Lái xe - 2.2 Lái xe
+2025-12-17 Wednesday 09:24:57 root:INFO:Mã - Vehicle47
+2025-12-17 Wednesday 09:24:57 root:INFO:Tên sự kiện - Cập nhật lái xe
+2025-12-17 Wednesday 09:24:57 root:INFO:Kết quả - Hiển thị message: "Cập nhật lái xe thành công"
+2025-12-17 Wednesday 09:24:57 root:INFO:Cập nhật thành công
+2025-12-17 Wednesday 09:24:57 root:INFO:Cập nhật thành công
+2025-12-17 Wednesday 09:24:57 root:INFO:True
+2025-12-17 Wednesday 09:26:11 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:26:12 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:26:12 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:26:12 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:26:12 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:26:12 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:65122
+2025-12-17 Wednesday 09:26:40 root:INFO:-------------------------
+2025-12-17 Wednesday 09:26:40 root:INFO:VÍ LÁI XE - 3.1 Danh sách ví lái xe
+2025-12-17 Wednesday 09:26:40 root:INFO:Mã - 
+2025-12-17 Wednesday 09:26:40 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:26:40 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:26:40 root:INFO:3.1 Danh sách ví lái xe
+2025-12-17 Wednesday 09:26:40 root:INFO:3.1 Danh sách ví lái xe
+2025-12-17 Wednesday 09:26:41 root:INFO:True
+2025-12-17 Wednesday 09:27:12 root:INFO:-------------------------
+2025-12-17 Wednesday 09:27:12 root:INFO:VÍ LÁI XE - 3.1 Danh sách ví lái xe
+2025-12-17 Wednesday 09:27:12 root:INFO:Mã - Wallet09
+2025-12-17 Wednesday 09:27:12 root:INFO:Tên sự kiện - Lịch sử ví
+2025-12-17 Wednesday 09:27:12 root:INFO:Kết quả - 1. Mở tab mới và chuyển tới trang "3.5 Lịch sử ví tiền"
+2. Hiển thị Tên lái xe: batonnt1
+2025-12-17 Wednesday 09:28:19 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:28:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:28:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:28:21 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:28:21 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:28:21 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:65257
+2025-12-17 Wednesday 09:28:49 root:INFO:-------------------------
+2025-12-17 Wednesday 09:28:49 root:INFO:VÍ LÁI XE - 3.4 Xác nhận giao dịch
+2025-12-17 Wednesday 09:28:49 root:INFO:Mã - 
+2025-12-17 Wednesday 09:28:49 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:28:49 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:28:49 root:INFO:3.4 Xác nhận giao dịch
+2025-12-17 Wednesday 09:28:49 root:INFO:3.4 Xác nhận giao dịch
+2025-12-17 Wednesday 09:28:49 root:INFO:True
+2025-12-17 Wednesday 09:28:59 root:INFO:-------------------------
+2025-12-17 Wednesday 09:28:59 root:INFO:VÍ LÁI XE - 3.4 Xác nhận giao dịch
+2025-12-17 Wednesday 09:28:59 root:INFO:Mã - Wallet21
+2025-12-17 Wednesday 09:28:59 root:INFO:Tên sự kiện - Lịch sử thanh toán
+2025-12-17 Wednesday 09:28:59 root:INFO:Kết quả - 1.Mở tab mới và chuyển tới trang: "3.11 Lịch sử thanh toán"
+2. Hiển thị lịch sử mã giao dịch
+2025-12-17 Wednesday 09:30:10 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:30:11 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:30:11 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:30:11 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:30:11 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:30:11 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:50264
+2025-12-17 Wednesday 09:30:40 root:INFO:-------------------------
+2025-12-17 Wednesday 09:30:40 root:INFO:KHUYẾN MẠI - 6.2 Danh sách tài khoản giới thiệu
+2025-12-17 Wednesday 09:30:40 root:INFO:Mã - 
+2025-12-17 Wednesday 09:30:40 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:30:40 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:30:40 root:INFO:6.2 Danh sách tài khoản giới thiệu
+2025-12-17 Wednesday 09:30:40 root:INFO:6.2 Danh sách tài khoản giới thiệu
+2025-12-17 Wednesday 09:30:40 root:INFO:True
+2025-12-17 Wednesday 09:30:54 root:INFO:-------------------------
+2025-12-17 Wednesday 09:30:54 root:INFO:KHUYẾN MẠI - 6.2 Danh sách tài khoản giới thiệu
+2025-12-17 Wednesday 09:30:54 root:INFO:Mã - Promotion17
+2025-12-17 Wednesday 09:30:54 root:INFO:Tên sự kiện - Tìm kiếm(Tài khoản)
+2025-12-17 Wednesday 09:30:54 root:INFO:Kết quả - Trường "Tài khoản" hiện thị: "0913233801"
+2025-12-17 Wednesday 09:30:54 root:INFO:0947901562
+2025-12-17 Wednesday 09:30:54 root:INFO:0947901562
+2025-12-17 Wednesday 09:30:54 root:INFO:True
+2025-12-17 Wednesday 09:31:27 root:INFO:-------------------------
+2025-12-17 Wednesday 09:31:27 root:INFO:KHUYẾN MẠI - 6.3.1 Cài app mới
+2025-12-17 Wednesday 09:31:27 root:INFO:Mã - 
+2025-12-17 Wednesday 09:31:27 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:31:27 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:31:27 root:INFO:6.3.1 Cài app mới
+2025-12-17 Wednesday 09:31:27 root:INFO:6.3.1 Cài app mới
+2025-12-17 Wednesday 09:31:28 root:INFO:True
+2025-12-17 Wednesday 09:31:35 root:INFO:-------------------------
+2025-12-17 Wednesday 09:31:35 root:INFO:KHUYẾN MẠI - 6.3.1 Cài app mới
+2025-12-17 Wednesday 09:31:35 root:INFO:Mã - Promotion27
+2025-12-17 Wednesday 09:31:35 root:INFO:Tên sự kiện - Tìm kiếm(Tên)
+2025-12-17 Wednesday 09:31:35 root:INFO:Kết quả - Trường "Tên khuyến mại" hiện thị: Đúng "Tên" đã nhập
+2025-12-17 Wednesday 09:31:35 root:INFO:KM1899
+2025-12-17 Wednesday 09:31:35 root:INFO:KM1899
+2025-12-17 Wednesday 09:31:35 root:INFO:True
+2025-12-17 Wednesday 09:33:19 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:33:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:33:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:33:21 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:33:21 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:33:21 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:53001
+2025-12-17 Wednesday 09:33:51 root:INFO:-------------------------
+2025-12-17 Wednesday 09:33:51 root:INFO:KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.3 Quản lý thẻ
+2025-12-17 Wednesday 09:33:51 root:INFO:Mã - 
+2025-12-17 Wednesday 09:33:51 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:33:51 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:33:51 root:INFO:7.7.3 Quản lý thẻ
+2025-12-17 Wednesday 09:33:51 root:INFO:7.7.3 Quản lý thẻ
+2025-12-17 Wednesday 09:33:52 root:INFO:True
+2025-12-17 Wednesday 09:37:20 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:37:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:37:22 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:37:22 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:37:22 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:37:22 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:60659
+2025-12-17 Wednesday 09:37:56 root:INFO:-------------------------
+2025-12-17 Wednesday 09:37:56 root:INFO:KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.12 Báo cáo cuốc đi thẻ theo lái xe
+2025-12-17 Wednesday 09:37:56 root:INFO:Mã - 
+2025-12-17 Wednesday 09:37:56 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:37:56 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:37:56 root:INFO:7.7.12 Báo cáo cuốc đi thẻ theo lái xe
+2025-12-17 Wednesday 09:37:56 root:INFO:7.7.12 Báo cáo cuốc đi thẻ theo lái xe
+2025-12-17 Wednesday 09:37:56 root:INFO:True
+2025-12-17 Wednesday 09:38:06 root:INFO:-------------------------
+2025-12-17 Wednesday 09:38:06 root:INFO:KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.12 Báo cáo cuốc đi thẻ theo lái xe
+2025-12-17 Wednesday 09:38:06 root:INFO:Mã - 
+2025-12-17 Wednesday 09:38:06 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:38:06 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:38:06 root:INFO:8880999016579311
+2025-12-17 Wednesday 09:38:07 root:INFO:True
+2025-12-17 Wednesday 09:38:22 root:INFO:-------------------------
+2025-12-17 Wednesday 09:38:22 root:INFO:KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.12 Báo cáo cuốc đi thẻ theo lái xe
+2025-12-17 Wednesday 09:38:22 root:INFO:Mã - Customer77_1
+2025-12-17 Wednesday 09:38:22 root:INFO:Tên sự kiện - Thanh toán
+2025-12-17 Wednesday 09:38:22 root:INFO:Kết quả - Hiện thị thông báo: "Cập nhật thành công!"
+2025-12-17 Wednesday 09:38:22 root:INFO:Cập nhật thành công!
+2025-12-17 Wednesday 09:38:22 root:INFO:Cập nhật thành công!
+2025-12-17 Wednesday 09:38:22 root:INFO:True
+2025-12-17 Wednesday 09:41:50 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:41:52 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:41:52 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:41:52 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:41:52 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:41:52 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:49686
+2025-12-17 Wednesday 09:42:21 root:INFO:-------------------------
+2025-12-17 Wednesday 09:42:21 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-17 Wednesday 09:42:21 root:INFO:Mã - 
+2025-12-17 Wednesday 09:42:21 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:42:21 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:42:21 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-17 Wednesday 09:42:21 root:INFO:8.1.0 Báo cáo cuốc khách tổng
+2025-12-17 Wednesday 09:42:22 root:INFO:True
+2025-12-17 Wednesday 09:43:00 root:INFO:-------------------------
+2025-12-17 Wednesday 09:43:00 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng
+2025-12-17 Wednesday 09:43:00 root:INFO:Mã - Report02
+2025-12-17 Wednesday 09:43:00 root:INFO:Tên sự kiện - Tìm kiếm
+2025-12-17 Wednesday 09:43:00 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
+(Hiển thị Mã Cuốc Khách)
+2025-12-17 Wednesday 09:43:00 root:INFO:00AEC0BC
+2025-12-17 Wednesday 09:43:01 root:INFO:True
+2025-12-17 Wednesday 09:43:27 root:INFO:-------------------------
+2025-12-17 Wednesday 09:43:27 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:43:27 root:INFO:Mã - 
+2025-12-17 Wednesday 09:43:27 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:43:27 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:43:27 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:43:27 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:43:28 root:INFO:True
+2025-12-17 Wednesday 09:45:09 root:INFO:-------------------------
+2025-12-17 Wednesday 09:45:09 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:45:09 root:INFO:Mã - Report07_1
+2025-12-17 Wednesday 09:45:09 root:INFO:Tên sự kiện - Check Số lượng cuốc mỗi nguồn/Số lương cuốc màn chi tiết
+(Ngày hiện tại -1)
+2025-12-17 Wednesday 09:45:09 root:INFO:Kết quả - Số lượng cuốc mỗi nguồn = Số lương cuốc màn chi tiết
+2025-12-17 Wednesday 09:45:42 root:INFO:-------------------------
+2025-12-17 Wednesday 09:45:42 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:45:42 root:INFO:Mã - 
+2025-12-17 Wednesday 09:45:42 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:45:42 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:45:42 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:45:42 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:45:43 root:INFO:True
+2025-12-17 Wednesday 09:48:10 root:INFO:-------------------------
+2025-12-17 Wednesday 09:48:10 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:48:10 root:INFO:Mã - Report07_2
+2025-12-17 Wednesday 09:48:10 root:INFO:Tên sự kiện - Check Số lượng cuốc mỗi nguồn/Số lương cuốc màn chi tiết
+(Ngày hiện tại -2)
+2025-12-17 Wednesday 09:48:10 root:INFO:Kết quả - Số lượng cuốc mỗi nguồn = Số lương cuốc màn chi tiết
+2025-12-17 Wednesday 09:48:12 root:INFO:False
+2025-12-17 Wednesday 09:48:14 root:INFO:False
+2025-12-17 Wednesday 09:55:59 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 09:56:00 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:56:00 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 09:56:00 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 09:56:00 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 09:56:00 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:50001
+2025-12-17 Wednesday 09:56:28 root:INFO:-------------------------
+2025-12-17 Wednesday 09:56:28 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:56:28 root:INFO:Mã - 
+2025-12-17 Wednesday 09:56:28 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 09:56:28 root:INFO:Kết quả - 
+2025-12-17 Wednesday 09:56:28 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:56:28 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:56:29 root:INFO:True
+2025-12-17 Wednesday 09:59:27 root:INFO:-------------------------
+2025-12-17 Wednesday 09:59:27 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 09:59:27 root:INFO:Mã - Report07_2
+2025-12-17 Wednesday 09:59:27 root:INFO:Tên sự kiện - Check Số lượng cuốc mỗi nguồn/Số lương cuốc màn chi tiết
+(Ngày hiện tại -2)
+2025-12-17 Wednesday 09:59:27 root:INFO:Kết quả - Số lượng cuốc mỗi nguồn = Số lương cuốc màn chi tiết
+2025-12-17 Wednesday 09:59:31 root:INFO:False
+2025-12-17 Wednesday 10:15:56 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:15:59 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:16:20 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:16:41 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:16:41 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:16:41 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:58670
+2025-12-17 Wednesday 10:17:09 root:INFO:-------------------------
+2025-12-17 Wednesday 10:17:09 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:17:09 root:INFO:Mã - 
+2025-12-17 Wednesday 10:17:09 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 10:17:09 root:INFO:Kết quả - 
+2025-12-17 Wednesday 10:17:09 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:17:09 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:17:10 root:INFO:True
+2025-12-17 Wednesday 10:19:10 root:INFO:-------------------------
+2025-12-17 Wednesday 10:19:10 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:19:10 root:INFO:Mã - Report07_2
+2025-12-17 Wednesday 10:19:10 root:INFO:Tên sự kiện - Check Số lượng cuốc mỗi nguồn/Số lương cuốc màn chi tiết
+(Ngày hiện tại -2)
+2025-12-17 Wednesday 10:19:10 root:INFO:Kết quả - Số lượng cuốc mỗi nguồn = Số lương cuốc màn chi tiết
+2025-12-17 Wednesday 10:19:11 root:INFO:False
+2025-12-17 Wednesday 10:19:15 root:INFO:False
+2025-12-17 Wednesday 10:30:21 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:30:29 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:30:50 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:31:11 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:31:11 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:31:11 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:62431
+2025-12-17 Wednesday 10:31:40 root:INFO:-------------------------
+2025-12-17 Wednesday 10:31:40 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:31:40 root:INFO:Mã - 
+2025-12-17 Wednesday 10:31:40 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 10:31:40 root:INFO:Kết quả - 
+2025-12-17 Wednesday 10:31:40 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:31:40 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:31:41 root:INFO:True
+2025-12-17 Wednesday 10:33:09 urllib3.connectionpool:WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BF74CC5310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/808ed830ce0bb7af261d11b8eb9ad15b/back
+2025-12-17 Wednesday 10:33:11 urllib3.connectionpool:WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BF74F64490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/808ed830ce0bb7af261d11b8eb9ad15b/back
+2025-12-17 Wednesday 10:33:13 urllib3.connectionpool:WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BF74F64400>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/808ed830ce0bb7af261d11b8eb9ad15b/back
+2025-12-17 Wednesday 10:33:30 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:33:32 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:33:53 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:34:14 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:34:14 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:34:14 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:64938
+2025-12-17 Wednesday 10:34:42 root:INFO:-------------------------
+2025-12-17 Wednesday 10:34:42 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:34:42 root:INFO:Mã - 
+2025-12-17 Wednesday 10:34:42 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 10:34:42 root:INFO:Kết quả - 
+2025-12-17 Wednesday 10:34:42 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:34:42 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:34:43 root:INFO:True
+2025-12-17 Wednesday 10:36:36 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:36:38 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:36:59 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:37:20 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:37:20 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:37:20 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:63885
+2025-12-17 Wednesday 10:37:48 root:INFO:-------------------------
+2025-12-17 Wednesday 10:37:48 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:37:48 root:INFO:Mã - 
+2025-12-17 Wednesday 10:37:48 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 10:37:48 root:INFO:Kết quả - 
+2025-12-17 Wednesday 10:37:48 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:37:48 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:37:49 root:INFO:True
+2025-12-17 Wednesday 10:43:04 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:43:05 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:43:05 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:43:05 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:43:05 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:43:05 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:49429
+2025-12-17 Wednesday 10:43:33 root:INFO:-------------------------
+2025-12-17 Wednesday 10:43:33 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:43:33 root:INFO:Mã - 
+2025-12-17 Wednesday 10:43:33 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 10:43:33 root:INFO:Kết quả - 
+2025-12-17 Wednesday 10:43:33 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:43:33 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:43:33 root:INFO:True
+2025-12-17 Wednesday 10:46:39 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:46:41 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:46:41 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:46:41 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:46:41 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:46:41 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:54206
+2025-12-17 Wednesday 10:47:09 root:INFO:-------------------------
+2025-12-17 Wednesday 10:47:09 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:47:09 root:INFO:Mã - 
+2025-12-17 Wednesday 10:47:09 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 10:47:09 root:INFO:Kết quả - 
+2025-12-17 Wednesday 10:47:09 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:47:09 root:INFO:8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:47:09 root:INFO:True
+2025-12-17 Wednesday 10:49:15 root:INFO:-------------------------
+2025-12-17 Wednesday 10:49:15 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.1 Tổng cuốc khách
+2025-12-17 Wednesday 10:49:15 root:INFO:Mã - Report07_2
+2025-12-17 Wednesday 10:49:15 root:INFO:Tên sự kiện - Check Số lượng cuốc mỗi nguồn/Số lương cuốc màn chi tiết
+(Ngày hiện tại -2)
+2025-12-17 Wednesday 10:49:15 root:INFO:Kết quả - Số lượng cuốc mỗi nguồn = Số lương cuốc màn chi tiết
+2025-12-17 Wednesday 10:52:33 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:52:36 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:52:36 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:52:36 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:52:36 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:52:36 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:57856
+2025-12-17 Wednesday 10:53:04 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:04 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.8 THỐNG KÊ CHI TIẾT CUỐC KHÁCH
+2025-12-17 Wednesday 10:53:04 root:INFO:Mã - Report20
+2025-12-17 Wednesday 10:53:04 root:INFO:Tên sự kiện - Mở trang "THỐNG KÊ CHI TIẾT CUỐC KHÁCH"
+2025-12-17 Wednesday 10:53:04 root:INFO:Kết quả - Chuyển đến trang: "THỐNG KÊ CHI TIẾT CUỐC KHÁCH"
+2025-12-17 Wednesday 10:53:04 root:INFO:THỐNG KÊ CHI TIẾT CUỐC KHÁCH
+2025-12-17 Wednesday 10:53:04 root:INFO:THỐNG KÊ CHI TIẾT CUỐC KHÁCH
+2025-12-17 Wednesday 10:53:04 root:INFO:True
+2025-12-17 Wednesday 10:53:19 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:19 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.8 THỐNG KÊ CHI TIẾT CUỐC KHÁCH
+2025-12-17 Wednesday 10:53:19 root:INFO:Mã - Report21
+2025-12-17 Wednesday 10:53:19 root:INFO:Tên sự kiện - Tìm kiếm
+2025-12-17 Wednesday 10:53:19 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
+(Hiển thị Nguồn)
+2025-12-17 Wednesday 10:53:19 root:INFO:Nguồn mobile
+2025-12-17 Wednesday 10:53:19 root:INFO:True
+2025-12-17 Wednesday 10:53:37 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:37 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.8 THỐNG KÊ CHI TIẾT CUỐC KHÁCH
+2025-12-17 Wednesday 10:53:37 root:INFO:Mã - Report22
+2025-12-17 Wednesday 10:53:37 root:INFO:Tên sự kiện - Xuất excel
+2025-12-17 Wednesday 10:53:37 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-17 Wednesday 10:53:38 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:38 root:INFO:Tên cột web:   STT
+2025-12-17 Wednesday 10:53:38 root:INFO:Tên cột excel: STT
+2025-12-17 Wednesday 10:53:38 root:INFO:True
+2025-12-17 Wednesday 10:53:38 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:53:38 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:53:38 root:INFO:True
+2025-12-17 Wednesday 10:53:39 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:39 root:INFO:Tên cột web:   Nguồn
+2025-12-17 Wednesday 10:53:39 root:INFO:Tên cột excel: Nguồn
+2025-12-17 Wednesday 10:53:39 root:INFO:True
+2025-12-17 Wednesday 10:53:40 root:INFO:Dữ liệu web:   Nguồn mobile
+2025-12-17 Wednesday 10:53:40 root:INFO:Dữ liệu excel: Nguồn mobile
+2025-12-17 Wednesday 10:53:40 root:INFO:True
+2025-12-17 Wednesday 10:53:41 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:41 root:INFO:Tên cột web:   Số điện thoại
+2025-12-17 Wednesday 10:53:41 root:INFO:Tên cột excel: Số điện thoại
+2025-12-17 Wednesday 10:53:41 root:INFO:True
+2025-12-17 Wednesday 10:53:41 root:INFO:Dữ liệu web:   0346400463
+2025-12-17 Wednesday 10:53:41 root:INFO:Dữ liệu excel: 0346400463
+2025-12-17 Wednesday 10:53:41 root:INFO:True
+2025-12-17 Wednesday 10:53:42 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:42 root:INFO:Tên cột web:   Bộ cấu hình điều
+2025-12-17 Wednesday 10:53:42 root:INFO:Tên cột excel: Bộ cấu hình điều
+2025-12-17 Wednesday 10:53:42 root:INFO:True
+2025-12-17 Wednesday 10:53:42 root:INFO:Dữ liệu web:   Nội thành + Appkh
+2025-12-17 Wednesday 10:53:42 root:INFO:Dữ liệu excel: Nội thành + Appkh
+2025-12-17 Wednesday 10:53:42 root:INFO:True
+2025-12-17 Wednesday 10:53:43 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:43 root:INFO:Tên cột web:   Phương pháp điều
+2025-12-17 Wednesday 10:53:43 root:INFO:Tên cột excel: Phương pháp điều
+2025-12-17 Wednesday 10:53:43 root:INFO:True
+2025-12-17 Wednesday 10:53:44 root:INFO:Dữ liệu web:   Điều tuần tự
+2025-12-17 Wednesday 10:53:44 root:INFO:Dữ liệu excel: Điều tuần tự
+2025-12-17 Wednesday 10:53:44 root:INFO:True
+2025-12-17 Wednesday 10:53:44 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:44 root:INFO:Tên cột web:   Loại xe
+2025-12-17 Wednesday 10:53:44 root:INFO:Tên cột excel: Loại xe
+2025-12-17 Wednesday 10:53:44 root:INFO:True
+2025-12-17 Wednesday 10:53:45 root:INFO:Dữ liệu web:   4 Chỗ_All
+2025-12-17 Wednesday 10:53:45 root:INFO:Dữ liệu excel: 4 Chỗ_All
+2025-12-17 Wednesday 10:53:45 root:INFO:True
+2025-12-17 Wednesday 10:53:46 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:46 root:INFO:Tên cột web:   Số lần đề cử
+2025-12-17 Wednesday 10:53:46 root:INFO:Tên cột excel: Số lần đề cử
+2025-12-17 Wednesday 10:53:46 root:INFO:True
+2025-12-17 Wednesday 10:53:47 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:53:47 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:53:47 root:INFO:True
+2025-12-17 Wednesday 10:53:47 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:47 root:INFO:Tên cột web:   Số lái xe đề cử
+2025-12-17 Wednesday 10:53:47 root:INFO:Tên cột excel: Số lái xe đề cử
+2025-12-17 Wednesday 10:53:47 root:INFO:True
+2025-12-17 Wednesday 10:53:48 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:53:48 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:53:48 root:INFO:True
+2025-12-17 Wednesday 10:53:49 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:49 root:INFO:Tên cột web:   Thời gian cuốc đặt
+2025-12-17 Wednesday 10:53:49 root:INFO:Tên cột excel: Thời gian cuốc đặt
+2025-12-17 Wednesday 10:53:49 root:INFO:True
+2025-12-17 Wednesday 10:53:49 root:INFO:Dữ liệu web:   9:20:46 17/12/2025
+2025-12-17 Wednesday 10:53:49 root:INFO:Dữ liệu excel: 9:20:46 17/12/2025
+2025-12-17 Wednesday 10:53:49 root:INFO:True
+2025-12-17 Wednesday 10:53:50 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:50 root:INFO:Tên cột web:   Địa chỉ đón khách
+2025-12-17 Wednesday 10:53:50 root:INFO:Tên cột excel: Địa chỉ đón khách
+2025-12-17 Wednesday 10:53:50 root:INFO:True
+2025-12-17 Wednesday 10:53:51 root:INFO:Dữ liệu web:   Khu Lô 14 KĐT Đại Kim P. Định Công, TP. Hà Nội
+2025-12-17 Wednesday 10:53:51 root:INFO:Dữ liệu excel: Khu Lô 14 KĐT Đại Kim P. Định Công, TP. Hà Nội
+2025-12-17 Wednesday 10:53:51 root:INFO:True
+2025-12-17 Wednesday 10:53:51 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:51 root:INFO:Tên cột web:   Địa chỉ trả khách
+2025-12-17 Wednesday 10:53:51 root:INFO:Tên cột excel: Địa chỉ trả khách
+2025-12-17 Wednesday 10:53:51 root:INFO:True
+2025-12-17 Wednesday 10:53:52 root:INFO:Dữ liệu web:   Đại Kim, P. Định Công, TP. Hà Nội
+2025-12-17 Wednesday 10:53:52 root:INFO:Dữ liệu excel: Đại Kim, P. Định Công, TP. Hà Nội
+2025-12-17 Wednesday 10:53:52 root:INFO:True
+2025-12-17 Wednesday 10:53:53 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:53 root:INFO:Tên cột web:   Hành khách
+2025-12-17 Wednesday 10:53:53 root:INFO:Tên cột excel: Hành khách
+2025-12-17 Wednesday 10:53:53 root:INFO:True
+2025-12-17 Wednesday 10:53:53 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:53:53 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:53:53 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:53 root:INFO:Tên cột web:   Trạng thái
+2025-12-17 Wednesday 10:53:53 root:INFO:Tên cột excel: Trạng thái
+2025-12-17 Wednesday 10:53:53 root:INFO:True
+2025-12-17 Wednesday 10:53:54 root:INFO:Dữ liệu web:   Khách hủy
+2025-12-17 Wednesday 10:53:54 root:INFO:Dữ liệu excel: Khách hủy
+2025-12-17 Wednesday 10:53:54 root:INFO:True
+2025-12-17 Wednesday 10:53:55 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:55 root:INFO:Tên cột web:   Ghi chú
+2025-12-17 Wednesday 10:53:55 root:INFO:Tên cột excel: Ghi chú
+2025-12-17 Wednesday 10:53:55 root:INFO:True
+2025-12-17 Wednesday 10:53:56 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:53:56 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:53:56 root:INFO:True
+2025-12-17 Wednesday 10:53:57 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột web:   Chi tiết đề cử
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột web:   Bản đồ xe
+trước đề cử
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột web:   Bản đồ xe
+sau đề cử
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:-------------------------
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột web:   Hợp đồng chuyến đi
+2025-12-17 Wednesday 10:53:57 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:53:57 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:54:24 root:INFO:-------------------------
+2025-12-17 Wednesday 10:54:24 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.11 Thống kê cuốc khách theo lái xe
+2025-12-17 Wednesday 10:54:24 root:INFO:Mã - Report23
+2025-12-17 Wednesday 10:54:24 root:INFO:Tên sự kiện - Mở trang "Thống kê cuốc khách theo lái xe "
+2025-12-17 Wednesday 10:54:24 root:INFO:Kết quả - Chuyển đến trang: "8.1.11 Thống kê cuốc khách theo lái xe "
+2025-12-17 Wednesday 10:54:24 root:INFO:8.1.11 Thống kê cuốc khách theo lái xe
+2025-12-17 Wednesday 10:54:24 root:INFO:8.1.11 Thống kê cuốc khách theo lái xe
+2025-12-17 Wednesday 10:54:24 root:INFO:True
+2025-12-17 Wednesday 10:54:39 root:INFO:-------------------------
+2025-12-17 Wednesday 10:54:39 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.11 Thống kê cuốc khách theo lái xe
+2025-12-17 Wednesday 10:54:39 root:INFO:Mã - Report24
+2025-12-17 Wednesday 10:54:39 root:INFO:Tên sự kiện - Tìm kiếm
+2025-12-17 Wednesday 10:54:39 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
+(Hiển thị Lái xe)
+2025-12-17 Wednesday 10:54:39 root:INFO:batrinh209a
+2025-12-17 Wednesday 10:54:40 root:INFO:True
+2025-12-17 Wednesday 10:54:58 root:INFO:-------------------------
+2025-12-17 Wednesday 10:54:58 root:INFO:BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.11 Thống kê cuốc khách theo lái xe
+2025-12-17 Wednesday 10:54:58 root:INFO:Mã - Report25
+2025-12-17 Wednesday 10:54:58 root:INFO:Tên sự kiện - Xuất excel
+2025-12-17 Wednesday 10:54:58 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-17 Wednesday 10:54:58 root:INFO:-------------------------
+2025-12-17 Wednesday 10:54:58 root:INFO:Tên cột web:   STT
+2025-12-17 Wednesday 10:54:58 root:INFO:Tên cột excel: STT
+2025-12-17 Wednesday 10:54:58 root:INFO:True
+2025-12-17 Wednesday 10:54:59 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:54:59 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:54:59 root:INFO:True
+2025-12-17 Wednesday 10:55:00 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:00 root:INFO:Tên cột web:   Lái xe
+2025-12-17 Wednesday 10:55:00 root:INFO:Tên cột excel: Lái xe
+2025-12-17 Wednesday 10:55:00 root:INFO:True
+2025-12-17 Wednesday 10:55:01 root:INFO:Dữ liệu web:   batrinh209a
+2025-12-17 Wednesday 10:55:01 root:INFO:Dữ liệu excel: batrinh209a
+2025-12-17 Wednesday 10:55:01 root:INFO:True
+2025-12-17 Wednesday 10:55:02 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:02 root:INFO:Tên cột web:   Nguồn
+2025-12-17 Wednesday 10:55:02 root:INFO:Tên cột excel: Nguồn
+2025-12-17 Wednesday 10:55:02 root:INFO:True
+2025-12-17 Wednesday 10:55:02 root:INFO:Dữ liệu web:   Nguồn mobile
+2025-12-17 Wednesday 10:55:02 root:INFO:Dữ liệu excel: Nguồn mobile
+2025-12-17 Wednesday 10:55:02 root:INFO:True
+2025-12-17 Wednesday 10:55:03 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:03 root:INFO:Tên cột web:   Số điện thoại
+2025-12-17 Wednesday 10:55:03 root:INFO:Tên cột excel: Số điện thoại
+2025-12-17 Wednesday 10:55:03 root:INFO:True
+2025-12-17 Wednesday 10:55:04 root:INFO:Dữ liệu web:   0346400463
+2025-12-17 Wednesday 10:55:04 root:INFO:Dữ liệu excel: 0346400463
+2025-12-17 Wednesday 10:55:04 root:INFO:True
+2025-12-17 Wednesday 10:55:05 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:05 root:INFO:Tên cột web:   Phương pháp điều
+2025-12-17 Wednesday 10:55:05 root:INFO:Tên cột excel: Phương pháp điều
+2025-12-17 Wednesday 10:55:05 root:INFO:True
+2025-12-17 Wednesday 10:55:06 root:INFO:Dữ liệu web:   Điều tuần tự
+2025-12-17 Wednesday 10:55:06 root:INFO:Dữ liệu excel: Điều tuần tự
+2025-12-17 Wednesday 10:55:06 root:INFO:True
+2025-12-17 Wednesday 10:55:06 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:06 root:INFO:Tên cột web:   Loại xe
+2025-12-17 Wednesday 10:55:06 root:INFO:Tên cột excel: Loại xe
+2025-12-17 Wednesday 10:55:06 root:INFO:True
+2025-12-17 Wednesday 10:55:07 root:INFO:Dữ liệu web:   4 Chỗ_All
+2025-12-17 Wednesday 10:55:07 root:INFO:Dữ liệu excel: 4 Chỗ_All
+2025-12-17 Wednesday 10:55:07 root:INFO:True
+2025-12-17 Wednesday 10:55:08 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:08 root:INFO:Tên cột web:   Số lần đề cử
+2025-12-17 Wednesday 10:55:08 root:INFO:Tên cột excel: Số lần đề cử
+2025-12-17 Wednesday 10:55:08 root:INFO:True
+2025-12-17 Wednesday 10:55:08 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:55:08 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:55:08 root:INFO:True
+2025-12-17 Wednesday 10:55:09 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:09 root:INFO:Tên cột web:   Số lái xe đề cử
+2025-12-17 Wednesday 10:55:09 root:INFO:Tên cột excel: Số lái xe đề cử
+2025-12-17 Wednesday 10:55:09 root:INFO:True
+2025-12-17 Wednesday 10:55:10 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 10:55:10 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 10:55:10 root:INFO:True
+2025-12-17 Wednesday 10:55:11 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:11 root:INFO:Tên cột web:   Thời gian cuốc đặt
+2025-12-17 Wednesday 10:55:11 root:INFO:Tên cột excel: Thời gian cuốc đặt
+2025-12-17 Wednesday 10:55:11 root:INFO:True
+2025-12-17 Wednesday 10:55:11 root:INFO:Dữ liệu web:   9:20:46 17/12/2025
+2025-12-17 Wednesday 10:55:11 root:INFO:Dữ liệu excel: 9:20:46 17/12/2025
+2025-12-17 Wednesday 10:55:11 root:INFO:True
+2025-12-17 Wednesday 10:55:12 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:12 root:INFO:Tên cột web:   Địa chỉ đón khách
+2025-12-17 Wednesday 10:55:12 root:INFO:Tên cột excel: Địa chỉ đón khách
+2025-12-17 Wednesday 10:55:12 root:INFO:True
+2025-12-17 Wednesday 10:55:12 root:INFO:Dữ liệu web:   Khu Lô 14 KĐT Đại Kim P. Định Công, TP. Hà Nội
+2025-12-17 Wednesday 10:55:12 root:INFO:Dữ liệu excel: Khu Lô 14 KĐT Đại Kim P. Định Công, TP. Hà Nội
+2025-12-17 Wednesday 10:55:12 root:INFO:True
+2025-12-17 Wednesday 10:55:13 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:13 root:INFO:Tên cột web:   Trạng thái
+2025-12-17 Wednesday 10:55:13 root:INFO:Tên cột excel: Trạng thái
+2025-12-17 Wednesday 10:55:13 root:INFO:True
+2025-12-17 Wednesday 10:55:14 root:INFO:Dữ liệu web:   Khách hủy
+2025-12-17 Wednesday 10:55:14 root:INFO:Dữ liệu excel: Khách hủy
+2025-12-17 Wednesday 10:55:14 root:INFO:True
+2025-12-17 Wednesday 10:55:15 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:15 root:INFO:Tên cột web:   Chi tiết đề cử
+2025-12-17 Wednesday 10:55:15 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:55:15 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:55:15 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:55:15 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:15 root:INFO:Tên cột web:   Bản đồ xe trước đề cử
+2025-12-17 Wednesday 10:55:15 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:55:15 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:55:15 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:55:15 root:INFO:-------------------------
+2025-12-17 Wednesday 10:55:15 root:INFO:Tên cột web:   Bản đồ xe sau đề cử
+2025-12-17 Wednesday 10:55:15 root:INFO:Tên cột excel: None
+2025-12-17 Wednesday 10:55:15 root:INFO:Dữ liệu web:   None
+2025-12-17 Wednesday 10:55:15 root:INFO:Dữ liệu excel: None
+2025-12-17 Wednesday 10:59:34 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 10:59:35 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:59:35 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 10:59:35 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 10:59:35 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 10:59:35 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:55133
+2025-12-17 Wednesday 11:19:59 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:20:00 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:20:21 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:20:42 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:20:42 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:20:42 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:62152
+2025-12-17 Wednesday 11:21:10 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:10 root:INFO:BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.3 Thanh toán cuốc khách cho lái xe
+2025-12-17 Wednesday 11:21:10 root:INFO:Mã - Report54
+2025-12-17 Wednesday 11:21:10 root:INFO:Tên sự kiện - Mở trang "Thanh toán cuốc khách cho lái xe"
+2025-12-17 Wednesday 11:21:10 root:INFO:Kết quả - Chuyển đến trang: "8.4.3 Thanh toán cuốc khách cho lái xe"
+2025-12-17 Wednesday 11:21:10 root:INFO:8.4.3 Thanh toán cuốc khách cho lái xe
+2025-12-17 Wednesday 11:21:10 root:INFO:8.4.3 Thanh toán cuốc khách cho lái xe
+2025-12-17 Wednesday 11:21:10 root:INFO:True
+2025-12-17 Wednesday 11:21:21 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:21 root:INFO:BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.3 Thanh toán cuốc khách cho lái xe
+2025-12-17 Wednesday 11:21:21 root:INFO:Mã - Report55
+2025-12-17 Wednesday 11:21:21 root:INFO:Tên sự kiện - Tìm kiếm
+2025-12-17 Wednesday 11:21:21 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
+(Hiển thị Tên lái xe)
+2025-12-17 Wednesday 11:21:21 root:INFO:bahlt
+2025-12-17 Wednesday 11:21:21 root:INFO:True
+2025-12-17 Wednesday 11:21:37 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:37 root:INFO:BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.3 Thanh toán cuốc khách cho lái xe
+2025-12-17 Wednesday 11:21:37 root:INFO:Mã - Report56
+2025-12-17 Wednesday 11:21:37 root:INFO:Tên sự kiện - Xuất excel
+2025-12-17 Wednesday 11:21:37 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-17 Wednesday 11:21:37 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:37 root:INFO:Tên cột web:   STT
+2025-12-17 Wednesday 11:21:37 root:INFO:Tên cột excel: STT
+2025-12-17 Wednesday 11:21:37 root:INFO:True
+2025-12-17 Wednesday 11:21:38 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 11:21:38 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 11:21:38 root:INFO:True
+2025-12-17 Wednesday 11:21:39 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:39 root:INFO:Tên cột web:   Tên lái xe
+2025-12-17 Wednesday 11:21:39 root:INFO:Tên cột excel: Tên lái xe
+2025-12-17 Wednesday 11:21:39 root:INFO:True
+2025-12-17 Wednesday 11:21:39 root:INFO:Dữ liệu web:   bahlt
+2025-12-17 Wednesday 11:21:39 root:INFO:Dữ liệu excel: bahlt
+2025-12-17 Wednesday 11:21:39 root:INFO:True
+2025-12-17 Wednesday 11:21:40 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:40 root:INFO:Tên cột web:   Tài khoản
+2025-12-17 Wednesday 11:21:40 root:INFO:Tên cột excel: Tài khoản
+2025-12-17 Wednesday 11:21:40 root:INFO:True
+2025-12-17 Wednesday 11:21:40 root:INFO:Dữ liệu web:   bahlt
+2025-12-17 Wednesday 11:21:40 root:INFO:Dữ liệu excel: bahlt
+2025-12-17 Wednesday 11:21:40 root:INFO:True
+2025-12-17 Wednesday 11:21:41 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:41 root:INFO:Tên cột web:   Số hiệu
+2025-12-17 Wednesday 11:21:41 root:INFO:Tên cột excel: Số hiệu
+2025-12-17 Wednesday 11:21:41 root:INFO:True
+2025-12-17 Wednesday 11:21:42 root:INFO:Dữ liệu web:   24101
+2025-12-17 Wednesday 11:21:42 root:INFO:Dữ liệu excel: 24101
+2025-12-17 Wednesday 11:21:42 root:INFO:True
+2025-12-17 Wednesday 11:21:42 root:INFO:-------------------------
+2025-12-17 Wednesday 11:21:42 root:INFO:Tên cột web:   Biển số
+2025-12-17 Wednesday 11:21:42 root:INFO:Tên cột excel: Biển số
+2025-12-17 Wednesday 11:21:42 root:INFO:True
+2025-12-17 Wednesday 11:21:43 root:INFO:Dữ liệu web:   BA2410
+2025-12-17 Wednesday 11:21:43 root:INFO:Dữ liệu excel: BA2410
+2025-12-17 Wednesday 11:21:43 root:INFO:True
+2025-12-17 Wednesday 11:22:27 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:22:28 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:22:50 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:23:11 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:23:11 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:23:11 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:55893
+2025-12-17 Wednesday 11:23:42 root:INFO:-------------------------
+2025-12-17 Wednesday 11:23:42 root:INFO:BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.7 Chi tiết doanh thu từ app lái xe
+2025-12-17 Wednesday 11:23:42 root:INFO:Mã - Report66
+2025-12-17 Wednesday 11:23:42 root:INFO:Tên sự kiện - Mở trang "Chi tiết doanh thu từ app lái xe"
+2025-12-17 Wednesday 11:23:42 root:INFO:Kết quả - Chuyển đến trang: "8.4.7 Chi tiết doanh thu từ app lái xe"
+2025-12-17 Wednesday 11:23:42 root:INFO:8.4.7 Chi tiết doanh thu từ app lái xe
+2025-12-17 Wednesday 11:23:42 root:INFO:8.4.7 Chi tiết doanh thu từ app lái xe
+2025-12-17 Wednesday 11:23:43 root:INFO:True
+2025-12-17 Wednesday 11:23:57 root:INFO:-------------------------
+2025-12-17 Wednesday 11:23:57 root:INFO:BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.7 Chi tiết doanh thu từ app lái xe
+2025-12-17 Wednesday 11:23:57 root:INFO:Mã - Report67
+2025-12-17 Wednesday 11:23:57 root:INFO:Tên sự kiện - Tìm kiếm
+2025-12-17 Wednesday 11:23:57 root:INFO:Kết quả - Có dữ liệu tìm kiếm hàng đầu tiên
+(Hiển thị Biển số)
+2025-12-17 Wednesday 11:23:57 root:INFO:auto383
+2025-12-17 Wednesday 11:23:58 root:INFO:True
+2025-12-17 Wednesday 11:24:36 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:36 root:INFO:BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.7 Chi tiết doanh thu từ app lái xe
+2025-12-17 Wednesday 11:24:36 root:INFO:Mã - Report68
+2025-12-17 Wednesday 11:24:36 root:INFO:Tên sự kiện - Xuất excel
+2025-12-17 Wednesday 11:24:36 root:INFO:Kết quả - 1. Tải file Excel về máy
+2. Các cột và dữ liệu dòng đầu Web và file Excel phải giống nhau
+(Xem file log)
+2025-12-17 Wednesday 11:24:37 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:37 root:INFO:Tên cột web:   STT
+2025-12-17 Wednesday 11:24:37 root:INFO:Tên cột excel: STT
+2025-12-17 Wednesday 11:24:37 root:INFO:True
+2025-12-17 Wednesday 11:24:37 root:INFO:Dữ liệu web:   1
+2025-12-17 Wednesday 11:24:37 root:INFO:Dữ liệu excel: 1
+2025-12-17 Wednesday 11:24:37 root:INFO:True
+2025-12-17 Wednesday 11:24:38 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:38 root:INFO:Tên cột web:   Mã cuốc khách
+2025-12-17 Wednesday 11:24:38 root:INFO:Tên cột excel: Mã cuốc khách
+2025-12-17 Wednesday 11:24:38 root:INFO:True
+2025-12-17 Wednesday 11:24:39 root:INFO:Dữ liệu web:   00AEBDCB
+2025-12-17 Wednesday 11:24:39 root:INFO:Dữ liệu excel: 00AEBDCB
+2025-12-17 Wednesday 11:24:39 root:INFO:True
+2025-12-17 Wednesday 11:24:39 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:39 root:INFO:Tên cột web:   Loại cuốc
+2025-12-17 Wednesday 11:24:39 root:INFO:Tên cột excel: Nguồn cuốc
+2025-12-17 Wednesday 11:24:39 root:ERROR:False
+2025-12-17 Wednesday 11:24:41 root:ERROR:Dòng: C5
+2025-12-17 Wednesday 11:24:41 root:INFO:Dữ liệu web:   Nguồn mobile
+2025-12-17 Wednesday 11:24:41 root:INFO:Dữ liệu excel: Nguồn mobile
+2025-12-17 Wednesday 11:24:41 root:INFO:True
+2025-12-17 Wednesday 11:24:41 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:41 root:INFO:Tên cột web:   Tên lái xe
+2025-12-17 Wednesday 11:24:41 root:INFO:Tên cột excel: Loại cuốc
+2025-12-17 Wednesday 11:24:41 root:ERROR:False
+2025-12-17 Wednesday 11:24:43 root:ERROR:Dòng: D5
+2025-12-17 Wednesday 11:24:43 root:INFO:Dữ liệu web:   Taxi thông thường
+2025-12-17 Wednesday 11:24:43 root:INFO:Dữ liệu excel: Taxi thông thường
+2025-12-17 Wednesday 11:24:43 root:INFO:True
+2025-12-17 Wednesday 11:24:43 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:43 root:INFO:Tên cột web:   Mã lái xe
+2025-12-17 Wednesday 11:24:43 root:INFO:Tên cột excel: Tên lái xe
+2025-12-17 Wednesday 11:24:43 root:ERROR:False
+2025-12-17 Wednesday 11:24:44 root:ERROR:Dòng: E5
+2025-12-17 Wednesday 11:24:44 root:INFO:Dữ liệu web:   auto383
+2025-12-17 Wednesday 11:24:44 root:INFO:Dữ liệu excel: auto383
+2025-12-17 Wednesday 11:24:44 root:INFO:True
+2025-12-17 Wednesday 11:24:45 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:45 root:INFO:Tên cột web:   Biển số
+2025-12-17 Wednesday 11:24:45 root:INFO:Tên cột excel: Mã lái xe
+2025-12-17 Wednesday 11:24:45 root:ERROR:False
+2025-12-17 Wednesday 11:24:46 root:ERROR:Dòng: F5
+2025-12-17 Wednesday 11:24:46 root:INFO:Dữ liệu web:   auto383
+2025-12-17 Wednesday 11:24:46 root:INFO:Dữ liệu excel: auto383
+2025-12-17 Wednesday 11:24:46 root:INFO:True
+2025-12-17 Wednesday 11:24:47 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:47 root:INFO:Tên cột web:   Số hiệu
+2025-12-17 Wednesday 11:24:47 root:INFO:Tên cột excel: Biển số
+2025-12-17 Wednesday 11:24:47 root:ERROR:False
+2025-12-17 Wednesday 11:24:49 root:ERROR:Dòng: G5
+2025-12-17 Wednesday 11:24:49 root:INFO:Dữ liệu web:   29A96320
+2025-12-17 Wednesday 11:24:49 root:INFO:Dữ liệu excel: 29A96320
+2025-12-17 Wednesday 11:24:49 root:INFO:True
+2025-12-17 Wednesday 11:24:49 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:49 root:INFO:Tên cột web:   Số điện thoại khách hàng
+2025-12-17 Wednesday 11:24:49 root:INFO:Tên cột excel: Số hiệu
+2025-12-17 Wednesday 11:24:49 root:ERROR:False
+2025-12-17 Wednesday 11:24:51 root:ERROR:Dòng: H5
+2025-12-17 Wednesday 11:24:51 root:INFO:Dữ liệu web:   329
+2025-12-17 Wednesday 11:24:51 root:INFO:Dữ liệu excel: 329
+2025-12-17 Wednesday 11:24:51 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:51 root:INFO:Tên cột web:   Địa chỉ đón khách
+2025-12-17 Wednesday 11:24:51 root:INFO:Tên cột excel: Số điện thoại
+khách hàng
+2025-12-17 Wednesday 11:24:51 root:ERROR:False
+2025-12-17 Wednesday 11:24:52 root:ERROR:Dòng: I5
+2025-12-17 Wednesday 11:24:52 root:INFO:Dữ liệu web:   0359667694
+2025-12-17 Wednesday 11:24:52 root:INFO:Dữ liệu excel: 0359667694
+2025-12-17 Wednesday 11:24:52 root:INFO:True
+2025-12-17 Wednesday 11:24:53 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:53 root:INFO:Tên cột web:   Địa chỉ trả khách
+2025-12-17 Wednesday 11:24:53 root:INFO:Tên cột excel: Địa chỉ đón khách
+2025-12-17 Wednesday 11:24:53 root:ERROR:False
+2025-12-17 Wednesday 11:24:54 root:ERROR:Dòng: J5
+2025-12-17 Wednesday 11:24:54 root:INFO:Dữ liệu web:   Bưu Điện Đại Kim P. Định Công, Q. Hoàng Mai, TP. Hà Nội
+2025-12-17 Wednesday 11:24:54 root:INFO:Dữ liệu excel: Bưu Điện Đại Kim P. Định Công, Q. Hoàng Mai, TP. Hà Nội
+2025-12-17 Wednesday 11:24:54 root:INFO:True
+2025-12-17 Wednesday 11:24:55 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:55 root:INFO:Tên cột web:   Thời gian cuốc đặt
+2025-12-17 Wednesday 11:24:55 root:INFO:Tên cột excel: Địa chỉ trả khách
+2025-12-17 Wednesday 11:24:55 root:ERROR:False
+2025-12-17 Wednesday 11:24:56 root:ERROR:Dòng: K5
+2025-12-17 Wednesday 11:24:56 root:INFO:Dữ liệu web:   34, Ngõ 80 Chùa Láng, P. Láng Thượng, Q. Đống Đa, TP. Hà Nội
+2025-12-17 Wednesday 11:24:56 root:INFO:Dữ liệu excel: 34, Ngõ 80 Chùa Láng, P. Láng Thượng, Q. Đống Đa, TP. Hà Nội
+2025-12-17 Wednesday 11:24:56 root:INFO:True
+2025-12-17 Wednesday 11:24:57 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:57 root:INFO:Tên cột web:   Thời gian cuốc kết thúc
+2025-12-17 Wednesday 11:24:57 root:INFO:Tên cột excel: Thời gian cuốc đặt
+2025-12-17 Wednesday 11:24:57 root:ERROR:False
+2025-12-17 Wednesday 11:24:58 root:ERROR:Dòng: L5
+2025-12-17 Wednesday 11:24:58 root:INFO:Dữ liệu web:   23:56 05/08/2025
+2025-12-17 Wednesday 11:24:58 root:INFO:Dữ liệu excel: 23:56 05/08/2025 
+2025-12-17 Wednesday 11:24:58 root:INFO:-------------------------
+2025-12-17 Wednesday 11:24:58 root:INFO:Tên cột web:   Số km
+2025-12-17 Wednesday 11:24:58 root:INFO:Tên cột excel: Thời gian cuốc kết thúc
+2025-12-17 Wednesday 11:24:58 root:ERROR:False
+2025-12-17 Wednesday 11:25:00 root:ERROR:Dòng: M5
+2025-12-17 Wednesday 11:25:00 root:INFO:Dữ liệu web:   23:56 05/08/2025
+2025-12-17 Wednesday 11:25:00 root:INFO:Dữ liệu excel: 23:56 05/08/2025
+2025-12-17 Wednesday 11:25:00 root:INFO:True
+2025-12-17 Wednesday 11:25:00 root:INFO:-------------------------
+2025-12-17 Wednesday 11:25:00 root:INFO:Tên cột web:   Cước di chuyển 
+(1)
+2025-12-17 Wednesday 11:25:00 root:INFO:Tên cột excel: Số Km
+2025-12-17 Wednesday 11:25:00 root:ERROR:False
+2025-12-17 Wednesday 11:25:01 root:ERROR:Dòng: N5
+2025-12-17 Wednesday 11:25:01 root:INFO:Dữ liệu web:   7,56
+2025-12-17 Wednesday 11:25:01 root:INFO:Dữ liệu excel: 7,56
+2025-12-17 Wednesday 11:25:01 root:INFO:True
+2025-12-17 Wednesday 11:39:54 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:39:55 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:40:16 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:40:37 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:40:37 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:40:37 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:60116
+2025-12-17 Wednesday 11:41:09 root:INFO:-------------------------
+2025-12-17 Wednesday 11:41:09 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:41:09 root:INFO:Mã - 
+2025-12-17 Wednesday 11:41:09 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 11:41:09 root:INFO:Kết quả - 
+2025-12-17 Wednesday 11:41:09 root:INFO:10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:41:09 root:INFO:10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:41:10 root:INFO:True
+2025-12-17 Wednesday 11:42:28 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:42:29 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:42:50 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:43:12 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:43:12 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:43:12 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:57139
+2025-12-17 Wednesday 11:43:43 root:INFO:-------------------------
+2025-12-17 Wednesday 11:43:43 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:43:43 root:INFO:Mã - 
+2025-12-17 Wednesday 11:43:43 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 11:43:43 root:INFO:Kết quả - 
+2025-12-17 Wednesday 11:43:43 root:INFO:10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:43:43 root:INFO:10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:43:43 root:INFO:True
+2025-12-17 Wednesday 11:44:03 root:INFO:-------------------------
+2025-12-17 Wednesday 11:44:03 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:44:03 root:INFO:Mã - Admin77
+2025-12-17 Wednesday 11:44:03 root:INFO:Tên sự kiện - Thêm mới
+2025-12-17 Wednesday 11:44:03 root:INFO:Kết quả - Hiển thị thông báo: "Thông báo đã tạo thành công."
+(Thông báo tạo ở mục ghi chú)
+2025-12-17 Wednesday 11:44:03 root:INFO:Thông báo đã tạo thành công.
+2025-12-17 Wednesday 11:44:03 root:INFO:Thông báo đã tạo thành công.
+2025-12-17 Wednesday 11:44:04 root:INFO:True
+2025-12-17 Wednesday 11:44:27 root:INFO:-------------------------
+2025-12-17 Wednesday 11:44:27 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:44:27 root:INFO:Mã - Admin78
+2025-12-17 Wednesday 11:44:27 root:INFO:Tên sự kiện - Cập nhật
+2025-12-17 Wednesday 11:44:27 root:INFO:Kết quả - Hiển thị thông báo: "Thông báo đã được cập nhật thành công."
+2025-12-17 Wednesday 11:44:27 root:INFO:Thông báo đã được cập nhật thành công.
+2025-12-17 Wednesday 11:44:27 root:INFO:Thông báo đã được cập nhật thành công.
+2025-12-17 Wednesday 11:44:28 root:INFO:True
+2025-12-17 Wednesday 11:44:52 root:INFO:-------------------------
+2025-12-17 Wednesday 11:44:52 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:44:52 root:INFO:Mã - Admin79
+2025-12-17 Wednesday 11:44:52 root:INFO:Tên sự kiện - Xem
+2025-12-17 Wednesday 11:44:52 root:INFO:Kết quả - Mở tab mới, Hiển thị nội dung của thông báo: "Test tạo thông báo theo lái xe"
+2025-12-17 Wednesday 11:44:52 root:INFO:Cập nhật số dư
+2025-12-17 Wednesday 11:44:53 root:INFO:True
+2025-12-17 Wednesday 11:46:31 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:46:32 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:46:53 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:47:15 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:47:15 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:47:15 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:61602
+2025-12-17 Wednesday 11:47:45 root:INFO:-------------------------
+2025-12-17 Wednesday 11:47:45 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:47:45 root:INFO:Mã - 
+2025-12-17 Wednesday 11:47:45 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 11:47:45 root:INFO:Kết quả - 
+2025-12-17 Wednesday 11:47:45 root:INFO:10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:47:45 root:INFO:10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:47:46 root:INFO:True
+2025-12-17 Wednesday 11:48:00 root:INFO:-------------------------
+2025-12-17 Wednesday 11:48:00 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:48:00 root:INFO:Mã - Admin80
+2025-12-17 Wednesday 11:48:00 root:INFO:Tên sự kiện - Chi tiết
+2025-12-17 Wednesday 11:48:00 root:INFO:Kết quả - Chuyển tới trang: "DANH SÁCH LÁI XE ĐÃ ĐỌC THÔNG BÁO"
+2025-12-17 Wednesday 11:48:00 root:INFO:DANH SÁCH LÁI XE ĐÃ ĐỌC THÔNG BÁO
+2025-12-17 Wednesday 11:48:00 root:INFO:DANH SÁCH LÁI XE ĐÃ ĐỌC THÔNG BÁO
+2025-12-17 Wednesday 11:48:01 root:INFO:True
+2025-12-17 Wednesday 11:48:25 root:INFO:-------------------------
+2025-12-17 Wednesday 11:48:25 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.1 Quản trị thông báo lái xe
+2025-12-17 Wednesday 11:48:25 root:INFO:Mã - Admin81
+2025-12-17 Wednesday 11:48:25 root:INFO:Tên sự kiện - Xóa
+2025-12-17 Wednesday 11:48:25 root:INFO:Kết quả - Hiển thị message: "Xóa thông báo thành công."
+2025-12-17 Wednesday 11:48:25 root:INFO:Xóa thông báo thành công.
+2025-12-17 Wednesday 11:48:25 root:INFO:Xóa thông báo thành công.
+2025-12-17 Wednesday 11:48:26 root:INFO:True
+2025-12-17 Wednesday 11:49:25 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:49:26 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:49:27 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:49:27 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:49:27 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:49:27 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:50647
+2025-12-17 Wednesday 11:49:58 root:INFO:-------------------------
+2025-12-17 Wednesday 11:49:58 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2
+2025-12-17 Wednesday 11:49:58 root:INFO:Mã - 
+2025-12-17 Wednesday 11:49:58 root:INFO:Tên sự kiện - 
+2025-12-17 Wednesday 11:49:58 root:INFO:Kết quả - 
+2025-12-17 Wednesday 11:49:58 root:INFO:10.7.4 Quản trị thông báo lái xe v2
+2025-12-17 Wednesday 11:49:58 root:INFO:10.7.4 Quản trị thông báo lái xe v2
+2025-12-17 Wednesday 11:49:59 root:INFO:True
+2025-12-17 Wednesday 11:50:08 root:INFO:-------------------------
+2025-12-17 Wednesday 11:50:08 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2
+2025-12-17 Wednesday 11:50:08 root:INFO:Mã - Admin84
+2025-12-17 Wednesday 11:50:08 root:INFO:Tên sự kiện - Tìm kiếm(Tiêu đề)
+2025-12-17 Wednesday 11:50:08 root:INFO:Kết quả - Trường "Tiêu đề" hiện thị đúng dữ liệu đã nhập
+2025-12-17 Wednesday 11:50:08 root:INFO:
+2025-12-17 Wednesday 11:50:08 root:INFO:
+2025-12-17 Wednesday 11:50:09 root:INFO:True
+2025-12-17 Wednesday 11:50:16 root:INFO:-------------------------
+2025-12-17 Wednesday 11:50:16 root:INFO:BÁO CÁO - 10.7 Quản trị lái xe - 10.7.4 Quản trị thông báo lái xe v2
+2025-12-17 Wednesday 11:50:16 root:INFO:Mã - Admin85
+2025-12-17 Wednesday 11:50:16 root:INFO:Tên sự kiện - Kiểu thông báo(Thông báo)
+2025-12-17 Wednesday 11:50:16 root:INFO:Kết quả - Trường "Kiểu thông báo" hiện thị: Thông báo
+2025-12-17 Wednesday 11:50:16 root:INFO:Tin tức
+2025-12-17 Wednesday 11:50:16 root:INFO:Thông báo
+2025-12-17 Wednesday 11:50:17 root:INFO:False
+2025-12-17 Wednesday 11:52:41 WDM:INFO:====== WebDriver manager ======
+2025-12-17 Wednesday 11:52:42 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:52:42 WDM:INFO:Get LATEST chromedriver version for google-chrome
+2025-12-17 Wednesday 11:52:42 WDM:INFO:Driver [C:\Users\truongtq.BA\PycharmProjects\pythonProject\s_taxi\.wdm\drivers\chromedriver\win64\143.0.7499.146\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-17 Wednesday 11:52:42 seleniumwire.storage:INFO:Using default request storage
+2025-12-17 Wednesday 11:52:42 seleniumwire.backend:INFO:Created proxy listening on 127.0.0.1:57515

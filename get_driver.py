@@ -1,4 +1,7 @@
 import os
+import time
+import subprocess
+
 os.environ['WDM_LOG_LEVEL'] = '0'
 os.environ['WDM_LOCAL'] = '1'
 
@@ -8,21 +11,31 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def get_driver(excelpathdownload=None, capa=None):
-    """
-    - Selenium 3.14.1
-    - Tự động tải ChromeDriver
-    - Dùng Chrome cá nhân (profile riêng)
-    - Có download prefs
-    - Có selenium-wire options
-    """
+    subprocess.Popen([
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        "--remote-debugging-port=9222",
+        "--user-data-dir=C:/ChromeDebug",
+        "--start-maximized"
+    ])
 
-    # ===== 1. CHROME OPTIONS =====
-    options = Options()
-    options.add_argument("--start-maximized")
-
-    # 👉 DÙNG CHROME CÁ NHÂN (PROFILE RIÊNG – AN TOÀN)
-    chrome_profile = r"C:/ChromeDebug"
-    options.add_argument(f"--user-data-dir={chrome_profile}")
+    # Kết nối Selenium với Chrome thật
+    options = webdriver.ChromeOptions()
+    options.debugger_address = "127.0.0.1:9222"
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('window-size=1920x1480')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('window-size=1920x1480')
+    options.add_argument("--disable-background-networking")
+    options.add_argument("--disable-sync")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-notifications")
+    options.add_argument("--disable-default-apps")
+    options.add_argument("--disable-gcm")          # <-- FIX LỖI LOG CỦA BẠN
+    options.add_argument("--no-first-run")
+    options.add_argument("--no-service-autorun")
 
     # ===== DOWNLOAD PREFS (GIỮ LOGIC CŨ CỦA BẠN) =====
     if excelpathdownload:

@@ -14,21 +14,24 @@ from selenium.webdriver.common.by import By
 import time
 from get_driver import get_driver
 
-# # Mở Chrome với remote debugging
-# subprocess.Popen([
-#     r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-#     "--remote-debugging-port=9222",
-#     "--user-data-dir=C:/ChromeDebug",
-#     "--start-maximized"
-# ])
-# time.sleep(5)  # đợi Chrome khởi động
 
-# Kết nối Selenium với Chrome thật
-options = webdriver.ChromeOptions()
-options.debugger_address = "127.0.0.1:9222"
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-dev-shm-usage')
-options.add_argument('window-size=1920x1480')
+
+# # Kết nối Selenium với Chrome thật
+# options = webdriver.ChromeOptions()
+# options.debugger_address = "127.0.0.1:9222"
+# options.add_argument('--no-sandbox')
+# options.add_argument('--disable-dev-shm-usage')
+# options.add_argument('window-size=1920x1480')
+# options.add_argument("--disable-background-networking")
+# options.add_argument("--disable-sync")
+# options.add_argument("--disable-gpu")
+# options.add_argument("--disable-extensions")
+# options.add_argument("--disable-notifications")
+# options.add_argument("--disable-default-apps")
+# options.add_argument("--disable-gcm")          # <-- FIX LỖI LOG CỦA BẠN
+# options.add_argument("--no-first-run")
+# options.add_argument("--no-service-autorun")
+
 caps = DesiredCapabilities().CHROME.copy()
 caps["pageLoadStrategy"] = "eager"
 
@@ -112,19 +115,9 @@ for x in f:
      if x[0:20] == "- ExcelPathDownload:":      #C:\Users\truongtq.BA\PycharmProjects\pythonProject\ba_v2\excel
         excelpathdownload = x[22:-2]
         driver = get_driver(excelpathdownload, caps)
-        # options.add_argument("--start-maximized")
-        # prefs = {
-        #     "download.default_directory": excelpathdownload,  # Thư mục tải mới
-        #     "download.prompt_for_download": False,  # Không hỏi nơi lưu
-        #     "download.directory_upgrade": True,  # Cho phép override
-        #     "safebrowsing.enabled": True  # Tránh bị block file .exe/.zip
-        # }
-        # options.add_experimental_option("prefs", prefs)
-        # driver = webdriver.Chrome(options=options,
-        #                           desired_capabilities=caps)
 
-        time.sleep(3)
         try:
+            driver.implicitly_wait(0.3)
             got_it_button = driver.find_element(By.XPATH, "//div[@role='dialog']//button[contains(text(),'Got it')]")
             got_it_button.click()
             print("Đã đóng popup Got it")
@@ -2255,7 +2248,7 @@ DataTables_Table_2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
 DataTables_Table_1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
 Save = "//*[@class='btn btn-primary']"
 hrefDataTables_Table_1_2="//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a[1]"
-
+DisplayPublicBookId1 = "(//div[@col-id='DisplayPublicBookId'])[2]"
 
 
 

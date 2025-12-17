@@ -7,13 +7,12 @@ capa = DesiredCapabilities.CHROME
 capa["pageLoadStrategy"] = "none"
 from seleniumwire import webdriver
 from selenium.webdriver.common.keys import Keys
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 from get_driver import get_driver
-
+#17/12
 
 
 # # Kết nối Selenium với Chrome thật

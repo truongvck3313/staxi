@@ -2272,6 +2272,11 @@ DataTables_Table_1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
 Save = "//*[@class='btn btn-primary']"
 hrefDataTables_Table_1_2="//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a[1]"
 DisplayPublicBookId1 = "(//div[@col-id='DisplayPublicBookId'])[2]"
+Assignuser = "//*[@id='searchpanel']/div[1]/div[2]/a[3]"
+GroupAssign = "//*[text()='Test gán người dùng']"
+SearchGroupAssign = "//*[@placeholder='Tìm tài khoản']"
+AssignUser2 = "//*[@class='ms-elem-selectable'][2]"
+Backbutton = "//*[@class='btn btn-default']"
 
 
 

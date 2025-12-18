@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d35f6faf-3686-419e-9cb6-b84c2fd41434" name="Changes" comment="">
+    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="test đẩy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administration.py" beforeDir="false" afterPath="$PROJECT_DIR$/administration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseid_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/caseid_stx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_stx.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_stx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file_config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_stx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/var_stx.py" afterDir="false" />
     </list>

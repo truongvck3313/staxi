@@ -12,6 +12,10 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 from get_driver import get_driver
+from selenium.common.exceptions import (
+    WebDriverException,
+    InvalidSessionIdException
+)
 #17/12
 
 
@@ -127,13 +131,33 @@ for x in f:
 
 
 def restart_driver():
-    global driver  # Dùng lại biến global
+    global driver
+
+    # 1. Quit driver cũ (an toàn)
     try:
-        driver.quit()
-    except:
+        if driver is not None:
+            try:
+                driver.quit()
+            except InvalidSessionIdException:
+                # session đã chết, bỏ qua
+                pass
+            except WebDriverException:
+                pass
+    except Exception:
         pass
-    driver = get_driver(excelpathdownload, caps)
-    logging.info("Đã mở lại chrome")
+
+    # 2. XÓA reference cũ (quan trọng)
+    driver = None
+
+    # 3. Tạo driver mới
+    driver = get_driver(excelpathdownload, capa)
+
+    # 4. Log (không ảnh hưởng flow)
+    try:
+        logging.info("🔄 Restart Chrome + Selenium thành công!")
+    except Exception:
+        pass
+    return driver
 
 
 

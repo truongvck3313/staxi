@@ -11,6 +11,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
+
 from get_driver import get_driver
 from selenium.common.exceptions import (
     WebDriverException,
@@ -35,8 +36,7 @@ from selenium.common.exceptions import (
 # options.add_argument("--no-first-run")
 # options.add_argument("--no-service-autorun")
 
-caps = DesiredCapabilities().CHROME.copy()
-caps["pageLoadStrategy"] = "eager"
+
 
 
 

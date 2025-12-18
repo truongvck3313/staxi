@@ -10,7 +10,8 @@ import module_stx
 import minitor_stx
 import vehicle_driver_stx
 import customer_stx
-#17/12
+
+
 #pip install selenium==3.141.0
 
 

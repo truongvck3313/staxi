@@ -1498,7 +1498,7 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2.5)
         try:
-            name_check = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2).text
+            name_check = var_stx.driver.find_element(By.XPATH, var_stx.DisplayName1).text
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -1587,7 +1587,7 @@ class driver:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.listdata1_2a).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.DisplayName1_a).click()
         wait = WebDriverWait(var_stx.driver, 10)
         element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Mật khẩu']")))
         time.sleep(2)

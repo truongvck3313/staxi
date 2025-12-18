@@ -18,7 +18,6 @@ from datetime import datetime
 from selenium.webdriver.common.keys import Keys
 from datetime import datetime, timedelta
 wait = WebDriverWait(var_stx.driver, 10)
-#18/12
 
 
 def get_info_web():

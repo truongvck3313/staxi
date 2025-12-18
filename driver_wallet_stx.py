@@ -15,8 +15,6 @@ from retry import retry
 from seleniumwire.utils import decode as sw_decode
 from selenium.webdriver.common.keys import Keys
 wait = WebDriverWait(var_stx.driver, 10)
-#18/12
-
 
 
 class list_wallet_driver:

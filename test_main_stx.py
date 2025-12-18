@@ -10,20 +10,18 @@ import module_stx
 import minitor_stx
 import vehicle_driver_stx
 import customer_stx
-#18/12
+
 
 #pip install selenium==3.141.0
 
 
 #----------------------------
-# lấy code mới từ nhánh master:
-#
 # git checkout master → chuyển về nhánh chuẩn
 # git pull origin master → cập nhật code mới nhất
 #
 # ----------------------------
-# chuyển về nhánh huong-feature-1:
-# git checkout huong-feature-1
+# chuyển về nhánh staxi_update:
+# git checkout staxi_update
 
 class Test(unittest.TestCase):
     def test_run1(self):
@@ -55,7 +53,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_minitor01(self)
         # caseid_stx.caseid_minitor02(self)
-        # caseid_stx.caseid_minitor03(self)
+        # # caseid_stx.caseid_minitor03(self)
         # caseid_stx.caseid_minitor04(self)
         # caseid_stx.caseid_minitor05(self)
         # caseid_stx.caseid_minitor06(self)
@@ -597,9 +595,9 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin08_1(self)
         # caseid_stx.caseid_admin08_2(self)
         # caseid_stx.caseid_admin08_3(self)
-        caseid_stx.caseid_admin08_4(self)
-        caseid_stx.caseid_admin08_5(self)
-        caseid_stx.caseid_admin08_6(self)
+        # caseid_stx.caseid_admin08_4(self)
+        # caseid_stx.caseid_admin08_5(self)
+        # caseid_stx.caseid_admin08_6(self)
         # caseid_stx.caseid_admin08_4(self)
         # caseid_stx.caseid_admin09(self)
         # caseid_stx.caseid_admin10(self)

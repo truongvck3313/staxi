@@ -2504,7 +2504,7 @@ class admin_10_7:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
         try:
             wait = WebDriverWait(var_stx.driver, 10)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var.title)))
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title)))
         except:
             pass
 

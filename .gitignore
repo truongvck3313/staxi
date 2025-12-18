@@ -1,0 +1,41 @@
+﻿# ==================================================================================
+# PYTHON CACHE
+__pycache__/
+*.pyc
+
+# LOG FILES
+*.log
+logs/
+
+# TEMP / BACKUP
+*.tmp
+*.bak
+
+# IDE SETTINGS
+.idea/
+.vscode/
+
+# ẢNH SCREENSHOT / FILE OUTPUT TỰ SINH
+anhchup/
+output/
+reports/
+
+# -------------------------------------------------------------------------
+# BẢO VỆ 3 FILE QUAN TRỌNG KHÔNG BAO GIỜ BỊ IGNORE
+!chromedriver.exe
+!file_config.txt
+!bangluudulieu_tamthoi.xlsx
+!staxi.log
+# -------------------------------------------------------------------------
+
+# Nếu có folder file/, excel/, anhchup/ cần giữ lại — thêm bảo vệ ở đây:
+!file/
+!excel/
+!anhchup/
+
+# Nhưng không track file rác bên trong 3 folder đó:
+file/*
+excel/*
+anhchup/*
+
+# Nhưng vẫn cho phép 3 file quan trọng tồn tại bên ngoài ignore

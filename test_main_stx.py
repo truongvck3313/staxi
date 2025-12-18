@@ -10,6 +10,7 @@ import module_stx
 import minitor_stx
 import vehicle_driver_stx
 import customer_stx
+#18/12
 
 #pip install selenium==3.141.0
 
@@ -34,9 +35,7 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #test đẩy
-        #test đẩy lần 2
-        #test đẩy => ok đa nhận
+
 
 
         # caseid_stx.caseid_login01(self)

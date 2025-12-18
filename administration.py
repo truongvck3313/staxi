@@ -20,7 +20,8 @@ import subprocess
 import random
 wait = WebDriverWait(var_stx.driver, 10)
 
-#1
+#18/12
+
 def get_info_web():
     var_stx.driver.implicitly_wait(0.05)
     row = 119
@@ -2532,7 +2533,7 @@ class admin_10_7:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
         try:
             wait = WebDriverWait(var_stx.driver, 10)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var.title)))
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title)))
         except:
             pass
 

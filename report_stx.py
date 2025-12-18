@@ -19,7 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 wait = WebDriverWait(var_stx.driver, 10)
 from datetime import datetime, timedelta
-#1
+
 
 
 
@@ -429,6 +429,30 @@ def get_info_web12():
         n = int(n)
 
 
+def get_info_web13():
+    var_stx.driver.implicitly_wait(0.05)
+    row = 119
+    n = 0
+    while (n < 50):
+        n += 1
+        n = str(n)
+        row += 1
+        path_column = f"(//span[contains(@class,'ag-header-cell-text')])[{n}]"
+        path_data = f"//div[@role='row' and @aria-rowindex='2']//div[@role='gridcell' and @aria-colindex='{n}']"
+        print(n)
+        try:
+            name_colum = var_stx.driver.find_element(By.XPATH, path_column).text
+            name_data = var_stx.driver.find_element(By.XPATH, path_data).text
+            print("ten cot web: " .format(name_colum))
+            print("data cot web:" .format(name_data))
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 1, name_colum)
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 2, name_data)
+        except:
+            pass
+        n = int(n)
+
+
+
 
 def get_info_web_percent(path_column, path_data, row, column):
     var_stx.driver.implicitly_wait(0.05)
@@ -741,7 +765,7 @@ class report_8_1:
             time.sleep(8)
 
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng",
-                                              var_stx.list_data2_1, "", "_BaoCaoCuocKhachTong_TimKiem.png")
+                                              var_stx.DisplayPublicBookId1, "", "_BaoCaoCuocKhachTong_TimKiem.png")
 
 
     def report_8_1_0_excel(self, code, eventname, result):
@@ -765,11 +789,11 @@ class report_8_1:
             wait = WebDriverWait(var_stx.driver, 20)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
 
-            get_info_web7()
+            get_info_web13()
             dowload_excel(self, "8.1.0 Báo cáo cuốc khách tổng")
             minitor_stx.get_info_excel1(3, "Data")
         except:
-            get_info_web7()
+            get_info_web13()
             minitor_stx.get_info_excel1(5, "Sheet 1")
 
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng")
@@ -893,11 +917,11 @@ class report_8_1:
             # Thử 3 kiểu xpath
             for path in [
                 f"//*[@class='table table-hover table-bordered  cf']/tbody/tr[1]/td[{n}]/a[2]",
-                f"//*[@class='table table-hover table-bordered  cf']/tbody/tr[1]/td[{n}]/a[1]",
-                f"//*[@class='table table-hover table-bordered  cf']/tbody/tr[1]/td[{n}]"
+                f"//*[@class='table table-hover table-bordered  cf']/tbody/tr[1]/td[{n}]/a[1]"
             ]:
                 try:
                     cell = var_stx.driver.find_element(By.XPATH, path)
+                    print(path)
                     break
                 except:
                     continue
@@ -913,6 +937,7 @@ class report_8_1:
 
             # Lấy text trong ô
             count_before = cell.text.strip()
+            print(f"before: {count_before}")
             if count_before == "":  # ✅ nếu text rỗng thì bỏ qua, không ghi
                 print(f"n = {n}: trống, bỏ qua")
                 continue
@@ -923,10 +948,25 @@ class report_8_1:
 
             #lấy text affter
             cell.click()
+            time.sleep(5)
+            var_stx.driver.execute_script(
+                "window.scrollTo(0, document.body.scrollHeight);"
+            )
+            var_stx.driver.execute_script("""
+                document.querySelectorAll('*').forEach(el => {
+                    if (el.scrollHeight > el.clientHeight) {
+                        el.scrollTop = el.scrollHeight;
+                    }
+                });
+            """)
+
+
             try:
+                wait = WebDriverWait(var_stx.driver, 5)
                 count_page = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.count_page))).text
                 var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", m, 3, count_page)
                 print(count_page)
+                print(f"after: {count_page}")
             except:
                 var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", m, 3, 0)
             m += 1
@@ -1427,11 +1467,11 @@ class report_8_1:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/05/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("17/12/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("27/05/2025 04:30")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("17/12/2025 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(1)
@@ -1505,11 +1545,11 @@ class report_8_1:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/10/2025 04:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("16/12/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("27/10/2025 04:15")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("17/12/2025 23:59")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)
@@ -2352,11 +2392,11 @@ class report_8_4:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/10/2025 04:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("16/12/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("27/10/2025 04:30")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("17/12/2025 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)

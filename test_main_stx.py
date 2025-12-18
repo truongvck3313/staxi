@@ -35,7 +35,6 @@ class Test(unittest.TestCase):
         module_other_stx.send_viber()
 
 
-
         # caseid_stx.caseid_login01(self)
         # caseid_stx.caseid_login02(self)
         # caseid_stx.caseid_login03(self)

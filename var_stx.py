@@ -117,7 +117,7 @@ for x in f:
          moduletest = x[15:-2]
      if x[0:20] == "- ExcelPathDownload:":      #C:\Users\truongtq.BA\PycharmProjects\pythonProject\ba_v2\excel
         excelpathdownload = x[22:-2]
-        driver = get_driver(excelpathdownload, caps)
+        driver = get_driver(excelpathdownload, capa)
 
         try:
             driver.implicitly_wait(0.3)

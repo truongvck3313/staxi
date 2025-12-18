@@ -2264,7 +2264,9 @@ DataTables_Table_2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
 DataTables_Table_1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
 Save = "//*[@class='btn btn-primary']"
 hrefDataTables_Table_1_2="//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a[1]"
-
+# Assignuser = "//*[@href="/Group/AssignUser?57142431"]"
+GroupAssign = "//*[@aria-labelledby='13_anchor']"
+SearchGroupAssign = "//*[@placeholder='Tìm tài khoản']"
 
 
 

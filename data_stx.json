@@ -149,7 +149,8 @@
     "add_wearther_surcharge": "30",
 	"group_name_add_new": "Tên nhóm testauto",
 	"display_group_name_add_new": "Tên nhóm đội hiển thị Auto test",
-	"group_name_add_new_edit": "Tên nhóm testauto 123"
+	"group_name_add_new_edit": "Tên nhóm testauto 123",
+    "usersearch" : "auto"
   }
 }
 

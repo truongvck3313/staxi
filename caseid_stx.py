@@ -3357,6 +3357,11 @@ def caseid_admin08_6(self):
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     administration.admin_10_3.admin_10_3_4_delete(self, "Admin08_6", event, result)
 
+def caseid_admin08_6(self):
+    get_datachecklist("Admin08_7")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_asignuser(self, "Admin08_7", event, result)
 def caseid_admin09(self):
     get_datachecklist("Admin09")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))

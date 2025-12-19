@@ -25,7 +25,6 @@ import customer_stx
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        print(var_stx.data['admin1']['user_search1'])
         # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
         # module_other_stx.clear_log()
         # module_other_stx.delete_image()
@@ -556,7 +555,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_report66(self)
         # caseid_stx.caseid_report67(self)
-        # caseid_stx.caseid_report68(self)
+        caseid_stx.caseid_report68(self)
         #
         # caseid_stx.caseid_report69(self)
         # caseid_stx.caseid_report70(self)
@@ -599,7 +598,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin08_5(self)
         # caseid_stx.caseid_admin08_6(self)
         # caseid_stx.caseid_admin08_7(self)
-        caseid_stx.caseid_admin08_8(self)
+        # caseid_stx.caseid_admin08_8(self)
         # caseid_stx.caseid_admin08_9(self)
         # caseid_stx.caseid_admin09(self)
         # caseid_stx.caseid_admin10(self)

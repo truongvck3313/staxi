@@ -2277,6 +2277,8 @@ GroupAssign = "//*[text()='Test gán người dùng']"
 SearchGroupAssign = "//*[@placeholder='Tìm tài khoản']"
 AssignUser2 = "//*[@class='ms-elem-selectable'][2]"
 Backbutton = "//*[@class='btn btn-default']"
+AssignDriver = "//*[@id='searchpanel']/div[1]/div[2]/a[1]"
+AssignCar = "//*[@id='searchpanel']/div[1]/div[2]/a[2]"
 
 
 

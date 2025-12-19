@@ -569,6 +569,31 @@ class admin_10_3:
                                                       var_stx.toast_message, "Lưu thông tin thành công.", "_QuanTriNhomDoi_CapNhat.png")
             time.sleep(2)
 
+    def admin_10_3_4_asign_driver(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_4)
+        except:
+            admin_10_3.admin_10_3_4(self, "", "", "")
+        var_stx.driver.refresh()
+        time.sleep(5)
+        var_stx.driver.find_element(By.XPATH, var_stx.AssignDriver).click()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.GroupAssign).click()
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).click()
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).send_keys(var_stx.data['admin']['user_search1'])
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).send_keys(Keys.ENTER)
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.AssignUser2).click()
+        time.sleep(2.5)
+        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.3 Quản trị công ty - 10.3.4 Quản trị tên xe",
+                                                  var_stx.message, "Gán nhóm thành công.", "_QuanTriNhomDoi_GanNguoiDung.png")
+        var_stx.driver.find_element(By.XPATH, var_stx.Backbutton).click()
+        time.sleep(2)
     def admin_10_3_4_asign_user(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         try:
@@ -584,7 +609,7 @@ class admin_10_3:
         time.sleep(3)
         var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).click()
         time.sleep(3)
-        var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).send_keys('auto')
+        var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).send_keys(var_stx.data['admin']['user_search1'])
         time.sleep(3)
         var_stx.driver.find_element(By.XPATH, var_stx.SearchGroupAssign).send_keys(Keys.ENTER)
         time.sleep(2)

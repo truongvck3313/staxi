@@ -17,7 +17,7 @@ from selenium.common.exceptions import (
     WebDriverException,
     InvalidSessionIdException
 )
-#17/12
+#19/12
 
 
 # # Kết nối Selenium với Chrome thật

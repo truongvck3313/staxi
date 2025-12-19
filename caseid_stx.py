@@ -3362,7 +3362,18 @@ def caseid_admin08_7(self):
     get_datachecklist("Admin08_7")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    administration.admin_10_3.admin_10_3_4_asign_user(self, "Admin08_7", event, result)
+    administration.admin_10_3.admin_10_3_4_asign_driver(self, "Admin08_7", event, result)
+
+def caseid_admin08_8(self):
+    get_datachecklist("Admin08_8")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_asign_car(self, "Admin08_8", event, result)
+def caseid_admin08_9(self):
+    get_datachecklist("Admin08_9")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_4_asign_user(self, "Admin08_9", event, result)
 def caseid_admin09(self):
     get_datachecklist("Admin09")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))

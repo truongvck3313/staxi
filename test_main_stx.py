@@ -555,7 +555,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_report66(self)
         # caseid_stx.caseid_report67(self)
-        # caseid_stx.caseid_report68(self)
+        caseid_stx.caseid_report68(self)
         #
         # caseid_stx.caseid_report69(self)
         # caseid_stx.caseid_report70(self)
@@ -591,7 +591,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin06(self)
         # caseid_stx.caseid_admin07(self)
         # caseid_stx.caseid_admin08(self)
-        caseid_stx.caseid_admin08_1(self)
+        # caseid_stx.caseid_admin08_1(self)
         # caseid_stx.caseid_admin08_2(self)
         # caseid_stx.caseid_admin08_3(self)
         # caseid_stx.caseid_admin08_4(self)

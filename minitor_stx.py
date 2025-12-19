@@ -436,7 +436,7 @@ def check_info_web_excel(code, eventname, result, path_module):
                                    'Bản đồ trước đề cử', 'Bản đồ sau đề cử', 'Bản đồ xe trước đề cử', 'Bản đồ xe sau đề cử', 'Bản đồ xe\nsau đề cử',
                                    'Bản đồ xe\ntrước đề cử', 'Tổng số cuốc đề cử (1)', 'Tỷ lệ không hoàn thành/ Tổng số cuốc đề cử (2) = (6 + 7 + 8 + 9 + 10)',
                                    'Tổng số cuốc nhận được (3)', 'Tỷ lệ lái xe hủy/ Tổng số cuốc nhận (4)', 'Xem hóa đơn', 'Xuất hóa đơn', 'Lộ trình',
-                                   'Thực thu', 'Vai trò', 'Phân quyền', 'Cấu hình', 'Khóa', 'Xóa', 'Lấy mã kích hoạt', 'GPS', 'APP', 'Báo cáo']:
+                                   'Thực thu', 'Vai trò', 'Phân quyền', 'Cấu hình', 'Khóa', 'Xóa', 'Lấy mã kích hoạt', 'GPS', 'APP', 'Báo cáo', 'Xóa 1']:
                 pass
             else:
                 logging.error("False")

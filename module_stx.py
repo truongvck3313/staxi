@@ -5,7 +5,7 @@ import var_stx
 import re
 import caseid_stx
 from collections import defaultdict
-#18/12
+#19/12
 
 
 
@@ -2807,6 +2807,51 @@ def retest_casenone(self):
             try:
                 if case == 'Admin08':
                     caseid_stx.caseid_admin08(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_1':
+                    caseid_stx.caseid_admin08_1(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_2':
+                    caseid_stx.caseid_admin08_2(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_3':
+                    caseid_stx.caseid_admin08_3(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_4':
+                    caseid_stx.caseid_admin08_4(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_5':
+                    caseid_stx.caseid_admin08_5(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_6':
+                    caseid_stx.caseid_admin08_6(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_7':
+                    caseid_stx.caseid_admin08_7(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_8':
+                    caseid_stx.caseid_admin08_8(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Admin08_9':
+                    caseid_stx.caseid_admin08_9(self)
             except:
                 module_other_stx.swich_tab_0()
             try:
@@ -6128,6 +6173,51 @@ def retest_casefail(self):
         try:
             if case == 'Admin08':
                 caseid_stx.caseid_admin08(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_1':
+                caseid_stx.caseid_admin08_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_2':
+                caseid_stx.caseid_admin08_2(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_3':
+                caseid_stx.caseid_admin08_3(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_4':
+                caseid_stx.caseid_admin08_4(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_5':
+                caseid_stx.caseid_admin08_5(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_6':
+                caseid_stx.caseid_admin08_6(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_7':
+                caseid_stx.caseid_admin08_7(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_8':
+                caseid_stx.caseid_admin08_8(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_9':
+                caseid_stx.caseid_admin08_9(self)
         except:
             module_other_stx.swich_tab_0()
         try:
@@ -9549,6 +9639,51 @@ def run_all(self):
         try:
             if case == 'Admin08':
                 caseid_stx.caseid_admin08(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_1':
+                caseid_stx.caseid_admin08_1(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_2':
+                caseid_stx.caseid_admin08_2(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_3':
+                caseid_stx.caseid_admin08_3(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_4':
+                caseid_stx.caseid_admin08_4(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_5':
+                caseid_stx.caseid_admin08_5(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_6':
+                caseid_stx.caseid_admin08_6(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_7':
+                caseid_stx.caseid_admin08_7(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_8':
+                caseid_stx.caseid_admin08_8(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Admin08_9':
+                caseid_stx.caseid_admin08_9(self)
         except:
             module_other_stx.swich_tab_0()
         try:
@@ -19896,6 +20031,51 @@ def admin(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Admin08_1':
+                        caseid_stx.caseid_admin08_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_2':
+                        caseid_stx.caseid_admin08_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_3':
+                        caseid_stx.caseid_admin08_3(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_4':
+                        caseid_stx.caseid_admin08_4(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_5':
+                        caseid_stx.caseid_admin08_5(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_6':
+                        caseid_stx.caseid_admin08_6(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_7':
+                        caseid_stx.caseid_admin08_7(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_8':
+                        caseid_stx.caseid_admin08_8(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_9':
+                        caseid_stx.caseid_admin08_9(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Admin09':
                         caseid_stx.caseid_admin09(self)
                 except:
@@ -20573,6 +20753,51 @@ def admin(self):
                 try:
                     if case == 'Admin08':
                         caseid_stx.caseid_admin08(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_1':
+                        caseid_stx.caseid_admin08_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_2':
+                        caseid_stx.caseid_admin08_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_3':
+                        caseid_stx.caseid_admin08_3(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_4':
+                        caseid_stx.caseid_admin08_4(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_5':
+                        caseid_stx.caseid_admin08_5(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_6':
+                        caseid_stx.caseid_admin08_6(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_7':
+                        caseid_stx.caseid_admin08_7(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_8':
+                        caseid_stx.caseid_admin08_8(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_9':
+                        caseid_stx.caseid_admin08_9(self)
                 except:
                     module_other_stx.swich_tab_0()
                 try:
@@ -21256,6 +21481,51 @@ def admin(self):
                 except:
                     module_other_stx.swich_tab_0()
                 try:
+                    if case == 'Admin08_1':
+                        caseid_stx.caseid_admin08_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_2':
+                        caseid_stx.caseid_admin08_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_3':
+                        caseid_stx.caseid_admin08_3(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_4':
+                        caseid_stx.caseid_admin08_4(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_5':
+                        caseid_stx.caseid_admin08_5(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_6':
+                        caseid_stx.caseid_admin08_6(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_7':
+                        caseid_stx.caseid_admin08_7(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_8':
+                        caseid_stx.caseid_admin08_8(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_9':
+                        caseid_stx.caseid_admin08_9(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
                     if case == 'Admin09':
                         caseid_stx.caseid_admin09(self)
                 except:
@@ -21933,6 +22203,51 @@ def admin(self):
                 try:
                     if case == 'Admin08':
                         caseid_stx.caseid_admin08(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_1':
+                        caseid_stx.caseid_admin08_1(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_2':
+                        caseid_stx.caseid_admin08_2(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_3':
+                        caseid_stx.caseid_admin08_3(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_4':
+                        caseid_stx.caseid_admin08_4(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_5':
+                        caseid_stx.caseid_admin08_5(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_6':
+                        caseid_stx.caseid_admin08_6(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_7':
+                        caseid_stx.caseid_admin08_7(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_8':
+                        caseid_stx.caseid_admin08_8(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Admin08_9':
+                        caseid_stx.caseid_admin08_9(self)
                 except:
                     module_other_stx.swich_tab_0()
                 try:

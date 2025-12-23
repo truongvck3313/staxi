@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="đẩy cuối ngày">
+    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="no change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TAXI_ChecklistForAutoTestSTAXI.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TAXI_ChecklistForAutoTestSTAXI.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administration.py" beforeDir="false" afterPath="$PROJECT_DIR$/administration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minitor_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/minitor_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_other_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_other_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotion_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/promotion_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/report_stx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/var_stx.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +40,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/truongtq.BA/PycharmProjects/pythonProject/jenkins_jira",
+    "last_opened_file_path": "C:/Users/truongtq.BA/PycharmProjects/pythonProject/s_taxi",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RunManager">
@@ -207,6 +216,7 @@
       <workItem from="1765764712359" duration="5081000" />
       <workItem from="1766140897575" duration="759000" />
       <workItem from="1766365884855" duration="697000" />
+      <workItem from="1766452003588" duration="14572000" />
     </task>
     <task id="LOCAL-00002" summary="test đẩy">
       <created>1765764862136</created>
@@ -243,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1766140970543</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="no change">
+      <created>1766452050326</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766452050326</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +282,7 @@
     <MESSAGE value="1" />
     <MESSAGE value="test đẩy" />
     <MESSAGE value="đẩy cuối ngày" />
-    <option name="LAST_COMMIT_MESSAGE" value="đẩy cuối ngày" />
+    <MESSAGE value="no change" />
+    <option name="LAST_COMMIT_MESSAGE" value="no change" />
   </component>
 </project>

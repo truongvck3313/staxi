@@ -221,40 +221,67 @@ def get_info_web_new():
 
 
 
+
+
+
+
+
+import xlrd
+import openpyxl
+import os
+
+def convert_xls_to_xlsx(xls_path, xlsx_path):
+    # đảm bảo không mở lại file cũ
+    if os.path.exists(xlsx_path):
+        os.remove(xlsx_path)
+
+    book = xlrd.open_workbook(xls_path)
+    sheet = book.sheet_by_index(0)
+
+    wb = openpyxl.Workbook()
+    ws = wb.active
+
+    for r in range(sheet.nrows):
+        for c in range(sheet.ncols):
+            ws.cell(row=r+1, column=c+1).value = sheet.cell_value(r, c)
+
+    wb.save(xlsx_path)
+
+    # verify: XLSX phải là ZIP
+    with open(xlsx_path, "rb") as f:
+        if not f.read(4).startswith(b"PK"):
+            raise RuntimeError("XLSX tạo ra không hợp lệ")
+
+    return xlsx_path
+
+
+
+
+
+
 def get_info_excel(row, sheet):
     row2 = row + 1
 
+    time.sleep(7)
+    filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+    shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xls"))
+
+
+
     try:
-        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xls"))
-
+        convert_xls_to_xlsx(var_stx.excelpath + "/baocao_stx.xls", var_stx.excelpath + "/baocao_stx.xlsx")
+    except Exception:
         x2x = XLS2XLSX(var_stx.excelpath + "/baocao_stx.xls")
         x2x.to_xlsx(var_stx.excelpath + "/baocao_stx.xlsx")
-    except:
-        # var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
-        time.sleep(15)
-        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xls"))
 
-        x2x = XLS2XLSX(var_stx.excelpath + "/baocao_stx.xls")
-        x2x.to_xlsx(var_stx.excelpath + "/baocao_stx.xlsx")
 
     # #Đọc check file excel
     bangchucai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
                   'AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL']
 
     print("r0")
-    try:
-        wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
-        sheet = wordbook.get_sheet_by_name(sheet)
-    except:
-        var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
-        time.sleep(15)
-        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
-        wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
-        sheet = wordbook.get_sheet_by_name(sheet)
-
+    wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
+    sheet = wordbook.get_sheet_by_name(sheet)
     print("r1")
     row_tamthoi = 119
     for i in bangchucai:
@@ -286,15 +313,8 @@ def get_info_excel(row, sheet):
 def get_info_excel1(row, sheet):
     row2 = row + 1
 
-    try:
-        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
-
-    except:
-        # var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
-        time.sleep(15)
-        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
+    filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+    shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
 
 
     # #Đọc check file excel
@@ -303,16 +323,9 @@ def get_info_excel1(row, sheet):
                   'AM', 'AN', 'AO']
 
     print("r0")
-    try:
-        wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
-        sheet = wordbook.get_sheet_by_name(sheet)
-    except:
-        # var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
-        time.sleep(15)
-        filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
-        wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
-        sheet = wordbook.get_sheet_by_name(sheet)
+    wordbook = openpyxl.load_workbook(var_stx.excelpath + "/baocao_stx.xlsx")
+    sheet = wordbook.get_sheet_by_name(sheet)
+
 
     print("r1")
     row_tamthoi = 119
@@ -1309,16 +1322,16 @@ class vehicle_online:
 
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
-        time.sleep(20)
+        time.sleep(7)
         get_info_web()
         try:
-            get_info_excel(5, "Sheet 1")
+            get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
             var_stx.driver.find_element(By.XPATH, var_stx.export_excel).click()
-            time.sleep(30)
-            get_info_excel(5, "Sheet 1")
+            time.sleep(10)
+            get_info_excel(5, "Sheet1")
 
         check_info_web_excel(code, eventname, result, "Giám sát - Xe online 1.2")
 

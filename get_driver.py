@@ -4,19 +4,40 @@ import subprocess
 #18/12
 os.environ['WDM_LOG_LEVEL'] = '0'
 os.environ['WDM_LOCAL'] = '1'
-
+import socket
 from seleniumwire import webdriver   # QUAN TRỌNG: selenium-wire
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from typing import Optional
+from selenium.webdriver import Chrome
+
+driver: Optional[Chrome] = None
+chrome_process = None
+
+
+
+
+
+def is_port_open(port):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        return s.connect_ex(("127.0.0.1", port)) == 0
+
 
 
 def get_driver(excelpathdownload=None, capa=None):
-    subprocess.Popen([
-        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-        "--remote-debugging-port=9222",
-        "--user-data-dir=C:/ChromeDebug",
-        "--start-maximized"
-    ])
+    global chrome_process
+
+    # ====== PHẦN THÊM (CHỈ THÊM) ======
+    if not is_port_open(9222):
+        chrome_process = subprocess.Popen([
+            r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+            "--remote-debugging-port=9222",
+            "--user-data-dir=C:/ChromeDebug",
+            "--start-maximized"
+        ])
+        time.sleep(2)
+
+
 
     # Kết nối Selenium với Chrome thật
     options = webdriver.ChromeOptions()
@@ -81,3 +102,46 @@ def get_driver(excelpathdownload=None, capa=None):
     )
 
     return driver
+
+
+
+
+
+def reset_browser():
+    import var_stx
+    global driver, chrome_process
+
+    try:
+        if driver is not None:
+            driver.quit()
+    except Exception:
+        pass
+
+    try:
+        if chrome_process:
+            chrome_process.kill()
+            chrome_process.wait()
+    except Exception:
+        pass
+
+    driver = None
+    chrome_process = None
+
+    driver = get_driver()
+
+    # 🔥 DÒNG QUYẾT ĐỊNH
+    var_stx.driver = driver
+
+    return driver
+
+
+
+
+
+
+
+
+
+
+
+

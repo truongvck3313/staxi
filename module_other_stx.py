@@ -795,7 +795,7 @@ def get_datachecklist(ma):
 
 
 
-@retry(tries=3, delay=2, backoff=1, jitter=5, )
+# @retry(tries=3, delay=2, backoff=1, jitter=5, )
 def swich_tab_0():
     try:
         print("[INFO] ⚙️  Switching tab 0...")

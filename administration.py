@@ -1213,7 +1213,10 @@ class admin_10_5:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(7)
         get_info_web()
-        minitor_stx.get_info_excel1(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel1(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 10.5 Quản trị hệ thống - 10.5.5 Danh sách tài khoản")
 
 
@@ -3315,7 +3318,10 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.2 Phụ phí loại hàng hóa")
 
 
@@ -3702,7 +3708,10 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.4 Phụ phí thu hộ")
 
 

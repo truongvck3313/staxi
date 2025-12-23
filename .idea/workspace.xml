@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="test đẩy">
+    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="đẩy cuối ngày">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TAXI_ChecklistForAutoTestSTAXI.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TAXI_ChecklistForAutoTestSTAXI.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_stx.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_stx.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_stx.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,15 +27,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/truongtq.BA/PycharmProjects/pythonProject/ba_v3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/truongtq.BA/PycharmProjects/pythonProject/jenkins_jira",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="s_taxi" />
@@ -197,13 +198,15 @@
       <updated>1765762879430</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d35f6faf-3686-419e-9cb6-b84c2fd41434" name="Changes" comment="1" />
+      <changelist id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="test đẩy" />
       <created>1765764584723</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765764584723</updated>
       <workItem from="1765764586867" duration="113000" />
       <workItem from="1765764712359" duration="5081000" />
+      <workItem from="1766140897575" duration="759000" />
+      <workItem from="1766365884855" duration="697000" />
     </task>
     <task id="LOCAL-00002" summary="test đẩy">
       <created>1765764862136</created>
@@ -233,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765855127502</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="đẩy cuối ngày">
+      <created>1766140970543</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766140970543</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +264,7 @@
     <MESSAGE value="a" />
     <MESSAGE value="1" />
     <MESSAGE value="test đẩy" />
-    <option name="LAST_COMMIT_MESSAGE" value="test đẩy" />
+    <MESSAGE value="đẩy cuối ngày" />
+    <option name="LAST_COMMIT_MESSAGE" value="đẩy cuối ngày" />
   </component>
 </project>

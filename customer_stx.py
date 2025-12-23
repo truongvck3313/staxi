@@ -1866,7 +1866,7 @@ class contract_card:
         var_stx.driver.find_element(By.XPATH, var_stx.white_cards_hd1).click()
         time.sleep(1)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.white_cards_name_customer).send_keys("Auto_" + number)
+        var_stx.driver.find_element(By.XPATH, var_stx.CustomerName).send_keys("Auto_" + number)
         time.sleep(1)
 
         var_stx.driver.find_element(By.XPATH, var_stx.white_cards_start_date)
@@ -2605,6 +2605,15 @@ class contract_card:
             contract_card.report_the_trip_with_the_driver_card_search(self, "", "", "")
 
 
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+        time.sleep(2)
+        button = var_stx.driver.find_element(By.XPATH, var_stx.search)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+        time.sleep(7)
+
+
         n = 0
         while (n < 25):
             n = n + 1
@@ -2703,7 +2712,7 @@ class contract_card:
         time.sleep(7)
         promotion_stx.get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)

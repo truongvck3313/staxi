@@ -1,38 +1,31 @@
-import time
-import driver_wallet_stx
 import module_other_stx
-import login_stx
-import report_stx
-import var_stx
 import unittest
 import caseid_stx
+import var_stx
 import module_stx
-import minitor_stx
-import vehicle_driver_stx
-import customer_stx
-
-
 #pip install selenium==3.141.0
 
 
 #----------------------------
-# git checkout master → chuyển về nhánh chuẩn
-# git pull origin master → cập nhật code mới nhất
-#
-# ----------------------------
-# chuyển về nhánh staxi_update:
 # git checkout staxi_update
+# git pull origin master
+
+
+
+
+
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        # module_other_stx.clear_log()
-        # module_other_stx.delete_image()
-        # module_other_stx.timerun()
-        # module_stx.ModuleTest()
-        # module_stx.retest_casenone(self)
-        # module_stx.retest_casefail(self)
-        # module_other_stx.send_viber()
+        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        module_other_stx.clear_log()
+        module_other_stx.delete_image()
+        module_other_stx.timerun()
+        module_stx.ModuleTest()
+        module_stx.retest_casenone(self)
+        module_stx.retest_casefail(self)
+        module_other_stx.send_viber()
+
 
 
         # caseid_stx.caseid_login01(self)
@@ -555,7 +548,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_report66(self)
         # caseid_stx.caseid_report67(self)
-        caseid_stx.caseid_report68(self)
+        # caseid_stx.caseid_report68(self)
         #
         # caseid_stx.caseid_report69(self)
         # caseid_stx.caseid_report70(self)

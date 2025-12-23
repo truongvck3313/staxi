@@ -1,7 +1,8 @@
 import module_other_stx
 import unittest
 import caseid_stx
-
+import var_stx
+import module_stx
 #pip install selenium==3.141.0
 
 

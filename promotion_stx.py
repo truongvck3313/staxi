@@ -118,7 +118,12 @@ class list_promotion:
             time.sleep(0.3)
         except:
             pass
-
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(2.5)
 
     def list_promotion_from_to_day(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
@@ -130,7 +135,7 @@ class list_promotion:
 
         list_promotion.list_promotion_x(self)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(5)
+        time.sleep(2)
 
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['promotion']['from_day'])
@@ -153,7 +158,7 @@ class list_promotion:
 
         list_promotion.list_promotion_x(self)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(7)
+        time.sleep(2)
 
         try:
             wait = WebDriverWait(var_stx.driver, 10)
@@ -789,7 +794,7 @@ class list_promotion:
         time.sleep(7)
         get_info_web()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -1636,7 +1641,7 @@ class report:
         time.sleep(7)
         minitor_stx.get_info_web()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -1731,7 +1736,7 @@ class report:
         time.sleep(7)
         minitor_stx.get_info_web()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -1826,7 +1831,7 @@ class report:
         time.sleep(9)
         get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -1927,7 +1932,7 @@ class report:
         time.sleep(5)
         get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -2024,7 +2029,7 @@ class report:
         time.sleep(5)
         get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -2121,7 +2126,7 @@ class report:
         time.sleep(5)
         get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -2220,7 +2225,7 @@ class report:
         time.sleep(5)
         minitor_stx.get_info_web()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -2304,7 +2309,7 @@ class report:
         time.sleep(7)
         get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -2400,7 +2405,7 @@ class report:
         time.sleep(7)
         get_info_web1()
         try:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         except:
             var_stx.driver.refresh()
             time.sleep(7)

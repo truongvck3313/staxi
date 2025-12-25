@@ -273,45 +273,26 @@ def get_info_web7():
 
 def get_info_web8():
     var_stx.driver.implicitly_wait(0.05)
-    row = 121
+    row = 119
     n = 0
-    m = 1
     while (n < 50):
         n += 1
-        m += 1
-        row += 1
         n = str(n)
-        m = str(m)
-        path_column = "//*[@id='bookingRevenueAppIndex']/div/div[2]/div[2]/div[1]/div[2]/div/div/div[" + m + "]"#2
-        path_data = "//*[@id='bookingRevenueAppIndex']/div/div[2]/div[2]/div[4]/div[1]/div[2]/div/div[1]/div[" + n + "]"#1
-
-        path_column1 = "//*[@id='bookingRevenueAppIndex']/div/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]"
-        path_data1 = "//*[@id='bookingRevenueAppIndex']/div/div[2]/div[2]/div[4]/div[1]/div[1]/div[1]/div[1]"
-
-        path_column2 = "//*[@id='bookingRevenueAppIndex']/div/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]"
-        path_data2 = "//*[@id='bookingRevenueAppIndex']/div/div[2]/div[2]/div[4]/div[1]/div[1]/div[1]/div[2]"
+        row += 1
+        path_column = f"(//span[contains(@class,'ag-header-cell-text')])[{n}]"
+        path_data = f"(//div[@role='row' and @aria-rowindex='2']//div[@role='gridcell' and @aria-colindex='{n}'])[1]"
         print(n)
-        name_colum1 = var_stx.driver.find_element(By.XPATH, path_column1).text
-        name_data1 = var_stx.driver.find_element(By.XPATH, path_data1).text
-        name_colum2 = var_stx.driver.find_element(By.XPATH, path_column2).text
-        name_data2 = var_stx.driver.find_element(By.XPATH, path_data2).text
-        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 120, 1, name_colum1)
-        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 120, 2, name_data1)
-        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 121, 1, name_colum2)
-        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 121, 2, name_data2)
-
         try:
             name_colum = var_stx.driver.find_element(By.XPATH, path_column).text
             name_data = var_stx.driver.find_element(By.XPATH, path_data).text
             print("ten cot web: " .format(name_colum))
             print("data cot web:" .format(name_data))
-
             var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 1, name_colum)
             var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 2, name_data)
         except:
             pass
         n = int(n)
-        m = int(m)
+
 
 
 
@@ -1277,7 +1258,10 @@ class report_8_1:
         time.sleep(5)
 
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.5 Tổng cuốc khách theo nguồn")
 
 
@@ -1348,7 +1332,10 @@ class report_8_1:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(6)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.6 Tổng cuốc khách theo cấu hình")
 
 
@@ -1421,7 +1408,10 @@ class report_8_1:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(8)
         get_info_web2()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.7 Thống kê cuốc khách yêu thích")
 
 
@@ -1950,7 +1940,10 @@ class report_8_3:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.3 Thống kê cuốc điều chỉ định")
 
 
@@ -2031,7 +2024,10 @@ class report_8_3:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(7)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.4 Thống kê chi tiết cuốc điều chỉ định")
 
 
@@ -2426,7 +2422,10 @@ class report_8_4:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.3 Thanh toán cuốc khách cho lái xe")
 
 
@@ -2652,7 +2651,10 @@ class report_8_4:
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel(5, "Sheet 1")
+        try:
+            minitor_stx.get_info_excel(5, "Sheet")
+        except:
+            minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.6 Doanh thu theo nhóm khách hàng")
 
 
@@ -2746,7 +2748,10 @@ class report_8_4:
                 get_info_web1()
             except:
                 get_info_web8()
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            try:
+                minitor_stx.get_info_excel(5, "Sheet")
+            except:
+                minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.7 Chi tiết doanh thu từ app lái xe")
 
 
@@ -2831,7 +2836,10 @@ class report_8_4:
             time.sleep(4)
         except:
             get_info_web1()
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            try:
+                minitor_stx.get_info_excel(5, "Sheet")
+            except:
+                minitor_stx.get_info_excel(5, "Sheet 1")
             minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.8 Chi tiết doanh thu từ định vị")
 
 
@@ -2918,7 +2926,10 @@ class report_8_4:
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
             time.sleep(7)
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            try:
+                minitor_stx.get_info_excel(5, "Sheet")
+            except:
+                minitor_stx.get_info_excel(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.17 Tổng hợp doanh thu lái xe theo ngày")
 
 

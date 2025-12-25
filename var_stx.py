@@ -130,35 +130,32 @@ for x in f:
 
 
 
+# def restart_driver():
+#     global driver, chrome_process
+#
+#     try:
+#         driver.quit()
+#     except:
+#         pass
+#
+#     # ====== THÊM ======
+#     try:
+#         if chrome_process:
+#             chrome_process.kill()
+#             chrome_process.wait()
+#     except:
+#         pass
+#     # ====== HẾT ======
+#
+#     chrome_process = None
+#     driver = None
+#
+#     return get_driver()
+
+from get_driver import reset_browser
+
 def restart_driver():
-    global driver
-
-    # 1. Quit driver cũ (an toàn)
-    try:
-        if driver is not None:
-            try:
-                driver.quit()
-            except InvalidSessionIdException:
-                # session đã chết, bỏ qua
-                pass
-            except WebDriverException:
-                pass
-    except Exception:
-        pass
-
-    # 2. XÓA reference cũ (quan trọng)
-    driver = None
-
-    # 3. Tạo driver mới
-    driver = get_driver(excelpathdownload, capa)
-
-    # 4. Log (không ảnh hưởng flow)
-    try:
-        logging.info("🔄 Restart Chrome + Selenium thành công!")
-    except Exception:
-        pass
-    return driver
-
+    reset_browser()
 
 
 
@@ -2279,12 +2276,11 @@ Assign = "//*[@class='ms-elem-selectable'][2]"
 Backbutton = "//*[@class='btn btn-default']"
 AssignDriver = "//*[@id='searchpanel']/div[1]/div[2]/a[1]"
 AssignCar = "//*[@id='searchpanel']/div[1]/div[2]/a[2]"
-AssignCar = "//*[@id='searchpanel']/div[1]/div[2]/a[2]"
 SearchDriver = "//*[@placeholder='Tìm lái xe']"
 Message1 = "//*[@class='text-success']"
 GroupAssignDriver = "//*[text()='Test gán lái xe']"
 GroupAssignCar = "//*[text()='Test gán xe']"
-
+CustomerName = "//*[@id='whiteCardEdit']//*[@id='CustomerName']"
 
 
 

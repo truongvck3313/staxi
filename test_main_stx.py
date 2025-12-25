@@ -173,7 +173,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle39(self)
         # caseid_stx.caseid_vehicle40(self)
         # caseid_stx.caseid_vehicle41(self)
-        caseid_stx.caseid_vehicle42(self)
+        # caseid_stx.caseid_vehicle42(self)
         # caseid_stx.caseid_vehicle43(self)
         # caseid_stx.caseid_vehicle44(self)
         # caseid_stx.caseid_vehicle45(self)

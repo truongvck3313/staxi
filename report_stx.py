@@ -19,7 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 wait = WebDriverWait(var_stx.driver, 10)
 from datetime import datetime, timedelta
-
+import administration
 
 
 #19/12
@@ -3477,6 +3477,44 @@ class PartnerTrip_12_1:
 
         minitor_stx.get_info_excel_skip(3, "Data", 1, 136)
         minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.2 Tổng hợp cuốc khách đối tác")
+
+
+
+
+
+
+class Checkconfig:
+    def Checkconfig12_1_1(self, code, eventname, result, type_config):
+        administration.admin_10_6.admin_10_6_3(self, "", "", "")
+        #check điều kiện
+        if type_config == "false":
+            print("Đổi giá trị thành false")
+        else:
+            print("Đổi giá trị thành true")
+
+
+
+        PartnerTrip_12_1.PartnerTrip_12_1_1_search(self, "", "", "")
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                      "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.1 Báo cáo cuốc khách đối tác",
+                                                      var_stx.title_page1, "12.1.1 Báo cáo cuốc khách đối tác",
+                                                      "_BaoCaoCuocKhachDoiTac.png")
+        except:
+            pass
+
+
+
+
+        if type_config == "false":
+            print("Đổi giá trị thành false")
+        else:
+            print("Đổi giá trị thành true")
+
 
 
 

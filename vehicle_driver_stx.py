@@ -1863,7 +1863,8 @@ class driver:
             # var_stx.driver.find_element(By.XPATH, var_stx.STAXI)
         except:
             # driver.driver_company_7g_test(self, "", "", "")
-            driver.driver(self, "", "", "")
+            # driver.driver(self, "", "", "")
+            driver.driver_add_new(self, "", "", "")
 
 
 

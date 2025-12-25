@@ -378,7 +378,6 @@ class login:
         time.sleep(2)
 
 
-
     def login_stx1(self, code, eventname, result, link, path_check, desire, path_image, user, password):
         var_stx.driver.implicitly_wait(5)
         var_stx.driver.maximize_window()

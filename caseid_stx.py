@@ -879,16 +879,15 @@ def caseid_vehicle20(self):
     get_datachecklist("Vehicle20")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.vehicle.vehicle_checkbox(self, "Vehicle20", event, result, var_stx.black_box_input, False,
-                                                var_stx.check_black_box1, "Hủy kết nối hộp đen thành công", "_Xe_HopDen_BoTichChon.png")
+    vehicle_driver_stx.vehicle.vehicle_checkbox(self, "Vehicle21", event, result, var_stx.black_box_input, False,
+                                                var_stx.check_black_box2, "Kết nối hộp đen thành công", "_Xe_HopDen_TichChon.png")
 
 def caseid_vehicle21(self):
     get_datachecklist("Vehicle21")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.vehicle.vehicle_checkbox(self, "Vehicle21", event, result, var_stx.black_box_input, False,
-                                                var_stx.check_black_box2, "Kết nối hộp đen thành công", "_Xe_HopDen_TichChon.png")
-
+    vehicle_driver_stx.vehicle.vehicle_checkbox(self, "Vehicle20", event, result, var_stx.black_box_input, False,
+                                                var_stx.check_black_box1, "Hủy kết nối hộp đen thành công", "_Xe_HopDen_BoTichChon.png")
 
 def caseid_vehicle22(self):
     get_datachecklist("Vehicle22")

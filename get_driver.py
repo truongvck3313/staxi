@@ -31,13 +31,21 @@ def get_driver(excelpathdownload=None, capa=None):
     if not is_port_open(9222):
         chrome_process = subprocess.Popen([
             r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+
             "--remote-debugging-port=9222",
             "--user-data-dir=C:/ChromeDebug",
+
+            "--disable-session-crashed-bubble",
+            "--disable-infobars",
+            "--no-first-run",
+            "--no-default-browser-check",
+            "--disable-restore-session-state",
+
+            "--disable-backgrounding-occluded-windows",
+            "--disable-renderer-backgrounding",
+
             "--start-maximized"
         ])
-        time.sleep(2)
-
-
 
     # Kết nối Selenium với Chrome thật
     options = webdriver.ChromeOptions()
@@ -57,6 +65,8 @@ def get_driver(excelpathdownload=None, capa=None):
     options.add_argument("--disable-gcm")          # <-- FIX LỖI LOG CỦA BẠN
     options.add_argument("--no-first-run")
     options.add_argument("--no-service-autorun")
+    options.add_argument("--disable-session-crashed-bubble")
+    options.add_argument("--disable-infobars")
 
     # ===== DOWNLOAD PREFS (GIỮ LOGIC CŨ CỦA BẠN) =====
     if excelpathdownload:
@@ -64,7 +74,9 @@ def get_driver(excelpathdownload=None, capa=None):
             "download.default_directory": str(excelpathdownload),
             "download.prompt_for_download": False,
             "download.directory_upgrade": True,
-            "safebrowsing.enabled": True
+            "safebrowsing.enabled": True,
+            "profile.exit_type": "Normal",
+            "profile.exited_cleanly": True
         }
         options.add_experimental_option("prefs", prefs)
 
@@ -118,10 +130,8 @@ def reset_browser():
         pass
 
     try:
-        if chrome_process:
-            chrome_process.kill()
-            chrome_process.wait()
-    except Exception:
+        driver.quit()
+    except:
         pass
 
     driver = None

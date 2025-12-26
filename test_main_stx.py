@@ -13,7 +13,7 @@ import module_stx
 
 
 
-
+#update staxi sáng 26/12/2025
 
 class Test(unittest.TestCase):
     def test_run1(self):
@@ -88,7 +88,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor40(self)
         # # caseid_stx.caseid_minitor41(self)
         # # caseid_stx.caseid_minitor42(self)
-        # # caseid_stx.caseid_minitor43(self)
+        # caseid_stx.caseid_minitor43(self)
         # # caseid_stx.caseid_minitor44(self)
         # # caseid_stx.caseid_minitor45(self)
         # # caseid_stx.caseid_minitor46(self)
@@ -107,7 +107,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor58(self)
         # # caseid_stx.caseid_minitor59(self)
         # # caseid_stx.caseid_minitor60(self)
-        # # caseid_stx.caseid_minitor61(self)
+        # caseid_stx.caseid_minitor61(self)
         # # caseid_stx.caseid_minitor62(self)
         # #
         # # caseid_stx.caseid_minitor63(self)
@@ -116,7 +116,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor66(self)
         # # caseid_stx.caseid_minitor67(self)
         # # #
-        # # caseid_stx.caseid_minitor68(self)
+        # caseid_stx.caseid_minitor68(self)
         # # caseid_stx.caseid_minitor69(self)
         # # caseid_stx.caseid_minitor70(self)
         # # caseid_stx.caseid_minitor71(self)
@@ -145,7 +145,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle13(self)
         # # caseid_stx.caseid_vehicle14(self)
         # # caseid_stx.caseid_vehicle15(self)
-        # # caseid_stx.caseid_vehicle16(self)
+        # caseid_stx.caseid_vehicle16(self)
         # # #
         # # caseid_stx.caseid_vehicle17(self)
         # # caseid_stx.caseid_vehicle18(self)
@@ -173,7 +173,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle39(self)
         # # caseid_stx.caseid_vehicle40(self)
         # # caseid_stx.caseid_vehicle41(self)
-        # # caseid_stx.caseid_vehicle42(self)
+        # caseid_stx.caseid_vehicle42(self)
         # # caseid_stx.caseid_vehicle43(self)
         # # caseid_stx.caseid_vehicle44(self)
         # # caseid_stx.caseid_vehicle45(self)
@@ -331,7 +331,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_promotion65(self)
         # # caseid_stx.caseid_promotion66(self)
         #
-        # # caseid_stx.caseid_customer01(self)
+        # caseid_stx.caseid_customer01(self)
         # # caseid_stx.caseid_customer02(self)
         # # caseid_stx.caseid_customer03(self)
         # # caseid_stx.caseid_customer04(self)
@@ -397,7 +397,7 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_customer55(self)
         # # caseid_stx.caseid_customer56(self)
         # # caseid_stx.caseid_customer57(self)
-        # # caseid_stx.caseid_customer57_1(self)
+        # caseid_stx.caseid_customer57_1(self)
         # # caseid_stx.caseid_customer57_2(self)
         # # caseid_stx.caseid_customer57_3(self)
         # # caseid_stx.caseid_customer57_4(self)
@@ -458,11 +458,11 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_report01(self)
         # # caseid_stx.caseid_report02(self)
         # # caseid_stx.caseid_report03(self)
-        # # caseid_stx.caseid_report04(self)
+        # caseid_stx.caseid_report04(self)
         # #
         # # caseid_stx.caseid_report05(self)
         # # caseid_stx.caseid_report06(self)
-        # # caseid_stx.caseid_report07(self)
+        # caseid_stx.caseid_report07(self)
         # caseid_stx.caseid_report07_1(self)
         # caseid_stx.caseid_report07_2(self)
 

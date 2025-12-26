@@ -1,22 +1,12 @@
-from selenium.webdriver.common.by import By
 import openpyxl
 import json, time
 import logging, subprocess
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 capa = DesiredCapabilities.CHROME
 capa["pageLoadStrategy"] = "none"
-from seleniumwire import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-import time
-
 from get_driver import get_driver
-from selenium.common.exceptions import (
-    WebDriverException,
-    InvalidSessionIdException
-)
+
 #19/12
 
 

@@ -1017,14 +1017,14 @@ class report_8_1:
             print(f"dòng: {n}, {name_column}, {name_before}, {name_affter}")
             module_other_stx.appendData(var_stx.checklistpath, "Checklist", code, 6, f"{name_column}, {name_before}/{name_affter}\n")
 
-            if name_before != name_affter:
-                print("→ bằng nhau")
+            if int(name_before) != int(name_affter):
+                print("→ khác nhau")
                 logging.info("False")
                 var_stx.driver.save_screenshot(var_stx.imagepath + code + "_TongCuocKhach.png")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + "_TongCuocKhach.png")
             else:
-                print("→ khác nhau")
+                print("→ bằng nhau")
 
 
     def check_origin_2(self, code, eventname, result):
@@ -1065,8 +1065,8 @@ class report_8_1:
         logging.info("Mã - " + code)
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
-
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+
         n = 259
         while n < 280:
             n += 1
@@ -1090,14 +1090,14 @@ class report_8_1:
             print(f"dòng: {n}, {name_column}, {name_before}, {name_affter}")
             module_other_stx.appendData(var_stx.checklistpath, "Checklist", code, 6, f"{name_column}, {name_before}/{name_affter}\n")
 
-            if name_before != name_affter:
-                print("→ bằng nhau")
+            if int(name_before) != int(name_affter):
+                print("→ khác nhau")
                 logging.info("False")
                 var_stx.driver.save_screenshot(var_stx.imagepath + code + "_TongCuocKhach.png")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + "_TongCuocKhach.png")
             else:
-                print("→ khác nhau")
+                print("→ bằng nhau")
 
 
 

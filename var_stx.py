@@ -1,22 +1,12 @@
-from selenium.webdriver.common.by import By
 import openpyxl
 import json, time
 import logging, subprocess
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 capa = DesiredCapabilities.CHROME
 capa["pageLoadStrategy"] = "none"
-from seleniumwire import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-import time
-
 from get_driver import get_driver
-from selenium.common.exceptions import (
-    WebDriverException,
-    InvalidSessionIdException
-)
+
 #19/12
 
 
@@ -457,20 +447,20 @@ import_vehicle_success = "//*[text()='Import xe thành công.']"
 STAXI = "//*[text()='STAXI']"
 upload_success = ""
 
-add_new_vehicle_liscense_plate = "//*[@class='form-horizontal']/div[2]/div/input"
-add_new_vehicle_code = "//*[@class='form-horizontal']/div[3]/div/input"
-add_new_vehicle_type = "//*[@class='form-horizontal']/div[4]/div/select/option[8]"
-add_new_vehicle_name = "//*[@class='form-horizontal']/div[5]/div/select/option[7]"
-add_new_vehicle_color = "//*[@class='form-horizontal']/div[6]/div/input"
-add_new_vehicle_image = "//*[@class='form-horizontal']/div[7]/div/input"
-add_new_vehicle_manager = "//*[@class='form-horizontal']/div[8]/div/select/option[2]"
-add_new_vehicle_number1 = "//*[@class='form-horizontal']/div[9]/div/input"
-add_new_vehicle_number2 = "//*[@class='form-horizontal']/div[10]/div/input"
-add_new_vehicle_black = "//*[@class='form-horizontal']/div[11]/div[1]/input[1]"
+add_new_vehicle_liscense_plate = "//*[@class='form-horizontal']/div[1]/div/input"
+add_new_vehicle_code = "//*[@class='form-horizontal']/div[2]/div/input"
+add_new_vehicle_type = "//*[@class='form-horizontal']/div[3]/div/select/option[8]"
+add_new_vehicle_name = "//*[@class='form-horizontal']/div[4]/div/select/option[7]"
+add_new_vehicle_color = "//*[@class='form-horizontal']/div[5]/div/input"
+add_new_vehicle_image = "//*[@class='form-horizontal']/div[6]/div/input"
+add_new_vehicle_manager = "//*[@class='form-horizontal']/div[7]/div/select/option[2]"
+add_new_vehicle_number1 = "//*[@class='form-horizontal']/div[8]/div/input"
+add_new_vehicle_number2 = "//*[@class='form-horizontal']/div[9]/div/input"
+add_new_vehicle_black = "//*[@class='form-horizontal']/div[10]/div[1]/input[1]"
 add_new_vehicle_bluetooth = "//*[@id='RequireBluetooth']"
-add_new_vehicle_camera = "//*[@class='form-horizontal']/div[12]/div/input[1]"
+add_new_vehicle_camera = "//*[@class='form-horizontal']/div[11]/div/input[1]"
 add_new_vehicle_asign_gsm = "//*[@id='AutoSyncGSM']"
-add_new_vehilce_add_new = "//*[@class='form-horizontal']//*[@class='btn btn-primary']"
+add_new_vehilce_add_new = "//*[@id='vehicleEdit']//*[@class='btn btn-primary']"
 add_new_succes = "//*[text()='Thêm mới xe thành công.']"
 close = "//*[text()='Đóng']"
 exit = "//*[text()='Thoát']"

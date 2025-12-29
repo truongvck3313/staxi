@@ -1311,6 +1311,7 @@ datatable1_5 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[5]"
 datatable1_6 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[6]"
 datatable1_7 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[7]"
 datatable1_8 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[8]"
+datatable1_3a = "//*[@class='table-inbox-wrap']//tbody/tr[1]/td[3]"
 
 
 datatable1_9_button = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[9]/button"
@@ -2257,6 +2258,7 @@ DataTables_Table_1_2 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]"
 DataTables_Table_2_4 = "//*[@id='DataTables_Table_0']/tbody/tr[2]/td[4]"
 DataTables_Table_1_4 = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[4]"
 Save = "//*[@class='btn btn-primary']"
+Save2 = "//*[@class='modal-body']//*[@class='btn btn-primary']"
 hrefDataTables_Table_1_2="//*[@id='DataTables_Table_0']/tbody/tr[1]/td[2]/a[1]"
 DisplayPublicBookId1 = "(//div[@col-id='DisplayPublicBookId'])[2]"
 Assignuser = "//*[@id='searchpanel']/div[1]/div[2]/a[3]"
@@ -2271,7 +2273,10 @@ Message1 = "//*[@class='text-success']"
 GroupAssignDriver = "//*[text()='Test gán lái xe']"
 GroupAssignCar = "//*[text()='Test gán xe']"
 CustomerName = "//*[@id='whiteCardEdit']//*[@id='CustomerName']"
-
+NameSearch = "//*[@id='NameSearch']"
+Submit1 = "//*[@type='submit']"
+Config1 = "//*[@class='table-inbox-wrap']//tbody/tr[1]/td[2]/a"
+Value = "//*[@id='Value']"
 
 
 

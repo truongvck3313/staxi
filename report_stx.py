@@ -1169,6 +1169,7 @@ class report_8_1:
                                                         "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
 
 
+
         # get_info_web_percent(var_stx.column1_1, var_stx.data1_1, 120, 1)    #STT
         # get_info_web_percent(var_stx.column1_2, var_stx.data1_2, 121, 1)    #Ngày
         # get_info_web_percent(var_stx.column1_3, var_stx.data1_3, 122, 1)    #Tổng cuốc
@@ -3495,36 +3496,144 @@ class PartnerTrip_12_1:
 
 
 class Checkconfig:
-    def Checkconfig12_1_1(self, code, eventname, result, type_config):
+    # def Checkconfig(self, code, eventname, result, type_config, name_module, name_report, name_image):
+    #     administration.admin_10_6.admin_10_6_3(self, "", "", "")
+    #     var_stx.driver.find_element(By.XPATH, var_stx.NameSearch).click()
+    #     time.sleep(1)
+    #     var_stx.driver.find_element(By.XPATH, var_stx.NameSearch).send_keys("USE_DATA_REPORT_SERVICE")
+    #     time.sleep(1)
+    #     var_stx.driver.find_element(By.XPATH, var_stx.Submit1).click()
+    #     time.sleep(1)
+    #     type_config1 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_3a).text
+    #     time.sleep(1)
+    #
+    #     #check điều kiện
+    #     if type_config == "false":
+    #         if(type_config1==type_config):
+    #             print("Giá trị là false")
+    #         else:
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Config1).click()
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Value).click()
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys("false")
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Save2).click()
+    #             time.sleep(2)
+    #             print("Đổi giá trị thành false")
+    #
+    #
+    #     if type_config == "true":
+    #         if (type_config1 == type_config):
+    #             print("Giá trị là true")
+    #         else:
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Config1).click()
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Value).click()
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys("true")
+    #             time.sleep(2)
+    #             var_stx.driver.find_element(By.XPATH, var_stx.Save2).click()
+    #             time.sleep(2)
+    #             print("Đổi giá trị thành true")
+    #
+    #
+    #     PartnerTrip_12_1.PartnerTrip_12_1_1_search(self, "", "", "") #hỏi chatgpt thay hàm chạy tĩnh = hàm chạy động
+    #     var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+    #     time.sleep(1)
+    #     if type_config == "false":
+    #         print("Check kết quả giá trị = false")
+    #         module_other_stx.write_result_not_displayed_try(code, eventname, result, name_module,
+    #                                                         var_stx.messsage_export, name_image)
+    #         time.sleep(10)
+    #         module_other_stx.write_result_dowload_file(code, eventname, result,
+    #                                                    name_module, name_report, name_image)
+    #
+    #     if type_config == "true":
+    #         print("Check kết quả giá trị = true")
+    #         try:
+    #             wait = WebDriverWait(var_stx.driver, 20)
+    #             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+    #         except:
+    #             pass
+    #         module_other_stx.write_result_text_try_if(code, eventname, result,name_module, var_stx.messsage_export,
+    #                                                   "Yêu cầu xuất báo cáo đã được gửi. Vui lòng kiểm tra trang quản lý file để xem trạng thái.", name_image)
+
+    def Checkconfig(self, code, eventname, result, type_config, name_module, name_report, name_image):
         administration.admin_10_6.admin_10_6_3(self, "", "", "")
+        var_stx.driver.find_element(By.XPATH, var_stx.NameSearch).click()
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.NameSearch).send_keys("USE_DATA_REPORT_SERVICE")
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.Submit1).click()
+        time.sleep(1)
+        type_config1 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_3a).text
+        time.sleep(1)
+
         #check điều kiện
         if type_config == "false":
-            print("Đổi giá trị thành false")
-        else:
-            print("Đổi giá trị thành true")
+            if(type_config1==type_config):
+                print("Giá trị là false")
+            else:
+                var_stx.driver.find_element(By.XPATH, var_stx.Config1).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Value).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys("false")
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Save2).click()
+                time.sleep(2)
+                print("Đổi giá trị thành false")
 
 
+        if type_config == "true":
+            if (type_config1 == type_config):
+                print("Giá trị là true")
+            else:
+                var_stx.driver.find_element(By.XPATH, var_stx.Config1).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Value).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Value).send_keys("true")
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.Save2).click()
+                time.sleep(2)
+                print("Đổi giá trị thành true")
 
-        PartnerTrip_12_1.PartnerTrip_12_1_1_search(self, "", "", "")
+
+        PartnerTrip_12_1.PartnerTrip_12_1_1_search(self, "", "", "") #hỏi chatgpt thay hàm chạy tĩnh = hàm chạy động
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(1)
-        try:
-            wait = WebDriverWait(var_stx.driver, 20)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
-            module_other_stx.write_result_text_try_if(code, eventname, result,
-                                                      "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.1 Báo cáo cuốc khách đối tác",
-                                                      var_stx.title_page1, "12.1.1 Báo cáo cuốc khách đối tác",
-                                                      "_BaoCaoCuocKhachDoiTac.png")
-        except:
-            pass
-
-
-
-
         if type_config == "false":
-            print("Đổi giá trị thành false")
-        else:
-            print("Đổi giá trị thành true")
+            print("Check kết quả giá trị = false")
+            module_other_stx.write_result_not_displayed_try(code, eventname, result, name_module,
+                                                            var_stx.messsage_export, name_image)
+            time.sleep(10)
+            module_other_stx.write_result_dowload_file(code, eventname, result,
+                                                       name_module, name_report, name_image)
+
+        if type_config == "true":
+            print("Check kết quả giá trị = true")
+            try:
+                wait = WebDriverWait(var_stx.driver, 20)
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            except:
+                pass
+            module_other_stx.write_result_text_try_if(code, eventname, result,name_module, var_stx.messsage_export,
+                                                      "Yêu cầu xuất báo cáo đã được gửi. Vui lòng kiểm tra trang quản lý file để xem trạng thái.", name_image)
+
+
+
+
+
 
 
 

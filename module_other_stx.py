@@ -958,7 +958,8 @@ def write_result_dowload_file(code, eventname, result, path_module, file, name_i
     logging.info("Kết quả - " + result)
     try:
         filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-        shutil.move(filename, os.path.join(var_stx.excelpath, r""+file+""))
+        shutil.move(filename, os.path.join(var_stx.excelpath, f"{file}"))
+
         logging.info("True")
         writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
         writeData(var_stx.checklistpath, "Checklist", code, 6, file)

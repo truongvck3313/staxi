@@ -950,16 +950,27 @@ def write_result_text_try_if_boolean(code, eventname, result, path_module, path_
 
 
 
-def write_result_dowload_file(code, eventname, result, path_module, file, name_image):
+def write_result_dowload_file(code, eventname, result, path_module, file, name_image, times=None):
     var_stx.driver.implicitly_wait(1)
     logging.info(path_module)
     logging.info("Mã - " + code)
     logging.info("Tên sự kiện - " + eventname)
     logging.info("Kết quả - " + result)
+    n = 0
+    while (n < times):
+        n = n + 1
+        try:
+            filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+            shutil.move(filename, os.path.join(var_stx.excelpath, f"{file}"))
+            break
+        except:
+            pass
+        time.sleep(1)
+
+
     try:
         filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
         shutil.move(filename, os.path.join(var_stx.excelpath, f"{file}"))
-
         logging.info("True")
         writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
         writeData(var_stx.checklistpath, "Checklist", code, 6, file)
@@ -1066,6 +1077,36 @@ def write_result_text_try_if(code, eventname, result, path_module, path_text, ch
     # module_other_v3.write_result_text_try_if(code, eventname, result, "Quản trị - Danh sách xe",
     #                                       var_stx.check_open_car_quickly, "Mở xe thành công", "_QuanTri_DsXe_MoXeNhanh.png")
 
+
+
+def write_result_text_try_if_strip(code, eventname, result, path_module, path_text, check_result, name_image):
+    var_stx.driver.implicitly_wait(1)
+    logging.info("-------------------------")
+    logging.info(path_module)
+    logging.info("Mã - " + code)
+    logging.info("Tên sự kiện - " + eventname)
+    logging.info("Kết quả - " + result)
+    try:
+        check_text = var_stx.driver.find_element(By.XPATH, path_text).text
+        logging.info(check_text)
+        logging.info(check_result)
+        writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
+
+        if check_text.strip().lower() == check_result.strip().lower():
+            logging.info("True")
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+        else:
+            logging.info("False")
+            var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+            writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+            writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+    except:
+        logging.info("False")
+        var_stx.driver.save_screenshot(var_stx.imagepath + code + name_image)
+        writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+        writeData(var_stx.checklistpath, "Checklist", code, 13, code + name_image)
+    # module_other_v3.write_result_text_try_if(code, eventname, result, "Quản trị - Danh sách xe",
+    #                                       var_stx.check_open_car_quickly, "Mở xe thành công", "_QuanTri_DsXe_MoXeNhanh.png")
 
 
 

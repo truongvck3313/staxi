@@ -3263,7 +3263,7 @@ def caseid_report81(self):
     get_datachecklist("Report81")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    report_stx.Checkconfig.Checkconfig(self, "Report81", event, result, "false",
+    report_stx.Checkconfig.Checkconfig(self, "Report81", event, result, "false", report_stx.PartnerTrip_12_1.PartnerTrip_12_1_1_search,
                                              "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.1 Báo cáo cuốc khách đối tác",
                                              "_BaoCaoCuocDoiTac.xlsx", "_BaoCaoCuocDoiTac.png")
 
@@ -3271,7 +3271,7 @@ def caseid_report82(self):
     get_datachecklist("Report82")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    report_stx.Checkconfig.Checkconfig(self, "Report82", event, result, "true",
+    report_stx.Checkconfig.Checkconfig(self, "Report82", event, result, "true", report_stx.PartnerTrip_12_1.PartnerTrip_12_1_1_search,
                                              "CUỐC ĐỐI TÁC - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng",
                                              "_BaoCaoCuocKhachTong.xlsx", "_BaoCaoCuocKhachTong.png")
 

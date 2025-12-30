@@ -171,7 +171,7 @@ class list_promotion:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
+        module_other_stx.write_result_text_try_if_strip(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền",
                                               var_stx.col_id_name2, name, "_DanhSachKhuyenmai_Ten.png")
 
 

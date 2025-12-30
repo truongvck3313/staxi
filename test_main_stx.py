@@ -4,27 +4,24 @@ import caseid_stx
 import var_stx
 import module_stx
 #pip install selenium==3.141.0
-
-
-#----------------------------
 # git checkout staxi_update
 # git pull origin master
 
 
 
 
-#update staxi sáng 26/12/2025
+#update staxi sáng 30/12/2025
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        # module_other_stx.clear_log()
-        # module_other_stx.delete_image()
-        # module_other_stx.timerun()
-        # module_stx.ModuleTest()
-        # module_stx.retest_casenone(self)
-        # module_stx.retest_casefail(self)
-        # module_other_stx.send_viber()
+        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        module_other_stx.clear_log()
+        module_other_stx.delete_image()
+        module_other_stx.timerun()
+        module_stx.ModuleTest()
+        module_stx.retest_casenone(self)
+        module_stx.retest_casefail(self)
+        module_other_stx.send_viber()
         #
         #
         #
@@ -244,7 +241,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_promotion01(self)
         # # # caseid_stx.caseid_promotion02(self)   #đã bỏ
-        # # caseid_stx.caseid_promotion03(self)
+        # caseid_stx.caseid_promotion03(self)
         # # #
         # # caseid_stx.caseid_promotion04(self)
         # # caseid_stx.caseid_promotion05(self)
@@ -570,7 +567,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report78(self)
         # caseid_stx.caseid_report79(self)
         # caseid_stx.caseid_report80(self)
-        caseid_stx.caseid_report81(self)
+        # caseid_stx.caseid_report81(self)
         # caseid_stx.caseid_report82(self)
 
 

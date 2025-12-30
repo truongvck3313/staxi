@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="update staxi sáng 26/12/2025">
+    <list default="true" id="f943ddd4-fbd0-4126-b52a-3d0d3d4bac1d" name="Changes" comment="update staxi chiều 25/12/2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TAXI_ChecklistForAutoTestSTAXI.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TAXI_ChecklistForAutoTestSTAXI.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseid_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/caseid_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_other_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_other_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotion_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/promotion_stx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/report_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_driver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_stx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var_stx.py" beforeDir="false" afterPath="$PROJECT_DIR$/var_stx.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,8 +215,7 @@
       <workItem from="1766628461782" duration="182000" />
       <workItem from="1766654736022" duration="564000" />
       <workItem from="1766655733380" duration="3306000" />
-      <workItem from="1766711455190" duration="3934000" />
-      <workItem from="1767058252336" duration="2604000" />
+      <workItem from="1766711455190" duration="3622000" />
     </task>
     <task id="LOCAL-00002" summary="test đẩy">
       <created>1765764862136</created>
@@ -283,14 +280,7 @@
       <option name="project" value="LOCAL" />
       <updated>1766658977111</updated>
     </task>
-    <task id="LOCAL-00011" summary="update staxi sáng 26/12/2025">
-      <created>1766716127223</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1766716127223</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +305,6 @@
     <MESSAGE value="no change" />
     <MESSAGE value="update thư viện excel" />
     <MESSAGE value="update staxi chiều 25/12/2025" />
-    <MESSAGE value="update staxi sáng 26/12/2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="update staxi sáng 26/12/2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="update staxi chiều 25/12/2025" />
   </component>
 </project>

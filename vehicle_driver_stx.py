@@ -1031,8 +1031,8 @@ class driver:
             driver.driver(self, "", "", "")
 
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("2")
-        time.sleep(1)
+        # var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("2")
+        # time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(10)
 
@@ -1064,8 +1064,8 @@ class driver:
             driver.driver(self, "", "", "")
 
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("2")
-        time.sleep(1)
+        # var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("2")
+        # time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
         driver.driver_x(self)
@@ -1158,8 +1158,8 @@ class driver:
             driver.driver(self, "", "", "")
 
         driver.driver_x(self)
-        var_stx.driver.find_element(By.XPATH, var_stx.cccd).send_keys("12")
-        time.sleep(1)
+        # var_stx.driver.find_element(By.XPATH, var_stx.cccd).send_keys("12")
+        # time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(2)
         try:
@@ -1233,7 +1233,7 @@ class driver:
         var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("2")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(10)
+        time.sleep(5)
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(7)
         module_other_stx.write_result_dowload_file(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
@@ -1284,7 +1284,7 @@ class driver:
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.check_list_import_1_6_no)
             module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
-                                                     var_stx.list_import_1_6, "Số điện thoại đã tồn tại trong hệ thống với tài khoản TRANQUANGTRUONG2",
+                                                     var_stx.list_import_1_6, "Bản ghi trùng số điện thoại với bản ghi khác",
                                                       "_LaiXe_Upload1.png")
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.check_list_import_1_6_ys)

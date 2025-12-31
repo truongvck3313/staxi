@@ -1763,7 +1763,7 @@ StatusDebt_2 = "//*[@id='StatusDebt']//*[text()='Thanh toán 1 phần']"
 list_data2_2_a1 = "//*[@class='table table-hover table-bordered']/tbody/tr[2]/td[2]/a"
 Report_customer_card_details = "//*[text()='7.7.10 Báo cáo chi tiết cuốc khách thẻ ']"
 DebtStatus_3 = "//*[@id='DebtStatus']//*[text()='Chưa thanh toán']"
-check_list_import_1_6_no = "//*[@class='ag-center-cols-container']/div[1]//*[text()='Số điện thoại đã tồn tại trong hệ thống với tài khoản TRANQUANGTRUONG2']"
+check_list_import_1_6_no = "//*[@class='ag-center-cols-container']/div[1]//*[text()='Bản ghi trùng số điện thoại với bản ghi khác']"
 check_list_import_1_6_ys = "//*[@class='ag-center-cols-container']/div[1]//*[text()='Bản ghi hợp lệ']"
 DebtStatus_2 = "//*[@id='DebtStatus']//*[text()='Thanh toán 1 phần']"
 reportrange_left_year = "//*[@class='drp-calendar left']//*[@class='yearselect']"
@@ -2277,15 +2277,18 @@ NameSearch = "//*[@id='NameSearch']"
 Submit1 = "//*[@type='submit']"
 Config1 = "//*[@class='table-inbox-wrap']//tbody/tr[1]/td[2]/a"
 Value = "//*[@id='Value']"
-
-
-
-
-
-
-
-
-
+Username1 = "(//div[@col-id='Username'])[2]"
+Username2 = "(//div[@col-id='Username'])[3]"
+LatestPrivateCode1 = "(//div[@col-id='LatestPrivateCode'])[2]"
+LatestPrivateCode2 = "(//div[@col-id='LatestPrivateCode'])[3]"
+CCCD2 = "(//div[@col-id='CCCD'])[3]"
+CCCD1 = "(//div[@col-id='CCCD'])[2]"
+LockReason1 = "(//div[@col-id='LockReason'])[2]"
+Lock1 = "(//div[@col-id='Lock'])[2]"
+Unlock1 = "(//div[@col-id='Unlock'])[2]"
+PrivateCode1 = "(//div[@col-id='PrivateCode'])[2]"
+PrivateCode2 = "(//div[@col-id='PrivateCode'])[3]"
+PrivateCode_input = "(//input[@id='PrivateCode'])"
 
 
 

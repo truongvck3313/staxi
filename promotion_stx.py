@@ -1692,30 +1692,42 @@ class report:
         except:
             report.detailed_km_reports_by_company(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("26/08/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("26/08/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("04/09/2025 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("04/09/2025 23:59")
         time.sleep(1)
-
+        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.list_data2_2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("28/04/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("28/04/2025 00:00")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/06/2025 23:59")
             time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+            time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+            try:
+                wait = WebDriverWait(var_stx.driver, 15)
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.list_data2_2)))
+            except:
+                pass
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.2 BC chi tiết KM theo công ty",
                                               var_stx.list_data2_2, "", "_BCChiTietKmTheoCongTy_TimKiem.png")
 
@@ -1787,29 +1799,41 @@ class report:
         except:
             report.reports_km_by_day(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("08/08/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("08/08/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("09/09/2025 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("09/09/2025 23:59")
         time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("11/07/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("11/07/2025 00:00")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2026 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/06/2026 00:00")
             time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+            time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(10)
+            try:
+                wait = WebDriverWait(var_stx.driver, 15)
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
+            except:
+                pass
 
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.3 BC KM theo ngày",
                                               var_stx.table_1_2, "", "_BCKMTheoNgay_TimKiem.png")
@@ -1985,29 +2009,42 @@ class report:
         except:
             report.reports_km_by_kh(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("10/09/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("10/09/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("12/09/2025 02:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("12/09/2025 02:59")
         time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/12/2025 00:00")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2026 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("10/12/2025 23:59")
             time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+            time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+
+        try:
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
+        except:
+            pass
 
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.5 BC KM theo KH",
                                               var_stx.table_1_2, "", "_BCKMTheoKH_TimKiem.png")
@@ -2082,29 +2119,43 @@ class report:
         except:
             report.reports_km_by_lx(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("10/09/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("10/09/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("17/09/2025 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("17/09/2025 23:59")
         time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/07/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/12/2025 00:00")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2026 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("10/12/2025 23:59")
             time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+            time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+
+        try:
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
+        except:
+            pass
 
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.6 BC KM theo LX",
                                               var_stx.table_1_2, "", "_BCKMTheoLX_TimKiem.png")
@@ -2181,29 +2232,42 @@ class report:
         except:
             report.reports_km_by_customer(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("01/05/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("01/05/2025 00:00")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2025 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/06/2025 23:59")
         time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.list_data2_2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("02/07/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/07/2025 23:59")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("02/06/2026 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/06/2026 23:59")
             time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+            time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+        try:
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.list_data2_2)))
+        except:
+            pass
 
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHUYẾN MẠI - 6.4 Báo cáo - 6.4.7 BC KM theo cuốc khách",
                                               var_stx.list_data2_2, "", "_BCKMTheoCuocKhach_TimKiem.png")

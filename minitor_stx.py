@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 wait = WebDriverWait(var_stx.driver, 10)
 from selenium.webdriver.common.action_chains import ActionChains
 from seleniumwire import webdriver
-
+# chiều 31/12/2025
 
 
 
@@ -1576,9 +1576,9 @@ class route:
             route.dowload_route(self, "", "", "")
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel1).click()
-        time.sleep(15)
+        time.sleep(1)
         module_other_stx.write_result_dowload_file(code, eventname, result, "Giám sát - Lộ trình 1.7",
-                                                        "_GiamSat_LoTrinh_XuatExcel.xls", "_GiamSat_LoTrinh_XuatExcel.png")
+                                                        "_GiamSat_LoTrinh_XuatExcel.xls", "_GiamSat_LoTrinh_XuatExcel.png", times=35)
 
         try:
             check_route_excel = var_stx.driver.find_element(By.XPATH, var_stx.check_route_excel).text

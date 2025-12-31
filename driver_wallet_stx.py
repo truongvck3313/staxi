@@ -15,8 +15,11 @@ from retry import retry
 from seleniumwire.utils import decode as sw_decode
 from selenium.webdriver.common.keys import Keys
 wait = WebDriverWait(var_stx.driver, 10)
+# chiều 31/12/2025
 
-#19/12
+
+
+
 class list_wallet_driver:
 
     def list_wallet_driver_x(self):
@@ -911,7 +914,7 @@ class wallet_history:
         except:
             pass
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.code_dam).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.PrivateCode_input).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.3)
         except:
             pass
@@ -1229,7 +1232,12 @@ class wallet_history:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
-
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.PrivateCode1)
+        except:
+            wallet_history.wallet_history_x(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.search)
+            time.sleep(5)
 
         report_stx.get_info_web4()
 

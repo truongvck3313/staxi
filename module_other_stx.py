@@ -17,7 +17,7 @@ import json
 import requests
 from requests.auth import HTTPBasicAuth
 from selenium.common.exceptions import WebDriverException
-#18/12
+# chiều 31/12/2025
 
 
 
@@ -950,7 +950,7 @@ def write_result_text_try_if_boolean(code, eventname, result, path_module, path_
 
 
 
-def write_result_dowload_file(code, eventname, result, path_module, file, name_image, times=None):
+def write_result_dowload_file(code, eventname, result, path_module, file, name_image, times=20):
     var_stx.driver.implicitly_wait(1)
     logging.info(path_module)
     logging.info("Mã - " + code)

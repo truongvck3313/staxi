@@ -15,7 +15,7 @@ from datetime import datetime
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-#19/12
+# chiều 31/12/2025
 
 
 class accounting_14_1:

@@ -13,7 +13,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import openpyxl
 from selenium.webdriver.common.keys import Keys
 wait = WebDriverWait(var_stx.driver, 10)
-#18/12
+# chiều 31/12/2025
 
 
 def get_info_web():

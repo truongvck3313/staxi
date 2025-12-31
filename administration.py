@@ -19,8 +19,9 @@ from selenium.webdriver.support import expected_conditions as EC
 import subprocess
 import random
 wait = WebDriverWait(var_stx.driver, 10)
+# chiều 31/12/2025
 
-#19/12
+
 
 def get_info_web():
     var_stx.driver.implicitly_wait(0.05)

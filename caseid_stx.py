@@ -11,7 +11,7 @@ import customer_stx
 import report_stx
 import administration
 import accounting
-#19/12
+# chiều 31/12/2025
 
 
 

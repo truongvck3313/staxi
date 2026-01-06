@@ -10,7 +10,7 @@ import module_stx
 
 
 
-#update staxi chiều 31/12/2025, đã check tới caseid_promotion49
+#update staxi sáng 06/01/2026, đã check tới caseid_promotion49
 
 class Test(unittest.TestCase):
     def test_run1(self):

@@ -1868,7 +1868,8 @@ class contract_card:
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.white_cards_hd1).click()
         time.sleep(1)
-
+        var_stx.driver.find_element(By.XPATH, var_stx.CustomerName).clear()
+        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.CustomerName).send_keys("Auto_" + number)
         time.sleep(1)
 
@@ -1884,12 +1885,11 @@ class contract_card:
         var_stx.driver.find_element(By.XPATH, var_stx.white_cards_confirm).click()
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.white_cards_confirm1).click()
-        time.sleep(1)
         # wait = WebDriverWait(var_stx.driver, 10)
         # element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.card_management_addnew1)))
 
-        module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.3 Quản lý thẻ",
-                                                  var_stx.card_management_addnew1, "Thêm mới thẻ thành công", "_QuanLyThe_PhatHanhTheTrang.png")
+        module_other_stx.write_result_text_try_if_or(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.3 Quản lý thẻ",
+                                                  var_stx.card_management_addnew1, "Thêm mới thẻ thành công", "Cập nhật thông tin thẻ thành công", "_QuanLyThe_PhatHanhTheTrang.png")
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "Auto_" + number)
         var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 37, 2, "Auto_" + number)
 

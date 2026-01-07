@@ -10,7 +10,7 @@ import module_stx
 
 
 
-#update staxi sáng 06/01/2026, đã check tới caseid_promotion49
+#update staxi sáng 07/01/2026
 
 class Test(unittest.TestCase):
     def test_run1(self):
@@ -68,7 +68,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor25(self)
         # # caseid_stx.caseid_minitor26(self)
         # # caseid_stx.caseid_minitor27(self)
-        # # caseid_stx.caseid_minitor28(self)
+        # caseid_stx.caseid_minitor28(self)
         # # caseid_stx.caseid_minitor29(self)
         # # caseid_stx.caseid_minitor30(self)
         # # caseid_stx.caseid_minitor31(self)
@@ -235,7 +235,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_wallet35(self)
         # # caseid_stx.caseid_wallet36(self)
         # # caseid_stx.caseid_wallet37(self)
-        # # caseid_stx.caseid_wallet38(self)
+        # caseid_stx.caseid_wallet38(self)
         # caseid_stx.caseid_wallet39(self)
         # # caseid_stx.caseid_wallet40(self)
         #

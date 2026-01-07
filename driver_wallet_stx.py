@@ -1118,15 +1118,19 @@ class wallet_history:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
+
+
+        wait = WebDriverWait(var_stx.driver, 15)
         try:
-            var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")))
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.in_month).click()
             time.sleep(1)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")))
+
 
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         try:

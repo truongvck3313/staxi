@@ -15,8 +15,11 @@ from retry import retry
 from seleniumwire.utils import decode as sw_decode
 from selenium.webdriver.common.keys import Keys
 wait = WebDriverWait(var_stx.driver, 10)
+# chiều 31/12/2025
 
-#19/12
+
+
+
 class list_wallet_driver:
 
     def list_wallet_driver_x(self):
@@ -911,7 +914,7 @@ class wallet_history:
         except:
             pass
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.code_dam).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            var_stx.driver.find_element(By.XPATH, var_stx.PrivateCode_input).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.3)
         except:
             pass
@@ -1115,15 +1118,21 @@ class wallet_history:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
-        try:
-            var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")
-        except:
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-            time.sleep(2)
-            var_stx.driver.find_element(By.XPATH, var_stx.in_month).click()
-            time.sleep(1)
-            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(5)
+
+
+        wait = WebDriverWait(var_stx.driver, 15)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")))
+
+        # try:
+        #     element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")))
+        # except:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        #     time.sleep(2)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.in_month).click()
+        #     time.sleep(1)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        #     element = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='ag-center-cols-viewport']/div/div[1]")))
+
 
         scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
         try:
@@ -1135,24 +1144,24 @@ class wallet_history:
             time.sleep(1)
             ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
 
-        time.sleep(2)
-        n = 0
-        while (n < 7):
-            n = n + 1
-            n = str(n)
-            path_icon = "//*[@class='ag-center-cols-viewport']/div/div[" + n + "]//*[@class='fa fa-angle-double-right']"
-            try:
-                var_stx.driver.find_element(By.XPATH, path_icon)
-                break
-            except:
-                try:
-                    var_stx.driver.find_element(By.XPATH, "//*[@class='ag-icon ag-icon-next']").click()
-                    time.sleep(2)
-                    ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
-                    time.sleep(1)
-                except:
-                    pass
-            n = int(n)
+        # time.sleep(2)
+        # n = 0
+        # while (n < 7):
+        #     n = n + 1
+        #     n = str(n)
+        #     path_icon = "//*[@class='ag-center-cols-viewport']/div/div[" + n + "]//*[@class='fa fa-angle-double-right']"
+        #     try:
+        #         var_stx.driver.find_element(By.XPATH, path_icon)
+        #         break
+        #     except:
+        #         try:
+        #             var_stx.driver.find_element(By.XPATH, "//*[@class='ag-icon ag-icon-next']").click()
+        #             time.sleep(2)
+        #             ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+        #             time.sleep(1)
+        #         except:
+        #             pass
+        #     n = int(n)
 
 
         n = 0
@@ -1168,7 +1177,7 @@ class wallet_history:
                 var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
                 time.sleep(3)
                 wait = WebDriverWait(var_stx.driver, 20)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.ag1_2)))
+                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.col_id_2_a)))
                 break
             except:
                 pass
@@ -1185,13 +1194,13 @@ class wallet_history:
         logging.info("Kết quả - " + result)
         try:
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
-            print(page)
+            print(f"page: {page}")
             try:
                 code_customer = var_stx.driver.find_element(By.XPATH, var_stx.col_id_2_a).text
             except:
                 code_customer = var_stx.driver.find_element(By.XPATH, var_stx.table_1_1).text
 
-            print(code_customer)
+            print(f"code_customer: {code_customer}")
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}\nMã quốc khách: {}"
                                        .format(page, code_customer))
             if (page == "8.4 Báo cáo doanh thu") and (code_customer != ""):
@@ -1229,7 +1238,12 @@ class wallet_history:
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
-
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.PrivateCode1)
+        except:
+            wallet_history.wallet_history_x(self)
+            var_stx.driver.find_element(By.XPATH, var_stx.search)
+            time.sleep(5)
 
         report_stx.get_info_web4()
 

@@ -11,7 +11,7 @@ import customer_stx
 import report_stx
 import administration
 import accounting
-#19/12
+# chiều 31/12/2025
 
 
 
@@ -973,8 +973,8 @@ def caseid_vehicle33(self):
     get_datachecklist("Vehicle33")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle33", event, result, var_stx.listdata2_2, var_stx.search_driver_input,
-                                            var_stx.listdata1_2, "_XeLaiXe_TimKiem_LaiXe.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle33", event, result, var_stx.Username2, var_stx.search_driver_input,
+                                            var_stx.Username1, "_XeLaiXe_TimKiem_LaiXe.png")
 
 def caseid_vehicle34(self):
     get_datachecklist("Vehicle34")
@@ -987,15 +987,15 @@ def caseid_vehicle35(self):
     get_datachecklist("Vehicle35")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle35", event, result, var_stx.listdata2_4, var_stx.number,
-                                            var_stx.listdata1_4, "_XeLaiXe_TimKiem_SoHieu.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle35", event, result, var_stx.LatestPrivateCode2, var_stx.number,
+                                            var_stx.LatestPrivateCode1, "_XeLaiXe_TimKiem_SoHieu.png")
 
 def caseid_vehicle36(self):
     get_datachecklist("Vehicle36")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver(self, "Vehicle36", event, result, var_stx.listdata2_8, var_stx.cccd,
-                                            var_stx.listdata1_8, "_XeLaiXe_TimKiem_CCCD.png")
+    vehicle_driver_stx.driver.search_driver(self, "Vehicle36", event, result, var_stx.CCCD2, var_stx.cccd,
+                                            var_stx.CCC1, "_XeLaiXe_TimKiem_CCCD.png")
 
 def caseid_vehicle37(self):
     get_datachecklist("Vehicle37")
@@ -1014,21 +1014,21 @@ def caseid_vehicle39(self):
     get_datachecklist("Vehicle39")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver_combobox(self, "Vehicle39", event, result, var_stx.state_lock, "0", var_stx.listdata1_11,
+    vehicle_driver_stx.driver.search_driver_combobox(self, "Vehicle39", event, result, var_stx.state_lock, "0", var_stx.LockReason1,
                                                      "", "_XeLaiXe_LyDoMoKhoa.png")
 
 def caseid_vehicle40(self):
     get_datachecklist("Vehicle40")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver_combobox(self, "Vehicle40", event, result, var_stx.state_lock, "1", var_stx.listdata1_10,
+    vehicle_driver_stx.driver.search_driver_combobox(self, "Vehicle40", event, result, var_stx.state_lock, "1", var_stx.Unlock1,
                                                      "Mở khóa", "_XeLaiXe_TrangThai_Khoa.png")
 
 def caseid_vehicle41(self):
     get_datachecklist("Vehicle41")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    vehicle_driver_stx.driver.search_driver_combobox(self, "Vehicle41", event, result, var_stx.state_unlock, "1", var_stx.listdata1_9,
+    vehicle_driver_stx.driver.search_driver_combobox(self, "Vehicle41", event, result, var_stx.state_unlock, "1", var_stx.Lock1,
                                                      "Khóa", "_XeLaiXe_TrangThai_MoKhoa.png")
 
 
@@ -1361,8 +1361,8 @@ def caseid_wallet28(self):
     get_datachecklist("Wallet28")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.wallet_history.wallet_history_search(self, "Wallet28", event, result, var_stx.ag2_7, var_stx.code_hieu,
-                                                           var_stx.ag1_7, "_LichSuViTien_MaDam.png")
+    driver_wallet_stx.wallet_history.wallet_history_search(self, "Wallet28", event, result, var_stx.PrivateCode2, var_stx.code_hieu,
+                                                           var_stx.PrivateCode1, "_LichSuViTien_MaDam.png")
 
 
 def caseid_wallet29(self):

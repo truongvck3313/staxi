@@ -2289,9 +2289,10 @@ Unlock1 = "(//div[@col-id='Unlock'])[2]"
 PrivateCode1 = "(//div[@col-id='PrivateCode'])[2]"
 PrivateCode2 = "(//div[@col-id='PrivateCode'])[3]"
 PrivateCode_input = "(//input[@id='PrivateCode'])"
+HisId1 = "(//div[@col-id='HisId'])[2]"
+HisId2 = "(//div[@col-id='HisId'])[3]"
 
-
-
+custrank_cu = "//*[@name='CustRank']//*[text()='Hạng đồng']"
 
 
 

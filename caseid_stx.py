@@ -995,7 +995,7 @@ def caseid_vehicle36(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     vehicle_driver_stx.driver.search_driver(self, "Vehicle36", event, result, var_stx.CCCD2, var_stx.cccd,
-                                            var_stx.CCC1, "_XeLaiXe_TimKiem_CCCD.png")
+                                            var_stx.CCCD1, "_XeLaiXe_TimKiem_CCCD.png")
 
 def caseid_vehicle37(self):
     get_datachecklist("Vehicle37")
@@ -1369,8 +1369,8 @@ def caseid_wallet29(self):
     get_datachecklist("Wallet29")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.wallet_history.wallet_history_search_scroll(self, "Wallet29", event, result, var_stx.ag2_8, var_stx.code_gd,
-                                                           var_stx.ag1_8, "_LichSuViTien_MaGiaoDich.png")
+    driver_wallet_stx.wallet_history.wallet_history_search_scroll(self, "Wallet29", event, result, var_stx.HisId2, var_stx.code_gd,
+                                                           var_stx.HisId1, "_LichSuViTien_MaGiaoDich.png")
 
 
 def caseid_wallet30(self):

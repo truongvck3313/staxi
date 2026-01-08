@@ -1164,9 +1164,16 @@ class report_8_1:
 
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(7)
-        module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.4 Tổng cuốc khách theo ngày",
-                                                        "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            dowload_excel(self, "8.1.4 Tổng cuốc khách theo ngày")
+            module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.4 Tổng cuốc khách theo ngày",
+                                                       "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
+        except:
+            module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.4 Tổng cuốc khách theo ngày",
+                                                            "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
 
 
 
@@ -1790,10 +1797,17 @@ class report_8_3:
             report_8_3.report_8_3_1_search(self, "", "", "")
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(5)
-        module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.1 Thống kê đề cử cuốc theo lái xe",
-                                                        "_ThongKeDeCuCuocTheoLaiXe.xls", "_ThongKeDeCuCuocTheoLaiXe_XuatExcel.png")
-
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            dowload_excel(self, "8.3.1 Thống kê đề cử cuốc theo lái xe")
+            module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.1 Thống kê đề cử cuốc theo lái xe",
+                                                            "_ThongKeDeCuCuocTheoLaiXe.xls", "_ThongKeDeCuCuocTheoLaiXe_XuatExcel.png")
+        except:
+            module_other_stx.write_result_dowload_file(code, eventname, result,
+                                                       "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.1 Thống kê đề cử cuốc theo lái xe",
+                                                       "_ThongKeDeCuCuocTheoLaiXe.xls", "_ThongKeDeCuCuocTheoLaiXe_XuatExcel.png")
 
         # get_info_web3()
         # minitor_stx.get_info_excel(5, "Sheet 1")

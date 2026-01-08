@@ -567,7 +567,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report78(self)
         # caseid_stx.caseid_report79(self)
         # caseid_stx.caseid_report80(self)
-        # caseid_stx.caseid_report81(self)
+        caseid_stx.caseid_report81(self)
         # caseid_stx.caseid_report82(self)
 
 

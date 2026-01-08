@@ -3503,6 +3503,7 @@ class PartnerTrip_12_1:
 
         minitor_stx.get_info_excel_skip(3, "Data", 1, 136)
         minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.2 Tổng hợp cuốc khách đối tác")
+        #comment
 
 
 
@@ -3581,7 +3582,7 @@ class Checkconfig:
         wait = WebDriverWait(var_stx.driver, 15)
         administration.admin_10_6.admin_10_6_3(self, "", "", "")
 
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.NameSearch)))
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.NameSearch)))
         element.send_keys("USE_DATA_REPORT_SERVICE")
 
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Submit1)))
@@ -3599,7 +3600,7 @@ class Checkconfig:
                 element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Config1)))
                 element.click()
                 time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Value)))
+                element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Value)))
                 element.send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 element.send_keys("false")
 
@@ -3616,7 +3617,8 @@ class Checkconfig:
                 element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Config1)))
                 element.click()
                 time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Value)))
+
+                element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Value)))
                 element.send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 element.send_keys("true")
 

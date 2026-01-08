@@ -19,7 +19,7 @@ from selenium.webdriver.common.keys import Keys
 from datetime import datetime, timedelta
 wait = WebDriverWait(var_stx.driver, 10)
 # chiều 31/12/2025
-
+import report_stx
 
 
 
@@ -219,13 +219,13 @@ class list_customer:
         list_customer.list_customer_x(self)
         var_stx.driver.find_element(By.XPATH, var_stx.custrank).click()
         time.sleep(1.5)
-        name_rank = var_stx.driver.find_element(By.XPATH, var_stx.custrank4).text
+        name_rank = var_stx.driver.find_element(By.XPATH, var_stx.custrank_cu).text
         print("rank: "+ name_rank)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.custrank4).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.custrank_cu).click()
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(8)
+        time.sleep(5)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.1 Danh sách khách hàng",
                                               var_stx.list_data2_4, name_rank, "_DanhSachKhachHang_Hang.png")
 
@@ -2104,18 +2104,36 @@ class contract_card:
         try:
             var_stx.driver.find_element(By.XPATH, path_data)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("31/03/2023 00:00")
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("31/03/2026 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+            time.sleep(2)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.icon_search1).click()
             time.sleep(3.5)
+            try:
+                var_stx.driver.find_element(By.XPATH, path_data)
+            except:
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+                time.sleep(2)
+                var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                time.sleep(0.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("10/12/2025 00:00")
+                time.sleep(0.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                time.sleep(0.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("08/01/2026 23:59")
+                time.sleep(0.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).click()
+                time.sleep(1)
+                var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+                time.sleep(5)
+                try:
+                    var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+                except:
+                    var_stx.driver.find_element(By.XPATH, var_stx.icon_search1).click()
 
 
 
@@ -2227,16 +2245,14 @@ class contract_card:
         except:
             contract_card.closing_debts(self, "", "", "")
 
+        #abc
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.ag1_2)
         except:
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("31/03/2023 00:00")
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("31/03/2026 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+            time.sleep(2)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.search).click()
             except:
@@ -2245,13 +2261,13 @@ class contract_card:
         # contract_card.closing_debts_search(self, "", "", "", "0", var_stx.col_id_mobile3, var_stx.col_id_mobile2, "")
 
 
-
-
         time.sleep(3)
-        var_stx.driver.find_element(By.XPATH, var_stx.closing_debts_closing_debts2_input1).click()
-        time.sleep(1)
-
-        var_stx.driver.find_element(By.XPATH, var_stx.closing_debts_closing_debts2).click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.closing_debts_closing_debts2_input1).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.closing_debts_closing_debts2).click()
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.closing_debts_closing_debts2).click()
         time.sleep(2.5)
 
         try:
@@ -2378,19 +2394,24 @@ class contract_card:
             contract_card.report_customer_card_details_search(self, "", "", "")
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel_1).click()
-        time.sleep(7)
+        time.sleep(1)
+
         try:
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            report_stx.dowload_excel(self, "7.7.10 Báo cáo chi tiết cuốc khách thẻ")
+            module_other_stx.write_result_dowload_file(code, eventname, result,
+                                                       "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ",
+                                                       "_BaoCaoCHiTietCuocKhachNo_Excel.xlsx",
+                                                       "__BaoCaoCHiTietCuocKhachNo_XuatExcel.png")
+        except:
             # minitor_stx.get_info_web()
             # minitor_stx.get_info_excel1(5, "Sheet 1")
             # minitor_stx.check_info_web_excel(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ")
             module_other_stx.write_result_dowload_file(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ",
-                                                            "_BaoCaoCHiTietCuocKhachNo_Excel.xlsx", "__BaoCaoCHiTietCuocKhachNo_XuatExcel.png")
+                                                        "_BaoCaoCHiTietCuocKhachNo_Excel.xlsx", "__BaoCaoCHiTietCuocKhachNo_XuatExcel.png")
 
-        except:
-            nodata = var_stx.driver.find_element(By.XPATH, var_stx.not_role).text
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, nodata)
-            var_stx.driver.back()
-            time.sleep(4)
+
 
 
     def report_customer_card_details_excel_full(self, code, eventname, result):
@@ -2405,12 +2426,17 @@ class contract_card:
 
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel_2).click()
-        time.sleep(7)
+        time.sleep(1)
+
         try:
-            nodata = var_stx.driver.find_element(By.XPATH, var_stx.not_role).text
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, nodata)
-            var_stx.driver.back()
-            time.sleep(4)
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            report_stx.dowload_excel(self, "7.7.10 Báo cáo chi tiết cuốc khách thẻ")
+            module_other_stx.write_result_dowload_file(code, eventname, result,
+                                                       "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ",
+                                                       "_BaoCaoCHiTietCuocKhachNo_ExcelFull.xlsx",
+                                                       "__BaoCaoCHiTietCuocKhachNo_XuatExcelDayDuThongTin.png")
+
         except:
             module_other_stx.write_result_dowload_file(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ",
                                                             "_BaoCaoCHiTietCuocKhachNo_ExcelFull.xlsx", "__BaoCaoCHiTietCuocKhachNo_XuatExcelDayDuThongTin.png")
@@ -2797,20 +2823,21 @@ class contract_card:
         except:
             contract_card.card_transaction_report_search(self, "", "", "")
 
-
+        minitor_stx.get_info_web()
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(7)
+        time.sleep(1)
         try:
-            minitor_stx.get_info_web()
-            minitor_stx.get_info_excel1(5, "Sheet 1")
-            minitor_stx.check_info_web_excel(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.14 Báo cáo giao dịch thẻ")
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            report_stx.dowload_excel(self, "7.7.14 Báo cáo giao dịch thẻ")
+            minitor_stx.get_info_excel1(3, "Data")
         except:
-            logging.info("False")
-            var_stx.driver.save_screenshot(var_stx.imagepath + code + "_KhachHang_BaoCaoGiaoDichThe.png")
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
-            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + "_KhachHang_BaoCaoGiaoDichThe.png")
-            var_stx.driver.back()
-            time.sleep(4)
+            minitor_stx.get_info_excel1(5, "Sheet 1")
+
+        minitor_stx.check_info_web_excel(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.14 Báo cáo giao dịch thẻ")
+
+
+
 
 
 

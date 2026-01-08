@@ -1164,9 +1164,16 @@ class report_8_1:
 
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(7)
-        module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.4 Tổng cuốc khách theo ngày",
-                                                        "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            dowload_excel(self, "8.1.4 Tổng cuốc khách theo ngày")
+            module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.4 Tổng cuốc khách theo ngày",
+                                                       "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
+        except:
+            module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.4 Tổng cuốc khách theo ngày",
+                                                            "_TongCuocKhachTheoNgay.xls", "_TongCuocKhachTheoNgay_XuatExcel.png")
 
 
 
@@ -1790,10 +1797,17 @@ class report_8_3:
             report_8_3.report_8_3_1_search(self, "", "", "")
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(5)
-        module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.1 Thống kê đề cử cuốc theo lái xe",
-                                                        "_ThongKeDeCuCuocTheoLaiXe.xls", "_ThongKeDeCuCuocTheoLaiXe_XuatExcel.png")
-
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            dowload_excel(self, "8.3.1 Thống kê đề cử cuốc theo lái xe")
+            module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.1 Thống kê đề cử cuốc theo lái xe",
+                                                            "_ThongKeDeCuCuocTheoLaiXe.xls", "_ThongKeDeCuCuocTheoLaiXe_XuatExcel.png")
+        except:
+            module_other_stx.write_result_dowload_file(code, eventname, result,
+                                                       "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.1 Thống kê đề cử cuốc theo lái xe",
+                                                       "_ThongKeDeCuCuocTheoLaiXe.xls", "_ThongKeDeCuCuocTheoLaiXe_XuatExcel.png")
 
         # get_info_web3()
         # minitor_stx.get_info_excel(5, "Sheet 1")
@@ -3489,6 +3503,7 @@ class PartnerTrip_12_1:
 
         minitor_stx.get_info_excel_skip(3, "Data", 1, 136)
         minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.2 Tổng hợp cuốc khách đối tác")
+        #comment
 
 
 
@@ -3567,7 +3582,7 @@ class Checkconfig:
         wait = WebDriverWait(var_stx.driver, 15)
         administration.admin_10_6.admin_10_6_3(self, "", "", "")
 
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.NameSearch)))
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.NameSearch)))
         element.send_keys("USE_DATA_REPORT_SERVICE")
 
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Submit1)))
@@ -3585,7 +3600,7 @@ class Checkconfig:
                 element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Config1)))
                 element.click()
                 time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Value)))
+                element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Value)))
                 element.send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 element.send_keys("false")
 
@@ -3602,7 +3617,8 @@ class Checkconfig:
                 element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Config1)))
                 element.click()
                 time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Value)))
+
+                element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Value)))
                 element.send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 element.send_keys("true")
 

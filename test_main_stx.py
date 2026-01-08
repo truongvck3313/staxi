@@ -10,18 +10,18 @@ import module_stx
 
 
 
-#update staxi sáng 07/01/2026
+#update staxi chiều 08/01/2026
 
 class Test(unittest.TestCase):
     def test_run1(self):
-        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        module_other_stx.clear_log()
-        module_other_stx.delete_image()
-        module_other_stx.timerun()
-        module_stx.ModuleTest()
-        module_stx.retest_casenone(self)
-        module_stx.retest_casefail(self)
-        module_other_stx.send_viber()
+        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        # module_other_stx.clear_log()
+        # module_other_stx.delete_image()
+        # module_other_stx.timerun()
+        # module_stx.ModuleTest()
+        # module_stx.retest_casenone(self)
+        # module_stx.retest_casefail(self)
+        # module_other_stx.send_viber()
         #
         #
         #
@@ -30,7 +30,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_login03(self)
         #
         # # caseid_stx.caseid_login06(self)
-        # # caseid_stx.caseid_login07(self)
+        # caseid_stx.caseid_login07(self)
         # # caseid_stx.caseid_login08(self)
         # # caseid_stx.caseid_login09(self)
         # # caseid_stx.caseid_login10(self)
@@ -164,7 +164,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle33(self)
         # # caseid_stx.caseid_vehicle34(self)
         # caseid_stx.caseid_vehicle35(self)
-        # # caseid_stx.caseid_vehicle36(self)
+        # caseid_stx.caseid_vehicle36(self)
         # # caseid_stx.caseid_vehicle37(self)
         # # caseid_stx.caseid_vehicle38(self)
         # # caseid_stx.caseid_vehicle39(self)
@@ -180,7 +180,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle49(self)
         # # caseid_stx.caseid_vehicle50(self)
         # # caseid_stx.caseid_vehicle51(self)
-        # # caseid_stx.caseid_vehicle52(self)
+        # caseid_stx.caseid_vehicle52(self)
         # # caseid_stx.caseid_vehicle53(self)
         # # caseid_stx.caseid_vehicle54(self)
         # # caseid_stx.caseid_vehicle55(self)
@@ -210,7 +210,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_wallet13(self)
         # #
         # # caseid_stx.caseid_wallet14(self)
-        # # caseid_stx.caseid_wallet15(self)
+        # caseid_stx.caseid_wallet15(self)
         # # caseid_stx.caseid_wallet16(self)
         # # caseid_stx.caseid_wallet17(self)
         # # caseid_stx.caseid_wallet18(self)
@@ -226,8 +226,8 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_wallet26(self)
         # # # caseid_stx.caseid_wallet27(self)
         # caseid_stx.caseid_wallet28(self)
-        # # caseid_stx.caseid_wallet29(self)
-        # # caseid_stx.caseid_wallet30(self)
+        # caseid_stx.caseid_wallet29(self)
+        # caseid_stx.caseid_wallet30(self)
         # # caseid_stx.caseid_wallet31(self)
         # # caseid_stx.caseid_wallet32(self)
         # # caseid_stx.caseid_wallet33(self)
@@ -312,9 +312,9 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_promotion54(self)
         # # caseid_stx.caseid_promotion55(self)
         #
-        # # caseid_stx.caseid_promotion56(self)
-        # # caseid_stx.caseid_promotion57(self)
-        # # caseid_stx.caseid_promotion58(self)
+        # caseid_stx.caseid_promotion56(self)
+        # caseid_stx.caseid_promotion57(self)
+        # caseid_stx.caseid_promotion58(self)
         #
         #
         # # caseid_stx.caseid_promotion59(self)
@@ -334,7 +334,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer04(self)
         # # caseid_stx.caseid_customer05(self)
         # # caseid_stx.caseid_customer06(self)
-        # # caseid_stx.caseid_customer07(self)
+        # caseid_stx.caseid_customer07(self)
         # # caseid_stx.caseid_customer08(self)
         # #
         # # caseid_stx.caseid_customer09(self)
@@ -401,21 +401,21 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer57_5(self)
         #
         #
-        # # caseid_stx.caseid_customer58(self)
-        # # caseid_stx.caseid_customer59(self)
-        # # caseid_stx.caseid_customer60(self)
-        # # caseid_stx.caseid_customer61(self)
-        # # caseid_stx.caseid_customer62(self)
-        # # caseid_stx.caseid_customer63(self)
-        # # caseid_stx.caseid_customer64(self)
-        # # caseid_stx.caseid_customer65(self)
-        # # caseid_stx.caseid_customer66(self)
-        # # caseid_stx.caseid_customer67(self)
+        # caseid_stx.caseid_customer58(self)
+        # caseid_stx.caseid_customer59(self)
+        # caseid_stx.caseid_customer60(self)
+        # caseid_stx.caseid_customer61(self)
+        # caseid_stx.caseid_customer62(self)
+        # caseid_stx.caseid_customer63(self)
+        # caseid_stx.caseid_customer64(self)
+        # caseid_stx.caseid_customer65(self)
+        # caseid_stx.caseid_customer66(self)
+        # caseid_stx.caseid_customer67(self)
         #
         # # caseid_stx.caseid_customer68(self)
         # # caseid_stx.caseid_customer69(self)
-        # # caseid_stx.caseid_customer70(self)
-        # # caseid_stx.caseid_customer71(self)
+        # caseid_stx.caseid_customer70(self)
+        # caseid_stx.caseid_customer71(self)
         # #
         # # caseid_stx.caseid_customer72(self)
         # # caseid_stx.caseid_customer73(self)
@@ -432,7 +432,7 @@ class Test(unittest.TestCase):
         # #
         # # caseid_stx.caseid_customer81(self)
         # # caseid_stx.caseid_customer82(self)
-        # # caseid_stx.caseid_customer83(self)
+        # caseid_stx.caseid_customer83(self)
         # # #
         # # caseid_stx.caseid_customer84(self)
         # # caseid_stx.caseid_customer85(self)
@@ -468,7 +468,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_report08(self)
         # caseid_stx.caseid_report09(self)
-        # caseid_stx.caseid_report10(self)
+        caseid_stx.caseid_report10(self)
 
         # caseid_stx.caseid_report11(self)
         # caseid_stx.caseid_report12(self)
@@ -500,7 +500,7 @@ class Test(unittest.TestCase):
 
         # caseid_stx.caseid_report32(self)
         # caseid_stx.caseid_report33(self)
-        # caseid_stx.caseid_report34(self)
+        caseid_stx.caseid_report34(self)
         #
         # caseid_stx.caseid_report35(self)
         # caseid_stx.caseid_report36(self)
@@ -567,7 +567,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report78(self)
         # caseid_stx.caseid_report79(self)
         # caseid_stx.caseid_report80(self)
-        # caseid_stx.caseid_report81(self)
+        caseid_stx.caseid_report81(self)
         # caseid_stx.caseid_report82(self)
 
 

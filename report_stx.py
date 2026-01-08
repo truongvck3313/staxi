@@ -3489,6 +3489,7 @@ class PartnerTrip_12_1:
 
         minitor_stx.get_info_excel_skip(3, "Data", 1, 136)
         minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.2 Tổng hợp cuốc khách đối tác")
+        #comment
 
 
 

@@ -3567,7 +3567,7 @@ class Checkconfig:
         wait = WebDriverWait(var_stx.driver, 15)
         administration.admin_10_6.admin_10_6_3(self, "", "", "")
 
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.NameSearch)))
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.NameSearch)))
         element.send_keys("USE_DATA_REPORT_SERVICE")
 
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Submit1)))
@@ -3585,7 +3585,7 @@ class Checkconfig:
                 element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Config1)))
                 element.click()
                 time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Value)))
+                element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Value)))
                 element.send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 element.send_keys("false")
 
@@ -3602,7 +3602,8 @@ class Checkconfig:
                 element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Config1)))
                 element.click()
                 time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.Value)))
+
+                element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Value)))
                 element.send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 element.send_keys("true")
 

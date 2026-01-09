@@ -541,13 +541,18 @@ def check_info_web_excel(code, eventname, result, path_module):
 
         if name_column_web in ['Km GPS', 'NL tiêu thụ', 'Số tiền', 'Cước phí', 'Tiền nợ', 'Cước phí(cước thật của cuốc)', 'Cước xe (trừ của khách)', 'Số dư còn lại', 'Phụ phí', 'Loại xe',
                                'D.thu ĐH', 'S.cuốc ĐH', 'D.thu App', 'D.thu v.lai', 'D.thu đ.vị', 'Tổng d.thu', 'S.tiền KM', 'Khoảng cách', 'S.tiền thu LX', 'Khuyến mại', 'Cước xe (trừ của khách)',
-                               'Doanh thu tính %\n(1) = (2) + (3)', 'Cước xe\n(2)', 'Khuyến mãi\n(3)', 'Số km', 'Cước phí (cước thật của cuốc)']:
+                               'Doanh thu tính %\n(1) = (2) + (3)', 'Cước xe\n(2)', 'Khuyến mãi\n(3)', 'Số km', 'Cước phí (cước thật của cuốc)', 'Khoảng cách(m)', 'Thời gian đề cử', 'Thời gian xác nhận', ' Km thực hiện']:
             print("name vao 2" + name_column_web)
             try:
                 data_column_web = ''.join(re.findall(r'\d+', data_column_web))[:3]
                 data_column_excel = ''.join(re.findall(r'\d+', data_column_excel))[:3]
             except Exception as e:
                 logging.error(f"Lỗi khi xử lý dữ liệu: {e}")
+
+            if (data_column_web == "None") or (data_column_web == None):
+                data_column_web = 0
+            if (data_column_excel == "None") or (data_column_excel == None):
+                data_column_excel = 0
 
             if data_column_web == data_column_excel:
                 logging.info("True")
@@ -569,6 +574,12 @@ def check_info_web_excel(code, eventname, result, path_module):
                 data_column_excel = int(data_column_excel)
             except Exception as e:
                 logging.error(f"Lỗi khi xử lý dữ liệu: {e}")
+
+            if (data_column_web == "None") or (data_column_web == None):
+                data_column_web = 0
+            if (data_column_excel == "None") or (data_column_excel == None):
+                data_column_excel = 0
+
             if data_column_web == data_column_excel:
                 logging.info("True")
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")

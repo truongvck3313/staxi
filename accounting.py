@@ -970,10 +970,20 @@ class accounting_14_1:
         if name_image == "_QuanLyXuatHoaDon_LotrinhGPS.png":
             module_other_stx.write_result_not_displayed_try(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                       path_check, name_image)
+        if name_image == "_QuanLyXuatHoaDon_HopDong.png":
+            print("r1")
+            module_other_stx.write_result_not_displayed_try(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+                                                      path_icon, name_image)
+            print("r2")
+        if name_image == "_QuanLyXuatHoaDon_CuocKhachGPS.png":
+            module_other_stx.write_result_text_try_if_or(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+                                                         var_stx.Hotline, "Hotline: 1900 6415", "HOTLINE MUA HÀNG", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
 
-        else:
+        if name_image in ["_QuanLyXuatHoaDon_BienLai.png", "_QuanLyXuatHoaDon_ChiTietCuoc.png"] :
+            print("r3")
             module_other_stx.write_result_text_try_if_in(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
                                                             path_check, desire, name_image)
+            print("r4")
 
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[0])
         time.sleep(2)

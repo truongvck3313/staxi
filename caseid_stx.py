@@ -995,7 +995,7 @@ def caseid_vehicle36(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     vehicle_driver_stx.driver.search_driver(self, "Vehicle36", event, result, var_stx.CCCD2, var_stx.cccd,
-                                            var_stx.CCC1, "_XeLaiXe_TimKiem_CCCD.png")
+                                            var_stx.CCCD1, "_XeLaiXe_TimKiem_CCCD.png")
 
 def caseid_vehicle37(self):
     get_datachecklist("Vehicle37")
@@ -1369,8 +1369,8 @@ def caseid_wallet29(self):
     get_datachecklist("Wallet29")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    driver_wallet_stx.wallet_history.wallet_history_search_scroll(self, "Wallet29", event, result, var_stx.ag2_8, var_stx.code_gd,
-                                                           var_stx.ag1_8, "_LichSuViTien_MaGiaoDich.png")
+    driver_wallet_stx.wallet_history.wallet_history_search_scroll(self, "Wallet29", event, result, var_stx.HisId2, var_stx.code_gd,
+                                                           var_stx.HisId1, "_LichSuViTien_MaGiaoDich.png")
 
 
 def caseid_wallet30(self):
@@ -4462,14 +4462,14 @@ def caseid_accounting27(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting27", event, result, "InvoiceFromAddress",
-                                                    var_stx.toast_message, "Thay đổi địa chỉ đón thành công", "_QuanLyXuatHoaDon_DiaChiDonXHD.png")
+                                                    var_stx.toast_message, "Thay đổi thực thu thành công", "_QuanLyXuatHoaDon_DiaChiDonXHD.png")
 
 def caseid_accounting28(self):
     get_datachecklist("Accounting28")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_icon(self, "Accounting28", event, result, "InvoiceToAddress",
-                                                    var_stx.toast_message, "Thay đổi địa chỉ trả thành công", "_QuanLyXuatHoaDon_DiaChiTraXHD.png")
+                                                    var_stx.toast_message, "Thay đổi thực thu thành công", "_QuanLyXuatHoaDon_DiaChiTraXHD.png")
 
 def caseid_accounting29(self):
     get_datachecklist("Accounting29")
@@ -4509,8 +4509,7 @@ def caseid_accounting34(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting34", event, result, var_stx.icon_hopdong,
-                                                         var_stx.check_BookContractLink, "HỢP ĐỒNG VẬN CHUYỂN HÀNH KHÁCH",
-                                                         "_QuanLyXuatHoaDon_HopDong.png")
+                                                         "", "","_QuanLyXuatHoaDon_HopDong.png")
 
 def caseid_accounting35(self):
     get_datachecklist("Accounting35")
@@ -4525,7 +4524,7 @@ def caseid_accounting36(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     accounting.accounting_14_1.accounting_14_1_link_icon(self, "Accounting36", event, result, var_stx.icon_cuockhachgps,
-                                                         var_stx.check_accounting_1_1, "HOTLINE MUA HÀNG", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
+                                                         "", " ", "_QuanLyXuatHoaDon_CuocKhachGPS.png")
 
 def caseid_accounting37(self):
     get_datachecklist("Accounting37")
@@ -4678,7 +4677,7 @@ def caseid_accounting58(self):
     get_datachecklist("Accounting58")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting58", event, result, "1", "value", var_stx.info_order_PaymentMethodCust_name,
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting58", event, result, "0", "value", var_stx.info_order_PaymentMethodCust_name,
                                                                 var_stx.info_order_PaymentMethodCust_data, "Phương thức thanh toán:", "_ThongTinCuoc_pttt.png")
 
 
@@ -4686,7 +4685,7 @@ def caseid_accounting59(self):
     get_datachecklist("Accounting59")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting59", event, result, "1", "value", var_stx.info_order_CatchedTime_name,
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting59", event, result, "0", "value", var_stx.info_order_CatchedTime_name,
                                                                 var_stx.info_order_CatchedTime_data, "Thời điểm gặp khách:", "_ThongTinCuoc_ThoiDiemGapKhach.png")
 
 def caseid_accounting60(self):
@@ -4756,14 +4755,14 @@ def caseid_accounting69(self):
     get_datachecklist("Accounting69")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting69", event, result, "1", "value", var_stx.info_order_PaymentType_name,
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting69", event, result, "0", "text", var_stx.info_order_PaymentType_name,
                                                                 var_stx.info_order_PaymentType_data, "Phương thức thanh toán:", "_ThongTinCuoc_pttt.png")
 
 def caseid_accounting70(self):
     get_datachecklist("Accounting70")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting70", event, result, "1", "value", var_stx.info_order_BuyDate_name,
+    accounting.accounting_14_1.check_accounting_14_1_info_order(self, "Accounting70", event, result, "0", "text", var_stx.info_order_BuyDate_name,
                                                                 var_stx.info_order_BuyDate_data, "Thời điểm thanh toán:", "_ThongTinCuoc_ThoiDiemThanhToan.png")
 
 def caseid_accounting71(self):

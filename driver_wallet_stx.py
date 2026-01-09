@@ -663,10 +663,20 @@ class transaction_confirmation:
         date2 = date1 + " 00:00"
         date3 = date1 + " 23 :00"
         print(date)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(date2)
+        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        time.sleep(2)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).clear()
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(date2)
+        time.sleep(0.5)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(date3)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(date3)
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(date3)
-        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
+        time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(5)
         var_stx.driver.implicitly_wait(1)
@@ -1258,8 +1268,6 @@ class wallet_history:
         except:
             report_stx.get_info_web4()
             minitor_stx.get_info_excel1(5, "Sheet 1")
-
-
 
         minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền")
 

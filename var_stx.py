@@ -1998,7 +1998,7 @@ info_order_CarType_data = "//*[@class='con-command']//*[@name='CarType']"
 info_order_SentTime_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Thời điểm cuốc đặt: ']"
 info_order_SentTime_data = "//*[@class='con-command']//*[@name='SentTime']"
 info_order_FromAddress_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Điểm đón: ']"
-info_order_FromAddress_data = "//*[@class='con-command']//*[@class='ex-ibox'][2]/div[2]/div[6]/div[1]/div"
+info_order_FromAddress_data = "(//div[@name='FromAddress'])[1]"
 info_order_ToAddress_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Điểm trả: ']"
 info_order_ToAddress_data = "//*[@class='con-command']//*[@class='ex-ibox'][2]/div[2]/div[7]/div[1]/div"
 info_order_Comment_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Ghi chú: ']"
@@ -2010,15 +2010,15 @@ info_order_PartnerBookId_data = "//*[@class='con-command']//*[@name='PartnerBook
 info_order_BookTripType_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Loại cuốc: ']"
 info_order_BookTripType_data = "//*[@class='con-command']//*[@name='BookTypeName']|//*[@class='con-command']//*[@name='BookTripType']"
 info_order_PaymentMethodCust_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Phương thức thanh toán: ']"
-info_order_PaymentMethodCust_data = "//*[@class='con-command']//*[@name='PaymentMethodCust']"
+info_order_PaymentMethodCust_data = "(//input[@name='PaymentMethodCust'])"
 info_order_CatchedTime_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Thời điểm gặp khách: ']"
 info_order_CatchedTime_data = "//*[@class='con-command']//*[@name='CatchedTime']"
 info_order_FromAddress_name2 = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Địa chỉ đón: ']"
-info_order_FromAddress_data2 = "//*[@class='con-command']//*[@class='ex-ibox'][2]/div[2]/div[6]/div[2]/div"
+info_order_FromAddress_data2 = "(//div[@name='FromAddress'])[2]"
 info_order_ToAddress_name2 = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Địa chỉ trả: ']"
 info_order_ToAddress_data2 = "//*[@class='con-command']//*[@class='ex-ibox'][2]/div[2]/div[7]/div[2]/div"
 info_order_bookState_name = "//*[@class='con-command']//*[@class='ex-ibox'][2]//*[text()=' Trạng thái: ']"
-info_order_bookState_data = "//*[@class='con-command']//*[@class='bookState']"
+info_order_bookState_data = "(//span[@class='label label-{class}'])"
 
 info_order_PrivateCode_name = "//*[@class='con-command']//*[@class='ex-ibox'][3]//*[text()=' Số hiệu: ']"
 info_order_PrivateCode_data = "//*[@class='con-command']//*[@name='PrivateCode']"
@@ -2034,7 +2034,7 @@ info_order_DriverPhone_name = "//*[@class='con-command']//*[@class='ex-ibox'][3]
 info_order_DriverPhone_data = "//*[@class='con-command']//*[@name='DriverPhone']"
 
 info_order_PaymentType_name = "//*[@class='con-command']//*[@class='ex-ibox'][4]//*[text()=' Phương thức thanh toán: ']"
-info_order_PaymentType_data = "//*[@class='con-command']//*[@name='PaymentType']"
+info_order_PaymentType_data = "(//input[@name='PaymentType'])"
 info_order_BuyDate_name = "//*[@class='con-command']//*[@class='ex-ibox'][4]//*[text()=' Thời điểm thanh toán: ']"
 info_order_BuyDate_data = "//*[@class='con-command']//*[@name='BuyDate']"
 
@@ -2289,11 +2289,11 @@ Unlock1 = "(//div[@col-id='Unlock'])[2]"
 PrivateCode1 = "(//div[@col-id='PrivateCode'])[2]"
 PrivateCode2 = "(//div[@col-id='PrivateCode'])[3]"
 PrivateCode_input = "(//input[@id='PrivateCode'])"
-
-
-
-
-
+HisId1 = "(//div[@col-id='HisId'])[2]"
+HisId2 = "(//div[@col-id='HisId'])[3]"
+custrank_cu = "//*[@name='CustRank']//*[text()='Hạng đồng']"
+Hotline = "//*[text()='Hotline: 1900 6415 ']|(//a[@class='btnBuy'])[1]"
+title2 = "//*[@id='title']"
 
 
 

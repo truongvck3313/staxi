@@ -1879,10 +1879,16 @@ class report_8_3:
         except:
             report_8_3.report_8_3_2_search(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel1(5, "Sheet 1")
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            dowload_excel(self, "8.3.2 Thống kê chi tiết đề cử theo lái xe")
+            minitor_stx.get_info_excel1(3, "Data")
+        except:
+            minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.3 Báo cáo đề cử lái xe - 8.3.2 Thống kê chi tiết đề cử theo lái xe")
 
 
@@ -2574,9 +2580,14 @@ class report_8_4:
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(7)
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.PhoneNumber1)))
+        except:
+            pass
+
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.5 Báo cáo doanh thu theo khách hàng",
-                                              var_stx.table_1_2, "", "_BaoCaoDoanhThuTheoKhachHang_TimKiem.png")
+                                              var_stx.PhoneNumber1, "", "_BaoCaoDoanhThuTheoKhachHang_TimKiem.png")
 
 
     def report_8_4_5_excel(self, code, eventname, result):
@@ -2589,10 +2600,16 @@ class report_8_4:
         except:
             report_8_4.report_8_4_5_search(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(5)
         get_info_web1()
-        minitor_stx.get_info_excel1(5, "Sheet 1")
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
+        time.sleep(1)
+        try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+            dowload_excel(self, "8.4.5 Báo cáo doanh thu theo khách hàng")
+            minitor_stx.get_info_excel1(3, "Data")
+        except:
+            minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.5 Báo cáo doanh thu theo khách hàng")
 
 
@@ -3421,8 +3438,10 @@ class PartnerTrip_12_1:
             dowload_excel(self, "12.1.1 Báo cáo cuốc khách đối tác")
         except:
             pass
-
-        minitor_stx.get_info_excel_skip(3, "Sheet 1", 2, 136)
+        try:
+            minitor_stx.get_info_excel_skip(3, "Sheet 1", 2, 136)
+        except:
+            minitor_stx.get_info_excel_skip(3, "Data", 2, 136)
         minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.1 Báo cáo cuốc khách đối tác")
 
 

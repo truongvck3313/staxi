@@ -1477,7 +1477,7 @@ class route:
 
         var_stx.driver.find_element(By.XPATH, var_stx.route_input).send_keys(vehicle)
         time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, "//*[@class='es-list']//*[@value='"+vehicle+"']").click()
+        var_stx.driver.find_element(By.XPATH, "//*[@class='es-list']//*[@value='"+vehicle+"']|//*[@id='ddlVehiclePlate']//*[@value='"+vehicle+"']").click()
         time.sleep(1)
 
         var_stx.driver.find_element(By.XPATH, var_stx.StrFromDate).send_keys(Keys.CONTROL, "a", Keys.DELETE)

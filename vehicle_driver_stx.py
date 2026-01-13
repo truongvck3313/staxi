@@ -1662,7 +1662,8 @@ class driver:
             var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
         except:
             driver.driver_add_new(self, "", "", "")
-
+            if type_clock == "1":
+                driver.driver_clock_vehicle(self)
 
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
@@ -1717,6 +1718,63 @@ class driver:
         element = wait.until(EC.element_to_be_clickable((By.XPATH, path_check)))
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
                                                   path_check, desire, name_image)
+
+        try:
+            var_stx.driver.implicitly_wait(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+            time.sleep(1.5)
+        except:
+            pass
+
+
+    def driver_clock_vehicle(self):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_vehicle_driver2_2)
+        except:
+            driver.driver_add_new(self, "", "", "")
+
+
+        data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 2, 2))
+        driver.driver_x(self)
+        var_stx.driver.find_element(By.XPATH, var_stx.search_driver_input).send_keys(data)
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        time.sleep(5)
+
+        scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
+        try:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(700, 0).release().perform()
+        except:
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(400, 0).release().perform()
+            ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(300, 0).release().perform()
+        time.sleep(2.5)
+
+        name1 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_4).text
+        print("name1: "+name1)
+        name2 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_5).text
+        print("name2: "+name2)
+        name3 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_6).text
+        print("name3: "+name3)
+        name4 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_7).text
+        print("name4: "+name4)
+        name5 = var_stx.driver.find_element(By.XPATH, var_stx.listdata1_8).text
+        print("name5: "+name5)
+
+
+        try:
+            var_stx.driver.find_element(By.XPATH, "//*[@class='ag-center-cols-container']/div[1]//*[@class='fa fa-unlock']").click()
+            time.sleep(7)
+            var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
+        except:
+            driver.detail_vehicle(self, "Khóa")
+            var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
+        var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_reason_input).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_reason_input).send_keys(var_stx.data['vehicle']['lock_reason'])
+        time.sleep(3.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()
+        time.sleep(2)
 
         try:
             var_stx.driver.implicitly_wait(1)

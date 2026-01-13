@@ -2768,7 +2768,16 @@ def retest_casenone(self):
                     caseid_stx.caseid_report80(self)
             except:
                 module_other_stx.swich_tab_0()
-
+            try:
+                if case == 'Report81':
+                    caseid_stx.caseid_report81(self)
+            except:
+                module_other_stx.swich_tab_0()
+            try:
+                if case == 'Report82':
+                    caseid_stx.caseid_report82(self)
+            except:
+                module_other_stx.swich_tab_0()
             try:
                 if case == 'Admin01':
                     caseid_stx.caseid_admin01(self)
@@ -6134,7 +6143,16 @@ def retest_casefail(self):
                 caseid_stx.caseid_report80(self)
         except:
             module_other_stx.swich_tab_0()
-
+        try:
+            if case == 'Report81':
+                caseid_stx.caseid_report81(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report82':
+                caseid_stx.caseid_report82(self)
+        except:
+            module_other_stx.swich_tab_0()
         try:
             if case == 'Admin01':
                 caseid_stx.caseid_admin01(self)
@@ -9600,7 +9618,16 @@ def run_all(self):
                 caseid_stx.caseid_report80(self)
         except:
             module_other_stx.swich_tab_0()
-
+        try:
+            if case == 'Report81':
+                caseid_stx.caseid_report81(self)
+        except:
+            module_other_stx.swich_tab_0()
+        try:
+            if case == 'Report82':
+                caseid_stx.caseid_report82(self)
+        except:
+            module_other_stx.swich_tab_0()
         try:
             if case == 'Admin01':
                 caseid_stx.caseid_admin01(self)
@@ -18677,6 +18704,16 @@ def report(self):
                         caseid_stx.caseid_report80(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report81':
+                        caseid_stx.caseid_report81(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report82':
+                        caseid_stx.caseid_report82(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
         if i == "2":
             for case in list_mucdo2:
@@ -19100,6 +19137,16 @@ def report(self):
                 try:
                     if case == 'Report80':
                         caseid_stx.caseid_report80(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report81':
+                        caseid_stx.caseid_report81(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report82':
+                        caseid_stx.caseid_report82(self)
                 except:
                     module_other_stx.swich_tab_0()
 
@@ -19528,6 +19575,16 @@ def report(self):
                         caseid_stx.caseid_report80(self)
                 except:
                     module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report81':
+                        caseid_stx.caseid_report81(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report82':
+                        caseid_stx.caseid_report82(self)
+                except:
+                    module_other_stx.swich_tab_0()
 
 
         if i == "4":
@@ -19953,6 +20010,16 @@ def report(self):
                 try:
                     if case == 'Report80':
                         caseid_stx.caseid_report80(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report81':
+                        caseid_stx.caseid_report81(self)
+                except:
+                    module_other_stx.swich_tab_0()
+                try:
+                    if case == 'Report82':
+                        caseid_stx.caseid_report82(self)
                 except:
                     module_other_stx.swich_tab_0()
 

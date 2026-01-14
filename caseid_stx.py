@@ -1167,6 +1167,7 @@ def caseid_vehicle60(self):
     vehicle_driver_stx.driver.driver_sd_lot(self, "Vehicle60", event, result)
 
 
+
 def caseid_wallet01(self):
     get_datachecklist("Wallet01")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))

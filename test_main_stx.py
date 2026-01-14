@@ -10,7 +10,7 @@ import module_stx
 
 
 
-#update staxi sáng 14/01/2026
+#update staxi sáng 14/01/2026.
 
 class Test(unittest.TestCase):
     def test_run1(self):

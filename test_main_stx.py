@@ -10,8 +10,9 @@ import module_stx
 
 
 
-#update staxi sáng 13/01/2026
-#test
+#update staxi sáng 14/01/2026.
+#update 14.01
+
 class Test(unittest.TestCase):
     def test_run1(self):
         module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
@@ -176,7 +177,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle45(self)
         # # caseid_stx.caseid_vehicle46(self)
         # # caseid_stx.caseid_vehicle47(self)
-        # # caseid_stx.caseid_vehicle48(self)
+        # caseid_stx.caseid_vehicle48(self)
         # # caseid_stx.caseid_vehicle49(self)
         # caseid_stx.caseid_vehicle50(self)
         # # caseid_stx.caseid_vehicle51(self)

@@ -1284,7 +1284,7 @@ class admin_10_5:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_5_5)
         except:
-            admin_10_5.admin_10_5_5(self, "", "", "")
+            admin_10_5.admin_10_5_5_add_new(self, "", "", "")
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 
@@ -1316,7 +1316,8 @@ class admin_10_5:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_5_5)
         except:
-            admin_10_5.admin_10_5_5(self, "", "", "")
+            # admin_10_5.admin_10_5_5(self, "", "", "")
+            admin_10_5.admin_10_5_5_add_new(self, "", "", "")
 
         data = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 32, 2))
 

@@ -16,18 +16,20 @@ import module_stx
 class Test(unittest.TestCase):
     pass
 def test_run1(self):
-    module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-    module_other_stx.clear_log()
-    module_other_stx.delete_image()
-    module_other_stx.timerun()
-    module_stx.ModuleTest()
-    module_stx.retest_casenone(self)
-    module_stx.retest_casefail(self)
-    module_other_stx.send_viber()
+    print("Bắt đầu case1")
+    # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+    # module_other_stx.clear_log()
+    # module_other_stx.delete_image()
+    # module_other_stx.timerun()
+    # module_stx.ModuleTest()
+    # module_stx.retest_casenone(self)
+    # module_stx.retest_casefail(self)
+    # module_other_stx.send_viber()
     #
     #
     #
-    # # caseid_stx.caseid_login01(self)
+    caseid_stx.caseid_login01(self)
+    print("Kết thúc case1")
     # # caseid_stx.caseid_login02(self)
     # # caseid_stx.caseid_login03(self)
     #

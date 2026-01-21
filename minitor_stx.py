@@ -259,13 +259,18 @@ def convert_xls_to_xlsx(xls_path, xlsx_path):
 
 
 
-def get_info_excel(row, sheet):
+def get_info_excel(row, sheet, time_wait=30):
     row2 = row + 1
 
-    time.sleep(7)
-    filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-    shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xls"))
-
+    n = 0
+    while (n < time_wait):
+        n = n + 1
+        try:
+            filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+            shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xls"))
+            break
+        except:
+            pass
 
 
     try:
@@ -310,12 +315,18 @@ def get_info_excel(row, sheet):
 
 
 
-def get_info_excel1(row, sheet):
+def get_info_excel1(row, sheet, time_wait=30):
     row2 = row + 1
 
-    filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
-    shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
-
+    n = 0
+    while (n < time_wait):
+        n = n + 1
+        try:
+            filename = max([var_stx.excelpath + "\\" + f for f in os.listdir(var_stx.excelpath)], key=os.path.getctime)
+            shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
+            break
+        except:
+            pass
 
     # #Đọc check file excel
     bangchucai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
@@ -413,7 +424,7 @@ def get_info_excel_skip(row, sheet, row_skip, row_end):
 
 
 
-def check_info_web_excel(code, eventname, result, path_module):
+def check_info_web_excel(code, eventname, result, path_module, name_column_break=None):
     row = 119
     logging.info("-------------------------")
     logging.info(path_module)
@@ -434,7 +445,8 @@ def check_info_web_excel(code, eventname, result, path_module):
 
         if name_column_web == "None":
             break
-
+        if name_column_break == name_column_web:
+            break
 
         logging.info("-------------------------")
         logging.info("Tên cột web:   " + name_column_web)
@@ -593,7 +605,7 @@ def check_info_web_excel(code, eventname, result, path_module):
 
 
 
-def check_info_web_excel1(code, eventname, result, path_module):
+def check_info_web_excel1(code, eventname, result, path_module, name_column_break=None):
     row = 119
     logging.info("-------------------------")
     logging.info(path_module)
@@ -611,6 +623,8 @@ def check_info_web_excel1(code, eventname, result, path_module):
         print(f" row1: {row}")
 
         if name_column_web == "None":
+            break
+        if name_column_break == name_column_web:
             break
 
         logging.info("-------------------------")

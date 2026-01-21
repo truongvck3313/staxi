@@ -1248,7 +1248,7 @@ class wallet_history:
             var_stx.driver.find_element(By.XPATH, var_stx.search)
             time.sleep(5)
 
-        report_stx.get_info_web4()
+        report_stx.get_info_web12()
 
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
         time.sleep(1)
@@ -1259,7 +1259,7 @@ class wallet_history:
             report_stx.dowload_excel(self, "3.5 Lịch sử ví tiền")
             minitor_stx.get_info_excel1(3, "Data")
         except:
-            report_stx.get_info_web4()
+            report_stx.get_info_web12()
             minitor_stx.get_info_excel1(5, "Sheet 1")
 
         minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền")

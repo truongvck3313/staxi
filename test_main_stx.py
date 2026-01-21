@@ -16,6 +16,7 @@ import module_stx
 class Test(unittest.TestCase):
     pass
 def test_run1(self):
+    print("Bắt đầu case1")
     # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
     # module_other_stx.clear_log()
     # module_other_stx.delete_image()
@@ -27,7 +28,8 @@ def test_run1(self):
     #
     #
     #
-    # # caseid_stx.caseid_login01(self)
+    caseid_stx.caseid_login01(self)
+    print("Kết thúc case1")
     # # caseid_stx.caseid_login02(self)
     # # caseid_stx.caseid_login03(self)
     #
@@ -585,7 +587,7 @@ def test_run1(self):
     # caseid_stx.caseid_admin06(self)
     # caseid_stx.caseid_admin07(self)
     # caseid_stx.caseid_admin08(self)
-    caseid_stx.caseid_admin08_1(self)
+    # caseid_stx.caseid_admin08_1(self)
     # caseid_stx.caseid_admin08_2(self)
     # caseid_stx.caseid_admin08_3(self)
     # caseid_stx.caseid_admin08_4(self)

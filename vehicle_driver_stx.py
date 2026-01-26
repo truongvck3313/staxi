@@ -2487,7 +2487,7 @@ class driver:
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - Lái xe vi phạm",
                                                   var_stx.title_page1, "2.6.3 Danh sách lái xe vi phạm", "_XeLaiXe_DSLaiXeViPham.png")
 
-
+#
     def list_driver_violation_search1(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         try:

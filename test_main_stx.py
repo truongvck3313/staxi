@@ -10,27 +10,27 @@ import module_stx
 
 
 
-#update staxi chiều 21/01/2026.
+#update staxi sáng 14/01/2026.
+#update 14.01
 
 class Test(unittest.TestCase):
+
     def test_run1(self):
-        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        module_other_stx.clear_log()
-        module_other_stx.delete_image()
-        module_other_stx.timerun()
-        module_stx.ModuleTest()
-        module_stx.retest_casenone(self)
-        module_stx.retest_casefail(self)
-        module_other_stx.send_viber()
-
-
-
-
+        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        # module_other_stx.clear_log()
+        # module_other_stx.delete_image()
+        # module_other_stx.timerun()
+        # module_stx.ModuleTest()
+        # module_stx.retest_casenone(self)
+        # module_stx.retest_casefail(self)
+        # module_other_stx.send_viber()
+        #
         #
         #
         # caseid_stx.caseid_login01(self)
-        # caseid_stx.caseid_login02(self)
-        # caseid_stx.caseid_login03(self)
+
+        # # caseid_stx.caseid_login02(self)
+        # # caseid_stx.caseid_login03(self)
         #
         # # caseid_stx.caseid_login06(self)
         # caseid_stx.caseid_login07(self)
@@ -192,8 +192,11 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle58(self)
         # # caseid_stx.caseid_vehicle59(self)
         # # caseid_stx.caseid_vehicle60(self)
-        #
-        #
+        # caseid_stx.caseid_vehicle61(self)
+        # caseid_stx.caseid_vehicle62(self)
+        caseid_stx.caseid_vehicle63(self)
+        # caseid_stx.caseid_vehicle64(self)
+        # caseid_stx.caseid_vehicle65(self)
         #
         # # caseid_stx.caseid_wallet01(self)
         # # caseid_stx.caseid_wallet02(self)
@@ -296,7 +299,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_promotion41(self)
         # # caseid_stx.caseid_promotion42(self)
-        # caseid_stx.caseid_promotion43(self)
+        # # caseid_stx.caseid_promotion43(self)
         # #
         # caseid_stx.caseid_promotion44(self)
         # caseid_stx.caseid_promotion45(self)
@@ -457,7 +460,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_report01(self)
         # # caseid_stx.caseid_report02(self)
-        # caseid_stx.caseid_report03(self)
+        # # caseid_stx.caseid_report03(self)
         # caseid_stx.caseid_report04(self)
         # #
         # # caseid_stx.caseid_report05(self)
@@ -860,12 +863,11 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_accounting76(self)
         # caseid_stx.caseid_accounting77(self)
         # caseid_stx.caseid_accounting78(self)
-        #
         # caseid_stx.caseid_accounting79(self)
 
         # module_other_stx.write_caseif()
 
-        # driver_wallet_stx.withdraw_money.run_tc(self)#tool rút tiền
+        # driver_wallet_stx.withdraw_money.run_tc(self)#tool rút tiền34
 
 
 

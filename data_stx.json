@@ -48,7 +48,9 @@
     "bank_name": "TRAN QUANG TRUONG",
     "bank_stk": "0835210360",
     "bank_address": "Số 475 Nguyễn Trãi, Quận thanh Xuân, Thành Phố Hà Nội",
-    "new_password": "babinhanh123"
+    "new_password": "babinhanh123",
+    "from_day":"22/01/2026 00:00",
+    "to_day": "22/01/2026 23:59"
   },
   "wallet": {
     "search": "batonnt1",

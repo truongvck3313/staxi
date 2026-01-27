@@ -1166,7 +1166,35 @@ def caseid_vehicle60(self):
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     vehicle_driver_stx.driver.driver_sd_lot(self, "Vehicle60", event, result)
 
+def caseid_vehicle61(self):
+    get_datachecklist("Vehicle61")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    vehicle_driver_stx.driver.list_driver_violation(self, "Vehicle61", event, result)
 
+def caseid_vehicle62(self):
+    get_datachecklist("Vehicle62")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    vehicle_driver_stx.driver.list_driver_violation_search1(self, "Vehicle62", event, result)
+
+def caseid_vehicle63(self):
+    get_datachecklist("Vehicle63")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    vehicle_driver_stx.driver.list_driver_violation_search2(self, "Vehicle63", event, result)
+
+def caseid_vehicle64(self):
+    get_datachecklist("Vehicle64")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    vehicle_driver_stx.driver.list_driver_violation_search3(self, "Vehicle64", event, result)
+
+def caseid_vehicle65(self):
+    get_datachecklist("Vehicle65")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    vehicle_driver_stx.driver.list_driver_violation_search4(self, "Vehicle65", event, result)
 
 def caseid_wallet01(self):
     get_datachecklist("Wallet01")

@@ -23,7 +23,7 @@ from selenium.webdriver.common.keys import Keys
 
 class login:
 
-
+    @retry(tries=2, delay=2, backoff=1, jitter=5, )
     def login_stx(self, user, password):
         var_stx.driver.implicitly_wait(0.5)
         try:

@@ -1123,7 +1123,6 @@ def write_result_text_try_if_in(code, eventname, result, path_module, path_text,
         logging.info(check_result)
         writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
 
-        # if check_result in check_text:
         if check_result.lower() in check_text.lower():
             logging.info("True")
             writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")

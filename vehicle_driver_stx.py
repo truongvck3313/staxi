@@ -12,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import random
 from selenium.webdriver.common.keys import Keys
+from datetime import datetime
 wait = WebDriverWait(var_stx.driver, 10)
 # chiều 31/12/2025
 
@@ -2451,4 +2452,114 @@ class driver:
             time.sleep(2.5)
         except:
             pass
+
+    def list_driver_violation(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        # login_stx.login.login_stx(self, var_stx.data['login']['tk_admin'], var_stx.data['login']['mk_admin'])
+        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+        except:
+            login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'],
+                                      var_stx.data['login']['mk_admin_test'])
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_violation).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_violation_list).click()
+            time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.vehicle_driver).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_violation).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.driver_violation_list).click()
+            time.sleep(2)
+        time.sleep(2)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+            time.sleep(2)
+        except:
+            var_stx.driver.refresh()
+            time.sleep(5)
+
+        module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - Lái xe vi phạm",
+                                                  var_stx.title_page1, "2.6.3 Danh sách lái xe vi phạm", "_XeLaiXe_DSLaiXeViPham.png")
+
+#
+    def list_driver_violation_search1(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_driver_violation)
+        except:
+            driver.list_driver_violation(self, "", "", "")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['vehicle']['from_day'])
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(var_stx.data['vehicle']['to_day'])
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.Save).click()
+        time.sleep(2.5)
+        data_date = var_stx.driver.find_element(By.XPATH, var_stx.DataTables_Table_2_5).text
+        date_only = data_date.split(" ")[0]
+        print(date_only)
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "Xe & Lái xe - Lái xe vi phạm",
+                                                       var_stx.DataTables_Table_2_5, date_only,
+                                                       "_DanhSachLXViPham_TuNgayDenNgay.png")
+
+    def list_driver_violation_search2(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.list_driver_violation)
+        except:
+            driver.list_driver_violation(self, "", "", "")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(var_stx.data['vehicle']['from_day'])
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.Save).click()
+        time.sleep(2.5)
+        data = var_stx.driver.find_element(By.XPATH, var_stx.DataTables_Table_4_2).text
+        var_stx.driver.find_element(By.XPATH, var_stx.name_drive).send_keys(data)
+        time.sleep(1)
+        var_stx.driver.find_element(By.XPATH, var_stx.Save).click()
+        time.sleep(2.5)
+        #bathao
+        logging.info("-------------------------")
+        logging.info("Xe & Lái xe - Lái xe vi phạm")
+        logging.info("Mã - " + code)
+        logging.info("Tên sự kiện - " + eventname)
+        logging.info("Kết quả - " + result)
+        n = 0
+        while(n < 21):
+            n = n + 1
+            path_name = f"//*[@class='table table-hover table-bordered cf']/tbody/tr[{str(n)}]/td[2]"
+            try:
+                name = var_stx.driver.find_element(By.XPATH, path_name).text
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, name)
+                print(f"dòng: {n}, name: {name}")
+                if data.lower().strip() in name.lower().strip():
+                    logging.info("True")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+                else:
+                    logging.info("False")
+                    var_stx.driver.save_screenshot(var_stx.imagepath + code + "_DanhSachLXViPham_TenLX.png")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                    module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 13, code + "_DanhSachLXViPham_TenLX.png")
+                    break
+            except:
+                break
+
+
+
+
+
+
+
 

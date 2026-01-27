@@ -31,20 +31,16 @@ def get_driver(excelpathdownload=None, capa=None):
     if not is_port_open(9222):
         chrome_process = subprocess.Popen([
             r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-
             "--remote-debugging-port=9222",
             "--user-data-dir=C:/ChromeDebug",
+
+            "about:blank",  # 🔥 BẮT BUỘC
+            "--start-maximized",
 
             "--disable-session-crashed-bubble",
             "--disable-infobars",
             "--no-first-run",
             "--no-default-browser-check",
-            "--disable-restore-session-state",
-
-            "--disable-backgrounding-occluded-windows",
-            "--disable-renderer-backgrounding",
-
-            "--start-maximized"
         ])
 
     # Kết nối Selenium với Chrome thật

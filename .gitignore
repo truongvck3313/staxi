@@ -26,6 +26,7 @@ reports/
 !file_config.txt
 !bangluudulieu_tamthoi.xlsx
 !staxi.log
+!get_driver.py
 # -------------------------------------------------------------------------
 
 # Nếu có folder file/, excel/, anhchup/ cần giữ lại — thêm bảo vệ ở đây:

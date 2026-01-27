@@ -10,28 +10,6 @@ from get_driver import get_driver
 #19/12
 
 
-# # Kết nối Selenium với Chrome thật
-# options = webdriver.ChromeOptions()
-# options.debugger_address = "127.0.0.1:9222"
-# options.add_argument('--no-sandbox')
-# options.add_argument('--disable-dev-shm-usage')
-# options.add_argument('window-size=1920x1480')
-# options.add_argument("--disable-background-networking")
-# options.add_argument("--disable-sync")
-# options.add_argument("--disable-gpu")
-# options.add_argument("--disable-extensions")
-# options.add_argument("--disable-notifications")
-# options.add_argument("--disable-default-apps")
-# options.add_argument("--disable-gcm")          # <-- FIX LỖI LOG CỦA BẠN
-# options.add_argument("--no-first-run")
-# options.add_argument("--no-service-autorun")
-
-
-
-
-
-
-
 
 
 def readData(file,sheetName,rownum,columnno):
@@ -120,27 +98,7 @@ for x in f:
 
 
 
-# def restart_driver():
-#     global driver, chrome_process
-#
-#     try:
-#         driver.quit()
-#     except:
-#         pass
-#
-#     # ====== THÊM ======
-#     try:
-#         if chrome_process:
-#             chrome_process.kill()
-#             chrome_process.wait()
-#     except:
-#         pass
-#     # ====== HẾT ======
-#
-#     chrome_process = None
-#     driver = None
-#
-#     return get_driver()
+
 
 from get_driver import reset_browser
 

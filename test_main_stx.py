@@ -22,12 +22,15 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-        #
+
+
+
+
         #
         #
         # caseid_stx.caseid_login01(self)
-        # # caseid_stx.caseid_login02(self)
-        # # caseid_stx.caseid_login03(self)
+        # caseid_stx.caseid_login02(self)
+        # caseid_stx.caseid_login03(self)
         #
         # # caseid_stx.caseid_login06(self)
         # caseid_stx.caseid_login07(self)
@@ -454,7 +457,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_report01(self)
         # # caseid_stx.caseid_report02(self)
-        # # caseid_stx.caseid_report03(self)
+        # caseid_stx.caseid_report03(self)
         # caseid_stx.caseid_report04(self)
         # #
         # # caseid_stx.caseid_report05(self)

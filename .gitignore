@@ -23,9 +23,10 @@ reports/
 # -------------------------------------------------------------------------
 # BẢO VỆ 3 FILE QUAN TRỌNG KHÔNG BAO GIỜ BỊ IGNORE
 !chromedriver.exe
-!file_config.txt
+!file_config.txtgit
 !bangluudulieu_tamthoi.xlsx
 !staxi.log
+get_driver.py
 # -------------------------------------------------------------------------
 
 # Nếu có folder file/, excel/, anhchup/ cần giữ lại — thêm bảo vệ ở đây:

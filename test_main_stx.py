@@ -10,34 +10,38 @@ import module_stx
 
 
 
-#update update sang 28/01
+#update update chieu 27/011
 
 
 class Test(unittest.TestCase):
 
     def test_run1(self):
-        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        # module_other_stx.clear_log()
-        # module_other_stx.delete_image()
-        # module_other_stx.timerun()
-        # module_stx.ModuleTest()
-        # module_stx.retest_casenone(self)
-        # module_stx.retest_casefail(self)
-        # module_other_stx.send_viber()
+        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        module_other_stx.clear_log()
+        module_other_stx.delete_image()
+        module_other_stx.timerun()
+        module_stx.ModuleTest()
+        module_stx.retest_casenone(self)
+        module_stx.retest_casefail(self)
+        module_other_stx.send_viber()
+
+
+
+
         #
         #
-        #
-        caseid_stx.caseid_login01(self)
-        caseid_stx.caseid_login02(self)
-        # caseid_stx.caseid_login03(self)
+        # caseid_stx.caseid_login01(self)
+
+        # # caseid_stx.caseid_login02(self)
+        # # caseid_stx.caseid_login03(self)
         #
         # # caseid_stx.caseid_login06(self)
         # caseid_stx.caseid_login07(self)
         # # caseid_stx.caseid_login08(self)
         # # caseid_stx.caseid_login09(self)
-        # # caseid_stx.caseid_login10(self)
-        # # caseid_stx.caseid_login11(self)
-        # # caseid_stx.caseid_login12(self)
+        # caseid_stx.caseid_login10(self)
+        # caseid_stx.caseid_login11(self)
+        # caseid_stx.caseid_login12(self)
         #
         #
         #
@@ -81,12 +85,12 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor36(self)
         # #
         # #
-        # # caseid_stx.caseid_minitor37(self)
+        # caseid_stx.caseid_minitor37(self)
         # # caseid_stx.caseid_minitor38(self)
         # # caseid_stx.caseid_minitor39(self)
         # # caseid_stx.caseid_minitor40(self)
         # # caseid_stx.caseid_minitor41(self)
-        # # caseid_stx.caseid_minitor42(self)
+        # caseid_stx.caseid_minitor42(self)
         # caseid_stx.caseid_minitor43(self)
         # # caseid_stx.caseid_minitor44(self)
         # # caseid_stx.caseid_minitor45(self)
@@ -105,7 +109,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor57(self)
         # # caseid_stx.caseid_minitor58(self)
         # # caseid_stx.caseid_minitor59(self)
-        # # caseid_stx.caseid_minitor60(self)
+        # caseid_stx.caseid_minitor60(self)
         # caseid_stx.caseid_minitor61(self)
         # caseid_stx.caseid_minitor62(self)
         #

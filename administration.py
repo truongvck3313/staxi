@@ -1,17 +1,11 @@
 import logging
 import var_stx
 import time
-import json
 from selenium.webdriver.common.by import By
 import module_other_stx
 import login_stx
-from seleniumwire.utils import decode as sw_decode
 from selenium.webdriver.common.keys import Keys
-import os
-import shutil
 import re
-import openpyxl
-from xls2xlsx import XLS2XLSX
 import minitor_stx
 import vehicle_driver_stx
 from selenium.webdriver.support.ui import WebDriverWait

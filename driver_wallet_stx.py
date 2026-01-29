@@ -12,7 +12,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import re
 import openpyxl
 from retry import retry
-from seleniumwire.utils import decode as sw_decode
 from selenium.webdriver.common.keys import Keys
 wait = WebDriverWait(var_stx.driver, 10)
 # chiều 31/12/2025

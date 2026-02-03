@@ -10,7 +10,7 @@ import module_stx
 
 
 
-#update update chieu 29/01
+#update update chieu 03/02
 
 
 class Test(unittest.TestCase):
@@ -302,7 +302,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_promotion41(self)
         # # caseid_stx.caseid_promotion42(self)
-        # # caseid_stx.caseid_promotion43(self)
+        # caseid_stx.caseid_promotion43(self)
         # #
         # caseid_stx.caseid_promotion44(self)
         # caseid_stx.caseid_promotion45(self)

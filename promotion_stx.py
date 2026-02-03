@@ -1902,6 +1902,8 @@ class report:
 
     def reports_km_by_month_search(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
+        wait = WebDriverWait(var_stx.driver, 30)
+
         try:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_reports_km_by_month)
@@ -1910,16 +1912,22 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("12/2024")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("05/2025")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("12/2024")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("05/2026")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(7)
+
+        el = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.search)))
+        var_stx.driver.execute_script("arguments[0].scrollIntoView(true);", el)
+        var_stx.driver.execute_script("arguments[0].click();", el)
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        # time.sleep(2)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+            wait = WebDriverWait(var_stx.driver, 7)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)

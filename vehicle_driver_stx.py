@@ -1445,9 +1445,14 @@ class driver:
         time.sleep(2.5)
         print("auto"+number)
         module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "auto"+number)
+        try:
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_message)))
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.save).click()
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_message)))
 
-        wait = WebDriverWait(var_stx.driver, 15)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_message)))
         time.sleep(2)
         module_other_stx.write_result_text_try_if(code, eventname, result, "Xe & Lái xe - 2.2 Lái xe",
                                                  var_stx.add_new_driver_message, "Thêm mới thành công", "_LaiXe_ThemMoi.png")

@@ -1314,7 +1314,7 @@ class report_8_1:
             dowload_excel(self, "8.1.5 Tổng cuốc khách theo nguồn")
             minitor_stx.get_info_excel1(3, "Data")
         except:
-            minitor_stx.get_info_excel(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
         minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.5 Tổng cuốc khách theo nguồn")
 
 
@@ -1666,11 +1666,11 @@ class report_8_1:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/10/2025 04:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/02/2026 16:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("27/10/2025 04:25")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/02/2026 17:59")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)
@@ -1773,7 +1773,7 @@ class report_8_1:
         time.sleep(7)
         get_info_web3()
         minitor_stx.get_info_excel1(5, "Sheet 1")
-        minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.19 Báo cáo tổng cuốc khách Fixed")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.19 Báo cáo tổng cuốc khách Fixed")
 
 
 
@@ -1905,11 +1905,11 @@ class report_8_3:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/10/2025 04:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/02/2026 16:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("27/10/2025 04:30")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/02/2026 17:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)
@@ -2541,11 +2541,11 @@ class report_8_4:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/10/2025 04:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("22/01/2026 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("27/10/2025 04:30")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("22/02/2026 23:59")
         time.sleep(1)
         # var_stx.driver.find_element(By.XPATH, var_stx.AbsoluteDriverCode).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         # time.sleep(0.5)
@@ -2575,7 +2575,7 @@ class report_8_4:
 
         get_info_web1()
         minitor_stx.get_info_excel1(5, "Sheet 1")
-        minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.4 Chi tiết thanh toán cuốc khách cho lái xe")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.4 Chi tiết thanh toán cuốc khách cho lái xe")
 
 
 
@@ -3082,9 +3082,9 @@ class report_8_8:
             dowload_excel(self, "8.8.2 Chi tiết tin nhắn theo ngày")
             minitor_stx.get_info_excel1(3, "Data")
         except:
-            minitor_stx.get_info_excel1(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
 
-        minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.2 Chi tiết tin nhắn theo ngày")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.2 Chi tiết tin nhắn theo ngày")
 
 
 
@@ -3364,12 +3364,12 @@ class report_8_8:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("27/10/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("28/10/2025 00:00")
         time.sleep(0.5)
 
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).clear()
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("28/10/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("28/11/2025 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)
@@ -3394,7 +3394,7 @@ class report_8_8:
 
         get_info_web9()
         minitor_stx.get_info_excel1(5, "Sheet 1")
-        minitor_stx.check_info_web_excel(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày")
 
 
 
@@ -3500,10 +3500,10 @@ class PartnerTrip_12_1:
         except:
             pass
         try:
-            minitor_stx.get_info_excel_skip(3, "Sheet 1", 2, 136)
+            minitor_stx.get_info_excel_skip(5, "Sheet 1", 2, 137)
         except:
-            minitor_stx.get_info_excel_skip(3, "Data", 2, 136)
-        minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.1 Báo cáo cuốc khách đối tác")
+            minitor_stx.get_info_excel_skip(5, "Data", 2, 137)
+        minitor_stx.check_info_web_excel2(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.1 Báo cáo cuốc khách đối tác")
 
 
 

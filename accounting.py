@@ -822,7 +822,7 @@ class accounting_14_1:
 
     def accounting_14_1_icon(self, code, eventname, result, src, path_check, desire, name_image):
         var_stx.driver.implicitly_wait(5)
-        accounting_14_1.select_icon(self, "26/05/2025 00:00", "27/05/2025 10:59", src)
+        accounting_14_1.select_icon(self, "01/06/2025 00:00", "02/06/2025 23:59", src)
 
         try:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.info_invoice_actual_revenue)))

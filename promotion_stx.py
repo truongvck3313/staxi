@@ -725,7 +725,8 @@ class list_promotion:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_list_promotion)
         except:
-            list_promotion.list_promotion(self, "", "", "")
+            # list_promotion.list_promotion(self, "", "", "")
+            list_promotion.list_promotion_add_new(self, "", "", "", "Khuyến mại riêng", "")
 
         list_promotion.list_promotion_x(self)
         code_promotion = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 23, 3))
@@ -1862,7 +1863,12 @@ class report:
             minitor_stx.get_info_excel1(3, "Data")
         except Exception as e:
             print(e)
-            minitor_stx.get_info_excel1(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
+
+            # try:
+            #     minitor_stx.get_info_excel1(5, "Sheet")
+            # except:
+            #     minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền")
 
 
@@ -1902,6 +1908,8 @@ class report:
 
     def reports_km_by_month_search(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
+        wait = WebDriverWait(var_stx.driver, 30)
+
         try:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_reports_km_by_month)
@@ -1910,16 +1918,22 @@ class report:
 
         var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("12/2024")
+        var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys("05/2025")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("12/2024")
+        var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("05/2026")
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(7)
+
+        el = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.search)))
+        var_stx.driver.execute_script("arguments[0].scrollIntoView(true);", el)
+        var_stx.driver.execute_script("arguments[0].click();", el)
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        # time.sleep(2)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.table_1_2)
+            wait = WebDriverWait(var_stx.driver, 7)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)

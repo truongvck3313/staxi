@@ -596,7 +596,7 @@ class admin_10_3:
         var_stx.driver.refresh()
         time.sleep(5)
         var_stx.driver.find_element(By.XPATH, var_stx.AssignCar).click()
-        time.sleep(0.5)
+        time.sleep(3)
         var_stx.driver.find_element(By.XPATH, var_stx.GroupAssignCar).click()
         time.sleep(3)
         var_stx.driver.find_element(By.XPATH, var_stx.Assign).click()
@@ -3842,7 +3842,7 @@ class admin_10_10:
         except:
             pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.5 Phụ phí theo thời tiết",
-                                                  var_stx.title_page1, "10.10.5 Phụ phí theo thời tiết", "_PhuPhiTheoThoiTiet.png")
+                                                  var_stx.title_page1, "10.10.5 Tăng giá theo thời tiết", "_PhuPhiTheoThoiTiet.png")
 
 
     def admin_10_10_5_search(self, code, eventname, result):

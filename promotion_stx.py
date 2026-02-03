@@ -725,7 +725,8 @@ class list_promotion:
             var_stx.driver.implicitly_wait(2)
             var_stx.driver.find_element(By.XPATH, var_stx.check_list_promotion)
         except:
-            list_promotion.list_promotion(self, "", "", "")
+            # list_promotion.list_promotion(self, "", "", "")
+            list_promotion.list_promotion_add_new(self, "", "", "", "Khuyến mại riêng", "")
 
         list_promotion.list_promotion_x(self)
         code_promotion = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 23, 3))
@@ -1862,7 +1863,12 @@ class report:
             minitor_stx.get_info_excel1(3, "Data")
         except Exception as e:
             print(e)
-            minitor_stx.get_info_excel1(5, "Sheet 1")
+            minitor_stx.get_info_excel(5, "Sheet")
+
+            # try:
+            #     minitor_stx.get_info_excel1(5, "Sheet")
+            # except:
+            #     minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel(code, eventname, result, "VÍ LÁI XE - 3.5 Lịch sử ví tiền")
 
 

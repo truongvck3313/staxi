@@ -10,7 +10,7 @@ import module_stx
 
 
 
-#update update chieu 03/02
+#update update chieu 03/02/2025
 
 
 class Test(unittest.TestCase):
@@ -257,13 +257,13 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_promotion05_1(self)
         # # caseid_stx.caseid_promotion06(self)
         # # caseid_stx.caseid_promotion07(self)
-        # # caseid_stx.caseid_promotion08(self)
-        # # caseid_stx.caseid_promotion09(self)
+        # caseid_stx.caseid_promotion08(self)
+        # caseid_stx.caseid_promotion09(self)
         # # caseid_stx.caseid_promotion10(self)
         # # caseid_stx.caseid_promotion11(self)
         # # caseid_stx.caseid_promotion12(self)
         # # caseid_stx.caseid_promotion13(self)
-        # # caseid_stx.caseid_promotion14(self)
+        # caseid_stx.caseid_promotion14(self)
         #
         #
         # # caseid_stx.caseid_promotion15(self)
@@ -276,7 +276,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_promotion22(self)
         # # caseid_stx.caseid_promotion23(self)
-        # # caseid_stx.caseid_promotion24(self)
+        # caseid_stx.caseid_promotion24(self)
         # # caseid_stx.caseid_promotion25(self)
         #
         #
@@ -342,14 +342,14 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer03(self)
         # # caseid_stx.caseid_customer04(self)
         # # caseid_stx.caseid_customer05(self)
-        # # caseid_stx.caseid_customer06(self)
+        # caseid_stx.caseid_customer06(self)
         # caseid_stx.caseid_customer07(self)
         # # caseid_stx.caseid_customer08(self)
         # #
         # # caseid_stx.caseid_customer09(self)
         # # caseid_stx.caseid_customer10(self)
         # # caseid_stx.caseid_customer11(self)
-        # # caseid_stx.caseid_customer12(self)
+        # caseid_stx.caseid_customer12(self)
         # # caseid_stx.caseid_customer13(self)
         # # caseid_stx.caseid_customer14(self)
         # # caseid_stx.caseid_customer15(self)
@@ -362,7 +362,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer20(self)
         # # caseid_stx.caseid_customer21(self)
         # # caseid_stx.caseid_customer22(self)
-        # # caseid_stx.caseid_customer23(self)
+        # caseid_stx.caseid_customer23(self)
         # # caseid_stx.caseid_customer24(self)
         #
         # #
@@ -428,11 +428,11 @@ class Test(unittest.TestCase):
         # #
         # # caseid_stx.caseid_customer72(self)
         # # caseid_stx.caseid_customer73(self)
-        # # caseid_stx.caseid_customer74(self)
+        # caseid_stx.caseid_customer74(self)
         # #
         # # caseid_stx.caseid_customer75(self)
         # # caseid_stx.caseid_customer76(self)
-        # # caseid_stx.caseid_customer77(self)
+        # caseid_stx.caseid_customer77(self)
         # # caseid_stx.caseid_customer77_1(self)
         # #
         # # caseid_stx.caseid_customer78(self)

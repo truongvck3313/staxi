@@ -1914,7 +1914,6 @@ class minitor_vehicle:
         minitor_vehicle.minitor_vehicle(self, "", "", "")
         time.sleep(5)
 
-        del var_stx.driver.requests
         time.sleep(1)
         try:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.minitor_vehicle_status1)))

@@ -302,7 +302,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_promotion41(self)
         # # caseid_stx.caseid_promotion42(self)
-        # # caseid_stx.caseid_promotion43(self)
+        # caseid_stx.caseid_promotion43(self)
         # #
         # caseid_stx.caseid_promotion44(self)
         # caseid_stx.caseid_promotion45(self)

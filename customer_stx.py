@@ -2523,7 +2523,7 @@ class contract_card:
         except:
             minitor_stx.get_info_web()
             minitor_stx.get_info_excel1(5, "Sheet 1")
-            minitor_stx.check_info_web_excel(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ")
+            minitor_stx.check_info_web_excel2(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.10 Báo cáo chi tiết cuốc khách thẻ")
 
 
 

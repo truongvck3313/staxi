@@ -597,8 +597,6 @@ def check_info_web_excel(code, eventname, result, path_module, name_column_break
                 logging.error("Dòng: {}".format(location_data_coloumn))
 
 
-
-
 def check_info_web_excel1(code, eventname, result, path_module, name_column_break=None):
     row = 119
     logging.info("-------------------------")
@@ -642,6 +640,149 @@ def check_info_web_excel1(code, eventname, result, path_module, name_column_brea
                                           .format(data_column_web, data_column_excel, location_data_coloumn))
                 module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
                 logging.error("Dòng: {}".format(location_data_coloumn))
+
+
+
+
+
+def parse_number(value: str):
+    """
+    Parse số cho các case:
+    - '6.000 ₫'      -> 6000.0
+    - '12.500'       -> 12500.0
+    - '1.234.567 ₫'  -> 1234567.0
+    - '6,000'        -> 6000.0
+    - '0 - 0.00%'    -> 0.0
+    """
+    if not value or value == "None":
+        return None
+
+    value = str(value).strip()
+
+    # Lấy chuỗi số + dấu . , -
+    match = re.search(r'-?[\d.,]+', value)
+    if not match:
+        return None
+
+    num_str = match.group()
+
+    # Case: VNĐ format (dấu . là ngăn cách nghìn)
+    # VD: 6.000 | 1.234.567
+    if '.' in num_str and ',' not in num_str:
+        parts = num_str.split('.')
+        # Nếu tất cả các phần sau dấu . có đúng 3 chữ số → là thousand separator
+        if all(len(p) == 3 for p in parts[1:]):
+            num_str = ''.join(parts)
+
+    # Chuẩn hoá US format: 6,000 -> 6000
+    num_str = num_str.replace(',', '')
+
+    try:
+        return float(num_str)
+    except ValueError:
+        return None
+
+
+def normalize_column_name(name: str) -> str:
+    """
+    Chuẩn hoá tên cột:
+    - strip khoảng trắng
+    - bỏ (5), (6)...
+    """
+    if not name or name == "None":
+        return ""
+
+    name = str(name).strip()
+    name = re.sub(r'\(\d+\)', '', name)
+    return name.strip()
+
+def check_info_web_excel2(code, eventname, result, path_module, name_column_break=None):
+    START_ROW = 120
+    END_ROW = 150
+
+    logging.info("-------------------------")
+    logging.info(f"Module: {path_module}")
+    logging.info(f"Mã - {code}")
+    logging.info(f"Tên sự kiện - {eventname}")
+    logging.info(f"Kết quả - {result}")
+
+    for row in range(START_ROW, END_ROW + 1):
+        # ===== READ DATA =====
+        name_column_web_raw = var_stx.readData(
+            var_stx.path_luutamthoi, 'Sheet1', row, 1)
+        name_column_excel_raw = var_stx.readData(
+            var_stx.path_luutamthoi, 'Sheet1', row, 3)
+
+        data_column_web = str(var_stx.readData(
+            var_stx.path_luutamthoi, 'Sheet1', row, 2))
+        data_column_excel = str(var_stx.readData(
+            var_stx.path_luutamthoi, 'Sheet1', row, 4))
+
+        location_data_column = str(var_stx.readData(
+            var_stx.path_luutamthoi, 'Sheet1', row, 6))
+
+        # ===== NORMALIZE COLUMN NAME =====
+        name_column_web = normalize_column_name(name_column_web_raw)
+        name_column_excel = normalize_column_name(name_column_excel_raw)
+
+        logging.info("-------------------------")
+        logging.info(f"Tên cột web: {name_column_web}")
+        logging.info(f"Tên cột excel: {name_column_excel}")
+
+        # ===== BREAK CONDITIONS =====
+        if not name_column_web:
+            logging.info("Tên cột web trống → break")
+            break
+
+        if name_column_break and name_column_break == name_column_web:
+            logging.info("Gặp name_column_break → break")
+            break
+
+        # ===== LOG DATA =====
+        logging.info(f"Dữ liệu web: {data_column_web}")
+        logging.info(f"Dữ liệu excel: {data_column_excel}")
+
+        # ===== SKIP IF WEB DATA IS EMPTY =====
+        if not data_column_web or data_column_web == "None":
+            logging.info("Dữ liệu web trống → skip so sánh")
+            continue
+
+        # ===== DIRECT STRING COMPARE =====
+        if data_column_web == data_column_excel:
+            module_other_stx.writeData(
+                var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            logging.info("True")
+            continue
+
+        # ===== NUMBER COMPARE =====
+        web_value = parse_number(data_column_web)
+        excel_value = parse_number(data_column_excel)
+
+        logging.info(f"Web value: {web_value}")
+        logging.info(f"Excel value: {excel_value}")
+
+        if web_value is not None and excel_value is not None and web_value == excel_value:
+            module_other_stx.writeData(
+                var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            logging.info("True")
+        else:
+            logging.error("False")
+            module_other_stx.writeData(
+                var_stx.checklistpath,
+                "Checklist",
+                code,
+                6,
+                f"Dữ liệu web: {data_column_web}\n"
+                f"Dữ liệu excel: {data_column_excel}\n"
+                f"Dòng: {location_data_column}"
+            )
+            module_other_stx.writeData(
+                var_stx.checklistpath, "Checklist", code, 7, "Fail")
+            logging.error(f"Dòng: {location_data_column}")
+            logging.info("False")
+
+
+
 
 
 

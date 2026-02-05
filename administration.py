@@ -3442,8 +3442,8 @@ class admin_10_10:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
         except:
             pass
-        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
-                                                  var_stx.title_page1, "10.10.3 Phụ phí theo thời gian", "_PhuPhiTheoThoiGian.png")
+        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
+                                                  var_stx.title_page1, "10.10.3 Tăng giá theo thời gian", "_PhuPhiTheoThoiGian.png")
 
 
     def admin_10_10_3_search(self, code, eventname, result):
@@ -3461,7 +3461,7 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(3)
 
-        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
+        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
                                                   "//*[text()='  "+data+"']", data, "_PhuPhiTheoThoiGian_TimKiem.png")
 
         var_stx.driver.find_element(By.XPATH, var_stx.time).send_keys(Keys.CONTROL, "a", Keys.DELETE)
@@ -3502,9 +3502,10 @@ class admin_10_10:
         time.sleep(1)
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new2).click()
-        time.sleep(2.5)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
-                                                  var_stx.message, "Lưu cấu hình thời gian thành công", "_PhuPhiTheoThoiGian_ThemMoi.png")
+        time.sleep(5)
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
+                                                  f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='  {var_stx.data['admin']['add_new_time_from']}']",
+                                                     var_stx.data['admin']['add_new_time_from'], "_PhuPhiTheoThoiGian_ThemMoi.png")
 
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.close).click()
@@ -3538,11 +3539,27 @@ class admin_10_10:
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_describe).send_keys(var_stx.data['admin']['add_new_time_describe_edit'])
             time.sleep(1)
-
             var_stx.driver.find_element(By.XPATH, var_stx.update).click()
-            time.sleep(2)
-            module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
-                                                      var_stx.message, "Lưu cấu hình thời gian thành công", "_PhuPhiTheoThoiGian_CapNhat.png")
+            time.sleep(5)
+
+            def get_xpath_update(desire):
+                n = 0
+                while (n < 20):
+                    n = n + 1
+                    xpath_check = f"//*[@id='flip-scroll']/table/tbody/tr[{str(n)}]/td[7]"
+                    print(xpath_check)
+                    try:
+                        name = var_stx.driver.find_element(By.XPATH, xpath_check).text.strip()
+                        print(name)
+                        if name == desire:
+                            return xpath_check
+
+                    except:
+                        pass
+            xpath_check = get_xpath_update(var_stx.data['admin']['add_new_time_describe_edit'])
+
+            module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
+                                                      xpath_check, var_stx.data['admin']['add_new_time_describe_edit'], "_PhuPhiTheoThoiGian_CapNhat.png")
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.close).click()
@@ -3570,8 +3587,8 @@ class admin_10_10:
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
             time.sleep(2)
-            module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Phụ phí theo thời gian",
-                                                      var_stx.message, "Xóa cấu hình thời gian thành công", "_PhuPhiTheoThoiGian_Xóa.png")
+            module_other_stx.write_result_not_displayed_try(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
+                                                      f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='  {var_stx.data['admin']['add_new_time_from']}']", "_PhuPhiTheoThoiGian_Xóa.png")
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.close).click()
                 time.sleep(2.5)

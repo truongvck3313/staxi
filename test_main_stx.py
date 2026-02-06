@@ -10,8 +10,7 @@ import module_stx
 
 
 
-#update update chieu 03/02/2025
-#update 6/2
+#update staxi trưa 06/02/2026
 
 
 class Test(unittest.TestCase):
@@ -211,7 +210,7 @@ class Test(unittest.TestCase):
         # #
         # # caseid_stx.caseid_wallet07(self)
         # # caseid_stx.caseid_wallet08(self)
-        # # caseid_stx.caseid_wallet09(self)
+        # caseid_stx.caseid_wallet09(self)
         #
         # # caseid_stx.caseid_wallet10(self)
         # # caseid_stx.caseid_wallet11(self)
@@ -302,7 +301,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_promotion40(self)
         #
         # # caseid_stx.caseid_promotion41(self)
-        # # caseid_stx.caseid_promotion42(self)
+        # caseid_stx.caseid_promotion42(self)
         # caseid_stx.caseid_promotion43(self)
         # #
         # caseid_stx.caseid_promotion44(self)
@@ -464,7 +463,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_report01(self)
         # # caseid_stx.caseid_report02(self)
-        # # caseid_stx.caseid_report03(self)
+        # caseid_stx.caseid_report03(self)
         # caseid_stx.caseid_report04(self)
         # #
         # # caseid_stx.caseid_report05(self)
@@ -734,9 +733,9 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin111(self)
 
         # caseid_stx.caseid_admin112(self)
-        # caseid_stx.caseid_admin113(self)
+        # # caseid_stx.caseid_admin113(self)
         # caseid_stx.caseid_admin114(self)
-        # caseid_stx.caseid_admin115(self)
+        # # caseid_stx.caseid_admin115(self)
         # caseid_stx.caseid_admin116(self)
         #
         # caseid_stx.caseid_admin117(self)

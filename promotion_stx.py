@@ -1926,13 +1926,14 @@ class report:
         time.sleep(0.5)
 
         el = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.search)))
-        var_stx.driver.execute_script("arguments[0].scrollIntoView(true);", el)
-        var_stx.driver.execute_script("arguments[0].click();", el)
+        el.click()
+        # var_stx.driver.execute_script("arguments[0].scrollIntoView(true);", el)
+        # var_stx.driver.execute_script("arguments[0].click();", el)
 
         # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         # time.sleep(2)
         try:
-            wait = WebDriverWait(var_stx.driver, 7)
+            wait = WebDriverWait(var_stx.driver, 8)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)

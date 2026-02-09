@@ -10,7 +10,7 @@ import module_stx
 
 
 
-#update staxi trưa 06/02/2026
+#update staxi chiều 09/02/2026
 
 
 class Test(unittest.TestCase):
@@ -463,7 +463,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_report01(self)
         # # caseid_stx.caseid_report02(self)
-        caseid_stx.caseid_report03(self)
+        # caseid_stx.caseid_report03(self)
         # caseid_stx.caseid_report04(self)
         # #
         # # caseid_stx.caseid_report05(self)

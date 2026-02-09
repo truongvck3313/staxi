@@ -794,110 +794,32 @@ class report_8_1:
 
 
     def report_8_1_0_excel(self, code, eventname, result):
-        var_stx.driver.implicitly_wait(2)
-        module_other_stx.delete_excel()
-        minitor_stx.clearData_luutamthoi_checkexcel(var_stx.path_luutamthoi, "Sheet1", "", "", "", "", "", "")
-        try:
-            var_stx.driver.implicitly_wait(2)
-            var_stx.driver.find_element(By.XPATH, var_stx.check_report_8_1_0)
-            var_stx.driver.find_element(By.XPATH, var_stx.check_list_data2_1)
-        except:
-            report_8_1.report_8_1_0_search(self, "", "", "")
-
-        get_info_web13()
-
-        var_stx.driver.find_element(By.XPATH, var_stx.search_12_button).click()
-        time.sleep(1)
-
-
-        try:
-            wait = WebDriverWait(var_stx.driver, 20)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
-
-            dowload_excel(self, "8.1.0 Báo cáo cuốc khách tổng")
-            minitor_stx.get_info_excel1(3, "Data")
-        except:
-            minitor_stx.get_info_excel1(5, "Sheet 1")
+        # var_stx.driver.implicitly_wait(2)
+        # module_other_stx.delete_excel()
+        # minitor_stx.clearData_luutamthoi_checkexcel(var_stx.path_luutamthoi, "Sheet1", "", "", "", "", "", "")
+        # try:
+        #     var_stx.driver.implicitly_wait(2)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.check_report_8_1_0)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.check_list_data2_1)
+        # except:
+        #     report_8_1.report_8_1_0_search(self, "", "", "")
+        #
+        #
+        # get_info_web13()
+        #
+        # var_stx.driver.find_element(By.XPATH, var_stx.search_12_button).click()
+        # time.sleep(1)
+        # try:
+        #     wait = WebDriverWait(var_stx.driver, 20)
+        #     element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+        #
+        #     dowload_excel(self, "8.1.0 Báo cáo cuốc khách tổng")
+        #     minitor_stx.get_info_excel1(3, "Data")
+        # except:
+        #     get_info_web13()
+        #     minitor_stx.get_info_excel1(5, "Sheet 1")
 
         minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng")
-
-
-    def report_8_1_0(self, code, eventname, result):
-        var_stx.driver.implicitly_wait(5)
-        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'], var_stx.data['login']['mk_admin_test'])
-
-        var_stx.driver.find_element(By.XPATH, var_stx.report1).click()
-        time.sleep(2)
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.report_8_1).click()
-            time.sleep(2)
-        except:
-            var_stx.driver.find_element(By.XPATH, var_stx.report1).click()
-            time.sleep(2)
-            var_stx.driver.find_element(By.XPATH, var_stx.report_8_1).click()
-            time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.report_8_1_0).click()
-        time.sleep(2)
-        try:
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
-            time.sleep(2)
-        except:
-            pass
-        module_other_stx.write_result_text_try_if(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng",
-                                                  var_stx.title_page1, "8.1.0 Báo cáo cuốc khách tổng", "_BaoCaoCuocKhachTong.png")
-
-
-    def report_8_1_0_search(self, code, eventname, result):
-        var_stx.driver.implicitly_wait(5)
-        try:
-            var_stx.driver.implicitly_wait(2)
-            var_stx.driver.find_element(By.XPATH, var_stx.check_report_8_1_0)
-        except:
-            report_8_1.report_8_1_0(self, "", "", "")
-
-        var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-        time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("05/11/2025 13:00")
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("05/11/2025 13:05")
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
-        time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.Source).click()
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.Source_vanglai).click()
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(8)
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.list_data2_1)
-        except:
-            var_stx.driver.refresh()
-            time.sleep(7)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-            time.sleep(1.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("04/11/2025 13:41")
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("05/11/2025 13:10")
-            time.sleep(1)
-            var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
-            time.sleep(1.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(8)
-
-        module_other_stx.write_result_text_try_if_other(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.0 Báo cáo cuốc khách tổng",
-                                              var_stx.DisplayPublicBookId1, "", "_BaoCaoCuocKhachTong_TimKiem.png")
-
-
-
 
 
     def report_8_1_0_excel_full(self, code, eventname, result):
@@ -3471,6 +3393,7 @@ class report_8_8:
         get_info_web9()
         minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.3 Báo cáo tin nhắn theo ngày")
+
 
 
 

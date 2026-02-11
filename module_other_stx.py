@@ -24,6 +24,152 @@ from selenium.common.exceptions import WebDriverException
 
 
 
+
+CALL_BUTTON = ("533", "1931")   # tọa độ nút CALL đã đo
+CHECK_INTERVAL = 1               # giây kiểm tra trạng thái cuộc gọi
+
+
+def run_adb(cmd):
+    """
+    Chạy adb an toàn trên Windows.
+    - Fix UnicodeDecodeError bằng utf-8 + ignore lỗi decode
+    - Luôn trả về string, không bao giờ None
+    """
+    try:
+        result = subprocess.run(
+            ["adb"] + cmd,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="ignore"
+        )
+        return result.stdout or ""
+    except Exception as e:
+        print("ADB ERROR:", e)
+        return ""
+
+
+def get_call_state():
+    """
+    Trả trạng thái cuộc gọi hiện tại từ dumpsys telecom.
+    """
+    output = run_adb(["shell", "dumpsys", "telecom"])
+
+    for line in output.splitlines():
+        if "[Call" in line:
+            if "state=ACTIVE" in line:
+                return "ACTIVE"
+            if "state=DISCONNECTED" in line:
+                return "DISCONNECTED"
+            if "state=RINGING" in line:
+                return "RINGING"
+            if "state=DIALING" in line:
+                return "DIALING"
+
+    return "NONE"
+
+
+def auto_call(phone_number: str, timeout: int = 20) -> str:
+    """
+    Gọi điện → theo dõi → tự cúp.
+
+    Returns:
+        ANSWERED
+        REJECTED
+        TIMEOUT
+    """
+
+    if not phone_number:
+        return "EMPTY"
+
+    print(f"\n📞 Đang gọi: {phone_number}")
+
+    # 1. Mở màn hình quay số
+    run_adb([
+        "shell", "am", "start",
+        "-a", "android.intent.action.DIAL",
+        "-d", f"tel:{phone_number}"
+    ])
+
+    time.sleep(1)
+
+    # 2. Tap nút CALL
+    run_adb([
+        "shell", "input", "swipe",
+        CALL_BUTTON[0], CALL_BUTTON[1],
+        CALL_BUTTON[0], CALL_BUTTON[1], "100"
+    ])
+
+    # 3. Theo dõi trạng thái
+    start_time = time.time()
+
+    while time.time() - start_time < timeout:
+
+        state = get_call_state()
+
+        if state == "ACTIVE":
+            print("✅ ANSWERED → tắt cuộc gọi")
+            run_adb(["shell", "input", "keyevent", "6"])
+            return "ANSWERED"
+
+        if state == "DISCONNECTED":
+            print("❌ REJECTED")
+            return "REJECTED"
+
+        time.sleep(CHECK_INTERVAL)
+
+    # 4. Timeout
+    print("⏱ TIMEOUT → tự tắt cuộc gọi")
+    run_adb(["shell", "input", "keyevent", "6"])
+    return "TIMEOUT"
+
+
+def call_3_numbers(phone1, phone2, phone3, timeout=20):
+    """
+    Luồng gọi tuần tự 3 số.
+
+    BREAK khi:
+    - ANSWERED
+    - REJECTED
+    - số trống
+    - gọi hết 3 số
+    """
+
+    phones = [phone1, phone2, phone3]
+
+    for i, phone in enumerate(phones, start=1):
+
+        # ===== số trống → break =====
+        if not phone:
+            print(f"📴 Phone {i} trống → dừng chuỗi gọi")
+            return "EMPTY_NUMBER"
+
+        print(f"\n➡️ Gọi phone {i}: {phone}")
+
+        status = auto_call(phone, timeout)
+
+        print(f"📊 Kết quả phone {i}: {status}")
+
+        # ===== người nhận đã tương tác → break =====
+        if status in ("ANSWERED", "REJECTED"):
+            print("🛑 Người nhận đã xử lý cuộc gọi → dừng chuỗi")
+            return status
+
+        # TIMEOUT → thử số tiếp theo
+
+    # ===== gọi hết 3 số =====
+    print("❌ Đã gọi hết 3 số nhưng không ai phản hồi")
+    return "NO_RESPONSE"
+
+
+# result = module_other_stx.call_3_numbers("0359667694", "0379077024", "", timeout=30)
+        # print("FINAL RESULT:", result)
+
+
+
+
+
+
 def timerun():
     while True:
         time.sleep(3)

@@ -3,14 +3,13 @@ import unittest
 import caseid_stx
 import var_stx
 import module_stx
-#pip install selenium==3.141.0
 # git checkout staxi_update
 # git pull origin master
 
 
 
 
-#update staxi sáng 11/02/2026
+#update staxi sáng 12/02/2026
 
 class Test(unittest.TestCase):
 
@@ -67,21 +66,21 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor20(self)
         # # caseid_stx.caseid_minitor21(self)
         #
-        # # caseid_stx.caseid_minitor22(self)
-        # # caseid_stx.caseid_minitor23(self)
-        # # caseid_stx.caseid_minitor24(self)
-        # # caseid_stx.caseid_minitor25(self)
-        # # caseid_stx.caseid_minitor26(self)
-        # # caseid_stx.caseid_minitor27(self)
+        # caseid_stx.caseid_minitor22(self)
+        # caseid_stx.caseid_minitor23(self)
+        # caseid_stx.caseid_minitor24(self)
+        # caseid_stx.caseid_minitor25(self)
+        # caseid_stx.caseid_minitor26(self)
+        # caseid_stx.caseid_minitor27(self)
         # caseid_stx.caseid_minitor28(self)
-        # # caseid_stx.caseid_minitor29(self)
-        # # caseid_stx.caseid_minitor30(self)
-        # # caseid_stx.caseid_minitor31(self)
-        # # caseid_stx.caseid_minitor32(self)
-        # # caseid_stx.caseid_minitor33(self)
-        # # caseid_stx.caseid_minitor34(self)
-        # # caseid_stx.caseid_minitor35(self)
-        # # caseid_stx.caseid_minitor36(self)
+        # caseid_stx.caseid_minitor29(self)
+        # caseid_stx.caseid_minitor30(self)
+        # caseid_stx.caseid_minitor31(self)
+        # caseid_stx.caseid_minitor32(self)
+        # caseid_stx.caseid_minitor33(self)
+        # caseid_stx.caseid_minitor34(self)
+        # caseid_stx.caseid_minitor35(self)
+        # caseid_stx.caseid_minitor36(self)
         # #
         # #
         # caseid_stx.caseid_minitor37(self)
@@ -158,8 +157,8 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle23(self)
         # # # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
         # # # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
-        # # caseid_stx.caseid_vehicle26(self)
-        # # caseid_stx.caseid_vehicle27(self)
+        # caseid_stx.caseid_vehicle26(self)
+        # caseid_stx.caseid_vehicle27(self)
         # # caseid_stx.caseid_vehicle28(self)
         # # caseid_stx.caseid_vehicle29(self)
         # # caseid_stx.caseid_vehicle30(self)
@@ -182,7 +181,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_vehicle46(self)
         # # caseid_stx.caseid_vehicle47(self)
         # caseid_stx.caseid_vehicle48(self)
-        # # caseid_stx.caseid_vehicle49(self)
+        # caseid_stx.caseid_vehicle49(self)
         # caseid_stx.caseid_vehicle50(self)
         # # caseid_stx.caseid_vehicle51(self)
         # caseid_stx.caseid_vehicle52(self)
@@ -231,7 +230,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_wallet24(self)
         # # # caseid_stx.caseid_wallet25(self)
-        # # caseid_stx.caseid_wallet26(self)
+        # caseid_stx.caseid_wallet26(self)
         # # # caseid_stx.caseid_wallet27(self)
         # caseid_stx.caseid_wallet28(self)
         # caseid_stx.caseid_wallet29(self)

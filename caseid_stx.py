@@ -325,7 +325,7 @@ def caseid_minitor24(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     minitor_stx.minitor_vehicle.minitor_vehicle_icon(self, "Minitor24", event, result, var_stx.icon_config_type_vehicle,
-                                                            var_stx.save1, var_stx.save_success, "Lưu thành công!", "_GiamSatXe_CauHinhIconLoaiXe.png", "0")
+                                                            var_stx.save1, var_stx.success_connect, "Success to connect server", "_GiamSatXe_CauHinhIconLoaiXe.png", "0")
 
 
 def caseid_minitor25(self):

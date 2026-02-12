@@ -2261,7 +2261,7 @@ custrank_cu = "//*[@name='CustRank']//*[text()='Hạng đồng']"
 Hotline = "//*[text()='Hotline: 1900 6415 ']|(//a[@class='btnBuy'])[1]"
 title2 = "//*[@id='title']"
 list_driver_violation = "//*[@class='nav-title']//*[text()='2.6.3 Danh sách lái xe vi phạm']"
-
+success_connect = "//*[text()='Success to connect server']"
 
 
 

@@ -3496,6 +3496,13 @@ class admin_10_10:
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_surcharge).send_keys(var_stx.data['admin']['add_new_time_surcharge'])
         time.sleep(0.5)
+        try:
+            button = var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_type_vehicle_select)
+            var_stx.driver.execute_script("arguments[0].click();", button)
+            time.sleep(1.5)
+        except:
+            pass
+
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_type_vehicle).click()
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_describe).send_keys(var_stx.data['admin']['add_new_time_describe'])
@@ -3503,9 +3510,16 @@ class admin_10_10:
 
         var_stx.driver.find_element(By.XPATH, var_stx.add_new2).click()
         time.sleep(5)
-        module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
-                                                  f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='  {var_stx.data['admin']['add_new_time_from']}']",
-                                                     var_stx.data['admin']['add_new_time_from'], "_PhuPhiTheoThoiGian_ThemMoi.png")
+        try:
+            var_stx.driver.find_element(By.XPATH, f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='  {var_stx.data['admin']['add_new_time_from']}']")
+            module_other_stx.write_result_text_try_if_in(code, eventname, result, "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
+                                                      f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='  {var_stx.data['admin']['add_new_time_from']}']",
+                                                         var_stx.data['admin']['add_new_time_from'], "_PhuPhiTheoThoiGian_ThemMoi.png")
+        except:
+            module_other_stx.write_result_text_try_if_in(code, eventname, result,
+                                                         "BÁO CÁO - 10.10 Quản trị bảng giá - 10.10.3 Tăng giá theo thời gian",
+                                                         f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='{var_stx.data['admin']['add_new_time_from']}']",
+                                                         var_stx.data['admin']['add_new_time_from'], "_PhuPhiTheoThoiGian_ThemMoi.png")
 
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.close).click()

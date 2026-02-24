@@ -1846,7 +1846,10 @@ class minitor_vehicle:
 
     def minitor_vehicle(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
-        login_stx.login.login_stx_company(self, var_stx.data['login']['tk_company'], var_stx.data['login']['mk_company'])
+        try:
+            login_stx.login.login_stx_company(self, var_stx.data['login']['tk_company'], var_stx.data['login']['mk_company'])
+        except:
+            pass
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.minitor).click()
         except:
@@ -1927,12 +1930,12 @@ class minitor_vehicle:
         var_stx.driver.implicitly_wait(5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.check_minitor_vehicle)
+            var_stx.driver.find_element(By.XPATH, path_status).click()
         except:
             minitor_vehicle.minitor_vehicle(self, "", "", "")
             time.sleep(5)
+            var_stx.driver.find_element(By.XPATH, path_status).click()
 
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, path_status).click()
         time.sleep(3)
         if type_check == "0":
             get_src_vehicle(type_status, desire, from_cut)

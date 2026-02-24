@@ -9,7 +9,7 @@ import module_stx
 
 
 
-#update staxi sáng 12/02/2026
+#update staxi sáng 24/02/2026
 
 class Test(unittest.TestCase):
 
@@ -70,6 +70,8 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor23(self)
         # caseid_stx.caseid_minitor24(self)
         # caseid_stx.caseid_minitor25(self)
+
+
         # caseid_stx.caseid_minitor26(self)
         # caseid_stx.caseid_minitor27(self)
         # caseid_stx.caseid_minitor28(self)
@@ -116,6 +118,8 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor65(self)
         # caseid_stx.caseid_minitor66(self)
         # caseid_stx.caseid_minitor67(self)
+
+
         # #
         # caseid_stx.caseid_minitor68(self)
         # caseid_stx.caseid_minitor69(self)
@@ -177,7 +181,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_vehicle42(self)
         # caseid_stx.caseid_vehicle43(self)
         # caseid_stx.caseid_vehicle44(self)
-        # # caseid_stx.caseid_vehicle45(self)
+        # caseid_stx.caseid_vehicle45(self)
         # # caseid_stx.caseid_vehicle46(self)
         # # caseid_stx.caseid_vehicle47(self)
         # caseid_stx.caseid_vehicle48(self)

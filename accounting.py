@@ -626,6 +626,9 @@ class accounting_14_1:
                                                                     path_check, desire1, name_image)
                     var_stx.driver.find_element(By.XPATH, var_stx.note).send_keys("Ghi chú chọn button Không xuất hóa đơn")
 
+                if type == "3":
+                    module_other_stx.write_result_text_try_if_or(code, eventname, result, "KẾ TOÁN - 14.1 Quản lý xuất hoá đơn",
+                                                                    path_check, desire1, desire2, name_image)
 
                 if (name_image == "_QuanLyXuatHoaDon_XuatHoaDonKhachLe.png") or (name_image == "_QuanLyXuatHoaDon_KhongXuatHoa.png"):
                     var_stx.driver.refresh()

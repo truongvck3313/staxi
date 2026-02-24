@@ -4451,7 +4451,7 @@ def caseid_accounting22(self):
     get_datachecklist("Accounting22")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
-    accounting.accounting_14_1.accounting_14_1_button(self, "Accounting22", event, result, "1", var_stx.retail_invoice,
+    accounting.accounting_14_1.accounting_14_1_button(self, "Accounting22", event, result, "3", var_stx.retail_invoice,
                                                       var_stx.check_retail_invoice, "Xác nhận xuất hoá đơn khách lẻ",
                                                       "Cuốc khách không đủ điều kiện xuất hóa đơn", "_QuanLyXuatHoaDon_XuatHoaDonKhachLe.png")
 

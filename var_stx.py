@@ -1570,7 +1570,7 @@ add_new_time_from = "//*[@id='FromTime']"
 add_new_time_to = "//*[@id='ToTime']"
 add_new_time_type_surcharge = "//*[@id='AdditionType']/option[1]"
 add_new_time_surcharge = "//*[@id='Surcharge']|//*[@id='SurchargeFixed']"
-add_new_time_type_vehicle = "//*[@id='CarType']/option[5]"
+add_new_time_type_vehicle = "//*[@id='CarType']/option[5]|(//ul[contains(@id,'select2-CarTypes')])/li[5]"
 add_new_time_describe = "//*[@id='Description']"
 admin_10_10_4 = "//*[text()='10.10.4 Phụ phí thu hộ']"
 reportrange_month_before = "//*[text()='Tháng trước']"
@@ -2262,7 +2262,7 @@ Hotline = "//*[text()='Hotline: 1900 6415 ']|(//a[@class='btnBuy'])[1]"
 title2 = "//*[@id='title']"
 list_driver_violation = "//*[@class='nav-title']//*[text()='2.6.3 Danh sách lái xe vi phạm']"
 success_connect = "//*[text()='Success to connect server']"
-
+add_new_time_type_vehicle_select = "//*[@role='searchbox']"
 
 
 

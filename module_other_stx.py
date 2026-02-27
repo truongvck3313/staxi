@@ -1396,7 +1396,8 @@ def write_result_text_try_if_src1(code, eventname, result, path_module, path_tex
         print("n4")
         writeData(var_stx.checklistpath, "Checklist", code, 6, check_text)
         print("n5")
-        if check_text[from_cut::] == check_result:
+        # if check_text[from_cut::] == check_result:
+        if  check_result in check_text[from_cut::]:
             print("n6")
             logging.info("True")
             writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")

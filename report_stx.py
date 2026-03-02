@@ -2573,7 +2573,7 @@ class report_8_4:
 
         get_info_web1()
         minitor_stx.get_info_excel1(5, "Sheet 1")
-        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.4 Chi tiết thanh toán cuốc khách cho lái xe")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.4 Chi tiết thanh toán cuốc khách cho lái xe", name_column_break="Lộ trình")
 
 
 
@@ -3082,7 +3082,7 @@ class report_8_8:
         except:
             minitor_stx.get_info_excel(5, "Sheet")
 
-        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.2 Chi tiết tin nhắn theo ngày")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.8 Báo cáo khách hàng - 8.8.2 Chi tiết tin nhắn theo ngày", name_column_break="Tin OTP mã pin")
 
 
 
@@ -3578,10 +3578,13 @@ class PartnerTrip_12_1:
             dowload_excel(self, "12.1.2 Tổng hợp cuốc khách đối tác")
         except:
             pass
+        try:
+            minitor_stx.get_info_excel_skip(3, "Data", 1, 136)
+        except:
+            minitor_stx.get_info_excel1(5, "Sheet 1")
 
-        minitor_stx.get_info_excel_skip(3, "Data", 1, 136)
         minitor_stx.check_info_web_excel(code, eventname, result, "CUỐC ĐỐI TÁC - 12.1 Báo cáo - 12.1.2 Tổng hợp cuốc khách đối tác")
-        #comment
+
 
 
 

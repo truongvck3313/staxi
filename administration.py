@@ -3508,7 +3508,10 @@ class admin_10_10:
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_time_describe).send_keys(var_stx.data['admin']['add_new_time_describe'])
         time.sleep(1)
 
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new2).click()
+        # var_stx.driver.find_element(By.XPATH, var_stx.add_new2).click()
+        button = var_stx.driver.find_element(By.XPATH, var_stx.add_new2)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+
         time.sleep(5)
         try:
             var_stx.driver.find_element(By.XPATH, f"//*[@id='flip-scroll']/table/tbody/tr/td[2]//*[text()='  {var_stx.data['admin']['add_new_time_from']}']")

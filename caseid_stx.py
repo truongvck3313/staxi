@@ -384,7 +384,7 @@ def caseid_minitor32(self):
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     minitor_stx.minitor_vehicle.minitor_vehicle_satus(self, "Minitor32", event, result, var_stx.minitor_vehicle_status5,
-                                                            "0", "", "/Content/themes/img/WarGreenCar.png", "_GiamSatXe_TrangThaiMTD_.png", -35, "5")
+                                                            "0", "", "/Content/themes/img/", "_GiamSatXe_TrangThaiMTD_.png", -35, "5")
 
 
 def caseid_minitor33(self):

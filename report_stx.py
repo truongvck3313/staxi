@@ -2456,18 +2456,41 @@ class report_8_4:
         time.sleep(2.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("16/12/2025 00:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/02/2026 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("17/12/2025 23:59")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("03/03/2026 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+
+        var_stx.driver.set_page_load_timeout(30)
+        var_stx.driver.set_script_timeout(30)
+        print("Ping browser...")
+        print(var_stx.driver.execute_script("return 1+1"))
+
+        var_stx.driver.execute_async_script("""
+            var callback = arguments[arguments.length - 1];
+            document.getElementById('formMain').submit();
+            callback();
+        """)
+
+
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        # except:
+        #     var_stx.driver.refresh()
+        #     time.sleep(7)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
+        #     time.sleep(2.5)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
+        #     time.sleep(2)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+
 
         try:
-            wait = WebDriverWait(var_stx.driver, 15)
+            wait = WebDriverWait(var_stx.driver, 20)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
             time.sleep(2)
         except:

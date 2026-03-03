@@ -9,8 +9,8 @@ import module_stx
 
 
 
-#update staxi chiều 26/02/2026
-# 03.03
+#update staxi sáng 03/03/2026
+# 24.02
 
 class Test(unittest.TestCase):
 
@@ -283,8 +283,8 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_promotion25(self)
         #
         #
-        # # caseid_stx.caseid_promotion26(self)
-        # # caseid_stx.caseid_promotion27(self)
+        # caseid_stx.caseid_promotion26(self)
+        # caseid_stx.caseid_promotion27(self)
         # caseid_stx.caseid_promotion28(self)
         # caseid_stx.caseid_promotion29(self)
         # caseid_stx.caseid_promotion30(self)
@@ -465,7 +465,7 @@ class Test(unittest.TestCase):
         #
         #
         # # caseid_stx.caseid_report01(self)
-        # # caseid_stx.caseid_report02(self)
+        # caseid_stx.caseid_report02(self)
         # caseid_stx.caseid_report03(self)
         # caseid_stx.caseid_report04(self)
         # #

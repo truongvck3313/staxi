@@ -2263,6 +2263,6 @@ title2 = "//*[@id='title']"
 list_driver_violation = "//*[@class='nav-title']//*[text()='2.6.3 Danh sách lái xe vi phạm']"
 success_connect = "//*[text()='Success to connect server']"
 add_new_time_type_vehicle_select = "//*[@role='searchbox']"
-
+search4 = "//button[@type='submit' and contains(@class,'btn-primary')]"
 
 

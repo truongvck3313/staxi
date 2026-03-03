@@ -311,9 +311,23 @@ class login:
         except:
             pass
 
-        var_stx.driver.set_page_load_timeout(10)
-        var_stx.driver.get(var_stx.data['login']['envang'])
-        time.sleep(5)
+        var_stx.driver.set_page_load_timeout(15)
+        # var_stx.driver.get(var_stx.data['login']['envang'])
+        # time.sleep(5)
+
+        n = 0
+        while (n < 10):
+            n = n+1
+            var_stx.driver.get(var_stx.data['login']['envang'])
+            time.sleep(5)
+            url = var_stx.driver.current_url
+            print(f"url: {url}")
+            if "https://envanghpbak.staxi.vn" in url:
+                break
+            else:
+                var_stx.driver.get(var_stx.data['login']['envang'])
+                time.sleep(5)
+
         try:
             login.logout_stx(self)
             time.sleep(1)

@@ -264,7 +264,7 @@ def get_info_excel(row, sheet, time_wait=30):
             shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xls"))
             break
         except:
-            pass
+            time.sleep(1)
 
 
     try:
@@ -320,7 +320,7 @@ def get_info_excel1(row, sheet, time_wait=30):
             shutil.move(filename, os.path.join(var_stx.excelpath, r"baocao_stx.xlsx"))
             break
         except:
-            pass
+            time.sleep(1)
 
     # #Đọc check file excel
     bangchucai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',

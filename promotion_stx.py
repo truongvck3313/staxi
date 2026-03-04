@@ -1925,13 +1925,23 @@ class report:
         var_stx.driver.find_element(By.XPATH, var_stx.to_day).send_keys("05/2026")
         time.sleep(0.5)
 
-        el = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.search)))
-        el.click()
-        # var_stx.driver.execute_script("arguments[0].scrollIntoView(true);", el)
-        # var_stx.driver.execute_script("arguments[0].click();", el)
 
-        # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        # time.sleep(2)
+        # el = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.search)))
+        # el.click()
+
+        var_stx.driver.set_page_load_timeout(30)
+        var_stx.driver.set_script_timeout(30)
+        print("Ping browser...")
+        print(var_stx.driver.execute_script("return 1+1"))
+
+        var_stx.driver.execute_async_script("""
+                    var callback = arguments[arguments.length - 1];
+                    document.getElementById('formMain').submit();
+                    callback();
+                """)
+
+
+
         try:
             wait = WebDriverWait(var_stx.driver, 8)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))

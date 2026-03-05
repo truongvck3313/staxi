@@ -9,7 +9,7 @@ import module_stx
 
 
 
-#update staxi sáng 04/03/2026
+#update staxi sáng 05/03/2026
 
 
 class Test(unittest.TestCase):
@@ -44,10 +44,10 @@ class Test(unittest.TestCase):
         # #
         # #
         # # #
-        # # caseid_stx.caseid_minitor01(self)
-        # # caseid_stx.caseid_minitor02(self)
-        # # # caseid_stx.caseid_minitor03(self)
-        # # caseid_stx.caseid_minitor04(self)
+        # caseid_stx.caseid_minitor01(self)
+        # caseid_stx.caseid_minitor02(self)
+        # caseid_stx.caseid_minitor03(self)
+        # caseid_stx.caseid_minitor04(self)
         # # # caseid_stx.caseid_minitor05(self)
         # # # caseid_stx.caseid_minitor06(self)
         # # # caseid_stx.caseid_minitor07(self)
@@ -85,13 +85,13 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor36(self)
         # # #
         # # #
-        # # caseid_stx.caseid_minitor37(self)
+        # caseid_stx.caseid_minitor37(self)
         # # # caseid_stx.caseid_minitor38(self)
         # # # caseid_stx.caseid_minitor39(self)
         # # # caseid_stx.caseid_minitor40(self)
         # # # caseid_stx.caseid_minitor41(self)
         # # caseid_stx.caseid_minitor42(self)
-        # # caseid_stx.caseid_minitor43(self)
+        # caseid_stx.caseid_minitor43(self)
         # # # caseid_stx.caseid_minitor44(self)
         # # # caseid_stx.caseid_minitor45(self)
         # # # caseid_stx.caseid_minitor46(self)

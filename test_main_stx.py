@@ -9,7 +9,7 @@ import module_stx
 
 
 
-#update staxi sáng 05/03/2026
+#update staxi sáng 10/03/2026
 
 
 class Test(unittest.TestCase):
@@ -28,9 +28,9 @@ class Test(unittest.TestCase):
 
 
 
-        # # caseid_stx.caseid_login01(self)
+        # caseid_stx.caseid_login01(self)
         #
-        # # # caseid_stx.caseid_login02(self)
+        # caseid_stx.caseid_login02(self)
         # # # caseid_stx.caseid_login03(self)
         # #
         # # # caseid_stx.caseid_login06(self)
@@ -48,11 +48,11 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor02(self)
         # caseid_stx.caseid_minitor03(self)
         # caseid_stx.caseid_minitor04(self)
-        # # # caseid_stx.caseid_minitor05(self)
-        # # # caseid_stx.caseid_minitor06(self)
-        # # # caseid_stx.caseid_minitor07(self)
-        # # # caseid_stx.caseid_minitor08(self)
-        # # # caseid_stx.caseid_minitor09(self)
+        # caseid_stx.caseid_minitor05(self)
+        # caseid_stx.caseid_minitor06(self)
+        # caseid_stx.caseid_minitor07(self)
+        # caseid_stx.caseid_minitor08(self)
+        # caseid_stx.caseid_minitor09(self)
         # # # caseid_stx.caseid_minitor10(self)
         # # # caseid_stx.caseid_minitor11(self)
         # # # caseid_stx.caseid_minitor12(self)
@@ -109,7 +109,7 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_minitor57(self)
         # # # caseid_stx.caseid_minitor58(self)
         # # # caseid_stx.caseid_minitor59(self)
-        # # caseid_stx.caseid_minitor60(self)
+        # caseid_stx.caseid_minitor60(self)
         # # caseid_stx.caseid_minitor61(self)
         # # caseid_stx.caseid_minitor62(self)
         # #
@@ -121,7 +121,7 @@ class Test(unittest.TestCase):
         #
         #
         #
-        # # caseid_stx.caseid_minitor68(self)
+        # caseid_stx.caseid_minitor68(self)
         # # caseid_stx.caseid_minitor69(self)
         # # caseid_stx.caseid_minitor70(self)
         # # caseid_stx.caseid_minitor71(self)
@@ -246,7 +246,7 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_wallet35(self)
         # # # caseid_stx.caseid_wallet36(self)
         # # # caseid_stx.caseid_wallet37(self)
-        # # caseid_stx.caseid_wallet38(self)
+        # caseid_stx.caseid_wallet38(self)
         # # caseid_stx.caseid_wallet39(self)
         # # # caseid_stx.caseid_wallet40(self)
         # #

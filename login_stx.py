@@ -419,7 +419,15 @@ class login:
         var_stx.driver.find_element(By.XPATH, var_stx.login_password).send_keys(password)
         var_stx.driver.find_element(By.XPATH, var_stx.dangnhap).click()
         time.sleep(4)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "Login",
+
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, path_check)))
+            time.sleep(1)
+        except:
+            pass
+
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "Login",
                                               path_check, desire, path_image)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.close).click()

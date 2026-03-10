@@ -3495,7 +3495,33 @@ def caseid_admin20(self):
     result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
     administration.admin_10_3.admin_10_3_6_delete(self, "Admin20", event, result)
 
+def caseid_admin20_1(self):
+    get_datachecklist("Admin20_1")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_8(self, "Admin20_1", event, result)
 
+def caseid_admin20_2(self):
+    get_datachecklist("Admin20_2")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_8_search(self, "Admin20_2", event, result,
+                                                  var_stx.DataTables_2_2, var_stx.title_search,
+                                                  var_stx.DataTables_1_2, "_QuanTriNhomDoi_TenNhomTimKiem.png")
+
+def caseid_admin20_3(self):
+    get_datachecklist("Admin20_3")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_8_search(self, "Admin20_3", event, result,
+                                                  var_stx.DataTables_2_3, var_stx.code_search,
+                                                  var_stx.DataTables_1_3, "_QuanTriNhomDoi_TenNhomTimKiem.png")
+
+def caseid_admin20_4(self):
+    get_datachecklist("Admin20_4")
+    event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))
+    result = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 43, 2))
+    administration.admin_10_3.admin_10_3_8_add_new(self, "Admin20_4", event, result)
 def caseid_admin21(self):
     get_datachecklist("Admin21")
     event = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 42, 2))

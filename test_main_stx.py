@@ -15,14 +15,14 @@ import module_stx
 class Test(unittest.TestCase):
 
     def test_run1(self):
-        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        module_other_stx.clear_log()
-        module_other_stx.delete_image()
-        module_other_stx.timerun()
-        module_stx.ModuleTest()
-        module_stx.retest_casenone(self)
-        module_stx.retest_casefail(self)
-        module_other_stx.send_viber()
+        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        # module_other_stx.clear_log()
+        # module_other_stx.delete_image()
+        # module_other_stx.timerun()
+        # module_stx.ModuleTest()
+        # module_stx.retest_casenone(self)
+        # module_stx.retest_casefail(self)
+        # module_other_stx.send_viber()
 
 
 
@@ -150,7 +150,7 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_vehicle13(self)
         # # # caseid_stx.caseid_vehicle14(self)
         # # # caseid_stx.caseid_vehicle15(self)
-        # # caseid_stx.caseid_vehicle16(self)
+        # caseid_stx.caseid_vehicle16(self)
         # #
         # # caseid_stx.caseid_vehicle17(self)
         # # caseid_stx.caseid_vehicle18(self)
@@ -435,7 +435,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer75(self)
         # # caseid_stx.caseid_customer76(self)
         # caseid_stx.caseid_customer77(self)
-        # # caseid_stx.caseid_customer77_1(self)
+        caseid_stx.caseid_customer77_1(self)
         # #
         # # caseid_stx.caseid_customer78(self)
         # # caseid_stx.caseid_customer79(self)

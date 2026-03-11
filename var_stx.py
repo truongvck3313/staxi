@@ -1646,6 +1646,7 @@ assign_close2 = "//*[@id='ShowNotification']//*[text()='Đóng']"
 assign_vehicle_success = "//*[text()='Gán xe thành công.']"
 name_sdt_number = "//*[@name='DriverName']"
 info_other_icon = "//*[@id='configArea']//*[@class='fa fa-chevron-down']"
+cbb_status_walletpayment = "//*[@id='IsDriverPaidSearch']/option[3]"
 
 promotion_area1 = "//*[@id='LandmarkPromoteIds_chosen']/div/ul/li[1]"
 check_list_customer_detail_delete = "//*[text()='Xóa khách hàng thành công!']"

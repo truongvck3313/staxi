@@ -2638,6 +2638,7 @@ class contract_card:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
         time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.cbb_status_walletpayment).click()
         button = var_stx.driver.find_element(By.XPATH, var_stx.search)
         var_stx.driver.execute_script("arguments[0].click();", button)
         time.sleep(7)

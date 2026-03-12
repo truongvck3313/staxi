@@ -1979,7 +1979,7 @@ class report:
 
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(5)
+        time.sleep(10)
         get_info_web1()
         try:
             minitor_stx.get_info_excel(5, "Sheet")

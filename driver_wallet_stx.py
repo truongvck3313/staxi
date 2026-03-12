@@ -443,6 +443,10 @@ class list_wallet_driver:
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
         try:
+            wait = WebDriverWait(var_stx.driver, 20)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.title_page)))
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.ag1_9)))
+
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(page)
             name_driver = var_stx.driver.find_element(By.XPATH, var_stx.ag1_9).text
@@ -1195,12 +1199,13 @@ class wallet_history:
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
         try:
+            wait = WebDriverWait(var_stx.driver, 15)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.title_page)))
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.col_id_2_b)))
+
             page = var_stx.driver.find_element(By.XPATH, var_stx.title_page).text
             print(f"page: {page}")
-            try:
-                code_customer = var_stx.driver.find_element(By.XPATH, var_stx.col_id_2_a).text
-            except:
-                code_customer = var_stx.driver.find_element(By.XPATH, var_stx.table_1_1).text
+            code_customer = var_stx.driver.find_element(By.XPATH, var_stx.col_id_2_b).text
 
             print(f"code_customer: {code_customer}")
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Chuyển tới trang: {}\nMã quốc khách: {}"

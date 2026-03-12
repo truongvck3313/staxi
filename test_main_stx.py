@@ -9,7 +9,7 @@ import module_stx
 
 
 
-#update staxi sáng 10/03/2026(2)
+#update staxi sáng 12/03/2026
 
 
 class Test(unittest.TestCase):
@@ -23,7 +23,6 @@ class Test(unittest.TestCase):
         module_stx.retest_casenone(self)
         module_stx.retest_casefail(self)
         module_other_stx.send_viber()
-
 
 
 
@@ -150,7 +149,7 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_vehicle13(self)
         # # # caseid_stx.caseid_vehicle14(self)
         # # # caseid_stx.caseid_vehicle15(self)
-        # # caseid_stx.caseid_vehicle16(self)
+        # caseid_stx.caseid_vehicle16(self)
         # #
         # # caseid_stx.caseid_vehicle17(self)
         # # caseid_stx.caseid_vehicle18(self)
@@ -178,7 +177,7 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_vehicle39(self)
         # # caseid_stx.caseid_vehicle40(self)
         # # caseid_stx.caseid_vehicle41(self)
-        # # caseid_stx.caseid_vehicle42(self)
+        # caseid_stx.caseid_vehicle42(self)
         # # caseid_stx.caseid_vehicle43(self)
         # # caseid_stx.caseid_vehicle44(self)
         # # caseid_stx.caseid_vehicle45(self)
@@ -212,7 +211,7 @@ class Test(unittest.TestCase):
         # # #
         # # # caseid_stx.caseid_wallet07(self)
         # # # caseid_stx.caseid_wallet08(self)
-        # # caseid_stx.caseid_wallet09(self)
+        # caseid_stx.caseid_wallet09(self)
         # #
         # # # caseid_stx.caseid_wallet10(self)
         # # # caseid_stx.caseid_wallet11(self)
@@ -292,7 +291,7 @@ class Test(unittest.TestCase):
         #
         # # caseid_stx.caseid_promotion32(self)
         # # caseid_stx.caseid_promotion33(self)
-        # # caseid_stx.caseid_promotion34(self)
+        # caseid_stx.caseid_promotion34(self)
         # # #
         # caseid_stx.caseid_promotion35(self)
         # caseid_stx.caseid_promotion36(self)
@@ -435,7 +434,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer75(self)
         # # caseid_stx.caseid_customer76(self)
         # caseid_stx.caseid_customer77(self)
-        # # caseid_stx.caseid_customer77_1(self)
+        # caseid_stx.caseid_customer77_1(self)
         # #
         # # caseid_stx.caseid_customer78(self)
         # # caseid_stx.caseid_customer79(self)

@@ -1228,6 +1228,111 @@ class admin_10_3:
                                                   "_CHwebpage_ThemMoi.png")
         time.sleep(2)
 
+    def admin_10_3_8_update(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_8)
+        except:
+            admin_10_3.admin_10_3_8(self, "", "", "")
+        var_stx.driver.refresh()
+        time.sleep(5)
+        var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
+            var_stx.data['admin']['code'])
+        time.sleep(3)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+        element.click()
+        time.sleep(5)
+        name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_3a).text
+        if name == var_stx.data['admin']['code']:
+            var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2a).click()
+            time.sleep(2.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.input_code).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.input_code).send_keys(
+                var_stx.data['admin']['code_update'])
+            time.sleep(1.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.Save2a).click()
+            time.sleep(1.5)
+            module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                      "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
+                                                      var_stx.toast_message, "Thay đổi thành công!",
+                                                      "_CHwebpage_ChinhSua.png")
+            time.sleep(2)
+
+    def admin_10_3_8_add_new_other_company(self, code, eventname, result):
+        admin_10_3.admin_10_3_8(self, "", "", "")
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_change_company).click()
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_change_company1).click()
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_change_company2).click()
+        time.sleep(3)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_8)
+        except:
+            admin_10_3.admin_10_3_8(self, "", "", "")
+
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        #     time.sleep(0.5)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
+        #         var_stx.data['admin']['code'])
+        #     time.sleep(3)
+        #     wait = WebDriverWait(var_stx.driver, 10)
+        #     element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+        #     element.click()
+        #     name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
+        #     if name == var_stx.data['admin']['title']:
+        #         var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button1).click()
+        #         time.sleep(2.5)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
+        #         time.sleep(1.5)
+        # except:
+        #     pass
+        #
+        # try:
+        #     admin_10_3.admin_10_3_8_delete(self, "", "", "")
+        # except:
+        #     pass
+        # var_stx.driver.refresh()
+        time.sleep(7)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.add_new1)))
+        element.click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.close_but).click()
+        except:
+            pass
+        # var_stx.driver.find_element(By.XPATH, var_stx.input_title).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.input_title).send_keys(
+            var_stx.data['admin']['title'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.input_code).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.input_code).send_keys(
+            var_stx.data['admin']['code_update'])
+        time.sleep(1.5)
+        iframe = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "iframe")))
+        var_stx.driver.switch_to.frame(iframe)
+
+        body = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "body#tinymce")))
+        body.send_keys(var_stx.data['admin']['content'])
+        # quay lại main page
+        var_stx.driver.switch_to.default_content()
+        var_stx.driver.find_element(By.XPATH, var_stx.Save2a).click()
+        time.sleep(1.5)
+        module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                  "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
+                                                  var_stx.toast_message, "Thay đổi thành công!",
+                                                  "_CHwebpage_ThemMoi.png")
+        time.sleep(2)
     def admin_10_3_8_delete(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         try:
@@ -1241,18 +1346,159 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
             var_stx.data['admin']['code'])
         time.sleep(3)
-        name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
-        if name == var_stx.data['admin']['code']:
-            var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button).click()
-            time.sleep(2.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
-            time.sleep(1.5)
-            module_other_stx.write_result_text_try_if(code, eventname, result,
-                                                      "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
-                                                      var_stx.toast_message, "Thành công!",
-                                                      "_CHWebpage_Xoa.png")
-            var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+        element.click()
+        time.sleep(5)
+        var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button_a).click()
+        time.sleep(2.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
+        time.sleep(1.5)
+        module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                  "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
+                                                  var_stx.toast_message, "Thành công!",
+                                                  "_CHWebpage_Xoa.png")
+        var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(2)
+
+    def admin_10_3_9(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+        login_stx.login.login_stx(self, var_stx.data['login']['tk_admin_test'],
+                                  var_stx.data['login']['mk_admin_test'])
+        var_stx.driver.find_element(By.XPATH, var_stx.admin).click()
+        time.sleep(2)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3).click()
             time.sleep(2)
+        except:
+            var_stx.driver.find_element(By.XPATH, var_stx.admin).click()
+            time.sleep(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3).click()
+            time.sleep(2)
+
+        button = var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_9)
+        var_stx.driver.execute_script("arguments[0].click();", button)
+
+        # var_stx.driver.find_element(By.XPATH, var_stx.admin_10_3_6).click()
+        time.sleep(5)
+        try:
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.title_page1)))
+        except:
+            pass
+        print("Bắt đầu ghi kết quả")
+        module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                  "BÁO CÁO - 10.3 Quản trị công ty - 10.3.9 Danh mục đơn vị quản lý",
+                                                  var_stx.title_page1, "10.3.9 Danh mục đơn vị quản lý",
+                                                  "DanhMucDVQL.png")
+        print("Kết thúc ghi kết quả")
+
+    def admin_10_3_9_search(self, code, eventname, result, pathdata, pathinput, pathcheck, nameimage):
+        var_stx.driver.implicitly_wait(5)
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_9)
+        except:
+            admin_10_3.admin_10_3_9(self, "", "", "")
+
+        wait = WebDriverWait(var_stx.driver, 10)
+
+        data = wait.until(EC.presence_of_element_located((By.XPATH, pathdata)))
+        data = data.text
+
+        element = wait.until(EC.presence_of_element_located((By.XPATH, pathinput)))
+        element.send_keys(data)
+
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+        element.click()
+        try:
+            element = wait.until(EC.presence_of_element_located((By.XPATH, pathcheck)))
+            time.sleep(2)
+        except:
+            pass
+        module_other_stx.write_result_text_try_if_in(code, eventname, result,
+                                                     "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
+                                                     pathcheck, data, nameimage)
+
+        var_stx.driver.find_element(By.XPATH, pathinput).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        time.sleep(1)
+    def admin_10_3_9_add_new(self, code, eventname, result):
+        var_stx.driver.implicitly_wait(5)
+
+        try:
+            var_stx.driver.implicitly_wait(2)
+            var_stx.driver.find_element(By.XPATH, var_stx.check_admin_10_3_9)
+        except:
+            admin_10_3.admin_10_3_9(self, "", "", "")
+
+        # try:
+        #     var_stx.driver.find_element(By.XPATH, var_stx.name_input).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        #     time.sleep(0.5)
+        #     var_stx.driver.find_element(By.XPATH, var_stx.name_input).send_keys(
+        #         var_stx.data['admin']['name_company'])
+        #     time.sleep(3)
+        #     wait = WebDriverWait(var_stx.driver, 10)
+        #     element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+        #     element.click()
+        #     name = var_stx.driver.find_element(By.XPATH, var_stx.data_table_div_1_3).text
+        #     if name == var_stx.data['admin']['name_company']:
+        #         var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button1).click()
+        #         time.sleep(2.5)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
+        #         time.sleep(1.5)
+        # except:
+        #     pass
+        #
+        # try:
+        #     admin_10_3.admin_10_3_8_delete(self, "", "", "")
+        # except:
+        #     pass
+        # var_stx.driver.refresh()
+        time.sleep(7)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.add_new1)))
+        element.click()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.close_but).click()
+        except:
+            pass
+        # var_stx.driver.find_element(By.XPATH, var_stx.input_title).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.name_input).send_keys(
+            var_stx.data['admin']['name_company'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.full_name_input).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.full_name_input).send_keys(
+            var_stx.data['admin']['full_name'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.address_input).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.address_input).send_keys(
+            var_stx.data['admin']['address'])
+        time.sleep(1.5)
+        # var_stx.driver.find_element(By.XPATH, var_stx.tax_code_input).click()
+        # time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.tax_code_input).send_keys(
+            var_stx.data['admin']['tax_code'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.vat_input).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.vat_input).send_keys(
+            var_stx.data['admin']['vat'])
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.email_input).click()
+        time.sleep(1.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.email_input).send_keys(
+            var_stx.data['admin']['email'])
+        time.sleep(1.5)
+
+        var_stx.driver.find_element(By.XPATH, var_stx.import_excel).click()
+        time.sleep(1.5)
+        module_other_stx.write_result_text_try_if(code, eventname, result,
+                                                  "BÁO CÁO - 10.3 Quản trị công ty - 10.3.9 Danh sách cấu hình Webpage",
+                                                  var_stx.toast_message, "Thêm mới thành công!",
+                                                  "_DanhMucDVQL_ThemMoi.png")
+        time.sleep(2)
     def delete_type_vehicle(self, name):
         var_stx.driver.implicitly_wait(0.05)
         n = 0

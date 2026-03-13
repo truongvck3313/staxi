@@ -8,9 +8,8 @@ import module_stx
 
 
 
-
 #update staxi sáng 10/03/2026(2)
-
+#12.03
 
 class Test(unittest.TestCase):
 
@@ -23,6 +22,7 @@ class Test(unittest.TestCase):
         # module_stx.retest_casenone(self)
         # module_stx.retest_casefail(self)
         # module_other_stx.send_viber()
+
 
 
 
@@ -435,7 +435,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer75(self)
         # # caseid_stx.caseid_customer76(self)
         # caseid_stx.caseid_customer77(self)
-        caseid_stx.caseid_customer77_1(self)
+        # caseid_stx.caseid_customer77_1(self)
         # #
         # # caseid_stx.caseid_customer78(self)
         # # caseid_stx.caseid_customer79(self)
@@ -621,6 +621,16 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_admin20_2(self)
         # caseid_stx.caseid_admin20_3(self)
         # caseid_stx.caseid_admin20_4(self)
+        # caseid_stx.caseid_admin20_5(self)
+        caseid_stx.caseid_admin20_6(self)
+        caseid_stx.caseid_admin20_7(self)
+        # caseid_stx.caseid_admin20_8(self)
+        # caseid_stx.caseid_admin20_9(self)
+        # caseid_stx.caseid_admin20_10(self)
+        # caseid_stx.caseid_admin20_11(self)
+        # caseid_stx.caseid_admin20_12(self)
+        # caseid_stx.caseid_admin20_13(self)
+
 
         # caseid_stx.caseid_admin21(self)
         # caseid_stx.caseid_admin22(self)

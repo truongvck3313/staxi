@@ -154,7 +154,14 @@
 	"group_name_add_new_edit": "Tên nhóm testauto 123",
     "code": "codetest_123",
     "title": "Auto test cấu hình webpage",
-    "content": "Nội dung cấu hình webpage auto test"
+    "content": "Nội dung cấu hình webpage auto test",
+    "code_update" : "codetest_123abc",
+    "name_company" : "Test đơn vị",
+    "full_name" : "Test tên pháp nhân",
+    "address" : "Test địa chỉ",
+    "tax_code" : "111111111",
+    "vat" : "10",
+    "email" : "abc@gmail.com"
   }
 }
 

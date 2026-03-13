@@ -9,20 +9,20 @@ import module_stx
 
 
 
-#update staxi sáng 10/03/2026(2)
+#update sáng 13/03/2026
 
 
 class Test(unittest.TestCase):
 
     def test_run1(self):
-        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        # module_other_stx.clear_log()
-        # module_other_stx.delete_image()
-        # module_other_stx.timerun()
-        # module_stx.ModuleTest()
-        # module_stx.retest_casenone(self)
-        # module_stx.retest_casefail(self)
-        # module_other_stx.send_viber()
+        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        module_other_stx.clear_log()
+        module_other_stx.delete_image()
+        module_other_stx.timerun()
+        module_stx.ModuleTest()
+        module_stx.retest_casenone(self)
+        module_stx.retest_casefail(self)
+        module_other_stx.send_viber()
 
 
 
@@ -112,7 +112,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_minitor60(self)
         # caseid_stx.caseid_minitor61(self)
         # caseid_stx.caseid_minitor62(self)
-        #
+
         # caseid_stx.caseid_minitor63(self)
         # # caseid_stx.caseid_minitor64(self)
         # # caseid_stx.caseid_minitor65(self)
@@ -435,7 +435,7 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer75(self)
         # # caseid_stx.caseid_customer76(self)
         # caseid_stx.caseid_customer77(self)
-        caseid_stx.caseid_customer77_1(self)
+        # caseid_stx.caseid_customer77_1(self)
         # #
         # # caseid_stx.caseid_customer78(self)
         # # caseid_stx.caseid_customer79(self)

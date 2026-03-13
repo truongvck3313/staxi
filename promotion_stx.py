@@ -1305,7 +1305,7 @@ class install_new_app:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
         except:
             pass
-        module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
                                               var_stx.table_1_2, name, "_CaiAppMoi_TimKiem.png")
 
 

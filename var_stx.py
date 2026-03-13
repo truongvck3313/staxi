@@ -1446,7 +1446,7 @@ icon_delete1 = "//*[@class='ag-center-cols-viewport']/div/div[1]//*[@class='fa f
 icon_change_company = "//*[@id='LeftPanelToggle']"
 icon_change_company1 = "//*[@class='btn dropdown-toggle']"
 icon_change_company2 = "//*[@id='leftPanelCompany']/ul/li[2]"
-
+icon_change_company3 = "//*[@id='leftPanelCompany']/ul/li[1]"
 ag1_1_input = "//*[@class='ag-center-cols-viewport']/div/div[1]/div[1]//*[@type='checkbox']"
 ag1_1 = "//*[@class='ag-center-cols-viewport']/div/div[1]/div[1]"
 ag1_2 = "//*[@class='ag-center-cols-viewport']/div/div[1]/div[2]"

@@ -1162,6 +1162,8 @@ class admin_10_3:
 
         var_stx.driver.find_element(By.XPATH, pathinput).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(1)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+        element.click()
 
     def admin_10_3_8_add_new(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
@@ -1172,29 +1174,29 @@ class admin_10_3:
         except:
             admin_10_3.admin_10_3_8(self, "", "", "")
 
-        # try:
-        #     var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        #     time.sleep(0.5)
-        #     var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
-        #         var_stx.data['admin']['code'])
-        #     time.sleep(3)
-        #     wait = WebDriverWait(var_stx.driver, 10)
-        #     element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
-        #     element.click()
-        #     name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
-        #     if name == var_stx.data['admin']['title']:
-        #         var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button1).click()
-        #         time.sleep(2.5)
-        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
-        #         time.sleep(1.5)
-        # except:
-        #     pass
-        #
-        # try:
-        #     admin_10_3.admin_10_3_8_delete(self, "", "", "")
-        # except:
-        #     pass
-        # var_stx.driver.refresh()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
+                var_stx.data['admin']['code'])
+            time.sleep(3)
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+            element.click()
+            name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
+            if name == var_stx.data['admin']['title']:
+                var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button1).click()
+                time.sleep(2.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
+                time.sleep(1.5)
+        except:
+            pass
+
+        try:
+            admin_10_3.admin_10_3_8_delete(self, "", "", "")
+        except:
+            pass
+        var_stx.driver.refresh()
         time.sleep(7)
         wait = WebDriverWait(var_stx.driver, 10)
         element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.add_new1)))
@@ -1224,7 +1226,7 @@ class admin_10_3:
         time.sleep(1.5)
         module_other_stx.write_result_text_try_if(code, eventname, result,
                                                   "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
-                                                  var_stx.toast_message, "Thay đổi thành công!",
+                                                  var_stx.toast_message, "Thêm mới cấu hình thành công!",
                                                   "_CHwebpage_ThemMoi.png")
         time.sleep(2)
 
@@ -1259,7 +1261,7 @@ class admin_10_3:
             time.sleep(1.5)
             module_other_stx.write_result_text_try_if(code, eventname, result,
                                                       "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
-                                                      var_stx.toast_message, "Thay đổi thành công!",
+                                                      var_stx.toast_message, "Cập nhật thay đổi thành công!",
                                                       "_CHwebpage_ChinhSua.png")
             time.sleep(2)
 
@@ -1278,29 +1280,29 @@ class admin_10_3:
         except:
             admin_10_3.admin_10_3_8(self, "", "", "")
 
-        # try:
-        #     var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        #     time.sleep(0.5)
-        #     var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
-        #         var_stx.data['admin']['code'])
-        #     time.sleep(3)
-        #     wait = WebDriverWait(var_stx.driver, 10)
-        #     element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
-        #     element.click()
-        #     name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
-        #     if name == var_stx.data['admin']['title']:
-        #         var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button1).click()
-        #         time.sleep(2.5)
-        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
-        #         time.sleep(1.5)
-        # except:
-        #     pass
-        #
-        # try:
-        #     admin_10_3.admin_10_3_8_delete(self, "", "", "")
-        # except:
-        #     pass
-        # var_stx.driver.refresh()
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
+                var_stx.data['admin']['code_update'])
+            time.sleep(3)
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
+            element.click()
+            name = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
+            if name == var_stx.data['admin']['title']:
+                var_stx.driver.find_element(By.XPATH, var_stx.datatable1_7_button1).click()
+                time.sleep(2.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.igree2a).click()
+                time.sleep(1.5)
+        except:
+            pass
+
+        try:
+            admin_10_3.admin_10_3_8_delete(self, "", "", "")
+        except:
+            pass
+        var_stx.driver.refresh()
         time.sleep(7)
         wait = WebDriverWait(var_stx.driver, 10)
         element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.add_new1)))
@@ -1330,9 +1332,15 @@ class admin_10_3:
         time.sleep(1.5)
         module_other_stx.write_result_text_try_if(code, eventname, result,
                                                   "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
-                                                  var_stx.toast_message, "Thay đổi thành công!",
+                                                  var_stx.toast_message, "Thêm mới cấu hình thành công!",
                                                   "_CHwebpage_ThemMoi.png")
         time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_change_company).click()
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_change_company1).click()
+        time.sleep(3)
+        var_stx.driver.find_element(By.XPATH, var_stx.icon_change_company3).click()
+        time.sleep(3)
     def admin_10_3_8_delete(self, code, eventname, result):
         var_stx.driver.implicitly_wait(5)
         try:
@@ -1344,7 +1352,7 @@ class admin_10_3:
         var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(
-            var_stx.data['admin']['code'])
+            var_stx.data['admin']['code_update'])
         time.sleep(3)
         wait = WebDriverWait(var_stx.driver, 10)
         element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.Save)))
@@ -1356,7 +1364,7 @@ class admin_10_3:
         time.sleep(1.5)
         module_other_stx.write_result_text_try_if(code, eventname, result,
                                                   "BÁO CÁO - 10.3 Quản trị công ty - 10.3.8 Danh sách cấu hình Webpage",
-                                                  var_stx.toast_message, "Thành công!",
+                                                  var_stx.toast_message, "Xóa cấu hình thành công!",
                                                   "_CHWebpage_Xoa.png")
         var_stx.driver.find_element(By.XPATH, var_stx.code_search).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(2)

@@ -364,6 +364,11 @@ class login:
         var_stx.driver.get(var_stx.data['login']['company'])
         time.sleep(5)
         try:
+            var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+            time.sleep(2)
+        except:
+            pass
+        try:
             login.logout_stx(self)
             time.sleep(1)
         except:
@@ -405,6 +410,11 @@ class login:
         var_stx.driver.set_page_load_timeout(10)
         var_stx.driver.get(link)
         time.sleep(5)
+        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+            time.sleep(2)
+        except:
+            pass
         try:
             var_stx.driver.implicitly_wait(1)
             login.logout_stx(self)

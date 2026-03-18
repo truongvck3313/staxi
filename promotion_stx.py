@@ -1305,7 +1305,7 @@ class install_new_app:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.table_1_2)))
         except:
             pass
-        module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
+        module_other_stx.write_result_text_try_if_in(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
                                               var_stx.table_1_2, name, "_CaiAppMoi_TimKiem.png")
 
 
@@ -1979,7 +1979,7 @@ class report:
 
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel2).click()
-        time.sleep(5)
+        time.sleep(10)
         get_info_web1()
         try:
             minitor_stx.get_info_excel(5, "Sheet")

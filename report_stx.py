@@ -2311,18 +2311,18 @@ class report_8_4:
             delete = var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start)
             delete.send_keys(Keys.CONTROL, "a")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("09/09/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("02/03/2026 00:00")
             time.sleep(0.5)
 
             delete = var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end)
             delete.send_keys(Keys.CONTROL, "a")
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("09/09/2025 00:05")
+            var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("02/03/2026 09:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
             time.sleep(2)
             var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-            time.sleep(7)
+            time.sleep(20)
             var_stx.driver.find_element(By.XPATH, var_stx.ag1_2)
         except:
             # WebDriverWait(var_stx.driver, 15).until(EC.invisibility_of_element_located((By.CLASS_NAME, "loading-cms")))
@@ -2350,6 +2350,30 @@ class report_8_4:
                                               var_stx.ag1_2, "", "_ChiTietDoanhThuTuApp_TimKiem.png")
 
 
+    # def report_8_4_2_excel(self, code, eventname, result):
+    #     var_stx.driver.implicitly_wait(2)
+    #     module_other_stx.delete_excel()
+    #     minitor_stx.clearData_luutamthoi_checkexcel(var_stx.path_luutamthoi, "Sheet1", "", "", "", "", "", "")
+    #     try:
+    #         var_stx.driver.implicitly_wait(2)
+    #         var_stx.driver.find_element(By.XPATH, var_stx.check_report_8_4_2)
+    #     except:
+    #         report_8_4.report_8_4_2_search(self, "", "", "")
+    #
+    #     WebDriverWait(var_stx.driver, 15).until(EC.invisibility_of_element_located((By.CLASS_NAME, "loading-cms")))
+    #     time.sleep(1)
+    #     var_stx.driver.find_element(By.XPATH, var_stx.export_excel5).click()
+    #     time.sleep(1)
+    #     try:
+    #         wait = WebDriverWait(var_stx.driver, 20)
+    #         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+    #         dowload_excel(self, "8.4.2 Doanh thu từ app lái xe & định vị")
+    #     except:
+    #         pass
+    #
+    #     module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Chi tiết doanh thu từ app lái xe & định vị",
+    #                                                     "_ChiTietDoanhThuTuApp.xlsx", "_ChiTietDoanhThuTuApp_XuatExcel.png")
+
     def report_8_4_2_excel(self, code, eventname, result):
         var_stx.driver.implicitly_wait(2)
         module_other_stx.delete_excel()
@@ -2370,10 +2394,9 @@ class report_8_4:
             dowload_excel(self, "8.4.2 Doanh thu từ app lái xe & định vị")
         except:
             pass
-
-        module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Chi tiết doanh thu từ app lái xe & định vị",
-                                                        "_ChiTietDoanhThuTuApp.xlsx", "_ChiTietDoanhThuTuApp_XuatExcel.png")
-
+        get_info_web1()
+        minitor_stx.get_info_excel1(5, "Sheet 1")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Doanh thu từ app lái xe & định vị", name_column_break="Lộ trình")
 
     def report_8_4_2_excel_full(self, code, eventname, result):
         var_stx.driver.implicitly_wait(2)
@@ -2392,13 +2415,39 @@ class report_8_4:
         try:
             wait = WebDriverWait(var_stx.driver, 20)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
-
-            dowload_excel(self, "8.4.2 Chi tiết doanh thu từ app lái xe & định vị")
+            dowload_excel(self, "8.4.2 Doanh thu từ app lái xe & định vị")
         except:
             pass
+        get_info_web1()
+        minitor_stx.get_info_excel1(5, "Sheet 1")
+        minitor_stx.check_info_web_excel2(code, eventname, result,
+                                          "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Doanh thu từ app lái xe & định vị",
+                                          name_column_break="Lộ trình")
 
-        module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Chi tiết doanh thu từ app lái xe & định vị",
-                                                        "_ChiTietDoanhThuTuApp_Full.xlsx", "_ChiTietDoanhThuTuApp_XuatExcelFull.png")
+    # def report_8_4_2_excel_full(self, code, eventname, result):
+    #     var_stx.driver.implicitly_wait(2)
+    #     module_other_stx.delete_excel()
+    #     minitor_stx.clearData_luutamthoi_checkexcel(var_stx.path_luutamthoi, "Sheet1", "", "", "", "", "", "")
+    #     try:
+    #         var_stx.driver.implicitly_wait(2)
+    #         var_stx.driver.find_element(By.XPATH, var_stx.check_report_8_4_2)
+    #     except:
+    #         report_8_4.report_8_4_2_search(self, "", "", "")
+    #
+    #     WebDriverWait(var_stx.driver, 15).until(EC.invisibility_of_element_located((By.CLASS_NAME, "loading-cms")))
+    #     time.sleep(1)
+    #     var_stx.driver.find_element(By.XPATH, var_stx.export_excel_full).click()
+    #     time.sleep(1)
+    #     try:
+    #         wait = WebDriverWait(var_stx.driver, 20)
+    #         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
+    #
+    #         dowload_excel(self, "8.4.2 Chi tiết doanh thu từ app lái xe & định vị")
+    #     except:
+    #         pass
+    #
+    #     module_other_stx.write_result_dowload_file(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Chi tiết doanh thu từ app lái xe & định vị",
+    #                                                     "_ChiTietDoanhThuTuApp_Full.xlsx", "_ChiTietDoanhThuTuApp_XuatExcelFull.png")
 
         # try:
         #     var_stx.driver.implicitly_wait(1)

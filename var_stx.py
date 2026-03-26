@@ -1941,6 +1941,7 @@ swal2_title = "//*[@id='swal2-title']"
 info_invoice_cancel = "//*[@aria-live='assertive']//*[text()='Hủy']"
 info_invoice_x = "//*[@id='invoiceForm']/div[1]/button"
 info_invoice_actual_revenue = "//*[@id='Money']"
+info_invoice_actual_revenue2 = "//*[@id='Money']|//*[@aria-labelledby='Money_label']"
 info_invoice_actual_revenue1 = "//*[@aria-labelledby='Money_label']"
 info_invoice_address_from = "//*[@class='form-horizontal']/div[2]/div/span[1]/textarea"
 info_invoice_address_to = "//*[@class='form-horizontal']/div[3]/div/span[1]/textarea"
@@ -2302,5 +2303,5 @@ list_driver_violation = "//*[@class='nav-title']//*[text()='2.6.3 Danh sách l
 success_connect = "//*[text()='Success to connect server']"
 add_new_time_type_vehicle_select = "//*[@role='searchbox']"
 search4 = "//button[@type='submit' and contains(@class,'btn-primary')]"
-
+InvoiceType_2 = "//*[@name='InvoiceType']//*[@value='2']"
 

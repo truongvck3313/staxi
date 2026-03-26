@@ -803,29 +803,49 @@ class accounting_14_1:
 
         var_stx.driver.find_element(By.XPATH, var_stx.Status_notyetprocessed).click()
         time.sleep(1.5)
+
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.InvoiceType)))
+        element.click()
+        time.sleep(2)
+        var_stx.driver.find_element(By.XPATH, var_stx.InvoiceType_2).click()
+        time.sleep(1.5)
+
         var_stx.driver.find_element(By.XPATH, var_stx.search3).click()
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.accounting_2_DisplayPublicBookId)))
         time.sleep(1)
 
 
-        n = -1
-        while (n < 30):
+        n = 1
+        while (n < 15):
             n = n + 1
             n = str(n)
-            path_icon = f"//div[@row-index='{n}']//div[@role='gridcell' and @col-id='{col_id}']/span/a/img"
+            # path_icon = f"//div[@row-index='{n}']//div[@role='gridcell' and @col-id='{col_id}']/span/a"
+            path_icon = f"(//div[@col-id='{col_id}'])[{n}]/a|(//div[@col-id='{col_id}'])[{n}]/span/a"
+            print(f"path_icon: {path_icon}")
             try:
-                var_stx.driver.find_element(By.XPATH, path_icon).click()
+                try:
+                    var_stx.driver.find_element(By.XPATH, path_icon).click()
+                except:
+                    scroll_bar = var_stx.driver.find_element(By.XPATH, "//*[@class='ag-body-horizontal-scroll-viewport']")
+                    ActionChains(var_stx.driver).click_and_hold(scroll_bar).move_by_offset(500, 0).release().perform()
+                    time.sleep(1)
+                    var_stx.driver.find_element(By.XPATH, path_icon).click()
+
                 time.sleep(2.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.info_invoice_actual_revenue2)
+                print("đã click")
                 break
             except:
                 pass
             n = int(n)
 
 
-
     def accounting_14_1_icon(self, code, eventname, result, src, path_check, desire, name_image):
         var_stx.driver.implicitly_wait(5)
         accounting_14_1.select_icon(self, "01/06/2025 00:00", "02/06/2025 23:59", src)
+
+
+
 
         try:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.info_invoice_actual_revenue)))

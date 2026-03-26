@@ -220,6 +220,10 @@ class list_promotion:
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "Auto_KM_Rieng"+number)
         var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 23, 3, "Auto_KM_Rieng"+number)
 
+        if type_promotion == "Khuyến mại chung":
+            name_km = "Auto_KM_Chung" + number
+        else:
+            name_km = "Auto_KM_Rieng" + number
 
         time.sleep(0.5)
         iframe = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten)
@@ -399,14 +403,24 @@ class list_promotion:
         time.sleep(1.5)
 
         var_stx.driver.find_element(By.XPATH, var_stx.save).click()
-        time.sleep(1)
-        WebDriverWait(var_stx.driver, 15).until(EC.presence_of_element_located((By.XPATH, var_stx.promotion_update_success)))
-        module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.1 Danh sách khuyến mại",
-                                                  var_stx.promotion_update_success, "Khuyến mại đã được cập nhật thành công", name_image)
         time.sleep(2)
-        button = var_stx.driver.find_element(By.XPATH, var_stx.come_back)
-        var_stx.driver.execute_script("arguments[0].click();", button)
-        time.sleep(4)
+        try:
+            WebDriverWait(var_stx.driver, 10).until(EC.presence_of_element_located((By.XPATH, var_stx.col_id_name2)))
+        except:
+            pass
+
+        module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.1 Danh sách khuyến mại",
+                                                  var_stx.col_id_name2, name_km, name_image)
+
+
+
+
+        # module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.1 Danh sách khuyến mại",
+        #                                           var_stx.promotion_update_success, "Khuyến mại đã được cập nhật thành công", name_image)
+        # time.sleep(2)
+        # button = var_stx.driver.find_element(By.XPATH, var_stx.come_back)
+        # var_stx.driver.execute_script("arguments[0].click();", button)
+        # time.sleep(4)
 
 
     def list_promotion_check_info(self, code, eventname, result):
@@ -1478,7 +1492,7 @@ class install_new_app:
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_promotion)))
         time.sleep(1)
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
-                                                  var_stx.check_promotion, "Khuyến mại đã được tạo thành công", "_CaiAppMoi_ThemMoi.png")
+                                                  var_stx.check_promotion, "Khuyến mại đã được cập nhật thành công", "_CaiAppMoi_ThemMoi.png")
 
         button = var_stx.driver.find_element(By.XPATH, var_stx.come_back)
         var_stx.driver.execute_script("arguments[0].click();", button)

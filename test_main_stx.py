@@ -117,9 +117,9 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_minitor65(self)
         # caseid_stx.caseid_minitor66(self)
         # caseid_stx.caseid_minitor67(self)
-
-
-
+        #
+        #
+        #
         # caseid_stx.caseid_minitor68(self)
         # caseid_stx.caseid_minitor69(self)
         # caseid_stx.caseid_minitor70(self)
@@ -431,8 +431,8 @@ class Test(unittest.TestCase):
         # # caseid_stx.caseid_customer73(self)
         # caseid_stx.caseid_customer74(self)
         # #
-        # # caseid_stx.caseid_customer75(self)
-        # # caseid_stx.caseid_customer76(self)
+        # caseid_stx.caseid_customer75(self)
+        # caseid_stx.caseid_customer76(self)
         # caseid_stx.caseid_customer77(self)
         # caseid_stx.caseid_customer77_1(self)
         # #

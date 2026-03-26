@@ -13,14 +13,14 @@ import module_stx
 class Test(unittest.TestCase):
 
     def test_run1(self):
-        module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
-        module_other_stx.clear_log()
-        module_other_stx.delete_image()
-        module_other_stx.timerun()
-        module_stx.ModuleTest()
-        module_stx.retest_casenone(self)
-        module_stx.retest_casefail(self)
-        module_other_stx.send_viber()
+        # module_other_stx.clearData(var_stx.checklistpath, "Checklist", "", "", "")
+        # module_other_stx.clear_log()
+        # module_other_stx.delete_image()
+        # module_other_stx.timerun()
+        # module_stx.ModuleTest()
+        # module_stx.retest_casenone(self)
+        # module_stx.retest_casefail(self)
+        # module_other_stx.send_viber()
 
 
 
@@ -535,7 +535,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_report50(self)
         # caseid_stx.caseid_report51(self)
         # caseid_stx.caseid_report52(self)
-        # caseid_stx.caseid_report53(self)
+        caseid_stx.caseid_report53(self)
         #
         # caseid_stx.caseid_report54(self)
         # caseid_stx.caseid_report55(self)

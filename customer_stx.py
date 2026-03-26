@@ -166,13 +166,14 @@ class list_customer:
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
         data = var_stx.driver.find_element(By.XPATH, path_data).text
+        if name_image == "_DanhSachKhachHang_TenDangNhap.png":
+            data = data[0:3]
+            print(f"data: {data}")
+
         var_stx.driver.find_element(By.XPATH, var_stx.name_sdt_email).send_keys(data)
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
-
-
-
         module_other_stx.write_result_text_try_if_in(code, eventname, result, "KHÁCH HÀNG - 7.1 Danh sách khách hàng",
                                               path_check, data, name_image)
 
@@ -2638,7 +2639,7 @@ class contract_card:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.cbb_status_walletpayment).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.StatusBFA2).click()
         button = var_stx.driver.find_element(By.XPATH, var_stx.search)
         var_stx.driver.execute_script("arguments[0].click();", button)
         time.sleep(7)

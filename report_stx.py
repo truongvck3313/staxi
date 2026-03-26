@@ -383,10 +383,9 @@ def get_info_web11():
         n = int(n)
 
 
-def get_info_web12():
+def get_info_web12(n=0):
     var_stx.driver.implicitly_wait(0.05)
     row = 119
-    n = 0
     while (n < 17):
         n += 1
         path_column = f"(//div[@aria-colindex='{n}'])[1]"
@@ -1771,7 +1770,7 @@ class report_8_1:
         time.sleep(7)
         get_info_web3()
         minitor_stx.get_info_excel1(5, "Sheet 1")
-        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.19 Báo cáo tổng cuốc khách Fixed")
+        minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.1 Báo cáo cuốc khách - 8.1.19 Báo cáo tổng cuốc khách Fixed", name_column_break="Địa chỉ đón")
 
 
 

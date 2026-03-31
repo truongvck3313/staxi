@@ -2115,11 +2115,11 @@ class admin_10_6:
         logging.info("Tên sự kiện - " + eventname)
         logging.info("Kết quả - " + result)
         try:
-            flied1 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_1).text
-            flied2 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_2).text
-            flied3 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_3).text
-            flied4 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_4).text
-            flied5 = var_stx.driver.find_element(By.XPATH, var_stx.datatable1_5).text
+            flied1 = var_stx.driver.find_element(By.XPATH, var_stx.datatb1).text
+            flied2 = var_stx.driver.find_element(By.XPATH, var_stx.datatb2).text
+            flied3 = var_stx.driver.find_element(By.XPATH, var_stx.datatb3).text
+            flied4 = var_stx.driver.find_element(By.XPATH, var_stx.datatb4).text
+            flied5 = var_stx.driver.find_element(By.XPATH, var_stx.datatb5).text
             module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "STT: {}\nTên cấu hình: {}\nGiá trị: {}\nKiểu dữ liệu: {}\nGhi chú: {}"
                                        .format(flied1, flied2, flied3, flied4, flied5))
             if (flied1 and flied2 and flied3 and flied4 != None):

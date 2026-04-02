@@ -648,13 +648,19 @@ def check_info_web_excel1(code, eventname, result, path_module, name_column_brea
 
 
 
+
+
+
+# =========================
+# CLEAN TEXT (QUAN TRỌNG)
+# =========================
 import re
 import logging
 from datetime import datetime
 
 
 # =========================
-# CLEAN TEXT (QUAN TRỌNG)
+# CLEAN TEXT
 # =========================
 def clean_text(value: str) -> str:
     if value is None:
@@ -662,19 +668,14 @@ def clean_text(value: str) -> str:
 
     value = str(value)
 
-    # normalize None string
     if value.strip().lower() == "none":
         return ""
 
-    # remove excel hidden chars
     value = value.replace('_x000D_', '')
     value = value.replace('\r', '')
     value = value.replace('\n', '')
 
-    # remove invisible unicode
     value = re.sub(r'[\u200B-\u200D\uFEFF]', '', value)
-
-    # normalize space
     value = re.sub(r'\s+', ' ', value)
 
     return value.strip()
@@ -686,36 +687,33 @@ def clean_text(value: str) -> str:
 def normalize_column_name(name: str) -> str:
     name = clean_text(name)
 
-    # remove (1), (2)...
     name = re.sub(r'\(\d+\)', '', name)
-
-    # 🔥 FIX: đảm bảo có space trước (
     name = re.sub(r'\s*\(\s*', ' (', name)
-
-    # 🔥 FIX: remove space dư trước )
     name = re.sub(r'\s*\)', ')', name)
-
-    # normalize space lần cuối
     name = re.sub(r'\s+', ' ', name)
 
     return name.lower().strip()
 
 
 # =========================
-# NUMBER PARSE
+# NUMBER PARSE (FIXED)
 # =========================
 def normalize_number_string(num_str: str):
     num_str = clean_text(num_str)
 
-    # remove currency
-    num_str = num_str.replace('₫', '').replace('đ', '')
+    # 🔥 FIX: chỉ có dấu chấm → coi là thousand (VN format)
+    if '.' in num_str and ',' not in num_str:
+        # nếu phần sau dấu . có đúng 3 số → thousand
+        parts = num_str.split('.')
+        if all(len(p) == 3 for p in parts[1:]):
+            num_str = ''.join(parts)
+            return num_str
 
+    # logic cũ
     if '.' in num_str and ',' in num_str:
         if num_str.rfind('.') > num_str.rfind(','):
-            # US
             num_str = num_str.replace(',', '')
         else:
-            # EU
             num_str = num_str.replace('.', '').replace(',', '.')
     else:
         num_str = num_str.replace(',', '')
@@ -729,8 +727,11 @@ def parse_number(value: str):
     if not value:
         return None
 
-    # reject nếu có chữ cái
-    if re.search(r'[A-Za-z]', value):
+    # 🔥 FIX: remove currency + ký tự rác
+    value = value.replace('₫', '').replace('đ', '')
+    value = re.sub(r'[^\d.,-]', '', value)
+
+    if not value:
         return None
 
     match = re.search(r'-?[\d.,]+', value)
@@ -754,7 +755,7 @@ def parse_datetime(value):
     formats = [
         "%d/%m/%Y %H:%M:%S",
         "%d/%m/%Y %H:%M",
-        "%H:%M:%S %d/%m/%Y",   # 🔥 FIX CASE CỦA BẠN
+        "%H:%M:%S %d/%m/%Y",
         "%H:%M %d/%m/%Y"
     ]
 
@@ -768,12 +769,12 @@ def parse_datetime(value):
 
 
 # =========================
-# TYPE DETECT
+# TYPE DETECT (FIXED)
 # =========================
 def detect_type(value: str):
     value = clean_text(value)
 
-    if not value:
+    if value in ["", "0"]:
         return "empty"
 
     if parse_datetime(value):
@@ -786,7 +787,7 @@ def detect_type(value: str):
 
 
 # =========================
-# COMPARE VALUE
+# COMPARE VALUE (UPGRADE)
 # =========================
 def compare_value(web, excel):
     web = clean_text(web)
@@ -794,6 +795,12 @@ def compare_value(web, excel):
 
     type_web = detect_type(web)
     type_excel = detect_type(excel)
+
+    # 🔥 FIX: allow empty = 0
+    if {type_web, type_excel} == {"empty", "number"}:
+        w = parse_number(web)
+        e = parse_number(excel)
+        return (w in [0, None]) and (e in [0, None])
 
     if type_web != type_excel:
         logging.error(f"TYPE MISMATCH | web={type_web} | excel={type_excel}")
@@ -815,6 +822,23 @@ def compare_value(web, excel):
 
 
 # =========================
+# EMPTY CHECK (FIXED)
+# =========================
+def is_empty(val):
+    val = clean_text(val)
+
+    if val == "":
+        return True
+
+    # 🔥 FIX: nếu parse ra số = 0 → coi là empty
+    num = parse_number(val)
+    if num == 0:
+        return True
+
+    return False
+
+
+# =========================
 # MAIN FUNCTION
 # =========================
 def check_info_web_excel2(code, eventname, result, path_module, name_column_break=None):
@@ -827,7 +851,7 @@ def check_info_web_excel2(code, eventname, result, path_module, name_column_brea
     logging.info(f"Tên sự kiện - {eventname}")
     logging.info(f"Kết quả - {result}")
 
-    all_pass = True
+    has_fail = False  # 🔥 FIX: dùng flag fail
 
     for row in range(START_ROW, END_ROW + 1):
 
@@ -862,32 +886,32 @@ def check_info_web_excel2(code, eventname, result, path_module, name_column_brea
 
         # ===== CHECK NAME =====
         if name_web != name_excel:
-            logging.error("Sai tên cột")
-            all_pass = False
+            logging.error("❌ Sai tên cột")
+            has_fail = True
             continue
 
         logging.info(f"Dữ liệu web: {data_web}")
         logging.info(f"Dữ liệu excel: {data_excel}")
 
-        # ===== EMPTY LOGIC (FIX CHUẨN) =====
-        web_empty = (data_web == "")
-        excel_empty = (data_excel == "")
+        # ===== EMPTY LOGIC =====
+        web_empty = is_empty(data_web)
+        excel_empty = is_empty(data_excel)
 
         if web_empty and excel_empty:
             logging.info("Cả 2 đều empty → True")
             continue
 
         if web_empty != excel_empty:
-            logging.error("1 bên empty, 1 bên có dữ liệu")
-            all_pass = False
+            logging.error(f"❌ FAIL row {row} | 1 bên empty")
+            has_fail = True
             continue
 
         # ===== COMPARE =====
         if compare_value(data_web, data_excel):
             logging.info("True")
         else:
-            logging.error(f"False | web={data_web} | excel={data_excel}")
-            all_pass = False
+            logging.error(f"❌ FAIL row {row} | web={data_web} | excel={data_excel}")
+            has_fail = True
 
             module_other_stx.writeData(
                 var_stx.checklistpath,
@@ -900,15 +924,17 @@ def check_info_web_excel2(code, eventname, result, path_module, name_column_brea
             )
 
     # ===== FINAL =====
+    final_result = "Fail" if has_fail else "Pass"
+
     module_other_stx.writeData(
         var_stx.checklistpath,
         "Checklist",
         code,
         7,
-        "Pass" if all_pass else "Fail"
+        final_result
     )
 
-    logging.info("FINAL: " + ("PASS" if all_pass else "FAIL"))
+    logging.info("FINAL: " + final_result)
 
 
 

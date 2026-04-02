@@ -1331,172 +1331,199 @@ class install_new_app:
             var_stx.driver.find_element(By.XPATH, var_stx.check_install_new_app)
         except:
             install_new_app.install_new_app(self, "", "", "")
+        
+        #tạm thời cỏ cục này
+        # number_old = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 25, 2))
+        # var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        # var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(number_old)
+        # time.sleep(1)
+        # var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        # time.sleep(4)
+        # try:
+        #     color_active = var_stx.driver.find_element(By.XPATH, var_stx.table_1_6_button).value_of_css_property("color")
+        #     text_active = var_stx.driver.find_element(By.XPATH, var_stx.table_1_6_button).text
+        #     print("color:"+ color_active)
+        #     print("text:"+ text_active)
+        #     if color_active == "rgba(51, 122, 183, 1)" and text_active == "Kích hoạt":
+        #         var_stx.driver.find_element(By.XPATH, var_stx.active).click()
+        #         time.sleep(2.5)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
+        #         time.sleep(2)
+        #         try:
+        #             var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+        #             time.sleep(4)
+        #         except:
+        #             pass
+        #         var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(number_old)
+        #         time.sleep(1)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
+        #         time.sleep(4)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.stop_active).click()
+        #         time.sleep(2.5)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
+        #         time.sleep(2)
+        #         try:
+        #             var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+        #             time.sleep(4)
+        #         except:
+        #             pass
+        #
+        #     if color_active == "rgba(51, 122, 183, 1)" and text_active == "Ngừng kích hoạt":
+        #         var_stx.driver.find_element(By.XPATH, var_stx.active).click()
+        #         time.sleep(2.5)
+        #         var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
+        #         time.sleep(2)
+        #         try:
+        #             var_stx.driver.find_element(By.XPATH, var_stx.close).click()
+        #             time.sleep(4)
+        #         except:
+        #             pass
+        # except:
+        #     var_stx.driver.refresh()
+        #     time.sleep(7)
 
-        number_old = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 25, 2))
-        var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(number_old)
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(4)
-        try:
-            color_active = var_stx.driver.find_element(By.XPATH, var_stx.table_1_6_button).value_of_css_property("color")
-            text_active = var_stx.driver.find_element(By.XPATH, var_stx.table_1_6_button).text
-            print("color:"+ color_active)
-            print("text:"+ text_active)
-            if color_active == "rgba(51, 122, 183, 1)" and text_active == "Kích hoạt":
-                var_stx.driver.find_element(By.XPATH, var_stx.active).click()
-                time.sleep(2.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
-                time.sleep(2)
-                try:
-                    var_stx.driver.find_element(By.XPATH, var_stx.close).click()
-                    time.sleep(4)
-                except:
-                    pass
-                var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-                var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(number_old)
-                time.sleep(1)
-                var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-                time.sleep(4)
-                var_stx.driver.find_element(By.XPATH, var_stx.stop_active).click()
-                time.sleep(2.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
-                time.sleep(2)
-                try:
-                    var_stx.driver.find_element(By.XPATH, var_stx.close).click()
-                    time.sleep(4)
-                except:
-                    pass
+        def fill_promotion():
+            vehicle_driver_stx.increase()
+            number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
 
-            if color_active == "rgba(51, 122, 183, 1)" and text_active == "Ngừng kích hoạt":
-                var_stx.driver.find_element(By.XPATH, var_stx.active).click()
-                time.sleep(2.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.igree2).click()
-                time.sleep(2)
-                try:
-                    var_stx.driver.find_element(By.XPATH, var_stx.close).click()
-                    time.sleep(4)
-                except:
-                    pass
-        except:
-            var_stx.driver.refresh()
-            time.sleep(7)
+            var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
+            time.sleep(2)
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.promotion_add_new_name)))
+            time.sleep(2)
 
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_name).send_keys("Auto_CaiAppMoi"+number)
+            module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "Auto_CaiAppMoi"+number)
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 25, 2, "Auto_CaiAppMoi" + number)
 
-        vehicle_driver_stx.increase()
-        number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
-
-        var_stx.driver.find_element(By.XPATH, var_stx.add_new1).click()
-        time.sleep(2)
-        wait = WebDriverWait(var_stx.driver, 10)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.promotion_add_new_name)))
-        time.sleep(2)
-
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_name).send_keys("Auto_CaiAppMoi"+number)
-        module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 14, "Auto_CaiAppMoi"+number)
-        var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 25, 2, "Auto_CaiAppMoi" + number)
-
-        time.sleep(0.5)
-        iframe = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten)
-        var_stx.driver.switch_to.frame(iframe)
-        content_area = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten_body)
-        content_area.send_keys(var_stx.data['promotion']['conten1'])
-        var_stx.driver.switch_to.default_content()
-        time.sleep(1)
-
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_notification).send_keys(var_stx.data['promotion']['notification1'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_explanation).send_keys(var_stx.data['promotion']['explanation1'])    #giải trình
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_image).send_keys(var_stx.data['promotion']['image1'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_banner).send_keys(var_stx.data['promotion']['image2'])
-        time.sleep(0.5)
-        element = var_stx.driver.find_element(By.XPATH, "//*[text()='Tặng tiền khi giới thiệu']")
-        var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
-
-
-        #Kiểu hiển thị
-        var_stx.driver.find_element(By.XPATH, var_stx.type_display0).click()    #mặc định
-        time.sleep(1)
-
-        #Thời gian
-        var_stx.driver.find_element(By.XPATH, var_stx.time_start).send_keys(var_stx.data['promotion']['time_start'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.time_end).send_keys(var_stx.data['promotion']['time_end'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_image).click()
-
-
-        #Cấu hình người cài App mới
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.donate_money_default).click()
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.promotional_money).send_keys(var_stx.data['promotion']['promotional_money'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.max_promotion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.max_promotion).send_keys(var_stx.data['promotion']['max_promotion'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.money_promotional).send_keys(var_stx.data['promotion']['money_promotional'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.count_sd).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.count_sd).send_keys(var_stx.data['promotion']['count_sd'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.group1).click()
-        # var_stx.driver.find_element(By.XPATH, var_stx.group0).click()
-        time.sleep(1)
-
-
-        #Cấu hình người giới thiệu
-        var_stx.driver.find_element(By.XPATH, var_stx.donate_money1).click()
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.number_money).send_keys(var_stx.data['promotion']['number_money'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.dk_donate_money1).click()
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.maximum_limit).send_keys(var_stx.data['promotion']['maximum_limit'])
-        time.sleep(0.5)
-        try:
-            var_stx.driver.find_element(By.XPATH, var_stx.number_of_apps_introduced).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.number_of_apps_introduced).send_keys(var_stx.data['promotion']['number_of_apps_introduced'])
-        except:
-            var_stx.driver.find_element(By.XPATH, var_stx.number_of_successful_picks).send_keys(Keys.CONTROL, "a", Keys.DELETE)
-            time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.number_of_successful_picks).send_keys(var_stx.data['promotion']['number_of_successful_picks'])
-        time.sleep(0.5)
-        element = var_stx.driver.find_element(By.XPATH, "//*[text()='(Giới hạn số tiền tối đa mà KH được khuyến mại. Áp dụng cho CTKM theo %)']")
-        var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
+            iframe = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten)
+            var_stx.driver.switch_to.frame(iframe)
+            content_area = var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_conten_body)
+            content_area.send_keys(var_stx.data['promotion']['conten1'])
+            var_stx.driver.switch_to.default_content()
+            time.sleep(1)
 
-        #Điều kiện khuyến mại
-        var_stx.driver.find_element(By.XPATH, var_stx.hoe_has_pay_points).click()
-        time.sleep(1)
-        var_stx.driver.find_element(By.XPATH, var_stx.minimum_km).send_keys(var_stx.data['promotion']['minimum_km'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.minimum_fare_amount).send_keys(var_stx.data['promotion']['minimum_fare_amount'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.minimum_promotional_amount).send_keys(var_stx.data['promotion']['minimum_promotional_amount'])
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.maxium_promotional_amount).send_keys(var_stx.data['promotion']['maxium_promotional_amount'])
-        time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.save).click()
-        time.sleep(2)
-        try:
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_notification).send_keys(var_stx.data['promotion']['notification1'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_explanation).send_keys(var_stx.data['promotion']['explanation1'])    #giải trình
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_image).send_keys(var_stx.data['promotion']['image1'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_banner).send_keys(var_stx.data['promotion']['image2'])
+            time.sleep(0.5)
+            element = var_stx.driver.find_element(By.XPATH, "//*[text()='Tặng tiền khi giới thiệu']")
+            var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
+
+
+            #Kiểu hiển thị
+            var_stx.driver.find_element(By.XPATH, var_stx.type_display0).click()    #mặc định
+            time.sleep(1)
+
+            #Thời gian
+            var_stx.driver.find_element(By.XPATH, var_stx.time_start).send_keys(var_stx.data['promotion']['time_start'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.time_end).send_keys(var_stx.data['promotion']['time_end'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.promotion_add_new_image).click()
+
+
+            #Cấu hình người cài App mới
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.donate_money_default).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.promotional_money).send_keys(var_stx.data['promotion']['promotional_money'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.max_promotion).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.max_promotion).send_keys(var_stx.data['promotion']['max_promotion'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.money_promotional).send_keys(var_stx.data['promotion']['money_promotional'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.count_sd).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.count_sd).send_keys(var_stx.data['promotion']['count_sd'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.group1).click()
+            # var_stx.driver.find_element(By.XPATH, var_stx.group0).click()
+            time.sleep(1)
+
+
+            #Cấu hình người giới thiệu
+            var_stx.driver.find_element(By.XPATH, var_stx.donate_money1).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.number_money).send_keys(var_stx.data['promotion']['number_money'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.dk_donate_money1).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.maximum_limit).send_keys(var_stx.data['promotion']['maximum_limit'])
+            time.sleep(0.5)
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.number_of_apps_introduced).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                time.sleep(0.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.number_of_apps_introduced).send_keys(var_stx.data['promotion']['number_of_apps_introduced'])
+            except:
+                var_stx.driver.find_element(By.XPATH, var_stx.number_of_successful_picks).send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                time.sleep(0.5)
+                var_stx.driver.find_element(By.XPATH, var_stx.number_of_successful_picks).send_keys(var_stx.data['promotion']['number_of_successful_picks'])
+            time.sleep(0.5)
+            element = var_stx.driver.find_element(By.XPATH, "//*[text()='(Giới hạn số tiền tối đa mà KH được khuyến mại. Áp dụng cho CTKM theo %)']")
+            var_stx.driver.execute_script("arguments[0].scrollIntoView();", element)
+
+            #Điều kiện khuyến mại
+            var_stx.driver.find_element(By.XPATH, var_stx.hoe_has_pay_points).click()
+            time.sleep(1)
+            var_stx.driver.find_element(By.XPATH, var_stx.minimum_km).send_keys(var_stx.data['promotion']['minimum_km'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.minimum_fare_amount).send_keys(var_stx.data['promotion']['minimum_fare_amount'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.minimum_promotional_amount).send_keys(var_stx.data['promotion']['minimum_promotional_amount'])
+            time.sleep(0.5)
+            var_stx.driver.find_element(By.XPATH, var_stx.maxium_promotional_amount).send_keys(var_stx.data['promotion']['maxium_promotional_amount'])
+            time.sleep(1.5)
             var_stx.driver.find_element(By.XPATH, var_stx.save).click()
             time.sleep(2)
-        except:
-            pass
-        wait = WebDriverWait(var_stx.driver, 15)
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.check_promotion)))
-        time.sleep(1)
-        module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
-                                                  var_stx.check_promotion, "Khuyến mại đã được cập nhật thành công", "_CaiAppMoi_ThemMoi.png")
+            try:
+                var_stx.driver.find_element(By.XPATH, var_stx.save).click()
+                time.sleep(4)
+            except:
+                pass
 
-        button = var_stx.driver.find_element(By.XPATH, var_stx.come_back)
-        var_stx.driver.execute_script("arguments[0].click();", button)
-        time.sleep(7)
+            errors = var_stx.driver.find_element(By.XPATH, var_stx.errors).text
+            if "Nhóm người giới thiệu đã được sử dụng" in errors:
+                parts = errors.split(":", 1)
+                message_error = parts[0].strip()
+                promotion_error = parts[1].strip() if len(parts) > 1 else ""
+
+                button = var_stx.driver.find_element(By.XPATH, var_stx.come_back)
+                var_stx.driver.execute_script("arguments[0].click();", button)
+                time.sleep(7)
+                print(message_error)
+                print(promotion_error)
+                return message_error, promotion_error
+            else:
+                module_other_stx.write_result_text_try_if(code, eventname, result, "KHUYẾN MẠI - 6.3.1 Cài app mới",
+                                                          var_stx.check_promotion, "Khuyến mại đã được cập nhật thành công", "_CaiAppMoi_ThemMoi.png")
+
+                check_promotion = var_stx.driver.find_element(By.XPATH, var_stx.check_promotion).text
+
+                button = var_stx.driver.find_element(By.XPATH, var_stx.come_back)
+                var_stx.driver.execute_script("arguments[0].click();", button)
+                time.sleep(7)
+                print(check_promotion)
+
+        message_error, promotion_error = fill_promotion()
+        print(f"message_error: {message_error}, promotion_error: {promotion_error}")
+
+        if "Nhóm người giới thiệu đã được sử dụng" in message_error:
+            try:
+                install_new_app.install_new_app_active(self, "", "", "", var_stx.active, "", code_promotion1=promotion_error)
+            except:
+                pass
+            install_new_app.install_new_app_active(self, "", "", "", var_stx.stop_active, "", code_promotion1=promotion_error)
+            promotion = fill_promotion()
+
 
 
     def install_new_app_update(self, code, eventname, result):
@@ -1530,7 +1557,7 @@ class install_new_app:
         time.sleep(5)
 
 
-    def install_new_app_active(self, code, eventname, result, button, name_image):
+    def install_new_app_active(self, code, eventname, result, button, name_image, code_promotion1=None):
         var_stx.driver.implicitly_wait(5)
         try:
             var_stx.driver.implicitly_wait(2)
@@ -1541,7 +1568,11 @@ class install_new_app:
 
 
         time.sleep(1)
-        code_promotion = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 25, 2))
+        if code_promotion1 != None:
+            code_promotion = code_promotion1
+        else:
+            code_promotion = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 25, 2))
+
         var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         var_stx.driver.find_element(By.XPATH, var_stx.name).send_keys(code_promotion)
         time.sleep(1)

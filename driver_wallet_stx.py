@@ -1238,7 +1238,8 @@ class wallet_history:
         except:
             wallet_history.wallet_history(self, "", "", "")
 
-
+        var_stx.driver.refresh()
+        time.sleep(5)
         wallet_history.wallet_history_x(self)
 
         var_stx.driver.find_element(By.XPATH, var_stx.WalletOperationType_naptien).click()

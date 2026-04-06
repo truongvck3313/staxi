@@ -1912,7 +1912,13 @@ class contract_card:
         except:
             contract_card.card_management(self, "", "", "")
 
-
+        var_stx.driver.refresh()
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.one_time_card)))
+            time.sleep(1)
+        except:
+            pass
         contract_card.partner_x(self)
         try:
             element = var_stx.driver.find_element(By.XPATH, var_stx.one_time_card)
@@ -1940,8 +1946,8 @@ class contract_card:
         var_stx.driver.find_element(By.XPATH, var_stx.one_time_card_coppy).click()
         time.sleep(0.2)
         try:
-            wait = WebDriverWait(driver, 10)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, var.trangcanhan_gioithieu_songtai_hanoi)))
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.toast_message)))
         except:
             pass
         module_other_stx.write_result_text_try_if(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.3 Quản lý thẻ",
@@ -1959,7 +1965,11 @@ class contract_card:
         time.sleep(5)
         var_stx.driver.switch_to.window(var_stx.driver.window_handles[1])
         time.sleep(1)
-
+        try:
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.id_qr)))
+        except:
+            pass
         module_other_stx.write_result_text_try_if_other(code, eventname, result, "KHÁCH HÀNG - 7.7 Hợp đồng thẻ & thẻ - 7.7.3 Quản lý thẻ",
                                                   var_stx.id_qr, "", "_CapTheDung1Lan_In.png")
 
@@ -2639,7 +2649,7 @@ class contract_card:
         time.sleep(2)
         var_stx.driver.find_element(By.XPATH, var_stx.reportrange_30day).click()
         time.sleep(2)
-        var_stx.driver.find_element(By.XPATH, var_stx.StatusBFA2).click()
+        # var_stx.driver.find_element(By.XPATH, var_stx.StatusBFA2).click()
         button = var_stx.driver.find_element(By.XPATH, var_stx.search)
         var_stx.driver.execute_script("arguments[0].click();", button)
         time.sleep(7)

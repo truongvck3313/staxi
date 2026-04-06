@@ -8,7 +8,7 @@ import module_stx
 
 
 
-#update staxi 01/04 sáng
+#update staxi 06/04 sáng
 
 class Test(unittest.TestCase):
 
@@ -151,20 +151,20 @@ class Test(unittest.TestCase):
         # # # caseid_stx.caseid_vehicle15(self)
         # caseid_stx.caseid_vehicle16(self)
         # #
-        # # caseid_stx.caseid_vehicle17(self)
-        # # caseid_stx.caseid_vehicle18(self)
-        # # # # caseid_stx.caseid_vehicle19(self)
-        # # # caseid_stx.caseid_vehicle20(self)
-        # # # caseid_stx.caseid_vehicle21(self)
-        # # # caseid_stx.caseid_vehicle22(self)
-        # # # caseid_stx.caseid_vehicle23(self)
-        # # # # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
-        # # # # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
-        # # caseid_stx.caseid_vehicle26(self)
-        # # caseid_stx.caseid_vehicle27(self)
-        # # # caseid_stx.caseid_vehicle28(self)
-        # # # caseid_stx.caseid_vehicle29(self)
-        # # # caseid_stx.caseid_vehicle30(self)
+        # caseid_stx.caseid_vehicle17(self)
+        # caseid_stx.caseid_vehicle18(self)
+        # caseid_stx.caseid_vehicle19(self)
+        # caseid_stx.caseid_vehicle20(self)
+        # caseid_stx.caseid_vehicle21(self)
+        # caseid_stx.caseid_vehicle22(self)
+        # caseid_stx.caseid_vehicle23(self)
+        # caseid_stx.caseid_vehicle24(self)     #đang mất trường cam ai
+        # caseid_stx.caseid_vehicle25(self)     #đang mất trường cam ai
+        # caseid_stx.caseid_vehicle26(self)
+        # caseid_stx.caseid_vehicle27(self)
+        # caseid_stx.caseid_vehicle28(self)
+        # caseid_stx.caseid_vehicle29(self)
+        # caseid_stx.caseid_vehicle30(self)
         # #
         # # # caseid_stx.caseid_vehicle31(self)
         # # # # caseid_stx.caseid_vehicle32(self)
@@ -301,7 +301,7 @@ class Test(unittest.TestCase):
         # caseid_stx.caseid_promotion39(self)
         # caseid_stx.caseid_promotion40(self)
         #
-        # # caseid_stx.caseid_promotion41(self)
+        # caseid_stx.caseid_promotion41(self)
         # caseid_stx.caseid_promotion42(self)
         # caseid_stx.caseid_promotion43(self)
         # #

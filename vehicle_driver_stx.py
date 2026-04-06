@@ -749,13 +749,19 @@ class vehicle:
 
         time.sleep(2)
         if type_clock == "0":
-            var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.confirm_lock_day_input)))
+            element.send_keys(var_stx.data['vehicle']['lock_day'])
+            # var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_day_input).send_keys(var_stx.data['vehicle']['lock_day'])
             var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_reason_input).click()
             var_stx.driver.find_element(By.XPATH, var_stx.confirm_lock_reason_input).send_keys(var_stx.data['vehicle']['lock_reason'])
             time.sleep(1)
 
         if type_clock == "1":
-            var_stx.driver.find_element(By.XPATH, var_stx.reason_clock1).click()
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.reason_clock1)))
+            element.click()
+            # var_stx.driver.find_element(By.XPATH, var_stx.reason_clock1).click()
             time.sleep(1)
 
         var_stx.driver.find_element(By.XPATH, var_stx.confirm).click()

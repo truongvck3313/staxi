@@ -754,22 +754,23 @@ class report_8_1:
         time.sleep(1.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("05/11/2025 13:00")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_start).send_keys("13/04/2026 00:00")
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("05/11/2025 13:05")
+        var_stx.driver.find_element(By.XPATH, var_stx.daterangepicker_end).send_keys("13/04/2026 23:59")
         time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.apply).click()
         time.sleep(1.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.Source).click()
-        time.sleep(0.5)
-        var_stx.driver.find_element(By.XPATH, var_stx.Source_vanglai).click()
-        time.sleep(1)
+        # var_stx.driver.find_element(By.XPATH, var_stx.Source).click()
+        # time.sleep(0.5)
+        # var_stx.driver.find_element(By.XPATH, var_stx.Source_vanglai).click()
+        # time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(8)
         try:
-            var_stx.driver.find_element(By.XPATH, var_stx.list_data2_1)
+            var_stx.driver.find_element(By.XPATH, var_stx.DisplayPublicBookId1
+                                        )
         except:
             var_stx.driver.refresh()
             time.sleep(7)
@@ -806,7 +807,7 @@ class report_8_1:
 
         get_info_web13()
 
-        var_stx.driver.find_element(By.XPATH, var_stx.search_12_button).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel8).click()
         time.sleep(1)
         try:
             wait = WebDriverWait(var_stx.driver, 20)
@@ -836,7 +837,7 @@ class report_8_1:
         except:
             report_8_1.report_8_1_0_search(self, "", "", "")
 
-        var_stx.driver.find_element(By.XPATH, var_stx.search_13_button).click()
+        var_stx.driver.find_element(By.XPATH, var_stx.export_excel9).click()
         time.sleep(1)
         try:
             wait = WebDriverWait(var_stx.driver, 20)

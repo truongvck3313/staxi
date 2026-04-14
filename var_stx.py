@@ -2313,3 +2313,6 @@ add_new_time_type_vehicle_select = "//*[@role='searchbox']"
 search4 = "//button[@type='submit' and contains(@class,'btn-primary')]"
 InvoiceType_2 = "//*[@name='InvoiceType']//*[@value='2']"
 errors = "//*[@id='errors']"
+export_excel8 = "//*[@onclick='generalReport.exportExcel(true)']"
+export_excel9 = "//*[@onclick='generalReport.exportExcel(false)']"
+

@@ -1323,7 +1323,7 @@ class driver:
         number = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', 7, 2))
         var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", 2, 2, "auto"+number)
 
-        wait = WebDriverWait(var_stx.driver, 10)
+        wait = WebDriverWait(var_stx.driver, 20)
         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.add_new_driver_name1)))
         time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.add_new_driver_name1).send_keys("2024auto"+number)

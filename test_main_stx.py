@@ -8,7 +8,7 @@ import module_stx
 
 
 
-#update staxi 14/04 sáng
+#update staxi 15/04 sáng
 
 class Test(unittest.TestCase):
 
@@ -340,7 +340,7 @@ class Test(unittest.TestCase):
         #
         # caseid_stx.caseid_customer01(self)
         # # caseid_stx.caseid_customer02(self)
-        # # caseid_stx.caseid_customer03(self)
+        # caseid_stx.caseid_customer03(self)
         # caseid_stx.caseid_customer04(self)
         # # caseid_stx.caseid_customer05(self)
         # caseid_stx.caseid_customer06(self)

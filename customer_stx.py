@@ -127,10 +127,15 @@ class list_customer:
             var_stx.driver.find_element(By.XPATH, var_stx.name_sdt_email).send_keys(Keys.CONTROL, "a", Keys.DELETE)
         except:
             pass
+
+        var_stx.driver.find_element(By.XPATH, var_stx.groupid).click()
+        time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.groupid0).click()
-        time.sleep(0.3)
+        time.sleep(0.5)
+        var_stx.driver.find_element(By.XPATH, var_stx.custrank).click()
+        time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.custrank0).click()
-        time.sleep(0.3)
+        time.sleep(0.5)
         var_stx.driver.find_element(By.XPATH, var_stx.name_sdt_email).click()
         time.sleep(0.3)
 

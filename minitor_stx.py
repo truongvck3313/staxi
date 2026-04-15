@@ -643,6 +643,156 @@ def check_info_web_excel1(code, eventname, result, path_module, name_column_brea
                 logging.error("Dòng: {}".format(location_data_coloumn))
 
 
+def check_info_web_data(code, eventname, result, path_module, name_column_break=None):
+    row = 119
+    logging.info("-------------------------")
+    logging.info(path_module)
+    logging.info("Mã - " + code)
+    logging.info("Tên sự kiện - " + eventname)
+    logging.info("Kết quả - " + result)
+
+
+    while (row < 150):
+        row += 1
+        data_column_web = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 2))
+        name_column_excel = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 3))
+        data_column_excel = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 4))
+        location_name_coloumn = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 5))
+        location_data_coloumn = str(var_stx.readData(var_stx.path_luutamthoi, 'Sheet1', row, 6))
+        print(f" row1: {row}")
+
+        if name_column_excel == "None":
+            break
+        if name_column_break == name_column_excel:
+            break
+
+        logging.info("Dữ liệu web:   " + data_column_web)
+        logging.info("Dữ liệu excel: " + data_column_excel)
+        if name_column_excel in ["STT", "Biển số", "Mã đàm", "Đang lái", "Phiên bản xe", "Thời điểm vào ca", "Số cuốc", "Thời điểm mất kết nối",
+                               "Số lần mất kết nối", "Trạng thái kết nối", "Hộp đen", 'Tên xe', 'Trạng thái', 'Mô hình quản lý', 'Lý do khóa/mở khóa',
+                               'Thời gian mở/khóa', 'Số sao', 'Số điểm', 'Tên đăng nhập', 'Mật khẩu', 'Mã kích hoạt', 'CCCD', 'Số điện thoại', 'Ngày tạo',
+                               'Lần đăng nhập cuối', 'Mô hình quản lý', 'Phiên bản ứng dụng', 'Trạng thái khóa', 'Lý do khóa/mở khóa', 'Thời gian mở/khóa',
+                               'Xe đã gán', 'Chi tiết ứng dụng', 'Mã ví', 'Ví lái xe', 'Tên lái xe', 'Ngày giao dịch', 'Mã giao dịch', 'Hình thức', 'Loại hình phí',
+                               'Số serial thẻ', 'Số dư ví', 'Ghi chú', 'Mã khuyến mại', 'Giá trị', 'Số lần sử dụng', 'Công ty', 'Tên khuyến mại', 'Số tiền phải thu',
+                               'Số tiền phải trả', 'Kiểu khuyến mại', 'Giá trị KM', 'Kiểu thời gian KM', 'Nguồn', 'Mã đàm', 'Biển số xe', 'SĐT', 'Thời gian đặt cuốc',
+                               'Địa chỉ đón', 'Địa chỉ trả', 'Số tiền cuốc', 'Số tiền KM', 'Tổng tiền khuyến mại', 'Tổng số KM đã sử dụng', 'Tổng KM đã sử dụng',
+                               'Tổng số khuyến mại', 'Tổng tiền chưa sử dụng khuyến mại', 'Tổng số mã khuyến mại chưa sử dụng', 'Ngày',
+                               'Tổng tài khoản', 'KHACH HANG', 'LAI XE', 'NHAN VIEN', 'BAN GIÁM ĐỐC', 'MGT-HDQT-100k', 'MGT-DDPL-50k', 'Mã hợp đồng', 'Số Serial',
+                               'Tên công ty', 'Tên khách hàng', 'Số dư', 'Hạn mức', 'Ngày mở', 'Hạn dùng', 'Loại thẻ', 'Mã cuốc khách', 'Mã cuốc', 'Tên đối tác',
+                                'Chi tiết phụ phí', 'Phương thức', 'Thanh toán', 'Thanh toán thẻ', 'Ngày dùng', 'Điểm đón', 'Điểm trả', 'Loại',
+                               'Ngày nạp tiền', 'Người nạp tiền', 'Mã lái xe', 'Số thẻ', 'Thời gian cuốc đặt', 'Ngày đăng ký', 'Số dư tài khoản chính', 'Số dư tài khoản khuyến mại'
+                               'Tổng nạp', 'Tổng tiền sử dụng', 'Ngày nạp tiền gần nhất', 'Tổng số cuốc', 'Ngày phát sinh cuốc gần nhất', 'Serial tặng/nhận', 'Lái xe',
+                               'Khách hàng', 'Cước xe', 'Tổng cuốc', 'Tổng không đề cử', 'Tổng khách huỷ', 'Tổng lái xe huỷ', 'Tổng thành công', 'Không có lái xe nhận',
+                               'Cấu hình', 'Nguồn mobile', 'Nguồn điều hành', 'Nguồn vãng lai', 'Tổng khách hủy', 'Tổng lái xe hủy', 'Nguồn khách vẫy', 'Nguồn đối tác',
+                               'Phương pháp điều', 'Số lần đề cử', 'Số lái xe đề cử', 'Địa chỉ đón khách', 'Hành Khách', 'Bộ cấu hình điều', 'Lần đề cử', 'Thời gian cuốc đến',
+                               'Khoảng cách(m)', 'Thời gian xác nhận', 'Thời gian huỷ cuốc', 'Thời gian gặp khách', 'Địa chỉ trả khách', 'Trạng thái cuốc', 'Khoảng\ncách (m)',
+                               'Tổng số cuốc đề cử', 'Tỷ lệ từ chối/\nTổng số cuốc đề cử', 'Tổng số cuốc nhận', 'Tỷ lệ hủy/\nTổng số cuốc nhận', 'Hoàn thành',
+                               'Quá giờ không nhận', 'Không được chọn', 'Từ chối', 'Nhầm khách', 'Khách hàng hủy', 'Lái xe hủy', 'Tỷ lệ không hoàn thành/', 'Tỷ lệ lái xe hủy/',
+                               'Hoàn thành (5)', 'Quá giờ không nhận (6)', 'Từ chối (7)', 'Nhầm khách (8)', 'Khách hàng hủy (9)', 'Lái xe hủy (10)', 'Số Km theo Gps',
+                               'Số Km theo tablet', 'Doanh thu qua điều hành', 'Số cuốc qua điều hành', 'Doanh thu qua mobile', 'Số cuốc qua mobile', 'Doanh thu qua vãng lai',
+                               'Số cuốc qua vãng lai', 'Doanh thu cuốc taxi3', 'Số cuốc taxi3', 'Tổng doanh thu', 'Số tiền thu của lái xe', 'Số tiền khuyến mại', 'Doanh thu cuốc từ định vị',
+                               'Số cuốc theo định vị', 'Tổng KM', 'Nguồn cuốc', 'Loại cuốc', 'Thời gian kết thúc', 'Tổng cuốc',
+                               'HTTT khi đặt cuốc', 'HTTT cuốc', 'Km có khách (GPS)', 'Biển số xe (GPS)', 'Số hiệu xe (GPS)', 'Loại xe (GPS)', 'Thời gian đón khách (GPS)', 'Thời gian trả khách (GPS)',
+                               'Thời gian đón khách (Đồng hồ - GPS)', 'Thời gian trả khách (Đồng hồ - GPS)', 'Địa điểm đón khách (GPS)', 'Địa điểm trả khách (GPS)', 'Km rỗng (GPS)',
+                               'Tiền đồng hồ (GPS)', 'Tiền thực thu (GPS)', 'Thời gian chờ (GPS)', 'Km có khách GPS (GPS)', 'Tài khoản', 'Nhóm khách hàng', 'S.cuốc app', 'S.cuốc v.lai',
+                               'Hình thức thanh toán', 'Tên loại hàng hóa', 'Phụ phí(%)', 'Mô tả', 'Loại hàng hóa', 'Giá tiền nhỏ nhất', 'Giá tiền lớn nhất', 'Loại phụ phí',
+                               'Giá tiền nhỏ nhất(kg)', 'Giá tiền lớn nhất(kg)', 'Loại ví', 'Mã thẻ KH', 'T.gian đặt', 'T.gian kết thúc', 'Mã KM', 'Mã GD', 'T.tin t.toán', 'KM có khách ',
+                            'Phí phải nộp', 'TG thông báo LX', 'TG lái xe xác nhận', 'Nội dung lỗi', 'Tổng số tin nhắn', 'Tin đăng ký', 'Tin giới thiệu', 'Tin đường dài', 'Tin sân bay',
+                               'Tin khác', 'Tin OTP mã pin', 'BookID', 'Mã cuốc đối tác', 'HTTT', 'Khách hủy', 'Số hiệu', 'Km thực hiện', 'SĐT khách hàng', 'Khuyến mãi']:
+
+            print("name vao 1" + name_column_excel)
+            data_column_excel = data_column_excel.replace("_x000D_", "\n")
+            data_column_excel = data_column_excel.strip()
+            if data_column_web == data_column_excel:
+                logging.info("True")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            else:
+                logging.error("False")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Dữ liệu web: {}\nDữ liệu excel: {}\n Dòng: {}"
+                                          .format(data_column_web, data_column_excel, location_data_coloumn))
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                logging.error("Dòng: {}".format(location_data_coloumn))
+
+        print("đã đến đây")
+        print(''.join(name_column_excel.split()).lower())
+        if ''.join(name_column_excel.split()).lower() in ["Sốđiệnthoạikháchhàng", 'cướcdichuyển(1)', 'cướcchờ(2)']:
+            print("đã vào đây")
+            if data_column_web == "None":
+                data_column_web = "0"
+            print(data_column_web)
+
+            data_column_web = ''.join(data_column_web.split()).lower()
+            data_column_web = ''.join(re.findall(r'\d+', data_column_web))
+
+            data_column_excel = ''.join(data_column_excel.split()).lower()
+            data_column_excel = ''.join(re.findall(r'\d+', data_column_excel))
+
+            if data_column_web == data_column_excel:
+                logging.info("True")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            else:
+                logging.error("False")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Dữ liệu web: {}\nDữ liệu excel: {}\n Dòng: {}"
+                                          .format(data_column_web, data_column_excel, location_data_coloumn))
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                logging.error("Dòng: {}".format(location_data_coloumn))
+
+
+
+
+
+
+
+        if name_column_excel in ['Km GPS', 'NL tiêu thụ', 'Số tiền', 'Cước phí', 'Tiền nợ', 'Cước phí(cước thật của cuốc)', 'Cước xe (trừ của khách)', 'Số dư còn lại', 'Phụ phí', 'Loại xe',
+                               'D.thu ĐH', 'S.cuốc ĐH', 'D.thu App', 'D.thu v.lai', 'D.thu đ.vị', 'Tổng d.thu', 'S.tiền KM', 'Khoảng cách', 'S.tiền thu LX', 'Khuyến mại', 'Cước xe (trừ của khách)',
+                               'Doanh thu tính %\n(1) = (2) + (3)', 'Cước xe\n(2)', 'Khuyến mãi\n(3)', 'Số km', 'Cước phí (cước thật của cuốc)', 'Khoảng cách(m)', 'Thời gian đề cử', 'Thời gian xác nhận', ' Km thực hiện']:
+            print("name vao 2" + name_column_web)
+            try:
+                data_column_web = ''.join(re.findall(r'\d+', data_column_web))[:3]
+                data_column_excel = ''.join(re.findall(r'\d+', data_column_excel))[:3]
+            except Exception as e:
+                logging.error(f"Lỗi khi xử lý dữ liệu: {e}")
+
+            if (data_column_web == "None") or (data_column_web == None):
+                data_column_web = 0
+            if (data_column_excel == "None") or (data_column_excel == None):
+                data_column_excel = 0
+
+            if data_column_web == data_column_excel:
+                logging.info("True")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            else:
+                logging.error("False")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Dữ liệu web: {}\nDữ liệu excel: {}\n Dòng: {}"
+                                          .format(data_column_web, data_column_excel, location_data_coloumn))
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                logging.error("Dòng: {}".format(location_data_coloumn))
+
+
+        if name_column_excel in ['Đánh giá', 'Thời gian chờ', 'Cước di chuyển', 'Cước chờ', 'Doanh thu', 'Tiền típ', 'Số tiền thanh toán', 'Mã KM/Số tiền KM', 'Số Km']:
+            print("name vao 2" + name_column_web)
+            try:
+                data_column_web = ''.join(re.findall(r'\d+', data_column_web))[:1]
+                data_column_web = int(data_column_web)
+                data_column_excel = ''.join(re.findall(r'\d+', data_column_excel))[:1]
+                data_column_excel = int(data_column_excel)
+            except Exception as e:
+                logging.error(f"Lỗi khi xử lý dữ liệu: {e}")
+
+            if (data_column_web == "None") or (data_column_web == None):
+                data_column_web = 0
+            if (data_column_excel == "None") or (data_column_excel == None):
+                data_column_excel = 0
+
+            if data_column_web == data_column_excel:
+                logging.info("True")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Pass")
+            else:
+                logging.error("False")
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 6, "Dữ liệu web: {}\nDữ liệu excel: {}\n Dòng: {}"
+                                          .format(data_column_web, data_column_excel, location_data_coloumn))
+                module_other_stx.writeData(var_stx.checklistpath, "Checklist", code, 7, "Fail")
+                logging.error("Dòng: {}".format(location_data_coloumn))
 
 
 

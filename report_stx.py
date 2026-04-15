@@ -478,6 +478,26 @@ def get_info_web15():
         n = int(n)
 
 
+
+def get_info_web_data():
+    var_stx.driver.implicitly_wait(0.05)
+    row = 119
+    n = 0
+    while (n < 50):
+        n += 1
+        n = str(n)
+        row += 1
+        path_data = f"//div[contains(@class,'ag-center-cols-container')]//div[@aria-rowindex='2']//div[@aria-colindex='{n}']"
+        print(n)
+        try:
+            name_data = var_stx.driver.find_element(By.XPATH, path_data).text
+            print("data cot web:" .format(name_data))
+            var_stx.writeData(var_stx.path_luutamthoi, "Sheet1", row, 2, name_data)
+        except:
+            pass
+        n = int(n)
+
+
 def get_info_web_percent(path_column, path_data, row, column):
     var_stx.driver.implicitly_wait(0.05)
     try:
@@ -2386,16 +2406,16 @@ class report_8_4:
 
         WebDriverWait(var_stx.driver, 15).until(EC.invisibility_of_element_located((By.CLASS_NAME, "loading-cms")))
         time.sleep(1)
+        get_info_web1()
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel5).click()
         time.sleep(1)
         try:
             wait = WebDriverWait(var_stx.driver, 20)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
             dowload_excel(self, "8.4.2 Doanh thu từ app lái xe & định vị")
+            minitor_stx.get_info_excel1(3, "Data")
         except:
-            pass
-        get_info_web1()
-        minitor_stx.get_info_excel1(5, "Sheet 1")
+            minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel2(code, eventname, result, "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Doanh thu từ app lái xe & định vị", name_column_break="Lộ trình")
 
     def report_8_4_2_excel_full(self, code, eventname, result):
@@ -2410,16 +2430,16 @@ class report_8_4:
 
         WebDriverWait(var_stx.driver, 15).until(EC.invisibility_of_element_located((By.CLASS_NAME, "loading-cms")))
         time.sleep(1)
+        get_info_web1()
         var_stx.driver.find_element(By.XPATH, var_stx.export_excel_full).click()
         time.sleep(1)
         try:
             wait = WebDriverWait(var_stx.driver, 20)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.messsage_export)))
             dowload_excel(self, "8.4.2 Doanh thu từ app lái xe & định vị")
+            minitor_stx.get_info_excel1(3, "Data")
         except:
-            pass
-        get_info_web1()
-        minitor_stx.get_info_excel1(5, "Sheet 1")
+            minitor_stx.get_info_excel1(5, "Sheet 1")
         minitor_stx.check_info_web_excel2(code, eventname, result,
                                           "BÁO CÁO - 8.4 Báo cáo doanh thu - 8.4.2 Doanh thu từ app lái xe & định vị",
                                           name_column_break="Lộ trình")

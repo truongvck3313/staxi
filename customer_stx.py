@@ -168,8 +168,15 @@ class list_customer:
             list_customer.list_customer(self, "", "", "")
 
         list_customer.list_customer_x(self)
+        wait = WebDriverWait(var_stx.driver, 10)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.name_sdt_email)))
+        element.send_keys("0835")
+
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
         time.sleep(7)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.name_sdt_email)))
+        element.clear()
+
         data = var_stx.driver.find_element(By.XPATH, path_data).text
         if name_image == "_DanhSachKhachHang_TenDangNhap.png":
             data = data[0:3]

@@ -28,37 +28,6 @@ class accounting_14_1:
             var_stx.driver.refresh()
             time.sleep(5)
 
-        # try:
-        #     var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-        #     time.sleep(2)
-        #     try:
-        #         var_stx.driver.find_element(By.XPATH, var_stx.today).click()
-        #     except:
-        #         var_stx.driver.find_element(By.XPATH, var_stx.today1).click()
-        #     time.sleep(2)
-        #     var_stx.driver.find_element(By.XPATH, var_stx.Status1).click()
-        #     time.sleep(1)
-        #     var_stx.driver.find_element(By.XPATH, var_stx.search3).click()
-        #     element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.ag3_2)))
-        #     time.sleep(1.5)
-        #     print("đã tìm hôm nay")
-        # except:
-        #     try:
-        #         var_stx.driver.find_element(By.XPATH, var_stx.reportrange).click()
-        #         time.sleep(2)
-        #         try:
-        #             var_stx.driver.find_element(By.XPATH, var_stx.yesterday).click()
-        #         except:
-        #             var_stx.driver.find_element(By.XPATH, var_stx.yesterday1).click()
-        #         time.sleep(2)
-        #         var_stx.driver.find_element(By.XPATH, var_stx.Status1).click()
-        #         time.sleep(1)
-        #         var_stx.driver.find_element(By.XPATH, var_stx.search3).click()
-        #         element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.ag2_2)))
-        #         time.sleep(1.5)
-        #         print("đã tìm hôm qua")
-        #     except:
-        #         print("Không có bản ghi 14.1")
 
         if var_stx.linktest[0:23] == "https://g7test.staxi.vn":
             element = wait.until(EC.element_to_be_clickable((By.XPATH, var_stx.reportrange)))
@@ -68,21 +37,21 @@ class accounting_14_1:
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("16/09/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("07/04/2026 00:00")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("16/09/2025 00:10")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("07/04/2026 00:00")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("16/09/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("08/04/2026 23:59")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("16/09/2025 00:10")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("08/04/2026 23:59")
             time.sleep(0.5)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()
@@ -102,21 +71,21 @@ class accounting_14_1:
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("12/06/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("03/04/2026 00:00")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("12/06/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("03/04/2026 00:00")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("13/06/2025 23:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("04/04/2026 23:59")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("13/06/2025 23:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("04/04/2026 23:59")
             time.sleep(0.5)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()
@@ -239,21 +208,21 @@ class accounting_14_1:
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("20/06/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("07/04/2026 00:00")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("20/06/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("07/04/2026 00:00")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("21/06/2025 23:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("08/04/2026 23:59")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("21/06/2025 23:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("08/04/2026 23:59")
             time.sleep(0.5)
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()
             time.sleep(2)
@@ -529,21 +498,21 @@ class accounting_14_1:
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("27/07/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("15/04/2026 00:00")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("27/07/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("15/04/2026 00:00")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("28/07/2025 23:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("16/04/2026 23:59")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("28/07/2025 23:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("16/04/2026 23:59")
             time.sleep(0.5)
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()
@@ -563,25 +532,25 @@ class accounting_14_1:
                 logging.info("n0")
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("04/08/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("07/04/2026 00:00")
                 logging.info("n1")
             except:
                 logging.info("n2")
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("04/08/2025 00:00")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("07/04/2026 00:00")
                 logging.info("n3")
             time.sleep(0.5)
 
             try:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("05/08/2025 23:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("08/04/2026 23:59")
                 logging.info("n4")
             except:
                 var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
                 time.sleep(0.5)
-                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("05/08/2025 23:59")
+                var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("08/04/2026 23:59")
                 logging.info("n5")
             time.sleep(0.5)
             try:
@@ -1040,21 +1009,21 @@ class accounting_14_1:
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys(Keys.CONTROL, "a",Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("05/10/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day).send_keys("07/04/2026 00:00")
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys(Keys.CONTROL, "a",Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("05/10/2025 00:00")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_from_day1).send_keys("07/04/2026 00:00")
         time.sleep(0.5)
 
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("06/10/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day).send_keys("08/04/2026 23:59")
         except:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys(Keys.CONTROL, "a", Keys.DELETE)
             time.sleep(0.5)
-            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("06/10/2025 23:59")
+            var_stx.driver.find_element(By.XPATH, var_stx.reportrange_to_day1).send_keys("08/04/2026 23:59")
         time.sleep(0.5)
         try:
             var_stx.driver.find_element(By.XPATH, var_stx.reportrange_apply).click()

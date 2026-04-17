@@ -1040,8 +1040,16 @@ class driver:
         driver.driver_x(self)
         # var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("2")
         # time.sleep(1)
+        if path_image == "_XeLaiXe_TimKiem_BienSo.png":
+            wait = WebDriverWait(var_stx.driver, 10)
+            element = wait.until(EC.presence_of_element_located((By.XPATH, var_stx.liscense_plate)))
+            element.send_keys("3")
+            # var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).send_keys("3")
+            time.sleep(1)
         var_stx.driver.find_element(By.XPATH, var_stx.search).click()
-        time.sleep(10)
+        time.sleep(7)
+        var_stx.driver.find_element(By.XPATH, var_stx.liscense_plate).clear()
+
 
         try:
             var_stx.driver.implicitly_wait(0.3)
